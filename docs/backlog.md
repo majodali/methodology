@@ -32,11 +32,19 @@ entries update in the same commit as the work they describe
   (D2), `ci-verify.yml` (D3). Radar/hypothesis skeletons from §6's
   sketch deliberately not created (K-005: no empty ceremony ahead of
   need; kickoff list governs).
+- [x] **Census confirmed and methodology-tools cross-registered** —
+  owner confirmed the census at the chunk-1 gate (2026-08-18), ruling
+  the three unobservable practices-§1.1 examples disregarded;
+  [methodology-tools](https://github.com/majodali/methodology-tools)
+  bootstrapped under v1.0.0 (component/library, C1, S0, package
+  registry; founding plan imported, status draft) and its
+  [Portfolio entry](registers/portfolio.md) updated from implicit C0 to
+  its declared summary (M-001).
 
 ## Upcoming
 
-- [ ] Owner confirms the Portfolio census (chunk-1 gate); then tag
-  v1.0.0.
+- [ ] Tag v1.0.0 once this bootstrap branch merges (census confirmed
+  2026-08-18).
 - [ ] **Review-round cadence** — confirm the initial quarterly
   calibration recorded in [classification.md](classification.md), or set
   a different bounded interval (draft open item 3; Article 8).
