@@ -23,15 +23,20 @@ entries update in the same commit as the work they describe
   [Portfolio register](registers/portfolio.md) seeded from a full
   account census (19 repositories, all implicit C0 except this repo).
   **Census confirmation by the owner is pending at the chunk-1 gate.**
+- [x] **Skeletons** — copyable starting files under
+  [skeletons/](../skeletons/) per [practices §6](practices.md), scoped
+  to the kickoff list: minimal `CLAUDE.md` (Binding block + pointers,
+  K-002), `docs/classification.md`, `docs/backlog.md`,
+  `docs/decisions.md`, `docs/open-risks.md`, `docs/plans/TEMPLATE.md`
+  (encoding the K-007 status-line contract), `pull_request_template.md`
+  (D2), `ci-verify.yml` (D3). Radar/hypothesis skeletons from §6's
+  sketch deliberately not created (K-005: no empty ceremony ahead of
+  need; kickoff list governs).
 
 ## Upcoming
 
 - [ ] Owner confirms the Portfolio census (chunk-1 gate); then tag
   v1.0.0.
-- [ ] **Skeletons** — copyable starting files under `skeletons/` per
-  [practices §6](practices.md): minimal `CLAUDE.md`, Classification,
-  Backlog, Decision register, Risk register, plan TEMPLATE, PR template,
-  CI verify workflow.
 - [ ] **Review-round cadence** — confirm the initial quarterly
   calibration recorded in [classification.md](classification.md), or set
   a different bounded interval (draft open item 3; Article 8).
