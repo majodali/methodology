@@ -66,11 +66,15 @@ entries update in the same commit as the work they describe
 - [ ] **Workflow declaration format** — minimum required structure for
   the stage set and *live* designation in the Classification, and how
   Backlog entries reference stages (draft open item 4).
-- [ ] **Audit-log register** (`docs/audits.md`) — awaits its amendment,
-  to be proposed by the
-  [methodology-tools plan](https://github.com/majodali/methodology-tools)
-  (its chunk 1 motivates it); not created ahead of adjudication
-  (Article 8: agents MUST NOT self-apply proposed practice).
+- [ ] ~~**Audit-log register** (`docs/audits.md`) — awaits its
+  amendment~~ **amendment accepted** (this entry merges with the
+  amendment PR): [audits.md](audits.md) created, *Audit log* added to
+  the vocabulary's Register subtypes; motivating instance —
+  [methodology-tools chunk 1](https://github.com/majodali/methodology-tools/pull/1),
+  whose `mtool status` delta-ratio is unavailable without a
+  machine-readable last-semantic-audit time. Seeded with the bootstrap
+  link-check entry. Acceptance implies a version bump with migration
+  notes at the owner's discretion (Article 8).
 - [ ] **First review round** — adjudicate the seed's
   [known tensions](rules/README.md#extraction-notes-for-the-first-review-round)
   and the open calibrations above.
