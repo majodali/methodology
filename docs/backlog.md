@@ -41,10 +41,12 @@ entries update in the same commit as the work they describe
   [Portfolio entry](registers/portfolio.md) updated from implicit C0 to
   its declared summary (M-001).
 
-## Upcoming
+- [x] **v1.0.0 released** — bootstrap PR #1 merged to `main`
+  (2026-08-18), `main` made the default branch, annotated tag `v1.0.0`
+  placed on the release commit, and the single-use bootstrap branch
+  deleted (W-006). Cross-repo links from methodology-tools now resolve.
 
-- [ ] Tag v1.0.0 once this bootstrap branch merges (census confirmed
-  2026-08-18).
+## Upcoming
 - [ ] **Review-round cadence** — confirm the initial quarterly
   calibration recorded in [classification.md](classification.md), or set
   a different bounded interval (draft open item 3; Article 8).
