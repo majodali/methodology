@@ -19,6 +19,12 @@ definitions and omission defaults:
   ([Article 8](constitution.md#article-8--amendments-versions-and-migration)
   requires a bounded interval, at least quarterly, recorded in this
   repo). Confirmation is tracked in the [Backlog](backlog.md).
+- **Release ceremony** (owner ruling, 2026-08-18): version tags are
+  created by the human owner, on `main`, after PR review — never
+  pre-merge on a branch, and never by an agent. `main` accepts pushes
+  from the owner only; agent work lands by PR from single-use
+  outcome-named branches
+  ([W-006](rules/working-agreement.md#w-006--names-follow-outcomes-branches-are-single-use)).
 
 ## Deviation register
 

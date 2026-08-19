@@ -45,14 +45,14 @@ entries update in the same commit as the work they describe
   `main` made the default branch. Cross-repo links from
   methodology-tools now resolve.
 
-## Upcoming
+- [x] **v1.0.0 released** — owner created the annotated tag `v1.0.0`
+  on `main` (2026-08-18) and deleted the merged single-use bootstrap
+  branch (W-006). Owner rulings adopted as standing process: version
+  tags are created by the owner after PR review (the release ceremony),
+  and `main` accepts pushes from the owner only — recorded in the
+  [Classification's process records](classification.md).
 
-- [ ] **Release close-out, owner-run** — the agent session's push
-  policy 403s tag creation and branch deletion, so the owner runs:
-  `git tag -a v1.0.0 -m "majodali standard development methodology
-  v1.0.0" origin/main && git push origin v1.0.0`, and deletes the
-  merged single-use branch
-  `claude/majodali-methodology-bootstrap-ytg4ll` (W-006).
+## Upcoming
 - [ ] **Review-round cadence** — confirm the initial quarterly
   calibration recorded in [classification.md](classification.md), or set
   a different bounded interval (draft open item 3; Article 8).
