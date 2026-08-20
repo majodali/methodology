@@ -157,6 +157,11 @@ in [constitution.md](constitution.md#draft-history-pre-10).
     *Backlog*, *Decision register*, *Risk register*, *Radar*, *Hypothesis
     register*, *Event register* (house style: "register"; ES/CQRS sources
     often say "registry" — [AsyncAPI](https://www.asyncapi.com/) et al.),
+    the *Audit log* (`docs/audits.md` — one Entry per audit execution:
+    date, kind, scope, outcome, findings pointer; the machine-readable
+    source for *time of last semantic audit*, which the Article 9
+    delta-ratio auto-trigger reads; motivated by
+    [methodology-tools chunk 1](https://github.com/majodali/methodology-tools/pull/1)),
     and — in the methodology repo only — the *Portfolio register*.
     Register-shaped sections *within* a Document are **Embedded
     registers**, a Content type — the Deviation register and Custom
