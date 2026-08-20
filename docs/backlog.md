@@ -78,12 +78,14 @@ entries update in the same commit as the work they describe
   `v1.1.0` after merging (release ceremony). Migration notes: none for
   either amendment — migrations are pin bumps only.
 
+- [x] **Migrated to 1.1.0** — v1.1.0 tagged by the owner 2026-08-20;
+  migration PR bumped the [Classification](classification.md) pin and
+  the `CLAUDE.md` Binding block, and refreshed this repo's
+  [Portfolio row](registers/portfolio.md) (v1.1.0 migration notes:
+  none, so the pin bump is the whole migration — release process
+  step 5). methodology-tools migrates by its own PR.
+
 ## Upcoming
-- [ ] **Migrate this repo to 1.1.0** — after the tag exists, a
-  migration PR bumps the [Classification](classification.md) pin and
-  the Binding block (compliance targets reference releases only;
-  migration notes: none). methodology-tools migrates in its own repo
-  likewise.
 - [ ] **Review-round cadence** — confirm the initial quarterly
   calibration recorded in [classification.md](classification.md), or set
   a different bounded interval (draft open item 3; Article 8).

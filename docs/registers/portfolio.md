@@ -16,7 +16,7 @@ version).
 
 | Project | Location | Classification summary | Notes |
 |---|---|---|---|
-| methodology | github.com/majodali/methodology | C1 / S0 / methodology-corpus / none-local — pinned 1.0.0 | this repo; [Classification](../classification.md) |
+| methodology | github.com/majodali/methodology | C1 / S0 / methodology-corpus / none-local — pinned 1.1.0 | this repo; [Classification](../classification.md) |
 | methodology-tools | github.com/majodali/methodology-tools | C1 / S0 / component/library / package registry — pinned 1.0.0 | [Classification](https://github.com/majodali/methodology-tools/blob/main/docs/classification.md); founding plan `methodology-tools-v1` status draft |
 | allegro | github.com/majodali/allegro | implicit C0 | census spot-check: actual state ~C2 per [practices §5](../practices.md) — Classification needed (Article 4 declaration accuracy) |
 | in-real-life | github.com/majodali/in-real-life | implicit C0 | spot-check: actual state ~C2/S2 per [practices §5](../practices.md) — Classification needed |
