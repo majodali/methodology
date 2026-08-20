@@ -16,7 +16,7 @@ Target: v1.1.0 (minor — normative content).
 
 ### Amendment & release process
 
-- **PR**: this amendment's PR (link recorded at proposal time).
+- **PR**: [#4](https://github.com/majodali/methodology/pull/4).
 - **Suggested by**: the adjudication of the audit-log amendment
   ([PR #3](https://github.com/majodali/methodology/pull/3)) — the
   owner's decision to adjudicate continuously during early adoption
