@@ -187,7 +187,10 @@ Article 8's two project-level forms.
   receive the traceability-link review of Article 9 regardless of the
   methodology's own declared tier — they are the highest-stakes changes
   in the system.
-- Proposals are adjudicated at **review rounds**, not continuously.
+- Proposals are adjudicated at **review rounds**, or at **interim
+  adjudications** (vocabulary-defined) that the human owner MAY convene
+  at any time for named proposals; every scheduled review round
+  re-examines the interim decisions taken since the last round.
   Review rounds occur on a cadence set by the human owner and recorded in
   the methodology repo; the interval MUST be bounded (initial calibration:
   at least quarterly) so that review-horizon flagging and adjudication
@@ -203,15 +206,20 @@ Article 8's two project-level forms.
   branched. Versioning exists solely to let each project **migrate at its
   own pace**: a project's Classification pins a version, which is its
   **compliance target** (vocabulary-defined), and amendments are never
-  retroactive for pinned projects — a version bump ships migration notes,
-  and a pinned compliance target remains until the project migrates.
+  retroactive for pinned projects — a version bump ships migration notes
+  (accumulated per amendment in the **Release register**,
+  `docs/releases.md`), and a pinned compliance target remains until the
+  project migrates.
   **The one exception is the unpinned C0 project**, whose compliance
   target is the latest version and moves with it: amendments to the
   `[C0+]` baseline apply there without a migration step, acceptable
   because the baseline is minimal. Because deviations recorded against a
   moving target can silently stale, recording a deviation at C0 SHOULD be
   accompanied by pinning. Residence on an old version is expected to be
-  temporary, not a home.
+  temporary, not a home. The mechanics of proposal, adjudication,
+  acceptance, release candidacy, release, and adoption are defined in
+  the **release process** (`docs/release-process.md`), a
+  Methodology-level document amendable through this Article.
 - Amendments are proposed against the **latest version only**. A project
   on an older version that has amendments to propose SHOULD first migrate
   to the latest — recording deviations where needed — and propose from

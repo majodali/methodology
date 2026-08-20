@@ -52,6 +52,18 @@ entries update in the same commit as the work they describe
   and `main` accepts pushes from the owner only — recorded in the
   [Classification's process records](classification.md).
 
+- [x] **Amendment & release process** (amendment; the merge is
+  acceptance) — Article 8 amended: interim adjudication minted and the
+  release mechanics homed in [release-process.md](release-process.md)
+  (Level 2, amendable); [Release register](releases.md) created
+  (Keep-a-Changelog shape), seeded with the v1.0.0 section and
+  Unreleased entries for this amendment and the audit-log amendment;
+  vocabulary: *Interim adjudication*, *Release*, *Release register*,
+  *Editorial change*;
+  [M-004](rules/mirrors.md#m-004--amendment-prs-carry-their-release-register-entry)
+  added. Suggested by the adjudication questions around
+  [PR #3](https://github.com/majodali/methodology/pull/3).
+
 ## Upcoming
 - [ ] **Review-round cadence** — confirm the initial quarterly
   calibration recorded in [classification.md](classification.md), or set

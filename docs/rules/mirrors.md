@@ -41,3 +41,19 @@ Every amendment PR MUST receive the traceability-link review of Article
 9 regardless of the methodology's declared tier: reviewers follow the
 evidencing-instance link and verify the change against the current
 standard and all open proposals.
+
+### M-004 — Amendment PRs carry their release-register entry
+Applies: [type: methodology-corpus]
+Keywords: MUST
+Motivated-by: [release process](../release-process.md) (mirror; that document is authoritative); the audit-log amendment ([PR #3](https://github.com/majodali/methodology/pull/3)), whose adjudication surfaced the missing provenance/impact/migration record
+Cites: [Keep a Changelog](https://keepachangelog.com/) (register shape)
+
+Every amendment PR MUST include, in the same diff as the change, its
+entry in the [Release register](../releases.md)'s Unreleased section:
+amendment title and PR link, suggested by (evidencing instance), impact
+assessment covering every affected Portfolio project, and an explicit
+migration note (`none` stated, never omitted). A proposal without its
+entry is not adjudicable; rejection removes the entry with the closed
+PR. (This rule mirrors the release process, a Methodology-level
+document under Article 8, the way M-001–M-003 mirror the Constitution —
+the M- section is Meta machinery, not constitutional mirrors alone.)
