@@ -77,6 +77,37 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   Completeness is a duty of the methodology
   repo (`[type: methodology-corpus]`), not of the enumerated projects.
   Current instance: [registers/portfolio.md](registers/portfolio.md).
+- **Interim adjudication** — an adjudication of named amendment
+  proposals that the human owner MAY convene at any time between review
+  rounds ([Article 8](constitution.md#article-8--amendments-versions-and-migration)).
+  It carries every per-proposal duty — the traceability review, the
+  impact assessment and accommodation question, the Release-register
+  entry check — and none of the review round's corpus-level audit
+  duties ([Article 9](constitution.md#article-9--audits)); every
+  scheduled review round re-examines the interim decisions taken since
+  the last round. Defined by the
+  [release process](release-process.md).
+- **Release** — a version of the methodology made adoptable by the
+  owner's annotated tag `vX.Y.Z` on `main`; its content is the set of
+  accepted amendments recorded in the Release register's section for
+  that version. Compliance targets reference releases only — unreleased
+  `main` is never a compliance target
+  ([release process](release-process.md)).
+- **Release register** — the Register (methodology repo only,
+  [releases.md](releases.md)) recording, per amendment: provenance
+  (suggested by / evidencing instance), impact assessment, and
+  migration note — Unreleased section for the current release
+  candidate, then one section per release. The durable record the
+  amendment lifecycle writes through
+  ([M-004](rules/mirrors.md#m-004--amendment-prs-carry-their-release-register-entry));
+  shape cites [Keep a Changelog](https://keepachangelog.com/).
+- **Editorial change** — a change with zero normative effect (typo,
+  broken link, formatting, wording clarification changing no
+  obligation). It MAY merge without the amendment process at the
+  owner's discretion and is recorded as a one-line Unreleased note;
+  patch releases contain editorial changes only
+  ([release process](release-process.md)). When in doubt, it is an
+  amendment.
 - **Existence rules / content rules** — existence rules govern that
   material is present, located, designated, and linked as required;
   content rules govern its internal form and substance. Sandbox material
@@ -180,8 +211,10 @@ instances) · `cites` (third-party source).
 
 ## Process terms
 
-**Review round** · **Audit** (form / semantic,
+**Review round** · **Interim adjudication** (defined above) ·
+**Audit** (form / semantic,
 [Article 9](constitution.md#article-9--audits)) · **Amendment** ·
+**Release** (defined above) ·
 **Migration** ([Article 8](constitution.md#article-8--amendments-versions-and-migration))
 · **Re-classification** (updating any declared
 Classification field to match actual state,
