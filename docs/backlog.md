@@ -63,8 +63,27 @@ entries update in the same commit as the work they describe
   [M-004](rules/mirrors.md#m-004--amendment-prs-carry-their-release-register-entry)
   added. Suggested by the adjudication questions around
   [PR #3](https://github.com/majodali/methodology/pull/3).
+- [x] **Audit-log register** (amendment,
+  [PR #3](https://github.com/majodali/methodology/pull/3), accepted
+  2026-08-20) — [audits.md](audits.md) created, seeded with the
+  bootstrap link-check entry; *Audit log* added to the vocabulary's
+  Register subtypes. Motivating instance:
+  [methodology-tools chunk 1](https://github.com/majodali/methodology-tools/pull/1),
+  whose `mtool status` delta-ratio needs a machine-readable
+  last-semantic-audit time.
+- [x] **v1.1.0 cut** — release PR retitled Unreleased to
+  [*v1.1.0 — 2026-08-20*](releases.md): the amendment & release
+  process (PR #4) and the audit-log register (PR #3), both accepted at
+  the first interim adjudications; the owner creates the annotated tag
+  `v1.1.0` after merging (release ceremony). Migration notes: none for
+  either amendment — migrations are pin bumps only.
 
 ## Upcoming
+- [ ] **Migrate this repo to 1.1.0** — after the tag exists, a
+  migration PR bumps the [Classification](classification.md) pin and
+  the Binding block (compliance targets reference releases only;
+  migration notes: none). methodology-tools migrates in its own repo
+  likewise.
 - [ ] **Review-round cadence** — confirm the initial quarterly
   calibration recorded in [classification.md](classification.md), or set
   a different bounded interval (draft open item 3; Article 8).
@@ -78,15 +97,6 @@ entries update in the same commit as the work they describe
 - [ ] **Workflow declaration format** — minimum required structure for
   the stage set and *live* designation in the Classification, and how
   Backlog entries reference stages (draft open item 4).
-- [ ] ~~**Audit-log register** (`docs/audits.md`) — awaits its
-  amendment~~ **amendment accepted** (this entry merges with the
-  amendment PR): [audits.md](audits.md) created, *Audit log* added to
-  the vocabulary's Register subtypes; motivating instance —
-  [methodology-tools chunk 1](https://github.com/majodali/methodology-tools/pull/1),
-  whose `mtool status` delta-ratio is unavailable without a
-  machine-readable last-semantic-audit time. Seeded with the bootstrap
-  link-check entry. Acceptance implies a version bump with migration
-  notes at the owner's discretion (Article 8).
 - [ ] **First review round** — adjudicate the seed's
   [known tensions](rules/README.md#extraction-notes-for-the-first-review-round)
   and the open calibrations above.
