@@ -12,7 +12,12 @@ carry: amendment title and PR link · suggested by (evidencing instance)
 
 ## Unreleased
 
-Target: v1.1.0 (minor — normative content).
+(empty — the next accepted amendment opens the next candidate)
+
+## v1.1.0 — 2026-08-20
+
+Minor — normative content. Both amendments accepted at the first
+interim adjudications (2026-08-20).
 
 ### Amendment & release process
 
@@ -46,9 +51,8 @@ Target: v1.1.0 (minor — normative content).
   recordable; no new duty minted. All others — *not affected*.
 - **Migration note**: none mandatory — on migrating, a project MAY keep
   a `docs/audits.md`; `mtool` reads it when present.
-- *Register note*: this entry is seeded here rather than in PR #3's own
-  diff — M-004 postdates that proposal. Recorded for the adjudicator;
-  if PR #3 is rejected, this entry is removed as an editorial change.
+- *Register note*: this entry was seeded by PR #4 rather than in PR
+  #3's own diff — M-004 postdates that proposal. Accepted 2026-08-20.
 
 ## v1.0.0 — 2026-08-18
 
