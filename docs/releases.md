@@ -30,6 +30,27 @@ Target: v1.2.0 (minor — normative content).
   binds how audits run, not what projects must hold.
 - **Migration note**: none.
 
+### Audit delivery process
+
+- **PR**: this amendment's PR (link recorded at proposal time).
+- **Suggested by**: the owner, 2026-08-21, after the first
+  portfolio-wide form audits — whose findings (allegro's K-003
+  relocation, in-real-life's W-007 gap) existed only in a PR body and
+  session transcript, never delivered to the audited projects
+  (evidencing instance:
+  [methodology-tools chunk 3](https://github.com/majodali/methodology-tools/pull/5)
+  gate runs).
+- **Impact**: methodology (`methodology-corpus`) — *accommodated*:
+  Article 9 pointer, `docs/audit-process.md` created, sweep entries in
+  its Audit log, transitional Risk R5 opened. The Auditor role — bound
+  by the delivery MUST. All audited C1+ projects — *accommodated,
+  lightly*: they receive delivery PRs on audit-state transitions
+  (merging is acknowledgement; `docs/audits.md` is created on first
+  delivery); no duty to act is minted.
+- **Migration note**: none — the process binds the Auditor and the
+  methodology repo; projects merge delivery PRs as ordinary register
+  maintenance.
+
 ## v1.1.0 — 2026-08-20
 
 Minor — normative content. Both amendments accepted at the first

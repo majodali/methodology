@@ -244,7 +244,11 @@ Article 8's two project-level forms.
   declaration-consistency — are evaluated over the full tree on every
   run (calibration resolved 2026-08-20: full-tree invariant evaluation
   closes the delta blind spot of deletions breaking inbound links in
-  unchanged files; evidencing instance in the Release register). **Semantic audits** —
+  unchanged files; evidencing instance in the Release register).
+  How a run's results reach the audited project — comparison against
+  the project's own Audit log and delta-triggered delivery — is defined
+  in the **audit process** (`docs/audit-process.md`), a
+  Methodology-level document amendable through Article 8. **Semantic audits** —
   verifying that traceability links actually support what citing content
   claims, and that documents are substantively current, not merely
   well-shaped — MAY be requested at any time; at C2 and C3 they are

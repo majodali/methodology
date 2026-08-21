@@ -101,6 +101,13 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   amendment lifecycle writes through
   ([M-004](rules/mirrors.md#m-004--amendment-prs-carry-their-release-register-entry));
   shape cites [Keep a Changelog](https://keepachangelog.com/).
+- **Audit delivery** — the appending of a new Audit-log Entry to an
+  audited project, due exactly when an audit run's **finding
+  fingerprint** — the sorted set of `(rule ID, severity, file)` over
+  violations and warnings — differs from the project's newest
+  same-kind entry, or no such entry exists. Always by PR, never a
+  direct push; the first delivery creates the project's Audit log.
+  Defined by the [audit process](audit-process.md).
 - **Editorial change** — a change with zero normative effect (typo,
   broken link, formatting, wording clarification changing no
   obligation). It MAY merge without the amendment process at the
@@ -157,10 +164,12 @@ in [constitution.md](constitution.md#draft-history-pre-10).
     *Backlog*, *Decision register*, *Risk register*, *Radar*, *Hypothesis
     register*, *Event register* (house style: "register"; ES/CQRS sources
     often say "registry" — [AsyncAPI](https://www.asyncapi.com/) et al.),
-    the *Audit log* (`docs/audits.md` — one Entry per audit execution:
-    date, kind, scope, outcome, findings pointer; the machine-readable
+    the *Audit log* (`docs/audits.md` — one Entry per audit execution,
+    in the format the [audit process](audit-process.md) defines; the
+    machine-readable
     source for *time of last semantic audit*, which the Article 9
-    delta-ratio auto-trigger reads; motivated by
+    delta-ratio auto-trigger reads; entries arrive by *Audit delivery*
+    on state transitions; motivated by
     [methodology-tools chunk 1](https://github.com/majodali/methodology-tools/pull/1)),
     and — in the methodology repo only — the *Portfolio register*.
     Register-shaped sections *within* a Document are **Embedded
