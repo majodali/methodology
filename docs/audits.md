@@ -15,3 +15,6 @@ findings pointer (or —)`.
 - 2026-08-20 — form — full tree: link integrity, `mtool links check`
   (first tool-driven run; closes [Risk R2](open-risks.md)) — pass (24
   files, 144 relative links/anchors resolve, 31 external skipped) — —
+- 2026-08-20 — form — full tree: `mtool audit form` (first full form
+  audit of this repo; closes [Risk R1](open-risks.md)) — pass (15
+  in-play rules, no findings, no version lag, no deviations) — —

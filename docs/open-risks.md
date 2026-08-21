@@ -10,8 +10,15 @@ reviewed for deletion once no transitional entries remain.
 
 - **R1** — Daily form audits
   ([Article 9](constitution.md#article-9--audits)) are manual and
-  best-effort — awaits `mtool audit form` (methodology-tools chunk 3) —
-  open.
+  best-effort — awaited `mtool audit form` — **closed 2026-08-20**: the
+  tooling landed with
+  [methodology-tools chunk 3](https://github.com/majodali/methodology-tools/pull/5)
+  (full, `--staged`, and `--changed-since` modes plus the git
+  pre-commit mirror via `mtool hooks install`); this repo's first
+  tool-driven form audit is recorded in the [Audit log](audits.md), and
+  the first portfolio-wide run audited allegro, in-real-life, the
+  template, and both ops repos against their declared classifications.
+  Per Article 11, transitional status for this gap has ended.
 - **R2** — Link-integrity checking (Articles 9–10) is manual — the
   bootstrap verification ran via an ad-hoc script, not kept tooling —
   awaited `mtool links check` — **closed 2026-08-20**: the tooling

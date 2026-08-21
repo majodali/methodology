@@ -94,7 +94,34 @@ entries update in the same commit as the work they describe
   open, so Article 11 stands (its deletion review waits for an empty
   transitional set).
 
+- [x] **Risk R1 closed** — form-audit tooling landed
+  (`mtool audit form` + `mtool hooks install`,
+  [methodology-tools chunk 3](https://github.com/majodali/methodology-tools/pull/5)).
+  This repo's first tool-driven form audit logged in the
+  [Audit log](audits.md) (no findings); the first portfolio-wide run
+  audited allegro, in-real-life, the template, and both ops repos at
+  their declared levels — allegro's findings match its own
+  adoption-transition notes, in-real-life has one W-007 gap (no
+  README), the implicit-C0 repos audit clean. Portfolio rows for
+  allegro and in-real-life refreshed from their observed declarations.
+  R3 and R4 remain open, so Article 11 stands.
+
 ## Upcoming
+- [ ] **Multi-repo projects** — how to group multiple repositories
+  into a single project (e.g. the in-real-life family: app + ops +
+  org), and what a family-level Classification or cross-references
+  look like (owner-raised, 2026-08-20, at the chunk-3 access ruling).
+- [ ] **Template projects' methodology burden** — a project template
+  (serverless-web-app-template) carries a different burden than an
+  ordinary project: what it ships must keep *derived* projects
+  compliant. Think through, perhaps as part of a methodology project
+  family (owner-raised, 2026-08-20).
+- [ ] **D-/Q-/O- rule extraction pass** — extract the delivery,
+  quality, and operations disciplines from
+  [practices.md](practices.md) so form audits can see the gap
+  analysis's delivery findings (no CI, no PR template, …); each rule
+  needs its live motivating instance (Article 6). Deferred out of
+  tools chunk 3 by owner ruling, 2026-08-20.
 - [ ] **Review-round cadence** — confirm the initial quarterly
   calibration recorded in [classification.md](classification.md), or set
   a different bounded interval (draft open item 3; Article 8).
