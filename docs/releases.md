@@ -16,7 +16,7 @@ Target: v1.2.0 (minor — normative content).
 
 ### Form-audit delta-scope calibration
 
-- **PR**: this amendment's PR (link recorded at proposal time).
+- **PR**: [#9](https://github.com/majodali/methodology/pull/9).
 - **Suggested by**: `mtool audit form`
   ([methodology-tools chunk 3](https://github.com/majodali/methodology-tools/pull/5)) —
   implementing the delta modes forced the Article 9 open calibration
