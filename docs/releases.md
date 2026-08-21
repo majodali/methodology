@@ -32,7 +32,7 @@ Target: v1.2.0 (minor — normative content).
 
 ### Audit delivery process
 
-- **PR**: this amendment's PR (link recorded at proposal time).
+- **PR**: [#12](https://github.com/majodali/methodology/pull/12).
 - **Suggested by**: the owner, 2026-08-21, after the first
   portfolio-wide form audits — whose findings (allegro's K-003
   relocation, in-real-life's W-007 gap) existed only in a PR body and
