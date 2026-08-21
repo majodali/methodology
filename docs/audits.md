@@ -6,8 +6,13 @@ run. This is the machine-readable source for *time of last semantic
 audit*, which the Article 9 delta-ratio auto-trigger — and `mtool
 status`'s delta-ratio report — require.
 
-Entry format: `date — kind (form | semantic) — scope — outcome —
-findings pointer (or —)`.
+Entry format (per the [audit process](audit-process.md)): `date — kind
+(form | semantic) — scope — audited <short-sha> against methodology
+<version> — outcome (pass | <v> violations / <w> warnings / <i> info)
+— findings digest or —`. Entries below predating the format extension
+remain valid history. Entries arrive by *Audit delivery* on state
+transitions; portfolio sweeps are recorded here with scope
+*portfolio*.
 
 - 2026-08-18 — form — full tree at bootstrap: link integrity, ad-hoc
   script (transitional, [Risk R2](open-risks.md)) — pass (115 relative

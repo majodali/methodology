@@ -36,3 +36,8 @@ reviewed for deletion once no transitional entries remain.
   automatic inbound-link rewrite, heavy-linkage warnings, tombstones for
   externally referenced documents) are manual — awaits `mtool links move`
   (methodology-tools chunk 5) — open.
+- **R5** — Audit delivery
+  ([audit-process.md](audit-process.md)) is manual — the running agent
+  compares finding fingerprints against each project's Audit log and
+  raises delivery PRs by hand — awaits `mtool` compare-and-deliver
+  (planned alongside `mtool census`, methodology-tools chunk 4) — open.

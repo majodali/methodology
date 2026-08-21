@@ -106,6 +106,20 @@ entries update in the same commit as the work they describe
   allegro and in-real-life refreshed from their observed declarations.
   R3 and R4 remain open, so Article 11 stands.
 
+- [x] **Audit delivery process** (amendment; the merge is acceptance)
+  — [audit-process.md](audit-process.md) created (Level 2): audit
+  results become machine-comparable finding fingerprints
+  (rule/severity/file over violations + warnings; info and message
+  text excluded; corpus version recorded, not compared), compared
+  against the project's own Audit log, delivered by PR exactly on
+  transitions (first delivery creates the register); portfolio sweeps
+  recorded centrally in this repo's [Audit log](audits.md). Article 9
+  pointer added; vocabulary: *Audit delivery*; Audit-log entry format
+  extended; transitional [Risk R5](open-risks.md) opened (manual
+  delivery until `mtool` compare-and-deliver, chunk 4).
+  Owner-designed 2026-08-21; evidencing instance: the chunk-3 gate
+  findings that never reached their projects.
+
 ## Upcoming
 - [ ] **Multi-repo projects** — how to group multiple repositories
   into a single project (e.g. the in-real-life family: app + ops +
