@@ -125,10 +125,12 @@ entries update in the same commit as the work they describe
 - [ ] **Review-round cadence** — confirm the initial quarterly
   calibration recorded in [classification.md](classification.md), or set
   a different bounded interval (draft open item 3; Article 8).
-- [ ] **Form-audit delta scope** — how far beyond the day's change
-  deltas a form audit must reach, including the known blind spot of
-  deletions breaking inbound links in unchanged files (draft open item
-  1; Article 9).
+- [ ] ~~**Form-audit delta scope**~~ **calibration resolved**
+  (amendment; this entry merges with its PR): per-file content checks
+  delta-scoped, repo-wide invariants full-tree on every audit —
+  Article 9's open parenthetical replaced, the deletion blind spot
+  closed by construction. Evidencing instance: `mtool audit form`
+  (draft open item 1 done).
 - [ ] **Semantic-audit auto-trigger calibration** — delta-ratio
   thresholds (initial: 50% at C2, 25% at C3) and whether delta-ratio is
   the right trigger shape at all (draft open item 2; Article 9).

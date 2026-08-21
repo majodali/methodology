@@ -12,7 +12,23 @@ carry: amendment title and PR link · suggested by (evidencing instance)
 
 ## Unreleased
 
-(empty — the next accepted amendment opens the next candidate)
+Target: v1.2.0 (minor — normative content).
+
+### Form-audit delta-scope calibration
+
+- **PR**: [#9](https://github.com/majodali/methodology/pull/9).
+- **Suggested by**: `mtool audit form`
+  ([methodology-tools chunk 3](https://github.com/majodali/methodology-tools/pull/5)) —
+  implementing the delta modes forced the Article 9 open calibration
+  question; the implementation runs per-file content checks
+  delta-scoped and repo-wide invariants (existence rules, link
+  integrity, declaration-consistency) full-tree on every audit, which
+  closes the known deletion blind spot.
+- **Impact**: methodology (`methodology-corpus`) — *accommodated*:
+  Article 9's parenthetical resolved; the open Backlog item closes.
+  All audited C1+ projects — *not affected* in duties: the calibration
+  binds how audits run, not what projects must hold.
+- **Migration note**: none.
 
 ## v1.1.0 — 2026-08-20
 

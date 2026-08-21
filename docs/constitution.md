@@ -239,8 +239,12 @@ Article 8's two project-level forms.
 - Every C1+ project undergoes audits of two kinds. **Form audits** —
   structure, designations, link integrity, sandbox age, custom-definition
   hygiene — run via machine on **every day on which the project has
-  changed**, scoped to the change deltas (how far beyond the deltas a form
-  audit must reach is an open calibration question). **Semantic audits** —
+  changed**: per-file content checks are scoped to the change deltas,
+  while repo-wide invariants — existence rules, link integrity, and
+  declaration-consistency — are evaluated over the full tree on every
+  run (calibration resolved 2026-08-20: full-tree invariant evaluation
+  closes the delta blind spot of deletions breaking inbound links in
+  unchanged files; evidencing instance in the Release register). **Semantic audits** —
   verifying that traceability links actually support what citing content
   claims, and that documents are substantively current, not merely
   well-shaped — MAY be requested at any time; at C2 and C3 they are
