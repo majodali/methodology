@@ -14,7 +14,12 @@ reviewed for deletion once no transitional entries remain.
   open.
 - **R2** — Link-integrity checking (Articles 9–10) is manual — the
   bootstrap verification ran via an ad-hoc script, not kept tooling —
-  awaits `mtool links check` (methodology-tools chunk 2) — open.
+  awaited `mtool links check` — **closed 2026-08-20**: the tooling
+  landed with
+  [methodology-tools chunk 2](https://github.com/majodali/methodology-tools/pull/4);
+  first run over this tree recorded in the [Audit log](audits.md)
+  (144 relative links, no findings — matching the retired script). Per
+  Article 11, transitional status for this gap has ended.
 - **R3** — The Portfolio census
   ([M-002](rules/mirrors.md#m-002--the-review-round-audit-and-census-run))
   is manual — first census run by hand at bootstrap via account

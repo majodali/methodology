@@ -85,6 +85,15 @@ entries update in the same commit as the work they describe
   none, so the pin bump is the whole migration — release process
   step 5). methodology-tools migrates by its own PR.
 
+- [x] **Risk R2 closed** — link-integrity tooling landed
+  (`mtool links check`,
+  [methodology-tools chunk 2](https://github.com/majodali/methodology-tools/pull/4));
+  first tool-driven run over this tree logged in the
+  [Audit log](audits.md) (144 relative links, no findings), the ad-hoc
+  bootstrap script retired. Transitional entries R1, R3, R4 remain
+  open, so Article 11 stands (its deletion review waits for an empty
+  transitional set).
+
 ## Upcoming
 - [ ] **Review-round cadence** — confirm the initial quarterly
   calibration recorded in [classification.md](classification.md), or set
