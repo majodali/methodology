@@ -12,3 +12,6 @@ findings pointer (or —)`.
 - 2026-08-18 — form — full tree at bootstrap: link integrity, ad-hoc
   script (transitional, [Risk R2](open-risks.md)) — pass (115 relative
   links/anchors resolve) — —
+- 2026-08-20 — form — full tree: link integrity, `mtool links check`
+  (first tool-driven run; closes [Risk R2](open-risks.md)) — pass (24
+  files, 144 relative links/anchors resolve, 31 external skipped) — —
