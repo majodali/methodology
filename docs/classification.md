@@ -7,7 +7,7 @@ definitions and omission defaults:
 [vocabulary](vocabulary.md#artifact-types).
 
 - **C-tier**: C1
-- **Pinned methodology version**: 1.1.0 (compliance target)
+- **Pinned methodology version**: 1.2.0 (compliance target)
 - **S-level**: S0
 - **Type**: `methodology-corpus` (reserved singleton, Article 9)
 - **Target**: none/local

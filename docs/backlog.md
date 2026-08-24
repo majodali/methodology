@@ -127,11 +127,12 @@ entries update in the same commit as the work they describe
   ceremony). Migration notes: none for either amendment — migrations
   are pin bumps only.
 
+- [x] **Migrated to 1.2.0** — v1.2.0 tagged by the owner 2026-08-21;
+  pin, Binding block, and Portfolio row bumped (migration notes: none,
+  so the pin bump is the whole migration — release process step 5).
+  methodology-tools migrates by its own PR.
+
 ## Upcoming
-- [ ] **Migrate this repo to 1.2.0** — after the tag exists, a
-  migration PR bumps the [Classification](classification.md) pin and
-  the Binding block; methodology-tools migrates in its own repo
-  likewise (migration notes: none).
 - [ ] **Multi-repo projects** — how to group multiple repositories
   into a single project (e.g. the in-real-life family: app + ops +
   org), and what a family-level Classification or cross-references
