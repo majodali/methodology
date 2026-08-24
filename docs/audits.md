@@ -23,3 +23,14 @@ transitions; portfolio sweeps are recorded here with scope
 - 2026-08-20 — form — full tree: `mtool audit form` (first full form
   audit of this repo; closes [Risk R1](open-risks.md)) — pass (15
   in-play rules, no findings, no version lag, no deviations) — —
+- 2026-08-21 — form — portfolio sweep (allegro, in-real-life,
+  methodology, methodology-tools) — audited against methodology 1.2.0
+  — deliveries per the [audit process](audit-process.md):
+  [allegro PR #17](https://github.com/majodali/allegro/pull/17) and
+  [in-real-life PR #63](https://github.com/majodali/in-real-life/pull/63)
+  (both lag transitions after the v1.2.0 release; both repos' prior
+  violations confirmed resolved) — methodology clean at pinned 1.2.0
+  on its migration branch (no transition from its baseline);
+  baseline-establishing deliveries for the clean repos without
+  same-kind entries (methodology-tools; template/ops/org pending
+  baseline check) deferred to the mechanized sweep (R5, best-effort)
