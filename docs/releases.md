@@ -12,7 +12,12 @@ carry: amendment title and PR link · suggested by (evidencing instance)
 
 ## Unreleased
 
-Target: v1.2.0 (minor — normative content).
+(empty — the next accepted amendment opens the next candidate)
+
+## v1.2.0 — 2026-08-21
+
+Minor — normative content. Both amendments accepted at interim
+adjudications (2026-08-20 and 2026-08-21).
 
 ### Form-audit delta-scope calibration
 
