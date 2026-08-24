@@ -120,7 +120,18 @@ entries update in the same commit as the work they describe
   Owner-designed 2026-08-21; evidencing instance: the chunk-3 gate
   findings that never reached their projects.
 
+- [x] **v1.2.0 cut** — release PR retitled Unreleased to
+  [*v1.2.0 — 2026-08-21*](releases.md): the form-audit delta-scope
+  calibration (PR #9) and the audit delivery process (PR #12); the
+  owner creates the annotated tag `v1.2.0` after merging (release
+  ceremony). Migration notes: none for either amendment — migrations
+  are pin bumps only.
+
 ## Upcoming
+- [ ] **Migrate this repo to 1.2.0** — after the tag exists, a
+  migration PR bumps the [Classification](classification.md) pin and
+  the Binding block; methodology-tools migrates in its own repo
+  likewise (migration notes: none).
 - [ ] **Multi-repo projects** — how to group multiple repositories
   into a single project (e.g. the in-real-life family: app + ops +
   org), and what a family-level Classification or cross-references
