@@ -16,7 +16,7 @@ Target: v1.3.0 (minor — normative content).
 
 ### Links-move external-reference limitation
 
-- **PR**: this amendment's PR (link recorded at proposal time).
+- **PR**: [#16](https://github.com/majodali/methodology/pull/16).
 - **Suggested by**: `mtool links move`
   ([methodology-tools chunk 5](https://github.com/majodali/methodology-tools/pull/8))
   — the founding plan's second promised amendment: the tool rewrites
