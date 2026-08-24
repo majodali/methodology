@@ -43,8 +43,16 @@ reviewed for deletion once no transitional entries remain.
 - **R4** — Move/rename obligations
   ([Article 10](constitution.md#article-10--naming-moves-and-traceability):
   automatic inbound-link rewrite, heavy-linkage warnings, tombstones for
-  externally referenced documents) are manual — awaits `mtool links move`
-  (methodology-tools chunk 5) — open.
+  externally referenced documents) are manual — awaited
+  `mtool links move` — **closed 2026-08-24**: the tooling landed with
+  [methodology-tools chunk 5](https://github.com/majodali/methodology-tools/pull/8)
+  (inbound rewrite with anchors, own-link re-basing, the Article 10
+  heavy-linkage warning, `--tombstone`, full post-move link check).
+  Per Article 11, transitional status has ended. Of the bootstrap's
+  transitional entries R1–R5, all are now closed; **R6** (opened by
+  the links-move limitation amendment) is the sole transitional entry,
+  so Article 11's deletion review waits on the census
+  external-reference index.
 - **R5** — Audit delivery
   ([audit-process.md](audit-process.md)) is manual — the running agent
   compares finding fingerprints against each project's Audit log and

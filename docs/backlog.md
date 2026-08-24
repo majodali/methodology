@@ -153,6 +153,14 @@ entries update in the same commit as the work they describe
   plan's second promised amendment
   ([methodology-tools chunk 5](https://github.com/majodali/methodology-tools/pull/8)).
 
+- [x] **Risk R4 closed** — move/rename tooling landed
+  (`mtool links move`,
+  [methodology-tools chunk 5](https://github.com/majodali/methodology-tools/pull/8));
+  the founding tools plan is closed (all five chunks delivered), and
+  every bootstrap transitional entry (R1–R5) is now closed. R6 (the
+  links-move limitation) is the sole remaining transitional entry, so
+  Article 11 stands until the census external-reference index lands.
+
 ## Upcoming
 - [ ] **Multi-repo projects** — how to group multiple repositories
   into a single project (e.g. the in-real-life family: app + ops +
