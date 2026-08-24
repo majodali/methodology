@@ -303,7 +303,11 @@ Article 8's two project-level forms.
   linkage makes the move a de facto decision review.
 - A document referenced from **outside its repo** is public API: moving it
   MUST leave a tombstone/redirect stub or an explicit deprecation note,
-  because external links cannot be rewritten.
+  because external links cannot be rewritten. (Until the Portfolio
+  census maintains an external-reference index, whether a document is
+  externally referenced is operator-supplied knowledge: the move
+  tooling surfaces the duty and the operator discharges it —
+  transitional, recorded in the Risk register.)
 - Traceability links (requirement → decision → plan → implementation →
   verification) MUST be present; other relationship links MAY be added
   where they earn their keep. Dangling links are audit findings.

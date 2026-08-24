@@ -57,3 +57,9 @@ reviewed for deletion once no transitional entries remain.
   the process, not a gap. Per Article 11, transitional status has
   ended; **R4 is now the sole transitional entry**, so Article 11's
   deletion review arms when chunk 5 closes it.
+- **R6** — Tombstone need on document moves
+  ([Article 10](constitution.md#article-10--naming-moves-and-traceability))
+  is operator-judged — `mtool links move` surfaces the duty and takes
+  `--tombstone`, but cannot itself know whether a document is
+  externally referenced — awaits an external-reference index maintained
+  by the census — open.

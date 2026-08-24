@@ -12,7 +12,22 @@ carry: amendment title and PR link · suggested by (evidencing instance)
 
 ## Unreleased
 
-(empty — the next accepted amendment opens the next candidate)
+Target: v1.3.0 (minor — normative content).
+
+### Links-move external-reference limitation
+
+- **PR**: this amendment's PR (link recorded at proposal time).
+- **Suggested by**: `mtool links move`
+  ([methodology-tools chunk 5](https://github.com/majodali/methodology-tools/pull/8))
+  — the founding plan's second promised amendment: the tool rewrites
+  inbound links and takes `--tombstone`, but cannot itself know
+  whether a document is externally referenced.
+- **Impact**: methodology (`methodology-corpus`) — *accommodated*:
+  Article 10's tombstone bullet gains the transitional parenthetical;
+  Risk R6 opened (awaits a census-maintained external-reference
+  index). All projects — *not affected* in duties: the tombstone MUST
+  already bound movers; this records how it is discharged meanwhile.
+- **Migration note**: none.
 
 ## v1.2.0 — 2026-08-21
 
