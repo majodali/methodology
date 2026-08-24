@@ -30,7 +30,16 @@ reviewed for deletion once no transitional entries remain.
 - **R3** — The Portfolio census
   ([M-002](rules/mirrors.md#m-002--the-review-round-audit-and-census-run))
   is manual — first census run by hand at bootstrap via account
-  enumeration — awaits `mtool census` (methodology-tools chunk 4) — open.
+  enumeration — awaited `mtool census` — **closed 2026-08-24**: the
+  tooling landed with
+  [methodology-tools chunk 4](https://github.com/majodali/methodology-tools/pull/7);
+  its first run reconciled all 19 observed repositories against the
+  register (completeness verified), proposed one summary refresh
+  (allegro's stale pin — applied), and flagged 12 implicit-C0
+  spot-check candidates for the review round. Account enumeration
+  still needs an observed-repos input where the GitHub API is
+  unreachable (egress policy) — recorded in the tool, not a
+  transitional gap. Per Article 11, transitional status has ended.
 - **R4** — Move/rename obligations
   ([Article 10](constitution.md#article-10--naming-moves-and-traceability):
   automatic inbound-link rewrite, heavy-linkage warnings, tombstones for
@@ -39,5 +48,12 @@ reviewed for deletion once no transitional entries remain.
 - **R5** — Audit delivery
   ([audit-process.md](audit-process.md)) is manual — the running agent
   compares finding fingerprints against each project's Audit log and
-  raises delivery PRs by hand — awaits `mtool` compare-and-deliver
-  (planned alongside `mtool census`, methodology-tools chunk 4) — open.
+  raises delivery PRs by hand — awaited `mtool audit deliver` —
+  **closed 2026-08-24**: landed with
+  [methodology-tools chunk 4](https://github.com/majodali/methodology-tools/pull/7)
+  (fingerprint vs the project's own baseline, honest degradation for
+  prose digests, `--write` appends and creates the register on first
+  delivery). PR-raising remains with the operating agent by design —
+  the process, not a gap. Per Article 11, transitional status has
+  ended; **R4 is now the sole transitional entry**, so Article 11's
+  deletion review arms when chunk 5 closes it.

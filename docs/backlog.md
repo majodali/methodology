@@ -132,6 +132,18 @@ entries update in the same commit as the work they describe
   so the pin bump is the whole migration — release process step 5).
   methodology-tools migrates by its own PR.
 
+- [x] **Risks R3 and R5 closed** — census and audit-delivery tooling
+  landed
+  ([methodology-tools chunk 4](https://github.com/majodali/methodology-tools/pull/7)):
+  `mtool census` reconciled all 19 observed repos against the
+  [Portfolio register](registers/portfolio.md) on its first run
+  (completeness verified; allegro's stale pin refreshed per its drift
+  proposal; 12 implicit-C0 spot-check candidates queued for the review
+  round), and `mtool audit deliver` mechanizes the
+  [audit process](audit-process.md) fingerprint comparison. R4 (links
+  move, chunk 5) is the sole remaining transitional entry — Article
+  11's deletion review arms when it closes.
+
 ## Upcoming
 - [ ] **Multi-repo projects** — how to group multiple repositories
   into a single project (e.g. the in-real-life family: app + ops +
