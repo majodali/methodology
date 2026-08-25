@@ -195,7 +195,23 @@ entries update in the same commit as the work they describe
   question: norms (methodology) / enforcement (methodology-tools) /
   execution (project-orchestrator), all in the `methodology` family.
 
+- [x] **v1.3.0 cut** — release PR retitled Unreleased to
+  [*v1.3.0 — 2026-08-25*](releases.md): the links-move
+  external-reference limitation (PR #16), project families (PR #19),
+  template type and Q-001 (PR #20), and custom definitions by citation
+  (PR #21); the owner creates the annotated tag `v1.3.0` after merging
+  (release ceremony). Migration notes: none for all four — migrations
+  are pin bumps only.
+
 ## Upcoming
+- [ ] **Migrate this repo to 1.3.0** — after the tag exists, a
+  migration PR bumps the [Classification](classification.md) pin and
+  the Binding block (migration notes: none). Family-member PRs follow
+  per repo: methodology-tools, project-orchestrator, and
+  serverless-web-app-template each bump their pin and declare
+  `Family: methodology (member)` in one PR; in-real-life declares
+  lead with ops/org as members; the template additionally adopts
+  `type: template` by its own Classification decision.
 - [ ] **Meta-template for template projects** — a process and/or
   template for building template projects, anticipated as the family
   of templates grows (owner-raised, 2026-08-24).

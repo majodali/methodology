@@ -12,7 +12,12 @@ carry: amendment title and PR link · suggested by (evidencing instance)
 
 ## Unreleased
 
-Target: v1.3.0 (minor — normative content).
+(empty — the next accepted amendment opens the next candidate)
+
+## v1.3.0 — 2026-08-25
+
+Minor — normative content. All four amendments accepted at interim
+adjudications (2026-08-24 and 2026-08-25).
 
 ### Links-move external-reference limitation
 
