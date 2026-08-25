@@ -22,6 +22,7 @@ version).
 | in-real-life | github.com/majodali/in-real-life | C2 / S2 / web-app / serverless-aws — pinned 1.1.0 | Classification declared 2026-08 (Workflow declared; audit-log register adopted); summary refreshed 2026-08-20 |
 | in-real-life-ops | github.com/majodali/in-real-life-ops (private) | C2 / S1 / ops / serverless-aws — pinned 1.1.0 | ops repo for in-real-life; Classification declared 2026-08-20 (Workflow declared); audits clean at declared level |
 | in-real-life-org | github.com/majodali/in-real-life-org (private) | C2 / S2 / docs-corpus / none-local — pinned 1.1.0 | Classification declared 2026-08-20; audits clean at declared level |
+| project-orchestrator | github.com/majodali/project-orchestrator | C1 / S0 / component-library / none-local — pinned 1.2.0 | process spec + plugin coordinating role-based agent sessions on portfolio projects; owner intends C2 Promotion before it orchestrates C2+ projects; registered on first observation 2026-08-24 (M-001) |
 | serverless-web-app-template | github.com/majodali/serverless-web-app-template | implicit C0 | reference implementation for the serverless-aws target |
 | mc-tools | github.com/majodali/mc-tools | implicit C0 | |
 | graph-analysis | github.com/majodali/graph-analysis | implicit C0 | |
