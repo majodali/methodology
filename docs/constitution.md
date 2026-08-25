@@ -163,7 +163,12 @@ exploration repos need them most). All other rules default to
   custom definition MUST live in the **Custom definitions section of the
   project's Classification** (the current standard home; relocating it
   would be an amendment), and every instance of the custom type MUST link
-  its definition.
+  its definition. A custom definition MAY be made **by citation**: the
+  Custom definitions section records a reference to another project's
+  published definition — typically a family lead's or a process
+  project's specification — which remains authoritative for the type's
+  content; convergent citations across projects remain standardization
+  candidates like any other convergent definitions.
 - Custom definitions are audited like standard ones. Audits SHOULD flag
   convergent custom definitions across projects as standardization
   candidates (promotion by amendment).

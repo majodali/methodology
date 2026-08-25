@@ -66,6 +66,24 @@ Target: v1.3.0 (minor — normative content).
 - **Migration note**: none — no existing declaration uses the new
   value.
 
+### Custom definitions by citation
+
+- **PR**: [#21](https://github.com/majodali/methodology/pull/21).
+- **Suggested by**: project-orchestrator's managed-project enrollment —
+  managed projects adopt its *Plan register* and *Cost log* types by
+  citing the orchestrator's process specification from their own
+  Custom definitions sections, a shape Article 7 homed but did not
+  name; ratified 2026-08-24.
+- **Impact**: constitutional (one sentence in Article 7, enacted by
+  the owner's merge per Article 2). All projects — *accommodated,
+  opt-in*: citation-form definitions become legal by name; the citing
+  Classification stays the required home, the defining project's
+  document stays authoritative, and audits stop reading every
+  enrollment as N independent convergent definitions.
+  project-orchestrator — its enrollment pattern is now the named
+  instance.
+- **Migration note**: none.
+
 ## v1.2.0 — 2026-08-21
 
 Minor — normative content. Both amendments accepted at interim

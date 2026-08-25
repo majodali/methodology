@@ -184,6 +184,17 @@ entries update in the same commit as the work they describe
   adoption happens in its repo. Resolves the template-burden Backlog
   item.
 
+- [x] **Custom definitions by citation** (amendment; the merge is
+  acceptance) — Article 7 names the citation form: a Custom
+  definitions section MAY define a type by reference to another
+  project's published definition (family lead or process project),
+  which stays authoritative; convergent citations remain
+  standardization candidates. Named instance: project-orchestrator's
+  managed-project enrollment (*Plan register* / *Cost log* adopted by
+  citing its process spec). Resolves the orchestrator-relationship
+  question: norms (methodology) / enforcement (methodology-tools) /
+  execution (project-orchestrator), all in the `methodology` family.
+
 ## Upcoming
 - [ ] **Meta-template for template projects** — a process and/or
   template for building template projects, anticipated as the family
