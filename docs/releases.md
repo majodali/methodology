@@ -48,6 +48,24 @@ Target: v1.3.0 (minor — normative content).
 - **Migration note**: none — declaring a Family is optional;
   standalone projects change nothing.
 
+### Template type and Q-001
+
+- **PR**: this amendment's PR (link recorded at proposal time).
+- **Suggested by**: serverless-web-app-template — the practices'
+  reference implementation, whose §5 gap analysis showed derived
+  projects start non-compliant unless the template ships compliance;
+  owner-raised at the chunk-3 access ruling, ratified 2026-08-24.
+- **Impact**: Classification type enum gains `template`
+  (amendment-controlled values — this is the designed channel). The
+  Q- section opens with Q-001 (template scaffolds stay compliant),
+  mechanically checkable via the classify/audit loop.
+  serverless-web-app-template — *accommodated*: adopting the type is
+  its own Classification decision, made in that repo; until then it
+  remains implicit C0 and Q-001 is not in play there. All other
+  projects — *not affected*.
+- **Migration note**: none — no existing declaration uses the new
+  value.
+
 ## v1.2.0 — 2026-08-21
 
 Minor — normative content. Both amendments accepted at interim

@@ -173,12 +173,21 @@ entries update in the same commit as the work they describe
   — declarations land per repo). Ratified 2026-08-24; resolves the
   multi-repo Backlog item.
 
+- [x] **Template type and Q-001** (amendment; the merge is
+  acceptance) — the `template` type minted (a project whose shipped
+  content instantiates derived projects) and the Q- section opened
+  with [Q-001](rules/quality.md#q-001--template-scaffolds-stay-compliant):
+  a template's scaffold MUST instantiate to a form-clean project at
+  the tier the template declares for derivatives — mechanically
+  checkable via the classify/audit loop. The template joins the
+  `methodology` family (owner ruling 2026-08-24); its own type
+  adoption happens in its repo. Resolves the template-burden Backlog
+  item.
+
 ## Upcoming
-- [ ] **Template projects' methodology burden** — a project template
-  (serverless-web-app-template) carries a different burden than an
-  ordinary project: what it ships must keep *derived* projects
-  compliant. Think through, perhaps as part of a methodology project
-  family (owner-raised, 2026-08-20).
+- [ ] **Meta-template for template projects** — a process and/or
+  template for building template projects, anticipated as the family
+  of templates grows (owner-raised, 2026-08-24).
 - [ ] **D-/Q-/O- rule extraction pass** — extract the delivery,
   quality, and operations disciplines from
   [practices.md](practices.md) so form audits can see the gap

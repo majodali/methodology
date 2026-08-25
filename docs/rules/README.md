@@ -3,7 +3,8 @@
 The rule corpus lives in this directory, one file per section:
 [knowledge.md](knowledge.md) (`K-`),
 [working-agreement.md](working-agreement.md) (`W-`),
-[mirrors.md](mirrors.md) (`M-`), and
+[mirrors.md](mirrors.md) (`M-`),
+[quality.md](quality.md) (`Q-`), and
 [security.md](security.md) (`S-`). The organization below was Part III of
 *The Methodology Constitution & Vocabulary — Draft v0.7*; the seed notes
 were the header of *Rule Corpus — Seed Extraction v0.1*. The draft
