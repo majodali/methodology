@@ -214,6 +214,21 @@ entries update in the same commit as the work they describe
   proposed in its own PR. Portfolio rows refresh as each merges
   (M-001).
 
+- [x] **Portfolio refreshed after the v1.3.0 adoption round** — all
+  seven follow-up PRs merged 2026-08-25 (methodology #23,
+  methodology-tools #9, project-orchestrator #1,
+  serverless-web-app-template #2, in-real-life #66, in-real-life-ops
+  #18, in-real-life-org #13); the
+  [Portfolio register](registers/portfolio.md) rows refreshed from the
+  observed declarations (M-001/M-002): both family compositions fully
+  declared, the template's first Classification replaces its
+  implicit-C0 row (`template` type, Q-001 in play), pins now 1.3.0
+  across both families (allegro observed at 1.2.0 — its own migration
+  timing). Verified by `mtool census` over the eight merged checkouts:
+  no summary drift; enumeration unverified this run (no API access —
+  known limitation) and the 12 implicit-C0 spot-check candidates stand.
+  Census-side family-symmetry checking is queued in methodology-tools.
+
 ## Upcoming
 - [ ] **Meta-template for template projects** — a process and/or
   template for building template projects, anticipated as the family
