@@ -19,7 +19,11 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   secrets · `S2` personal data/PII ([proposal §1.2](practices.md)).
 - **Type** — `web-app` · `backend-service` · `component/library` ·
   `language/tool platform` · `exploration` · `ops` · `docs-corpus` (a
-  documentation or standards corpus) · `methodology-corpus` (**reserved
+  documentation or standards corpus) · `template` (a project whose
+  shipped content instantiates *derived* projects — its distinctive
+  burden is that the scaffold it ships must keep derivatives
+  compliant, [Q-001](rules/quality.md#q-001--template-scaffolds-stay-compliant))
+  · `methodology-corpus` (**reserved
   singleton**: the methodology repo itself; exactly one project MAY hold
   it, per [Article 9](constitution.md#article-9--audits) — the tag by
   which rules denote that repo). Type and
