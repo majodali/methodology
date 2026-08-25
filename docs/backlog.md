@@ -203,15 +203,18 @@ entries update in the same commit as the work they describe
   (release ceremony). Migration notes: none for all four — migrations
   are pin bumps only.
 
-## Upcoming
-- [ ] **Migrate this repo to 1.3.0** — after the tag exists, a
-  migration PR bumps the [Classification](classification.md) pin and
-  the Binding block (migration notes: none). Family-member PRs follow
-  per repo: methodology-tools, project-orchestrator, and
+- [x] **Migrated to 1.3.0** — v1.3.0 tagged by the owner 2026-08-25;
+  pin, Binding block, and Portfolio row bumped (migration notes: none
+  for all four amendments, so the pin bump is the whole migration —
+  release process step 5). Family-declaration PRs go out per repo in
+  the same round: methodology-tools, project-orchestrator, and
   serverless-web-app-template each bump their pin and declare
-  `Family: methodology (member)` in one PR; in-real-life declares
-  lead with ops/org as members; the template additionally adopts
-  `type: template` by its own Classification decision.
+  `Family: methodology (member)`; in-real-life declares lead with
+  ops/org as members; the template's `type: template` adoption is
+  proposed in its own PR. Portfolio rows refresh as each merges
+  (M-001).
+
+## Upcoming
 - [ ] **Meta-template for template projects** — a process and/or
   template for building template projects, anticipated as the family
   of templates grows (owner-raised, 2026-08-24).
