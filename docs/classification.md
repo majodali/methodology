@@ -12,6 +12,9 @@ definitions and omission defaults:
 - **Type**: `methodology-corpus` (reserved singleton, Article 9)
 - **Target**: none/local
 - **Workflow**: none declared (⇒ `deployed` is false)
+- **Family**: methodology (lead) — members reference this repo's
+  corpus and change process; see the
+  [Portfolio register's Families section](registers/portfolio.md#families)
 
 ## Process records
 
