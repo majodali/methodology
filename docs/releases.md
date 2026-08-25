@@ -31,7 +31,7 @@ Target: v1.3.0 (minor — normative content).
 
 ### Project families
 
-- **PR**: this amendment's PR (link recorded at proposal time).
+- **PR**: [#19](https://github.com/majodali/methodology/pull/19).
 - **Suggested by**: the in-real-life family (app + ops + org — the D6
   split's siblings; the owner's family-wide sweep entry in
   in-real-life's Audit log) and the methodology's own trio
@@ -50,7 +50,7 @@ Target: v1.3.0 (minor — normative content).
 
 ### Template type and Q-001
 
-- **PR**: this amendment's PR (link recorded at proposal time).
+- **PR**: [#20](https://github.com/majodali/methodology/pull/20).
 - **Suggested by**: serverless-web-app-template — the practices'
   reference implementation, whose §5 gap analysis showed derived
   projects start non-compliant unless the template ships compliance;
