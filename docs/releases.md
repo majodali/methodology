@@ -68,7 +68,7 @@ Target: v1.3.0 (minor — normative content).
 
 ### Custom definitions by citation
 
-- **PR**: this amendment's PR (link recorded at proposal time).
+- **PR**: [#21](https://github.com/majodali/methodology/pull/21).
 - **Suggested by**: project-orchestrator's managed-project enrollment —
   managed projects adopt its *Plan register* and *Cost log* types by
   citing the orchestrator's process specification from their own
