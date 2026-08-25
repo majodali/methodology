@@ -31,7 +31,7 @@ Target: v1.3.0 (minor — normative content).
 
 ### Project families
 
-- **PR**: this amendment's PR (link recorded at proposal time).
+- **PR**: [#19](https://github.com/majodali/methodology/pull/19).
 - **Suggested by**: the in-real-life family (app + ops + org — the D6
   split's siblings; the owner's family-wide sweep entry in
   in-real-life's Audit log) and the methodology's own trio
