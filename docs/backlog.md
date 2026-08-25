@@ -161,11 +161,19 @@ entries update in the same commit as the work they describe
   links-move limitation) is the sole remaining transitional entry, so
   Article 11 stands until the census external-reference index lands.
 
+- [x] **Project families** (amendment; the merge is acceptance) —
+  multi-repo grouping designed and minted: the optional **Family**
+  Classification field (lead | member; omission default none; outside
+  the Article 4 decidability basis) and the *Project family* term —
+  family cohesion via the lead as documentation home, family-shared
+  constructs adopted by citation, per-member Classifications never
+  merged, census symmetry checking, Portfolio Families section. This
+  repo declares lead of the `methodology` family (members:
+  methodology-tools, project-orchestrator, serverless-web-app-template
+  — declarations land per repo). Ratified 2026-08-24; resolves the
+  multi-repo Backlog item.
+
 ## Upcoming
-- [ ] **Multi-repo projects** — how to group multiple repositories
-  into a single project (e.g. the in-real-life family: app + ops +
-  org), and what a family-level Classification or cross-references
-  look like (owner-raised, 2026-08-20, at the chunk-3 access ruling).
 - [ ] **Template projects' methodology burden** — a project template
   (serverless-web-app-template) carries a different burden than an
   ordinary project: what it ships must keep *derived* projects

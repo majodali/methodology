@@ -41,3 +41,19 @@ Census discrepancy, resolved at the chunk-1 gate: the
 [practices §1.1](../practices.md) do not correspond to observable
 repositories; the owner ruled to disregard them. The register records
 observed repositories only.
+
+## Families
+
+Grouping per the *Project family* definition (vocabulary). Family
+declarations live in member Classifications; this section caches them
+and the census reconciles for symmetry.
+
+- **methodology** — lead: methodology (declared in its
+  [Classification](../classification.md)); members: methodology-tools,
+  project-orchestrator, serverless-web-app-template — composition
+  ratified by the owner 2026-08-24; member declarations land in their
+  own Classifications. Future template and process projects join this
+  family by default (owner ruling, 2026-08-24).
+- **in-real-life** — lead: in-real-life; members: in-real-life-ops,
+  in-real-life-org — member declarations land in their own
+  Classifications.

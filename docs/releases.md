@@ -29,6 +29,25 @@ Target: v1.3.0 (minor — normative content).
   already bound movers; this records how it is discharged meanwhile.
 - **Migration note**: none.
 
+### Project families
+
+- **PR**: this amendment's PR (link recorded at proposal time).
+- **Suggested by**: the in-real-life family (app + ops + org — the D6
+  split's siblings; the owner's family-wide sweep entry in
+  in-real-life's Audit log) and the methodology's own trio
+  (methodology + methodology-tools + project-orchestrator);
+  owner-raised at the chunk-3 access ruling, design ratified
+  2026-08-24.
+- **Impact**: all projects — *accommodated, opt-in*: a new optional
+  Classification field (**Family**; omission default none) and the
+  *Project family* term. The field is outside the Article 4
+  decidability basis, so rule selection is untouched. methodology
+  (`methodology-corpus`) — declares family lead; the Portfolio
+  register gains a Families section; the census reconciles family
+  symmetry (within its existing declaration-accuracy remit).
+- **Migration note**: none — declaring a Family is optional;
+  standalone projects change nothing.
+
 ## v1.2.0 — 2026-08-21
 
 Minor — normative content. Both amendments accepted at interim

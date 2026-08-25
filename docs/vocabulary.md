@@ -68,6 +68,26 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   rule required, a deviation recorded against it, an audit finding or
   review comment citing it, or a tooling enforcement event. Being in
   play is not exercise.
+- **Project family** — a named group of projects forming one product,
+  estate, or discipline, declared through the Classification's
+  optional **Family** field: family name, role (`lead` | `member`),
+  and, for members, the lead's location. Exactly one member is the
+  **lead**. The lead is the family's documentation home — shared
+  registers, decisions, and construct definitions live with the lead
+  (or the member that publishes them), and other members reference
+  rather than duplicate them (*family cohesion*); changes to
+  family-shared constructs route through the defining member's change
+  process, and family-defined document types are adopted by citation
+  (Article 7). Family membership never merges Classifications: every
+  member declares, migrates, and is audited alone — S-levels and
+  tiers stay orthogonal. **The Family field is outside the Article 4
+  decidability basis**: no rule applicability condition may read it,
+  and admitting it would be a constitutional change (Article 4).
+  Promotion of any member SHOULD review the family (the
+  [D6](practices.md) anti-languish review, generalized). The census
+  reconciles family declarations for symmetry (a claimed membership
+  the lead's family does not reciprocate is drift), and the Portfolio
+  register groups by family.
 - **Portfolio register** — the Register in the methodology repo
   enumerating all majodali projects (name, location, classification
   summary). The summary is an **informative cache** — each project's own
@@ -153,7 +173,9 @@ in [constitution.md](constitution.md#draft-history-pre-10).
     references
     it): S-level (`S0`), type (`exploration`), target (`none/local`),
     Workflow definition (absent ⇒ `deployed` is false), Deviation
-    register and Custom definitions section (absent ⇒ empty), and — at
+    register and Custom definitions section (absent ⇒ empty),
+    **Family** (absent ⇒ none — the project stands alone; see *Project
+    family*), and — at
     C0 only, where the pin is optional — pinned version (absent ⇒ the
     **latest** version: C0 projects track the current `[C0+]` baseline).
     A tier-line-only Classification is therefore legal at C0; C1+ adds
