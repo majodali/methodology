@@ -12,7 +12,27 @@ carry: amendment title and PR link · suggested by (evidencing instance)
 
 ## Unreleased
 
-(empty — the next accepted amendment opens the next candidate)
+Target: v1.4.0 (minor — normative content).
+
+### Prose & presentation rules and the style guide
+
+- **PR**: [#25](https://github.com/majodali/methodology/pull/25).
+- **Suggested by**: the owner, 2026-08-30, after reading across the
+  portfolio; confirmed by the documentation review of the same date
+  (metrics and instances recorded in the P- rules' Motivated-by
+  fields).
+- **Impact**: methodology (`methodology-corpus`) — *accommodated*:
+  [style guide](style.md) created (Level 2), P- section opened
+  (P-001–P-006), rule bodies gain labeled fields, this repo's own
+  documents become migration targets. All projects, C0 included —
+  *accommodated*: the rules carry the C0 baseline via the widening
+  exception (they bind only documentation that exists, minting no
+  coverage duties — owner ruling, 2026-08-30), and bind new and
+  edited prose from adoption; existing documents migrate by editorial
+  passes on their own schedule. methodology-tools — style lint checks
+  queued as future tool work (warnings, not violations).
+- **Migration note**: none mandatory — no document requires immediate
+  rework; editorial passes are scheduled work, not migration duties.
 
 ## v1.3.0 — 2026-08-25
 

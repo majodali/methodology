@@ -229,7 +229,31 @@ entries update in the same commit as the work they describe
   known limitation) and the 12 implicit-C0 spot-check candidates stand.
   Census-side family-symmetry checking is queued in methodology-tools.
 
+- [x] **Prose & presentation rules** (amendment; the merge is
+  acceptance) — [style guide](style.md) created and the P- section
+  opened ([P-001](rules/prose.md)–P-006): reference-first structure,
+  one idea per sentence, bold as structure only, citations with
+  names, content-stating headers, registers as uniform rows; rule
+  bodies gain labeled Statement/Rationale/Exceptions fields. Base
+  guides adopted by citation: Diátaxis, Google developer style.
+  Suggested by the owner 2026-08-30; evidence from the same day's
+  documentation review across all eight governed checkouts.
+
 ## Upcoming
+- [ ] **Editorial passes for existing documents** — restyle per the
+  [style guide](style.md), highest-traffic reference documents first
+  (constitution, vocabulary, rules, classifications); each pass is an
+  editorial change, no per-document amendment.
+- [ ] **Style checks in `mtool audit`** — mechanical subset of the P-
+  rules as warnings: sentence-length statistics, unnamed identifiers
+  and section references, register row length. Tools-repo work.
+- [ ] **Formal project models (post-Allegro)** — owner horizon,
+  recorded 2026-08-30: requirements, specifications, reasoning
+  chains, assumptions, and dependencies as formal model nodes;
+  documentation read by query and transform. Bears on how much prose
+  remains and expands what audits can check. The style guide's
+  structure-first decision keeps documents liftable; no construction
+  ahead of need.
 - [ ] **Meta-template for template projects** — a process and/or
   template for building template projects, anticipated as the family
   of templates grows (owner-raised, 2026-08-24).
