@@ -297,13 +297,12 @@ entries update in the same commit as the work they describe
   log's sweep entry now names the raised delivery PRs (allegro #41,
   in-real-life #69).
 
+- [x] **Migrated to 1.4.0** — v1.4.0 tagged by the owner 2026-08-30;
+  pin, Binding block, and Portfolio row bumped (migration notes: none
+  mandatory, so the pin bump is the whole migration — release process
+  step 5). Family members migrate by their own PRs in the same round.
+
 ## Upcoming
-- [ ] **Migrate this repo to 1.4.0** — after the tag exists, a
-  migration PR bumps the [Classification](classification.md) pin and
-  the Binding block; the family members (methodology-tools,
-  project-orchestrator, serverless-web-app-template) and the
-  in-real-life family bump their pins by their own PRs (migration
-  notes: none mandatory).
 - [ ] **Editorial passes for existing documents** — restyle per the
   [style guide](style.md), highest-traffic reference documents first
   (constitution, vocabulary, rules, classifications); each pass is an

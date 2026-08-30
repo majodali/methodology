@@ -7,7 +7,9 @@ definitions and omission defaults:
 [vocabulary](vocabulary.md#artifact-types).
 
 - **C-tier**: C1
-- **Pinned methodology version**: 1.3.0 (compliance target)
+- **Pinned methodology version**: 1.4.0 (compliance target; migrated
+  from 1.3.0 on 2026-08-30 — v1.4.0 migration notes: none mandatory,
+  so the pin bump is the whole migration)
 - **S-level**: S0
 - **Type**: `methodology-corpus` (reserved singleton, Article 9)
 - **Target**: none/local
