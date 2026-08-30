@@ -153,10 +153,22 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   readable from the Backlog, and derived conditions like `deployed` are
   decidable from Classification + Backlog designations
   ([Article 4](constitution.md#article-4--applicability-then-precedence)). The
-  specific stage set is defined per project; the methodology standardizes
-  only that one exists, where it is declared, and how stages are
-  referenced. Stage names SHOULD NOT collide with vocabulary-defined
-  derived conditions.
+  specific stage set is defined per project; the methodology
+  standardizes the declaration's required minimum format (review
+  round 1 adjudication, 2026-08-30):
+
+  `stages: <a> → <b> → <c>; live = <stage>; backlog default: checked ⇒ <s1>, unchecked ⇒ <s2>`
+
+  — three parts: the ordered stage list, the designated live stage or
+  stages, and the Backlog default rule. A Backlog entry deviating from
+  the default carries an explicit `stage:` marker. The declaration MAY
+  dress the parts in prose, but each MUST be present and unambiguous:
+  `deployed` is derived by reading them. Declarations predating this
+  format already carry the three parts in substance and reword
+  editorially at their own pace; until reworded to the parseable
+  form, audits note the declaration as tool-unreadable (an info
+  finding, not a violation). Stage names SHOULD NOT collide with
+  vocabulary-defined derived conditions.
 
 ## Artifact types
 

@@ -259,6 +259,32 @@ entries update in the same commit as the work they describe
   [process records](classification.md). Owner-designed 2026-08-30
   under the no-calendar-time principle; resolves draft open item 3.
 
+- [x] **First review round held** — convened and closed 2026-08-30;
+  record: [plans/review-round-1.md](plans/review-round-1.md)
+  (status: closed). All nine items adjudicated, every proposal
+  accepted: eleven interim adjudications confirmed; three seed
+  tensions resolved by editorial Rationale notes (K-003, W-001,
+  M-003); Workflow-declaration-format amendment ratified (queued
+  below); semantic-audit thresholds parked to round 2 (bounded by the
+  parked-item floor); spot-checks clean (workbench, graph-analysis,
+  chloe-portfolio — the last previously unregistered, now a
+  Portfolio row per M-001); Risk R6 stays open; editorial passes
+  begin after the v1.4.0 cut. Semantic-audit and sweep entries in
+  the [Audit log](audits.md) seed the delta-ratio baseline. This
+  entry supersedes the plan (K-007).
+
+- [x] **Workflow declaration format** (amendment; the merge is
+  acceptance) — the vocabulary's *Workflow* term now defines the
+  required minimum declaration format: `stages: a → b → c;
+  live = <stage>; backlog default: checked ⇒ <s1>, unchecked ⇒ <s2>`,
+  with explicit `stage:` markers for deviating entries. Ratified at
+  review round 1 from the anatomy the three live declarations
+  (allegro, in-real-life, in-real-life-ops) converged on; `deployed`
+  becomes derivable from a parseable declaration; pre-format
+  declarations reword editorially at their own pace, carrying an
+  info finding meanwhile. Tool-side parsing is methodology-tools
+  work, queued there. Resolves draft open item 4.
+
 ## Upcoming
 - [ ] **Editorial passes for existing documents** — restyle per the
   [style guide](style.md), highest-traffic reference documents first
@@ -296,23 +322,3 @@ entries update in the same commit as the work they describe
   semantic audits exist; round 1 seeded the first baseline). The
   parked-item floor bounds this: adjudication within three minor
   releases of 2026-08-30.
-- [ ] **Workflow declaration format** — ratified at review round 1
-  (2026-08-30): standardize the anatomy the three live declarations
-  converged on — ordered stages, one designated live stage, a Backlog
-  default rule — as a v1.4.0 amendment; `deployed` becomes derivable
-  and the recurring audit info finding clears. Amendment PR to
-  follow; the three declaring projects reword editorially at their
-  own pace (draft open item 4).
-- [x] **First review round held** — convened and closed 2026-08-30;
-  record: [plans/review-round-1.md](plans/review-round-1.md)
-  (status: closed). All nine items adjudicated, every proposal
-  accepted: eleven interim adjudications confirmed; three seed
-  tensions resolved by editorial Rationale notes (K-003, W-001,
-  M-003); Workflow-declaration-format amendment ratified (queued
-  below); semantic-audit thresholds parked to round 2 (bounded by the
-  parked-item floor); spot-checks clean (workbench, graph-analysis,
-  chloe-portfolio — the last previously unregistered, now a
-  Portfolio row per M-001); Risk R6 stays open; editorial passes
-  begin after the v1.4.0 cut. Semantic-audit and sweep entries in
-  the [Audit log](audits.md) seed the delta-ratio baseline. This
-  entry supersedes the plan (K-007).
