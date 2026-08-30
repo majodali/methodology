@@ -4,6 +4,7 @@ The rule corpus lives in this directory, one file per section:
 [knowledge.md](knowledge.md) (`K-`),
 [working-agreement.md](working-agreement.md) (`W-`),
 [mirrors.md](mirrors.md) (`M-`),
+[prose.md](prose.md) (`P-`),
 [quality.md](quality.md) (`Q-`), and
 [security.md](security.md) (`S-`). The organization below was Part III of
 *The Methodology Constitution & Vocabulary — Draft v0.7*; the seed notes
@@ -42,6 +43,7 @@ section. Section scopes are expressed in applicability-tag notation
 | Meta (constitutional machinery: amendments, audits, custom types) | `M-` | `[C1+]` |
 | Knowledge & memory | `K-` | `[C1+]` |
 | Working agreement | `W-` | `[C1+]` ¹ |
+| Prose & presentation | `P-` | `[C1+]` |
 | Quality & verification | `Q-` | `[C1+]`, narrowed per rule |
 | Delivery & environments | `D-` | `[C1+] [deployable]` |
 | Security & privacy | `S-` | `[S0+]` ¹ ² |
@@ -66,7 +68,10 @@ Motivated-by: [in-real-life CI pipeline](…)
 Cites: —
 ```
 
-Statement text follows; rationale links optional. Applicability tags use
+The body follows with labeled fields — **Statement** (the norm),
+**Rationale** (why, optional), **Exceptions** (bounded carve-outs, if
+any) — per the [style guide](../style.md). Rules predating the labels
+migrate editorially. Applicability tags use
 Classification fields and vocabulary-defined derived conditions only, so
 applicability is mechanically decidable from the Article 4 basis — the
 Classification together with the designations it references.
