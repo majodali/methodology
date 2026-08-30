@@ -50,9 +50,11 @@ section. Section scopes are expressed in applicability-tag notation
 | Operations | `O-` | `[C1+] [deployed]`, narrowed per rule |
 
 ¹ Individual rules carry the C0 baseline via the widening exception:
-test-modification and README in `W-`; secret hygiene in `S-`; all of
-`P-` (style binds existing documentation only, so tier does not change
-the burden — owner ruling, 2026-08-30).
+test-modification, README, and reports (W-008) in `W-`; secret hygiene
+in `S-`; supersession (K-010, K-011) in `K-`; all of `P-`. The shared
+ruling (owner, 2026-08-30): these rules bind conduct and existing
+content only, minting no coverage duties, so tier does not change the
+burden.
 ² The `[S0+]` floor is deliberate: secret hygiene matters most in public
 code.
 

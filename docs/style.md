@@ -98,6 +98,57 @@ This keeps documents ready for the owner's formal project-model
 horizon (recorded 2026-08-30 in the [Backlog](backlog.md)), where
 reading and referencing become query and transform operations.
 
+### Reports and summaries
+
+A chat report is governed prose. The P- rules apply to it as its
+purpose admits — named citations above all: a report about a document
+never cites that document by bare section number.
+
+A report that delivers a written artifact has three duties
+(W-008 — reports map their deliverables):
+
+1. **Restatement**: name the parts of the artifact that encode
+   decisions already made in the conversation, and which decisions.
+2. **Novelty**: name the parts that are new, each with a named pointer
+   into the artifact and one sentence on what to review there.
+3. **Asks**: end with an explicit list of the decisions and actions
+   requested of the reader, or state that there are none.
+
+Any substantive report follows the same structure where it fits. Do
+not add empty sections to satisfy the shape (K-005's no-empty-ceremony
+principle applies to reports too).
+
+### Supersession markers
+
+When a decision supersedes content that cannot be reworked in the same
+deliverable, each known-stale location gets a marker, placed where the
+reader reads:
+
+> Superseded by D-041 (single-seam design) on 2026-08-30; this section
+> describes the pre-decision state and awaits rework.
+
+The marker is a blockquote beginning "Superseded by", citing the
+decision by identifier and name (P-004 — citations carry names), and
+saying what the reader should do with the stale text. The fixed prefix
+keeps markers greppable for tooling and editorial passes. A register
+kept as history is exempt entry-by-entry; its header says so once.
+
+### The information lifecycle
+
+Information moves through phases: discussed (chat) → decided (a
+ruling or register entry) → encoded (documents, code) → summarized
+(reports, register rows) → superseded (marked) → historical (labeled).
+Each transition has an owner rule: W-003 (documentation moves in the
+same commit) for decided → encoded, W-008 (reports map their
+deliverables) for encoded → summarized, K-010 and K-011 (supersession)
+for encoded → superseded, the audit and release processes for their
+own registers. Bounds on lifecycle duties are expressed in a project's
+internal cycles and milestones — review rounds, releases, gates —
+never in calendar time (owner principle, 2026-08-30). The lifecycle is
+named here so rules share language; it is not a framework. Its full
+formalization belongs to the formal project-model horizon recorded in
+the [Backlog](backlog.md).
+
 ## The editing pass
 
 A change that adds or rewrites more than a few sentences of prose gets

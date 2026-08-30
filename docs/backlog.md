@@ -239,6 +239,17 @@ entries update in the same commit as the work they describe
   Suggested by the owner 2026-08-30; evidence from the same day's
   documentation review across all eight governed checkouts.
 
+- [x] **Reports and supersession rules** (amendment; the merge is
+  acceptance) — W-008 (reports map their deliverables): delivery
+  reports separate restatement from novelty and close with explicit
+  asks; K-010 (superseded content is never silently readable) and
+  K-011 (found contradictions are marked, not routed around):
+  decisions propagate in the same deliverable or leave greppable
+  supersession markers, bounded by review rounds. The
+  [style guide](style.md) gains the report contract, the marker
+  format, and the named information-lifecycle concept.
+  Owner-designed 2026-08-30, same conversation as the P- rules.
+
 ## Upcoming
 - [ ] **Editorial passes for existing documents** — restyle per the
   [style guide](style.md), highest-traffic reference documents first
@@ -265,7 +276,12 @@ entries update in the same commit as the work they describe
   tools chunk 3 by owner ruling, 2026-08-20.
 - [ ] **Review-round cadence** — confirm the initial quarterly
   calibration recorded in [classification.md](classification.md), or set
-  a different bounded interval (draft open item 3; Article 8).
+  a different bounded interval (draft open item 3; Article 8). Owner
+  principle recorded 2026-08-30: bounds are expressed in a project's
+  internal cycles and milestones, never calendar time — the
+  confirmation should replace "quarterly" with a cycle-based bound,
+  which touches Article 8's "at least quarterly" floor
+  (constitutional; needs an amendment if the floor changes).
 - [ ] ~~**Form-audit delta scope**~~ **calibration resolved**
   (amendment; this entry merges with its PR): per-file content checks
   delta-scoped, repo-wide invariants full-tree on every audit —

@@ -89,3 +89,22 @@ explored — the one obligation exploration carries besides
 [W-002](#w-002--existing-tests-are-signals-not-obstacles) and secret
 hygiene. At C1+ it orients: what the project is, for whom, and where the
 documentation lives.
+
+### W-008 — Reports map their deliverables
+Applies: [C0+]
+Keywords: MUST, SHOULD
+Motivated-by: owner-raised 2026-08-30 — delivery summaries citing the delivered document by naked section number, and asks buried in prose so the owner parses both summary and document to learn what is requested
+Cites: [style guide](../style.md) (Reports and summaries); [P-004](prose.md#p-004--citations-carry-names)
+
+**Statement**: A chat report that delivers a written artifact MUST
+separate restatement from novelty and close with the asks: name the
+parts encoding decisions already made in the conversation, name the
+new parts with a pointer into the artifact and what to review there,
+and end with an explicit list of decisions and actions requested of
+the reader — or state that there are none. Any substantive report
+SHOULD follow the same structure where it fits, with no empty
+ceremony. The P- rules bind reports as their purpose admits.
+
+**Rationale**: A summary that requires reading its document defeats
+its purpose. The report is the reader's index into the artifact; the
+asks are why the report exists.
