@@ -36,7 +36,7 @@ Target: v1.4.0 (minor — normative content).
 
 ### Reports and supersession (information lifecycle)
 
-- **PR**: this amendment's PR (link recorded at proposal time).
+- **PR**: [#26](https://github.com/majodali/methodology/pull/26).
 - **Suggested by**: the owner, 2026-08-30 — delivery summaries
   unreadable without their documents, and superseded content
   persisting unmarked across sessions, re-deriving pre-decision
