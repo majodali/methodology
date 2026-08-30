@@ -16,7 +16,7 @@ version).
 
 | Project | Location | Classification summary | Notes |
 |---|---|---|---|
-| methodology | github.com/majodali/methodology | C1 / S0 / methodology-corpus / none-local — pinned 1.3.0 | this repo; [Classification](../classification.md) |
+| methodology | github.com/majodali/methodology | C1 / S0 / methodology-corpus / none-local — pinned 1.4.0 | this repo; [Classification](../classification.md) |
 | methodology-tools | github.com/majodali/methodology-tools | C1 / S0 / component/library / package registry — pinned 1.3.0 | [Classification](https://github.com/majodali/methodology-tools/blob/main/docs/classification.md); `methodology` family member (declared 2026-08-25); founding plan `methodology-tools-v1` closed — all five chunks delivered |
 | allegro | github.com/majodali/allegro | C2 / S0 / language-tool platform / static site — pinned 1.2.0 | Classification declared 2026-08 (Workflow declared); summary refreshed from the observed declaration, 2026-08-25 |
 | in-real-life | github.com/majodali/in-real-life | C2 / S2 / web-app / serverless-aws — pinned 1.3.0 | Classification declared 2026-08 (Workflow declared; audit-log register adopted); `in-real-life` family lead (declared 2026-08-25); summary refreshed 2026-08-25 |
