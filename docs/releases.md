@@ -57,6 +57,24 @@ Target: v1.4.0 (minor — normative content).
 - **Migration note**: none — the rules bind conduct from adoption;
   no existing content requires rework.
 
+### Review-round cadence in release cycles
+
+- **PR**: this amendment's PR (link recorded at proposal time).
+- **Suggested by**: the owner, 2026-08-30 — the Article 8 quarterly
+  floor contradicted the no-calendar-time principle the lifecycle
+  amendment recorded; design (two combined floors) ratified in the
+  same conversation.
+- **Impact**: constitutional (the Article 8 floor sentence, enacted
+  by the owner's merge per Article 2). methodology
+  (`methodology-corpus`) — *accommodated*: the process records set
+  N = 3 minor releases; the first review round becomes due under the
+  new floors (three releases shipped, no round held) and its Backlog
+  item says so. All other projects — *not affected*: the floors bind
+  the methodology's review machinery, not project duties; K-010's
+  (superseded content is never silently readable) review-round bound
+  now inherits a cycle-based clock.
+- **Migration note**: none.
+
 ## v1.3.0 — 2026-08-25
 
 Minor — normative content. All four amendments accepted at interim

@@ -197,9 +197,16 @@ Article 8's two project-level forms.
   at any time for named proposals; every scheduled review round
   re-examines the interim decisions taken since the last round.
   Review rounds occur on a cadence set by the human owner and recorded in
-  the methodology repo; the interval MUST be bounded (initial calibration:
-  at least quarterly) so that review-horizon flagging and adjudication
-  timing are decidable. Reviewers at each round check projects against the
+  the methodology repo. The cadence MUST be bounded in the corpus's own
+  release cycle, by two floors: consecutive rounds MUST be at most N
+  minor releases apart, and an item parked for review MUST be
+  adjudicated within N minor releases of its parking (N: a single
+  calibration recorded in the methodology repo). Both floors are
+  decidable from the Release register, so review-horizon flagging and
+  adjudication timing stay decidable. A corpus with no new releases and
+  an empty review queue owes no round; activity re-arms the floors.
+  Cadence bounds are expressed in the corpus's own cycles, never in
+  calendar time (owner ruling, 2026-08-30). Reviewers at each round check projects against the
   current standard *and* all open proposals, so each proposal accumulates
   evidence before adjudication. Acceptance is the human owner's decision,
   informed by an impact assessment across projects. The review MUST first
