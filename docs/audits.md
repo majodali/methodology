@@ -46,4 +46,4 @@ transitions; portfolio sweeps are recorded here with scope
   except allegro (Article 8 warning: 1.2.0 lag) and the known
   Workflow-format info on three projects; spot-checks clean at C0;
   chloe-portfolio registered on first observation (M-001) —
-  deliveries pending: allegro, in-real-life
+  deliveries raised: allegro PR #41, in-real-life PR #69 (2026-08-30)
