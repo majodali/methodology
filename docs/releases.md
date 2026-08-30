@@ -77,7 +77,7 @@ Target: v1.4.0 (minor — normative content).
 
 ### Workflow declaration format
 
-- **PR**: this amendment's PR (link recorded at proposal time).
+- **PR**: [#30](https://github.com/majodali/methodology/pull/30).
 - **Suggested by**: review round 1, item 5
   ([plans/review-round-1.md](plans/review-round-1.md)) — three live
   declarations (allegro, in-real-life, in-real-life-ops) converged on
