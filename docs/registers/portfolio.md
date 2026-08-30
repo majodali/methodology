@@ -36,6 +36,7 @@ version).
 | simple-modeling | github.com/majodali/simple-modeling | implicit C0 | |
 | parser-generator | github.com/majodali/parser-generator | implicit C0 | |
 | software-project-api | github.com/majodali/software-project-api | implicit C0 | last pushed 2024 |
+| chloe-portfolio | github.com/majodali/chloe-portfolio (private) | implicit C0 | one-page portfolio site; registered at review round 1 spot-check, 2026-08-30 (M-001 — previously unobserved, the census enumeration gap) |
 
 Census discrepancy, resolved at the chunk-1 gate: the
 `home-infrastructure`, `comms-hub`, and `minecraft-mcp` examples in

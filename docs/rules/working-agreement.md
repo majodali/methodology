@@ -17,6 +17,11 @@ For larger arcs, agents MUST plan first: write the plan document
 let the human set chunk boundaries, obtain explicit go-ahead before the
 first chunk, and gate every chunk on summary and human review.
 
+**Rationale**: where "larger arcs" begins is deliberately undefined —
+gating is owner judgment, not a measurable threshold; a definition
+waits for a real dispute to evidence it (review round 1 adjudication,
+2026-08-30).
+
 ### W-002 — Existing tests are signals, not obstacles
 Applies: [C0+]
 Keywords: MAY, MUST NOT

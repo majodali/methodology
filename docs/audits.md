@@ -34,3 +34,16 @@ transitions; portfolio sweeps are recorded here with scope
   baseline-establishing deliveries for the clean repos without
   same-kind entries (methodology-tools; template/ops/org pending
   baseline check) deferred to the mechanized sweep (R5, best-effort)
+- 2026-08-30 — semantic — full tree — audited f8dfa03 against
+  methodology 1.3.0 (v1.4.0 candidate) — pass — review round 1
+  ([plans/review-round-1.md](plans/review-round-1.md)): eleven
+  interim adjudications confirmed, three seed tensions resolved
+  editorially, Workflow-format amendment ratified; first semantic
+  baseline for the Article 9 delta-ratio trigger
+- 2026-08-30 — form — portfolio sweep (eight governed checkouts +
+  three implicit-C0 spot-checks: workbench, graph-analysis,
+  chloe-portfolio) — audited against methodology 1.3.0 — clean
+  except allegro (Article 8 warning: 1.2.0 lag) and the known
+  Workflow-format info on three projects; spot-checks clean at C0;
+  chloe-portfolio registered on first observation (M-001) —
+  deliveries pending: allegro, in-real-life

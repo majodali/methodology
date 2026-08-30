@@ -44,6 +44,10 @@ carry current stage designations (Article 4 declaration accuracy). The
 Backlog is the referent for "what is done and what is next"; no other
 document may claim that role.
 
+**Rationale**: the stage-designation clause deliberately mirrors
+Article 4's declaration-accuracy duty — a mirror, not a duplication
+(review round 1 adjudication, 2026-08-30).
+
 ### K-004 — Decisions live in a numbered register
 Applies: [C2+]
 Keywords: MUST
