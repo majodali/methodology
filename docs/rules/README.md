@@ -43,14 +43,16 @@ section. Section scopes are expressed in applicability-tag notation
 | Meta (constitutional machinery: amendments, audits, custom types) | `M-` | `[C1+]` |
 | Knowledge & memory | `K-` | `[C1+]` |
 | Working agreement | `W-` | `[C1+]` ¹ |
-| Prose & presentation | `P-` | `[C1+]` |
+| Prose & presentation | `P-` | `[C1+]` ¹ |
 | Quality & verification | `Q-` | `[C1+]`, narrowed per rule |
 | Delivery & environments | `D-` | `[C1+] [deployable]` |
 | Security & privacy | `S-` | `[S0+]` ¹ ² |
 | Operations | `O-` | `[C1+] [deployed]`, narrowed per rule |
 
 ¹ Individual rules carry the C0 baseline via the widening exception:
-test-modification and README in `W-`; secret hygiene in `S-`.
+test-modification and README in `W-`; secret hygiene in `S-`; all of
+`P-` (style binds existing documentation only, so tier does not change
+the burden — owner ruling, 2026-08-30).
 ² The `[S0+]` floor is deliberate: secret hygiene matters most in public
 code.
 

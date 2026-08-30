@@ -24,11 +24,13 @@ Target: v1.4.0 (minor — normative content).
 - **Impact**: methodology (`methodology-corpus`) — *accommodated*:
   [style guide](style.md) created (Level 2), P- section opened
   (P-001–P-006), rule bodies gain labeled fields, this repo's own
-  documents become migration targets. All C1+ projects —
-  *accommodated*: the P- rules bind new and edited prose from
-  adoption; existing documents migrate by editorial passes on their
-  own schedule. methodology-tools — style lint checks queued as
-  future tool work (warnings, not violations).
+  documents become migration targets. All projects, C0 included —
+  *accommodated*: the rules carry the C0 baseline via the widening
+  exception (they bind only documentation that exists, minting no
+  coverage duties — owner ruling, 2026-08-30), and bind new and
+  edited prose from adoption; existing documents migrate by editorial
+  passes on their own schedule. methodology-tools — style lint checks
+  queued as future tool work (warnings, not violations).
 - **Migration note**: none mandatory — no document requires immediate
   rework; editorial passes are scheduled work, not migration duties.
 
