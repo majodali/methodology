@@ -295,8 +295,10 @@ entries update in the same commit as the work they describe
 - [ ] **Workflow declaration format** — minimum required structure for
   the stage set and *live* designation in the Classification, and how
   Backlog entries reference stages (draft open item 4).
-- [ ] **First review round** — adjudicate the seed's
-  [known tensions](rules/README.md#extraction-notes-for-the-first-review-round)
-  and the open calibrations above. Due under the Article 8 floors:
-  three minor releases (v1.1.0–v1.3.0) have shipped with no round
-  held, so the round is owed at or before the v1.4.0 cut.
+- [ ] **First review round** — convened 2026-08-30: the packet is
+  [plans/review-round-1.md](plans/review-round-1.md) (status:
+  active) — nine agenda items with evidence and proposals, assembled
+  from the semantic-audit packet, a portfolio sweep, the census, and
+  delivery verdicts. Owed under the Article 8 floors (three minor
+  releases, no round held); closes when every item's Adjudication is
+  recorded, before the v1.4.0 cut.
