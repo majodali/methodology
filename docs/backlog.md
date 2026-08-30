@@ -285,7 +285,25 @@ entries update in the same commit as the work they describe
   info finding meanwhile. Tool-side parsing is methodology-tools
   work, queued there. Resolves draft open item 4.
 
+- [x] **v1.4.0 cut** — release PR retitled Unreleased to
+  [*v1.4.0 — 2026-08-30*](releases.md): prose & presentation rules
+  (PR #25), reports and supersession (PR #26), review-round cadence
+  in release cycles (PR #27, constitutional), and the Workflow
+  declaration format (PR #30); review round 1 held before the cut per
+  the new floors. The owner creates the annotated tag `v1.4.0` after
+  merging (release ceremony). Migration notes: none mandatory for all
+  four — migrations are pin bumps; editorial passes and Workflow
+  rewording are scheduled work on each project's own pace. The Audit
+  log's sweep entry now names the raised delivery PRs (allegro #41,
+  in-real-life #69).
+
 ## Upcoming
+- [ ] **Migrate this repo to 1.4.0** — after the tag exists, a
+  migration PR bumps the [Classification](classification.md) pin and
+  the Binding block; the family members (methodology-tools,
+  project-orchestrator, serverless-web-app-template) and the
+  in-real-life family bump their pins by their own PRs (migration
+  notes: none mandatory).
 - [ ] **Editorial passes for existing documents** — restyle per the
   [style guide](style.md), highest-traffic reference documents first
   (constitution, vocabulary, rules, classifications); each pass is an

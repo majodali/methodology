@@ -12,7 +12,14 @@ carry: amendment title and PR link · suggested by (evidencing instance)
 
 ## Unreleased
 
-Target: v1.4.0 (minor — normative content).
+(empty — the next accepted amendment opens the next candidate)
+
+## v1.4.0 — 2026-08-30
+
+Minor — normative content, one constitutional change (the Article 8
+cadence floors, PR #27). All four amendments accepted at interim
+adjudications 2026-08-30; review round 1 was held before this cut,
+satisfying the cycle-based floors this release introduces.
 
 ### Prose & presentation rules and the style guide
 
