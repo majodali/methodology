@@ -34,6 +34,29 @@ Target: v1.4.0 (minor — normative content).
 - **Migration note**: none mandatory — no document requires immediate
   rework; editorial passes are scheduled work, not migration duties.
 
+### Reports and supersession (information lifecycle)
+
+- **PR**: [#26](https://github.com/majodali/methodology/pull/26).
+- **Suggested by**: the owner, 2026-08-30 — delivery summaries
+  unreadable without their documents, and superseded content
+  persisting unmarked across sessions, re-deriving pre-decision
+  states. Design ratified in the same conversation.
+- **Impact**: all projects, C0 included — *accommodated*: three
+  conduct rules via the widening exception (no coverage duties).
+  W-008 (reports map their deliverables) binds session reports;
+  K-010 (superseded content is never silently readable) and K-011
+  (found contradictions are marked, not routed around) bind decision
+  propagation, bounded by review rounds, with the marker format and
+  the named information-lifecycle concept in the
+  [style guide](style.md). methodology (`methodology-corpus`) —
+  *accommodated*: style guide gains three sections; the review-round
+  cadence Backlog item gains the owner's no-calendar-time principle.
+  methodology-tools — marker greppability queued with the style
+  checks. project-orchestrator — role contracts can inherit W-008
+  verbatim.
+- **Migration note**: none — the rules bind conduct from adoption;
+  no existing content requires rework.
+
 ## v1.3.0 — 2026-08-25
 
 Minor — normative content. All four amendments accepted at interim
