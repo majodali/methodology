@@ -59,7 +59,7 @@ Target: v1.4.0 (minor — normative content).
 
 ### Review-round cadence in release cycles
 
-- **PR**: this amendment's PR (link recorded at proposal time).
+- **PR**: [#27](https://github.com/majodali/methodology/pull/27).
 - **Suggested by**: the owner, 2026-08-30 — the Article 8 quarterly
   floor contradicted the no-calendar-time principle the lifecycle
   amendment recorded; design (two combined floors) ratified in the
