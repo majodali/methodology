@@ -16,7 +16,7 @@ Target: v1.4.0 (minor — normative content).
 
 ### Prose & presentation rules and the style guide
 
-- **PR**: this amendment's PR (link recorded at proposal time).
+- **PR**: [#25](https://github.com/majodali/methodology/pull/25).
 - **Suggested by**: the owner, 2026-08-30, after reading across the
   portfolio; confirmed by the documentation review of the same date
   (metrics and instances recorded in the P- rules' Motivated-by
