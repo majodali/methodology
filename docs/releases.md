@@ -75,6 +75,28 @@ Target: v1.4.0 (minor — normative content).
   now inherits a cycle-based clock.
 - **Migration note**: none.
 
+### Workflow declaration format
+
+- **PR**: [#30](https://github.com/majodali/methodology/pull/30).
+- **Suggested by**: review round 1, item 5
+  ([plans/review-round-1.md](plans/review-round-1.md)) — three live
+  declarations (allegro, in-real-life, in-real-life-ops) converged on
+  the same anatomy while the format stayed undefined, leaving
+  `deployed` underivable and a recurring audit info finding; ratified
+  2026-08-30. Resolves draft open item 4.
+- **Impact**: all Workflow-declaring projects — *accommodated*: the
+  vocabulary's *Workflow* term now requires three parts (ordered
+  stages, designated live stage, Backlog default rule) in a parseable
+  canonical form; the three existing declarations comply in substance
+  and reword editorially at their own pace, carrying an info finding
+  until then. All other projects — *not affected* (no Workflow, no
+  duty). methodology-tools — parser work queued in its backlog:
+  derive `deployed` from conforming declarations and clear the info
+  finding.
+- **Migration note**: none mandatory — rewording an existing
+  declaration to the canonical form is an editorial change, on the
+  project's own schedule.
+
 ## v1.3.0 — 2026-08-25
 
 Minor — normative content. All four amendments accepted at interim
