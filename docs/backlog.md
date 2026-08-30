@@ -250,6 +250,15 @@ entries update in the same commit as the work they describe
   format, and the named information-lifecycle concept.
   Owner-designed 2026-08-30, same conversation as the P- rules.
 
+- [x] **Review-round cadence resolved** (amendment; the merge is
+  acceptance) — Article 8's calendar floor ("at least quarterly")
+  replaced by two cycle-based floors: consecutive rounds at most N
+  minor releases apart, and parked items adjudicated within N minor
+  releases of parking; a dormant corpus with an empty review queue
+  owes no round. N = 3 recorded in the
+  [process records](classification.md). Owner-designed 2026-08-30
+  under the no-calendar-time principle; resolves draft open item 3.
+
 ## Upcoming
 - [ ] **Editorial passes for existing documents** — restyle per the
   [style guide](style.md), highest-traffic reference documents first
@@ -274,14 +283,6 @@ entries update in the same commit as the work they describe
   analysis's delivery findings (no CI, no PR template, …); each rule
   needs its live motivating instance (Article 6). Deferred out of
   tools chunk 3 by owner ruling, 2026-08-20.
-- [ ] **Review-round cadence** — confirm the initial quarterly
-  calibration recorded in [classification.md](classification.md), or set
-  a different bounded interval (draft open item 3; Article 8). Owner
-  principle recorded 2026-08-30: bounds are expressed in a project's
-  internal cycles and milestones, never calendar time — the
-  confirmation should replace "quarterly" with a cycle-based bound,
-  which touches Article 8's "at least quarterly" floor
-  (constitutional; needs an amendment if the floor changes).
 - [ ] ~~**Form-audit delta scope**~~ **calibration resolved**
   (amendment; this entry merges with its PR): per-file content checks
   delta-scoped, repo-wide invariants full-tree on every audit —
@@ -296,4 +297,6 @@ entries update in the same commit as the work they describe
   Backlog entries reference stages (draft open item 4).
 - [ ] **First review round** — adjudicate the seed's
   [known tensions](rules/README.md#extraction-notes-for-the-first-review-round)
-  and the open calibrations above.
+  and the open calibrations above. Due under the Article 8 floors:
+  three minor releases (v1.1.0–v1.3.0) have shipped with no round
+  held, so the round is owed at or before the v1.4.0 cut.

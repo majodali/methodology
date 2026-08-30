@@ -18,10 +18,13 @@ definitions and omission defaults:
 
 ## Process records
 
-- **Review-round cadence**: quarterly — the initial calibration
-  ([Article 8](constitution.md#article-8--amendments-versions-and-migration)
-  requires a bounded interval, at least quarterly, recorded in this
-  repo). Confirmation is tracked in the [Backlog](backlog.md).
+- **Review-round cadence**: N = 3 minor releases — the calibration for
+  [Article 8](constitution.md#article-8--amendments-versions-and-migration)'s
+  two cycle-based floors (rounds at most N minor releases apart; parked
+  items adjudicated within N minor releases of parking). Owner-set
+  2026-08-30, replacing the initial quarterly calibration. Under these
+  floors the first review round is already due: three minor releases
+  (v1.1.0–v1.3.0) have shipped with no round held.
 - **Release ceremony** (owner ruling, 2026-08-18): version tags are
   created by the human owner, on `main`, after PR review — never
   pre-merge on a branch, and never by an agent. `main` accepts pushes
