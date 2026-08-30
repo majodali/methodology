@@ -292,13 +292,27 @@ entries update in the same commit as the work they describe
 - [ ] **Semantic-audit auto-trigger calibration** — delta-ratio
   thresholds (initial: 50% at C2, 25% at C3) and whether delta-ratio is
   the right trigger shape at all (draft open item 2; Article 9).
-- [ ] **Workflow declaration format** — minimum required structure for
-  the stage set and *live* designation in the Classification, and how
-  Backlog entries reference stages (draft open item 4).
-- [ ] **First review round** — convened 2026-08-30: the packet is
-  [plans/review-round-1.md](plans/review-round-1.md) (status:
-  active) — nine agenda items with evidence and proposals, assembled
-  from the semantic-audit packet, a portfolio sweep, the census, and
-  delivery verdicts. Owed under the Article 8 floors (three minor
-  releases, no round held); closes when every item's Adjudication is
-  recorded, before the v1.4.0 cut.
+  Parked to review round 2 at round 1 (unfalsifiable until first
+  semantic audits exist; round 1 seeded the first baseline). The
+  parked-item floor bounds this: adjudication within three minor
+  releases of 2026-08-30.
+- [ ] **Workflow declaration format** — ratified at review round 1
+  (2026-08-30): standardize the anatomy the three live declarations
+  converged on — ordered stages, one designated live stage, a Backlog
+  default rule — as a v1.4.0 amendment; `deployed` becomes derivable
+  and the recurring audit info finding clears. Amendment PR to
+  follow; the three declaring projects reword editorially at their
+  own pace (draft open item 4).
+- [x] **First review round held** — convened and closed 2026-08-30;
+  record: [plans/review-round-1.md](plans/review-round-1.md)
+  (status: closed). All nine items adjudicated, every proposal
+  accepted: eleven interim adjudications confirmed; three seed
+  tensions resolved by editorial Rationale notes (K-003, W-001,
+  M-003); Workflow-declaration-format amendment ratified (queued
+  below); semantic-audit thresholds parked to round 2 (bounded by the
+  parked-item floor); spot-checks clean (workbench, graph-analysis,
+  chloe-portfolio — the last previously unregistered, now a
+  Portfolio row per M-001); Risk R6 stays open; editorial passes
+  begin after the v1.4.0 cut. Semantic-audit and sweep entries in
+  the [Audit log](audits.md) seed the delta-ratio baseline. This
+  entry supersedes the plan (K-007).

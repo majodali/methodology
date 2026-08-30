@@ -1,6 +1,6 @@
 # Review round 1 — packet and record
 
-Status: active
+Status: closed
 
 Outcome under development: the first scheduled review round
 ([Article 8 (amendments)](../constitution.md#article-8--amendments-versions-and-migration)),
@@ -57,7 +57,7 @@ duty here is confirmation, not re-litigation.
 portfolio-wide, families declared, the template classified, the P-
 and lifecycle rules already binding this packet's own prose.
 
-**Adjudication**: _pending owner_.
+**Adjudication**: accepted as proposed (owner, 2026-08-30).
 
 ### 2 — Seed tension: K-003's stage-designation clause (mirror or duplication?)
 
@@ -73,7 +73,7 @@ the overlap has cost nothing yet.
 sentence to K-003's Rationale naming Article 4 as the source it
 mirrors. Editorial change.
 
-**Adjudication**: _pending owner_.
+**Adjudication**: accepted as proposed (owner, 2026-08-30).
 
 ### 3 — Seed tension: W-001's "larger arcs" threshold is undefined
 
@@ -89,7 +89,7 @@ threshold is deliberate owner judgment, not a gap. Editorial change.
 Mint a definition only when a real dispute evidences the need
 (Article 6 — rules need motivating instances).
 
-**Adjudication**: _pending owner_.
+**Adjudication**: accepted as proposed (owner, 2026-08-30).
 
 ### 4 — Seed tension: M-003's subject is the process, not a repo
 
@@ -106,7 +106,7 @@ M-003's Rationale. Editorial change. Revisit only if a second
 process-scoped rule appears — or when the formal project model
 (Backlog) gives processes first-class identity.
 
-**Adjudication**: _pending owner_.
+**Adjudication**: accepted as proposed (owner, 2026-08-30).
 
 ### 5 — Calibration: Workflow declaration format (draft open item 4)
 
@@ -128,7 +128,7 @@ comply in substance and reword at their own pace (editorial in each).
 the declaration". This is the round's one substantive amendment
 proposal.
 
-**Adjudication**: _pending owner_.
+**Adjudication**: accepted as proposed (owner, 2026-08-30).
 
 ### 6 — Calibration: semantic-audit auto-trigger (draft open item 2)
 
@@ -145,7 +145,7 @@ parked-item floor now bounds this: adjudication within three minor
 releases). Seed the baseline by recording this round's semantic audit
 of the methodology repo in its Audit log.
 
-**Adjudication**: _pending owner_.
+**Adjudication**: accepted as proposed (owner, 2026-08-30).
 
 ### 7 — Spot-checks: twelve implicit-C0 repositories
 
@@ -162,7 +162,18 @@ session's repo scope for baseline checks; the remaining nine stay
 registered as candidates. Archived `open-context-v1` is exempt from
 sampling (dormant, historical).
 
-**Adjudication**: _pending owner (sample choice, or defer)_.
+**Adjudication**: sample accepted with the owner's own pick
+(2026-08-30): workbench, graph-analysis, and chloe-portfolio —
+the last not in the register at all.
+
+**Result**: all three audit clean at implicit C0 (13 rules in play
+each; READMEs orient per W-007 (every project has a README); S-001
+secret scans clean). chloe-portfolio (private, pushed 2026-08-24)
+was an unregistered repository — an M-001 (Portfolio register is
+complete) gap the enumeration-unavailable census could not see; its
+row is registered with this round's record. Nine candidates remain
+registered; the enumeration gap stays open until the census regains
+an observed-repository source.
 
 ### 8 — Transitional risk R6 and Article 11
 
@@ -176,7 +187,7 @@ exercised.
 
 **Proposal**: keep R6 open; Article 11 stands. No action.
 
-**Adjudication**: _pending owner_.
+**Adjudication**: accepted as proposed (owner, 2026-08-30).
 
 ### 9 — Editorial-pass schedule (P- rules migration)
 
@@ -189,7 +200,20 @@ classifications on their own schedules. One pass per PR, each an
 editorial change. Begin after the v1.4.0 cut so passes restyle
 stable text.
 
-**Adjudication**: _pending owner_.
+**Adjudication**: accepted as proposed (owner, 2026-08-30).
+
+## Close-out (2026-08-30)
+
+All nine items adjudicated; the owner accepted every proposal. Work
+landed with this record: the three editorial Rationale notes (items
+2–4, in K-003, W-001, M-003), the chloe-portfolio registration
+(item 7), and the round's semantic-audit and sweep entries in the
+[Audit log](../audits.md) (item 6's baseline seeded). Ratified
+follow-ups queued in the [Backlog](../backlog.md): the
+Workflow-declaration-format amendment (item 5), the audit deliveries
+(allegro, in-real-life), the editorial-pass schedule (item 9,
+after the v1.4.0 cut), and the semantic-audit trigger parked to
+round 2 (item 6, bounded by the parked-item floor).
 
 ## Round follow-ups (armed by this packet, regardless of adjudications)
 

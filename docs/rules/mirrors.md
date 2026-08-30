@@ -42,6 +42,12 @@ Every amendment PR MUST receive the traceability-link review of Article
 evidencing-instance link and verify the change against the current
 standard and all open proposals.
 
+**Rationale**: the rule's true subject is the amendment process, not a
+repository; the `[type: methodology-corpus]` tag deliberately binds
+the duty to the repo hosting the process, keeping Article 4's basis
+repo-scoped. Revisit if a second process-scoped rule appears (review
+round 1 adjudication, 2026-08-30).
+
 ### M-004 — Amendment PRs carry their release-register entry
 Applies: [type: methodology-corpus]
 Keywords: MUST
