@@ -17,13 +17,14 @@ version).
 | Project | Location | Classification summary | Notes |
 |---|---|---|---|
 | methodology | github.com/majodali/methodology | C1 / S0 / methodology-corpus / none-local — pinned 1.4.0 | this repo; [Classification](../classification.md) |
-| methodology-tools | github.com/majodali/methodology-tools | C1 / S0 / component/library / package registry — pinned 1.3.0 | [Classification](https://github.com/majodali/methodology-tools/blob/main/docs/classification.md); `methodology` family member (declared 2026-08-25); founding plan `methodology-tools-v1` closed — all five chunks delivered |
+| methodology-tools | github.com/majodali/methodology-tools | C1 / S0 / component/library / package registry — pinned 1.4.0 | [Classification](https://github.com/majodali/methodology-tools/blob/main/docs/classification.md); `methodology` family member (declared 2026-08-25); founding plan `methodology-tools-v1` closed — all five chunks delivered |
 | allegro | github.com/majodali/allegro | C2 / S0 / language-tool platform / static site — pinned 1.2.0 | Classification declared 2026-08 (Workflow declared); summary refreshed from the observed declaration, 2026-08-25 |
-| in-real-life | github.com/majodali/in-real-life | C2 / S2 / web-app / serverless-aws — pinned 1.3.0 | Classification declared 2026-08 (Workflow declared; audit-log register adopted); `in-real-life` family lead (declared 2026-08-25); summary refreshed 2026-08-25 |
-| in-real-life-ops | github.com/majodali/in-real-life-ops (private) | C2 / S1 / ops / serverless-aws — pinned 1.3.0 | ops repo for in-real-life; `in-real-life` family member (declared 2026-08-25); Classification declared 2026-08-20 (Workflow declared); audits clean at declared level |
-| in-real-life-org | github.com/majodali/in-real-life-org (private) | C2 / S2 / docs-corpus / none-local — pinned 1.3.0 | `in-real-life` family member (declared 2026-08-25); Classification declared 2026-08-20; audits clean at declared level |
-| project-orchestrator | github.com/majodali/project-orchestrator | C1 / S0 / component-library / none-local — pinned 1.3.0 | process spec + plugin coordinating role-based agent sessions on portfolio projects; `methodology` family member (declared 2026-08-25); owner intends C2 Promotion before it orchestrates C2+ projects |
-| serverless-web-app-template | github.com/majodali/serverless-web-app-template | C1 / S0 / template / none-local — pinned 1.3.0 | reference implementation for the serverless-aws target; first `template`-type project (Q-001 in play, declared derivative tier C1); `methodology` family member (declared 2026-08-25) |
+| in-real-life | github.com/majodali/in-real-life | C2 / S2 / web-app / serverless-aws — pinned 1.4.0 | Classification declared 2026-08 (Workflow declared; audit-log register adopted); `in-real-life` family lead (declared 2026-08-25); summary refreshed 2026-08-25 |
+| in-real-life-ops | github.com/majodali/in-real-life-ops (private) | C2 / S1 / ops / serverless-aws — pinned 1.4.0 | ops repo for in-real-life; `in-real-life` family member (declared 2026-08-25); Classification declared 2026-08-20 (Workflow declared); audits clean at declared level |
+| in-real-life-org | github.com/majodali/in-real-life-org (private) | C2 / S2 / docs-corpus / none-local — pinned 1.4.0 | `in-real-life` family member (declared 2026-08-25); Classification declared 2026-08-20; audits clean at declared level |
+| project-orchestrator | github.com/majodali/project-orchestrator | C1 / S0 / component-library / none-local — pinned 1.4.0 | process spec + plugin coordinating role-based agent sessions on portfolio projects; `methodology` family member (declared 2026-08-25); owner intends C2 Promotion before it orchestrates C2+ projects |
+| project-orchestrator-service | github.com/majodali/project-orchestrator-service | C1 / S1 / backend-service / serverless-aws — pinned 1.4.0 | MCP service exposing the orchestrator's plan state to sessions; `methodology` family member (declared at its 2026-08-27 bootstrap); registered on owner instruction 2026-08-30 (M-001); coordinating-repo relationship stated in prose in its Classification pending a multi-repo amendment |
+| serverless-web-app-template | github.com/majodali/serverless-web-app-template | C1 / S0 / template / none-local — pinned 1.4.0 | reference implementation for the serverless-aws target; first `template`-type project (Q-001 in play, declared derivative tier C1); `methodology` family member (declared 2026-08-25) |
 | mc-tools | github.com/majodali/mc-tools | implicit C0 | |
 | graph-analysis | github.com/majodali/graph-analysis | implicit C0 | |
 | open-context | github.com/majodali/open-context | implicit C0 | |
@@ -52,10 +53,11 @@ and the census reconciles for symmetry.
 
 - **methodology** — lead: methodology (declared in its
   [Classification](../classification.md)); members: methodology-tools,
-  project-orchestrator, serverless-web-app-template — composition
-  ratified by the owner 2026-08-24; all member declarations landed in
-  their own Classifications 2026-08-25. Future template and process
-  projects join this family by default (owner ruling, 2026-08-24).
+  project-orchestrator, project-orchestrator-service,
+  serverless-web-app-template — composition ratified by the owner
+  2026-08-24; declarations landed 2026-08-25, the service's at its
+  2026-08-27 bootstrap. Future template and process projects join
+  this family by default (owner ruling, 2026-08-24).
 - **in-real-life** — lead: in-real-life; members: in-real-life-ops,
   in-real-life-org — lead and member declarations landed in their own
   Classifications 2026-08-25.
