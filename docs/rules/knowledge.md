@@ -138,7 +138,10 @@ In a document whose current Designation is `active`, unmarked content
 asserts current intent; a passage a session finds to contradict a
 recorded decision there is false, not stale, and MUST be corrected in
 the deliverable that finds it, not left standing under a supersession
-marker alone. Registers kept as history are exempt entry-by-entry when
+marker alone — or, where the finding session cannot edit, reported as
+a located finding under
+[K-011](#k-011--found-contradictions-are-marked-not-routed-around),
+the correction then owed by the session that acts on it. Registers kept as history are exempt entry-by-entry when
 their header labels them historical.
 
 **Rationale**: A backlog entry warns in the backlog; the reader is in
@@ -149,7 +152,10 @@ opposite promise: everything unmarked there is current, by the
 document's own Designation. A supersession marker means "this was true
 and is now superseded"; that is not what false content in an `active`
 document needs said about it, so fixing, not marking, is what keeps
-the Designation's promise honest.
+the Designation's promise honest. The read-only carve-out keeps this
+rule and K-011 from contradicting each other: a session whose role
+forbids editing discharges by reporting, exactly as K-011 provides,
+and the correction duty travels with the report rather than lapsing.
 
 ### K-011 — Found contradictions are marked, not routed around
 Applies: [C0+]

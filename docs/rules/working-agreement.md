@@ -23,25 +23,48 @@ stop conditions below.
 once, at the start of an arc, instead of gating each chunk. The agent
 then lands the chunks in order without stopping between them. The
 approval is still explicit and still precedes the first chunk; it moves
-from per-chunk to per-sequence, and is not removed.
+from per-chunk to per-sequence, and is not removed. Only the human
+owner pre-ratifies: a delegating agent MUST NOT pre-ratify a sequence
+it dispatches unless the human has already ratified that sequence.
+Delegation carries an approval; it never creates one.
 
 An agent running a sequence MUST stop, summarize, and wait when any of
 these occurs:
 
 - a check fails — the project's gate, whatever it is;
 - the scope changes — the work diverges from the agreed chunk list;
-- a chunk turns out to need a decision that is the human's to make.
+- a chunk turns out to need a decision that is the human's to make;
+- a chunk's landing summary carries asks — anything requested of the
+  human, whether a decision or an action.
 
 A chunk needing a decision is a stop, not a judgment call. The landing
-duties for each chunk are unchanged; only the wait between them is
-removed.
+duties for each chunk are unchanged — each chunk is still summarized
+as it lands ([W-008](#w-008--reports-map-their-deliverables)); only
+the wait between chunks that ask nothing is removed. Asks are never
+rolled up across chunks, and a pre-ratification MUST NOT purport to
+waive the asks stop.
 
 **Rationale**: where "larger arcs" begins is deliberately undefined —
 gating is owner judgment, not a measurable threshold; a definition
 waits for a real dispute to evidence it (review round 1 adjudication,
-2026-08-30). The sequence mode is likewise offered, never owed: a human
-who wants the per-chunk gate keeps it by not pre-ratifying, and work
-whose shape is uncertain should not be pre-ratified at all.
+2026-08-30). The sequence mode is likewise offered, never owed: a
+human who wants the per-chunk gate keeps it by not pre-ratifying, and
+work whose shape is uncertain should not be pre-ratified at all.
+Reserving pre-ratification to the human keeps the mode from
+compounding through a delegation chain, where each agent approving the
+next would leave no human decision anywhere in the arc.
+
+Summaries survive the mode because they make the stop conditions
+auditable afterwards; a sequence that lands silently cannot be checked
+against the conditions that bounded it. Asks always gate for a
+stronger reason. Pre-ratifying presumes the questions an arc will
+raise, and what depends on their answers, are known when the sequence
+is approved. They are not. An ask arriving mid-sequence has undeclared
+dependents, so continuing past it builds later chunks on an unanswered
+question, trading a bounded wait for unbounded rework. A formal
+project model carrying questions and their dependencies as first-class
+elements could bound that risk and make rolling up worth revisiting;
+prose cannot (owner ruling, 2026-09-01).
 
 ### W-002 — Existing tests are signals, not obstacles
 Applies: [C0+]
@@ -123,28 +146,32 @@ Motivated-by: owner-raised 2026-08-30 — delivery summaries citing the delivere
 Cites: [style guide](../style.md) (Reports and summaries); [P-004](prose.md#p-004--citations-carry-names); [Delegation and Report audience](../vocabulary.md#defined-terms) (the audience the Statement below scopes by)
 
 **Statement**: A report's duties scope by its report audience. A
-report addressed to the human owner (the principal audience) MUST
-separate restatement from novelty and close with the asks: name the
-parts encoding decisions already made in the conversation, name the
-new parts with a pointer into the deliverable and what to review
-there, and end with an explicit list of decisions and actions
-requested of the reader — or state that there are none. It MUST also
-lead with the outcome or the decision needed, not with the process
-that produced it, and order its sections by what the reader must
-decide, not by the order the writer discovered them. A report
-addressed to a delegating agent (the agent audience) MUST state its
-status, map its deliverable, and close with the asks or state there
-are none, and MAY omit the restatement-versus-novelty split. Any
-substantive report SHOULD follow the audience-appropriate structure
-where it fits, with no empty ceremony. The P- rules bind reports as
-their purpose admits.
+report addressed to the human owner (the principal audience) MUST lead
+with the outcome or the decision needed, never with the process that
+produced it, and MUST carry three parts in this order: the **asks**
+(the decisions and actions requested of the reader), **what is already
+covered** (the parts of the deliverable encoding decisions the
+conversation already settled), and **what changed** (the parts that
+are new, each with a named pointer into the deliverable and what to
+review there). An empty part MUST be stated, never omitted — "No
+asks", "We already covered everything in the document", "The content
+is all new". A report addressed to a delegating agent (the agent
+audience) MUST state its status, map its deliverable, and carry the
+asks part, and MAY omit the other two. Any substantive report SHOULD
+follow the audience-appropriate structure where it fits, without
+padding a stated-empty part into a section. The P- rules bind reports
+as their purpose admits.
 
 **Rationale**: A summary that requires reading its document defeats
 its purpose. The report is the reader's index into the deliverable;
-the asks are why the report exists. Structure and order are separate
-duties: a report can hold every required part and still open with its
-verification process and bury the finding in its last paragraph,
-which is the failure the ordering sentence above closes. Scoping by
+the asks are why the report exists, so they lead. A report can hold
+every required part and still open with its verification process and
+bury what the reader owes in its last paragraph, which is the failure
+the fixed order closes. Stating an empty part is a declaration, not
+ceremony: "No asks" tells the reader in three words that they owe
+nothing, where silence leaves them searching for what they missed
+(the omission-as-declaration principle of Article 4, applied to
+reports). Scoping by
 artifact excluded the reports that most need the discipline — a
 decision, a finding, a refusal, none of which necessarily attaches a
 document. Scoping by "chat" assumed a human reader when most reports

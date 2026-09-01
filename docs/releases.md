@@ -16,7 +16,7 @@ Target: v1.5.0 (minor — normative content).
 
 ### A minimal vocabulary for delegated agent work
 
-- **PR**: this amendment's PR (link recorded at proposal time).
+- **PR**: [#34](https://github.com/majodali/methodology/pull/34).
 - **Suggested by**: project-orchestrator, 2026-09-01 — its process
   specification mints four custom terms under Article 7 for want of
   upstream words; two sibling amendments carried alongside this one
@@ -34,13 +34,16 @@ Target: v1.5.0 (minor — normative content).
 
 ### Scope the report rule by audience, not by artifact
 
-- **PR**: this amendment's PR (link recorded at proposal time).
+- **PR**: [#35](https://github.com/majodali/methodology/pull/35).
 - **Suggested by**: project-orchestrator, 2026-09-01 — its dispatch
   loop's handoff contract and every task result it has produced since
   2026-08-24: agent-addressed, and often attaching no artifact, so
   outside W-008's original scoping. Its owner's review of the
   proposal set added the ordering duties (lead with the outcome;
-  order by what the reader must decide), which W-008 left unstated.
+  order by what the reader must decide), which W-008 left unstated;
+  the owner's review of this PR fixed the part order as asks first,
+  then what is already covered, then what changed, with empty parts
+  stated rather than dropped (2026-09-01).
 - **Impact**: all projects, C0 included — *accommodated*: the rule
   still binds only reports that exist and mints no coverage duty; a
   project running one session at a time has no agent audience and
@@ -57,7 +60,7 @@ Target: v1.5.0 (minor — normative content).
 
 ### Name whose duty marking is when sessions nest
 
-- **PR**: this amendment's PR (link recorded at proposal time).
+- **PR**: [#36](https://github.com/majodali/methodology/pull/36).
 - **Suggested by**: project-orchestrator, 2026-09-01 — decision 2 of
   its role-contracts plan, adopted as defaulted at that node's gate:
   the finder owns the duty, and a role forbidden to edit files
@@ -76,7 +79,7 @@ Target: v1.5.0 (minor — normative content).
 
 ### State K-010's converse: active documents are corrected, not marked
 
-- **PR**: this amendment's PR (link recorded at proposal time).
+- **PR**: [#37](https://github.com/majodali/methodology/pull/37).
 - **Suggested by**: project-orchestrator, 2026-09-01 — its founding
   plan claimed a v1.3.0 pin after the Classification had recorded
   v1.4.0: an `active` document making a false current-intent claim,
@@ -86,14 +89,18 @@ Target: v1.5.0 (minor — normative content).
   it narrows which response (fix or mark) is legal for the `active`
   case rather than adding a duty. methodology
   (`methodology-corpus`) — *accommodated*: K-010 gains the converse
-  sentence. project-orchestrator — *accommodated*: its existing
-  practice becomes the upstream rule (the evidencing instance).
+  sentence, with a read-only carve-out added at the owner's review of
+  this PR (2026-09-01) so the converse and K-011's located-finding
+  discharge cannot contradict each other. project-orchestrator —
+  *accommodated*: its existing practice becomes the upstream rule (the
+  evidencing instance), and the carve-out preserves the discharge its
+  read-only roles depend on.
 - **Migration note**: none — no existing content must change; the rule
   states what "unmarked in an `active` document" already meant.
 
 ### Pre-ratified chunk sequences
 
-- **PR**: this amendment's PR (link recorded at proposal time).
+- **PR**: [#38](https://github.com/majodali/methodology/pull/38).
 - **Suggested by**: allegro's parallel-lane experiment, 2026-08 to
   2026-09 — three lanes ran approved chunk sequences while W-001
   required a per-chunk gate, a contradiction allegro recorded as
@@ -106,7 +113,10 @@ Target: v1.5.0 (minor — normative content).
   its PROCESS §3 per-lane exception becomes compliant as written.
   project-orchestrator — *accommodated, and worth its attention*: it
   coordinates role-based agent sessions, so the sequence mode and its
-  stop conditions bear on its role contracts. methodology
+  stop conditions bear on its role contracts — and, per the owner's
+  review of this PR (2026-09-01), a delegating agent may not
+  pre-ratify a sequence a human has not already ratified, and asks in
+  a chunk summary always gate. methodology
   (`methodology-corpus`) — *not affected* beyond carrying the rule.
 - **Migration note**: none — the amendment grants a mode and obliges
   nothing; a project ignoring it keeps today's behaviour.
