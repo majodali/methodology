@@ -123,7 +123,7 @@ Target: v1.5.0 (minor — normative content).
 
 ### The report contract is cached in every Agent bootstrap
 
-- **PR**: this amendment's PR (link recorded at proposal time).
+- **PR**: [#40](https://github.com/majodali/methodology/pull/40).
 - **Suggested by**: the owner, 2026-09-01 — conformance with the
   report contract degrades over a long session: language turns
   rhetorical and the structuring parts get dropped. Guidance read once
