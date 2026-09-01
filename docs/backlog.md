@@ -349,11 +349,12 @@ entries update in the same commit as the work they describe
 - [x] **Pre-ratified chunk sequences** (amendment; the merge is
   acceptance) — W-001 gains an alternative to the per-chunk gate: a
   human MAY approve a chunk sequence once, before the first chunk, and
-  the agent lands the chunks without stopping between them. Three
-  stop conditions bound the mode — a failed check, a scope change, a
-  chunk needing the human's decision — and the mode is offered, never
-  owed. Drafted by allegro and hand-carried; its parallel-lane
-  experiment and deviation D-1 are the evidencing instance.
+  the agent lands the chunks without stopping between them. Four stop
+  conditions bound the mode — a failed check, a scope change, a chunk
+  needing the human's decision, and any chunk summary carrying asks —
+  and the mode is offered, never owed. Only the human pre-ratifies.
+  Drafted by allegro and hand-carried; its parallel-lane experiment
+  and deviation D-1 are the evidencing instance.
 
 ## Upcoming
 - [ ] **Editorial passes for existing documents** — restyle per the

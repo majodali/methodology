@@ -110,28 +110,24 @@ A report's duties scope by its report audience
 
 A report addressed to the human owner (the principal audience) leads
 with the outcome or the decision needed, not the process that produced
-it, and orders its sections by what the reader must decide, not by the
-order the writer discovered them. It has three duties:
+it, and carries three parts **in this order**:
 
-1. **Restatement**: name the parts of the deliverable that encode
-   decisions already made in the conversation, and which decisions.
-2. **Novelty**: name the parts that are new, each with a named pointer
+1. **Asks**: the decisions and actions requested of the reader.
+2. **What is already covered**: the parts of the deliverable that
+   encode decisions the conversation already settled, and which
+   decisions.
+3. **What changed**: the parts that are new, each with a named pointer
    into the deliverable and one sentence on what to review there.
-3. **Asks**: end with an explicit list of the decisions and actions
-   requested of the reader, or state that there are none.
 
-A report addressed to a delegating agent (the agent audience) has two
-duties:
+A report addressed to a delegating agent (the agent audience) carries
+its status, a map of what it delivers, and the asks. It omits parts 2
+and 3 — the reader dispatched the work and already holds its context.
 
-1. **Status and deliverable map**: state the report's status and map
-   what it delivers, without the restatement-versus-novelty split —
-   the reader dispatched the work and already holds its context.
-2. **Asks**: end with an explicit list of the decisions and actions
-   requested of the reader, or state that there are none.
-
-Any substantive report follows the audience-appropriate structure
-where it fits. Do not add empty sections to satisfy the shape (K-005's
-no-empty-ceremony principle applies to reports too).
+An empty part is stated, not dropped: "No asks", "We already covered
+everything in the document", "The content is all new". A stated-empty
+part is one line, not a section: the declaration is the point, and
+padding it into a heading with boilerplate is the empty ceremony
+K-005 forbids.
 
 ### Supersession markers
 
