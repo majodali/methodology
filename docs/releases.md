@@ -12,7 +12,17 @@ carry: amendment title and PR link · suggested by (evidencing instance)
 
 ## Unreleased
 
-Target: v1.5.0 (minor — normative content).
+(empty — the next accepted amendment opens the next candidate)
+
+## v1.5.0 — 2026-09-01
+
+Minor — normative content. Six amendments accepted at interim
+adjudications 2026-09-01: five carried from other projects
+(project-orchestrator's four, allegro's one — the first amendments
+this corpus has received from projects other than its own sessions),
+one owner-raised. Review round 1 was held before the v1.4.0 cut, and
+this is the first release since, so both Article 8 cadence floors
+hold with no round owed.
 
 ### A minimal vocabulary for delegated agent work
 

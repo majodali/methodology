@@ -369,7 +369,24 @@ entries update in the same commit as the work they describe
   commit. Owner-observed instance: report conformance decaying across
   high-traffic sessions, 2026-09-01.
 
+- [x] **v1.5.0 cut** — release PR retitled Unreleased to
+  [*v1.5.0 — 2026-09-01*](releases.md): the delegated-work vocabulary
+  (PR #34), the report rule scoped by audience (#35), the
+  contradiction-marking duty in nested sessions (#36), K-010's
+  converse for active documents (#37), pre-ratified chunk sequences
+  (#38), and the report contract cached in every Agent bootstrap
+  (#40); the adjudicated refinements to the first five landed in #39.
+  The owner creates the annotated tag `v1.5.0` after merging (release
+  ceremony). Migration notes: none for five; the bootstrap cache
+  requires one copy action per project holding an Agent bootstrap.
+
 ## Upcoming
+- [ ] **Migrate this repo to 1.5.0** — after the tag exists, a
+  migration PR bumps the [Classification](classification.md) pin and
+  the Binding block. The family members and the in-real-life family
+  migrate by their own PRs, each also copying W-008's required
+  bootstrap block into its `CLAUDE.md` (the one non-empty migration
+  note in this release).
 - [ ] **Editorial passes for existing documents** — restyle per the
   [style guide](style.md), highest-traffic reference documents first
   (constitution, vocabulary, rules, classifications); each pass is an
