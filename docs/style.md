@@ -100,23 +100,38 @@ reading and referencing become query and transform operations.
 
 ### Reports and summaries
 
-A chat report is governed prose. The P- rules apply to it as its
-purpose admits — named citations above all: a report about a document
-never cites that document by bare section number.
+A report is governed prose regardless of who reads it. The P- rules
+apply to it as its purpose admits — named citations above all: a
+report about a document never cites that document by bare section
+number.
 
-A report that delivers a written artifact has three duties
+A report's duties scope by its report audience
 (W-008 — reports map their deliverables):
 
-1. **Restatement**: name the parts of the artifact that encode
+A report addressed to the human owner (the principal audience) leads
+with the outcome or the decision needed, not the process that produced
+it, and orders its sections by what the reader must decide, not by the
+order the writer discovered them. It has three duties:
+
+1. **Restatement**: name the parts of the deliverable that encode
    decisions already made in the conversation, and which decisions.
 2. **Novelty**: name the parts that are new, each with a named pointer
-   into the artifact and one sentence on what to review there.
+   into the deliverable and one sentence on what to review there.
 3. **Asks**: end with an explicit list of the decisions and actions
    requested of the reader, or state that there are none.
 
-Any substantive report follows the same structure where it fits. Do
-not add empty sections to satisfy the shape (K-005's no-empty-ceremony
-principle applies to reports too).
+A report addressed to a delegating agent (the agent audience) has two
+duties:
+
+1. **Status and deliverable map**: state the report's status and map
+   what it delivers, without the restatement-versus-novelty split —
+   the reader dispatched the work and already holds its context.
+2. **Asks**: end with an explicit list of the decisions and actions
+   requested of the reader, or state that there are none.
+
+Any substantive report follows the audience-appropriate structure
+where it fits. Do not add empty sections to satisfy the shape (K-005's
+no-empty-ceremony principle applies to reports too).
 
 ### Supersession markers
 

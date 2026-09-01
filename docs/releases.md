@@ -32,6 +32,29 @@ Target: v1.5.0 (minor — normative content).
 - **Migration note**: none — adoption is voluntary, as for any
   vocabulary entry minting no coverage duty.
 
+### Scope the report rule by audience, not by artifact
+
+- **PR**: this amendment's PR (link recorded at proposal time).
+- **Suggested by**: project-orchestrator, 2026-09-01 — its dispatch
+  loop's handoff contract and every task result it has produced since
+  2026-08-24: agent-addressed, and often attaching no artifact, so
+  outside W-008's original scoping. Its owner's review of the
+  proposal set added the ordering duties (lead with the outcome;
+  order by what the reader must decide), which W-008 left unstated.
+- **Impact**: all projects, C0 included — *accommodated*: the rule
+  still binds only reports that exist and mints no coverage duty; a
+  project running one session at a time has no agent audience and
+  every report stays principal-addressed, unchanged from today.
+  methodology (`methodology-corpus`) — *accommodated*: W-008 and the
+  [style guide](style.md)'s *Reports and summaries* section gain the
+  audience split. project-orchestrator — *accommodated*: it can cite
+  W-008 for its agent-addressed task results instead of holding its
+  role-contracts node (the evidencing instance).
+- **Migration note**: none — existing principal-addressed reports need
+  no rework; the rule narrows what an agent-addressed report owes
+  rather than adding an obligation to any report that already
+  complied.
+
 ## v1.4.0 — 2026-08-30
 
 Minor — normative content, one constitutional change (the Article 8
