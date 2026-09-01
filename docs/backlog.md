@@ -310,7 +310,9 @@ entries update in the same commit as the work they describe
   the family's default-join ruling working unprompted. Its audit is
   clean after a scanner-precision fix in methodology-tools (S-001
   key pattern now requires a base64 body; two false positives were
-  the motivating instance). Census over nine checkouts: no drift.
+  the motivating instance). allegro's stranded v1.4.0 migration was
+  found on a dead branch, landed by cherry-pick (allegro PR #43), and
+  its row reads 1.4.0. Census over nine checkouts: no drift.
 
 ## Upcoming
 - [ ] **Editorial passes for existing documents** — restyle per the
