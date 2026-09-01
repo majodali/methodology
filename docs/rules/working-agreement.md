@@ -6,7 +6,7 @@ notes](README.md).
 ### W-001 — Two delivery modes, human-gated
 Applies: [C1+]
 Keywords: MUST, MUST NOT
-Motivated-by: [proposal B1](../practices.md); allegro `.claude/memory/feedback_phase_delivery.md`, the practice's origin
+Motivated-by: [proposal B1](../practices.md); allegro `.claude/memory/feedback_phase_delivery.md`, the practice's origin; the sequence mode from allegro's parallel-lane experiment, 2026-08 to 2026-09
 Cites: —
 
 For current work, agents MUST stay close: deliver a tight increment,
@@ -15,12 +15,33 @@ authorization to continue — "great work" without "next" means discuss.
 For larger arcs, agents MUST plan first: write the plan document
 ([K-007](knowledge.md#k-007--plans-are-outcome-named-statused-and-ruthlessly-current)),
 let the human set chunk boundaries, obtain explicit go-ahead before the
-first chunk, and gate every chunk on summary and human review.
+first chunk, and gate every chunk on summary and human review or, where
+the human has approved a chunk sequence in advance, on the sequence's
+stop conditions below.
+
+**The pre-ratified sequence**. A human MAY approve a chunk **sequence**
+once, at the start of an arc, instead of gating each chunk. The agent
+then lands the chunks in order without stopping between them. The
+approval is still explicit and still precedes the first chunk; it moves
+from per-chunk to per-sequence, and is not removed.
+
+An agent running a sequence MUST stop, summarize, and wait when any of
+these occurs:
+
+- a check fails — the project's gate, whatever it is;
+- the scope changes — the work diverges from the agreed chunk list;
+- a chunk turns out to need a decision that is the human's to make.
+
+A chunk needing a decision is a stop, not a judgment call. The landing
+duties for each chunk are unchanged; only the wait between them is
+removed.
 
 **Rationale**: where "larger arcs" begins is deliberately undefined —
 gating is owner judgment, not a measurable threshold; a definition
 waits for a real dispute to evidence it (review round 1 adjudication,
-2026-08-30).
+2026-08-30). The sequence mode is likewise offered, never owed: a human
+who wants the per-chunk gate keeps it by not pre-ratifying, and work
+whose shape is uncertain should not be pre-ratified at all.
 
 ### W-002 — Existing tests are signals, not obstacles
 Applies: [C0+]
