@@ -12,7 +12,25 @@ carry: amendment title and PR link · suggested by (evidencing instance)
 
 ## Unreleased
 
-(empty — the next accepted amendment opens the next candidate)
+Target: v1.5.0 (minor — normative content).
+
+### A minimal vocabulary for delegated agent work
+
+- **PR**: this amendment's PR (link recorded at proposal time).
+- **Suggested by**: project-orchestrator, 2026-09-01 — its process
+  specification mints four custom terms under Article 7 for want of
+  upstream words; two sibling amendments carried alongside this one
+  need the delegation relation this proposal names. Drafted in that
+  project and hand-carried here unchanged in substance.
+- **Impact**: all projects, C0 included — *accommodated*: two
+  vocabulary terms add no coverage duty; a project running one Agent
+  session at a time never instantiates a Delegation and cites neither
+  term. methodology (`methodology-corpus`) — *accommodated*:
+  [vocabulary.md](vocabulary.md) gains two entries.
+  project-orchestrator — *accommodated*: its local terms for the same
+  relation become citable by name (the evidencing instance).
+- **Migration note**: none — adoption is voluntary, as for any
+  vocabulary entry minting no coverage duty.
 
 ## v1.4.0 — 2026-08-30
 
