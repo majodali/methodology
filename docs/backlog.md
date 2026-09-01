@@ -314,6 +314,13 @@ entries update in the same commit as the work they describe
   found on a dead branch, landed by cherry-pick (allegro PR #43), and
   its row reads 1.4.0. Census over nine checkouts: no drift.
 
+- [x] **Delegated-work vocabulary** (amendment; the merge is
+  acceptance) — *Delegation* (delegating agent / delegated agent) and
+  *Report audience* (principal / agent) added to the vocabulary's
+  defined terms. First amendment drafted by another project
+  (project-orchestrator node P1-N015) and hand-carried here; the two
+  terms serve its sibling proposals for W-008 and K-011.
+
 ## Upcoming
 - [ ] **Editorial passes for existing documents** — restyle per the
   [style guide](style.md), highest-traffic reference documents first

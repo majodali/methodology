@@ -169,6 +169,20 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   form, audits note the declaration as tool-unreadable (an info
   finding, not a violation). Stage names SHOULD NOT collide with
   vocabulary-defined derived conditions.
+- **Delegation** — the relationship formed when an Agent session (the
+  **delegating agent**) dispatches bounded work to another Agent
+  session (the **delegated agent**) and awaits its report. The
+  delegated agent reports to the delegating agent, not directly to
+  the human owner, unless the delegating agent is itself the human
+  owner's own direct session. Delegation nests: a delegated agent MAY
+  itself act as a delegating agent to sessions it dispatches in turn.
+- **Report audience** — the reader a report is addressed to under
+  [W-008](rules/working-agreement.md#w-008--reports-map-their-deliverables)
+  (reports map their deliverables): the human owner directly (the
+  **principal audience**), or a delegating agent awaiting a delegated
+  agent's report before relaying its own report further (the **agent
+  audience**). The audience determines which of W-008's duties a
+  report carries.
 
 ## Artifact types
 
