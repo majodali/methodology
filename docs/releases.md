@@ -74,6 +74,43 @@ Target: v1.5.0 (minor — normative content).
   action; a project with delegation gains an answer to point at
   instead of deriving one.
 
+### State K-010's converse: active documents are corrected, not marked
+
+- **PR**: this amendment's PR (link recorded at proposal time).
+- **Suggested by**: project-orchestrator, 2026-09-01 — its founding
+  plan claimed a v1.3.0 pin after the Classification had recorded
+  v1.4.0: an `active` document making a false current-intent claim,
+  found and fixed rather than marked in the same commit.
+- **Impact**: all projects, C0 included — *accommodated*: the rule
+  still binds only a deliverable that finds or records a supersession;
+  it narrows which response (fix or mark) is legal for the `active`
+  case rather than adding a duty. methodology
+  (`methodology-corpus`) — *accommodated*: K-010 gains the converse
+  sentence. project-orchestrator — *accommodated*: its existing
+  practice becomes the upstream rule (the evidencing instance).
+- **Migration note**: none — no existing content must change; the rule
+  states what "unmarked in an `active` document" already meant.
+
+### Pre-ratified chunk sequences
+
+- **PR**: this amendment's PR (link recorded at proposal time).
+- **Suggested by**: allegro's parallel-lane experiment, 2026-08 to
+  2026-09 — three lanes ran approved chunk sequences while W-001
+  required a per-chunk gate, a contradiction allegro recorded as
+  deviation D-1 on 2026-09-01 rather than leaving unmarked. Drafted
+  in that project and hand-carried here.
+- **Impact**: all C1+ projects with agent sessions —
+  *accommodated*: the amendment adds a permitted mode and removes no
+  duty; a project that pre-ratifies nothing is unaffected in practice.
+  allegro — *accommodated*: D-1 retires on adoption (its B-131) and
+  its PROCESS §3 per-lane exception becomes compliant as written.
+  project-orchestrator — *accommodated, and worth its attention*: it
+  coordinates role-based agent sessions, so the sequence mode and its
+  stop conditions bear on its role contracts. methodology
+  (`methodology-corpus`) — *not affected* beyond carrying the rule.
+- **Migration note**: none — the amendment grants a mode and obliges
+  nothing; a project ignoring it keeps today's behaviour.
+
 ## v1.4.0 — 2026-08-30
 
 Minor — normative content, one constitutional change (the Article 8

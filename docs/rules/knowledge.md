@@ -126,20 +126,30 @@ historical detail demonstrably earns its keep.
 ### K-010 — Superseded content is never silently readable
 Applies: [C0+]
 Keywords: MUST
-Motivated-by: owner-raised 2026-08-30 — decisions whose pre-decision content survived unmarked, misleading later sessions into contradictory application and persistence of the superseded state in new work
-Cites: [style guide](../style.md) (Supersession markers); [W-003](working-agreement.md#w-003--documentation-moves-in-the-same-commit-as-the-work) (the same-commit principle this rule extends)
+Motivated-by: owner-raised 2026-08-30 — decisions whose pre-decision content survived unmarked, misleading later sessions into contradictory application and persistence of the superseded state in new work; extended by project-orchestrator, 2026-09-01 — an `active` document's own Designation already asserts its unmarked content current, so a contradiction there needs no marker to say what a marker cannot say
+Cites: [style guide](../style.md) (Supersession markers); [W-003](working-agreement.md#w-003--documentation-moves-in-the-same-commit-as-the-work) (the same-commit principle this rule extends); [K-011](#k-011--found-contradictions-are-marked-not-routed-around) (the finder's duty this converse narrows for the active case)
 
 **Statement**: A deliverable that records a decision superseding
 existing content MUST either rework all affected content in the same
 deliverable, or record the known affected locations in the decision's
 entry and place a supersession marker (style-guide format) at each. A
 marker still standing at the next review round is an audit finding.
-Registers kept as history are exempt entry-by-entry when their header
-labels them historical.
+In a document whose current Designation is `active`, unmarked content
+asserts current intent; a passage a session finds to contradict a
+recorded decision there is false, not stale, and MUST be corrected in
+the deliverable that finds it, not left standing under a supersession
+marker alone. Registers kept as history are exempt entry-by-entry when
+their header labels them historical.
 
 **Rationale**: A backlog entry warns in the backlog; the reader is in
 the document. The methodology's own version pin shows the working
-shape — lag is legal only when declared at the point of reading.
+shape — lag is legal only when declared at the point of reading. An
+`active` document that has not declared its own lapse makes the
+opposite promise: everything unmarked there is current, by the
+document's own Designation. A supersession marker means "this was true
+and is now superseded"; that is not what false content in an `active`
+document needs said about it, so fixing, not marking, is what keeps
+the Designation's promise honest.
 
 ### K-011 — Found contradictions are marked, not routed around
 Applies: [C0+]
