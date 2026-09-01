@@ -98,18 +98,38 @@ documentation lives.
 ### W-008 — Reports map their deliverables
 Applies: [C0+]
 Keywords: MUST, SHOULD
-Motivated-by: owner-raised 2026-08-30 — delivery summaries citing the delivered document by naked section number, and asks buried in prose so the owner parses both summary and document to learn what is requested
-Cites: [style guide](../style.md) (Reports and summaries); [P-004](prose.md#p-004--citations-carry-names)
+Motivated-by: owner-raised 2026-08-30 — delivery summaries citing the delivered document by naked section number, and asks buried in prose so the owner parses both summary and document to learn what is requested; extended by project-orchestrator, 2026-09-01 — a delegated loop's reports are mostly agent-addressed and mostly attach no artifact, both outside the rule's original scoping
+Cites: [style guide](../style.md) (Reports and summaries); [P-004](prose.md#p-004--citations-carry-names); [Delegation and Report audience](../vocabulary.md#defined-terms) (the audience the Statement below scopes by)
 
-**Statement**: A chat report that delivers a written artifact MUST
+**Statement**: A report's duties scope by its report audience. A
+report addressed to the human owner (the principal audience) MUST
 separate restatement from novelty and close with the asks: name the
 parts encoding decisions already made in the conversation, name the
-new parts with a pointer into the artifact and what to review there,
-and end with an explicit list of decisions and actions requested of
-the reader — or state that there are none. Any substantive report
-SHOULD follow the same structure where it fits, with no empty
-ceremony. The P- rules bind reports as their purpose admits.
+new parts with a pointer into the deliverable and what to review
+there, and end with an explicit list of decisions and actions
+requested of the reader — or state that there are none. It MUST also
+lead with the outcome or the decision needed, not with the process
+that produced it, and order its sections by what the reader must
+decide, not by the order the writer discovered them. A report
+addressed to a delegating agent (the agent audience) MUST state its
+status, map its deliverable, and close with the asks or state there
+are none, and MAY omit the restatement-versus-novelty split. Any
+substantive report SHOULD follow the audience-appropriate structure
+where it fits, with no empty ceremony. The P- rules bind reports as
+their purpose admits.
 
 **Rationale**: A summary that requires reading its document defeats
-its purpose. The report is the reader's index into the artifact; the
-asks are why the report exists.
+its purpose. The report is the reader's index into the deliverable;
+the asks are why the report exists. Structure and order are separate
+duties: a report can hold every required part and still open with its
+verification process and bury the finding in its last paragraph,
+which is the failure the ordering sentence above closes. Scoping by
+artifact excluded the reports that most need the discipline — a
+decision, a finding, a refusal, none of which necessarily attaches a
+document. Scoping by "chat" assumed a human reader when most reports
+in a delegated loop are agent-addressed. The
+restatement-versus-novelty split exists to save a human reader's time
+against a document they have not read; an agent-addressed report's
+reader is the one who dispatched the work and already holds its
+context, so the split costs that reader nothing it needed and this
+rule no longer asks for it there.

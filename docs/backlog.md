@@ -321,6 +321,15 @@ entries update in the same commit as the work they describe
   (project-orchestrator node P1-N015) and hand-carried here; the two
   terms serve its sibling proposals for W-008 and K-011.
 
+- [x] **Report rule scoped by audience** (amendment; the merge is
+  acceptance) — W-008 and the [style guide](style.md)'s report
+  contract now scope by *report audience* rather than by "chat" and
+  "delivers a written artifact": principal-addressed reports keep the
+  restatement/novelty/asks shape and gain two ordering duties;
+  agent-addressed reports owe status, deliverable map, and asks.
+  Drafted by project-orchestrator and hand-carried; its dispatch loop
+  is the evidencing instance.
+
 ## Upcoming
 - [ ] **Editorial passes for existing documents** — restyle per the
   [style guide](style.md), highest-traffic reference documents first
