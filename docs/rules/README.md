@@ -74,8 +74,14 @@ Cites: —
 
 The body follows with labeled fields — **Statement** (the norm),
 **Rationale** (why, optional), **Exceptions** (bounded carve-outs, if
-any) — per the [style guide](../style.md). Rules predating the labels
-migrate editorially. Applicability tags use
+any) — per the [style guide](../style.md). A rule that prescribes
+verbatim text for projects to carry MAY add one further labeled field
+holding that text in a fenced block, so the prescribed copy is exact
+and mechanically comparable
+([W-008](working-agreement.md#w-008--reports-map-their-deliverables)
+is the first). Rules predating the labels migrate editorially.
+
+Applicability tags use
 Classification fields and vocabulary-defined derived conditions only, so
 applicability is mechanically decidable from the Article 4 basis — the
 Classification together with the designations it references.

@@ -162,12 +162,52 @@ follow the audience-appropriate structure where it fits, without
 padding a stated-empty part into a section. The P- rules bind reports
 as their purpose admits.
 
+**Required bootstrap text**: A project that has an Agent bootstrap
+MUST carry the block below in it, verbatim, under its own heading.
+The block is a cache: this rule, the P- rules, and the
+[style guide](../style.md) remain the authority
+([K-001](knowledge.md#k-001--project-documentation-is-the-sole-authority)
+— documentation under `docs/` is the sole authority;
+[K-002](knowledge.md#k-002--the-agent-bootstrap-is-a-pointer-not-a-record)
+permits the bootstrap to cache what it does not own). Audits compare
+the bootstrap's copy against this block and report any difference as
+drift. Amend the text here; never edit the copy in place.
+
+```markdown
+## Reporting and writing — cached from W-008; do not edit here
+
+Reports to the human owner carry three parts, in this order:
+
+1. **Asks** — the decisions and actions requested of the reader.
+2. **What is already covered** — the parts of the deliverable that
+   encode decisions the conversation already settled.
+3. **What changed** — the parts that are new, each with a named
+   pointer into the deliverable and what to review there.
+
+State an empty part; never drop it: "No asks", "We already covered
+everything in the document", "The content is all new".
+
+Lead with the outcome or the decision needed, never with the process
+that produced it. Write short, direct sentences, one idea each. Cut
+clauses that add tone but not content: dramatic accumulation,
+aphorism, suspense. Name every identifier you cite.
+
+Authority: majodali/methodology W-008 (reports map their
+deliverables), the P- rules, and its style guide. This block is a
+cache — amend it upstream, never here.
+```
+
 **Rationale**: A summary that requires reading its document defeats
 its purpose. The report is the reader's index into the deliverable;
 the asks are why the report exists, so they lead. A report can hold
 every required part and still open with its verification process and
 bury what the reader owes in its last paragraph, which is the failure
-the fixed order closes. Stating an empty part is a declaration, not
+the fixed order closes. The bootstrap cache exists because conformance
+decays with distance: guidance read once at a session's start competes
+with everything the session does afterwards, and the harness re-injects
+the bootstrap where it does not re-read the corpus. Caching the rule
+where it is re-read keeps it in force late in a session, when the drift
+appears (owner observation across high-traffic sessions, 2026-09-01). Stating an empty part is a declaration, not
 ceremony: "No asks" tells the reader in three words that they owe
 nothing, where silence leaves them searching for what they missed
 (the omission-as-declaration principle of Article 4, applied to
