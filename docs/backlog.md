@@ -302,6 +302,18 @@ entries update in the same commit as the work they describe
   mandatory, so the pin bump is the whole migration — release process
   step 5). Family members migrate by their own PRs in the same round.
 
+- [x] **Portfolio refreshed after the 1.4.0 migration round** — all
+  seven migration PRs merged 2026-08-30; member rows moved to pinned
+  1.4.0. project-orchestrator-service registered on owner instruction
+  (M-001): C1 / S1 / backend-service / serverless-aws, pinned 1.4.0,
+  `methodology` family member since its own 2026-08-27 bootstrap —
+  the family's default-join ruling working unprompted. Its audit is
+  clean after a scanner-precision fix in methodology-tools (S-001
+  key pattern now requires a base64 body; two false positives were
+  the motivating instance). allegro's stranded v1.4.0 migration was
+  found on a dead branch, landed by cherry-pick (allegro PR #43), and
+  its row reads 1.4.0. Census over nine checkouts: no drift.
+
 ## Upcoming
 - [ ] **Editorial passes for existing documents** — restyle per the
   [style guide](style.md), highest-traffic reference documents first
