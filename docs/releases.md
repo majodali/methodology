@@ -55,6 +55,25 @@ Target: v1.5.0 (minor — normative content).
   rather than adding an obligation to any report that already
   complied.
 
+### Name whose duty marking is when sessions nest
+
+- **PR**: this amendment's PR (link recorded at proposal time).
+- **Suggested by**: project-orchestrator, 2026-09-01 — decision 2 of
+  its role-contracts plan, adopted as defaulted at that node's gate:
+  the finder owns the duty, and a role forbidden to edit files
+  discharges by reporting a located finding.
+- **Impact**: all projects, C0 included — *accommodated*: the rule
+  still binds only a session that makes a finding; a project running
+  one session at a time has no delegation to nest and the rule reads
+  as it does today. methodology (`methodology-corpus`) —
+  *accommodated*: K-011 gains the nesting sentence and the
+  located-finding discharge. project-orchestrator — *accommodated*:
+  it can cite K-011 directly instead of holding its role-contracts
+  node (the evidencing instance).
+- **Migration note**: none — a project with no delegation owes no new
+  action; a project with delegation gains an answer to point at
+  instead of deriving one.
+
 ## v1.4.0 — 2026-08-30
 
 Minor — normative content, one constitutional change (the Article 8
