@@ -338,6 +338,14 @@ entries update in the same commit as the work they describe
   project-orchestrator and hand-carried; its role-contracts decision 2
   is the evidencing instance.
 
+- [x] **K-010's converse for active documents** (amendment; the merge
+  is acceptance) — unmarked content in a document designated `active`
+  asserts current intent, so a passage found to contradict a recorded
+  decision there is false rather than stale and MUST be corrected in
+  the finding deliverable, not left under a supersession marker alone.
+  Drafted by project-orchestrator and hand-carried; its founding
+  plan's corrected pin claim is the evidencing instance.
+
 ## Upcoming
 - [ ] **Editorial passes for existing documents** — restyle per the
   [style guide](style.md), highest-traffic reference documents first
