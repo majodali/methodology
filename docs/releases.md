@@ -121,6 +121,30 @@ Target: v1.5.0 (minor — normative content).
 - **Migration note**: none — the amendment grants a mode and obliges
   nothing; a project ignoring it keeps today's behaviour.
 
+### The report contract is cached in every Agent bootstrap
+
+- **PR**: [#40](https://github.com/majodali/methodology/pull/40).
+- **Suggested by**: the owner, 2026-09-01 — conformance with the
+  report contract degrades over a long session: language turns
+  rhetorical and the structuring parts get dropped. Guidance read once
+  at a session's start competes with everything the session does
+  after it; the harness re-injects the Agent bootstrap but does not
+  re-read the corpus.
+- **Impact**: all projects with an Agent bootstrap — *accommodated,
+  with a real duty*: W-008 now prescribes a verbatim block the
+  bootstrap MUST carry, so each such project adds it once. C0
+  projects without a bootstrap owe nothing. methodology
+  (`methodology-corpus`) — *accommodated*: its own `CLAUDE.md` and
+  [skeletons/CLAUDE.md](../skeletons/CLAUDE.md) carry the block in
+  this diff, so new adoptions get it free; the rule-body format gains
+  one labeled field for prescribed verbatim text.
+  methodology-tools — a drift check between the block and each
+  bootstrap's copy, queued in its backlog.
+- **Migration note**: **one action per project.** A project with an
+  Agent bootstrap copies W-008's block into it verbatim, under its own
+  heading, at migration. Nothing else changes; the block is a cache,
+  and the rule text remains the authority.
+
 ## v1.4.0 — 2026-08-30
 
 Minor — normative content, one constitutional change (the Article 8

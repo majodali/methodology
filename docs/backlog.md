@@ -356,6 +356,19 @@ entries update in the same commit as the work they describe
   Drafted by allegro and hand-carried; its parallel-lane experiment
   and deviation D-1 are the evidencing instance.
 
+- [x] **Report contract cached in the Agent bootstrap** (amendment;
+  the merge is acceptance) — W-008 gains a **Required bootstrap
+  text** field: a verbatim block every Agent bootstrap MUST carry,
+  covering the three report parts in order, the state-an-empty-part
+  duty, and the sentence-level style duties (short direct sentences,
+  no rhetorical padding, named citations). The block is a cache;
+  W-008, the P- rules and the [style guide](style.md) stay the
+  authority, and audits compare each bootstrap's copy against it.
+  This repo's `CLAUDE.md` and
+  [skeletons/CLAUDE.md](../skeletons/CLAUDE.md) carry it in the same
+  commit. Owner-observed instance: report conformance decaying across
+  high-traffic sessions, 2026-09-01.
+
 ## Upcoming
 - [ ] **Editorial passes for existing documents** — restyle per the
   [style guide](style.md), highest-traffic reference documents first
@@ -363,7 +376,9 @@ entries update in the same commit as the work they describe
   editorial change, no per-document amendment.
 - [ ] **Style checks in `mtool audit`** — mechanical subset of the P-
   rules as warnings: sentence-length statistics, unnamed identifiers
-  and section references, register row length. Tools-repo work.
+  and section references, register row length; plus the W-008
+  bootstrap-cache drift check (compare each project's copied block
+  against the rule's own). Tools-repo work.
 - [ ] **Formal project models (post-Allegro)** — owner horizon,
   recorded 2026-08-30: requirements, specifications, reasoning
   chains, assumptions, and dependencies as formal model nodes;

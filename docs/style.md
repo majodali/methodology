@@ -124,7 +124,10 @@ its status, a map of what it delivers, and the asks. It omits parts 2
 and 3 — the reader dispatched the work and already holds its context.
 
 An empty part is stated, not dropped: "No asks", "We already covered
-everything in the document", "The content is all new". A stated-empty
+everything in the document", "The content is all new". W-008 carries
+the short form of these duties as verbatim text every Agent bootstrap
+must hold, so the guidance stays in force late in a session; this
+section remains the authority for it. A stated-empty
 part is one line, not a section: the declaration is the point, and
 padding it into a heading with boilerplate is the empty ceremony
 K-005 forbids.
