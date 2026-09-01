@@ -91,6 +91,26 @@ Target: v1.5.0 (minor — normative content).
 - **Migration note**: none — no existing content must change; the rule
   states what "unmarked in an `active` document" already meant.
 
+### Pre-ratified chunk sequences
+
+- **PR**: this amendment's PR (link recorded at proposal time).
+- **Suggested by**: allegro's parallel-lane experiment, 2026-08 to
+  2026-09 — three lanes ran approved chunk sequences while W-001
+  required a per-chunk gate, a contradiction allegro recorded as
+  deviation D-1 on 2026-09-01 rather than leaving unmarked. Drafted
+  in that project and hand-carried here.
+- **Impact**: all C1+ projects with agent sessions —
+  *accommodated*: the amendment adds a permitted mode and removes no
+  duty; a project that pre-ratifies nothing is unaffected in practice.
+  allegro — *accommodated*: D-1 retires on adoption (its B-131) and
+  its PROCESS §3 per-lane exception becomes compliant as written.
+  project-orchestrator — *accommodated, and worth its attention*: it
+  coordinates role-based agent sessions, so the sequence mode and its
+  stop conditions bear on its role contracts. methodology
+  (`methodology-corpus`) — *not affected* beyond carrying the rule.
+- **Migration note**: none — the amendment grants a mode and obliges
+  nothing; a project ignoring it keeps today's behaviour.
+
 ## v1.4.0 — 2026-08-30
 
 Minor — normative content, one constitutional change (the Article 8
