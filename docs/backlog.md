@@ -330,6 +330,14 @@ entries update in the same commit as the work they describe
   Drafted by project-orchestrator and hand-carried; its dispatch loop
   is the evidencing instance.
 
+- [x] **Contradiction-marking duty in nested sessions** (amendment;
+  the merge is acceptance) — K-011 now names the finder as the owner
+  of the marking duty at any depth of delegation, and gives a role
+  forbidden to edit files a discharge: report a located finding (file,
+  location, contradicted decision) in its own deliverable. Drafted by
+  project-orchestrator and hand-carried; its role-contracts decision 2
+  is the evidencing instance.
+
 ## Upcoming
 - [ ] **Editorial passes for existing documents** — restyle per the
   [style guide](style.md), highest-traffic reference documents first

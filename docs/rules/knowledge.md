@@ -144,16 +144,28 @@ shape — lag is legal only when declared at the point of reading.
 ### K-011 — Found contradictions are marked, not routed around
 Applies: [C0+]
 Keywords: MUST
-Motivated-by: owner-raised 2026-08-30 — the affected-locations list in a decision entry is what the decision author could see; later sessions keep finding contradictions the author missed, and routing around them silently preserves the pre-decision state
-Cites: [K-010](#k-010--superseded-content-is-never-silently-readable); [style guide](../style.md) (Supersession markers)
+Motivated-by: owner-raised 2026-08-30 — the affected-locations list in a decision entry is what the decision author could see; later sessions keep finding contradictions the author missed, and routing around them silently preserves the pre-decision state; extended by project-orchestrator, 2026-09-01 — a delegating agent's role may forbid it from editing files, leaving the duty undischargeable unless the finding session itself owns it
+Cites: [K-010](#k-010--superseded-content-is-never-silently-readable); [style guide](../style.md) (Supersession markers); [Delegation](../vocabulary.md#defined-terms) (the nesting this Statement covers)
 
 **Statement**: A session that finds content contradicting a recorded
 decision MUST, within its own deliverable, fix the content or mark it
 with a supersession marker and add the location to the decision's
-entry. Working around unmarked stale content without marking it is
-non-compliance.
+entry. When the finding session is a delegated agent, the finding
+session owns this duty, not the delegating agent that dispatched it;
+nesting the delegation further does not move the duty past whichever
+session made the finding. A session whose role forbids it from editing
+files discharges the duty by reporting a located finding — the file,
+the location, and the decision it contradicts — in its own
+deliverable, for a session that can edit to act on. Working around
+unmarked stale content without marking it or reporting a located
+finding is non-compliance.
 
 **Rationale**: K-010 (superseded content is never silently readable)
 binds what the decision author knew; this rule binds what later
-readers discover. Together they close the gap that lets a superseded
-state persist in new work.
+readers discover, including a delegated agent working several
+dispatches away from the decision's author. Assigning the duty to the
+delegating agent instead would put an interpretive judgment — whether
+the finding is real — inside a role that may be defined to make none,
+and would silently drop findings that a report never carries upward.
+Together the three close the gap that lets a superseded state persist
+in new work, at any depth of delegation.
