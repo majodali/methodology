@@ -380,13 +380,27 @@ entries update in the same commit as the work they describe
   ceremony). Migration notes: none for five; the bootstrap cache
   requires one copy action per project holding an Agent bootstrap.
 
+- [x] **Migrated to 1.5.0** — v1.5.0 tagged by the owner 2026-09-02;
+  this repo's [Classification](classification.md) pin and Binding
+  block now read 1.5.0. The release's one migration note is already
+  discharged here: `CLAUDE.md` and
+  [skeletons/CLAUDE.md](../skeletons/CLAUDE.md) carry W-008's
+  bootstrap block from the amendment's own diff, verified
+  byte-identical to the rule. Same PR corrected a stale sentence in
+  the Classification's Process records, which still said the first
+  review round was due after round 1 had been held
+  ([K-010](rules/knowledge.md#k-010--superseded-content-is-never-silently-readable)
+  — in an `active` document a contradicted passage is false, not
+  stale, and is corrected where it is found).
+
 ## Upcoming
-- [ ] **Migrate this repo to 1.5.0** — after the tag exists, a
-  migration PR bumps the [Classification](classification.md) pin and
-  the Binding block. The family members and the in-real-life family
-  migrate by their own PRs, each also copying W-008's required
-  bootstrap block into its `CLAUDE.md` (the one non-empty migration
-  note in this release).
+- [ ] **1.5.0 migration round for the other projects** — the
+  `methodology` family members (methodology-tools,
+  project-orchestrator, project-orchestrator-service,
+  serverless-web-app-template), the `in-real-life` family, and
+  allegro each raise their own migration PR: pin bump plus the one
+  copy of W-008's required bootstrap block into `CLAUDE.md`. Refresh
+  the [Portfolio register](registers/portfolio.md) when they land.
 - [ ] **Editorial passes for existing documents** — restyle per the
   [style guide](style.md), highest-traffic reference documents first
   (constitution, vocabulary, rules, classifications); each pass is an

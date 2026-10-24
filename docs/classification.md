@@ -7,9 +7,11 @@ definitions and omission defaults:
 [vocabulary](vocabulary.md#artifact-types).
 
 - **C-tier**: C1
-- **Pinned methodology version**: 1.4.0 (compliance target; migrated
-  from 1.3.0 on 2026-08-30 — v1.4.0 migration notes: none mandatory,
-  so the pin bump is the whole migration)
+- **Pinned methodology version**: 1.5.0 (compliance target; migrated
+  from 1.4.0 on 2026-09-02 — v1.5.0 carries one migration note, the
+  W-008 bootstrap block, which this repo's `CLAUDE.md` and
+  [skeletons/CLAUDE.md](../skeletons/CLAUDE.md) already carry from the
+  amendment's own diff)
 - **S-level**: S0
 - **Type**: `methodology-corpus` (reserved singleton, Article 9)
 - **Target**: none/local
@@ -24,9 +26,10 @@ definitions and omission defaults:
   [Article 8](constitution.md#article-8--amendments-versions-and-migration)'s
   two cycle-based floors (rounds at most N minor releases apart; parked
   items adjudicated within N minor releases of parking). Owner-set
-  2026-08-30, replacing the initial quarterly calibration. Under these
-  floors the first review round is already due: three minor releases
-  (v1.1.0–v1.3.0) have shipped with no round held.
+  2026-08-30, replacing the initial quarterly calibration. Review
+  round 1 was held 2026-08-30, before the v1.4.0 cut. Two minor
+  releases have shipped since (v1.4.0, v1.5.0), so the next round is
+  owed by v1.7.0 and no round is due now.
 - **Release ceremony** (owner ruling, 2026-08-18): version tags are
   created by the human owner, on `main`, after PR review — never
   pre-merge on a branch, and never by an agent. `main` accepts pushes
