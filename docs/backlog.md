@@ -439,3 +439,27 @@ entries update in the same commit as the work they describe
   semantic audits exist; round 1 seeded the first baseline). The
   parked-item floor bounds this: adjudication within three minor
   releases of 2026-08-30.
+
+- [ ] **Convergence: the methodology addresses loss of cohesion and
+  fidelity over time** — owner-raised 2026-10-22 ("Convergence and
+  Divergence": a project is convergent while the owners' cost to
+  understand, change and verify it grows more slowly than the project;
+  three invariants: provenance, sound abstraction, proportional
+  verification). Two Allegro proposals carry remedies
+  (`docs/plans/documentation-standards-delta.md`,
+  `docs/plans/conceptual-model-methodology-delta.md`, with
+  `docs/documentation-census.md` as evidence). Adjudication criterion
+  agreed 2026-10-23: adopt by the invariant each practice protects,
+  smallest set first; standard types need a second project. Open: the
+  vision document (owner writes); a `Protects:` header field on rules;
+  the vocabulary collision between Allegro's "promotion" and the
+  methodology's *Promotion*; which practices enter at review round 2.
+- [ ] **This repository's deliverables go through the communication
+  pipeline** — from 2026-10-24, per the pilot's settled decision 2: the
+  methodology repository is the pipeline's first subject. Each plan or
+  amendment written here is written IR first, with the IR beside the
+  prose, until the pilot at
+  [majodali/communication-pipeline](https://github.com/majodali/communication-pipeline)
+  reports. The pilot is registered in the
+  [Portfolio](registers/portfolio.md) (M-001).
+
