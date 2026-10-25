@@ -12,7 +12,10 @@ carry: amendment title and PR link · suggested by (evidencing instance)
 
 ## Unreleased
 
-(empty — the next accepted amendment opens the next candidate)
+- Editorial: every term entry in [vocabulary.md](vocabulary.md) carries an
+  anchor of the form `<a id="def-<slug>"></a>`, so a document can link a
+  term to its definition site. No obligation changes. The anchor form is
+  the one the communication pipeline's term lifecycle fixed on 2026-10-25.
 
 ## v1.5.0 — 2026-09-01
 

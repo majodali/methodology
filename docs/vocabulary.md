@@ -12,12 +12,12 @@ in [constitution.md](constitution.md#draft-history-pre-10).
 
 ## Classification scales and derived conditions
 
-- **C-tier** — criticality: `C0` exploration · `C1` personal tool ·
+- <a id="def-c-tier"></a>**C-tier** — criticality: `C0` exploration · `C1` personal tool ·
   `C2` serious project, pre-users · `C3` production with real users
   (definitions: [proposal §1.1](practices.md)).
-- **S-level** — sensitivity: `S0` public code only · `S1` infrastructure
+- <a id="def-s-level"></a>**S-level** — sensitivity: `S0` public code only · `S1` infrastructure
   secrets · `S2` personal data/PII ([proposal §1.2](practices.md)).
-- **Type** — `web-app` · `backend-service` · `component/library` ·
+- <a id="def-type"></a>**Type** — `web-app` · `backend-service` · `component/library` ·
   `language/tool platform` · `exploration` · `ops` · `docs-corpus` (a
   documentation or standards corpus) · `template` (a project whose
   shipped content instantiates *derived* projects — its distinctive
@@ -32,9 +32,9 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   at C1+ (a maintained research harness); C0 is a criticality tier any
   type may hold. The informal gloss of C0 as "exploration" is
   non-normative.
-- **Target** — `none/local` · `static site` · `serverless-aws` ·
+- <a id="def-target"></a>**Target** — `none/local` · `static site` · `serverless-aws` ·
   `package registry` · `home infrastructure`.
-- **Derived conditions** (functions of declared Classification fields and
+- <a id="def-derived-conditions"></a>**Derived conditions** (functions of declared Classification fields and
   of designations the Classification references, usable in applicability
   tags): `deployable` := target ≠ `none/local`; `deployed` :=
   `deployable` **∧** at least one Backlog entry is at a stage the
@@ -50,14 +50,14 @@ in [constitution.md](constitution.md#draft-history-pre-10).
 
 ## Defined terms
 
-- **Compliance target** — the methodology version a project's
+- <a id="def-compliance-target"></a>**Compliance target** — the methodology version a project's
   Classification pins, or, for an unpinned C0 project, the latest
   version (which moves with each bump — the one place amendments apply
   without a migration step,
   [Article 8](constitution.md#article-8--amendments-versions-and-migration));
   the standard all audits of that
   project run against (Articles 8–9).
-- **Review horizon** — the number of review rounds within which a rule
+- <a id="def-review-horizon"></a>**Review horizon** — the number of review rounds within which a rule
   must have been exercised by some project to escape anti-languish
   flagging; default two, measured from the rule's **first adoption** —
   the first review round at which the rule is **in play** for some
@@ -67,12 +67,12 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   whose clock has not started within the review horizon of its creation
   is itself flagged as **never-in-play** — the ultimate languisher
   ([Article 6](constitution.md#article-6--inclusion-every-rule-earns-its-keep)).
-- **Exercise** — a rule is exercised when it observably constrained or
+- <a id="def-exercise"></a>**Exercise** — a rule is exercised when it observably constrained or
   shaped work: evidence includes an artifact whose form or existence the
   rule required, a deviation recorded against it, an audit finding or
   review comment citing it, or a tooling enforcement event. Being in
   play is not exercise.
-- **Project family** — a named group of projects forming one product,
+- <a id="def-project-family"></a>**Project family** — a named group of projects forming one product,
   estate, or discipline, declared through the Classification's
   optional **Family** field: family name, role (`lead` | `member`),
   and, for members, the lead's location. Exactly one member is the
@@ -92,7 +92,7 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   reconciles family declarations for symmetry (a claimed membership
   the lead's family does not reciprocate is drift), and the Portfolio
   register groups by family.
-- **Portfolio register** — the Register in the methodology repo
+- <a id="def-portfolio-register"></a>**Portfolio register** — the Register in the methodology repo
   enumerating all majodali projects (name, location, classification
   summary). The summary is an **informative cache** — each project's own
   Classification remains authoritative — and the census pass refreshes
@@ -101,7 +101,7 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   Completeness is a duty of the methodology
   repo (`[type: methodology-corpus]`), not of the enumerated projects.
   Current instance: [registers/portfolio.md](registers/portfolio.md).
-- **Interim adjudication** — an adjudication of named amendment
+- <a id="def-interim-adjudication"></a>**Interim adjudication** — an adjudication of named amendment
   proposals that the human owner MAY convene at any time between review
   rounds ([Article 8](constitution.md#article-8--amendments-versions-and-migration)).
   It carries every per-proposal duty — the traceability review, the
@@ -111,13 +111,13 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   scheduled review round re-examines the interim decisions taken since
   the last round. Defined by the
   [release process](release-process.md).
-- **Release** — a version of the methodology made adoptable by the
+- <a id="def-release"></a>**Release** — a version of the methodology made adoptable by the
   owner's annotated tag `vX.Y.Z` on `main`; its content is the set of
   accepted amendments recorded in the Release register's section for
   that version. Compliance targets reference releases only — unreleased
   `main` is never a compliance target
   ([release process](release-process.md)).
-- **Release register** — the Register (methodology repo only,
+- <a id="def-release-register"></a>**Release register** — the Register (methodology repo only,
   [releases.md](releases.md)) recording, per amendment: provenance
   (suggested by / evidencing instance), impact assessment, and
   migration note — Unreleased section for the current release
@@ -125,26 +125,26 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   amendment lifecycle writes through
   ([M-004](rules/mirrors.md#m-004--amendment-prs-carry-their-release-register-entry));
   shape cites [Keep a Changelog](https://keepachangelog.com/).
-- **Audit delivery** — the appending of a new Audit-log Entry to an
+- <a id="def-audit-delivery"></a>**Audit delivery** — the appending of a new Audit-log Entry to an
   audited project, due exactly when an audit run's **finding
   fingerprint** — the sorted set of `(rule ID, severity, file)` over
   violations and warnings — differs from the project's newest
   same-kind entry, or no such entry exists. Always by PR, never a
   direct push; the first delivery creates the project's Audit log.
   Defined by the [audit process](audit-process.md).
-- **Editorial change** — a change with zero normative effect (typo,
+- <a id="def-editorial-change"></a>**Editorial change** — a change with zero normative effect (typo,
   broken link, formatting, wording clarification changing no
   obligation). It MAY merge without the amendment process at the
   owner's discretion and is recorded as a one-line Unreleased note;
   patch releases contain editorial changes only
   ([release process](release-process.md)). When in doubt, it is an
   amendment.
-- **Existence rules / content rules** — existence rules govern that
+- <a id="def-existence-rules-content-rules"></a>**Existence rules / content rules** — existence rules govern that
   material is present, located, designated, and linked as required;
   content rules govern its internal form and substance. Sandbox material
   is subject to the former only
   ([Article 7](constitution.md#article-7--the-c0-baseline-custom-definitions-and-the-sandbox)).
-- **Workflow** — a per-project ordered set of stages through which work
+- <a id="def-workflow"></a>**Workflow** — a per-project ordered set of stages through which work
   items pass (e.g. dev → test → release → production), declared in the
   Classification, with the stages that constitute *live* operation
   explicitly designated. The Workflow is the stage set; the **Backlog**
@@ -169,14 +169,14 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   form, audits note the declaration as tool-unreadable (an info
   finding, not a violation). Stage names SHOULD NOT collide with
   vocabulary-defined derived conditions.
-- **Delegation** — the relationship formed when an Agent session (the
+- <a id="def-delegation"></a>**Delegation** — the relationship formed when an Agent session (the
   **delegating agent**) dispatches bounded work to another Agent
   session (the **delegated agent**) and awaits its report. The
   delegated agent reports to the delegating agent, not directly to
   the human owner, unless the delegating agent is itself the human
   owner's own direct session. Delegation nests: a delegated agent MAY
   itself act as a delegating agent to sessions it dispatches in turn.
-- **Report audience** — the reader a report is addressed to under
+- <a id="def-report-audience"></a>**Report audience** — the reader a report is addressed to under
   [W-008](rules/working-agreement.md#w-008--reports-map-their-deliverables)
   (reports map their deliverables): the human owner directly (the
   **principal audience**), or a delegating agent awaiting a delegated
@@ -186,15 +186,15 @@ in [constitution.md](constitution.md#draft-history-pre-10).
 
 ## Artifact types
 
-- **Document** — a markdown file of a defined type. Canonical home is
+- <a id="def-document"></a>**Document** — a markdown file of a defined type. Canonical home is
   `docs/`; two root-level Document types exist outside it:
-  - **Readme** (`README.md`) — orientation; at C0, the sole required
+  - <a id="def-readme"></a>**Readme** (`README.md`) — orientation; at C0, the sole required
     Document.
-  - **Agent bootstrap** (`CLAUDE.md`) — non-authoritative by A0; its only
+  - <a id="def-agent-bootstrap"></a>**Agent bootstrap** (`CLAUDE.md`) — non-authoritative by A0; its only
     normative content is the Binding block.
 
   Subtypes under `docs/`:
-  - **Classification** (`docs/classification.md`) — the binding
+  - <a id="def-classification"></a>**Classification** (`docs/classification.md`) — the binding
     declaration. Mandatory fields: **C-tier**, and at C1+ the **pinned
     methodology version** (compliance target). Optional fields, each with
     a defined omission default (this definition is the **sole
@@ -212,7 +212,7 @@ in [constitution.md](constitution.md#draft-history-pre-10).
     only the version pin. Classification **field value sets are extended
     by amendment only, never per-project** — Article 7's custom
     definitions cover types of project material, not field values.
-  - **Register** — append-oriented Document of uniformly-shaped entries:
+  - <a id="def-register"></a>**Register** — append-oriented Document of uniformly-shaped entries:
     *Backlog*, *Decision register*, *Risk register*, *Radar*, *Hypothesis
     register*, *Event register* (house style: "register"; ES/CQRS sources
     often say "registry" — [AsyncAPI](https://www.asyncapi.com/) et al.),
@@ -228,37 +228,37 @@ in [constitution.md](constitution.md#draft-history-pre-10).
     registers**, a Content type — the Deviation register and Custom
     definitions section within the Classification are the current
     instances.
-  - **Plan** — outcome-named, statused, in `docs/plans/`.
-  - **Design note** — reasoning for a designed area; target of register
+  - <a id="def-plan"></a>**Plan** — outcome-named, statused, in `docs/plans/`.
+  - <a id="def-design-note"></a>**Design note** — reasoning for a designed area; target of register
     pointers.
-  - **Specification** — behavior stated to be implemented against;
+  - <a id="def-specification"></a>**Specification** — behavior stated to be implemented against;
     includes *literate specification* (prose with embedded executable
     examples).
-  - **Runbook** — operational procedure (ops profile).
-  - **Custom document type** — per-project
+  - <a id="def-runbook"></a>**Runbook** — operational procedure (ops profile).
+  - <a id="def-custom-document-type"></a>**Custom document type** — per-project
     ([Article 7](constitution.md#article-7--the-c0-baseline-custom-definitions-and-the-sandbox));
     instances link the definition.
-- **Non-document artifacts** — source, tests, workflows, built artifacts
+- <a id="def-non-document-artifacts"></a>**Non-document artifacts** — source, tests, workflows, built artifacts
   (including the methodology plugin), hosted views. Each appears in a
   project only as an instance of a defined type (standard or custom).
 
 ## Content types (sections within Documents)
 
-- **Entry** — one uniformly-shaped item in a Register or Embedded
+- <a id="def-entry"></a>**Entry** — one uniformly-shaped item in a Register or Embedded
   register (e.g. *decision entry*: ID, one-line summary, status, pointer
   to reasoning).
-- **Embedded register** — a register-shaped section within a Document,
+- <a id="def-embedded-register"></a>**Embedded register** — a register-shaped section within a Document,
   holding Entries under the same rules as a Register; current instances:
   the *Deviation register* and *Custom definitions section* of the
   Classification.
-- **Requirement** — a statement of needed behavior/quality; traceability
+- <a id="def-requirement"></a>**Requirement** — a statement of needed behavior/quality; traceability
   source.
-- **Rationale** — reasoning attached to a decision/plan/rule.
-- **Status line** — machine-readable designation carried by Plans and
+- <a id="def-rationale"></a>**Rationale** — reasoning attached to a decision/plan/rule.
+- <a id="def-status-line"></a>**Status line** — machine-readable designation carried by Plans and
   other lifecycled content.
-- **Binding block** — the Agent bootstrap section referencing the
+- <a id="def-binding-block"></a>**Binding block** — the Agent bootstrap section referencing the
   Classification with strictness language.
-- **Custom content type** — as per custom documents.
+- <a id="def-custom-content-type"></a>**Custom content type** — as per custom documents.
 
 ## Designations (lifecycle states)
 
@@ -277,23 +277,23 @@ instances) · `cites` (third-party source).
 
 ## Process terms
 
-**Review round** · **Interim adjudication** (defined above) ·
-**Audit** (form / semantic,
-[Article 9](constitution.md#article-9--audits)) · **Amendment** ·
+<a id="def-review-round"></a>**Review round** · **Interim adjudication** (defined above) ·
+<a id="def-audit"></a>**Audit** (form / semantic,
+[Article 9](constitution.md#article-9--audits)) · <a id="def-amendment"></a>**Amendment** ·
 **Release** (defined above) ·
-**Migration** ([Article 8](constitution.md#article-8--amendments-versions-and-migration))
-· **Re-classification** (updating any declared
+<a id="def-migration"></a>**Migration** ([Article 8](constitution.md#article-8--amendments-versions-and-migration))
+· <a id="def-re-classification"></a>**Re-classification** (updating any declared
 Classification field to match actual state,
 [Article 4](constitution.md#article-4--applicability-then-precedence)) ·
-**Promotion**
-(the C-tier-raising case of Re-classification) · **Chunk gate**
-· **Close-out** (plan completion) · **Standardization** (custom →
+<a id="def-promotion"></a>**Promotion**
+(the C-tier-raising case of Re-classification) · <a id="def-chunk-gate"></a>**Chunk gate**
+· <a id="def-close-out"></a>**Close-out** (plan completion) · <a id="def-standardization"></a>**Standardization** (custom →
 standard).
 
 ## Roles
 
-**Human owner** · **Agent** (session, working) · **Reviewer** (human or
-agent; adjudication reserved to humans) · **Auditor** (docs-auditor agent
+<a id="def-human-owner"></a>**Human owner** · <a id="def-agent"></a>**Agent** (session, working) · <a id="def-reviewer"></a>**Reviewer** (human or
+agent; adjudication reserved to humans) · <a id="def-auditor"></a>**Auditor** (docs-auditor agent
 for form audits on changed days + human semantic pass — on-request,
 auto-triggered, or at every review round for the methodology repo, per
 [Article 9](constitution.md#article-9--audits)).
