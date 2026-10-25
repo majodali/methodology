@@ -79,3 +79,30 @@ Verdict: not readable for RD-1, on the one-claim test. Counts: 284 prose words; 
 | 22 | A2 ... Depends: C7, C8, C11 | omits C9, C10 | relations | accepted |
 
 Tally: 19 accepted, 3 disputed. One specification change: an introduced term is defined in a sentence of its own, never inside the lead. One open question for the owner: the readability test's second question, "does each sentence state one claim?", as the reviewer applies it fails a sentence such as "opened on 2026-09-02 and still open on 2026-10-25"; whether that is the intended bar is a reader-catalog ruling for chunk 3.
+
+# Round 3, on the third rendering and the third IR
+
+Same reviewer role and model, with the reader's vocabulary supplied. Reviewed 2026-10-25.
+
+Verdict: readable for RD-1. Counts: 317 prose words; 16 findings (prose 8, IR 8); 25.2 prose findings per thousand words, down from 35.2 and 82.0; 1 undefined or borrowed term; 0 unresolved referents.
+
+| # | Quoted text | Defect (reviewer) | Rule | Disposition |
+|---|---|---|---|---|
+| 1 | is ready for your review, and one pull request still needs a merge | two claims in the lead | SP-01 | accepted, not fixed: the lead states the outcome and the decision needed in one sentence by design; whether that is one claim is the owner's ruling under ask A7 of the pipeline's chunk 2 IR |
+| 2 | so the migration round closes | term used one sentence before its definition | SP-04 | accepted: the paraphraser followed its contract, which put the definition at first use; the contract should put the definition before the first use |
+| 3 | A migration round is the set of ... | a definition inside an ask | W-008 part 1 | accepted: same cause as 2; the definition belongs before the Asks heading or in Terms introduced alone |
+| 4 | now pin methodology 1.5.0 | "now" under What is already covered reads as post-deliverable state | W-008 part 2 | accepted: an observation dated 2026-10-25 reads as settled only with its date; the paraphraser dropped the date line it had in round 2 |
+| 5 | the heading of the block that W-008 ... requires | a second claim and 27 words | SP-01; SP-02 | accepted, not fixed: the gloss names the heading's purpose, which the round 2 reviewer asked for |
+| 6 | contains the heading "cached from W-008" | the quoted string is a fragment of the heading | SP-21 | accepted: the full heading is "Reporting and writing — cached from W-008; do not edit here" |
+| 7 | documentation-standards-delta.md and conceptual-model-methodology-delta.md | not linked | SP-05 | accepted, not fixed in this round |
+| 8 | one pull request still needs a merge | the lead names one of two merges | SP-13 | accepted, not fixed: the second merge is this PR itself |
+| 9 | Source: ... | the Source omits E4 and E5 | IR header | accepted |
+| 10 | listed with a pin in the Portfolio register | evidence shows Classifications, not a register listing | claim-evidence | accepted in part: E5 is the register; C1 should cite it too |
+| 11 | contains the heading ..., the heading of the block that W-008 requires | compound claim | CK-03 | accepted, as 5 |
+| 12 | E2 is a string search | the evidence does not show that W-008 requires the block | claim-evidence | accepted in part: the requirement is W-008's own text, which the claim could cite |
+| 13 | D-1 ... is retired. evidence: E4, E5 | evidence shows B-131 closed, not D-1 retired | claim-evidence | accepted: E4 shows the disposition that ties D-1 to B-131 and B-131's closure; the claim's wording "is retired" is an inference from both, and should say so |
+| 14 | R3. C11 depends-on C12 ... | the reason does not concern C12 | relation form | accepted: a wrong target; R3 now relates C11 to E4's two facts by a claim, fixed in the IR |
+| 15 | [proposed: this IR] | no IR identifier | provenance | disputed: the schema permits "this IR" |
+| 16 | The migration PR ... was opened on 2026-09-02 | evidence does not show that #4 is the migration PR | claim-evidence | accepted in part: the PR's title says so; E3 should quote it |
+
+Tally: 15 accepted (6 fixed or to fix in the IR, 9 recorded for the paraphraser contract or the owner's ruling), 1 disputed. Delivered on the readable verdict. The remaining findings are claim-evidence precision and the placement of an introduced term's definition, both now in the pipeline's chunk 2 record.

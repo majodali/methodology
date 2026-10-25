@@ -2,7 +2,7 @@
 
 Reader: RD-1 (human owner, in conversation).
 Purpose: report. The register refresh that records the state of the methodology 1.5.0 migration round, which closes when the one lagging project's PR merges.
-Status: reviewed (rounds 1 and 2 at portfolio-1.5.0-refresh.review.md; this is the third IR)
+Status: delivered (three review rounds at portfolio-1.5.0-refresh.review.md; round 3 verdict readable; this is the third IR, with R3 corrected after round 3)
 Source: the pinned methodology version observed in nine checkouts on 2026-10-25, and the state of one pull request on GitHub the same day.
 
 ## Terms
@@ -37,13 +37,15 @@ C12. The allegro row now records two methodology proposals in allegro's docs/pla
 
 C13. The Census line at the top of docs/registers/portfolio.md now records that pins were refreshed from observed Classifications on 2026-10-25. evidence: E5. [proposed: this IR]
 
+C14. allegro's deviation D-1 names B-131 as its tracker, and B-131 is closed. evidence: E4. [decided: allegro Classification and Backlog, 2026-10-25]
+
 ## Relations
 
 R1. C8 depends-on C1 because the register copies the pin each Classification declares.
 
 R2. C9 depends-on C4 because a row may not show a pin the project does not declare.
 
-R3. C11 depends-on C12 because allegro's D-1 disposition names B-131 as its tracker and B-131 is closed.
+R3. C11 depends-on C14 because the row's wording "retired" is inferred from the disposition and the closure together.
 
 ## Evidence
 
