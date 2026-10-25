@@ -16,7 +16,7 @@ Minor — normative content.
 
 ### Reports list the terms they introduce
 
-- **PR**: [#PRNUM](https://github.com/majodali/methodology/pull/PRNUM).
+- **PR**: [#46](https://github.com/majodali/methodology/pull/46).
 - **Suggested by**: communication-pipeline, 2026-10-24 — the owner's
   ruling at the pilot's chunk 2 gate that term ratification is a
   fourth part of principal reports; the pilot's term lifecycle
