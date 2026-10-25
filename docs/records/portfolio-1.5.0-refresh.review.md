@@ -46,3 +46,36 @@ Verdict: not readable for RD-1. Counts: 257 prose words; 38 findings (prose 21, 
 | 38 | E4 ... "B-131 is closed"; allegro docs/plans/... | semicolon in evidence | SP-09 | disputed: an evidence pointer is a list, not prose |
 
 Tally: 27 accepted, 11 disputed. Three of the accepted findings changed the specifications: terms are defined at first use as well as listed; relations are not rendered; What changed items carry a named pointer. Two of the disputed findings changed the reviewer's instructions: the relation form, and SP-20's exemption.
+
+# Round 2, on the second rendering and the amended IR
+
+Same reviewer role, model and inputs, plus the vocabulary the reader's corpus defines and the list of forms the schema defines as not defects. Reviewed 2026-10-25.
+
+Verdict: not readable for RD-1, on the one-claim test. Counts: 284 prose words; 22 findings (prose 10, IR 12); 35.2 prose findings per thousand words, down from 82.0; 3 undefined or borrowed terms; 2 unresolved referents.
+
+| # | Quoted text | Defect (reviewer) | Rule | Disposition |
+|---|---|---|---|---|
+| 1 | The portfolio register refresh for the 1.5.0 migration round, meaning ... | the lead defines a term and states the outcome in one sentence | SP-01 | accepted as a specification defect: defining at first use collides with one claim per sentence when the first use is the lead; the paraphraser now keeps introduced terms out of the lead sentence |
+| 2 | for the 1.5.0 migration round | 1.5.0 without "methodology" | SP-05 | accepted |
+| 3 | projects pinned in the Portfolio register now pin methodology 1.5.0 | "pinned" in two senses | SP-04 | accepted: "listed in" |
+| 4 | the heading of the block that W-008 ... requires | "the block" undefined | SP-03; SP-04 | accepted: the heading is now quoted |
+| 5 | was opened 2026-09-02 and was still open on 2026-10-25 | two claims | SP-01 | accepted: split |
+| 6 | Eight rows, those of the projects listed above | no named pointer | SP-13 | accepted: the rows are named |
+| 7 | it reads "pinned 1.4.0" and names serverless-web-app-template #4 as open | two claims | SP-01 | accepted: split |
+| 8 | deviation D-1 (the per-chunk gate deviation against W-001, two delivery modes, human-gated) | nested gloss | SP-05 | accepted: reworded |
+| 9 | the per-chunk gate | undefined term | SP-04 | disputed: the phrase is W-001's own language, which RD-1 knows; the reviewer's vocabulary list did not include W-001's text |
+| 10 | adjudication | undefined term | SP-04 | disputed: a methodology process term (interim adjudication), omitted from the vocabulary given to the reviewer; the claim is reworded anyway to the proposals' own status |
+| 11 | Purpose: ... closes the 1.5.0 migration round | header contradicts ask A1 | consistency | accepted: a true inconsistency; the Purpose now says the refresh records the round, and the round closes when the template's PR merges |
+| 12 | Source: ... ; checkouts ... | semicolon in Source | SP-09 | disputed: a header field is a list, not prose; reworded anyway under 13 |
+| 13 | the owner's merges of eight of the nine migration PRs | merges not evidenced | IR Source | accepted: the Source now names what was observed, the pins, not the merges |
+| 14 | The eight are | referent in another claim | CK-01 | accepted: "The eight projects pinning 1.5.0 are" |
+| 15 | the block that W-008 requires. evidence: E2 | evidence shows a heading string, not a requirement | claim-evidence | accepted: the claim now states the heading string E2 searched for |
+| 16 | carries no W-008 block. evidence: E2 | as 15 | claim-evidence | accepted: as 15 |
+| 17 | C6 | compound | CK-03 | accepted: split |
+| 18 | C8 | compound | CK-03 | accepted: split |
+| 19 | D-1 ... is retired. evidence: E4, E5 | evidence does not link B-131 to D-1 | claim-evidence | accepted: E4 now cites D-1's disposition line, "tracked as B-131" |
+| 20 | C9, C10 carry decided | they are register edits, like C7, C8, C11 | provenance | accepted: the third signal on this point (paraphraser round 2, reviewer round 2, and the pipeline's chunk 2 IR ask A5); both now carry proposed |
+| 21 | awaiting adjudication | evidence says draft proposal | claim-evidence | accepted: reworded to the proposals' own status |
+| 22 | A2 ... Depends: C7, C8, C11 | omits C9, C10 | relations | accepted |
+
+Tally: 19 accepted, 3 disputed. One specification change: an introduced term is defined in a sentence of its own, never inside the lead. One open question for the owner: the readability test's second question, "does each sentence state one claim?", as the reviewer applies it fails a sentence such as "opened on 2026-09-02 and still open on 2026-10-25"; whether that is the intended bar is a reader-catalog ruling for chunk 3.
