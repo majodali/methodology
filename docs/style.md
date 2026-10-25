@@ -110,7 +110,7 @@ A report's duties scope by its report audience
 
 A report addressed to the human owner (the principal audience) leads
 with the outcome or the decision needed, not the process that produced
-it, and carries three parts **in this order**:
+it, and carries four parts **in this order**:
 
 1. **Asks**: the decisions and actions requested of the reader.
 2. **What is already covered**: the parts of the deliverable that
@@ -118,13 +118,22 @@ it, and carries three parts **in this order**:
    decisions.
 3. **What changed**: the parts that are new, each with a named pointer
    into the deliverable and one sentence on what to review there.
+4. **Terms introduced**: each term the report or its deliverable uses
+   with a meaning that neither the [methodology vocabulary](vocabulary.md)
+   nor the project's own vocabulary defines, with one sentence giving
+   its meaning. The asks request its ratification or striking. A
+   ratified term gains a row in the project's vocabulary, and a struck
+   term leaves the deliverable.
 
 A report addressed to a delegating agent (the agent audience) carries
-its status, a map of what it delivers, and the asks. It omits parts 2
-and 3 — the reader dispatched the work and already holds its context.
+its status, a map of what it delivers, and the asks. It lists its
+terms introduced when it has any, so the delegating agent can carry
+them into its own report. It omits parts 2 and 3 — the reader
+dispatched the work and already holds its context.
 
 An empty part is stated, not dropped: "No asks", "We already covered
-everything in the document", "The content is all new". W-008 carries
+everything in the document", "The content is all new", "No terms
+introduced". W-008 carries
 the short form of these duties as verbatim text every Agent bootstrap
 must hold, so the guidance stays in force late in a session; this
 section remains the authority for it. A stated-empty
