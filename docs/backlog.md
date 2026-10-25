@@ -394,13 +394,6 @@ entries update in the same commit as the work they describe
   stale, and is corrected where it is found).
 
 ## Upcoming
-- [ ] **1.5.0 migration round for the other projects** — the
-  `methodology` family members (methodology-tools,
-  project-orchestrator, project-orchestrator-service,
-  serverless-web-app-template), the `in-real-life` family, and
-  allegro each raise their own migration PR: pin bump plus the one
-  copy of W-008's required bootstrap block into `CLAUDE.md`. Refresh
-  the [Portfolio register](registers/portfolio.md) when they land.
 - [ ] **Editorial passes for existing documents** — restyle per the
   [style guide](style.md), highest-traffic reference documents first
   (constitution, vocabulary, rules, classifications); each pass is an
@@ -454,15 +447,21 @@ entries update in the same commit as the work they describe
   vision document (owner writes); a `Protects:` header field on rules;
   the vocabulary collision between Allegro's "promotion" and the
   methodology's *Promotion*; which practices enter at review round 2.
+- [x] **1.5.0 migration round closed** — all nine pinned projects
+  (the `methodology` family, the `in-real-life` family, allegro) merged
+  their migration PRs: pin bump plus the one copy of W-008's required
+  bootstrap block into `CLAUDE.md`. The last, serverless-web-app-template
+  PR #4, opened 2026-09-02 and merged 2026-10-25.
 - [x] **Portfolio refreshed after the 1.5.0 migration round** — 2026-10-25.
-  Eight of nine pinned rows read 1.5.0 from the observed Classifications;
-  serverless-web-app-template's row reads 1.4.0 and names its migration
-  PR #4, open since 2026-09-02. allegro's row records deviation D-1
-  retired and two methodology proposals awaiting adjudication. First
-  live run of the communication pipeline on a methodology deliverable:
-  the PR body is rendered by the paraphraser from
+  All nine pinned rows read 1.5.0 from the observed Classifications;
+  serverless-web-app-template's row records its migration closed.
+  allegro's row records deviation D-1 retired and two methodology
+  proposals awaiting adjudication. First live run of the communication
+  pipeline on a methodology deliverable: the PR body is rendered by the
+  paraphraser from
   [docs/records/portfolio-1.5.0-refresh.ir.md](records/portfolio-1.5.0-refresh.ir.md)
-  and reviewed by the stranger reviewer.
+  and reviewed by the stranger reviewer; the IR was revised once after
+  the round closed.
 
 - [ ] **This repository's deliverables go through the communication
   pipeline** — from 2026-10-24, per the pilot's settled decision 2: the
