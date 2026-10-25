@@ -2,7 +2,7 @@
 
 Reader: RD-1 (human owner, in conversation).
 Purpose: report. The register refresh that records the close of the methodology 1.5.0 migration round.
-Status: delivered (fourth IR; revised 2026-10-25 after serverless-web-app-template PR #4 merged: C4, C5, C6, C7, C9, C10, R2 and A1 removed, C15 to C18 and E6 added, C1 and C2 reworded; three review rounds at portfolio-1.5.0-refresh.review.md, round 3 verdict readable, on the third IR; C14 and R3 of the third IR were removed when the round-trip check found C14 absent from the render map; E4 carries what C14 said)
+Status: delivered (fourth IR, rendered by the paraphraser 2026-10-25 under disposition D1; revised 2026-10-25 after serverless-web-app-template PR #4 merged: C4, C5, C6, C7, C9, C10, R2 and A1 removed, C15 to C18 and E6 added, C1 and C2 reworded; three review rounds at portfolio-1.5.0-refresh.review.md, round 3 verdict readable, on the third IR; C14 and R3 of the third IR were removed when the round-trip check found C14 absent from the render map; E4 carries what C14 said)
 Source: the pinned methodology version observed in nine checkouts on 2026-10-25, and the state of one pull request on GitHub the same day, read twice.
 
 ## Terms
