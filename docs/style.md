@@ -110,7 +110,7 @@ A report's duties scope by its report audience
 
 A report addressed to the human owner (the principal audience) leads
 with the outcome or the decision needed, not the process that produced
-it, and carries four parts **in this order**:
+it, and carries four parts in this order:
 
 1. **Asks**: the decisions and actions requested of the reader.
 2. **What is already covered**: the parts of the deliverable that
@@ -121,25 +121,26 @@ it, and carries four parts **in this order**:
 4. **Terms introduced**: each term the report or its deliverable uses
    with a meaning that neither the [methodology vocabulary](vocabulary.md)
    nor the project's own vocabulary defines, with one sentence giving
-   its meaning. The asks request its ratification or striking. A
-   ratified term gains a row in the project's vocabulary, and a struck
-   term leaves the deliverable.
+   its meaning. The asks request its ratification or striking. On
+   ratification the agent adds a row for the term to the project's
+   vocabulary. A struck term is removed from the deliverable.
 
 A report addressed to a delegating agent (the agent audience) carries
 its status, a map of what it delivers, and the asks. It lists its
 terms introduced when it has any, so the delegating agent can carry
-them into its own report. It omits parts 2 and 3 — the reader
+them into its own report. It may omit parts 2 and 3 — the reader
 dispatched the work and already holds its context.
 
-An empty part is stated, not dropped: "No asks", "We already covered
-everything in the document", "The content is all new", "No terms
-introduced". W-008 carries
+An empty part is stated, not dropped, in the part's own words: "No
+asks", "We already covered everything in the document", "The content
+is all new", "No terms introduced". W-008 carries
 the short form of these duties as verbatim text every Agent bootstrap
 must hold, so the guidance stays in force late in a session; this
 section remains the authority for it. A stated-empty
 part is one line, not a section: the declaration is the point, and
 padding it into a heading with boilerplate is the empty ceremony
-K-005 forbids.
+K-005 (companion registers when pressure appears, never before)
+forbids.
 
 ### Supersession markers
 

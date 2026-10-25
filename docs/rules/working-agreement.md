@@ -142,7 +142,7 @@ documentation lives.
 ### W-008 — Reports map their deliverables
 Applies: [C0+]
 Keywords: MUST, SHOULD
-Motivated-by: owner-raised 2026-08-30 — delivery summaries citing the delivered document by naked section number, and asks buried in prose so the owner parses both summary and document to learn what is requested; extended by project-orchestrator, 2026-09-01 — a delegated loop's reports are mostly agent-addressed and mostly attach no artifact, both outside the rule's original scoping; extended by communication-pipeline, 2026-10-24 — the owner's ruling at the pilot's chunk 2 gate that term ratification is a fourth part of principal reports, after the unratified-vocabulary indicator of "Convergence and Divergence" (2026-10-22) and the pilot's first evaluation case
+Motivated-by: owner-raised 2026-08-30 — delivery summaries citing the delivered document by naked section number, and asks buried in prose so the owner parses both summary and document to learn what is requested; extended by project-orchestrator, 2026-09-01 — a delegated loop's reports are mostly agent-addressed and mostly attach no artifact, both outside the rule's original scoping; extended by communication-pipeline (the pipeline pilot registered in the Portfolio), 2026-10-24 — the owner's ruling at that project's second chunk gate that term ratification is a fourth part of principal reports, after the unratified-vocabulary indicator of "Convergence and Divergence" (2026-10-22) and the pilot's first evaluation case
 Cites: [style guide](../style.md) (Reports and summaries); [P-004](prose.md#p-004--citations-carry-names); [Delegation and Report audience](../vocabulary.md#defined-terms) (the audience the Statement below scopes by); [Constitution Article 7](../constitution.md#article-7--the-c0-baseline-custom-definitions-and-the-sandbox) (custom definitions, which the terms-introduced part surfaces for ratification)
 
 **Statement**: A report's duties scope by its report audience. A
@@ -156,14 +156,18 @@ are new, each with a named pointer into the deliverable and what to
 review there), and **terms introduced** (each term the report or its
 deliverable uses with a meaning that neither the
 [methodology vocabulary](../vocabulary.md) nor the project's own
-vocabulary defines, with one sentence giving its meaning; the asks
-part requests its ratification or striking). An empty part MUST be
-stated, never omitted — "No asks", "We already covered everything in
-the document", "The content is all new", "No terms introduced". A
-report addressed to a delegating agent (the agent audience) MUST
-state its status, map its deliverable, and carry the asks part. It
-MUST list its terms introduced when it has any. It MAY omit what is
-already covered and what changed. Any substantive report SHOULD
+vocabulary defines, each with one sentence giving its meaning). The
+asks part MUST request the ratification or striking of each term
+introduced. A ratified term gains a row in the project's vocabulary.
+A struck term is removed from the deliverable. An empty part MUST be
+stated, never omitted, in the part's own words: "No asks" for the
+asks, "We already covered everything in the document" for what is
+already covered, "The content is all new" for what changed, "No
+terms introduced" for terms introduced. A report addressed to a
+delegating agent (the agent audience) MUST state its status, map its
+deliverable, and carry the asks part. It MUST list its terms
+introduced when it has any. It MAY omit what is already covered and
+what changed. Any substantive report SHOULD
 follow the audience-appropriate structure where it fits, without
 padding a stated-empty part into a section. The P- rules bind reports
 as their purpose admits.
@@ -189,14 +193,14 @@ Reports to the human owner carry four parts, in this order:
    encode decisions the conversation already settled.
 3. **What changed** — the parts that are new, each with a named
    pointer into the deliverable and what to review there.
-4. **Terms introduced** — each term used with a meaning that neither
-   the methodology vocabulary nor the project's vocabulary defines,
-   with one sentence giving its meaning. The asks request its
-   ratification or striking.
+4. **Terms introduced** — each term the report or its deliverable
+   uses with a meaning that neither the methodology vocabulary nor
+   the project's vocabulary defines, with one sentence giving its
+   meaning. The asks request its ratification or striking.
 
-State an empty part; never drop it: "No asks", "We already covered
-everything in the document", "The content is all new", "No terms
-introduced".
+State an empty part; never drop it. In the parts' order: "No asks",
+"We already covered everything in the document", "The content is all
+new", "No terms introduced".
 
 Lead with the outcome or the decision needed, never with the process
 that produced it. Write short, direct sentences, one idea each. Cut
@@ -219,7 +223,7 @@ with everything the session does afterwards, and the harness re-injects
 the bootstrap where it does not re-read the corpus. Caching the rule
 where it is re-read keeps it in force late in a session, when the drift
 appears (owner observation across high-traffic sessions, 2026-09-01). Stating an empty part is a declaration, not
-ceremony: "No asks" tells the reader in three words that they owe
+ceremony: "No asks" tells the reader in two words that they owe
 nothing, where silence leaves them searching for what they missed
 (the omission-as-declaration principle of Article 4, applied to
 reports). Scoping by

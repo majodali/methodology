@@ -2,7 +2,7 @@
 
 Reader: RD-4 (a fresh agent session) reading the amended rule; the human owner adjudicates the amendment.
 Purpose: document. The amendment to W-008 (reports map their deliverables) that adds the part terms introduced, its bootstrap block, its style guide section, and its release-register entry.
-Status: draft
+Status: reviewed (one stranger review of the rendered rule text at w008-terms-introduced.review.md, disposition D3; 36 findings, 10 fixed, the rest pre-existing wording left to the editorial pass or accepted by design; verdict not readable for RD-4 before the fixes)
 Source: the owner's ruling at the pilot's chunk 2 gate, 2026-10-24; the pilot's term lifecycle, approved 2026-10-25; the owner's "Convergence and Divergence", 2026-10-22; the pilot's case 001.
 Normative: yes
 
@@ -22,9 +22,13 @@ C3. A term is introduced when the report or its deliverable uses it with a meani
 
 C4. An empty terms-introduced part is stated as "No terms introduced". [inferred: R1]
 
+C20. Each empty-part statement is tied to its part, in the part's own words. [proposed: this IR]
+
 C5. The asks part requests the ratification or striking of each introduced term. evidence: E1. [decided: owner, 2026-10-25]
 
-C6. Ratification gives the term a row in the project's vocabulary, and a struck term leaves the deliverable. evidence: E1. [decided: owner, 2026-10-25]
+C6. On ratification the agent adds a row for the term to the project's vocabulary. evidence: E1. [decided: owner, 2026-10-25]
+
+C19. A struck term is removed from the deliverable. evidence: E1. [decided: owner, 2026-10-25]
 
 C7. A report addressed to a delegating agent lists its terms introduced when it has any. [proposed: this IR]
 
