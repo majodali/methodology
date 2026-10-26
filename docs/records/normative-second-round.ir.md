@@ -2,7 +2,7 @@
 
 Reader: RD-4 (a fresh agent session) reading the intermediate-representation specification; the human owner adjudicates the amendment.
 Purpose: document. The amendment to the intermediate-representation specification that makes a second stranger round the default for normative text and adopts the optional Footprint header from the pipeline's schema v1.3.
-Status: draft
+Status: reviewed (two stranger rounds at normative-second-round.review.md, disposition D3; round 1: 28 findings, not readable; round 2: 29 findings, not readable, all fixed; the owner decides on a third round at adjudication)
 Source: the owner's rulings at the communication pipeline's chunk 4 gate, 2026-10-26 ("Second stranger review on normative text is a good call"; the term footprint ratified); the pipeline's schema v1.3 and evaluation case 004.
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/records/; docs/releases.md; docs/backlog.md; docs/registers/portfolio.md
