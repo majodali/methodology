@@ -241,9 +241,9 @@ adoption the specification is amended here. CK-12 was added at
 adoption after a stranger review found identifier uniqueness stated
 without a check. The Footprint header was added on 2026-10-26 from
 the communication-pipeline project's schema v1.3. The second
-stranger round for normative text was added the same day by the
-owner's ruling at that project's fourth gate, after the four
-normative texts of October 2026 (methodology PRs #46 to #49) were
-each reviewed once, judged not readable before fixes, and never
-measured after
+stranger round for normative text was added on 2026-10-26 by the
+owner's ruling at the communication-pipeline project's fourth gate.
+The evidence was the four normative texts of October 2026
+(methodology PRs #46 to #49): each was reviewed once, judged not
+readable before fixes, and never measured after
 ([evaluation case 004](https://github.com/majodali/communication-pipeline/blob/main/eval/cases/004-normative-text-reviews-2026-10-26.md)).
