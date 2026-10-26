@@ -93,3 +93,24 @@ text is a meta-review subject from this round.
 | 23 | only Asks has an empty-part wording | fixed: every part, in W-008's words |
 | 25 | the footprint compared once, recorded later | fixed: compared at reviewed and at delivery; delivery counts recorded |
 | 27 | "formal project model" | fixed: the Backlog's horizon named |
+
+## Round 4, 2026-10-26
+
+3,429 words; 21 findings, 20 in the new passages; 6.1 per thousand
+words; verdict: not readable for RD-4. Every finding was fixed.
+
+| # | Finding (shortened) | Disposition |
+|---|---|---|
+| 1, 2, 4, 6, 8, 10 | long sentences or two claims in a cell | fixed: split |
+| 3 | "review flag" and "review requested" name one concept | fixed: `review flag` everywhere, recorded in the Status parenthesis |
+| 5 | no comparison when the branch is merged or deleted before delivery | fixed: the last comparison made |
+| 7 | "human-owner reader" undefined | fixed: RD-1 or RD-2 |
+| 9 | the Term row's "inside the claim" versus CK-04 | fixed: removed |
+| 11 | CK-14 fires during rounds because `rendered` precedes them | fixed: `reviewed` or `delivered` only |
+| 12 | the ratio is information in a findings table | fixed: the intro and the row say so |
+| 13 | the render map notation undefined | fixed: the notation read out |
+| 14, 17, 18, 20 | referents | fixed |
+| 15 | who accepts findings of a readable round; later edits | fixed: the reasoning role records; the next edit fixes and may start rounds |
+| 16 | "not delivered" versus the owner's decision | fixed: the reasoning role does not deliver; the owner decides |
+| 19 | the meta-review duty unbounded | fixed: a session of the pipeline, on the record and the text, delivered as that session's report |
+| 21 | no test for a new claim in prose | fixed: the stranger's claim-evidence finding named |
