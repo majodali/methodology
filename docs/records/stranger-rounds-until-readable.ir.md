@@ -39,7 +39,7 @@ C18. After a not-readable verdict, prose the reasoning role rendered is fixed by
 
 C15. The fixes of a readable round are applied before delivery and listed in the review record as post-verdict fixes. [proposed: this IR]
 
-C16. CK-13 checks that two T elements do not name the same term. [proposed: this IR]
+C16. CK-13 checks that no two T elements name one term. [proposed: this IR]
 
 C19. CK-14 checks that a reviewed IR has its review record with a verdict per round. [proposed: this IR]
 
