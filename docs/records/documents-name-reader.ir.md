@@ -2,7 +2,7 @@
 
 Reader: RD-4 (a fresh agent session) reading the two new P- rules; the human owner adjudicates the amendment.
 Purpose: document. The amendment that adds P-007 (documents state their reader) and P-008 (terms are defined once and linked at first use), moves the reader catalog and the term lifecycle into the style guide and the vocabulary, and lists the mechanical checks a lint can run.
-Status: draft
+Status: reviewed (one stranger review at documents-name-reader.review.md, disposition D3; 25 findings, 21 fixed; verdict before fixes: not readable for RD-4)
 Source: Allegro's documentation-standards proposal (docs/plans/documentation-standards-delta.md, 2026-10-16); the communication pipeline's reader catalog, term lifecycle and style specification (chunks 1 to 3); the owner's rulings of 2026-10-25 on term handling.
 Normative: yes
 
@@ -45,6 +45,10 @@ C10. A term with a project-specific meaning has one definition site. [decided: A
 C11. A definition site carries an anchor of the form `<a id="def-<slug>"></a>`. [decided: owner, 2026-10-25]
 
 C12. A document that uses a term is its definition site or links the site at the term's first use in the unit. [decided: owner, 2026-10-25]
+
+C33. A text addressed to RD-1, RD-2 or RD-3 is a report, and a text addressed to RD-4 or RD-5 is a document. [proposed: this IR]
+
+C34. A struck term is removed from the deliverable. [decided: owner, 2026-10-26]
 
 C13. The unit is the whole document for a report and the section for a reference document. [decided: owner, 2026-10-25]
 

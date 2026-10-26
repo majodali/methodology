@@ -58,21 +58,22 @@ sentence.
 
 ### Reader statement
 
-A document under `docs/` opens with its reader: who it is for and what
-they are assumed to know, with a link to where that knowledge is
-defined (P-007 — documents state their reader). Name the reader from
-the catalog below by identifier, or describe the reader in one
-sentence when no entry fits. A text that assumes the conversation
-that produced it is a report, governed by W-008 (reports map their
-deliverables), not a document.
+A document under `docs/` opens with its reader statement, a `Reader:`
+line or a *Reader* section before the first section heading: who the
+document is for and what they are assumed to know, with a link to
+where that knowledge is defined (P-007 — documents state their
+reader). Name the reader from the catalog below by identifier, or
+describe the reader in one sentence when no entry fits. A text
+addressed to RD-1, RD-2 or RD-3 is a report, governed by W-008
+(reports map their deliverables), not a document. Existing documents
+gain their reader statement at their next edit (Migration, below).
 
 ### Readers
 
-The reader catalog. Each entry names what the reader is assumed to
-know, what the text owes them, and the readability test a reviewer
-answers for that reader. RD-1 to RD-3 are W-008's report audiences;
-RD-4 and RD-5 read documents. An entry is added only when a real text
-had a reader none of these describes, and that text is cited.
+The [reader catalog](vocabulary.md#def-reader-catalog), one row per
+reader. RD-1 to RD-3 are W-008's report audiences. RD-4 and RD-5 read
+documents. An entry is added only when a real text had a reader none
+of these describes. That text is cited in the entry.
 
 | Id | Reader | Assumed to know | Needs from the text | Readability test |
 |---|---|---|---|---|
@@ -85,15 +86,17 @@ had a reader none of these describes, and that text is cited.
 ### Terms are defined once
 
 A term with a project-specific meaning has one definition site: a
-vocabulary row or a defining heading, carrying the anchor
-`<a id="def-<slug>"></a>` (P-008 — terms are defined once and linked
-at first use). Link the site at the term's first use in the unit (the
-document for a report, the section for a reference document) and
-write the term bare after. For RD-5 replace the link with an inline
-gloss. A term with no site is defined in one sentence at first use
-and listed under *terms introduced* for the owner to ratify or strike
-(W-008). A ratified term gets its vocabulary row; a struck term is
-removed from the deliverable.
+vocabulary row, or the heading of the document or section that
+defines it, carrying the anchor `<a id="def-<slug>"></a>` (P-008 —
+terms are defined once and linked at first use). Link the site at the
+term's first use in the unit (the whole text for a report, the
+section for a document) and write the term bare after. For RD-5
+replace the link with an inline gloss. A term with no site is defined
+in one sentence at first use and listed under *terms introduced* for
+the owner to ratify or strike (W-008). A ratified term gets its
+vocabulary row. A struck term is removed from the deliverable. A term
+used in more than one sense across a project's documents is listed in
+the vocabulary with the sense to prefer in each use.
 
 ### Citations carry names
 
@@ -229,12 +232,12 @@ reviewer. methodology-tools runs them as `mtool style`.
 |---|---|
 | P-001 | three or more numerals in one sentence; a document whose first section needs the text above it (judgment) |
 | P-002 | a sentence over 25 words (warn) or over 35 (flag); two independent clauses joined by `and`, `but`, `so`, a semicolon or an em-dash; a sentence-initial `This`, `That`, `These`, `Those`, `It` with no noun following; `the other`, `the above`, `the former`, `the latter`; fragments of the form `That is X.` and `X is not Y. It is Z.` |
-| P-003 | a bold span longer than four words, or bold not followed by `:` and not at a term's definition site |
+| P-003 | a bold span longer than four words, or bold that is not a field label, not at a term's definition site, and not followed by a defining sentence |
 | P-004 | an identifier (`[A-Z]{1,3}-?\d+`, `§\d+`) whose first occurrence is not followed by a parenthesized name or a link; for RD-5, every occurrence |
-| P-005 | a header that is only an identifier, ends in `?`, or contains an em-dash |
+| P-005 | a header that is only an identifier, ends in `?`, or contains an em-dash outside the rule-header form `ID — name` |
 | P-006 | an entry over 60 words in a register whose header declares a row shape |
-| P-007 | no `Reader:` line or *Reader* section within the first twenty lines of a document under `docs/` |
-| P-008 | a vocabulary term whose first use in the unit is not linked; a link to a `#def-` anchor that does not resolve; a bolded or capitalized phrase absent from both vocabularies |
+| P-007 | no `Reader:` line or *Reader* section before the first section heading of a document under `docs/` |
+| P-008 | a vocabulary term whose first use in the unit is not linked; a link to a `#def-` anchor that does not resolve; a bolded phrase that is not a field label, not at a definition site, not followed by a defining sentence, and absent from both vocabularies |
 | W-008 | a report to RD-1 or RD-2 without the four headings in order; a report to RD-3 without status, map and asks |
 | K-010 | a blockquote beginning `Superseded by` whose citation does not resolve |
 

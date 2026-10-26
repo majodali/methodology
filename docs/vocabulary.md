@@ -176,12 +176,16 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   the human owner, unless the delegating agent is itself the human
   owner's own direct session. Delegation nests: a delegated agent MAY
   itself act as a delegating agent to sessions it dispatches in turn.
-- <a id="def-invariant"></a>**Invariant** — one of three properties a convergent project
-  keeps as it grows (owner, "Convergence and Divergence", 2026-10-22; a
-  project is convergent while the cost for its owners to understand,
-  change and verify it grows more slowly than the project). A rule MAY
-  name the invariant it protects in its `Protects:` header
-  ([Article 5](constitution.md#article-5--rule-form)). The three:
+- <a id="def-convergence"></a>**Convergence** — a project is convergent while the cost for its
+  owners to understand, change and verify it grows more slowly than
+  the project (owner, "Convergence and Divergence", 2026-10-22, a
+  writeup not yet in this corpus).
+- <a id="def-invariant"></a>**Invariant** — one of three properties a convergent project keeps
+  as it grows. A rule MAY name the invariants it protects in its
+  `Protects:` header, each with one clause saying how
+  ([Article 5](constitution.md#article-5--rule-form), rule form). The
+  three definitions below are wordings proposed 2026-10-26 from the
+  owner's writeup, pending the owner's confirmation:
   - <a id="def-provenance"></a>**Provenance** — every claim a governed
     document makes can be traced to the decision, evidence or source
     that produced it.
@@ -189,14 +193,16 @@ in [constitution.md](constitution.md#draft-history-pre-10).
     term and structure a governed document uses has one definition and
     is used as defined.
   - <a id="def-proportional-verification"></a>**Proportional
-    verification** — the effort spent checking a change is set by what
-    the change can break, not by the size of the project.
+    verification** — the effort spent checking a change grows with the
+    change's footprint, the files and claims it touches, and not with
+    the size of the project.
 - <a id="def-reader-catalog"></a>**Reader catalog** — the set of defined readers a text may be
-  written for, each with what it is assumed to know and its
-  **readability test**, the question a reviewer answers to judge a text
-  readable for that reader. The catalog is the [style guide's Readers
-  table](style.md#readers): RD-1 to RD-5. A document names its reader
-  from it ([P-007](rules/prose.md#p-007--documents-state-their-reader)).
+  written for: RD-1 to RD-5, one row each in the [style guide's
+  Readers table](style.md#readers). Each row states what the reader is
+  assumed to know and its **readability test**, the question a
+  reviewer answers to judge a text readable for that reader. A
+  document names its reader from the catalog
+  ([P-007](rules/prose.md#p-007--documents-state-their-reader)).
 - <a id="def-reader-statement"></a>**Reader statement** — the opening of a document that names who it
   is for and what that reader is assumed to know, with a link to where
   that knowledge is defined
@@ -206,17 +212,19 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   anchor `<a id="def-<slug>"></a>` that every other use links to
   ([P-008](rules/prose.md#p-008--terms-are-defined-once-and-linked-at-first-use)).
 - <a id="def-terms-introduced"></a>**Terms introduced** — the fourth part of a report to the human
-  owner: each term the report or its deliverable uses with a meaning
-  that neither the methodology vocabulary nor the project's own
-  vocabulary defines, with one sentence giving its meaning
+  owner
   ([W-008](rules/working-agreement.md#w-008--reports-map-their-deliverables)).
-  Ratified 2026-10-26.
+  It lists each term the report or its deliverable uses with a meaning
+  no vocabulary defines, with one sentence of meaning each. Ratified
+  2026-10-26.
 - <a id="def-migration-round"></a>**Migration round** — the set of per-project migration PRs that
-  follows one methodology release. Ratified 2026-10-26 (first used in
-  the Portfolio refresh of 2026-10-25).
+  follows one methodology release. Ratified 2026-10-26; first used in
+  the Portfolio refresh of 2026-10-25
+  ([PR #44](https://github.com/majodali/methodology/pull/44)).
 - <a id="def-intermediate-representation"></a>**Intermediate representation (IR)** — the structured form a
   reasoning role writes before prose: the terms, claims, relations,
-  evidence and asks of one communication, each with an identifier and a
+  evidence and asks of one communication. Every element carries an
+  identifier. Every term, claim and cluster also carries a
   **provenance status** (decided, proposed or inferred). Specified in
   [intermediate-representation.md](intermediate-representation.md);
   required by
@@ -229,8 +237,8 @@ in [constitution.md](constitution.md#draft-history-pre-10).
     dropping none.
   - <a id="def-stranger"></a>**Stranger** — a reviewer with no access to
     the conversation that produced the text and no content
-    contributions to the project; judges a text against its reader's
-    readability test.
+    contributions to the project. The stranger judges a text against
+    its reader's readability test.
 - <a id="def-report-audience"></a>**Report audience** — the reader a report is addressed to under
   [W-008](rules/working-agreement.md#w-008--reports-map-their-deliverables)
   (reports map their deliverables): the human owner directly (the

@@ -2,7 +2,7 @@
 
 Reader: RD-4 (a fresh agent session) reading Article 5 and a rule header; the human owner adjudicates the amendment.
 Purpose: document. The amendment to Constitution Article 5 that adds an optional `Protects:` header field naming the convergence invariant a rule protects, with the three invariants defined in the vocabulary.
-Status: draft
+Status: reviewed (one stranger review at protects-field.review.md, disposition D3; 20 findings, 14 fixed; verdict before fixes: not readable for RD-4)
 Source: the owner's "Convergence and Divergence" (2026-10-22); the convergence work item in the Backlog, open point "a `Protects:` header field on rules"; the pilot plan's settled decision 5 (2026-10-24).
 Normative: yes
 
@@ -16,7 +16,7 @@ T3. Provenance: every claim a governed document makes can be traced to the decis
 
 T4. Sound abstraction: every term and structure a governed document uses has one definition and is used as defined. [proposed: this IR]
 
-T5. Proportional verification: the effort spent checking a change is set by what the change can break, not by the size of the project. [proposed: this IR]
+T5. Proportional verification: the effort spent checking a change grows with the change's footprint, the files and claims it touches, and not with the size of the project. [proposed: this IR]
 
 ## Claims
 
@@ -28,7 +28,7 @@ C2. A rule MAY carry a `Protects:` header field naming one or more of the three 
 
 C3. The `Protects:` field sits after `Cites:` in the rule header. [proposed: this IR]
 
-C4. A `Protects:` value is an invariant name from the vocabulary, optionally followed by one clause saying how the rule protects it. [proposed: this IR]
+C4. A `Protects:` value names each invariant, followed by an em-dash and one clause saying how the rule protects it, with several invariants separated by semicolons. [proposed: this IR]
 
 C5. A rule without a `Protects:` field is not defective. [proposed: this IR]
 
