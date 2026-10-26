@@ -70,7 +70,13 @@ Applies: [C2+] [type: web-app, backend-service]
 Keywords: MUST
 Motivated-by: [in-real-life CI pipeline](…)
 Cites: —
+Protects: proportional verification — a deployed test run checks what a unit run cannot
 ```
+
+`Protects:` is optional ([Article 5](../constitution.md#article-5--rule-form)).
+Its value is one or more invariant names from the
+[vocabulary](../vocabulary.md#def-invariant), each optionally followed
+by an em-dash and one clause saying how the rule protects it.
 
 The body follows with labeled fields — **Statement** (the norm),
 **Rationale** (why, optional), **Exceptions** (bounded carve-outs, if

@@ -144,6 +144,7 @@ Applies: [C0+]
 Keywords: MUST, SHOULD
 Motivated-by: owner-raised 2026-08-30 — delivery summaries citing the delivered document by naked section number, and asks buried in prose so the owner parses both summary and document to learn what is requested; extended by project-orchestrator, 2026-09-01 — a delegated loop's reports are mostly agent-addressed and mostly attach no artifact, both outside the rule's original scoping; extended by communication-pipeline (the pipeline pilot registered in the Portfolio), 2026-10-24 — the owner's ruling at that project's second chunk gate that term ratification is a fourth part of principal reports, after the unratified-vocabulary indicator of "Convergence and Divergence" (2026-10-22) and the pilot's first evaluation case
 Cites: [style guide](../style.md) (Reports and summaries); [P-004](prose.md#p-004--citations-carry-names); [Delegation and Report audience](../vocabulary.md#defined-terms) (the audience the Statement below scopes by); [Constitution Article 7](../constitution.md#article-7--the-c0-baseline-custom-definitions-and-the-sandbox) (custom definitions, which the terms-introduced part surfaces for ratification)
+Protects: proportional verification — the report is the reader's index into the deliverable, so review cost follows the change and not the document; provenance — the terms-introduced part surfaces every coinage for ratification
 
 **Statement**: A report's duties scope by its report audience. A
 report addressed to the human owner (the principal audience) MUST lead

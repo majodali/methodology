@@ -125,7 +125,11 @@ Every rule has: a stable **ID** (rule-corpus format,
 Article 4 (default when unstated: `[C1+]`, all S-levels, all types, all
 targets); a link to its **motivating instance** (Article 6); and, if
 imported or adapted from a third-party source, a **source citation**.
-Rules MAY link a rationale note. Terms used normatively MUST be defined in
+Rules MAY link a rationale note. Rules MAY name, in a `Protects:`
+header field, the convergence **invariant** or invariants they protect
+(vocabulary-defined: provenance, sound abstraction, proportional
+verification), with one clause saying how; a rule without the field
+is not defective. Terms used normatively MUST be defined in
 the vocabulary (`docs/vocabulary.md`).
 
 ## Article 6 — Inclusion: every rule earns its keep

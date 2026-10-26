@@ -176,6 +176,21 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   the human owner, unless the delegating agent is itself the human
   owner's own direct session. Delegation nests: a delegated agent MAY
   itself act as a delegating agent to sessions it dispatches in turn.
+- <a id="def-invariant"></a>**Invariant** — one of three properties a convergent project
+  keeps as it grows (owner, "Convergence and Divergence", 2026-10-22; a
+  project is convergent while the cost for its owners to understand,
+  change and verify it grows more slowly than the project). A rule MAY
+  name the invariant it protects in its `Protects:` header
+  ([Article 5](constitution.md#article-5--rule-form)). The three:
+  - <a id="def-provenance"></a>**Provenance** — every claim a governed
+    document makes can be traced to the decision, evidence or source
+    that produced it.
+  - <a id="def-sound-abstraction"></a>**Sound abstraction** — every
+    term and structure a governed document uses has one definition and
+    is used as defined.
+  - <a id="def-proportional-verification"></a>**Proportional
+    verification** — the effort spent checking a change is set by what
+    the change can break, not by the size of the project.
 - <a id="def-report-audience"></a>**Report audience** — the reader a report is addressed to under
   [W-008](rules/working-agreement.md#w-008--reports-map-their-deliverables)
   (reports map their deliverables): the human owner directly (the
