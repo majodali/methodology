@@ -255,33 +255,37 @@ under Article 7. A struck term leaves the deliverable.
 ### W-009 — The methodology corpus writes its deliverables IR first
 Applies: [type: methodology-corpus]
 Keywords: MUST, MAY
-Motivated-by: the communication-pipeline pilot, settled decision 2 (owner, 2026-10-24) — the methodology repository is the pipeline's first subject; its live run on the Portfolio refresh of 2026-10-25, where the stranger's findings per thousand words fell from 82.0 to 25.2 over three rounds; three amendments of October 2026 drafted IR first
-Cites: [intermediate representation](../intermediate-representation.md) (the specification); [W-008](#w-008--reports-map-their-deliverables) (reports map their deliverables); [P-008](prose.md#p-008--terms-are-defined-once-and-linked-at-first-use) (terms are defined once)
-Protects: provenance — every claim carries its status and its evidence; proportional verification — the specification's thresholds decide what runs
+Motivated-by: the [communication-pipeline](https://github.com/majodali/communication-pipeline) project's plan, settled decision 2 (owner, 2026-10-24, [pipeline-pilot.md](https://github.com/majodali/communication-pipeline/blob/main/docs/plans/pipeline-pilot.md)) — the methodology repository is that project's first subject; its live run on the Portfolio refresh ([PR #44](https://github.com/majodali/methodology/pull/44)), where a stranger's findings per thousand words fell from 82.0 to 25.2 over three rounds; three amendments of October 2026 drafted IR first
+Cites: [intermediate representation](../intermediate-representation.md) (the specification); [W-008](#w-008--reports-map-their-deliverables) (reports map their deliverables); [P-008](prose.md#p-008--terms-are-defined-once-and-linked-at-first-use) (terms are defined once and linked at first use)
+Protects: provenance — every claim carries its status and, where it has one, its evidence; proportional verification — the specification's rendering conditions decide what runs
 
-**Statement**: In a project of type `methodology-corpus`, a
-deliverable that introduces a term, records a decision, or states a
-register fact MUST be written first as an
+**Statement**: In a project of type `methodology-corpus`, a document
+under `docs/`, and a report that introduces a term, records a
+decision, or states a register fact, MUST be written first as an
 [intermediate representation](../intermediate-representation.md)
-(IR), kept beside the prose it produces or under `docs/records/` when
-the prose is a chat message or a PR body. Prose for a human-owner
-reader or a delegating agent MUST be rendered from the IR by a
-paraphraser when the IR exceeds the specification's thresholds, and
-is otherwise the IR delivered as it stands. Normative text MUST be
-rendered by its author and reviewed by a stranger. A report that
-introduces no term, records no decision and states no register fact
-MAY be written as prose directly. A project of another type MAY adopt
-this rule by declaring it in its Classification.
+(IR). The IR is kept beside the prose it produces, or under
+`docs/records/` when the prose is a chat message or a PR body. Prose
+for RD-4 or RD-5 MUST be rendered from the IR and reviewed by a
+stranger. Prose for RD-1, RD-2 or RD-3 MUST be rendered from the IR
+when the specification's rendering conditions select rendering.
+Otherwise the IR is delivered as it stands. Normative text (a rule,
+a specification, or any text whose words bind) MUST be rendered by
+the reasoning role that wrote the IR and reviewed by a stranger. A
+report to RD-1 or RD-3 that introduces no term, records no decision
+and states no register fact MAY be written as prose directly. A
+project of another type MAY adopt this rule by declaring it in its
+Classification.
 
 **Rationale**: Agent-written prose loses cohesion and fidelity where
 reasoning effort is highest: claims compress into one sentence,
 referents go unnamed, terms borrowed from the conversation are used
-as if defined. Guidance cached in the Agent bootstrap counters
+as if defined. Guidance cached in the
+[Agent bootstrap](../vocabulary.md#def-agent-bootstrap) counters
 distance in a session and does not counter effort. Separating
-reasoning from rendering and from review does: the reasoning output
-is a checked list of claims, each with its provenance; the
-paraphraser reads only the IR and the reader; the stranger judges
-what neither author nor paraphraser can. The rule is scoped to the
-corpus's own type because that is where it has been exercised; the
-evidence for other types does not exist yet, so other projects opt
-in by declaration rather than by default.
+reasoning from rendering and from review counters effort: the
+reasoning output is a checked list of claims, each with its
+provenance. The paraphraser reads only the IR and the reader. The
+stranger judges what neither author nor paraphraser can. The rule is
+scoped to the corpus's own type because that is where it has been
+exercised. The evidence for other types does not exist yet, so other
+projects opt in by declaration rather than by default.

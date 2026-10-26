@@ -2,7 +2,7 @@
 
 Reader: RD-4 (a fresh agent session) reading W-009 and the intermediate-representation specification; the human owner adjudicates the amendment.
 Purpose: document. The amendment that adds W-009, scoped to the methodology-corpus type, and the specification of the intermediate representation it requires, graduated from the communication pipeline's schema v1.2.
-Status: draft
+Status: reviewed (one stranger review at ir-first.review.md, disposition D3; 49 findings, 43 fixed; verdict before fixes: not readable for RD-4; the specification was rewritten in the methodology's own terms after the review)
 Source: the pilot plan's settled decision 2 (2026-10-24) and its exit condition, settled decision 6; the pipeline's ir-schema.md v1.2 and branch-point.md v1.1; the owner's rulings of 2026-10-25 on when an IR is required; the methodology Backlog item "This repository's deliverables go through the communication pipeline".
 Normative: yes
 
@@ -24,7 +24,13 @@ T6. Cluster: a declared ordered list of claim identifiers the paraphraser render
 
 ### W-009
 
-C1. In a project of type methodology-corpus, a deliverable that introduces a term, records a decision, or states a register fact is written as an IR first. [decided: owner, 2026-10-25]
+C1. In a project of type methodology-corpus, a document under docs/, and a report that introduces a term, records a decision, or states a register fact, is written as an IR first. [decided: owner, 2026-10-25]
+
+C23. Prose for RD-4 or RD-5 is rendered from the IR and reviewed by a stranger. [decided: pipeline branch point v1.1, 2026-10-25]
+
+C24. A register fact is a statement about the state of a Register or of a row in one. [proposed: this IR]
+
+C25. The specification gains CK-12, identifier uniqueness, after the stranger review. [proposed: this IR]
 
 C2. The IR sits beside the prose it produces, or under docs/records/ when the prose is a chat message or a PR body. [decided: owner, 2026-10-24]
 
