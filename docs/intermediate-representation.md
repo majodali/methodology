@@ -211,7 +211,7 @@ empty, no comparison is made. An IR whose deliverable is a chat
 message has no footprint, because no branch carries the deliverable.
 When the IR's Status becomes `reviewed`, the reasoning role compares
 the declaration with the files the branch changed since its base
-branch; a lint may run the comparison for the reasoning role. A file
+branch. A lint may run the comparison for the reasoning role. A file
 is changed when the branch's diff adds, modifies, deletes or renames
 it. The IR itself and its review record are not counted. A changed
 file that no declared file or directory covers is a surprise. A
