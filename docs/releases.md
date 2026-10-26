@@ -17,7 +17,7 @@ Minor — normative content, one constitutional change (the Article 5
 
 ### Normative text gets a second stranger round; the IR declares its footprint
 
-- **PR**: [#PRNUM](https://github.com/majodali/methodology/pull/PRNUM).
+- **PR**: [#50](https://github.com/majodali/methodology/pull/50).
 - **Suggested by**: communication-pipeline at its chunk 4 gate
   (owner ruling, 2026-10-26) — its evaluation case 004: four normative
   texts reviewed once, all unreadable before fixes and unmeasured
