@@ -184,3 +184,26 @@ findings (6 and 17) were contradictions introduced by earlier fixes.
 | 18 | a document delivered by a PR body unclassified | fixed: active from its merge |
 | 20 | "owner's flag" | fixed: review flag |
 | 22 | no test for an added claim without rounds | fixed: stated as having no test beyond the reader |
+
+## Round 8, 2026-10-26
+
+4,068 words by the reviewer's count; 21 findings, 19 in the new
+passages; 5.2 per thousand words; verdict: not readable for RD-4.
+Every finding was fixed.
+
+| # | Finding (shortened) | Disposition |
+|---|---|---|
+| 1, 5, 8, 19 | "document" in two senses; "governed document"; "the unit" before its definition; "horizon" | fixed: purpose named; the vocabulary's Document linked; reordered; reworded |
+| 2 | clusters have no section | fixed: in the Claims section |
+| 3 | "pass" has no test | fixed: report no violation |
+| 4 | `part:` limited to RD-1 and RD-2 while the RD-3 row uses it | fixed: RD-3 added |
+| 6 | an empty Asks section passes CK-08 | fixed: the `A0. No asks.` line required |
+| 7 | an unused term fails CK-15 | fixed: a term is checked when a claim uses it |
+| 9, 20 | two claims in one sentence | fixed: split |
+| 10 | the stop rule stated without the limit | fixed: in the first sentence |
+| 11 | accepted findings with no next edit | fixed: stay recorded |
+| 12 | a document with no delivering report | fixed: every text is delivered by a report |
+| 13, 17, 18, 21 | referents | fixed |
+| 14 | "checks run in every case" versus CK-15 | fixed |
+| 15 | "sections" for claim kinds | fixed: elements |
+| 16 | a branch merged before reviewed | fixed: not comparable, stated |

@@ -35,17 +35,19 @@ and terms borrowed from the conversation and used as if defined.
 
 ## Document form
 
-An IR is a markdown file named `<subject>.ir.md`. The IR of a
-document sits beside the document under `docs/`. The IR of a report
-sits under `docs/records/`. The prose file, `<subject>.md`, holds
-the rendered prose and sits beside the IR. The IR opens with header fields and then holds five sections in a
-fixed order: Terms, Claims, Relations, Evidence, Asks. The Claims section may use any sub-headings.
+An IR is a markdown file named `<subject>.ir.md`. The IR of a text
+with purpose `document` sits beside that text under `docs/`. The IR
+of a text with purpose `report` sits under `docs/records/`. The prose
+file, `<subject>.md`, holds the rendered prose and sits beside the
+IR. The IR opens with header fields and then holds five sections in
+a fixed order: Terms, Claims, Relations, Evidence, Asks. Clusters sit
+in the Claims section. The Claims section may use any sub-headings.
 
 | Header field | Value |
 |---|---|
 | Reader | one entry from the [reader catalog](style.md#readers), by identifier |
 | Purpose | `report` or `document`, then one sentence saying what the communication is for |
-| Status | `draft` · `reviewed` · `rendered` · `delivered`. Each value may be followed by a parenthesis. The parenthesis holds the counts defined under Provenance and under The footprint, the words `review flag` when the owner asked for a review, and the last stranger verdict. The reasoning role sets the values: `draft` at creation; `rendered` when prose exists; `reviewed` when the stranger rounds end, by a readable verdict or by the limit, or when the mechanical checks pass for an IR that gets no rounds; `delivered` when the text is sent to its reader |
+| Status | `draft` · `reviewed` · `rendered` · `delivered`. Each value may be followed by a parenthesis. The parenthesis holds the counts defined under Provenance and under The footprint, the words `review flag` when the owner asked for a review, and the last stranger verdict. The reasoning role sets the values: `draft` at creation; `rendered` when prose exists; `reviewed` when the stranger rounds end, by a readable verdict or by the limit, or when the mechanical checks report no violation for an IR that gets no rounds; `delivered` when the text is sent to its reader |
 | Source | the conversation, document or event that occasioned it |
 | Normative | optional: `yes` when the prose is normative text, that is a rule, a specification, or any text whose words bind |
 | Footprint | optional: the files or directories the IR's deliverable is expected to change, separated by semicolons. A directory ends in `/`. A declared directory covers every file under it. The deliverable of an IR for a PR body is the pull request's changes, which its branch carries. The header is omitted or empty when no branch carries the deliverable: a chat message, or a deliverable committed to the base branch itself. A footprint declared on such a deliverable's IR is ignored |
@@ -67,7 +69,7 @@ IR (CK-12, identifier uniqueness). A split claim takes a new number, never a suf
 | Kind | Letter | Body | Rule |
 |---|---|---|---|
 | Term | `T` | the word or phrase; its meaning in this communication; `defined-at:` a link to its definition site when one exists | A term is defined once per IR. CK-13 (term uniqueness) tests the mechanical part, equal names. Two names for one concept are left to the stranger. Every project-specific term used in a claim appears here or is linked to its definition site (CK-04, undefined term). A term with a definition site links it and does not restate it. The reasoning role proposes a term that has no definition site. The rendering defines a proposed term in a sentence of its own before its first use. The rendering lists a proposed term for ratification (P-008). |
-| Claim | `C` | one statement | A claim makes one statement and names every referent inside itself (the referent rule below). A claim may carry `evidence: E<n>` and, for a report to RD-1 or RD-2, `part: covered` or `part: changed`. A `part:` field decides the claim's part. Without a part, a decided claim renders under *What is already covered*. A proposed or inferred claim renders under *What changed* (W-008, reports map their deliverables). A proposed claim is new to the reader. An inferred claim is the reasoning role's inference, not a settled decision. The reasoning role sets `part: changed` on a decided claim when the deliverable records that decision for the first time, that is, when no governed document held it before. |
+| Claim | `C` | one statement | A claim makes one statement and names every referent inside itself (the referent rule below). A claim may carry `evidence: E<n>` and, for a report to RD-1, RD-2 or RD-3, `part: covered` or `part: changed`. A `part:` field decides the claim's part. Without a part, a decided claim renders under *What is already covered*. A proposed or inferred claim renders under *What changed* (W-008, reports map their deliverables). A proposed claim is new to the reader. An inferred claim is the reasoning role's inference, not a settled decision. The reasoning role sets `part: changed` on a decided claim when the deliverable records that decision for the first time, that is, when no [document](vocabulary.md#def-document) of the project held it before. |
 | Cluster | `G` | `cluster: C<a>, C<b>, …` with an optional topic claim first | The paraphraser renders a cluster as one paragraph, in the order given. A claim belongs to at most one cluster. |
 | Relation | `R` | `C<a> <verb> C<b> because <reason>` | Verbs: `supports`, `depends-on`, `contradicts`, `refines`. The reason is one sentence or a claim identifier. Cross-claim references are relations, never pronouns in a claim. |
 | Evidence | `E` | a pointer (file and line, commit, message date, URL) and what it shows | Evidence is cited by a claim's `evidence:` field, never free-standing. |
@@ -120,13 +122,13 @@ where a row says information. methodology-tools runs them as
 | CK-05 | provenance | a term, claim or cluster has no provenance status, or a status without its required fields |
 | CK-06 | dangling reference | a relation, cluster, `evidence:` or `Depends:` names an identifier that does not resolve |
 | CK-07 | header | the Reader header is not a catalog identifier, or the Purpose header lacks `report` or `document`, or the two disagree: a `report` for RD-4 or RD-5, or a `document` for RD-1, RD-2 or RD-3 |
-| CK-08 | asks section | an IR for RD-1 or RD-2 has no Asks section; or, for any reader, a proposed term has no ask naming it |
+| CK-08 | asks section | an IR for RD-1 or RD-2 has no Asks section, or an Asks section holding neither an ask nor the line `A0. No asks.`; or, for any reader, a proposed term has no ask naming it |
 | CK-09 | cluster membership | a claim appears in two clusters |
 | CK-10 | section order | the five sections are absent or out of order |
 | CK-11 | definition site | a term's `defined-at:` target does not resolve |
 | CK-12 | identifier uniqueness | two elements carry the same identifier |
 | CK-13 | term uniqueness | two `T` elements have equal names after lower-casing |
-| CK-15 | round trip | reported by the round-trip check, which runs only when prose was rendered: a claim, term or ask absent from the render map (Rendering rule) (violation); an identifier in the map that the IR does not hold (violation). The check also reports the ratio of prose sentences to claims, as information |
+| CK-15 | round trip | reported by the round-trip check, which runs only when prose was rendered: a claim or ask absent from the render map (Rendering rule), or a term absent from the map when a claim uses it (violation); an identifier in the map that the IR does not hold (violation). The check also reports the ratio of prose sentences to claims, as information |
 | CK-14 | review record | three conditions hold: the rendering conditions select stranger rounds for the IR; the Status is `reviewed` or `delivered`; no review record `<subject>.review.md` with a verdict per round sits beside the IR |
 
 What counts as a project-specific term for CK-04: any bolded term, any
@@ -143,16 +145,15 @@ dropped claim is caught by the round-trip check. Prose rendered
 without stranger rounds has no test for an added claim beyond its
 reader's reading. The paraphraser may add connective prose: a sentence
 that asserts nothing the IR holds and exists to join claims for the
-reader. Relations and evidence are not rendered as sentences. A term
-with a definition site is linked at its first use in the unit. The
-unit is defined by P-008 (terms are defined once and linked at first
-use): the whole text for a report and the section for a document.
+reader. Relations and evidence are not rendered as sentences. P-008 (terms are defined once and linked at first use) defines the
+unit: the whole text for a report and the section for a document. A
+term with a definition site is linked at its first use in the unit.
 After the first use the term is written without a link. A term the IR introduces is defined in a
 sentence of its own before its first use and listed under *Terms
 introduced*. For RD-5 a link becomes an inline gloss. For the
 human-owner readers, a claim renders under the part its `part:` field
 names. Without one, a decided claim renders under *What is already
-covered*, and a proposed or inferred claim under *What changed*. The rendering follows the style
+covered*. A proposed or inferred claim renders under *What changed*. The rendering follows the style
 guide's rows for the IR's reader. The rendering states an empty part in the words W-008 gives for
 that part.
 
@@ -176,7 +177,7 @@ information.
 ### Stranger rounds
 
 A stranger review runs in rounds until a round returns the verdict
-readable. The reasoning role, the agent that wrote the IR, starts
+readable, or until ten rounds have run. The reasoning role, the agent that wrote the IR, starts
 each round by dispatching a stranger. The stranger is an agent
 instance with a fresh context. The stranger is never the reasoning
 role itself and never the instance of an earlier round. The stranger
@@ -192,7 +193,8 @@ text that round judged. The reasoning role records that verdict in the review re
 reasoning role also writes the verdict in the IR's Status
 parenthesis. Findings a readable round lists are recorded by the reasoning role
 in the review record as accepted findings. The reasoning role fixes the accepted findings at the text's next
-edit. The accepted findings have no deadline of their own. An edit
+edit. When no edit follows, the accepted findings stay recorded in
+the review record. An edit
 that leaves an accepted finding unfixed is a defect in the edit. An edit of the text starts new rounds when the rendering conditions
 select rounds for the edited text. An edit that only fixes accepted
 findings starts no new rounds.
@@ -227,16 +229,17 @@ is a meta-review subject. When the reasoning role starts a third
 round, it writes the line `Meta-review: pending` in the review
 record. The review record keeps one `Meta-review:` line. A reworked
 text's third round sets that line to pending again, whatever its
-value was. The reasoning role also names the meta-review subject in
-the asks of the report that delivers the document or the report
-(W-008). The reasoning role asks the owner, in those asks, to
+value was. Every text is delivered by a report (W-008): a report delivers
+itself, and a document is delivered by the PR body or chat message
+that presents it. The reasoning role also names the meta-review
+subject in the asks of that report. The reasoning role asks the owner, in those asks, to
 dispatch the meta-review. The meta-review is performed by a session
 that had no part in the text's rounds. Until the
 [communication-pipeline](https://github.com/majodali/communication-pipeline)
 project (a project in the
 [Portfolio register](vocabulary.md#def-portfolio-register)) is
-archived, that session is one of its sessions. After that, the
-session is one of the methodology repository's. History records why
+archived, that session is one of its sessions. After the archive, the session is one of the methodology
+repository's. History records why
 the arrangement is so. The meta-review is due before the owner
 accepts the deliverable. A reworked text's meta-review covers the
 rounds of every count. The performing session delivers the
@@ -253,8 +256,9 @@ review the prose, is decided from the IR and the owner's review flag.
 The review flag is set, as the words `review flag` in the Status
 parenthesis, when the owner asked for a review of the IR's prose. The inputs from the IR are its reader, its purpose and its Normative
 header, plus four counts: claims, proposed terms, dependent asks (asks
-with a `Depends:` field), and the words of its longest claim. The mechanical checks run in every
-case. The first row whose condition holds decides.
+with a `Depends:` field), and the words of its longest claim. The mechanical checks other than CK-15 run in every case, and CK-15
+runs when prose was rendered. The first row whose condition holds
+decides.
 
 | Condition | What follows |
 |---|---|
@@ -266,7 +270,7 @@ case. The first row whose condition holds decides.
 | reader is RD-2 | the paraphraser renders |
 | reader is RD-1 and (claims > 6 or dependent asks > 0 or longest claim > 30 words) | the paraphraser renders |
 | reader is RD-3 and (claims > 12 or dependent asks > 0) | the paraphraser renders |
-| reader is RD-1 or RD-3 | the checks only. The IR is delivered as it stands. Its sections stand for W-008's parts: Asks, decided claims (what is already covered, unless the claim carries `part: changed`), proposed and inferred claims (what changed), proposed terms (terms introduced). The reasoning role adds one line at the IR's end stating each empty part in W-008's words |
+| reader is RD-1 or RD-3 | the checks only. The IR is delivered as it stands. Its elements stand for W-008's parts: the Asks section (asks), decided claims (what is already covered, unless the claim carries `part: changed`), proposed and inferred claims (what changed), proposed terms (terms introduced). The reasoning role adds one line at the IR's end stating each empty part in W-008's words |
 
 A change to a count in the conditions is an amendment, because it
 changes which row holds. A report to RD-1 or RD-3 that is not normative gets a
@@ -284,8 +288,9 @@ branch changed since its base branch twice: when the IR's Status
 becomes `reviewed`, and at delivery. The counts recorded are those of
 the comparison at delivery. When the branch was merged or deleted
 between `reviewed` and delivery, the counts recorded are those of the
-comparison at `reviewed`. When no comparison was possible, the counts
-are recorded as `not comparable`. A footprint declared on a
+comparison at `reviewed`. When the branch was merged or deleted before `reviewed`, no
+comparison was possible, and the counts are recorded as
+`not comparable`. A footprint declared on a
 deliverable no branch carries, including one committed to the base
 branch, is ignored, and no comparison is made. A lint may run the comparison for the reasoning role. A file is changed when the branch's diff adds, modifies, deletes or
 renames it. A rename counts as one changed file. A renamed file is declared when
@@ -318,16 +323,14 @@ of its prose. The IR of an active document (a plan, a specification)
 is edited whenever the document is. The IR is the authority for an active document. A disagreement
 between the IR and the document is a defect in the prose, fixed by
 rendering again. The IR of a delivered report (a chat message, a PR body) is a
-record: its Status becomes `delivered` and it is not edited after. A
-document delivered by a PR body is active from its merge, and its IR
-is edited with it.
+record: its Status becomes `delivered` and it is not edited after. A document delivered by a PR body is active from its merge. The
+document's IR is edited with the document.
 
 Ratification of a `proposed` term adds a row with an anchor to the
-project vocabulary. That row becomes the term's definition site
-(P-008).
+project vocabulary. The added row becomes the term's definition site (P-008).
 Ratified terms and decided claims are the first entries of a formal
-project model, the horizon the [Backlog](backlog.md) records under
-"Formal project models".
+project model, the long-term aim the [Backlog](backlog.md) records
+under "Formal project models".
 
 ## History
 
@@ -348,11 +351,12 @@ the four was judged not readable before its fixes. None of the four
 was measured after its fixes. The record is
 [evaluation case 004](https://github.com/majodali/communication-pipeline/blob/main/eval/cases/004-normative-text-reviews-2026-10-26.md)
 in the communication-pipeline project. On 2026-10-26 the two-round rule of PR #50 was replaced by rounds
-until readable, with a limit of ten and the meta-review trigger. The
-meta-review is performed by the communication-pipeline project while
-it exists because the owner placed that duty there on 2026-10-26, the
-project holding the evaluation corpus the meta-review adds to. The reason was that the second round on PR #50's own text had
-returned not readable. No third round ran before PR #50 merged. Two rulings of 2026-10-25 are recorded in the communication-pipeline
+until readable, with a limit of ten and the meta-review trigger. The meta-review is performed by the communication-pipeline project
+while it exists because the owner placed that duty there on
+2026-10-26. That project holds the evaluation corpus the meta-review
+adds to. The reason for the replacement was that the second round on
+PR #50's own text had returned not readable. No third round ran
+before PR #50 merged. Two rulings of 2026-10-25 are recorded in the communication-pipeline
 project's
 [branch-point.md](https://github.com/majodali/communication-pipeline/blob/main/docs/branch-point.md).
 The first: a report to RD-1 or RD-3 needs an IR only for a term, a
