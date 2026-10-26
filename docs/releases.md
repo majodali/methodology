@@ -17,7 +17,7 @@ Minor — normative content, one constitutional change (the Article 5
 
 ### Rules name the invariant they protect
 
-- **PR**: [#PRNUM](https://github.com/majodali/methodology/pull/PRNUM).
+- **PR**: [#47](https://github.com/majodali/methodology/pull/47).
 - **Suggested by**: the owner's "Convergence and Divergence"
   (2026-10-22) and the adjudication criterion agreed 2026-10-23: adopt
   convergence practices by the invariant each protects, smallest set
