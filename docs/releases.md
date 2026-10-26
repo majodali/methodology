@@ -12,6 +12,34 @@ carry: amendment title and PR link · suggested by (evidencing instance)
 
 ## Unreleased
 
+Minor — normative content.
+
+### Reports list the terms they introduce
+
+- **PR**: [#46](https://github.com/majodali/methodology/pull/46).
+- **Suggested by**: communication-pipeline, 2026-10-24 — the owner's
+  ruling at the pilot's chunk 2 gate that term ratification is a
+  fourth part of principal reports; the pilot's term lifecycle
+  (approved 2026-10-25) gives the part its content. The evidencing
+  instances are the unratified-vocabulary indicator of the owner's
+  "Convergence and Divergence" (2026-10-22) and the pilot's case 001
+  (2026-10-23): a report to the owner used a term with no source in
+  the conversation or in any vocabulary. Drafted IR first in
+  [docs/records/w008-terms-introduced.ir.md](records/w008-terms-introduced.ir.md).
+- **Impact**: every project with an Agent bootstrap — *migration*:
+  the W-008 block changes, so each copy is replaced. methodology,
+  methodology-tools, allegro, in-real-life, in-real-life-ops,
+  in-real-life-org, project-orchestrator, project-orchestrator-service,
+  serverless-web-app-template, communication-pipeline: one copy action
+  each. project-orchestrator additionally — *accommodated*: its
+  handoff contract's agent-audience report lists terms introduced when
+  it has any; a delegate that introduces none changes nothing.
+  Projects without a bootstrap (implicit C0) — *accommodated*: no
+  duty.
+- **Migration note**: replace the block under the heading "Reporting
+  and writing — cached from W-008; do not edit here" in `CLAUDE.md`
+  with the amended block from W-008, verbatim. The next audit compares
+  the copy against the block and reports a stale copy as drift.
 - Editorial: every term entry in [vocabulary.md](vocabulary.md) carries an
   anchor of the form `<a id="def-<slug>"></a>`, so a document can link a
   term to its definition site. No obligation changes. The anchor form is

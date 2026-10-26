@@ -392,6 +392,18 @@ entries update in the same commit as the work they describe
   ([K-010](rules/knowledge.md#k-010--superseded-content-is-never-silently-readable)
   — in an `active` document a contradicted passage is false, not
   stale, and is corrected where it is found).
+- [x] **Reports list the terms they introduce** (amendment; the merge
+  is acceptance) — W-008 gains a fourth principal-report part, **terms
+  introduced**: each term the report or its deliverable uses with a
+  meaning no vocabulary defines, with one sentence of meaning; the
+  asks request its ratification or striking; "No terms introduced"
+  when empty. The agent audience lists its terms when it has any. The
+  bootstrap block, this repo's `CLAUDE.md`,
+  [skeletons/CLAUDE.md](../skeletons/CLAUDE.md) and the
+  [style guide](style.md) change in the same commit. Owner ruling at
+  the communication pipeline's chunk 2 gate, 2026-10-24; the first
+  amendment written IR first
+  ([docs/records/w008-terms-introduced.ir.md](records/w008-terms-introduced.ir.md)).
 
 ## Upcoming
 - [ ] **Editorial passes for existing documents** — restyle per the
