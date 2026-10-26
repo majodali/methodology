@@ -197,11 +197,12 @@ in [constitution.md](constitution.md#draft-history-pre-10).
     change's footprint, the files and claims it touches, and not with
     the size of the project.
 - <a id="def-reader-catalog"></a>**Reader catalog** — the set of defined readers a text may be
-  written for, each with what it is assumed to know and its
-  **readability test**, the question a reviewer answers to judge a text
-  readable for that reader. The catalog is the [style guide's Readers
-  table](style.md#readers): RD-1 to RD-5. A document names its reader
-  from it ([P-007](rules/prose.md#p-007--documents-state-their-reader)).
+  written for: RD-1 to RD-5, one row each in the [style guide's
+  Readers table](style.md#readers). Each row states what the reader is
+  assumed to know and its **readability test**, the question a
+  reviewer answers to judge a text readable for that reader. A
+  document names its reader from the catalog
+  ([P-007](rules/prose.md#p-007--documents-state-their-reader)).
 - <a id="def-reader-statement"></a>**Reader statement** — the opening of a document that names who it
   is for and what that reader is assumed to know, with a link to where
   that knowledge is defined
@@ -211,14 +212,15 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   anchor `<a id="def-<slug>"></a>` that every other use links to
   ([P-008](rules/prose.md#p-008--terms-are-defined-once-and-linked-at-first-use)).
 - <a id="def-terms-introduced"></a>**Terms introduced** — the fourth part of a report to the human
-  owner: each term the report or its deliverable uses with a meaning
-  that neither the methodology vocabulary nor the project's own
-  vocabulary defines, with one sentence giving its meaning
+  owner
   ([W-008](rules/working-agreement.md#w-008--reports-map-their-deliverables)).
-  Ratified 2026-10-26.
+  It lists each term the report or its deliverable uses with a meaning
+  no vocabulary defines, with one sentence of meaning each. Ratified
+  2026-10-26.
 - <a id="def-migration-round"></a>**Migration round** — the set of per-project migration PRs that
-  follows one methodology release. Ratified 2026-10-26 (first used in
-  the Portfolio refresh of 2026-10-25).
+  follows one methodology release. Ratified 2026-10-26; first used in
+  the Portfolio refresh of 2026-10-25
+  ([PR #44](https://github.com/majodali/methodology/pull/44)).
 - <a id="def-report-audience"></a>**Report audience** — the reader a report is addressed to under
   [W-008](rules/working-agreement.md#w-008--reports-map-their-deliverables)
   (reports map their deliverables): the human owner directly (the
