@@ -270,10 +270,10 @@ adoption after a stranger review found identifier uniqueness stated
 without a check. The Footprint header was added on 2026-10-26, from
 the communication-pipeline project's schema v1.3. The second
 stranger round for normative text was added on 2026-10-26, by owner
-ruling, and replaced the same day by rounds until readable with a
-limit of ten and the meta-review trigger, after the second round on
-that amendment's own text returned not readable and no third round
-was run before its merge. The evidencing instance for the second round is the four
+ruling. On 2026-10-26 the two-round rule was replaced by rounds
+until readable, with a limit of ten and the meta-review trigger. The
+reason was that the second round on that amendment's own text had
+returned not readable, and no third round ran before its merge. The evidencing instance for the second round is the four
 normative texts of October 2026, methodology PRs #46 to #49. Each
 was reviewed once. Each was judged not readable before its fixes.
 None was measured after its fixes. The record is

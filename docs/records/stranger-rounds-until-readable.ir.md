@@ -23,7 +23,9 @@ C3. The rule applies to every stranger review the rendering conditions select, n
 
 C4. A text that needs more than two rounds is a subject for meta-review by the communication-pipeline project. [decided: owner, 2026-10-26]
 
-C5. Each round is run by the reasoning role, with a fresh stranger, on the fixed IR and the fixed text, and recorded in the review record beside the IR. [decided: methodology PR #50, 2026-10-26]
+C5. Each round is run by the reasoning role with a fresh stranger on the fixed IR and the fixed text. [decided: methodology PR #50, 2026-10-26]
+
+C11. Each round's findings, dispositions and verdict are recorded in the review record beside the IR. [decided: methodology PR #50, 2026-10-26]
 
 C6. The owner decides at adjudication what happens to a text that reaches the limit. [proposed: this IR]
 
