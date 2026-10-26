@@ -5,12 +5,12 @@ from the [communication-pipeline](https://github.com/majodali/communication-pipe
 project (a Portfolio project) at its schema v1.2. Required by
 [W-009](rules/working-agreement.md#w-009--the-methodology-corpus-writes-its-deliverables-ir-first)
 (the methodology corpus writes its deliverables IR first). Any project
-that adopts W-009 by declaration uses it.
+that adopts W-009 by declaration uses this specification.
 
 Reader: RD-4 (a fresh agent session, [reader catalog](style.md#readers))
 in the reasoning, paraphraser or stranger role. The human owner reads
-it as RD-4 does when reading an IR instead of the prose rendered from
-it. Assumed to know:
+the specification as RD-4 does when reading an IR instead of the
+prose rendered from the IR. Assumed to know:
 [W-008](rules/working-agreement.md#w-008--reports-map-their-deliverables)
 (reports map their deliverables),
 [P-008](rules/prose.md#p-008--terms-are-defined-once-and-linked-at-first-use)
@@ -25,8 +25,8 @@ prose exists. It holds the terms, claims, relations, evidence and
 asks of one communication. Every element carries an identifier. Every
 term, claim and cluster also carries a provenance status. Prose is
 rendered from the IR by the paraphraser role when the rendering
-conditions below select rendering. Otherwise the IR is delivered as
-it stands.
+conditions below select rendering, or by the reasoning role when
+the text is normative. Otherwise the IR is delivered as it stands.
 
 The IR removes three failure modes of prose written directly: several
 claims compressed into one sentence; referents left unnamed; terms
@@ -47,7 +47,7 @@ Asks. The Claims section may use any sub-headings.
 | Status | `draft` · `reviewed` · `rendered` · `delivered` |
 | Source | the conversation, document or event that occasioned it |
 | Normative | optional: `yes` when the prose is normative text, that is a rule, a specification, or any text whose words bind |
-| Footprint | optional: the files or directories the work is expected to touch, separated by semicolons; a directory ends in `/` |
+| Footprint | optional: the files or directories the IR's deliverable is expected to change, separated by semicolons; a directory ends in `/` and covers every file under it |
 
 A `report` is read by someone who shares the conversation: RD-1 (the
 human owner in conversation), RD-2 (the human owner returning) or RD-3
@@ -133,8 +133,9 @@ one paragraph in the cluster's order. The paraphraser introduces no
 new claim and drops no claim. The paraphraser may add connective prose: a sentence
 that asserts nothing the IR holds and exists to join claims for the
 reader. Relations and evidence are not rendered as sentences. A term
-with a definition site is linked at its first use in the unit P-008 (terms are defined
-once and linked at first use) defines, and bare after. A term the IR introduces is defined in a
+with a definition site is linked at its first use in the unit that P-008 (terms are defined
+once and linked at first use) defines, the whole text for a report
+and the section for a document, and bare after. A term the IR introduces is defined in a
 sentence of its own before its first use and listed under *Terms
 introduced*. For RD-5 a link becomes an inline gloss. For the
 human-owner readers, a claim renders under the part its `part:` field
@@ -145,11 +146,14 @@ section as "No asks."
 
 Normative text is rendered by the reasoning role, the agent that
 wrote the IR, not by the paraphraser, because a paraphrase could
-change its force. A stranger reads it, the reasoning role fixes the
-findings, and a stranger reads the fixed text again. The second
-round's verdict is the text's readability (owner ruling, 2026-10-26,
-after four normative texts reviewed once were all unreadable before
-fixes and unmeasured after).
+change its force. A stranger then reviews the IR and the rendered
+text against the reader's readability test ([reader
+catalog](style.md#readers)). The reasoning role fixes the findings
+and records each finding's disposition beside the IR. A second
+stranger, with a fresh context, reviews the fixed IR and text. The
+second verdict is the one recorded for the text. A second verdict of
+not readable returns the text to the reasoning role for another fix,
+and the owner decides at adjudication whether a third round runs.
 
 The paraphraser appends a render map: one comment line of the form
 `<!-- render map: C1→¶1 C2→¶1 … -->` listing where each claim
@@ -160,17 +164,17 @@ of prose sentences to claims.
 ## Rendering conditions
 
 Whether prose is rendered from an IR, and whether a stranger reviews
-it, is decided from the IR and one further input: whether the owner
-asked for a review of this output. The inputs from the IR are its
-reader, its purpose, its claim count, its proposed-term count, the
-count of asks with a `Depends:` field, and the length of its longest
-claim. The mechanical checks run in every case. The first row whose
-condition holds decides.
+the prose, is decided from the IR and one further input: whether the
+owner asked for a review of this output. The inputs from the IR are
+its reader, its purpose, its Normative header, its claim count, its
+proposed-term count, the count of asks with a `Depends:` field, and
+the length of its longest claim. The mechanical checks run in every
+case. The first row whose condition holds decides.
 
 | Condition | What follows |
 |---|---|
+| the header carries `Normative: yes` | the reasoning role renders; a stranger reviews IR and prose; the reasoning role fixes the findings; a second stranger reviews the fixed IR and prose |
 | the owner asked for a review of this output | the paraphraser renders, then a stranger reviews |
-| purpose is `document` and the header carries `Normative: yes` | the reasoning role renders; a stranger reviews IR and prose; after the fixes a stranger reviews again |
 | purpose is `document` | the paraphraser renders, then a stranger reviews |
 | reader is RD-4 or RD-5 | the paraphraser renders, then a stranger reviews |
 | proposed terms > 0 | the paraphraser renders, with the ratification ask |
@@ -180,23 +184,29 @@ condition holds decides.
 | reader is RD-1 or RD-3 | the checks only; the IR is delivered as it stands |
 
 The counts in the conditions are provisional. The communication-
-pipeline project's dispatch log is the data that tunes them, and a
-change to a count is an editorial change while it changes no
+pipeline project's dispatch log is the data that tunes the counts,
+and a change to a count is an editorial change while it changes no
 obligation. The stranger review of a report to RD-1 or RD-3 runs only
 when the owner asks for it (owner ruling of 2026-10-25, recorded in
-that project's
+the communication-pipeline project's
 [branch-point.md](https://github.com/majodali/communication-pipeline/blob/main/docs/branch-point.md)).
 
 ## The footprint
 
 An IR may declare, in its Footprint header, the files or directories
-its work is expected to touch. After the work, the declaration is
-compared with the files the branch changed. A changed file that was
-not declared is a surprise. A declared file that did not change is a
-miss. The two counts are the mechanical reading of the
-prediction-surprise indicator of
-[convergence](vocabulary.md#def-convergence), recorded per IR with
-the unratified-term count.
+its deliverable is expected to change. When the header is absent, no
+comparison is made. An IR whose deliverable is a chat message has no
+footprint, because no branch carries the deliverable. When the
+deliverable is ready for review, the reasoning role or a lint
+compares the declaration with the files the branch changed since its
+base branch. A changed file that no declared file or directory covers
+is a surprise. A declared file that did not change is a miss. A
+declared directory under which no file changed is a miss. The count
+of surprises and the count of misses are the mechanical reading of
+the prediction-surprise indicator of
+[convergence](vocabulary.md#def-convergence). The reasoning role
+records both counts in the IR's Status header when the IR is
+delivered, beside the unratified-term count.
 
 ## When an IR is required at all
 
@@ -229,6 +239,11 @@ Adopted at v1.2 of the communication-pipeline project's schema, whose
 `docs/ir-schema.md` records the versions v0 to v1.2. From this
 adoption the specification is amended here. CK-12 was added at
 adoption after a stranger review found identifier uniqueness stated
-without a check. The Footprint header and the second stranger round
-for normative text were added on 2026-10-26 from that project's
-schema v1.3 and the owner's ruling at its chunk 4 gate.
+without a check. The Footprint header was added on 2026-10-26 from
+the communication-pipeline project's schema v1.3. The second
+stranger round for normative text was added the same day by the
+owner's ruling at that project's fourth gate, after the four
+normative texts of October 2026 (methodology PRs #46 to #49) were
+each reviewed once, judged not readable before fixes, and never
+measured after
+([evaluation case 004](https://github.com/majodali/communication-pipeline/blob/main/eval/cases/004-normative-text-reviews-2026-10-26.md)).
