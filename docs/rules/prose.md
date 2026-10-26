@@ -90,3 +90,55 @@ in the entry.
 **Rationale**: A register is read by scanning. The methodology's own
 registers (Audit log, Release register) already demonstrate the fielded
 shape; this rule extends it to all registers, Backlogs included.
+
+### P-007 — Documents state their reader
+Applies: [C0+]
+Keywords: MUST
+Motivated-by: allegro's documentation-standards proposal, 2026-10-16 — a census of fifty documents in which "clear" had no test because no document named its reader; the communication-pipeline pilot, chunks 1 to 3, whose reader catalog gave its paraphraser and reviewer the reader to render and judge for
+Cites: [style guide](../style.md) (Reader statement; Readers); [W-008](working-agreement.md#w-008--reports-map-their-deliverables) (reports map their deliverables); [Reader catalog](../vocabulary.md#def-reader-catalog)
+Protects: sound abstraction — a document written for a named reader can be judged against that reader
+
+**Statement**: A document under `docs/` MUST open with a reader
+statement: who the document is for, and what that reader is assumed
+to know, with a link to where that knowledge is defined. The reader
+MUST be named from the [reader catalog](../style.md#readers) by
+identifier, or described in one sentence when no catalog entry fits.
+A text that assumes the conversation that produced it is a report
+under W-008, not a document.
+
+**Rationale**: Every other prose duty is relative to a reader. Without
+a named reader, "readable" has no test; with one, the catalog's
+readability test is the test. The catalog is small on purpose: an
+entry is added only when a real text had a reader none of the entries
+describes, and that text is cited. Existing documents gain their
+reader statement at their next edit (Migration, style guide).
+
+### P-008 — Terms are defined once and linked at first use
+Applies: [C0+]
+Keywords: MUST
+Motivated-by: allegro's documentation-standards proposal, 2026-10-16 — six abstractions defined in five documents, with the relations between them only in the maintainer's head, resolved by a two-page vocabulary; the communication-pipeline pilot, chunk 3 — 146 first-use links written by a linker across 26 documents, and the owner's rulings of 2026-10-25 on handling by definition site
+Cites: [style guide](../style.md) (Terms are defined once); [P-004](#p-004--citations-carry-names) (citations carry names); [W-008](working-agreement.md#w-008--reports-map-their-deliverables) (terms introduced); [Definition site](../vocabulary.md#def-definition-site)
+Protects: sound abstraction — one definition per term; provenance — an unratified term is surfaced, never silently adopted
+
+**Statement**: A term with a project-specific meaning MUST have one
+definition site: a vocabulary row, or the heading of the document
+that defines it, carrying an anchor of the form
+`<a id="def-<slug>"></a>`. A document that uses the term MUST be its
+definition site or link the site at the term's first use in the unit:
+the whole document for a report, the section for a reference
+document. After that first use the term is written bare. For the
+external reader (RD-5) the link is replaced by an inline gloss. A term
+with no definition site MUST be defined in one sentence at its first
+use and listed under *terms introduced* (W-008); ratification by the
+human owner adds its vocabulary row, which becomes its definition
+site. A word used in more than one sense across a corpus MUST be
+listed in the vocabulary with the sense to prefer in each case.
+
+**Rationale**: A term defined in two places drifts into two meanings,
+and a term defined nowhere is a concept only its author holds. One
+site per term keeps the abstraction sound; linking it at first use
+lets a reader who arrives mid-document reach the definition in one
+step. Handling follows the definition site, not frequency: a term
+used often is one that reached a vocabulary early. Reports are read
+once and linearly, so their unit is the document; reference documents
+are read by lookup, so their unit is the section (P-001).

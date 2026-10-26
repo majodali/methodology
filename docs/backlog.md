@@ -412,6 +412,16 @@ entries update in the same commit as the work they describe
   proposed wordings for the owner to confirm; W-008 carries the first
   field. Closes the open point of the convergence work item. IR:
   [docs/records/protects-field.ir.md](records/protects-field.ir.md).
+- [x] **Documents name their reader and define their terms once**
+  (amendment; the merge is acceptance) — P-007 (documents state their
+  reader) and P-008 (terms are defined once and linked at first use)
+  enter from allegro's proposal and the pipeline pilot; the
+  [style guide](style.md) gains the reader catalog (RD-1 to RD-5 with
+  readability tests), the term-handling decision and the mechanical
+  checks table; the vocabulary gains reader catalog, reader statement,
+  definition site, and the ratified terms introduced and migration
+  round. IR:
+  [docs/records/documents-name-reader.ir.md](records/documents-name-reader.ir.md).
 
 ## Upcoming
 - [ ] **Editorial passes for existing documents** — restyle per the

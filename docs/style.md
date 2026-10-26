@@ -56,6 +56,45 @@ Bold marks structure only. Its two legal uses:
 Bold is never emphasis. If a sentence needs emphasis, rewrite the
 sentence.
 
+### Reader statement
+
+A document under `docs/` opens with its reader: who it is for and what
+they are assumed to know, with a link to where that knowledge is
+defined (P-007 — documents state their reader). Name the reader from
+the catalog below by identifier, or describe the reader in one
+sentence when no entry fits. A text that assumes the conversation
+that produced it is a report, governed by W-008 (reports map their
+deliverables), not a document.
+
+### Readers
+
+The reader catalog. Each entry names what the reader is assumed to
+know, what the text owes them, and the readability test a reviewer
+answers for that reader. RD-1 to RD-3 are W-008's report audiences;
+RD-4 and RD-5 read documents. An entry is added only when a real text
+had a reader none of these describes, and that text is cited.
+
+| Id | Reader | Assumed to know | Needs from the text | Readability test |
+|---|---|---|---|---|
+| RD-1 | the human owner, in the conversation that produced the text | the conversation; the methodology; the portfolio; the project's documents | the asks first; what is new against what was settled | After the first screen, can the owner list every ask? Does any sentence carry two claims the owner could decide separately? |
+| RD-2 | the human owner, returning after a gap or in another session | the methodology; the portfolio; the project's documents, not the conversation | the current state in one paragraph citing the last recorded state; what changed; the asks | Without the transcript, can the owner say what was decided and what is asked? |
+| RD-3 | a delegating agent that dispatched the work | the task it dispatched; the project's documents; the methodology at the project's pin | status; a map of the deliverable; the asks | From the status and asks alone, can the agent decide its next dispatch? |
+| RD-4 | a fresh agent session, including an auditor or reviewer | the methodology at the project's pin; what the project's documents state, and nothing recorded nowhere | terms defined or cited before use; the problem before the solution; one definition site per term; status that is true | Can the session state the document's problem, its terms and its decision, without the conversation? |
+| RD-5 | a person outside the project and the methodology | the general domain | plain language; standard names for patterns; a gloss wherever precision needs a term; no bare identifier | Could a reader with no repository access act on the text? |
+
+### Terms are defined once
+
+A term with a project-specific meaning has one definition site: a
+vocabulary row or a defining heading, carrying the anchor
+`<a id="def-<slug>"></a>` (P-008 — terms are defined once and linked
+at first use). Link the site at the term's first use in the unit (the
+document for a report, the section for a reference document) and
+write the term bare after. For RD-5 replace the link with an inline
+gloss. A term with no site is defined in one sentence at first use
+and listed under *terms introduced* for the owner to ratify or strike
+(W-008). A ratified term gets its vocabulary row; a struck term is
+removed from the deliverable.
+
 ### Citations carry names
 
 An identifier alone is not a reference. On first use in a document,
@@ -178,6 +217,26 @@ the [Backlog](backlog.md).
 A change that adds or rewrites more than a few sentences of prose gets
 one editing pass against this document before the PR is opened. The
 pass is the author's duty, in the same session that wrote the prose.
+
+### Mechanical checks
+
+The mechanical part of the pass is a lint, so it fails instead of
+relying on memory. Each check approximates its rule and reports a
+warning; the judgment part of the rule stays with the author and the
+reviewer. methodology-tools runs them as `mtool style`.
+
+| Rule | Check |
+|---|---|
+| P-001 | three or more numerals in one sentence; a document whose first section needs the text above it (judgment) |
+| P-002 | a sentence over 25 words (warn) or over 35 (flag); two independent clauses joined by `and`, `but`, `so`, a semicolon or an em-dash; a sentence-initial `This`, `That`, `These`, `Those`, `It` with no noun following; `the other`, `the above`, `the former`, `the latter`; fragments of the form `That is X.` and `X is not Y. It is Z.` |
+| P-003 | a bold span longer than four words, or bold not followed by `:` and not at a term's definition site |
+| P-004 | an identifier (`[A-Z]{1,3}-?\d+`, `§\d+`) whose first occurrence is not followed by a parenthesized name or a link; for RD-5, every occurrence |
+| P-005 | a header that is only an identifier, ends in `?`, or contains an em-dash |
+| P-006 | an entry over 60 words in a register whose header declares a row shape |
+| P-007 | no `Reader:` line or *Reader* section within the first twenty lines of a document under `docs/` |
+| P-008 | a vocabulary term whose first use in the unit is not linked; a link to a `#def-` anchor that does not resolve; a bolded or capitalized phrase absent from both vocabularies |
+| W-008 | a report to RD-1 or RD-2 without the four headings in order; a report to RD-3 without status, map and asks |
+| K-010 | a blockquote beginning `Superseded by` whose citation does not resolve |
 
 ## Migration
 

@@ -15,6 +15,35 @@ carry: amendment title and PR link · suggested by (evidencing instance)
 Minor — normative content, one constitutional change (the Article 5
 `Protects:` field).
 
+### Documents name their reader and define their terms once
+
+- **PR**: [#PRNUM2](https://github.com/majodali/methodology/pull/PRNUM2).
+- **Suggested by**: allegro, 2026-10-16 — its documentation-standards
+  proposal (P-007, P-008 and the checks tooling can run), from a
+  census of fifty documents; communication-pipeline, chunks 1 to 3 —
+  its reader catalog, term lifecycle and style specification,
+  exercised on 26 documents and three methodology PRs, with the
+  owner's rulings of 2026-10-25 on handling by definition site.
+  Drafted IR first in
+  [docs/records/documents-name-reader.ir.md](records/documents-name-reader.ir.md).
+- **Impact**: all projects, C0 included — *accommodated*: both rules
+  bind new and edited prose only (style guide, Migration) and mint no
+  coverage duty; existing documents gain a reader statement and term
+  links at their next edit. methodology (`methodology-corpus`) —
+  *accommodated*: the style guide gains the Readers table and the
+  Mechanical checks table; the vocabulary gains five entries, two of
+  them the terms ratified 2026-10-26 (migration round, terms
+  introduced). allegro — *accommodated*: its proposal's P-007 and
+  P-008 enter with their identifiers; its P-009 to P-011 and document
+  types stay open (one project each). communication-pipeline —
+  *accommodated*: its specifications become citations of these rules.
+  methodology-tools — *accommodated*: `mtool style` implements the
+  checks table (its own PR).
+- **Migration note**: none for documents; a project with a vocabulary
+  adds `<a id="def-<slug>"></a>` anchors to its rows when it first
+  links a term.
+- **Protects**: sound abstraction.
+
 ### Rules name the invariant they protect
 
 - **PR**: [#PRNUM](https://github.com/majodali/methodology/pull/PRNUM).
