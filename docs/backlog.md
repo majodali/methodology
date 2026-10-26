@@ -404,6 +404,14 @@ entries update in the same commit as the work they describe
   the communication pipeline's chunk 2 gate, 2026-10-24; the first
   amendment written IR first
   ([docs/records/w008-terms-introduced.ir.md](records/w008-terms-introduced.ir.md)).
+- [x] **Rules name the invariant they protect** (amendment; the merge
+  is acceptance) — Article 5 gains an optional `Protects:` header
+  field naming the convergence invariant a rule protects; the
+  [vocabulary](vocabulary.md#def-invariant) defines the three
+  (provenance, sound abstraction, proportional verification) with
+  proposed wordings for the owner to confirm; W-008 carries the first
+  field. Closes the open point of the convergence work item. IR:
+  [docs/records/protects-field.ir.md](records/protects-field.ir.md).
 
 ## Upcoming
 - [ ] **Editorial passes for existing documents** — restyle per the

@@ -12,7 +12,23 @@ carry: amendment title and PR link · suggested by (evidencing instance)
 
 ## Unreleased
 
-Minor — normative content.
+Minor — normative content, one constitutional change (the Article 5
+`Protects:` field).
+
+### Rules name the invariant they protect
+
+- **PR**: [#47](https://github.com/majodali/methodology/pull/47).
+- **Suggested by**: the owner's "Convergence and Divergence"
+  (2026-10-22) and the adjudication criterion agreed 2026-10-23: adopt
+  convergence practices by the invariant each protects, smallest set
+  first. The communication-pipeline pilot's settled decision 5
+  (2026-10-24) already cites an invariant per stage. Drafted IR first
+  in [docs/records/protects-field.ir.md](records/protects-field.ir.md).
+- **Impact**: all projects — *accommodated*: the field is optional and
+  mints no coverage duty; no project document changes. methodology
+  (`methodology-corpus`) — *accommodated*: Article 5, the rules README
+  and the vocabulary change; W-008 carries the first field.
+- **Migration note**: none.
 
 ### Reports list the terms they introduce
 
