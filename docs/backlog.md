@@ -431,6 +431,15 @@ entries update in the same commit as the work they describe
   representation, reasoning role, paraphraser, stranger. Supersedes
   the Upcoming item of 2026-10-24 on this repository's deliverables.
   IR: [docs/records/ir-first.ir.md](records/ir-first.ir.md).
+- [x] **Normative text gets a second stranger round; the IR declares
+  its footprint** (amendment; the merge is acceptance) — the
+  [intermediate-representation specification](intermediate-representation.md)
+  makes a second stranger review the default for normative text, after
+  the four single-round reviews of October 2026 (owner ruling at the
+  pipeline's chunk 4 gate, 2026-10-26), and adopts the optional
+  Footprint header with its surprise and miss counts. The Portfolio
+  row for communication-pipeline records its amended exit. IR:
+  [docs/records/normative-second-round.ir.md](records/normative-second-round.ir.md).
 
 ## Upcoming
 - [ ] **Editorial passes for existing documents** — restyle per the
@@ -482,10 +491,13 @@ entries update in the same commit as the work they describe
   `docs/plans/conceptual-model-methodology-delta.md`, with
   `docs/documentation-census.md` as evidence). Adjudication criterion
   agreed 2026-10-23: adopt by the invariant each practice protects,
-  smallest set first; standard types need a second project. Open: the
-  vision document (owner writes); a `Protects:` header field on rules;
+  smallest set first; standard types need a second project. Adopted
+  2026-10-26 through the communication pipeline's graduation: the
+  `Protects:` field (PR #47), P-007 and P-008 (PR #48), W-009 and the
+  IR specification (PR #49). Open: the vision document (owner writes);
   the vocabulary collision between Allegro's "promotion" and the
-  methodology's *Promotion*; which practices enter at review round 2.
+  methodology's *Promotion*; Allegro's P-009 to P-011 and document
+  types, which wait for a second project.
 - [x] **1.5.0 migration round closed** — all nine pinned projects
   (the `methodology` family, the `in-real-life` family, allegro) merged
   their migration PRs: pin bump plus the one copy of W-008's required

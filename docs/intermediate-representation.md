@@ -47,6 +47,7 @@ Asks. The Claims section may use any sub-headings.
 | Status | `draft` · `reviewed` · `rendered` · `delivered` |
 | Source | the conversation, document or event that occasioned it |
 | Normative | optional: `yes` when the prose is normative text, that is a rule, a specification, or any text whose words bind |
+| Footprint | optional: the files or directories the work is expected to touch, separated by semicolons; a directory ends in `/` |
 
 A `report` is read by someone who shares the conversation: RD-1 (the
 human owner in conversation), RD-2 (the human owner returning) or RD-3
@@ -144,7 +145,11 @@ section as "No asks."
 
 Normative text is rendered by the reasoning role, the agent that
 wrote the IR, not by the paraphraser, because a paraphrase could
-change its force. A stranger still reads it.
+change its force. A stranger reads it, the reasoning role fixes the
+findings, and a stranger reads the fixed text again. The second
+round's verdict is the text's readability (owner ruling, 2026-10-26,
+after four normative texts reviewed once were all unreadable before
+fixes and unmeasured after).
 
 The paraphraser appends a render map: one comment line of the form
 `<!-- render map: C1→¶1 C2→¶1 … -->` listing where each claim
@@ -165,7 +170,7 @@ condition holds decides.
 | Condition | What follows |
 |---|---|
 | the owner asked for a review of this output | the paraphraser renders, then a stranger reviews |
-| purpose is `document` and the header carries `Normative: yes` | the reasoning role renders; a stranger reviews IR and prose |
+| purpose is `document` and the header carries `Normative: yes` | the reasoning role renders; a stranger reviews IR and prose; after the fixes a stranger reviews again |
 | purpose is `document` | the paraphraser renders, then a stranger reviews |
 | reader is RD-4 or RD-5 | the paraphraser renders, then a stranger reviews |
 | proposed terms > 0 | the paraphraser renders, with the ratification ask |
@@ -181,6 +186,17 @@ obligation. The stranger review of a report to RD-1 or RD-3 runs only
 when the owner asks for it (owner ruling of 2026-10-25, recorded in
 that project's
 [branch-point.md](https://github.com/majodali/communication-pipeline/blob/main/docs/branch-point.md)).
+
+## The footprint
+
+An IR may declare, in its Footprint header, the files or directories
+its work is expected to touch. After the work, the declaration is
+compared with the files the branch changed. A changed file that was
+not declared is a surprise. A declared file that did not change is a
+miss. The two counts are the mechanical reading of the
+prediction-surprise indicator of
+[convergence](vocabulary.md#def-convergence), recorded per IR with
+the unratified-term count.
 
 ## When an IR is required at all
 
@@ -213,4 +229,6 @@ Adopted at v1.2 of the communication-pipeline project's schema, whose
 `docs/ir-schema.md` records the versions v0 to v1.2. From this
 adoption the specification is amended here. CK-12 was added at
 adoption after a stranger review found identifier uniqueness stated
-without a check.
+without a check. The Footprint header and the second stranger round
+for normative text were added on 2026-10-26 from that project's
+schema v1.3 and the owner's ruling at its chunk 4 gate.
