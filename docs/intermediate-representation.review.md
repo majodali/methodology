@@ -33,5 +33,5 @@ Meta-review: pending
 |---|---|---|---|---|---|---|
 | 0 (PR #51 text, for comparison) | old | 4,516 | 19 (amendment) | — | — | not readable after ten rounds |
 | 0 (main text, for comparison) | — | 2,635 | — | — | — | not readable (PR #50 round 2) |
-| 1a | old | 2,865 | 148 | | | |
-| 1b | revised | 2,865 | 148 | | | |
+| 1a | old | 2,884 | 148 | | | |
+| 1b | revised | 2,884 | 148 | | | |
