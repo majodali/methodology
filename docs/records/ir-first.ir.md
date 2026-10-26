@@ -24,7 +24,9 @@ T6. Cluster: a declared ordered list of claim identifiers the paraphraser render
 
 ### W-009
 
-C1. In a project of type methodology-corpus, a document under docs/, and a report that introduces a term, records a decision, or states a register fact, is written as an IR first. [decided: owner, 2026-10-25]
+C1. In a project of type methodology-corpus, a document under docs/ is written as an IR first. [decided: owner, 2026-10-25]
+
+C26. In a project of type methodology-corpus, a report that introduces a term, records a decision, or states a register fact is written as an IR first. [decided: owner, 2026-10-25]
 
 C23. Prose for RD-4 or RD-5 is rendered from the IR and reviewed by a stranger. [decided: pipeline branch point v1.1, 2026-10-25]
 
