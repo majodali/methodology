@@ -152,20 +152,29 @@ section as "No asks."
 
 Normative text is rendered by the reasoning role, the agent that
 wrote the IR, not by the paraphraser, because a paraphrase could
-change its force. The reasoning role then runs a two-round review.
-Round one: a stranger reviews the IR and the rendered text against
-the reader's readability test ([reader catalog](style.md#readers)).
-The reasoning role fixes the findings in the IR and in the text. The
-reasoning role records each finding and its disposition in a review
-record, the file `<subject>.review.md` beside the IR. Round two: a
-second stranger, with a fresh context, reviews the fixed IR and the
-fixed text. The review record holds the second verdict, and that
-verdict is the text's recorded readability. A verdict of readable
-ends the review. A verdict of not readable returns the text to the
-reasoning role for a further fix, and the owner decides whether a
-third round runs when adjudicating the amendment
-([Article 8](constitution.md#article-8--amendments-versions-and-migration),
-amendments, versions, and migration).
+change its force. The reasoning role then runs the stranger review
+described under Stranger rounds below.
+
+### Stranger rounds
+
+A stranger review runs in rounds until a round returns the verdict
+readable. Each round is run by the reasoning role, the agent that
+wrote the IR. In each round a stranger with a fresh context reviews
+the IR and the text against the reader's readability test
+([reader catalog](style.md#readers)). The reasoning role fixes the
+findings in the IR and in the text. The reasoning role records each
+round's findings, each finding's disposition, and the round's verdict
+in a review record, the file `<subject>.review.md` beside the IR. A
+verdict of readable ends the review, and that verdict is the text's
+recorded readability. A verdict of not readable starts the next
+round on the fixed IR and the fixed text. The review stops after ten
+rounds without a readable verdict, and the review record says so;
+the owner decides at adjudication what happens to the text. A text
+that needs more than two rounds is a subject for meta-review: the
+communication-pipeline project reads the review record and the text
+and reports whether the process needs a change (owner ruling,
+2026-10-26). The rule applies to every stranger review the rendering
+conditions select, whatever the text's purpose.
 
 The paraphraser appends a render map: one comment line of the form
 `<!-- render map: C1→¶1 C2→¶1 … -->` listing where each claim
@@ -175,8 +184,8 @@ and the ratio of prose sentences to claims.
 
 ## Rendering conditions
 
-Whether prose is rendered from an IR, and whether a stranger reviews
-the prose, is decided from the IR and one further input: whether the
+Whether prose is rendered from an IR, and whether stranger rounds
+review the prose, is decided from the IR and one further input: whether the
 owner asked for a review of the IR's prose. The inputs from the IR are
 its reader, its purpose, its Normative header, its claim count, its
 proposed-term count, the count of asks with a `Depends:` field, and
@@ -185,10 +194,10 @@ case. The first row whose condition holds decides.
 
 | Condition | What follows |
 |---|---|
-| the header carries `Normative: yes` | the reasoning role renders and runs the two-round review of the Rendering rule |
-| the owner asked for a review of this output | the paraphraser renders, then a stranger reviews |
-| purpose is `document` | the paraphraser renders, then a stranger reviews |
-| reader is RD-4 or RD-5 | the paraphraser renders, then a stranger reviews |
+| the header carries `Normative: yes` | the reasoning role renders and runs stranger rounds until readable |
+| the owner asked for a review of this output | the paraphraser renders, then stranger rounds until readable |
+| purpose is `document` | the paraphraser renders, then stranger rounds until readable |
+| reader is RD-4 or RD-5 | the paraphraser renders, then stranger rounds until readable |
 | proposed terms > 0 | the paraphraser renders, with the ratification ask |
 | reader is RD-2 | the paraphraser renders |
 | reader is RD-1 and (claims > 6 or dependent asks > 0 or longest claim > 30 words) | the paraphraser renders |
@@ -261,7 +270,10 @@ adoption after a stranger review found identifier uniqueness stated
 without a check. The Footprint header was added on 2026-10-26, from
 the communication-pipeline project's schema v1.3. The second
 stranger round for normative text was added on 2026-10-26, by owner
-ruling. The evidencing instance for the second round is the four
+ruling, and replaced the same day by rounds until readable with a
+limit of ten and the meta-review trigger, after the second round on
+that amendment's own text returned not readable and no third round
+was run before its merge. The evidencing instance for the second round is the four
 normative texts of October 2026, methodology PRs #46 to #49. Each
 was reviewed once. Each was judged not readable before its fixes.
 None was measured after its fixes. The record is

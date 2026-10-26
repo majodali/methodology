@@ -440,6 +440,15 @@ entries update in the same commit as the work they describe
   Footprint header with its surprise and miss counts. The Portfolio
   row for communication-pipeline records its amended exit. IR:
   [docs/records/normative-second-round.ir.md](records/normative-second-round.ir.md).
+- [x] **Stranger rounds run until readable** (amendment; the merge is
+  acceptance) — the
+  [intermediate-representation specification](intermediate-representation.md)
+  replaces the two-round review with rounds until a readable verdict,
+  limited to ten, on every stranger-reviewed text, with a meta-review
+  by the communication-pipeline project for any text needing more
+  than two rounds (owner ruling 2026-10-26, after PR #50 merged with
+  its second round unreadable). IR:
+  [docs/records/stranger-rounds-until-readable.ir.md](records/stranger-rounds-until-readable.ir.md).
 
 ## Upcoming
 - [ ] **Editorial passes for existing documents** — restyle per the

@@ -15,6 +15,26 @@ carry: amendment title and PR link · suggested by (evidencing instance)
 Minor — normative content, one constitutional change (the Article 5
 `Protects:` field).
 
+### Stranger rounds run until readable
+
+- **PR**: [#PRNUM](https://github.com/majodali/methodology/pull/PRNUM).
+- **Suggested by**: the owner, 2026-10-26, after merging PR #50
+  whose second stranger round had returned not readable with no third
+  round run: rounds continue until readable, with a limit of ten, on
+  every text that gets a stranger review; a text needing more than
+  two rounds is meta-reviewed by the communication-pipeline project.
+  Drafted IR first in
+  [docs/records/stranger-rounds-until-readable.ir.md](records/stranger-rounds-until-readable.ir.md).
+- **Impact**: methodology (`methodology-corpus`) — *accommodated*:
+  more reviewer runs per stranger-reviewed text under W-009, bounded
+  at ten. communication-pipeline — *accommodated*: its branch point
+  already runs rounds until readable from 2026-10-26, and it takes
+  the meta-reviews. Every other project — *accommodated*: W-009 does
+  not apply unless adopted by declaration.
+- **Migration note**: none.
+- **Protects**: proportional verification — a review that stops at a
+  fixed count measures the draft, not the text.
+
 ### Normative text gets a second stranger round; the IR declares its footprint
 
 - **PR**: [#50](https://github.com/majodali/methodology/pull/50).
