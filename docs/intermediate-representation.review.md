@@ -35,3 +35,42 @@ Meta-review: pending
 | 0 (main text, for comparison) | — | 2,635 | — | — | — | not readable (PR #50 round 2) |
 | 1a | old | 2,884 | 148 | | | |
 | 1b | revised | 2,884 | 148 | | | |
+
+## Round 1a, 2026-10-26 (old brief)
+
+2,884 words (the stranger counted 3,036 including the render map);
+22 findings; 7.2 per thousand words; verdict: not readable for RD-4.
+Compared with round 1 of PR #51's text: 28 findings, 10.9 per
+thousand words, on 2,572 words. By kind: SP-18 edge-case elaboration
+12 (findings 4, 5, 6, 8, 10, 11, 12, 13, 14, 19, 20 and the second
+half of 8); SP-03 referents 3 (1, 2, 16: "It" and "that session" with
+the antecedent in the previous sentence); SP-04 terms 3 (17 "state
+paragraph", 21 "register fact" used one sentence before its
+definition, 22 "formal project model"); other-project history 3
+(3, 15, 18); SP-01 one (9); CK-01 one (7: the bare-form list counts
+five and lists six). Dispositions follow after round 1b, so one set
+of fixes serves both.
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1, 2 | "It" with the antecedent in the previous sentence | referent | |
+| 3 | header names the adopting project | history | |
+| 4 | owner decisions outside rounds have no record defined | edge | |
+| 5 | when `draft`, `rendered`, `delivered` are set | edge | |
+| 6 | inline definition vs sentence of its own | contradiction | |
+| 7 | bare-form list: five said, six listed | wording | |
+| 8 | "whatever the purpose" vs row 2 keyed on purpose; "owner asked" undefined | contradiction, edge | |
+| 9 | verdict sentence joins three tests | compound | |
+| 10 | what a redundancy finding does to the verdict | edge | |
+| 11 | readable-round findings vs delivered report not edited | edge | |
+| 12 | does rework reset the limit | edge | |
+| 13 | dispositions vs adjudication outcomes | edge | |
+| 14 | document delivery trigger; meta-review timing; who writes the line | edge | |
+| 15 | pipeline named as performer; History does not say why | history | |
+| 16 | "that session" | referent | |
+| 17 | "state paragraph" undefined | term | |
+| 18 | "routed IRs" undefined; other project's practice | term, history | |
+| 19 | deliverable neither chat nor branch | edge | |
+| 20 | footprint trigger: `reviewed` only set at the limit | edge | |
+| 21 | "register fact" used before its definition | term | |
+| 22 | "formal project model" undefined | term | |
