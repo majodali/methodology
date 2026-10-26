@@ -66,3 +66,30 @@ third round follows, which makes this text a meta-review subject.
 | 25 | nothing sets Status to reviewed | fixed: the Status row says who sets each value and when |
 
 Meta-review subject: yes, from round 3 (recorded here per the rule).
+
+## Round 3, 2026-10-26
+
+3,196 words; 27 findings, 21 in the new passages; 8.4 per thousand
+words; verdict: not readable for RD-4. Every finding was fixed. This
+text is a meta-review subject from this round.
+
+| # | Finding (shortened) | Disposition |
+|---|---|---|
+| 1, 6 | Status values incomplete; the review flag has no field | fixed: every Status transition named; `review requested` recorded in the Status parenthesis |
+| 2 | "the counts the sections below record" | fixed: the two sections named |
+| 3, 24 | the Footprint fragment; a declared footprint on a chat-message IR | fixed: a sentence; ignored |
+| 4 | every term must be a T element versus CK-04 | fixed: or linked inside the claim |
+| 5 | CK-13 tests spelling only | fixed: stated as the mechanical part; synonyms are a stranger finding |
+| 7, 8 | the round-trip check has no identifier or thresholds; three findings in one sentence | fixed: CK-15, split, the ratio as information |
+| 9, 12, 15, 21 | two claims in one sentence or cell | fixed: split |
+| 10 | no actor for fixes after a readable round | fixed: the reasoning role at the next edit; recorded as accepted until then |
+| 11 | rework and the count | fixed: rework restarts the count |
+| 13, 14 | meta-review trigger time; "gate" | fixed: before the pipeline's next report to the owner; the methodology's session when the pipeline is archived |
+| 16 | a raw IR lacks W-008's parts | fixed: the IR's sections stand for the parts, stated in the row |
+| 17 | "provisional" | fixed: removed |
+| 18 | a rename counted twice | fixed: one changed file, declared when either path is |
+| 19, 20, 26 | referents | fixed |
+| 22 | inferred claims under covered contradict W-008 | fixed: inferred renders under what changed, in both places |
+| 23 | only Asks has an empty-part wording | fixed: every part, in W-008's words |
+| 25 | the footprint compared once, recorded later | fixed: compared at reviewed and at delivery; delivery counts recorded |
+| 27 | "formal project model" | fixed: the Backlog's horizon named |
