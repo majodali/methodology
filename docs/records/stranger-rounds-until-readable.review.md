@@ -114,3 +114,28 @@ words; verdict: not readable for RD-4. Every finding was fixed.
 | 16 | "not delivered" versus the owner's decision | fixed: the reasoning role does not deliver; the owner decides |
 | 19 | the meta-review duty unbounded | fixed: a session of the pipeline, on the record and the text, delivered as that session's report |
 | 21 | no test for a new claim in prose | fixed: the stranger's claim-evidence finding named |
+
+## Round 5, 2026-10-26
+
+3,529 words; 21 findings, 19 in the new passages; 5.95 per thousand
+words; verdict: not readable for RD-4. Every finding was fixed.
+
+| # | Finding (shortened) | Disposition |
+|---|---|---|
+| 1, 13, 17 | referents and an ask's wording | fixed |
+| 2 | a semicolon in the CK-13 cell | fixed: split |
+| 3 | the Claim row's default ignores `part:` | fixed: the field decides |
+| 4 | render map used before defined | fixed: pointer to the Rendering rule |
+| 5 | "claim-evidence finding" undefined | fixed: the stranger reports a sentence no claim holds |
+| 6 | where the render map lives | fixed: in the prose file; omitted from a sent copy |
+| 7 | the heading does not predict the meta-review | fixed: a Meta-review subsection |
+| 8 | where the verdict is recorded | fixed: the review record and the Status parenthesis |
+| 9 | accepted findings: no actor, no test | fixed: the reasoning role; an unfixed one is a defect in the edit |
+| 10 | Status at the limit | fixed: set to reviewed at any end of the rounds; the Status row says so |
+| 11 | "amendment" unscoped | fixed: a change to the methodology corpus |
+| 12, 14 | the meta-review's time, performer and test | fixed: due before acceptance; a session with no part in the rounds; the `Meta-review:` line and the audit |
+| 15 | CK-15 on an IR with no prose | fixed: runs only when prose was rendered |
+| 16 | a report for RD-4 or RD-5 | fixed: CK-07 flags the disagreement |
+| 18 | empty parts of an IR delivered as it stands | fixed: one line at the IR's end in W-008's words |
+| 19, 20 | footprint with no branch diff | fixed: recorded as not comparable |
+| 21 | which artifact is authoritative | fixed: the IR, for an active document |
