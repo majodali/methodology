@@ -2,7 +2,7 @@
 
 Reader: RD-4 (a fresh agent session) reading the intermediate-representation specification; the human owner adjudicates the amendment.
 Purpose: document. The amendment that replaces the two-round stranger review with rounds until a readable verdict, limited to ten, for every stranger review the rendering conditions select, and adds the meta-review trigger for texts that need more than two rounds.
-Status: draft (stranger rounds at stranger-rounds-until-readable.review.md: round 1, 28 findings, not readable; round 2, 25 findings, not readable; both fixed; round 3 pending; meta-review subject)
+Status: reviewed (ten stranger rounds at stranger-rounds-until-readable.review.md, disposition D3; the limit of ten was reached without a readable verdict; every round's findings fixed; not delivered by the reasoning role; the owner decides at adjudication; meta-review subject, pending; unratified terms 1)
 Source: the owner's message of 2026-10-26 after merging PR #50 ("I should have requested the third stranger round"; "unlimited stranger reviews until all clean (or perhaps a sanity limit of ten) on any doc requiring a stranger review"; "more than two reviews should then have those reviews and the doc itself meta-reviewed by this project").
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/records/; docs/releases.md; docs/backlog.md
@@ -71,4 +71,6 @@ A1. Adjudicate the amendment: accept, amend, or reject. Depends: C1, C2, C3, C4.
 
 A2. Ratify or strike the term meta-review (T1).
 
-A3. Note that this text is the first meta-review subject, reviewed by the communication-pipeline project at its next gate. Depends: C4.
+A3. Decide, the limit having been reached without a readable verdict, whether the specification text is delivered, reworked or withdrawn. Depends: C2, C6.
+
+A4. Dispatch the meta-review of this text, the first subject: a session with no part in the ten rounds, in the communication-pipeline project. Depends: C4.

@@ -233,3 +233,58 @@ fixed.
 | 21 | CK-08 silent for other readers | fixed: the Ask row says what they hold |
 | 22 | no check for an element without identifier or body | fixed: CK-16, element form |
 | 23 | the unit for a document | fixed: the markdown section under one heading |
+
+## Round 10, 2026-10-26
+
+4,351 words by the reviewer's count; 21 findings, all in the new
+passages; 4.8 per thousand words; verdict: not readable for RD-4.
+
+The limit of ten rounds was reached without a readable verdict. Under
+the rule this amendment introduces, the reasoning role does not
+deliver the text, the IR's Status is `reviewed`, and the owner
+decides at adjudication whether the text is delivered, reworked or
+withdrawn. The round 10 findings were fixed after the limit; those
+fixes are unmeasured.
+
+| # | Finding (shortened) | Disposition |
+|---|---|---|
+| 1, 16 | a declared footprint with no branch; the parenthesis for such IRs | fixed after the limit: not a defect; `footprint: none` |
+| 2, 12 | two claims in one sentence | fixed after the limit |
+| 3 | no test for a decided claim that first records a decision | fixed after the limit: a stranger finding |
+| 4 | the raw-IR row ignores `part:` for proposed claims | left: the Claim row's "with a field" governs; the row names the defaults |
+| 5 | a finding located in paraphrased prose | fixed after the limit |
+| 6, 7 | withdrawal and rework undefined | fixed after the limit |
+| 8 | which session performs the meta-review | fixed after the limit: a session the owner starts, named in the record |
+| 9 | the subject duty stated unconditionally | fixed after the limit |
+| 10 | no record of a round's instance | fixed after the limit: the record names each round's instance |
+| 11, 15, 20, 21 | referents | fixed after the limit |
+| 13, 14 | "formal project model" before its definition; the Lifecycle header | fixed after the limit: defined first; the Backlog sentence dropped |
+| 17 | a branch merged before reviewed | left: the section says the comparison at reviewed is skipped when no branch carries the deliverable |
+| 18 | which IR owns a document's files when a PR presents it | fixed after the limit |
+| 19 | "continuation" has no test | fixed after the limit: defined in the row |
+
+## The curve
+
+| Round | Words | Findings | In new passages | Per thousand words | Verdict |
+|---|---|---|---|---|---|
+| 1 | 2,572 | 28 | 16 | 10.9 | not readable |
+| 2 | 3,004 | 25 | 15 | 8.3 | not readable |
+| 3 | 3,196 | 27 | 21 | 8.4 | not readable |
+| 4 | 3,429 | 21 | 20 | 6.1 | not readable |
+| 5 | 3,529 | 21 | 19 | 6.0 | not readable |
+| 6 | about 3,600 | 23 | 21 | 4.7 | not readable |
+| 7 | 3,903 | 22 | 20 | 5.6 | not readable |
+| 8 | 4,068 | 21 | 19 | 5.2 | not readable |
+| 9 | about 4,100 | 23 | 21 | 4.5 | not readable |
+| 10 | 4,351 | 21 | 21 | 4.8 | not readable |
+
+Word counts are the reviewers' own, which include table markup; the
+file grew from 2,572 to 4,516 words over the ten rounds. The findings
+per round settled at 21 to 23 from round 4. The rate per thousand
+words fell by half, mostly because the text grew. Every round's
+findings were fixed before the next round. Each reviewer instance was
+fresh: rounds 1 to 10 were run by ten different haiku-model
+instances, dispatched by the reasoning role.
+
+Meta-review: pending. Subject from round 3. Instances: ten fresh
+haiku-model subagents, one per round, named in the session log only.
