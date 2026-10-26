@@ -38,3 +38,31 @@ pre-existing ones included, so the rounds converge on the whole text.
 | 23 | the meta-review sentence carries three claims and names no recipient | fixed: split; reports to the owner |
 | 25 | the render map under the Stranger rounds heading | fixed: the subsection now follows the render map paragraph |
 | 26, 27, 28 | "that amendment", "Each", "evidencing instance" | fixed: PR #50 named; "each of the four texts"; motivating instance, Article 6 linked |
+
+## Round 2, 2026-10-26
+
+3,004 words; 25 findings, 15 in the new passages; 8.3 per thousand
+words; verdict: not readable for RD-4. Every finding was fixed. A
+third round follows, which makes this text a meta-review subject.
+
+| # | Finding (shortened) | Disposition |
+|---|---|---|
+| 1 | only chat messages get an empty footprint | fixed: absent or empty when no branch carries the deliverable |
+| 2, 3, 5, 9 | two claims in a cell; long sentences | fixed: split |
+| 4 | "ratification ask" undefined | fixed: the ask is spelled out |
+| 6 | fixes after a readable verdict change the judged text | fixed: the delivered text is the judged text; a readable round's findings are fixed at the next edit |
+| 7, 8 | the IR fix duty missing for normative text; "re-rendered prose" names nothing there | fixed: fixes to the IR in every case; the prose as it then stands |
+| 10 | Article 8 as the basis for adjudicating a deliverable | fixed: the owner's acceptance or rejection; Article 8 for an amendment |
+| 11, 12, 13 | meta-review used before defined; no test; no trigger owner or time | fixed: defined first; three or more rounds in the record; the reasoning role records and asks; the pipeline performs it at its next gate |
+| 14 | CK-14 cannot tell when a review was owed | fixed: the conditions that select rounds are listed in the check; Status values defined |
+| 15 | "same term" has no test | fixed: equal names after lower-casing |
+| 16 | provenance in the header | fixed: moved to History |
+| 17, 18, 19 | tuning by another project's record; "routed IRs"; an editorial count change | fixed: a count changes by amendment; the data source named in History |
+| 20 | no one appends the render map for normative text | fixed: whoever rendered the prose |
+| 21 | Term row versus Rendering rule on introduced terms | fixed: a defining sentence of its own, in both |
+| 22 | "state paragraph" | fixed: described, with the catalog cited |
+| 23 | renames | fixed: changed under both paths |
+| 24 | docs/records/ reports read as documents | fixed: outside docs/records/ |
+| 25 | nothing sets Status to reviewed | fixed: the Status row says who sets each value and when |
+
+Meta-review subject: yes, from round 3 (recorded here per the rule).

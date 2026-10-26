@@ -1,8 +1,7 @@
 # Intermediate representation
 
-Status: active. A Methodology-level specification, adopted 2026-10-26
-from the [communication-pipeline](https://github.com/majodali/communication-pipeline)
-project (a project in the [Portfolio register](vocabulary.md#def-portfolio-register)). Required by
+Status: active. A Methodology-level specification, adopted
+2026-10-26. Its origin is recorded under History. Required by
 [W-009](rules/working-agreement.md#w-009--the-methodology-corpus-writes-its-deliverables-ir-first)
 (the methodology corpus writes its deliverables IR first). Any project
 that adopts W-009 by declaration uses this specification.
@@ -46,16 +45,16 @@ Asks. The Claims section may use any sub-headings.
 |---|---|
 | Reader | one entry from the [reader catalog](style.md#readers), by identifier |
 | Purpose | `report` or `document`, then one sentence saying what the communication is for |
-| Status | `draft` · `reviewed` · `rendered` · `delivered`, each optionally followed by a parenthesis holding the counts the sections below record |
+| Status | `draft` · `reviewed` · `rendered` · `delivered`, each optionally followed by a parenthesis holding the counts the sections below record. The reasoning role sets `reviewed` when the stranger rounds end, `rendered` when prose exists, and `delivered` when the prose is sent to its reader |
 | Source | the conversation, document or event that occasioned it |
 | Normative | optional: `yes` when the prose is normative text, that is a rule, a specification, or any text whose words bind |
-| Footprint | optional: the files or directories the IR's deliverable is expected to change, separated by semicolons; a directory ends in `/` and covers every file under it. The deliverable of an IR for a PR body is the pull request's changes, which its branch carries. Absent, or empty, for a chat message, which no branch carries |
+| Footprint | optional: the files or directories the IR's deliverable is expected to change, separated by semicolons. A directory ends in `/`. A declared directory covers every file under it. The deliverable of an IR for a PR body is the pull request's changes, which its branch carries. Absent, or empty, when no branch carries the deliverable, as for a chat message |
 
 A `report` is read by someone who shares the conversation: RD-1 (the
 human owner in conversation), RD-2 (the human owner returning) or RD-3
 (a delegating agent). A `document` is read by someone who does not
 share the conversation: RD-4 (a fresh agent session) or RD-5 (an
-external reader). A text that will live under `docs/` is a
+external reader). A text that will live under `docs/`, outside `docs/records/`, is a
 `document`.
 
 ## Element kinds
@@ -68,7 +67,7 @@ IR (CK-12, identifier uniqueness). A split claim takes a new number, never a suf
 
 | Kind | Letter | Body | Rule |
 |---|---|---|---|
-| Term | `T` | the word or phrase; its meaning in this communication; `defined-at:` a link to its definition site when one exists | A term is defined once per IR (CK-13, term uniqueness). Every project-specific term used in a claim appears here. A term with a definition site links it and does not restate it. A term without one is proposed, rendered as an inline definition, and listed for ratification (P-008). |
+| Term | `T` | the word or phrase; its meaning in this communication; `defined-at:` a link to its definition site when one exists | A term is defined once per IR (CK-13, term uniqueness). Every project-specific term used in a claim appears here. A term with a definition site links it and does not restate it. A term without one is proposed, rendered as a defining sentence of its own before its first use, and listed for ratification (P-008). |
 | Claim | `C` | one statement | A claim makes one statement and names every referent inside itself (the referent rule below). A claim may carry `evidence: E<n>` and, for a report to a human-owner reader, `part: covered` or `part: changed`. Without a part, a decided or inferred claim renders under *What is already covered* and a proposed claim under *What changed*. |
 | Cluster | `G` | `cluster: C<a>, C<b>, …` with an optional topic claim first | The paraphraser renders a cluster as one paragraph, in the order given. A claim belongs to at most one cluster. |
 | Relation | `R` | `C<a> <verb> C<b> because <reason>` | Verbs: `supports`, `depends-on`, `contradicts`, `refines`. The reason is one sentence or a claim identifier. Cross-claim references are relations, never pronouns in a claim. |
@@ -126,8 +125,8 @@ methodology-tools runs them as `mtool ir check`.
 | CK-10 | section order | the five sections are absent or out of order |
 | CK-11 | definition site | a term's `defined-at:` target does not resolve |
 | CK-12 | identifier uniqueness | two elements carry the same identifier |
-| CK-13 | term uniqueness | two `T` elements name the same term |
-| CK-14 | review record | the IR's Status is `reviewed`, `rendered` or `delivered` after a stranger review, and no review record `<subject>.review.md` with a verdict per round sits beside it |
+| CK-13 | term uniqueness | two `T` elements have equal names after lower-casing |
+| CK-14 | review record | the rendering conditions select stranger rounds for the IR (a `Normative: yes` header, purpose `document`, reader RD-4 or RD-5, or a review flag recorded in the Status), the Status is `reviewed`, `rendered` or `delivered`, and no review record `<subject>.review.md` with a verdict per round sits beside the IR |
 
 What counts as a project-specific term for CK-04: any bolded term, any
 capitalized multi-word phrase that is not the name of a person,
@@ -157,8 +156,9 @@ wrote the IR, not by the paraphraser, because a paraphrase could
 change its force. The reasoning role then runs the stranger rounds
 of the next subsection.
 
-The paraphraser appends a render map: one comment line of the form
-`<!-- render map: C1→¶1 C2→¶1 … -->` listing where each claim
+Whoever rendered the prose, the paraphraser or the reasoning role
+for normative text, appends a render map: one comment line of the
+form `<!-- render map: C1→¶1 C2→¶1 … -->` listing where each claim
 landed. The round-trip check is a lint that reads the map and reports
 claims absent from it, identifiers in it that the IR does not hold,
 and the ratio of prose sentences to claims.
@@ -167,42 +167,54 @@ and the ratio of prose sentences to claims.
 
 A stranger review runs in rounds until a round returns the verdict
 readable. The reasoning role, the agent that wrote the IR, starts
-each round by dispatching a stranger: an agent instance with a fresh
-context, never the reasoning role itself and never the instance of
-an earlier round. The stranger reviews the IR and the rendered prose
-against the reader's readability test ([reader
-catalog](style.md#readers)) and returns findings and a verdict. The
-reasoning role records the round's findings, each finding's
-disposition, and the verdict in the review record, the file
-`<subject>.review.md` beside the IR (CK-14, review record). A verdict
-of readable ends the review, and that verdict is the text's recorded
-readability. The fixes of a readable round are applied before
-delivery, and the review record lists them as post-verdict fixes. A
-verdict of not readable is followed by fixes to the IR. When the
-paraphraser rendered the prose, the reasoning role sends the fixed
-IR to the paraphraser, which renders it again with a new render map.
-When the reasoning role rendered the prose, the reasoning role fixes
-the prose itself. The next round reviews the fixed IR and the
-re-rendered prose. The review stops after ten rounds without a
-readable verdict. At the limit the text is not delivered, the IR's
-Status stays `reviewed`, and the review record states that the limit
-was reached. The owner then decides, when adjudicating the deliverable
-([Article 8](constitution.md#article-8--amendments-versions-and-migration),
-amendments, versions, and migration), whether the text is delivered,
-reworked or withdrawn. A text that needs more than two rounds is a
-subject for meta-review. The meta-review is done by the
-communication-pipeline project, which reads the review record and
-the text. The meta-review reports to the owner whether the process
-needs a change. The rounds apply to every stranger review the
-rendering conditions select, whatever the text's purpose.
+each round by dispatching a stranger. The stranger is an agent
+instance with a fresh context. The stranger is never the reasoning
+role itself and never the instance of an earlier round. The stranger
+reviews the IR and the rendered prose against the reader's
+readability test ([reader catalog](style.md#readers)) and returns
+findings and a verdict. The reasoning role records the round's
+findings, each finding's disposition, and the verdict in the review
+record, the file `<subject>.review.md` beside the IR (CK-14, review
+record).
 
+A verdict of readable ends the review. The text delivered is the
+text that round judged, and the verdict is its recorded readability.
+Findings a readable round lists are recorded in the review record
+and fixed at the text's next edit.
+
+A verdict of not readable is followed by fixes to the IR. When the
+reasoning role rendered the prose, the reasoning role fixes the prose
+too. When the paraphraser rendered the prose, the reasoning role
+sends the fixed IR to the paraphraser, which renders it again with a
+new render map. The next round reviews the fixed IR and the prose as
+it then stands.
+
+The review stops after ten rounds without a readable verdict. At the
+limit the text is not delivered. The IR's Status stays `reviewed`.
+The review record states that the limit was reached. The owner then
+decides whether the text is delivered, reworked or withdrawn, when
+accepting or rejecting the deliverable. For an amendment that
+decision is its adjudication under
+[Article 8](constitution.md#article-8--amendments-versions-and-migration)
+(amendments, versions, and migration).
+
+A meta-review is a review of a text's review record and of the text
+itself, reporting to the owner whether the process needs a change. A
+text whose review record holds three or more rounds is a meta-review
+subject. When the reasoning role starts a third round, it records in
+the review record that the text is a meta-review subject, and it
+names the subject in the asks of its report. The communication-
+pipeline project performs the meta-review at its next gate and
+reports to the owner.
+
+The rounds apply to every stranger review the rendering conditions
+select, whatever the text's purpose.
 
 ## Rendering conditions
 
 Whether prose is rendered from an IR, and whether stranger rounds
-review the prose, is decided from the IR and one further input: the
-owner's review flag, set when the owner asked for a review of the
-IR's prose. The inputs from the IR are its reader, its purpose and its Normative
+review the prose, is decided from the IR and the owner's review flag.
+The flag is set when the owner asked for a review of the IR's prose. The inputs from the IR are its reader, its purpose and its Normative
 header, plus four counts: claims, proposed terms, dependent asks (asks
 with a `Depends:` field), and the words of its longest claim. The mechanical checks run in every
 case. The first row whose condition holds decides.
@@ -213,16 +225,14 @@ case. The first row whose condition holds decides.
 | the owner's review flag is set | the paraphraser renders, then the stranger rounds |
 | purpose is `document` | the paraphraser renders, then the stranger rounds |
 | reader is RD-4 or RD-5 | the paraphraser renders, then the stranger rounds |
-| proposed terms > 0 | the paraphraser renders, with the ratification ask |
+| proposed terms > 0 | the paraphraser renders, and the asks include one that the owner ratify or strike each proposed term (W-008, terms introduced) |
 | reader is RD-2 | the paraphraser renders |
 | reader is RD-1 and (claims > 6 or dependent asks > 0 or longest claim > 30 words) | the paraphraser renders |
 | reader is RD-3 and (claims > 12 or dependent asks > 0) | the paraphraser renders |
 | reader is RD-1 or RD-3 | the checks only; the IR is delivered as it stands |
 
-The counts in the conditions are provisional. The communication-
-pipeline project's record of routed IRs is the data that tunes the
-counts. A change to a count is an editorial change while it changes
-no obligation. A report to RD-1 or RD-3 that is not normative gets a
+The counts in the conditions are provisional. A change to a count
+is an amendment, because it changes which row holds. A report to RD-1 or RD-3 that is not normative gets a
 stranger review only when the owner's review flag is set.
 
 ## The footprint
@@ -234,9 +244,9 @@ no branch carries a chat message. The deliverable of an IR for a PR
 body is the pull request's changes, which its branch carries.
 When the IR's Status becomes `reviewed`, the reasoning role compares
 the declaration with the files the branch changed since its base
-branch. A lint may run the comparison for the reasoning role. A file
-is changed when the branch's diff adds, modifies, deletes or renames
-it. The IR itself and its review record are not counted. A changed
+branch. A lint may run the comparison for the reasoning role. A file is changed when the branch's diff adds, modifies, deletes or
+renames it. A renamed file counts as changed under its old path and
+its new path. The IR itself and its review record are not counted. A changed
 file that no declared file or directory covers is a surprise. A
 changed file that a declared entry covers is neither a surprise nor a
 miss. A declared file that did not change is a miss. A declared
@@ -249,8 +259,9 @@ delivered, beside the unratified-term count.
 
 ## When an IR is required at all
 
-A document always starts as an IR. A report to RD-2 always starts as
-an IR, because its state paragraph is rendered. A report to RD-1 or
+A document always starts as an IR. A report to RD-2 always starts as an IR, because its opening
+paragraph, which re-establishes the current state (reader catalog,
+RD-2), is rendered from the IR. A report to RD-1 or
 RD-3 may be written as prose directly, with the style guide's mechanical checks,
 when it introduces no term, records no decision, and states no
 register fact. A register fact is a statement about the state of a
@@ -274,8 +285,13 @@ horizon.
 
 ## History
 
-Adopted at v1.2 of the communication-pipeline project's schema, whose
-`docs/ir-schema.md` records the versions v0 to v1.2. From this
+Adopted at v1.2 of the schema of the
+[communication-pipeline](https://github.com/majodali/communication-pipeline)
+project (a project in the
+[Portfolio register](vocabulary.md#def-portfolio-register)), whose
+`docs/ir-schema.md` records the versions v0 to v1.2. That project's
+record of the IRs it routed is the data from which a count may be
+proposed for amendment. From this
 adoption the specification is amended here. CK-12 was added at
 adoption after a stranger review found identifier uniqueness stated
 without a check. The Footprint header was added on 2026-10-26, from
