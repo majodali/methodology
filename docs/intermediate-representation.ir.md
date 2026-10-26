@@ -2,7 +2,7 @@
 
 Reader: RD-4 (a fresh agent session) in the reasoning, paraphraser or stranger role; the human owner reads the specification as RD-4 does.
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: draft (experiment: the specification rewritten from a full IR; rounds to follow; unratified terms 2)
+Status: draft (experiment: the specification rewritten from a full IR; round 1 reviewed twice, fixes applied; round 2 in progress; unratified terms 2)
 Source: docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md
@@ -59,9 +59,13 @@ C4. The IR prevents three failure modes of prose written directly: several claim
 
 C5. Any project that adopts W-009 by declaration uses this specification. [decided: methodology PR #49, 2026-10-26]
 
-C6. A case this specification does not name is decided by the human owner when accepting the deliverable. [proposed: this IR]
+C149. W-009 requires this specification. [decided: methodology PR #49, 2026-10-26]
 
-C141. The owner's decision on an unnamed case is recorded in the review record. [proposed: this IR]
+C150. The specification's status is active. [decided: methodology PR #49, 2026-10-26]
+
+C151. The reader is assumed to know W-008, P-008 and the style guide, including its Readers table. [decided: methodology PR #49, 2026-10-26]
+
+C6. A case this specification does not name is decided by the human owner when accepting the deliverable. [proposed: this IR]
 
 ### Document form
 
@@ -109,7 +113,9 @@ C25. Every project-specific term used in a claim appears as a term element. [dec
 
 C26. A term with a definition site links the site and does not restate the definition. [decided: methodology PR #48, 2026-10-26]
 
-C27. A term without a definition site has status proposed, is rendered as an inline definition, and is listed for ratification. [decided: methodology PR #48, 2026-10-26]
+C27. A term without a definition site has status proposed. [decided: methodology PR #48, 2026-10-26]
+
+C152. A proposed term is listed for ratification. [decided: methodology PR #48, 2026-10-26]
 
 C28. A claim element (`C`) makes one statement and names every referent inside itself. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -141,7 +147,9 @@ C40. A claim names each referent inside itself. [decided: pipeline schema v1.2, 
 
 C41. A bare pronoun or determiner phrase inside a claim is legal only when its antecedent is a noun phrase earlier in that claim. [decided: pipeline schema v1.2, 2026-10-25]
 
-C42. The bare forms are five pronouns (it, this, that, these, those) and five determiner phrases (other, above, former, latter, same, each after "the") with no noun following. [decided: pipeline schema v1.2, 2026-10-25]
+C42. The bare pronouns are it, this, that, these and those, with no noun after. [decided: pipeline schema v1.2, 2026-10-25]
+
+C163. The bare determiner phrases are the word "the" followed by other, above, former, latter or same, with no noun after. [decided: pipeline schema v1.2, 2026-10-25]
 
 C43. A determiner followed by the noun it names, such as "this specification", names its referent and is not bare. [decided: methodology PR #49, 2026-10-26]
 
@@ -217,13 +225,17 @@ C75. Relations and evidence are not rendered as sentences. [decided: pipeline sc
 
 C76. A term with a definition site is linked at its first use in the unit P-008 defines, and written without a link after. [decided: methodology PR #48, 2026-10-26]
 
-C77. A term the IR introduces is defined in a sentence of its own before its first use and listed under *Terms introduced*. [decided: methodology PR #46, 2026-10-26]
+C77. A term the IR introduces is defined in a sentence of its own before its first use. [decided: methodology PR #46, 2026-10-26]
+
+C153. A term the IR introduces is listed under *Terms introduced*. [decided: methodology PR #46, 2026-10-26]
 
 C78. For RD-5 a link becomes an inline gloss. [decided: methodology PR #48, 2026-10-26]
 
 C79. For a human-owner reader, a claim renders under the part its `part:` field names. [decided: pipeline schema v1.2, 2026-10-25]
 
-C80. Without a `part:` field, a decided claim renders under *What is already covered* and a proposed or inferred claim under *What changed*. [decided: methodology PR #50, 2026-10-26]
+C80. Without a `part:` field, a decided claim renders under *What is already covered*. [decided: methodology PR #50, 2026-10-26]
+
+C154. Without a `part:` field, a proposed or inferred claim renders under *What changed*. [decided: methodology PR #50, 2026-10-26]
 
 C81. The rendering follows the style guide's rows for the IR's reader. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -245,27 +257,35 @@ C143. A fix adds words only to supply a missing definition or a missing referent
 
 C88. A stranger review runs in rounds until a round returns the verdict readable. [decided: owner, 2026-10-26]
 
-C89. The review stops after ten rounds without a readable verdict. [decided: owner, 2026-10-26]
+C89. A count ends at the limit, ten rounds, when no round has returned readable. [decided: owner, 2026-10-26]
 
-C90. The rounds apply to every stranger review the rendering conditions select, whatever the text's purpose. [decided: owner, 2026-10-26]
+C90. The rounds apply to every stranger review the rendering conditions select. [decided: owner, 2026-10-26]
 
 C91. The reasoning role starts each round by dispatching a stranger with a fresh context, never itself and never an earlier round's instance. [decided: methodology PR #50, 2026-10-26]
 
 C92. The stranger reviews the IR and the prose against the reader's readability test and returns findings and a verdict. [decided: methodology PR #50, 2026-10-26]
 
-C93. The stranger's verdict is readable when the stranger's restatement of the text's problem, terms and decisions matches the IR and the stranger finds no contradiction and no undefined term. [proposed: this IR]
+C93. The verdict is readable when three conditions hold: the stranger's restatement of the text's problem, terms and decisions matches the IR; the stranger finds no contradiction; the stranger finds no undefined term. [proposed: this IR]
 
-C94. A finding that proposes fewer words, a plainer phrase or a removed repetition is a finding like any other. [proposed: this IR]
+C94. A finding that proposes fewer words, a plainer phrase or a removed repetition is recorded and fixed like any other finding. [proposed: this IR]
 
 C95. The reasoning role records each round's findings, each finding's disposition, and the verdict in the review record. [decided: methodology PR #50, 2026-10-26]
 
-C96. A verdict of readable ends the count, and the text delivered is the text that round judged. [decided: methodology PR #50, 2026-10-26]
+C96. A verdict of readable ends the count. [decided: methodology PR #50, 2026-10-26]
 
-C97. The findings of a readable round are recorded unfixed and fixed by the next edit of the text. [decided: methodology PR #51 rounds, 2026-10-26]
+C155. The text delivered is the text the readable round judged. [decided: methodology PR #50, 2026-10-26]
 
-C98. After a verdict of not readable, the reasoning role fixes the IR and then the prose, and the next round reviews both as fixed. [decided: owner, 2026-10-26]
+C97. The findings of a readable round are recorded unfixed. [decided: methodology PR #51 rounds, 2026-10-26]
 
-C99. At the limit the reasoning role does not deliver the text and sets the Status to `reviewed`. [decided: owner, 2026-10-26]
+C156. The next edit of the text fixes the recorded findings of its readable round. [decided: methodology PR #51 rounds, 2026-10-26]
+
+C98. After a verdict of not readable, the reasoning role fixes the IR and then the prose. [decided: owner, 2026-10-26]
+
+C157. The next round reviews the fixed IR and the fixed prose. [decided: owner, 2026-10-26]
+
+C99. At the limit the reasoning role does not deliver the text. [decided: owner, 2026-10-26]
+
+C158. The end of a count sets the IR's Status to `reviewed`. [proposed: this IR]
 
 C144. At the limit the review record states that the limit was reached. [decided: owner, 2026-10-26]
 
@@ -283,11 +303,13 @@ C104. A text whose review record holds three or more rounds in one count is a me
 
 C105. When the reasoning role starts a third round, it writes the line `Meta-review: pending` in the review record. [proposed: methodology PR #51]
 
-C106. At delivery of a meta-review subject, the delivering report asks the owner to dispatch the meta-review. [proposed: methodology PR #51]
+C106. At delivery of a meta-review subject, the reasoning role asks the owner, in the report that delivers the text, to dispatch the meta-review. [proposed: methodology PR #51]
 
-C107. The meta-review is performed by a session the owner starts, with no part in the text's rounds, in the communication-pipeline project until that project is archived and in the methodology repository after. [decided: owner, 2026-10-26]
+C107. The meta-review is performed by a session the owner starts. [decided: owner, 2026-10-26]
 
-C108. The meta-review is delivered as that session's report to the owner, and the review record's line then becomes `Meta-review: delivered` with a link. [proposed: methodology PR #51]
+C108. The performing session delivers the meta-review as its report to the owner. [proposed: methodology PR #51]
+
+C159. On delivery of the meta-review, the reasoning role sets the review record's line to `Meta-review: delivered` with a link. [proposed: methodology PR #51]
 
 C109. A `Meta-review: pending` line in the review record of an accepted deliverable is a finding of the next form audit under Article 9. [proposed: methodology PR #51]
 
@@ -305,7 +327,7 @@ C114. When the owner asked for a review, or the purpose is `document`, or the re
 
 C115. When proposed terms exceed zero, the paraphraser renders, with the ratification ask. [decided: pipeline branch point v1.1, 2026-10-25]
 
-C116. When the reader is RD-2, the paraphraser renders, because only the paraphraser writes the state paragraph. [decided: pipeline branch point v1.1, 2026-10-25]
+C116. When the reader is RD-2, the paraphraser renders. [decided: pipeline branch point v1.1, 2026-10-25]
 
 C117. When the reader is RD-1 and the IR has more than six claims, a dependent ask, or a claim over 30 words, the paraphraser renders. [decided: pipeline branch point v1.1, 2026-10-25]
 
@@ -313,7 +335,7 @@ C118. When the reader is RD-3 and the IR has more than twelve claims or a depend
 
 C119. Otherwise, for RD-1 or RD-3, the checks run and the IR is delivered as it stands. [decided: pipeline branch point v1.1, 2026-10-25]
 
-C120. The counts in the conditions are provisional and are tuned by the communication-pipeline project's record of routed IRs. [decided: methodology PR #49, 2026-10-26]
+C120. The counts in the conditions are provisional. [decided: methodology PR #49, 2026-10-26]
 
 C145. A change to a count is an editorial change while it changes no obligation. [decided: methodology PR #49, 2026-10-26]
 
@@ -341,7 +363,7 @@ C128. The reasoning role records the unratified-term count, the surprise count a
 
 C129. A document always starts as an IR. [decided: owner, 2026-10-25]
 
-C130. A report to RD-2 always starts as an IR, because its state paragraph is rendered. [decided: pipeline branch point v1.1, 2026-10-25]
+C130. A report to RD-2 always starts as an IR. [decided: pipeline branch point v1.1, 2026-10-25]
 
 C131. A report to RD-1 or RD-3 that introduces no term, records no decision and states no register fact may be written as prose directly, under the style guide's mechanical checks. [decided: owner, 2026-10-25]
 
@@ -351,13 +373,15 @@ C132. A term, a decision or a register fact requires the IR, because each is con
 
 C133. An IR's mutability follows the designation of its prose. [decided: pipeline schema v1.2, 2026-10-25]
 
-C134. The IR of an active document is edited whenever the document is, and a disagreement between the two is a defect in the prose. [decided: pipeline schema v1.2, 2026-10-25]
+C134. The IR of an active document is edited whenever the document is. [decided: pipeline schema v1.2, 2026-10-25]
 
-C135. The IR of a delivered report is a record: its Status becomes `delivered` and it is not edited after. [decided: pipeline schema v1.2, 2026-10-25]
+C160. A disagreement between an active document and its IR is a defect in the prose. [decided: pipeline schema v1.2, 2026-10-25]
+
+C135. The IR of a delivered report is a record whose Status becomes `delivered`. [decided: pipeline schema v1.2, 2026-10-25]
+
+C161. The IR of a delivered report is not edited after delivery. [decided: pipeline schema v1.2, 2026-10-25]
 
 C136. Ratification of a proposed term adds an anchored row to the project vocabulary, which becomes the term's definition site. [decided: methodology PR #48, 2026-10-26]
-
-C137. Ratified terms and decided claims are the first entries of the formal project model the Backlog lists as the owner's horizon. [decided: pipeline schema v1.2, 2026-10-25]
 
 ### History
 
@@ -368,6 +392,8 @@ C139. CK-12 was added at adoption after a stranger review. [decided: methodology
 C147. The Footprint header and the second stranger round were added on 2026-10-26. [decided: methodology PR #50, 2026-10-26]
 
 C148. The rounds until readable, the limit of ten and the meta-review were added by owner ruling of 2026-10-26. [decided: owner, 2026-10-26]
+
+C162. The owner placed the meta-review in the communication-pipeline project until that project is archived, and in the methodology repository after. [decided: owner, 2026-10-26]
 
 C140. The specification was rewritten from this IR after ten rounds on PR #51's text grew the prose from 2,635 to 4,516 words without a readable verdict. evidence: E1, E2. [proposed: this IR]
 
@@ -407,7 +433,7 @@ R16. C104 depends-on C88 because rounds beyond two exist only under the rounds r
 
 R17. C113 depends-on C84 because the first row selects the reasoning role as renderer.
 
-R18. C116 depends-on C130 because the RD-2 condition and the RD-2 requirement rest on the same state paragraph.
+R18. C116 depends-on C130 because the returning owner's report needs a state paragraph only the paraphraser writes.
 
 R19. C128 depends-on C50 because the Status parenthesis holds the indicator readings.
 
@@ -415,11 +441,15 @@ R20. C128 depends-on C127 because the Status parenthesis holds the indicator rea
 
 R21. C69 depends-on C83 because the round-trip check reads the render map.
 
-R22. C96 contradicts C97 unless the readable round's findings stay unfixed until the next edit, which C97 states.
-
 R23. C68 depends-on C95 because the check verifies the record the rounds produce.
 
 R24. C129 depends-on C18 because a document is defined by its reader.
+
+R25. C158 refines C13 because the status rule names when `reviewed` is set.
+
+R26. C162 supports C107 because the placement is provenance, not a duty on the session.
+
+R27. C156 depends-on C97 because the next edit fixes what the readable round recorded.
 
 ## Evidence
 
@@ -433,4 +463,4 @@ E3. methodology main at 89964a7, docs/intermediate-representation.md: the text t
 
 A1. Accept or reject the rewritten specification as the text of docs/intermediate-representation.md. Depends: C140.
 
-A2. Ratify or strike the terms count (T14) and meta-review (T15), and the proposed claims C6, C85, C86, C87, C93, C94, C103, C141, C143. Depends: A1.
+A2. Ratify or strike the terms count (T14) and meta-review (T15), and the proposed claims C6, C85, C86, C87, C93, C94, C103, C143, C158. Depends: A1.
