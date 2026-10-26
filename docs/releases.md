@@ -15,6 +15,25 @@ carry: amendment title and PR link · suggested by (evidencing instance)
 Minor — normative content, one constitutional change (the Article 5
 `Protects:` field).
 
+### Normative text gets a second stranger round; the IR declares its footprint
+
+- **PR**: [#50](https://github.com/majodali/methodology/pull/50).
+- **Suggested by**: communication-pipeline at its chunk 4 gate
+  (owner ruling, 2026-10-26) — its evaluation case 004: four normative
+  texts reviewed once, all unreadable before fixes and unmeasured
+  after; its schema v1.3 Footprint header, first run on its chunk 4
+  IR (0 surprises, 0 misses). Drafted IR first in
+  [docs/records/normative-second-round.ir.md](records/normative-second-round.ir.md).
+- **Impact**: methodology (`methodology-corpus`) — *accommodated*:
+  one more reviewer run per normative text under W-009; the Footprint
+  header is optional. Every other project — *accommodated*: W-009 does
+  not apply unless adopted by declaration. communication-pipeline —
+  *accommodated*: its branch point already runs the second round from
+  2026-10-26.
+- **Migration note**: none.
+- **Protects**: proportional verification — the second round measures
+  the fixed text, where one round measured only the draft.
+
 ### The methodology corpus writes its deliverables IR first
 
 - **PR**: [#49](https://github.com/majodali/methodology/pull/49).
