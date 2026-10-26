@@ -2,7 +2,7 @@
 
 Reader: RD-4 (a fresh agent session) in the reasoning, paraphraser or stranger role; the human owner reads the specification as RD-4 does.
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: draft (experiment: the specification rewritten from a full IR; round 1 reviewed twice, fixes applied; round 2 in progress; unratified terms 2)
+Status: draft (experiment: the specification rewritten from a full IR; rounds 1 and 2 reviewed, fixes applied; round 3 in progress; unratified terms 2)
 Source: docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md
@@ -51,10 +51,6 @@ T18. Normative text: a rule, a specification, or any text whose words bind. [dec
 
 C1. The reasoning role writes an IR before any prose of the communication exists. [decided: owner, 2026-10-24]
 
-C2. Every element of an IR carries an identifier. [decided: pipeline schema v1.2, 2026-10-25]
-
-C3. Every term, claim and cluster also carries a provenance status. [decided: pipeline schema v1.2, 2026-10-25]
-
 C4. The IR prevents three failure modes of prose written directly: several claims compressed into one sentence, referents left unnamed, and conversation terms used as if defined. [decided: owner, 2026-10-24]
 
 C5. Any project that adopts W-009 by declaration uses this specification. [decided: methodology PR #49, 2026-10-26]
@@ -64,6 +60,8 @@ C149. W-009 requires this specification. [decided: methodology PR #49, 2026-10-2
 C150. The specification's status is active. [decided: methodology PR #49, 2026-10-26]
 
 C151. The reader is assumed to know W-008, P-008 and the style guide, including its Readers table. [decided: methodology PR #49, 2026-10-26]
+
+C166. The human owner reads the specification as RD-4 does. [decided: methodology PR #49, 2026-10-26]
 
 C6. A case this specification does not name is decided by the human owner when accepting the deliverable. [proposed: this IR]
 
@@ -117,7 +115,7 @@ C27. A term without a definition site has status proposed. [decided: methodology
 
 C152. A proposed term is listed for ratification. [decided: methodology PR #48, 2026-10-26]
 
-C28. A claim element (`C`) makes one statement and names every referent inside itself. [decided: pipeline schema v1.2, 2026-10-25]
+C28. A claim element (`C`) makes one statement. [decided: pipeline schema v1.2, 2026-10-25]
 
 C29. A claim may carry `evidence: E<n>`. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -157,7 +155,9 @@ C43. A determiner followed by the noun it names, such as "this specification", n
 
 C44. Each term, claim and cluster ends with one status in square brackets. [decided: pipeline schema v1.2, 2026-10-25]
 
-C45. Relations, evidence and asks carry no status: a relation is the reasoning role's inference by definition, evidence is a pointer, and an ask is a request. [decided: pipeline schema v1.2, 2026-10-25]
+C45. Relations, evidence and asks carry no status. [decided: pipeline schema v1.2, 2026-10-25]
+
+C165. A relation is the reasoning role's inference by definition, evidence is a pointer, and an ask is a request. [decided: pipeline schema v1.2, 2026-10-25]
 
 C46. The status decided, written `[decided: <who>, <date>]` or `[decided: <source>]`, marks an element ratified by the human owner or quoted from a governed document. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -223,7 +223,9 @@ C74. The paraphraser may add connective prose: a sentence that asserts nothing t
 
 C75. Relations and evidence are not rendered as sentences. [decided: pipeline schema v1.2, 2026-10-25]
 
-C76. A term with a definition site is linked at its first use in the unit P-008 defines, and written without a link after. [decided: methodology PR #48, 2026-10-26]
+C76. A term with a definition site is linked at its first use in the unit P-008 defines. [decided: methodology PR #48, 2026-10-26]
+
+C164. Later uses of the term in the unit are not linked. [decided: methodology PR #48, 2026-10-26]
 
 C77. A term the IR introduces is defined in a sentence of its own before its first use. [decided: methodology PR #46, 2026-10-26]
 
@@ -263,7 +265,7 @@ C90. The rounds apply to every stranger review the rendering conditions select. 
 
 C91. The reasoning role starts each round by dispatching a stranger with a fresh context, never itself and never an earlier round's instance. [decided: methodology PR #50, 2026-10-26]
 
-C92. The stranger reviews the IR and the prose against the reader's readability test and returns findings and a verdict. [decided: methodology PR #50, 2026-10-26]
+C92. The stranger reviews the IR and the prose against the reader's readability test. [decided: methodology PR #50, 2026-10-26]
 
 C93. The verdict is readable when three conditions hold: the stranger's restatement of the text's problem, terms and decisions matches the IR; the stranger finds no contradiction; the stranger finds no undefined term. [proposed: this IR]
 
@@ -277,7 +279,7 @@ C155. The text delivered is the text the readable round judged. [decided: method
 
 C97. The findings of a readable round are recorded unfixed. [decided: methodology PR #51 rounds, 2026-10-26]
 
-C156. The next edit of the text fixes the recorded findings of its readable round. [decided: methodology PR #51 rounds, 2026-10-26]
+C156. The next edit of an active document fixes the recorded findings of its readable round. [decided: methodology PR #51 rounds, 2026-10-26]
 
 C98. After a verdict of not readable, the reasoning role fixes the IR and then the prose. [decided: owner, 2026-10-26]
 
@@ -345,7 +347,7 @@ C121. An IR whose deliverable is a chat message has no footprint, because no bra
 
 C122. When the Footprint header is absent or empty, no comparison is made. [decided: pipeline schema v1.3, 2026-10-26]
 
-C123. When the IR's Status becomes `reviewed`, the reasoning role, or a lint for it, compares the declaration with the files the branch changed since its base. [decided: pipeline schema v1.3, 2026-10-26]
+C123. When the IR's Status becomes `reviewed`, the reasoning role, or a lint, compares the Footprint header with the files the branch changed since its base. [decided: pipeline schema v1.3, 2026-10-26]
 
 C124. A file is changed when the branch's diff adds, modifies, deletes or renames it. [decided: pipeline schema v1.3, 2026-10-26]
 
@@ -450,6 +452,8 @@ R25. C158 refines C13 because the status rule names when `reviewed` is set.
 R26. C162 supports C107 because the placement is provenance, not a duty on the session.
 
 R27. C156 depends-on C97 because the next edit fixes what the readable round recorded.
+
+R28. C156 depends-on C161 because a delivered report has no next edit, so only an active document takes one.
 
 ## Evidence
 

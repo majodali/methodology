@@ -25,8 +25,6 @@ claims mapped; `mtool style` 25 warnings, all P-008 first-use links
 on vocabulary terms used in their plain sense (Document, Specification,
 Register, Entry, Target, Provenance) except as noted per round.
 
-Meta-review: pending
-
 ## Curve
 
 | Round | Brief | Prose words | IR claims | Findings | Per 1,000 words | Verdict |
@@ -35,7 +33,8 @@ Meta-review: pending
 | 0 (main text, for comparison) | — | 2,635 | — | — | — | not readable (PR #50 round 2) |
 | 1a | old | 2,884 | 148 | 22 | 7.6 | not readable |
 | 1b | revised | 2,884 | 148 | 26 | 9.0 | not readable (contradictions 1, undefined terms 1; restatement matched in substance) |
-| 2 | revised | 2,864 | 161 | | | |
+| 2 | revised | 2,864 | 161 | 13 | 4.5 | not readable (contradictions 1, undefined terms 0; restatement matched in substance) |
+| 3 | revised | 2,842 | 162 | | | |
 
 ## Round 1a, 2026-10-26 (old brief)
 
@@ -116,3 +115,37 @@ edge-case elaborations (SP-18) of which two were accepted as rules
 and ten declined or resolved by cutting. The revised brief found ten
 compound sentences the old brief passed, four IR gaps behind the
 header, and three excess-word findings the old brief has no rule for.
+
+## Round 2, 2026-10-26 (revised brief)
+
+2,864 words; 13 findings; 4.5 per thousand words. Restatement: 196
+words, matching the IR in substance; "no" because one Reader-line
+sentence had no backing claim. Contradictions 1 (the next-edit rule
+against the frozen IR of a delivered report), undefined terms 0;
+verdict: not readable for RD-4. By fix kind as the stranger judged:
+cut 5, rephrase 2, add 6; by locus: prose 4, IR 3, both 6. The
+stranger noted that it read both files in one batch, so its
+restatement was not independent of the IR; the round 3 brief orders
+the reads.
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1 | "without one" | referent | add: "a definition site", two words |
+| 2 | "Such a term" | referent | rephrase: the IR's wording, "A term the IR introduces" |
+| 3 | "the declaration" | referent | rephrase in C123: "the Footprint header" |
+| 4 | "a lint for it" | referent | cut "for it" in C123 |
+| 5 | C76 compound | compound | split: C76, C164 |
+| 6 | C45 rule plus three reasons | compound | split: C45, C165, same words |
+| 7, 8 | Purpose repeats Element kinds (C2 = C20) and Provenance (C3 = C44) | excess | cut C2, C3 |
+| 9 | Claim row repeats the referent rule (C28 = C40) | excess | cut the clause from C28 |
+| 10 | "and returns findings and a verdict" repeats the round definition | excess | cut from C92 |
+| 11 | next edit vs delivered report frozen | contradiction | rephrase C156: "of an active document"; R28 added |
+| 12 | Reader line roles unlinked | link | links added, no word change |
+| 13 | "The human owner reads the specification as RD-4 does" without a claim | IR gap | add C166 in the IR |
+
+Fixes after round 2: IR 161 to 162 claims (two splits, two cuts, one
+header claim); prose 2,864 to 2,842 words. Lint clean; round trip
+162 of 162.
+
+Meta-review: pending (the third round starts; the rule C104 makes
+this text a meta-review subject).
