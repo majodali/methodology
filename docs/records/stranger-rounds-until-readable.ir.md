@@ -2,7 +2,7 @@
 
 Reader: RD-4 (a fresh agent session) reading the intermediate-representation specification; the human owner adjudicates the amendment.
 Purpose: document. The amendment that replaces the two-round stranger review with rounds until a readable verdict, limited to ten, for every stranger review the rendering conditions select, and adds the meta-review trigger for texts that need more than two rounds.
-Status: draft
+Status: draft (round 1 of the stranger rounds at stranger-rounds-until-readable.review.md: 28 findings, 16 new, not readable; all fixed)
 Source: the owner's message of 2026-10-26 after merging PR #50 ("I should have requested the third stranger round"; "unlimited stranger reviews until all clean (or perhaps a sanity limit of ten) on any doc requiring a stranger review"; "more than two reviews should then have those reviews and the doc itself meta-reviewed by this project").
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/records/; docs/releases.md; docs/backlog.md
@@ -27,7 +27,19 @@ C5. Each round is run by the reasoning role with a fresh stranger on the fixed I
 
 C11. Each round's findings, dispositions and verdict are recorded in the review record beside the IR. [decided: methodology PR #50, 2026-10-26]
 
-C6. The owner decides at adjudication what happens to a text that reaches the limit. [proposed: this IR]
+C6. At the limit the text is not delivered, the IR's Status stays reviewed, and the review record states that the limit was reached. [proposed: this IR]
+
+C12. The owner decides when adjudicating the deliverable whether a text at the limit is delivered, reworked or withdrawn. [proposed: this IR]
+
+C13. The stranger of a round is an agent instance with a fresh context, never the reasoning role and never an earlier round's instance. [proposed: this IR]
+
+C14. After a not-readable verdict, prose the paraphraser rendered is rendered again from the fixed IR with a new render map, and prose the reasoning role rendered is fixed by the reasoning role. [proposed: this IR]
+
+C15. The fixes of a readable round are applied before delivery and listed in the review record as post-verdict fixes. [proposed: this IR]
+
+C16. CK-13 checks that two T elements do not name the same term, and CK-14 checks that a reviewed IR has its review record with a verdict per round. [proposed: this IR]
+
+C17. The meta-review reports to the owner. [proposed: this IR]
 
 ### Why
 
