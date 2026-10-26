@@ -17,7 +17,7 @@ Minor — normative content, one constitutional change (the Article 5
 
 ### Documents name their reader and define their terms once
 
-- **PR**: [#PRNUM2](https://github.com/majodali/methodology/pull/PRNUM2).
+- **PR**: [#48](https://github.com/majodali/methodology/pull/48).
 - **Suggested by**: allegro, 2026-10-16 — its documentation-standards
   proposal (P-007, P-008 and the checks tooling can run), from a
   census of fifty documents; communication-pipeline, chunks 1 to 3 —
