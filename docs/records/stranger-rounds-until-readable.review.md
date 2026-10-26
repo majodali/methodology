@@ -207,3 +207,29 @@ Every finding was fixed.
 | 14 | "checks run in every case" versus CK-15 | fixed |
 | 15 | "sections" for claim kinds | fixed: elements |
 | 16 | a branch merged before reviewed | fixed: not comparable, stated |
+
+## Round 9, 2026-10-26
+
+About 4,100 words (the reviewer estimated 5,100 with markup); 23
+findings, 21 in the new passages; 4.5 per thousand words by the
+reviewer's count; verdict: not readable for RD-4. Every finding was
+fixed.
+
+| # | Finding (shortened) | Disposition |
+|---|---|---|
+| 1 | P-008 cited for ratification | fixed: W-008 |
+| 2 | the `part:` field versus the proposed default | fixed: "with a field" and "without one" stated together |
+| 3 | "human-owner readers" versus RD-3 | fixed |
+| 4 | the parenthesis for an IR with no rounds | fixed: when rounds ran |
+| 5, 6 | a branch created after reviewed; a merged pull request on the base branch | fixed: the reviewed comparison is skipped; a deliverable committed directly, with no branch of its own |
+| 7, 14 | two claims in one sentence | fixed: split |
+| 8, 9 | the round-trip paragraph versus CK-15; severity labels | fixed: aligned; one label per item |
+| 10, 11, 12 | accepted findings: the next edit, the test, the term | fixed: defined; reported by the next round |
+| 13 | "count" undefined | fixed: defined |
+| 15, 16 | "that report"; when and where the dispatch ask goes | fixed: the delivering report, at delivery |
+| 17, 18 | a withdrawn text's meta-review; an amendment at the limit | fixed: the meta-review survives; a text at the limit is a subject like any other |
+| 19 | a PR body's IR as record versus the document it presents | fixed: both classified |
+| 20 | "formal project model" | fixed: defined |
+| 21 | CK-08 silent for other readers | fixed: the Ask row says what they hold |
+| 22 | no check for an element without identifier or body | fixed: CK-16, element form |
+| 23 | the unit for a document | fixed: the markdown section under one heading |
