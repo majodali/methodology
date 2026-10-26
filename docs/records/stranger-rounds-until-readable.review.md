@@ -139,3 +139,26 @@ words; verdict: not readable for RD-4. Every finding was fixed.
 | 18 | empty parts of an IR delivered as it stands | fixed: one line at the IR's end in W-008's words |
 | 19, 20 | footprint with no branch diff | fixed: recorded as not comparable |
 | 21 | which artifact is authoritative | fixed: the IR, for an active document |
+
+## Round 6, 2026-10-26
+
+About 3,600 words (the reviewer counted 4,900 with markup); 23
+findings, 21 in the new passages; 4.7 per thousand words by the
+reviewer's count; verdict: not readable for RD-4. Every finding was
+fixed.
+
+| # | Finding (shortened) | Disposition |
+|---|---|---|
+| 1 | the Status parenthesis does not admit a verdict | fixed: the Status row lists the last verdict |
+| 2, 9, 19, 23 | "It", "it" and "That edit" referents | fixed |
+| 3, 4 | base-branch deliverables; when counts are recorded | fixed: no branch carries a base-branch deliverable; the comparison at reviewed records nothing |
+| 5 | "one concept under two names" has no test | fixed: left to the stranger, stated as such |
+| 6 | a decided claim whose text is new has no part | fixed: `part: changed` |
+| 7 | the docs/ sentence versus CK-07 | fixed: the sentence removed; IR locations stated by purpose |
+| 8 | the round trip covers claims only | fixed: claims, terms and asks; CK-15 says so |
+| 10, 11, 22 | "prose file" undefined; where it sits; two copies in one sentence | fixed: defined in Document form; split |
+| 12 | connective prose would trip the new-claim test | fixed: asserts something no claim holds |
+| 13, 14 | accepted findings with no edit; which edit starts rounds | fixed: no deadline of their own; any edit |
+| 15, 16, 17, 18 | rework and the meta-review line; the document case; who starts the meta-review; the two periods in one sentence | fixed: one line reset per count; the delivering report; the reasoning role asks the owner to dispatch; split, with the archive as the event |
+| 20 | no actor for the ratification asks; no check | fixed: the reasoning role adds them; CK-08 checks them |
+| 21 | a semicolon joining clauses in a cell | fixed: split |
