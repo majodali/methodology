@@ -342,9 +342,9 @@ edited with the document.
 Ratification of a `proposed` term adds a row with an anchor to the
 project vocabulary. The added row becomes the term's definition site (P-008).
 Ratified terms and decided claims are the first entries of a formal
-project model: the project's terms and claims held as data a tool can
-query, the long-term aim the [Backlog](backlog.md) records under
-"Formal project models".
+project model. A formal project model is the project's terms and
+claims held as data a tool can query. The [Backlog](backlog.md)
+records that model as a long-term aim under "Formal project models".
 
 ## History
 
