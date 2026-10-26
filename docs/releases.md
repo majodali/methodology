@@ -17,7 +17,7 @@ Minor — normative content, one constitutional change (the Article 5
 
 ### Stranger rounds run until readable
 
-- **PR**: [#PRNUM](https://github.com/majodali/methodology/pull/PRNUM).
+- **PR**: [#51](https://github.com/majodali/methodology/pull/51).
 - **Suggested by**: the owner, 2026-10-26, after merging PR #50
   whose second stranger round had returned not readable with no third
   round run: rounds continue until readable, with a limit of ten, on
