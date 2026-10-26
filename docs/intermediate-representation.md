@@ -159,10 +159,10 @@ wrote the IR, not by the paraphraser, because a paraphrase could
 change its force. The reasoning role then runs the stranger rounds
 of the next subsection.
 
-Whoever rendered the prose, the paraphraser or the reasoning role
-for normative text, appends a render map: one comment line of the form
-`<!-- render map: C1→¶1 C2→¶1 … -->` listing where each claim
-landed. `C1→¶1` reads: claim C1 landed in paragraph 1, paragraphs
+Whoever rendered the prose appends a render map: the paraphraser,
+or the reasoning role for normative text. The render map is one
+comment line of the form `<!-- render map: C1→¶1 C2→¶1 … -->`
+listing where each claim landed. `C1→¶1` reads: claim C1 landed in paragraph 1, paragraphs
 counted from the start of the prose. The round-trip check is a lint that reads the map (CK-15, round
 trip). It reports claims absent from the map. It reports identifiers
 in the map that the IR does not hold. It reports the ratio of prose
