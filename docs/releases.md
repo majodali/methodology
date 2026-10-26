@@ -15,6 +15,27 @@ carry: amendment title and PR link · suggested by (evidencing instance)
 Minor — normative content, one constitutional change (the Article 5
 `Protects:` field).
 
+### The methodology corpus writes its deliverables IR first
+
+- **PR**: [#PRNUM3](https://github.com/majodali/methodology/pull/PRNUM3).
+- **Suggested by**: communication-pipeline, settled decision 2
+  (owner, 2026-10-24) — the methodology repository is the pipeline's
+  first subject; its live run of 2026-10-25 (findings per thousand
+  words 82.0 to 25.2 over three rounds) and the three amendments of
+  October 2026 drafted IR first. Drafted IR first in
+  [docs/records/ir-first.ir.md](records/ir-first.ir.md).
+- **Impact**: methodology (`methodology-corpus`) — *accommodated*:
+  W-009 names the practice the Backlog already records since
+  2026-10-24; [intermediate-representation.md](intermediate-representation.md)
+  enters as a Methodology-level specification. Every other project —
+  *accommodated*: the rule applies to the `methodology-corpus` type
+  only; adoption elsewhere is by declaration in the Classification.
+  communication-pipeline — *accommodated*: the first of its three exit
+  conditions is met on acceptance. methodology-tools —
+  *accommodated*: `mtool ir check` implements the checks (its own PR).
+- **Migration note**: none.
+- **Protects**: provenance; proportional verification.
+
 ### Documents name their reader and define their terms once
 
 - **PR**: [#PRNUM2](https://github.com/majodali/methodology/pull/PRNUM2).
