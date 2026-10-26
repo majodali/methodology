@@ -17,7 +17,7 @@ Minor — normative content, one constitutional change (the Article 5
 
 ### The methodology corpus writes its deliverables IR first
 
-- **PR**: [#PRNUM3](https://github.com/majodali/methodology/pull/PRNUM3).
+- **PR**: [#49](https://github.com/majodali/methodology/pull/49).
 - **Suggested by**: communication-pipeline, settled decision 2
   (owner, 2026-10-24) — the methodology repository is the pipeline's
   first subject; its live run of 2026-10-25 (findings per thousand
