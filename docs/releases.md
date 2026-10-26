@@ -40,6 +40,10 @@ Minor — normative content.
   and writing — cached from W-008; do not edit here" in `CLAUDE.md`
   with the amended block from W-008, verbatim. The next audit compares
   the copy against the block and reports a stale copy as drift.
+- Editorial: every term entry in [vocabulary.md](vocabulary.md) carries an
+  anchor of the form `<a id="def-<slug>"></a>`, so a document can link a
+  term to its definition site. No obligation changes. The anchor form is
+  the one the communication pipeline's term lifecycle fixed on 2026-10-25.
 
 ## v1.5.0 — 2026-09-01
 
