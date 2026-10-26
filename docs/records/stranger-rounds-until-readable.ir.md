@@ -33,11 +33,15 @@ C12. The owner decides when adjudicating the deliverable whether a text at the l
 
 C13. The stranger of a round is an agent instance with a fresh context, never the reasoning role and never an earlier round's instance. [proposed: this IR]
 
-C14. After a not-readable verdict, prose the paraphraser rendered is rendered again from the fixed IR with a new render map, and prose the reasoning role rendered is fixed by the reasoning role. [proposed: this IR]
+C14. After a not-readable verdict, prose the paraphraser rendered is rendered again from the fixed IR with a new render map. [proposed: this IR]
+
+C18. After a not-readable verdict, prose the reasoning role rendered is fixed by the reasoning role. [proposed: this IR]
 
 C15. The fixes of a readable round are applied before delivery and listed in the review record as post-verdict fixes. [proposed: this IR]
 
-C16. CK-13 checks that two T elements do not name the same term, and CK-14 checks that a reviewed IR has its review record with a verdict per round. [proposed: this IR]
+C16. CK-13 checks that two T elements do not name the same term. [proposed: this IR]
+
+C19. CK-14 checks that a reviewed IR has its review record with a verdict per round. [proposed: this IR]
 
 C17. The meta-review reports to the owner. [proposed: this IR]
 
