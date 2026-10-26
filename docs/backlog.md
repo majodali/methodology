@@ -422,6 +422,15 @@ entries update in the same commit as the work they describe
   definition site, and the ratified terms introduced and migration
   round. IR:
   [docs/records/documents-name-reader.ir.md](records/documents-name-reader.ir.md).
+- [x] **The methodology corpus writes its deliverables IR first**
+  (amendment; the merge is acceptance) — W-009, scoped to the
+  `methodology-corpus` type with adoption by declaration elsewhere;
+  [intermediate-representation.md](intermediate-representation.md)
+  adopted from the pipeline's schema v1.2 with the rendering thresholds
+  of its branch point v1.1; vocabulary gains intermediate
+  representation, reasoning role, paraphraser, stranger. Supersedes
+  the Upcoming item of 2026-10-24 on this repository's deliverables.
+  IR: [docs/records/ir-first.ir.md](records/ir-first.ir.md).
 
 ## Upcoming
 - [ ] **Editorial passes for existing documents** — restyle per the
@@ -493,11 +502,3 @@ entries update in the same commit as the work they describe
   and reviewed by the stranger reviewer; the IR was revised once after
   the round closed.
 
-- [ ] **This repository's deliverables go through the communication
-  pipeline** — from 2026-10-24, per the pilot's settled decision 2: the
-  methodology repository is the pipeline's first subject. Each plan or
-  amendment written here is written IR first, with the IR beside the
-  prose, until the pilot at
-  [majodali/communication-pipeline](https://github.com/majodali/communication-pipeline)
-  reports. The pilot is registered in the
-  [Portfolio](registers/portfolio.md) (M-001).

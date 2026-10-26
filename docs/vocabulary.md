@@ -221,6 +221,24 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   follows one methodology release. Ratified 2026-10-26; first used in
   the Portfolio refresh of 2026-10-25
   ([PR #44](https://github.com/majodali/methodology/pull/44)).
+- <a id="def-intermediate-representation"></a>**Intermediate representation (IR)** — the structured form a
+  reasoning role writes before prose: the terms, claims, relations,
+  evidence and asks of one communication. Every element carries an
+  identifier. Every term, claim and cluster also carries a
+  **provenance status** (decided, proposed or inferred). Specified in
+  [intermediate-representation.md](intermediate-representation.md);
+  required by
+  [W-009](rules/working-agreement.md#w-009--the-methodology-corpus-writes-its-deliverables-ir-first).
+  The roles around it:
+  - <a id="def-reasoning-role"></a>**Reasoning role** — the agent role
+    that does the thinking and writes its output as an IR.
+  - <a id="def-paraphraser"></a>**Paraphraser** — the agent role that
+    renders an IR into prose for one catalog reader, adding no claim and
+    dropping none.
+  - <a id="def-stranger"></a>**Stranger** — a reviewer with no access to
+    the conversation that produced the text and no content
+    contributions to the project. The stranger judges a text against
+    its reader's readability test.
 - <a id="def-report-audience"></a>**Report audience** — the reader a report is addressed to under
   [W-008](rules/working-agreement.md#w-008--reports-map-their-deliverables)
   (reports map their deliverables): the human owner directly (the
