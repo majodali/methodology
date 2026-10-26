@@ -162,3 +162,25 @@ fixed.
 | 15, 16, 17, 18 | rework and the meta-review line; the document case; who starts the meta-review; the two periods in one sentence | fixed: one line reset per count; the delivering report; the reasoning role asks the owner to dispatch; split, with the archive as the event |
 | 20 | no actor for the ratification asks; no check | fixed: the reasoning role adds them; CK-08 checks them |
 | 21 | a semicolon joining clauses in a cell | fixed: split |
+
+## Round 7, 2026-10-26
+
+3,903 words; 22 findings, 20 in the new passages; 5.6 per thousand
+words; verdict: not readable for RD-4. Every finding was fixed. Two
+findings (6 and 17) were contradictions introduced by earlier fixes.
+
+| # | Finding (shortened) | Disposition |
+|---|---|---|
+| 1, 9, 10, 19 | referents | fixed |
+| 2, 15 | `part: changed` for new decided text has no test and conflicts with the raw-IR row | fixed: when no governed document held the decision before; the row says "unless `part: changed`" |
+| 3, 4, 21 | several claims or a semicolon in one sentence | fixed: split; the proposer named |
+| 5 | CK-08's scope for the per-term ask | fixed: for any reader |
+| 6 | the render map lists claims only, CK-15 expects terms and asks | fixed: the map lists claims, terms and asks |
+| 7 | fixing accepted findings could loop | fixed: such an edit starts no rounds |
+| 8 | who delivers after the owner's decision at the limit | fixed: the reasoning role, setting delivered |
+| 11 | "all its rounds" | fixed: the rounds of every count |
+| 12, 13, 14 | the project named before defined; History records no arrangement; "the next audit" | fixed: linked and defined at first use; History says why; the form audit under Article 9 |
+| 16, 17 | the footprint row versus the section; "records nothing" contradicts the merged-branch rule | fixed: one timing rule; base-branch deliverables ignored in the section too |
+| 18 | a document delivered by a PR body unclassified | fixed: active from its merge |
+| 20 | "owner's flag" | fixed: review flag |
+| 22 | no test for an added claim without rounds | fixed: stated as having no test beyond the reader |
