@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: draft (count 3, round 1 in progress; the meta-review trigger amended; unratified terms 1)
+Status: draft (count 3, round 1 readable; fixes applied, confirmation pending; unratified terms 1)
 Source: the owner's decision of 2026-10-27 on signal-based meta-review triggers (count 3); communication-pipeline evaluation case 008 (owner decision of 2026-10-27, change 5) for count 2; for count 1, docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md; docs/releases.md
@@ -47,7 +47,7 @@ T18. Normative text. defined-at: vocabulary.md#def-normative-text [decided: owne
 
 T19. Limit. defined-at: vocabulary.md#def-limit [decided: owner, 2026-10-27]
 
-T20. Meta-review signal: one of four conditions in a review record that make a text a meta-review subject. [proposed: this IR]
+T20. Meta-review signal: one of four conditions in a review record, named in the Meta-review section. [proposed: this IR]
 
 ## Claims
 
@@ -317,7 +317,7 @@ C186. When the owner decides delivery, the reasoning role delivers the text. [de
 
 C171. Rework starts a new count from round one. [decided: owner, 2026-10-27]
 
-C172. The review record of the ended count is kept through rework. [decided: owner, 2026-10-27]
+C172. The reasoning role keeps the ended count's review record through rework. [decided: owner, 2026-10-27]
 
 C102. For an amendment, the owner's decision is its adjudication under Article 8. [decided: constitution Article 8]
 
@@ -339,7 +339,7 @@ C105. At the end of a count, the reasoning role checks the four signals against 
 
 C191. The reasoning role writes `Meta-review: pending` when the text is a subject and `Meta-review: not indicated` otherwise, naming the signals checked. [decided: owner, 2026-10-27]
 
-C192. The owner may dispatch a meta-review of any text, signal or none. [decided: owner, 2026-10-27]
+C192. The owner may dispatch a meta-review of any text. [decided: owner, 2026-10-27]
 
 C106. The reasoning role asks the owner, in the report that delivers a meta-review subject, to dispatch its meta-review. [decided: owner, 2026-10-27]
 

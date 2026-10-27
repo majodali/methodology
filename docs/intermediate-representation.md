@@ -201,15 +201,15 @@ or rejecting a text at the limit, whether the text is delivered,
 reworked or withdrawn. When the owner decides delivery, the
 reasoning role delivers the text. Rework starts a new count from
 round one.
-The review record of the ended count is kept through rework. For an amendment, the owner's decision is its adjudication under
+The reasoning role keeps the ended count's review record through
+rework. For an amendment, the owner's decision is its adjudication under
 [Article 8](constitution.md#article-8--amendments-versions-and-migration)
 (amendments, versions, and migration).
 
 ### Meta-review
 
-A meta-review signal is one of four conditions in a review record
-that make a text a [meta-review](vocabulary.md#def-meta-review)
-subject. A text is a meta-review subject when its count reaches the
+A [meta-review](vocabulary.md#def-meta-review) signal is one of four
+conditions in a review record, named in this section. A text is a meta-review subject when its count reaches the
 limit or its review record shows a meta-review signal. The first
 signal: in two or more rounds of the count, a fix did not reach the
 prose or was not confirmed. The second signal: a finding declined in
@@ -221,8 +221,7 @@ earlier round's fix touched. At the end of a count, the reasoning
 role checks the four signals against the review record. The
 reasoning role writes `Meta-review: pending` when the text is a
 subject and `Meta-review: not indicated` otherwise, naming the
-signals checked. The owner may dispatch a meta-review of any text,
-signal or none. The reasoning role asks the owner, in the report that
+signals checked. The owner may dispatch a meta-review of any text. The reasoning role asks the owner, in the report that
 delivers a meta-review subject, to dispatch its meta-review.
 
 A session the owner starts, the meta-review session, performs the
