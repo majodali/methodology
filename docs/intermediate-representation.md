@@ -192,7 +192,8 @@ reasoning role fixes the IR and then the prose. The next round
 reviews the fixed IR and the fixed prose. At the end of a count, the reasoning role sets the IR's Status to
 `reviewed`.
 
-At the limit the reasoning role does not deliver the text. At the
+At the limit the reasoning role does not deliver the text before
+the owner's decision. At the
 limit the reasoning role states in the review record that the limit
 was reached. Rework is an edit of the IR
 and the text by the reasoning role. The owner decides, when accepting

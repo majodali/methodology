@@ -301,7 +301,7 @@ C98. After a verdict of not readable, the reasoning role fixes the IR and then t
 
 C157. The next round reviews the fixed IR and the fixed prose. [decided: owner, 2026-10-26]
 
-C99. At the limit the reasoning role does not deliver the text. [decided: owner, 2026-10-26]
+C99. At the limit the reasoning role does not deliver the text before the owner's decision. [decided: owner, 2026-10-26]
 
 C158. At the end of a count, the reasoning role sets the IR's Status to `reviewed`. [decided: owner, 2026-10-27]
 
