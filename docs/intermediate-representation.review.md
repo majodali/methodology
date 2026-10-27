@@ -34,7 +34,8 @@ Register, Entry, Target, Provenance) except as noted per round.
 | 1a | old | 2,884 | 148 | 22 | 7.6 | not readable |
 | 1b | revised | 2,884 | 148 | 26 | 9.0 | not readable (contradictions 1, undefined terms 1; restatement matched in substance) |
 | 2 | revised | 2,864 | 161 | 13 | 4.5 | not readable (contradictions 1, undefined terms 0; restatement matched in substance) |
-| 3 | revised | 2,842 | 162 | | | |
+| 3 | revised | 2,842 | 162 | 17 | 6.0 | not readable (contradictions 1 on the IR side, undefined terms 1; four restatement mismatches the stranger attributed to its own restatement) |
+| 4 | revised | 2,829 | 165 | | | |
 
 ## Round 1a, 2026-10-26 (old brief)
 
@@ -149,3 +150,40 @@ header claim); prose 2,864 to 2,842 words. Lint clean; round trip
 
 Meta-review: pending (the third round starts; the rule C104 makes
 this text a meta-review subject).
+
+## Round 3, 2026-10-27 (revised brief, reads ordered)
+
+2,842 words; 17 findings; 6.0 per thousand words. Restatement: 199
+words, written before the IR was opened; four claims misstated (C44,
+C45, C104, C106), which the stranger attributed to its restatement,
+not to the text. Contradictions 1 (the IR's nine terms defined by
+this specification carried status decided without a definition site,
+against C27), undefined terms 1 ("human-owner reader"); verdict: not
+readable for RD-4. By fix kind as the stranger judged: cut 6,
+rephrase 5, add 6; by locus: prose 2, IR 8, both 7. Eight findings
+are on the IR alone: three compound claims under the CK-03 length
+threshold, the header form (C11, C13), a free-standing evidence
+element, the term statuses, and the ask that omitted seven proposed
+claims.
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1, 2 | "The file" | referent | rephrase: "The IR" |
+| 3 | C9 compound | compound | split: C9, C167 |
+| 4 | "the term" | referent | rephrase C164: "a term with a definition site" |
+| 5 | C165 three reasons, two repeating the table | excess | cut: one reason stays |
+| 6 | C96 repeats C88 | excess | cut C96 |
+| 7 | "names its referent and" | excess | cut from C43 |
+| 8 | "its readable round" | referent | rephrase C156 |
+| 9 | "human-owner reader" undefined | term | cut: "RD-1 or RD-2" in C30, C79 |
+| 10–12 | C71, C86, C114 compound | compound (IR) | split: C168, C169, C170 |
+| 13 | E3 free-standing | IR form | cut E3 |
+| 14 | nine terms decided without a definition site | contradiction (IR) | rephrase: T8 to T13 and T16 to T18 become proposed; the methodology vocabulary holds none of them; unratified terms 11 |
+| 15 | Status parenthesis holds narrative | IR form | cut: counts only; the narrative lives here |
+| 16 | Reader header holds more than one identifier | IR form | cut: `Reader: RD-4`; C151 and C166 hold the rest |
+| 17 | A2 omits seven proposed claims | IR | add: A3 lists every proposed claim |
+
+Fixes after round 3: IR 162 to 165 claims (four splits, one cut);
+terms proposed 2 to 11; prose 2,842 to 2,829 words. Lint clean (the
+pipeline lint counts 8 unratified terms because its own vocabulary
+holds three of the nine); round trip 165 of 165.

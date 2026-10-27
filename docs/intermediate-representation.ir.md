@@ -1,8 +1,8 @@
 # IR: The intermediate representation specification
 
-Reader: RD-4 (a fresh agent session) in the reasoning, paraphraser or stranger role; the human owner reads the specification as RD-4 does.
+Reader: RD-4
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: draft (experiment: the specification rewritten from a full IR; rounds 1 and 2 reviewed, fixes applied; round 3 in progress; unratified terms 2)
+Status: draft (unratified terms 11)
 Source: docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md
@@ -23,27 +23,27 @@ T6. Convergence: the state in which a project's vocabulary is ratified and its p
 
 T7. Definition site: the one place a term is defined, a vocabulary row or an anchored heading. defined-at: vocabulary.md#def-definition-site [decided: owner, 2026-10-26]
 
-T8. Provenance status: the tag ending each term, claim and cluster: decided, proposed or inferred. [decided: pipeline schema v1.2, 2026-10-25]
+T8. Provenance status: the tag ending each term, claim and cluster: decided, proposed or inferred. [proposed: this IR]
 
-T9. Referent: anything a claim refers to: a document, a project, a rule, a person, a role, or an earlier claim's subject. [decided: pipeline schema v1.2, 2026-10-25]
+T9. Referent: anything a claim refers to: a document, a project, a rule, a person, a role, or an earlier claim's subject. [proposed: this IR]
 
-T10. Cluster: an ordered list of claim identifiers the paraphraser renders as one paragraph. [decided: pipeline schema v1.2, 2026-10-25]
+T10. Cluster: an ordered list of claim identifiers the paraphraser renders as one paragraph. [proposed: this IR]
 
-T11. Render map: one comment line in rendered prose listing the paragraph each claim landed in. [decided: pipeline schema v1.2, 2026-10-25]
+T11. Render map: one comment line in rendered prose listing the paragraph each claim landed in. [proposed: this IR]
 
-T12. Review record: the file `<subject>.review.md` beside an IR, holding each round's findings, dispositions and verdict. [decided: methodology PR #50, 2026-10-26]
+T12. Review record: the file `<subject>.review.md` beside an IR, holding each round's findings, dispositions and verdict. [proposed: this IR]
 
-T13. Round: one stranger review of an IR and its prose, returning findings and a verdict. [decided: owner, 2026-10-26]
+T13. Round: one stranger review of an IR and its prose, returning findings and a verdict. [proposed: this IR]
 
 T14. Count: the sequence of rounds from a first round to a readable verdict, to the limit, or to rework. [proposed: this IR]
 
 T15. Meta-review: a review, by a session with no part in the rounds, of a text's review record and the text itself, reporting whether the process needs a change. [proposed: methodology PR #51]
 
-T16. Footprint: the files or directories an IR's deliverable is expected to change, declared in the Footprint header. [decided: pipeline schema v1.3, 2026-10-26]
+T16. Footprint: the files or directories an IR's deliverable is expected to change, declared in the Footprint header. [proposed: this IR]
 
-T17. Register fact: a statement about the state of a Register or of a row in one. [decided: owner, 2026-10-25]
+T17. Register fact: a statement about the state of a Register or of a row in one. [proposed: this IR]
 
-T18. Normative text: a rule, a specification, or any text whose words bind. [decided: owner, 2026-10-25]
+T18. Normative text: a rule, a specification, or any text whose words bind. [proposed: this IR]
 
 ## Claims
 
@@ -71,7 +71,9 @@ C7. An IR is a markdown file named `<subject>.ir.md`. [decided: pipeline schema 
 
 C8. The IR sits beside the prose it produces, or under `docs/records/` when the prose is a chat message or a PR body. [decided: owner, 2026-10-24]
 
-C9. The IR opens with header fields and then holds five sections in a fixed order: Terms, Claims, Relations, Evidence, Asks. [decided: pipeline schema v1.2, 2026-10-25]
+C9. The IR opens with header fields. [decided: pipeline schema v1.2, 2026-10-25]
+
+C167. The IR then holds five sections in a fixed order: Terms, Claims, Relations, Evidence, Asks. [decided: pipeline schema v1.2, 2026-10-25]
 
 C10. The Claims section may use any sub-headings. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -119,7 +121,7 @@ C28. A claim element (`C`) makes one statement. [decided: pipeline schema v1.2, 
 
 C29. A claim may carry `evidence: E<n>`. [decided: pipeline schema v1.2, 2026-10-25]
 
-C30. In a report to a human-owner reader, a claim may carry `part: covered` or `part: changed`. [decided: pipeline schema v1.2, 2026-10-25]
+C30. In a report to RD-1 or RD-2, a claim may carry `part: covered` or `part: changed`. [decided: pipeline schema v1.2, 2026-10-25]
 
 C31. A cluster element (`G`) holds `cluster:` and an ordered list of claim identifiers, with an optional topic claim first. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -149,7 +151,7 @@ C42. The bare pronouns are it, this, that, these and those, with no noun after. 
 
 C163. The bare determiner phrases are the word "the" followed by other, above, former, latter or same, with no noun after. [decided: pipeline schema v1.2, 2026-10-25]
 
-C43. A determiner followed by the noun it names, such as "this specification", names its referent and is not bare. [decided: methodology PR #49, 2026-10-26]
+C43. A determiner followed by the noun it names, such as "this specification", is not bare. [decided: methodology PR #49, 2026-10-26]
 
 ### Provenance
 
@@ -157,7 +159,7 @@ C44. Each term, claim and cluster ends with one status in square brackets. [deci
 
 C45. Relations, evidence and asks carry no status. [decided: pipeline schema v1.2, 2026-10-25]
 
-C165. A relation is the reasoning role's inference by definition, evidence is a pointer, and an ask is a request. [decided: pipeline schema v1.2, 2026-10-25]
+C165. A relation is the reasoning role's inference by definition. [decided: pipeline schema v1.2, 2026-10-25]
 
 C46. The status decided, written `[decided: <who>, <date>]` or `[decided: <source>]`, marks an element ratified by the human owner or quoted from a governed document. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -213,7 +215,9 @@ C70. CK-16, element form, fires when a line inside a section is neither an eleme
 
 ### Rendering rule
 
-C71. Prose is rendered from the IR when a rendering condition selects rendering, and otherwise the IR is delivered as it stands. [decided: owner, 2026-10-24]
+C71. Prose is rendered from the IR when a rendering condition selects rendering. [decided: owner, 2026-10-24]
+
+C168. When no rendering condition selects rendering, the IR is delivered as it stands. [decided: owner, 2026-10-24]
 
 C72. The paraphraser renders one claim as one sentence, or one cluster as one paragraph in the cluster's order. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -225,7 +229,7 @@ C75. Relations and evidence are not rendered as sentences. [decided: pipeline sc
 
 C76. A term with a definition site is linked at its first use in the unit P-008 defines. [decided: methodology PR #48, 2026-10-26]
 
-C164. Later uses of the term in the unit are not linked. [decided: methodology PR #48, 2026-10-26]
+C164. Later uses of a term with a definition site in the unit are not linked. [decided: methodology PR #48, 2026-10-26]
 
 C77. A term the IR introduces is defined in a sentence of its own before its first use. [decided: methodology PR #46, 2026-10-26]
 
@@ -233,7 +237,7 @@ C153. A term the IR introduces is listed under *Terms introduced*. [decided: met
 
 C78. For RD-5 a link becomes an inline gloss. [decided: methodology PR #48, 2026-10-26]
 
-C79. For a human-owner reader, a claim renders under the part its `part:` field names. [decided: pipeline schema v1.2, 2026-10-25]
+C79. For RD-1 or RD-2, a claim renders under the part its `part:` field names. [decided: pipeline schema v1.2, 2026-10-25]
 
 C80. Without a `part:` field, a decided claim renders under *What is already covered*. [decided: methodology PR #50, 2026-10-26]
 
@@ -249,7 +253,9 @@ C84. Normative text is rendered by the reasoning role, not by the paraphraser, b
 
 C85. When the reasoning role renders, it appends the render map in the paraphraser's form. [proposed: this IR]
 
-C86. A fix to rendered prose is made in the IR first and the prose is then rendered again or edited to match. [proposed: this IR]
+C86. A fix to rendered prose is made in the IR first. [proposed: this IR]
+
+C169. After a fix to the IR, the prose is rendered again or edited to match. [proposed: this IR]
 
 C87. A fix to prose rephrases or removes words before it adds words. evidence: E2. [proposed: this IR]
 
@@ -273,13 +279,11 @@ C94. A finding that proposes fewer words, a plainer phrase or a removed repetiti
 
 C95. The reasoning role records each round's findings, each finding's disposition, and the verdict in the review record. [decided: methodology PR #50, 2026-10-26]
 
-C96. A verdict of readable ends the count. [decided: methodology PR #50, 2026-10-26]
-
 C155. The text delivered is the text the readable round judged. [decided: methodology PR #50, 2026-10-26]
 
 C97. The findings of a readable round are recorded unfixed. [decided: methodology PR #51 rounds, 2026-10-26]
 
-C156. The next edit of an active document fixes the recorded findings of its readable round. [decided: methodology PR #51 rounds, 2026-10-26]
+C156. The next edit of an active document fixes the findings the readable round recorded. [decided: methodology PR #51 rounds, 2026-10-26]
 
 C98. After a verdict of not readable, the reasoning role fixes the IR and then the prose. [decided: owner, 2026-10-26]
 
@@ -325,7 +329,9 @@ C112. The first row of the Rendering conditions table whose condition holds deci
 
 C113. When the header carries `Normative: yes`, the reasoning role renders and runs the stranger rounds. [decided: owner, 2026-10-26]
 
-C114. When the owner asked for a review, or the purpose is `document`, or the reader is RD-4 or RD-5, the paraphraser renders and the stranger rounds run. [decided: pipeline branch point v1.1, 2026-10-25]
+C114. When the owner asked for a review, or the purpose is `document`, or the reader is RD-4 or RD-5, the paraphraser renders. [decided: pipeline branch point v1.1, 2026-10-25]
+
+C170. When the owner asked for a review, or the purpose is `document`, or the reader is RD-4 or RD-5, the stranger rounds run. [decided: pipeline branch point v1.1, 2026-10-25]
 
 C115. When proposed terms exceed zero, the paraphraser renders, with the ratification ask. [decided: pipeline branch point v1.1, 2026-10-25]
 
@@ -411,6 +417,8 @@ R4. C50 depends-on C49 because the indicator counts unratified terms.
 
 R5. C71 depends-on C110 because the conditions decide whether rendering happens.
 
+R29. C168 refines C71 because delivery as it stands is the case no condition selects.
+
 R6. C84 refines C72 because normative text swaps the renderer and keeps the rule of one claim per sentence.
 
 R7. C85 refines C83 because the renderer changes and the map stays.
@@ -461,10 +469,10 @@ E1. docs/records/stranger-rounds-until-readable.review.md on branch stranger-rou
 
 E2. communication-pipeline eval/analysis/pr51-findings.md: words required by about 18 findings and added for 139; 150 of 232 findings on fix-introduced text; the IR stopped changing after round 2.
 
-E3. methodology main at 89964a7, docs/intermediate-representation.md: the text this IR models, 2,635 words.
-
 ## Asks
 
 A1. Accept or reject the rewritten specification as the text of docs/intermediate-representation.md. Depends: C140.
 
-A2. Ratify or strike the terms count (T14) and meta-review (T15), and the proposed claims C6, C85, C86, C87, C93, C94, C103, C143, C158. Depends: A1.
+A2. Ratify or strike the nine terms this specification defines (T8 to T13, T16 to T18) and the terms count (T14) and meta-review (T15). Depends: A1.
+
+A3. Ratify or strike the proposed claims C6, C85, C86, C87, C93, C94, C101, C103, C105, C106, C108, C109, C140, C143, C158, C159, C169. Depends: A1.
