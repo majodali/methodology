@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: draft (count 2, round 1 in progress; the readable-round rule amended; unratified terms 0)
+Status: draft (count 2, round 1 fixes applied, confirmation pending; unratified terms 0)
 Source: communication-pipeline evaluation case 008 (owner decision of 2026-10-27, change 5) for count 2; for count 1, docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md
@@ -119,7 +119,7 @@ C25. Every project-specific term used in a claim appears as a term element. [dec
 
 C27. A term without a definition site has status proposed. [decided: methodology PR #48, 2026-10-26]
 
-C152. A proposed term is listed for ratification. [decided: methodology PR #48, 2026-10-26]
+C152. The reasoning role lists a proposed term for ratification. [decided: methodology PR #48, 2026-10-26]
 
 C28. A claim element (`C`) makes one statement. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -287,7 +287,7 @@ C94. A finding that proposes fewer words, a plainer phrase or a removed repetiti
 
 C95. The reasoning role records each round's findings, each finding's disposition, and the verdict in the review record. [decided: methodology PR #50, 2026-10-26]
 
-C155. The text delivered after a readable verdict is the text that round judged, with its findings fixed and confirmed. [decided: owner, 2026-10-27]
+C155. The text delivered after a readable verdict is the text the readable round judged, with each finding fixed and confirmed or marked unfixed. [decided: owner, 2026-10-27]
 
 C97. At a readable verdict, the reasoning role fixes the round's findings in the IR and then in the prose. [decided: owner, 2026-10-27]
 
@@ -295,7 +295,7 @@ C156. The readable round's stranger instance confirms each fix before delivery. 
 
 C182. The reasoning role marks each finding of the readable round confirmed or unfixed in the review record. [decided: owner, 2026-10-27]
 
-C183. An unfixed finding of the readable round is fixed by the next edit of an active document. [decided: owner, 2026-10-27]
+C183. The reasoning role fixes an unfixed finding of the readable round at the next edit of an active document. [decided: owner, 2026-10-27]
 
 C98. After a verdict of not readable, the reasoning role fixes the IR and then the prose. [decided: owner, 2026-10-26]
 
@@ -303,7 +303,7 @@ C157. The next round reviews the fixed IR and the fixed prose. [decided: owner, 
 
 C99. At the limit the reasoning role does not deliver the text. [decided: owner, 2026-10-26]
 
-C158. The end of a count sets the IR's Status to `reviewed`. [decided: owner, 2026-10-27]
+C158. At the end of a count, the reasoning role sets the IR's Status to `reviewed`. [decided: owner, 2026-10-27]
 
 C144. At the limit the review record states that the limit was reached. [decided: owner, 2026-10-26]
 
@@ -315,7 +315,7 @@ C171. Rework starts a new count from round one. [decided: owner, 2026-10-27]
 
 C172. The review record of the ended count is kept through rework. [decided: owner, 2026-10-27]
 
-C102. For an amendment, the owner's decision on a text at the limit is its adjudication under Article 8. [decided: constitution Article 8]
+C102. For an amendment, the owner's decision is its adjudication under Article 8. [decided: constitution Article 8]
 
 C103. The review record holds, per round, the word count of the prose and the claim count of the IR. [decided: owner, 2026-10-27]
 
@@ -329,7 +329,7 @@ C106. The reasoning role asks the owner, in the report that delivers a meta-revi
 
 C107. The meta-review is performed by a session the owner starts. [decided: owner, 2026-10-26]
 
-C108. The session the owner starts delivers the meta-review as its report to the owner. [decided: owner, 2026-10-27]
+C108. That session delivers its meta-review as a report to the owner. [decided: owner, 2026-10-27]
 
 C159. On delivery of the meta-review, the reasoning role sets the review record's line to `Meta-review: delivered` with a link. [decided: owner, 2026-10-27]
 
@@ -409,7 +409,7 @@ C135. The IR of a delivered report is a record whose Status becomes `delivered`.
 
 C161. The IR of a delivered report is not edited after delivery. [decided: pipeline schema v1.2, 2026-10-25]
 
-C136. Ratification of a proposed term adds an anchored row to the project vocabulary. [decided: methodology PR #48, 2026-10-26]
+C136. On ratification, the reasoning role adds an anchored row for the term to the project vocabulary. [decided: methodology PR #48, 2026-10-26]
 
 C181. The vocabulary row of a ratified term is the term's definition site. [decided: methodology PR #48, 2026-10-26]
 

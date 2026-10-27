@@ -425,4 +425,32 @@ Status carries the round; the brief lists that form.
 
 | Round | Prose words | IR claims | Findings | Per 1,000 words | Verdict |
 |---|---|---|---|---|---|
-| 1 | 2877 | 176 | | | |
+| 1 | 2,877 | 176 | 15 | 5.2 | not readable (7 in-prose definitions without claims; 1 contradiction; 0 undefined terms) |
+| 2 | 2768 | 176 | | | |
+
+### Round 1, count 2, 2026-10-27
+
+2,877 words; 15 findings; 5.2 per thousand words. Restatement: 190
+words; seven mismatches, all in-prose definitions (round, count,
+referent, register fact, review record, meta-review, the normative
+gloss) that no claim backed once the terms were ratified and their T
+elements dropped their meanings. Contradictions 1 (the delivered text
+"fixed and confirmed" against an unfixed finding allowed), undefined
+terms 0; verdict: not readable for RD-4. By fix kind as the stranger
+judged: cut 7, rephrase 1, add 7; by locus: IR 7, both 8.
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1, 2, 5, 6 | definitions of round, count, referent, register fact in the prose without claims | duplicate definition | cut; the term linked to its vocabulary row at first use in the section (P-008) |
+| 3 | "by a session with no part in the rounds" (meta-review definition) | duplicate definition | cut with the definition sentence; the term linked |
+| 4 | the review record's file name | duplicate definition | cut; linked |
+| 7 | the normative gloss in the header row | duplicate definition | cut; linked |
+| 8 | C155 vs C183 | contradiction | rephrase C155: "with each finding fixed and confirmed or marked unfixed" |
+| 9 | "that round" | referent | rephrase: "the readable round" |
+| 10, 11, 12, 13 | duties without an actor (C152, C183, C136, C158) | SP-18 | rephrase: the reasoning role named |
+| 14 | "on a text at the limit" repeated | excess | cut from C102 |
+| 15 | "the owner starts" repeated | excess | rephrase C108: "That session" |
+
+Prose 2,877 to 2768 words. Claims check (stale-aware) before round 2:
+8 changed claims, 0 missing, 0 stale. Same-instance confirmation:
+recorded below.

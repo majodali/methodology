@@ -34,8 +34,7 @@ An IR is a markdown file named `<subject>.ir.md`. The IR sits beside
 the prose it produces, or under `docs/records/` when the prose is a
 chat message or a PR body. The IR opens with header fields. The IR
 holds five sections in a fixed order: Terms, Claims, Relations,
-Evidence, Asks. The Claims section may use any sub-headings. A review
-record is the file `<subject>.review.md` beside the IR.
+Evidence, Asks. The Claims section may use any sub-headings.
 
 | Header | Value |
 |---|---|
@@ -43,7 +42,7 @@ record is the file `<subject>.review.md` beside the IR.
 | Purpose | `report` or `document`, then one sentence saying what the communication is for |
 | Status | `draft`, `reviewed`, `rendered` or `delivered`, optionally followed by a parenthesis holding the counts this specification asks the reasoning role to record |
 | Source | the conversation, document or event that occasioned the IR |
-| Normative | optional: `yes` when the prose is normative text, that is a rule, a specification, or any text whose words bind |
+| Normative | optional: `yes` when the prose is [normative text](vocabulary.md#def-normative-text) |
 | Footprint | optional: files or directories separated by semicolons. A directory ends in `/` and covers every file under it |
 
 A `report` is read by someone who shares the conversation:
@@ -61,7 +60,7 @@ number, never a suffix.
 
 | Kind | Letter | Body and rule |
 |---|---|---|
-| Term | `T` | the word or phrase and either `defined-at:` with a link to its [definition site](vocabulary.md#def-definition-site) or its meaning in the communication. A term is defined once per IR. Every project-specific term used in a claim appears as a term element. A term without a definition site has status proposed. A proposed term is listed for ratification |
+| Term | `T` | the word or phrase and either `defined-at:` with a link to its [definition site](vocabulary.md#def-definition-site) or its meaning in the communication. A term is defined once per IR. Every project-specific term used in a claim appears as a term element. A term without a definition site has status proposed. The reasoning role lists a proposed term for ratification |
 | Claim | `C` | one statement. A claim may carry `evidence: E<n>`. In a report to RD-1 or RD-2, a claim may carry `part: covered` or `part: changed` |
 | Cluster | `G` | `cluster:` and an ordered list of claim identifiers, with an optional topic claim first. A claim belongs to at most one cluster |
 | Relation | `R` | `C<a> <verb> C<b> because <reason>`, with the verb one of `supports`, `depends-on`, `contradicts`, `refines`. The reason is one sentence or a claim identifier. A reference from one claim to another is a relation, never a pronoun inside the claim |
@@ -70,9 +69,7 @@ number, never a suffix.
 
 ### The referent rule
 
-A referent is anything a claim refers to: a document, a project, a
-rule, a person, a role, or an earlier claim's subject. A claim names
-each referent inside itself. A bare pronoun or determiner phrase is
+A claim names each [referent](vocabulary.md#def-referent) inside itself. A bare pronoun or determiner phrase is
 legal only when its antecedent is a noun phrase earlier in that
 claim. The bare pronouns are it, this, that, these and those, with no
 noun after. The bare determiner phrases are the word "the" followed
@@ -167,14 +164,9 @@ missing definition or a missing referent.
 
 ### Stranger rounds
 
-A round is one [stranger](vocabulary.md#def-stranger) review of an IR
-and its prose, returning findings and a verdict. The verdict is
-readable when three conditions hold: the stranger's restatement of the
+In a [round](vocabulary.md#def-round), the verdict is readable when three conditions hold: the stranger's restatement of the
 text's problem, terms and decisions matches the IR; the stranger finds
-no contradiction; the stranger finds no undefined term. The limit is
-ten rounds. A count is one review's sequence of rounds. A stranger review runs in rounds
-until a round returns the verdict readable or the count reaches the
-limit. The rounds apply to every
+no contradiction; the stranger finds no undefined term. The [limit](vocabulary.md#def-limit) is ten rounds. A [stranger](vocabulary.md#def-stranger) review runs in rounds until a round returns the verdict readable or the [count](vocabulary.md#def-count) reaches the limit. The rounds apply to every
 stranger review the rendering conditions select.
 
 The [reasoning role](vocabulary.md#def-reasoning-role) starts each
@@ -184,47 +176,40 @@ the prose against the reader's readability test
 ([reader catalog](style.md#readers)). A finding that proposes fewer words, a plainer phrase or a
 removed repetition is treated like any other finding.
 
-The reasoning role records each round's findings, each finding's
-disposition, and the verdict in the review record. The review record
+The reasoning role records each round's findings, each finding's disposition, and the verdict in the [review record](vocabulary.md#def-review-record). The review record
 holds, per round, the word count of the prose and the claim count of
 the IR.
 
-The text delivered after a readable verdict is the text that round
-judged, with its findings fixed and confirmed. At a readable verdict,
+The text delivered after a readable verdict is the text the readable
+round judged, with each finding fixed and confirmed or marked
+unfixed. At a readable verdict,
 the reasoning role fixes the round's findings in the IR and then in
 the prose. The readable round's stranger instance confirms each fix
 before delivery. The reasoning role marks each finding of the
-readable round confirmed or unfixed in the review record. An unfixed
-finding of the readable round is fixed by the next edit of an active
-document. After a verdict of not readable, the
+readable round confirmed or unfixed in the review record. The reasoning role fixes an unfixed finding of the readable round at
+the next edit of an active document. After a verdict of not readable, the
 reasoning role fixes the IR and then the prose. The next round
-reviews the fixed IR and the fixed prose. The end of a count sets the
-IR's Status to `reviewed`.
+reviews the fixed IR and the fixed prose. At the end of a count, the reasoning role sets the IR's Status to
+`reviewed`.
 
 At the limit the reasoning role does not deliver the text. The review
 record states that the limit was reached. Rework is an edit of the IR
 and the text by the reasoning role. The owner decides, when accepting
 or rejecting a text at the limit, whether the text is delivered,
 reworked or withdrawn. Rework starts a new count from round one.
-The review record of the ended count is kept through rework. For an amendment, the
-owner's decision on a text at the limit is its adjudication under
+The review record of the ended count is kept through rework. For an amendment, the owner's decision is its adjudication under
 [Article 8](constitution.md#article-8--amendments-versions-and-migration)
 (amendments, versions, and migration).
 
 ### Meta-review
 
-A meta-review is a review, by a session with no part in the rounds,
-of a text's review record and the text itself, reporting whether the
-process needs a change. A text whose review record holds three or
-more rounds in one count is a meta-review subject. The reasoning role
+A text whose review record holds three or more rounds in one count is a [meta-review](vocabulary.md#def-meta-review) subject. The reasoning role
 asks the owner, in the report that delivers a meta-review subject, to
 dispatch its meta-review. When the reasoning role starts a third
 round, it writes the line `Meta-review: pending` in the review
 record.
 
-The meta-review is performed by a session the owner starts. The
-session the owner starts delivers the meta-review as its report to
-the owner. On delivery of the meta-review, the reasoning role sets the
+The meta-review is performed by a session the owner starts. That session delivers its meta-review as a report to the owner. On delivery of the meta-review, the reasoning role sets the
 review record's line to `Meta-review: delivered` with a link. A
 `Meta-review: pending` line in the review record of an accepted
 deliverable is a finding of the next form audit under
@@ -271,11 +256,9 @@ count in the Status parenthesis when the IR is delivered.
 
 ## When an IR is required
 
-A document always starts as an IR. A report to RD-2 always starts as
-an IR. A register fact is a statement about the state of a
-[Register](vocabulary.md#def-register) or of a row in one. A report
-to RD-1 or RD-3 that introduces no term, records no decision and
-states no register fact may be written as prose directly, under the
+A document always starts as an IR. A report to [RD-2](style.md#readers) always starts as
+an IR. A report
+to RD-1 or RD-3 that introduces no term, records no decision and states no [register fact](vocabulary.md#def-register-fact) may be written as prose directly, under the
 style guide's mechanical checks. A term, a decision or a register fact
 requires the IR. A term, a decision and a register fact are each
 content a model would hold.
@@ -288,8 +271,8 @@ active document is edited whenever the document is. A disagreement
 between an active document and its IR is a defect in the prose. The
 IR of a delivered report is a record whose Status becomes `delivered`.
 The IR of a delivered report is not edited after delivery.
-Ratification of a proposed term adds an anchored row to the project
-vocabulary. The vocabulary row of a ratified term is the term's
+On ratification, the reasoning role adds an anchored row for the term
+to the project vocabulary. The vocabulary row of a ratified term is the term's
 [definition site](vocabulary.md#def-definition-site).
 
 ## History
