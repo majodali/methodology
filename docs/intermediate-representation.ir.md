@@ -69,7 +69,7 @@ C166. The human owner reads the specification as RD-4 does. [decided: methodolog
 
 C175. RD-4 reads the specification in the reasoning, paraphraser or stranger role. [decided: methodology PR #49, 2026-10-26]
 
-C6. A case this specification does not name is decided by the human owner when accepting the deliverable. [proposed: this IR]
+C6. A case this specification does not name is decided by the human owner when accepting the deliverable. [decided: owner, 2026-10-27]
 
 ### Document form
 
@@ -259,15 +259,15 @@ C84. Normative text is rendered by the reasoning role, not by the paraphraser. [
 
 C176. A paraphrase could change the force of normative text. [decided: owner, 2026-10-25]
 
-C85. When the reasoning role renders, it appends the render map in the paraphraser's form. [proposed: this IR]
+C85. When the reasoning role renders, it appends the render map in the paraphraser's form. [decided: owner, 2026-10-27]
 
-C86. A fix to rendered prose is made in the IR first. [proposed: this IR]
+C86. A fix to rendered prose is made in the IR first. [decided: owner, 2026-10-27]
 
-C169. After a fix to the IR, the prose is rendered again or edited to match. [proposed: this IR]
+C169. After a fix to the IR, the prose is rendered again or edited to match. [decided: owner, 2026-10-27]
 
-C87. A fix to prose rephrases or removes words before it adds words. evidence: E2. [proposed: this IR]
+C87. A fix to prose rephrases or removes words before it adds words. evidence: E2. [decided: owner, 2026-10-27]
 
-C143. A fix adds words only to supply a missing definition or a missing referent. evidence: E2. [proposed: this IR]
+C143. A fix adds words only to supply a missing definition or a missing referent. evidence: E2. [decided: owner, 2026-10-27]
 
 ### Stranger rounds
 
@@ -281,9 +281,9 @@ C91. The reasoning role starts each round by dispatching a stranger with a fresh
 
 C92. The stranger reviews the IR and the prose against the reader's readability test. [decided: methodology PR #50, 2026-10-26]
 
-C93. The verdict is readable when three conditions hold: the stranger's restatement of the text's problem, terms and decisions matches the IR; the stranger finds no contradiction; the stranger finds no undefined term. [proposed: this IR]
+C93. The verdict is readable when three conditions hold: the stranger's restatement of the text's problem, terms and decisions matches the IR; the stranger finds no contradiction; the stranger finds no undefined term. [decided: owner, 2026-10-27]
 
-C94. A finding that proposes fewer words, a plainer phrase or a removed repetition is treated like any other finding. [proposed: this IR]
+C94. A finding that proposes fewer words, a plainer phrase or a removed repetition is treated like any other finding. [decided: owner, 2026-10-27]
 
 C95. The reasoning role records each round's findings, each finding's disposition, and the verdict in the review record. [decided: methodology PR #50, 2026-10-26]
 
@@ -299,37 +299,37 @@ C157. The next round reviews the fixed IR and the fixed prose. [decided: owner, 
 
 C99. At the limit the reasoning role does not deliver the text. [decided: owner, 2026-10-26]
 
-C158. The end of a count sets the IR's Status to `reviewed`. [proposed: this IR]
+C158. The end of a count sets the IR's Status to `reviewed`. [decided: owner, 2026-10-27]
 
 C144. At the limit the review record states that the limit was reached. [decided: owner, 2026-10-26]
 
-C101. Rework is an edit of the IR and the text by the reasoning role. [proposed: methodology PR #51]
+C101. Rework is an edit of the IR and the text by the reasoning role. [decided: owner, 2026-10-27]
 
 C100. The owner decides, when accepting or rejecting a text at the limit, whether the text is delivered, reworked or withdrawn. [decided: owner, 2026-10-26]
 
-C171. Rework starts a new count from round one. [proposed: methodology PR #51]
+C171. Rework starts a new count from round one. [decided: owner, 2026-10-27]
 
-C172. The review record of the ended count is kept through rework. [proposed: methodology PR #51]
+C172. The review record of the ended count is kept through rework. [decided: owner, 2026-10-27]
 
 C102. For an amendment, the owner's decision on a text at the limit is its adjudication under Article 8. [decided: constitution Article 8]
 
-C103. The review record holds, per round, the word count of the prose and the claim count of the IR. [proposed: this IR]
+C103. The review record holds, per round, the word count of the prose and the claim count of the IR. [decided: owner, 2026-10-27]
 
 ### Meta-review
 
 C104. A text whose review record holds three or more rounds in one count is a meta-review subject. [decided: owner, 2026-10-26]
 
-C105. When the reasoning role starts a third round, it writes the line `Meta-review: pending` in the review record. [proposed: methodology PR #51]
+C105. When the reasoning role starts a third round, it writes the line `Meta-review: pending` in the review record. [decided: owner, 2026-10-27]
 
-C106. The reasoning role asks the owner, in the report that delivers a meta-review subject, to dispatch its meta-review. [proposed: methodology PR #51]
+C106. The reasoning role asks the owner, in the report that delivers a meta-review subject, to dispatch its meta-review. [decided: owner, 2026-10-27]
 
 C107. The meta-review is performed by a session the owner starts. [decided: owner, 2026-10-26]
 
-C108. The session the owner starts delivers the meta-review as its report to the owner. [proposed: methodology PR #51]
+C108. The session the owner starts delivers the meta-review as its report to the owner. [decided: owner, 2026-10-27]
 
-C159. On delivery of the meta-review, the reasoning role sets the review record's line to `Meta-review: delivered` with a link. [proposed: methodology PR #51]
+C159. On delivery of the meta-review, the reasoning role sets the review record's line to `Meta-review: delivered` with a link. [decided: owner, 2026-10-27]
 
-C109. A `Meta-review: pending` line in the review record of an accepted deliverable is a finding of the next form audit under Article 9. [proposed: methodology PR #51]
+C109. A `Meta-review: pending` line in the review record of an accepted deliverable is a finding of the next form audit under Article 9. [decided: owner, 2026-10-27]
 
 ### Rendering conditions
 
@@ -421,7 +421,7 @@ C148. The rounds until readable, the limit of ten and the meta-review were added
 
 C162. The owner placed the meta-review in the communication-pipeline project until that project is archived, and in the methodology repository after. [decided: owner, 2026-10-26]
 
-C140. The specification was rewritten from this IR after ten rounds on PR #51's text grew the prose from 2,635 to 4,516 words without a readable verdict. evidence: E1, E2. [proposed: this IR]
+C140. The specification was rewritten from this IR after ten rounds on PR #51's text grew the prose from 2,635 to 4,516 words without a readable verdict. evidence: E1, E2. [decided: owner, 2026-10-27]
 
 ## Relations
 
@@ -503,4 +503,4 @@ A2 resolved: ratified by the owner, 2026-10-27; vocabulary rows added.
 
 A3. Ratify or strike the proposed claims C6, C85, C86, C87, C93, C94, C101, C103, C105, C106, C108, C109, C140, C143, C158, C159, C169, C171, C172. Depends: A1.
 
-A3 resolved: ratified by the owner, 2026-10-27.
+A3 resolved: ratified by the owner, 2026-10-27; the claims carry decided provenance from that date.
