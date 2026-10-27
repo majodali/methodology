@@ -2,8 +2,8 @@
 
 Reader: RD-4
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: reviewed (unratified terms 0; surprises 0; misses 0; round 10 readable; twelve terms ratified 2026-10-27)
-Source: docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
+Status: draft (count 2, round 1 in progress; the readable-round rule amended; unratified terms 0)
+Source: communication-pipeline evaluation case 008 (owner decision of 2026-10-27, change 5) for count 2; for count 1, docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md
 
@@ -287,11 +287,15 @@ C94. A finding that proposes fewer words, a plainer phrase or a removed repetiti
 
 C95. The reasoning role records each round's findings, each finding's disposition, and the verdict in the review record. [decided: methodology PR #50, 2026-10-26]
 
-C155. After a readable verdict, the text delivered is the text that round judged. [decided: methodology PR #50, 2026-10-26]
+C155. The text delivered after a readable verdict is the text that round judged, with its findings fixed and confirmed. [decided: owner, 2026-10-27]
 
-C97. The findings of a readable round are recorded unfixed. [decided: methodology PR #51 rounds, 2026-10-26]
+C97. At a readable verdict, the reasoning role fixes the round's findings in the IR and then in the prose. [decided: owner, 2026-10-27]
 
-C156. The next edit of an active document fixes the findings the readable round recorded. [decided: methodology PR #51 rounds, 2026-10-26]
+C156. The readable round's stranger instance confirms each fix before delivery. [decided: owner, 2026-10-27]
+
+C182. The reasoning role marks each finding of the readable round confirmed or unfixed in the review record. [decided: owner, 2026-10-27]
+
+C183. An unfixed finding of the readable round is fixed by the next edit of an active document. [decided: owner, 2026-10-27]
 
 C98. After a verdict of not readable, the reasoning role fixes the IR and then the prose. [decided: owner, 2026-10-26]
 
@@ -419,6 +423,8 @@ C147. The Footprint header and the second stranger round were added on 2026-10-2
 
 C148. The rounds until readable, the limit of ten and the meta-review were added by owner ruling of 2026-10-26. [decided: owner, 2026-10-26]
 
+C184. The fixing and confirmation of the readable round's findings before delivery were added on 2026-10-27, by owner decision on communication-pipeline evaluation case 008. [decided: owner, 2026-10-27]
+
 C162. The owner placed the meta-review in the communication-pipeline project until that project is archived, and in the methodology repository after. [decided: owner, 2026-10-26]
 
 C140. The specification was rewritten from this IR after ten rounds on PR #51's text grew the prose from 2,635 to 4,516 words without a readable verdict. evidence: E1, E2. [decided: owner, 2026-10-27]
@@ -481,9 +487,11 @@ R25. C158 refines C13 because the status rule names when `reviewed` is set.
 
 R26. C162 supports C107 because the placement is provenance, not a duty on the session.
 
-R27. C156 depends-on C97 because the next edit fixes what the readable round recorded.
+R27. C156 depends-on C97 because the instance confirms the fixes the reasoning role made.
 
-R28. C156 depends-on C161 because a delivered report has no next edit, so only an active document takes one.
+R33. C183 refines C182 because an unfixed mark names what the next edit owes.
+
+R28. C183 depends-on C161 because a delivered report has no next edit, so only an active document takes one.
 
 ## Evidence
 

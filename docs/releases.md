@@ -15,6 +15,27 @@ carry: amendment title and PR link · suggested by (evidencing instance)
 Minor — normative content, one constitutional change (the Article 5
 `Protects:` field).
 
+### The readable round's findings are fixed and confirmed before delivery
+
+- **PR**: this amendment's PR, superseding the rule of PR #52 that a
+  readable round's findings stay unfixed until the next edit.
+- **Suggested by**: communication-pipeline evaluation case 008 (the
+  meta-review of branch point v1.4's six rounds), change 5, adopted by
+  the owner on 2026-10-27: ten findings recorded unfixed at the
+  readable round, and a confirmation step that caught ten defects in
+  five runs. Amended in the specification's own IR,
+  [docs/intermediate-representation.ir.md](intermediate-representation.ir.md),
+  count 2 of its review record.
+- **Impact**: methodology (`methodology-corpus`) — *accommodated*:
+  one confirmation call after the readable round. Every other project
+  — *accommodated*: W-009 does not apply unless adopted by declaration.
+  communication-pipeline — *accommodated*: branch point v1.5 carries
+  the step.
+- **Migration note**: none.
+- **Protects**: proportional verification — the delivered text is the
+  judged text with its fixes checked, not the judged text plus unchecked
+  edits.
+
 ### The IR specification is rewritten from a full IR; stranger rounds run until readable
 
 - **PR**: [#52](https://github.com/majodali/methodology/pull/52),

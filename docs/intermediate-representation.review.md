@@ -408,3 +408,21 @@ the rounds: communication-pipeline
 [evaluation case 007](https://github.com/majodali/communication-pipeline/blob/main/eval/cases/007-meta-review-full-ir-rounds-2026-10-27.md)
 (seven changes proposed, six recommended; the round-10 text judged
 readable for RD-4).
+
+## Count 2, 2026-10-27: the readable round's findings fixed before delivery
+
+Amendment from communication-pipeline evaluation case 008, change 5,
+adopted by the owner on 2026-10-27. Claims C97, C155 and C156
+rewritten, C182 to C184 added, R27 and R28 changed, R33 added. The
+prose edit is the Stranger rounds paragraph on the readable verdict
+and one History sentence. Rounds under the pipeline's v1.5 procedure:
+the claims check before each round, the stranger reading the prose
+first, the confirmation after the fixes, declined findings carried.
+The document's status line stays `active` on main while the IR's
+Status carries the round; the brief lists that form.
+
+### Curve, count 2
+
+| Round | Prose words | IR claims | Findings | Per 1,000 words | Verdict |
+|---|---|---|---|---|---|
+| 1 | 2877 | 176 | | | |
