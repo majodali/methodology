@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: draft (count 2, round 3 fixes confirmed, one new defect fixed; round 4 in progress; unratified terms 0)
+Status: draft (count 2, round 4 readable; fixes applied, confirmation pending; unratified terms 0)
 Source: communication-pipeline evaluation case 008 (owner decision of 2026-10-27, change 5) for count 2; for count 1, docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md
@@ -149,7 +149,7 @@ C39. Every IR for RD-1 or RD-2 has an Asks section, holding asks or the single l
 
 C40. A claim names each referent inside itself. [decided: pipeline schema v1.2, 2026-10-25]
 
-C41. A bare pronoun or determiner phrase inside a claim is legal only when its antecedent is a noun phrase earlier in that claim. [decided: pipeline schema v1.2, 2026-10-25]
+C41. A bare pronoun or determiner phrase inside a claim is legal only when its antecedent is a noun phrase earlier in the claim that holds the phrase. [decided: pipeline schema v1.2, 2026-10-25]
 
 C42. The bare pronouns are it, this, that, these and those, with no noun after. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -310,6 +310,8 @@ C144. At the limit the reasoning role states in the review record that the limit
 C101. Rework is an edit of the IR and the text by the reasoning role. [decided: owner, 2026-10-27]
 
 C100. The owner decides, when accepting or rejecting a text at the limit, whether the text is delivered, reworked or withdrawn. [decided: owner, 2026-10-26]
+
+C186. When the owner decides delivery, the reasoning role delivers the text. [decided: owner, 2026-10-26]
 
 C171. Rework starts a new count from round one. [decided: owner, 2026-10-27]
 

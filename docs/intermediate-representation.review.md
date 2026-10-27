@@ -428,7 +428,7 @@ Status carries the round; the brief lists that form.
 | 1 | 2,877 | 176 | 15 | 5.2 | not readable (7 in-prose definitions without claims; 1 contradiction; 0 undefined terms) |
 | 2 | 2,771 | 176 | 9 | 3.2 | not readable (restatement mismatch on C44, the stranger's own; 1 contradiction, 1 undefined term) |
 | 3 | 2,796 | 177 | 5 | 1.8 | not readable (restatement mismatch on C44, the stranger's own; 1 contradiction, 0 undefined terms) |
-| 4 | 2797 | 177 | | | |
+| 4 | 2,797 | 177 | 3 | 1.1 | readable (restatement matched; 0 contradictions, 0 undefined terms) |
 
 ### Round 1, count 2, 2026-10-27
 
@@ -506,3 +506,21 @@ of 5 fixes hold; one new defect noted and fixed, "the instance" with
 its antecedent in the previous sentence (C182 names the readable
 round's stranger instance). Claims check after: 1 changed, 0 missing,
 0 stale.
+
+### Round 4, count 2, 2026-10-27
+
+2,797 words; 3 findings; 1.1 per thousand words. Restatement: 190
+words, matching the IR. Contradictions 0, undefined terms 0; verdict:
+readable for RD-4. The count ends at round 4. Under the rule this
+amendment introduces, the three findings are fixed and the round's
+instance confirms each before delivery. By fix kind as the stranger
+judged: cut 1, add 2; by locus: prose 2, both 1.
+
+| # | Finding (shortened) | Kind | Fix | Confirmation |
+|---|---|---|---|---|
+| 1 | no actor delivers after the owner's "delivered" decision | SP-18 | add C186: the reasoning role delivers (a rule PR #51's text had and the rewrite dropped) | |
+| 2 | "HTML" not in C83 | mismatch | cut | |
+| 3 | "that claim" | referent | rephrase C41: "the claim that holds the phrase" | |
+
+Claims check (stale-aware) after the fixes: 2 changed or new claims,
+0 missing, 0 stale. Prose 2,797 to 2811 words.
