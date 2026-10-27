@@ -39,7 +39,8 @@ Register, Entry, Target, Provenance) except as noted per round.
 | 5 | revised | 2,824 | 168 | 7 | 2.5 | not readable (contradictions 0, undefined terms 1; two restatement mismatches, the stranger's overstatement of C104) |
 | 6 | revised | 2,830 | 170 | 12 | 4.2 | not readable (contradictions 2, undefined terms 1; restatement mismatches on C44, C45, C104 the stranger called its own, and on T19 held as a term only) |
 | 7 | revised | 2,839 | 173 | 7 | 2.5 | not readable (contradictions 2, undefined terms 0; one restatement mismatch the stranger called its own) |
-| 8 | revised | 2,823 | 173 | | | |
+| 8 | revised | 2,823 | 173 | 7 | 2.5 | not readable (contradictions 0, undefined terms 0; restatement mismatch on C44, C45 only) |
+| 9 | revised | 2,814 | 173 | | | |
 
 ## Round 1a, 2026-10-26 (old brief)
 
@@ -305,3 +306,32 @@ Fixes after round 7: IR 173 claims unchanged in count (C110
 shortened); prose 2,839 to 2,823 words. Lint clean; round trip 173 of
 173; the three drifted passages re-read against C84, C88, C89, C103,
 C176 and T14, T19.
+
+## Round 8, 2026-10-27 (revised brief, reads ordered)
+
+2,823 words; 7 findings; 2.5 per thousand words. Restatement: 196
+words; one mismatch, the status rule (C44, C45), which the stranger
+located in the prose: the exception sits in a second sentence and
+the restatement missed it. Contradictions 0, undefined terms 0;
+verdict: not readable for RD-4, on the restatement alone. By fix
+kind as the stranger judged: cut 3, rephrase 2, add 2; by locus:
+prose 6, IR 1.
+
+The status-rule mismatch is the fifth in eight rounds (rounds 3, 4,
+6, 7, 8): five strangers wrote "each element carries a status". The
+text was correct each time. A text five readers compress the same
+way has a defect the reader test finds and the rule list does not.
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1 | status exception in a second sentence | restatement | rephrase C44: "Each term, claim and cluster, and no other element, ends with one status"; C45 cut |
+| 2 | "Methodology-level" without a claim | IR gap | add C179 in the IR |
+| 3, 4 | RD-1, RD-2, RD-3, RD-5 unnamed | identifier | declined, as in rounds 5 to 7; fifth stranger |
+| 5 | "unit" before its definition | term order | rephrase: C173 before C76 |
+| 6 | C88 restates the count's ends | excess | rephrase T14 "a sequence of rounds from a first round to its end"; C88 keeps the ends |
+| 7 | "then" | excess | cut |
+
+Fixes after round 8: IR 173 claims (one cut, one header claim
+added); prose 2,823 to 2,814 words. Lint clean; round trip 173 of
+173; the four changed passages re-read against C44, C88, C167, C173,
+T14.

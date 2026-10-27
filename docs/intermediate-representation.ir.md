@@ -35,7 +35,7 @@ T12. Review record: the file `<subject>.review.md` beside an IR, holding each ro
 
 T13. Round: one stranger review of an IR and its prose, returning findings and a verdict. [proposed: this IR]
 
-T14. Count: the sequence of rounds from a first round to a readable verdict or to the limit. [proposed: this IR]
+T14. Count: a sequence of rounds from a first round to its end. [proposed: this IR]
 
 T15. Meta-review: a review, by a session with no part in the rounds, of a text's review record and the text itself, reporting whether the process needs a change. [proposed: methodology PR #51]
 
@@ -61,6 +61,8 @@ C149. W-009 requires this specification. [decided: methodology PR #49, 2026-10-2
 
 C150. The specification's status is active. [decided: methodology PR #49, 2026-10-26]
 
+C179. The specification is Methodology-level. [decided: methodology PR #49, 2026-10-26]
+
 C151. The reader is assumed to know W-008, P-008 and the style guide, including its Readers table. [decided: methodology PR #49, 2026-10-26]
 
 C166. The human owner reads the specification as RD-4 does. [decided: methodology PR #49, 2026-10-26]
@@ -77,7 +79,7 @@ C8. The IR sits beside the prose it produces, or under `docs/records/` when the 
 
 C9. The IR opens with header fields. [decided: pipeline schema v1.2, 2026-10-25]
 
-C167. The IR then holds five sections in a fixed order: Terms, Claims, Relations, Evidence, Asks. [decided: pipeline schema v1.2, 2026-10-25]
+C167. The IR holds five sections in a fixed order: Terms, Claims, Relations, Evidence, Asks. [decided: pipeline schema v1.2, 2026-10-25]
 
 C10. The Claims section may use any sub-headings. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -159,9 +161,7 @@ C43. A determiner followed by the noun it names, such as "this specification", i
 
 ### Provenance
 
-C44. Each term, claim and cluster ends with one status in square brackets. [decided: pipeline schema v1.2, 2026-10-25]
-
-C45. Relations, evidence and asks carry no status. [decided: pipeline schema v1.2, 2026-10-25]
+C44. Each term, claim and cluster, and no other element, ends with one status in square brackets. [decided: pipeline schema v1.2, 2026-10-25]
 
 C165. A relation is the reasoning role's inference by definition. [decided: pipeline schema v1.2, 2026-10-25]
 

@@ -33,7 +33,7 @@ when accepting the deliverable.
 An IR is a markdown file named `<subject>.ir.md`. The IR sits beside
 the prose it produces, or under `docs/records/` when the prose is a
 chat message or a PR body. The IR opens with header fields. The IR
-then holds five sections in a fixed order: Terms, Claims, Relations,
+holds five sections in a fixed order: Terms, Claims, Relations,
 Evidence, Asks. The Claims section may use any sub-headings. A review
 record is the file `<subject>.review.md` beside the IR.
 
@@ -82,8 +82,8 @@ specification", is not bare.
 
 ### Provenance
 
-Each term, claim and cluster ends with one status in square brackets.
-Relations, evidence and asks carry no status. A relation is the
+Each term, claim and cluster, and no other element, ends with one
+status in square brackets. A relation is the
 [reasoning role](vocabulary.md#def-reasoning-role)'s inference by
 definition.
 
@@ -133,11 +133,12 @@ paraphraser may add connective prose: a sentence that asserts nothing
 the IR holds and exists to join claims for the reader. Relations and
 evidence are not rendered as sentences.
 
-A term with a [definition site](vocabulary.md#def-definition-site)
-is linked at its first use in the unit
+The unit
 [P-008](rules/prose.md#p-008--terms-are-defined-once-and-linked-at-first-use)
-(terms are defined once and linked at first use) defines. The unit is
-the whole text for a report and the section for a document. Later uses
+(terms are defined once and linked at first use) defines is the whole
+text for a report and the section for a document. A term with a
+[definition site](vocabulary.md#def-definition-site) is linked at its
+first use in the unit. Later uses
 of a term with a definition site in the unit are not linked. A term the IR introduces is
 defined in a sentence of its own before its first use. A term the IR
 introduces is listed under
@@ -169,8 +170,8 @@ and its prose, returning findings and a verdict. The verdict is
 readable when three conditions hold: the stranger's restatement of the
 text's problem, terms and decisions matches the IR; the stranger finds
 no contradiction; the stranger finds no undefined term. The limit is
-ten rounds. A count is the sequence of rounds from a first round to a
-readable verdict or to the limit. A stranger review runs in rounds
+ten rounds. A count is a sequence of rounds from a first round to its
+end. A stranger review runs in rounds
 until a round returns the verdict readable or the count reaches the
 limit. The rounds apply to every
 stranger review the rendering conditions select.
@@ -303,4 +304,4 @@ rounds grew the prose from 2,635 words to 4,516. The record is the
 communication-pipeline project's
 [analysis of those rounds](https://github.com/majodali/communication-pipeline/blob/main/eval/analysis/pr51-findings.md).
 
-<!-- render map: C149→¶1 C150→¶1 C5→¶1 C151→¶1 C166→¶1 C175→¶1 C1→¶2 C4→¶2 C6→¶3 C7→¶4 C8→¶4 C9→¶4 C167→¶4 C10→¶4 C11→¶5 C12→¶5 C13→¶5 C14→¶5 C15→¶5 C16→¶5 C142→¶5 C17→¶6 C18→¶6 C19→¶6 C20→¶7 C21→¶7 C22→¶7 C23→¶8 C24→¶8 C25→¶8 C26→¶8 C27→¶8 C152→¶8 C28→¶8 C29→¶8 C30→¶8 C31→¶8 C32→¶8 C33→¶8 C34→¶8 C35→¶8 C36→¶8 C37→¶8 C38→¶8 C39→¶8 C40→¶9 C41→¶9 C42→¶9 C163→¶9 C43→¶9 C44→¶10 C45→¶10 C165→¶10 C46→¶11 C47→¶11 C48→¶11 C49→¶12 C50→¶12 C51→¶13 C52→¶13 C53→¶14 C54→¶14 C55→¶14 C56→¶14 C57→¶14 C58→¶14 C59→¶14 C60→¶14 C61→¶14 C62→¶14 C63→¶14 C64→¶14 C65→¶14 C66→¶14 C67→¶14 C68→¶14 C69→¶14 C70→¶14 C71→¶15 C168→¶15 C72→¶15 C174→¶15 C73→¶15 C74→¶15 C75→¶15 C76→¶16 C173→¶16 C164→¶16 C77→¶16 C153→¶16 C78→¶16 C79→¶16 C80→¶16 C154→¶16 C81→¶16 C82→¶16 C83→¶17 C84→¶17 C176→¶17 C85→¶17 C86→¶18 C169→¶18 C87→¶18 C143→¶18 C88→¶19 C93→¶19 C89→¶19 C90→¶19 C91→¶20 C92→¶20 C94→¶20 C95→¶21 C103→¶21 C155→¶22 C97→¶22 C156→¶22 C98→¶22 C157→¶22 C158→¶22 C99→¶23 C144→¶23 C100→¶23 C101→¶23 C171→¶23 C172→¶23 C102→¶23 C104→¶24 C106→¶24 C105→¶24 C107→¶25 C108→¶25 C159→¶25 C109→¶25 C110→¶26 C111→¶26 C112→¶26 C113→¶27 C114→¶27 C170→¶27 C115→¶27 C116→¶27 C117→¶27 C118→¶27 C119→¶27 C120→¶28 C145→¶28 C121→¶29 C177→¶29 C122→¶29 C123→¶29 C124→¶29 C146→¶29 C125→¶29 C126→¶29 C127→¶29 C128→¶29 C129→¶30 C130→¶30 C132→¶30 C178→¶30 C131→¶30 C133→¶31 C134→¶31 C160→¶31 C135→¶31 C161→¶31 C136→¶31 C138→¶32 C139→¶32 C147→¶32 C148→¶32 C162→¶32 C140→¶32 -->
+<!-- render map: C149→¶1 C150→¶1 C179→¶1 C5→¶1 C151→¶1 C166→¶1 C175→¶1 C1→¶2 C4→¶2 C6→¶3 C7→¶4 C8→¶4 C9→¶4 C167→¶4 C10→¶4 C11→¶5 C12→¶5 C13→¶5 C14→¶5 C15→¶5 C16→¶5 C142→¶5 C17→¶6 C18→¶6 C19→¶6 C20→¶7 C21→¶7 C22→¶7 C23→¶8 C24→¶8 C25→¶8 C26→¶8 C27→¶8 C152→¶8 C28→¶8 C29→¶8 C30→¶8 C31→¶8 C32→¶8 C33→¶8 C34→¶8 C35→¶8 C36→¶8 C37→¶8 C38→¶8 C39→¶8 C40→¶9 C41→¶9 C42→¶9 C163→¶9 C43→¶9 C44→¶10 C165→¶10 C46→¶11 C47→¶11 C48→¶11 C49→¶12 C50→¶12 C51→¶13 C52→¶13 C53→¶14 C54→¶14 C55→¶14 C56→¶14 C57→¶14 C58→¶14 C59→¶14 C60→¶14 C61→¶14 C62→¶14 C63→¶14 C64→¶14 C65→¶14 C66→¶14 C67→¶14 C68→¶14 C69→¶14 C70→¶14 C71→¶15 C168→¶15 C72→¶15 C174→¶15 C73→¶15 C74→¶15 C75→¶15 C173→¶16 C76→¶16 C164→¶16 C77→¶16 C153→¶16 C78→¶16 C79→¶16 C80→¶16 C154→¶16 C81→¶16 C82→¶16 C83→¶17 C84→¶17 C176→¶17 C85→¶17 C86→¶18 C169→¶18 C87→¶18 C143→¶18 C88→¶19 C93→¶19 C89→¶19 C90→¶19 C91→¶20 C92→¶20 C94→¶20 C95→¶21 C103→¶21 C155→¶22 C97→¶22 C156→¶22 C98→¶22 C157→¶22 C158→¶22 C99→¶23 C144→¶23 C100→¶23 C101→¶23 C171→¶23 C172→¶23 C102→¶23 C104→¶24 C106→¶24 C105→¶24 C107→¶25 C108→¶25 C159→¶25 C109→¶25 C110→¶26 C111→¶26 C112→¶26 C113→¶27 C114→¶27 C170→¶27 C115→¶27 C116→¶27 C117→¶27 C118→¶27 C119→¶27 C120→¶28 C145→¶28 C121→¶29 C177→¶29 C122→¶29 C123→¶29 C124→¶29 C146→¶29 C125→¶29 C126→¶29 C127→¶29 C128→¶29 C129→¶30 C130→¶30 C132→¶30 C178→¶30 C131→¶30 C133→¶31 C134→¶31 C160→¶31 C135→¶31 C161→¶31 C136→¶31 C138→¶32 C139→¶32 C147→¶32 C148→¶32 C162→¶32 C140→¶32 -->
