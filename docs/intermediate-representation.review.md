@@ -407,7 +407,7 @@ Meta-review: delivered, 2026-10-27, by a fresh session with no part in
 the rounds: communication-pipeline
 [evaluation case 007](https://github.com/majodali/communication-pipeline/blob/main/eval/cases/007-meta-review-full-ir-rounds-2026-10-27.md)
 (seven changes proposed, six recommended; the round-10 text judged
-readable for RD-4).
+readable for RD-4). Count 2 below has its own line.
 
 ## Count 2, 2026-10-27: the readable round's findings fixed before delivery
 
@@ -518,9 +518,34 @@ judged: cut 1, add 2; by locus: prose 2, both 1.
 
 | # | Finding (shortened) | Kind | Fix | Confirmation |
 |---|---|---|---|---|
-| 1 | no actor delivers after the owner's "delivered" decision | SP-18 | add C186: the reasoning role delivers (a rule PR #51's text had and the rewrite dropped) | |
-| 2 | "HTML" not in C83 | mismatch | cut | |
-| 3 | "that claim" | referent | rephrase C41: "the claim that holds the phrase" | |
+| 1 | no actor delivers after the owner's "delivered" decision | SP-18 | add C186: the reasoning role delivers (a rule PR #51's text had and the rewrite dropped) | confirmed |
+| 2 | "HTML" not in C83 | mismatch | cut | confirmed |
+| 3 | "that claim" | referent | rephrase C41: "the claim that holds the phrase" | confirmed |
 
 Claims check (stale-aware) after the fixes: 2 changed or new claims,
 0 missing, 0 stale. Prose 2,797 to 2811 words.
+
+Same-instance confirmation before delivery: 3 of 3 fixes hold, each
+marked confirmed above; none unfixed. The confirmation noted that the
+new delivery sentence read against "does not deliver the text" at the
+limit; C99 was scoped to the time before the owner's decision and the
+instance confirmed the pair. IR Status set to `reviewed (count 2,
+round 4 readable; fixes confirmed)`.
+
+### Verdict, count 2
+
+Readable for RD-4 at round 4 of a count of four. Findings per thousand
+words by round: 5.2, 3.2, 1.8, 1.1. Contradictions by round: 1, 1, 1,
+0, each a different conflict inside the new readable-round rule, and
+each found by the next stranger. Prose 2,877 words at round 1 and
+2,811 at delivery; IR 176 claims at round 1 and 178 at delivery. The
+procedure's steps on this count: the stale-aware claims check found no
+missing and no stale claim in five runs; the same-instance
+confirmation found every fix holding and noted three new defects
+(rounds 1, 3 and 4), each fixed; the carried decline was not raised;
+the status rule drew its seventh self-attributed restatement
+compression across the two counts, without a prose change this time.
+
+Meta-review: pending. Count 2 makes this text a meta-review subject
+again (four rounds in one count). The delivering report asks the
+owner to dispatch it or to decide that none is needed.
