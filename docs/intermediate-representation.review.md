@@ -478,4 +478,5 @@ judged: cut 1, rephrase 1, add 7; by locus: both 9.
 
 Prose 2,771 to 2796 words. Claims check (stale-aware) before round 3:
 9 changed or new claims, 0 missing, 0 stale. Same-instance
-confirmation: recorded below.
+confirmation: 9 of 9 fixes hold, no new defect. Round 3 starts, so
+count 2 makes the text a meta-review subject again.
