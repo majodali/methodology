@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: reviewed (count 3, round 1 readable; fixes confirmed; surprises 0; misses 0; unratified terms 1)
+Status: delivered (count 3 accepted 2026-10-27; round 1 readable; fixes confirmed; surprises 0; misses 0; unratified terms 0)
 Source: the owner's decision of 2026-10-27 on signal-based meta-review triggers (count 3); communication-pipeline evaluation case 008 (owner decision of 2026-10-27, change 5) for count 2; for count 1, docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md; docs/releases.md; docs/vocabulary.md
@@ -47,7 +47,7 @@ T18. Normative text. defined-at: vocabulary.md#def-normative-text [decided: owne
 
 T19. Limit. defined-at: vocabulary.md#def-limit [decided: owner, 2026-10-27]
 
-T20. Meta-review signal: one of four conditions in a review record. [proposed: this IR]
+T20. Meta-review signal. defined-at: vocabulary.md#def-meta-review-signal [decided: owner, 2026-10-27]
 
 ## Claims
 
@@ -544,3 +544,5 @@ A3. Ratify or strike the proposed claims C6, C85, C86, C87, C93, C94, C101, C103
 A3 resolved: ratified by the owner, 2026-10-27; the claims carry decided provenance from that date.
 
 A4. Ratify or strike the term meta-review signal (T20). Depends: C104.
+
+A4 resolved: ratified by the owner, 2026-10-27; vocabulary row added.
