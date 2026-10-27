@@ -153,7 +153,7 @@ The paraphraser appends a render map: one HTML comment line reading
 `render map:` and then, per claim, the paragraph it landed in, as
 `C1→¶1 C2→¶1 …`. Normative text is rendered by the
 [reasoning role](vocabulary.md#def-reasoning-role), not by the
-paraphraser, because a paraphrase could change its force. When the
+paraphraser. A paraphrase could change the force of normative text. When the
 reasoning role renders, it appends the render map in the
 paraphraser's form.
 
@@ -169,11 +169,10 @@ and its prose, returning findings and a verdict. The verdict is
 readable when three conditions hold: the stranger's restatement of the
 text's problem, terms and decisions matches the IR; the stranger finds
 no contradiction; the stranger finds no undefined term. The limit is
-ten rounds in one count. A count is the sequence of rounds from a
-first round to a readable verdict, to the limit, or to rework. A
-stranger review runs in rounds until a round returns the verdict
-readable. A count ends at the limit when no round has returned
-readable. The rounds apply to every
+ten rounds. A count is the sequence of rounds from a first round to a
+readable verdict or to the limit. A stranger review runs in rounds
+until a round returns the verdict readable or the count reaches the
+limit. The rounds apply to every
 stranger review the rendering conditions select.
 
 The [reasoning role](vocabulary.md#def-reasoning-role) starts each
@@ -184,9 +183,9 @@ the prose against the reader's readability test
 removed repetition is treated like any other finding.
 
 The reasoning role records each round's findings, each finding's
-disposition, and the verdict in the review record. The reasoning role
-records in the review record, per round, the word count of the prose
-and the claim count of the IR.
+disposition, and the verdict in the review record. The review record
+holds, per round, the word count of the prose and the claim count of
+the IR.
 
 After a readable verdict, the text delivered is the text that round
 judged. The findings of a readable round are
@@ -227,7 +226,7 @@ deliverable is a finding of the next form audit under
 
 ## Rendering conditions
 
-The inputs to the conditions are the IR's reader, purpose, Normative
+The inputs are the IR's reader, purpose, Normative
 header, claim count, proposed-term count, count of dependent asks
 (asks with a `Depends:` field), and longest claim, plus whether the owner
 asked for a review. The mechanical checks run in every case. The

@@ -335,7 +335,7 @@ C109. A `Meta-review: pending` line in the review record of an accepted delivera
 
 ### Rendering conditions
 
-C110. The inputs to the rendering conditions are the IR's reader, purpose, Normative header, claim count, proposed-term count, count of dependent asks (asks with a `Depends:` field), and longest claim, plus whether the owner asked for a review. [decided: pipeline branch point v1.1, 2026-10-25]
+C110. The inputs are the IR's reader, purpose, Normative header, claim count, proposed-term count, count of dependent asks (asks with a `Depends:` field), and longest claim, plus whether the owner asked for a review. [decided: pipeline branch point v1.1, 2026-10-25]
 
 C111. The mechanical checks run in every case. [decided: pipeline schema v1.2, 2026-10-25]
 

@@ -38,7 +38,8 @@ Register, Entry, Target, Provenance) except as noted per round.
 | 4 | revised | 2,829 | 165 | 8 | 2.8 | not readable (contradictions 3, undefined terms 2; six restatement mismatches the stranger attributed to its own compressions) |
 | 5 | revised | 2,824 | 168 | 7 | 2.5 | not readable (contradictions 0, undefined terms 1; two restatement mismatches, the stranger's overstatement of C104) |
 | 6 | revised | 2,830 | 170 | 12 | 4.2 | not readable (contradictions 2, undefined terms 1; restatement mismatches on C44, C45, C104 the stranger called its own, and on T19 held as a term only) |
-| 7 | revised | 2,839 | 173 | | | |
+| 7 | revised | 2,839 | 173 | 7 | 2.5 | not readable (contradictions 2, undefined terms 0; one restatement mismatch the stranger called its own) |
+| 8 | revised | 2,823 | 173 | | | |
 
 ## Round 1a, 2026-10-26 (old brief)
 
@@ -272,3 +273,35 @@ pending line.
 Fixes after round 6: IR 170 to 173 claims (three reason splits);
 prose 2,830 to 2,839 words (nine words, from the three split reasons
 restating their subjects). Lint clean; round trip 173 of 173.
+
+## Round 7, 2026-10-27 (revised brief, reads ordered)
+
+2,839 words; 7 findings; 2.5 per thousand words. Restatement: 190
+words; one mismatch (C44, C45) the stranger called its own.
+Contradictions 2, undefined terms 0; verdict: not readable for RD-4.
+By fix kind as the stranger judged: cut 2, rephrase 2, add 3; by
+locus: prose 5, IR 1, both 1.
+
+Four of the seven findings (1, 2, 4, 5) quote sentences round 6
+had fixed in the IR but not in the prose: the reasoning role's first
+edit script of round 6 aborted on an unmatched anchor and its earlier
+replacements were lost, while the render map was updated by a second
+script. The mechanical round trip passed, because it reads only the
+map. The stranger found the drift. Two lessons for the process: the
+round trip needs a semantic half (the stranger's), as the rendering
+rule says; and a fix is not applied until the prose is re-read
+against the changed claims.
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1, 2 | until readable vs ends at the limit | contradiction (prose drift) | rephrase: the round 6 fix applied to the prose |
+| 3 | T14 omits rework as an end of a count | contradiction (IR) | declined: the count ends at the limit; rework follows the owner's decision and starts a new count (C171) |
+| 4 | "count" before its definition | term order (prose drift) | rephrase: the round 6 fix applied |
+| 5 | rule and reason in one sentence (C84) | compound (prose drift) | rephrase: the round 6 split applied |
+| 6 | 36-word inputs sentence | length | cut "to the conditions" from C110 |
+| 7 | RD-1, RD-2, RD-3, RD-5 unnamed | identifier | declined, as in rounds 5 and 6; fourth stranger to raise it |
+
+Fixes after round 7: IR 173 claims unchanged in count (C110
+shortened); prose 2,839 to 2,823 words. Lint clean; round trip 173 of
+173; the three drifted passages re-read against C84, C88, C89, C103,
+C176 and T14, T19.
