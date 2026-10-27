@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: reviewed (unratified terms 12; surprises 0; misses 0; round 10 readable)
+Status: reviewed (unratified terms 0; surprises 0; misses 0; round 10 readable; twelve terms ratified 2026-10-27)
 Source: docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md
@@ -23,29 +23,29 @@ T6. Convergence. defined-at: vocabulary.md#def-convergence [decided: owner, 2026
 
 T7. Definition site. defined-at: vocabulary.md#def-definition-site [decided: owner, 2026-10-26]
 
-T8. Provenance status: the tag ending each term, claim and cluster: decided, proposed or inferred. [proposed: this IR]
+T8. Provenance status. defined-at: vocabulary.md#def-provenance-status [decided: owner, 2026-10-27]
 
-T9. Referent: anything a claim refers to: a document, a project, a rule, a person, a role, or an earlier claim's subject. [proposed: this IR]
+T9. Referent. defined-at: vocabulary.md#def-referent [decided: owner, 2026-10-27]
 
-T10. Cluster: an ordered list of claim identifiers the paraphraser renders as one paragraph. [proposed: this IR]
+T10. Cluster. defined-at: vocabulary.md#def-cluster [decided: owner, 2026-10-27]
 
-T11. Render map: one comment line in rendered prose listing the paragraph each claim landed in. [proposed: this IR]
+T11. Render map. defined-at: vocabulary.md#def-render-map [decided: owner, 2026-10-27]
 
-T12. Review record: the file `<subject>.review.md` beside an IR, holding each round's findings, dispositions and verdict. [proposed: this IR]
+T12. Review record. defined-at: vocabulary.md#def-review-record [decided: owner, 2026-10-27]
 
-T13. Round: one stranger review of an IR and its prose, returning findings and a verdict. [proposed: this IR]
+T13. Round. defined-at: vocabulary.md#def-round [decided: owner, 2026-10-27]
 
-T14. Count: a sequence of rounds from a first round to its end. [proposed: this IR]
+T14. Count. defined-at: vocabulary.md#def-count [decided: owner, 2026-10-27]
 
-T15. Meta-review: a review, by a session with no part in the rounds, of a text's review record and the text itself, reporting whether the process needs a change. [proposed: methodology PR #51]
+T15. Meta-review. defined-at: vocabulary.md#def-meta-review [decided: owner, 2026-10-27]
 
-T16. Footprint: the files or directories an IR's deliverable is expected to change, declared in the Footprint header. [proposed: this IR]
+T16. Footprint. defined-at: vocabulary.md#def-footprint [decided: owner, 2026-10-27]
 
-T17. Register fact: a statement about the state of a Register or of a row in one. [proposed: this IR]
+T17. Register fact. defined-at: vocabulary.md#def-register-fact [decided: owner, 2026-10-27]
 
-T18. Normative text: a rule, a specification, or any text whose words bind. [proposed: this IR]
+T18. Normative text. defined-at: vocabulary.md#def-normative-text [decided: owner, 2026-10-27]
 
-T19. Limit: ten rounds. [proposed: this IR]
+T19. Limit. defined-at: vocabulary.md#def-limit [decided: owner, 2026-10-27]
 
 ## Claims
 
@@ -241,7 +241,7 @@ C77. A term the IR introduces is defined in a sentence of its own before its fir
 
 C153. A term the IR introduces is listed under *Terms introduced*. [decided: methodology PR #46, 2026-10-26]
 
-C78. For RD-5, the first use of a term carries its definition in parentheses instead of a link. [decided: methodology PR #48, 2026-10-26]
+C78. For RD-5, the first use of a term with a definition site carries its definition in parentheses instead of a link. [decided: methodology PR #48, 2026-10-26]
 
 C79. For RD-1 or RD-2, a claim renders under the part its `part:` field names. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -303,9 +303,9 @@ C158. The end of a count sets the IR's Status to `reviewed`. [proposed: this IR]
 
 C144. At the limit the review record states that the limit was reached. [decided: owner, 2026-10-26]
 
-C100. The owner decides, when accepting or rejecting a text at the limit, whether the text is delivered, reworked or withdrawn. [decided: owner, 2026-10-26]
-
 C101. Rework is an edit of the IR and the text by the reasoning role. [proposed: methodology PR #51]
+
+C100. The owner decides, when accepting or rejecting a text at the limit, whether the text is delivered, reworked or withdrawn. [decided: owner, 2026-10-26]
 
 C171. Rework starts a new count from round one. [proposed: methodology PR #51]
 
@@ -405,7 +405,9 @@ C135. The IR of a delivered report is a record whose Status becomes `delivered`.
 
 C161. The IR of a delivered report is not edited after delivery. [decided: pipeline schema v1.2, 2026-10-25]
 
-C136. Ratification of a proposed term adds an anchored row to the project vocabulary, which becomes the term's definition site. [decided: methodology PR #48, 2026-10-26]
+C136. Ratification of a proposed term adds an anchored row to the project vocabulary. [decided: methodology PR #48, 2026-10-26]
+
+C181. The vocabulary row of a ratified term is the term's definition site. [decided: methodology PR #48, 2026-10-26]
 
 ### History
 
@@ -493,6 +495,12 @@ E2. communication-pipeline eval/analysis/pr51-findings.md: words required by abo
 
 A1. Accept or reject the rewritten specification as the text of docs/intermediate-representation.md. Depends: C140.
 
-A2. Ratify or strike the nine terms this specification defines (T8 to T13, T16 to T18) and the terms count (T14), meta-review (T15) and limit (T19). Depends: A1.
+A1 resolved: accepted, methodology PR #52 merged 2026-10-27.
+
+A2. Ratify or strike the terms this specification defines (T8 to T19). Depends: A1.
+
+A2 resolved: ratified by the owner, 2026-10-27; vocabulary rows added.
 
 A3. Ratify or strike the proposed claims C6, C85, C86, C87, C93, C94, C101, C103, C105, C106, C108, C109, C140, C143, C158, C159, C169, C171, C172. Depends: A1.
+
+A3 resolved: ratified by the owner, 2026-10-27.

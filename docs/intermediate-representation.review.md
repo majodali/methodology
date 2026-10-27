@@ -392,6 +392,17 @@ claims at round 1 and 172 at round 10, the growth from splits. The
 same rules in PR #51's text, fixed in prose, ran 2,572 to 4,516 words
 over ten rounds and never reached readable.
 
-Meta-review: pending. This text is a meta-review subject (ten rounds
-in one count). The delivering report asks the owner to dispatch the
-meta-review.
+## After the count, 2026-10-27
+
+The owner accepted the text (PR #52 merged) and ratified the twelve
+terms and the proposed claims. The ratification edit added the twelve
+vocabulary rows, set the IR's terms to decided with their definition
+sites, and fixed the accepted findings of round 10 (findings 1, 2,
+3, 6; finding 5's link was already present); finding 4 stays
+declined. Prose 2,804 to 2,808 words;
+IR 172 to 173 claims (C136 split). The edit fixes accepted findings
+and ratification only, so it starts no new rounds.
+
+Meta-review: pending. Dispatched by the owner on 2026-10-27 to a
+fresh session with no part in the rounds; its report becomes
+communication-pipeline evaluation case 007.
