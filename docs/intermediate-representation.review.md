@@ -549,3 +549,17 @@ compression across the two counts, without a prose change this time.
 Meta-review: not required for count 2. Owner decision of 2026-10-27,
 on accepting the amendment: the three-round trigger predates the
 measurements and is to be revisited.
+
+## Count 3, 2026-10-27: the meta-review trigger is signal-based
+
+Amendment by owner decision of 2026-10-27: the four signals replace
+the trigger of three rounds; the limit stays. Claims C104 and C105
+rewritten, C187 to C193 added, T20 proposed, R34 to R38 added. The
+prose edit is the Meta-review paragraph and one History sentence.
+Rounds under the pipeline's v1.5 procedure.
+
+### Curve, count 3
+
+| Round | Prose words | IR claims | Findings | Per 1,000 words | Verdict |
+|---|---|---|---|---|---|
+| 1 | 2970 | 187 | | | |
