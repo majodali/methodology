@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: draft (count 2, round 3 in progress; unratified terms 0)
+Status: draft (count 2, round 3 fixes applied, confirmation pending; unratified terms 0)
 Source: communication-pipeline evaluation case 008 (owner decision of 2026-10-27, change 5) for count 2; for count 1, docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md
@@ -253,7 +253,7 @@ C81. The rendering follows the style guide's rows for the IR's reader. [decided:
 
 C82. The rendering states an empty Asks section as "No asks." [decided: methodology PR #46, 2026-10-26]
 
-C83. The paraphraser appends a render map as one comment line of the form `<!-- render map: C1→¶1 C2→¶1 … -->`. [decided: pipeline schema v1.2, 2026-10-25]
+C83. The paraphraser appends a render map as one comment line reading `render map:` and, per claim, the paragraph it landed in, as `C1→¶1 C2→¶1 …`. [decided: pipeline schema v1.2, 2026-10-25]
 
 C84. Normative text is rendered by the reasoning role, not by the paraphraser. [decided: owner, 2026-10-25]
 
@@ -293,7 +293,7 @@ C97. At a readable verdict, the reasoning role fixes the round's findings in the
 
 C156. The readable round's stranger instance confirms each fix before delivery. [decided: owner, 2026-10-27]
 
-C182. The reasoning role marks each finding of the readable round confirmed or unfixed in the review record. [decided: owner, 2026-10-27]
+C182. A finding whose fix the instance does not confirm is unfixed. [decided: owner, 2026-10-27]
 
 C183. The reasoning role fixes an unfixed finding of the readable round at the next edit of an active document. [decided: owner, 2026-10-27]
 
@@ -339,7 +339,7 @@ C109. A `Meta-review: pending` line in the review record of an accepted delivera
 
 C110. The inputs are the IR's reader, purpose, Normative header, claim count, proposed-term count, count of dependent asks (asks with a `Depends:` field), and longest claim, plus whether the owner asked for a review. [decided: pipeline branch point v1.1, 2026-10-25]
 
-C111. The mechanical checks run in every case. [decided: pipeline schema v1.2, 2026-10-25]
+C111. A lint runs the mechanical checks in every case. [decided: pipeline schema v1.2, 2026-10-25]
 
 C112. The first row of the Rendering conditions table whose condition holds decides. [decided: methodology PR #50, 2026-10-26]
 
@@ -401,7 +401,7 @@ C178. A term, a decision and a register fact are each content a model would hold
 
 C133. An IR's mutability follows the state of its prose: active or delivered. [decided: pipeline schema v1.2, 2026-10-25]
 
-C134. The IR of an active document is edited whenever the document is. [decided: pipeline schema v1.2, 2026-10-25]
+C134. The reasoning role edits the IR of an active document whenever the document is edited. [decided: pipeline schema v1.2, 2026-10-25]
 
 C160. A disagreement between an active document and its IR is a defect in the prose. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -491,7 +491,7 @@ R26. C162 supports C107 because the placement is provenance, not a duty on the s
 
 R27. C156 depends-on C97 because the instance confirms the fixes the reasoning role made.
 
-R33. C183 refines C182 because an unfixed mark names what the next edit owes.
+R33. C183 depends-on C182 because the next edit owes what the instance did not confirm.
 
 R28. C183 depends-on C161 because a delivered report has no next edit, so only an active document takes one.
 

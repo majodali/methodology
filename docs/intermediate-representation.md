@@ -150,7 +150,7 @@ proposed or inferred claim without a `part:` field renders under
 IR's reader. The rendering states an empty Asks section as "No asks."
 
 The paraphraser appends a render map: one HTML comment line reading
-`render map:` and then, per claim, the paragraph it landed in, as
+`render map:` and, per claim, the paragraph it landed in, as
 `C1→¶1 C2→¶1 …`. Normative text is rendered by the
 [reasoning role](vocabulary.md#def-reasoning-role), not by the
 paraphraser. A paraphrase could change the force of normative text. When the
@@ -185,8 +185,7 @@ The text delivered after a readable verdict is the judged text with
 the round's fixes applied, each finding confirmed or marked unfixed. At a readable verdict,
 the reasoning role fixes the round's findings in the IR and then in
 the prose. The readable round's stranger instance confirms each fix
-before delivery. The reasoning role marks each finding of the
-readable round confirmed or unfixed in the review record. The reasoning role fixes an unfixed finding of the readable round at
+before delivery. A finding whose fix the instance does not confirm is unfixed. The reasoning role fixes an unfixed finding of the readable round at
 the next edit of an active document. After a verdict of not readable, the
 reasoning role fixes the IR and then the prose. The next round
 reviews the fixed IR and the fixed prose. At the end of a count, the reasoning role sets the IR's Status to
@@ -223,7 +222,7 @@ deliverable is a finding of the next form audit under
 The inputs are the IR's reader, purpose, Normative
 header, claim count, proposed-term count, count of dependent asks
 (asks with a `Depends:` field), and longest claim, plus whether the owner
-asked for a review. The mechanical checks run in every case. The
+asked for a review. A lint runs the mechanical checks in every case. The
 first row whose condition holds decides.
 
 | Condition | What follows |
@@ -269,8 +268,8 @@ content a model would hold.
 ## Lifecycle
 
 An IR's mutability follows the state of its prose: active or
-delivered. The IR of an
-active document is edited whenever the document is. A disagreement
+delivered. The reasoning role edits the IR of an active document whenever the
+document is edited. A disagreement
 between an active document and its IR is a defect in the prose. The IR of a delivered report is a record. At delivery, the reasoning
 role sets the Status of a report's IR to `delivered`.
 The IR of a delivered report is not edited after delivery.

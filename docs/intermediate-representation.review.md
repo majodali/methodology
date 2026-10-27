@@ -427,7 +427,8 @@ Status carries the round; the brief lists that form.
 |---|---|---|---|---|---|
 | 1 | 2,877 | 176 | 15 | 5.2 | not readable (7 in-prose definitions without claims; 1 contradiction; 0 undefined terms) |
 | 2 | 2,771 | 176 | 9 | 3.2 | not readable (restatement mismatch on C44, the stranger's own; 1 contradiction, 1 undefined term) |
-| 3 | 2796 | 177 | | | |
+| 3 | 2,796 | 177 | 5 | 1.8 | not readable (restatement mismatch on C44, the stranger's own; 1 contradiction, 0 undefined terms) |
+| 4 | 2794 | 177 | | | |
 
 ### Round 1, count 2, 2026-10-27
 
@@ -480,3 +481,25 @@ Prose 2,771 to 2796 words. Claims check (stale-aware) before round 3:
 9 changed or new claims, 0 missing, 0 stale. Same-instance
 confirmation: 9 of 9 fixes hold, no new defect. Round 3 starts, so
 count 2 makes the text a meta-review subject again.
+
+### Round 3, count 2, 2026-10-27
+
+2,796 words; 5 findings; 1.8 per thousand words. Restatement: 170
+words; one mismatch (C44, C165) the stranger called its own, the
+status rule for the seventh time across the two counts. Contradictions
+1 (fixes required at the readable verdict against findings marked
+unfixed, with no condition for unfixed), undefined terms 0; verdict:
+not readable for RD-4. By fix kind as the stranger judged: cut 2, add
+3; by locus: prose 1, both 4.
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1 | "and then" | excess | cut "then" (C83) |
+| 2 | the marking duty repeats the disposition rule and C155 | excess | cut; C182 becomes the condition for unfixed |
+| 3 | no condition for an unfixed finding | contradiction | rephrase C182: "A finding whose fix the instance does not confirm is unfixed." |
+| 4 | the checks run with no actor | SP-18 | rephrase C111: "A lint runs" |
+| 5 | the IR edited with no actor | SP-18 | rephrase C134: the reasoning role |
+
+Prose 2,796 to 2794 words. Claims check (stale-aware) before round 4:
+4 changed claims, 0 missing, 0 stale. Same-instance confirmation:
+recorded below.
