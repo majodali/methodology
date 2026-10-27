@@ -403,8 +403,8 @@ declined. Prose 2,804 to 2,808 words;
 IR 172 to 173 claims (C136 split). The edit fixes accepted findings
 and ratification only, so it starts no new rounds.
 
-Meta-review: delivered, 2026-10-27, by a fresh session with no part in
-the rounds: communication-pipeline
+Count 1 meta-review: delivered, 2026-10-27, by a fresh session with no
+part in the rounds: communication-pipeline
 [evaluation case 007](https://github.com/majodali/communication-pipeline/blob/main/eval/cases/007-meta-review-full-ir-rounds-2026-10-27.md)
 (seven changes proposed, six recommended; the round-10 text judged
 readable for RD-4). Count 2 below has its own line.
