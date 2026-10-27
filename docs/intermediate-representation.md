@@ -128,7 +128,7 @@ sentence. The paraphraser renders one cluster as one paragraph in the
 cluster's order. The paraphraser introduces no new claim. The
 paraphraser drops no claim. The
 paraphraser may add connective prose: a sentence that asserts nothing
-the IR holds and exists to join claims for the reader. Relations and
+the IR holds and exists to join claims. Relations and
 evidence are not rendered as sentences.
 
 The unit
@@ -157,8 +157,9 @@ paraphraser. A paraphrase could change the force of normative text. When the
 reasoning role renders, it appends the render map in the
 paraphraser's form.
 
-A fix to rendered prose is made in the IR first. After a fix to the
-IR, the prose is rendered again or edited to match. A fix to prose rephrases or
+The reasoning role makes a fix to rendered prose in the IR first.
+After a fix to the IR, the reasoning role renders the prose again or
+edits it to match the IR. A fix to prose rephrases or
 removes words before it adds words. A fix adds words only to supply a
 missing definition or a missing referent.
 
@@ -180,9 +181,8 @@ The reasoning role records each round's findings, each finding's disposition, an
 holds, per round, the word count of the prose and the claim count of
 the IR.
 
-The text delivered after a readable verdict is the text the readable
-round judged, with each finding fixed and confirmed or marked
-unfixed. At a readable verdict,
+The text delivered after a readable verdict is the judged text with
+the round's fixes applied, each finding confirmed or marked unfixed. At a readable verdict,
 the reasoning role fixes the round's findings in the IR and then in
 the prose. The readable round's stranger instance confirms each fix
 before delivery. The reasoning role marks each finding of the
@@ -192,8 +192,9 @@ reasoning role fixes the IR and then the prose. The next round
 reviews the fixed IR and the fixed prose. At the end of a count, the reasoning role sets the IR's Status to
 `reviewed`.
 
-At the limit the reasoning role does not deliver the text. The review
-record states that the limit was reached. Rework is an edit of the IR
+At the limit the reasoning role does not deliver the text. At the
+limit the reasoning role states in the review record that the limit
+was reached. Rework is an edit of the IR
 and the text by the reasoning role. The owner decides, when accepting
 or rejecting a text at the limit, whether the text is delivered,
 reworked or withdrawn. Rework starts a new count from round one.
@@ -233,7 +234,7 @@ first row whose condition holds decides.
 | reader is RD-2 | the paraphraser renders |
 | reader is RD-1 and (claims > 6 or dependent asks > 0 or longest claim > 30 words) | the paraphraser renders |
 | reader is RD-3 and (claims > 12 or dependent asks > 0) | the paraphraser renders |
-| otherwise, for RD-1 or RD-3 | the IR is delivered as it stands |
+| otherwise, for RD-1 or RD-3 | the reasoning role delivers the IR as it stands |
 
 The counts in the conditions are provisional. A change to a count is
 an [editorial change](vocabulary.md#def-editorial-change) while it
@@ -270,11 +271,11 @@ content a model would hold.
 An IR's mutability follows the state of its prose: active or
 delivered. The IR of an
 active document is edited whenever the document is. A disagreement
-between an active document and its IR is a defect in the prose. The
-IR of a delivered report is a record whose Status becomes `delivered`.
+between an active document and its IR is a defect in the prose. The IR of a delivered report is a record. At delivery, the reasoning
+role sets the Status of a report's IR to `delivered`.
 The IR of a delivered report is not edited after delivery.
-On ratification, the reasoning role adds an anchored row for the
-ratified term to the project vocabulary. The vocabulary row of a ratified term is the term's
+On ratification, the reasoning role adds a row with a `def-` anchor
+for the ratified term to the project vocabulary. The vocabulary row of a ratified term is the term's
 [definition site](vocabulary.md#def-definition-site).
 
 ## History
@@ -296,4 +297,4 @@ rounds grew the prose from 2,635 words to 4,516. The record is the
 communication-pipeline project's
 [analysis of the ten rounds](https://github.com/majodali/communication-pipeline/blob/main/eval/analysis/pr51-findings.md).
 
-<!-- render map: C149→¶1 C150→¶1 C179→¶1 C5→¶1 C151→¶1 C166→¶1 C175→¶1 C1→¶2 C4→¶2 C6→¶3 C7→¶4 C8→¶4 C9→¶4 C167→¶4 C10→¶4 C11→¶5 C12→¶5 C13→¶5 C14→¶5 C15→¶5 C16→¶5 C142→¶5 C17→¶6 C18→¶6 C19→¶6 C20→¶7 C21→¶7 C22→¶7 C23→¶8 C24→¶8 C25→¶8 C27→¶8 C152→¶8 C28→¶8 C29→¶8 C30→¶8 C31→¶8 C32→¶8 C33→¶8 C34→¶8 C35→¶8 C36→¶8 C37→¶8 C38→¶8 C39→¶8 C40→¶9 C41→¶9 C42→¶9 C163→¶9 C43→¶9 C44→¶10 C165→¶10 C46→¶11 C47→¶11 C48→¶11 C49→¶12 C50→¶12 C51→¶13 C52→¶13 C53→¶14 C54→¶14 C55→¶14 C56→¶14 C57→¶14 C58→¶14 C59→¶14 C60→¶14 C61→¶14 C62→¶14 C63→¶14 C64→¶14 C65→¶14 C66→¶14 C67→¶14 C68→¶14 C69→¶14 C70→¶14 C71→¶15 C72→¶15 C174→¶15 C73→¶15 C180→¶15 C74→¶15 C75→¶15 C173→¶16 C76→¶16 C164→¶16 C77→¶16 C153→¶16 C78→¶16 C79→¶16 C80→¶16 C154→¶16 C81→¶16 C82→¶16 C83→¶17 C84→¶17 C176→¶17 C85→¶17 C86→¶18 C169→¶18 C87→¶18 C143→¶18 C88→¶19 C93→¶19 C89→¶19 C90→¶19 C91→¶20 C92→¶20 C94→¶20 C95→¶21 C103→¶21 C155→¶22 C97→¶22 C156→¶22 C182→¶22 C183→¶22 C98→¶22 C157→¶22 C158→¶22 C99→¶23 C144→¶23 C100→¶23 C101→¶23 C171→¶23 C172→¶23 C102→¶23 C104→¶24 C106→¶24 C105→¶24 C107→¶25 C108→¶25 C159→¶25 C109→¶25 C110→¶26 C111→¶26 C112→¶26 C113→¶27 C114→¶27 C170→¶27 C115→¶27 C116→¶27 C117→¶27 C118→¶27 C119→¶27 C120→¶28 C145→¶28 C121→¶29 C177→¶29 C122→¶29 C123→¶29 C124→¶29 C146→¶29 C125→¶29 C126→¶29 C127→¶29 C128→¶29 C129→¶30 C130→¶30 C132→¶30 C178→¶30 C131→¶30 C133→¶31 C134→¶31 C160→¶31 C135→¶31 C161→¶31 C136→¶31 C181→¶31 C138→¶32 C139→¶32 C147→¶32 C148→¶32 C184→¶32 C162→¶32 C140→¶32 -->
+<!-- render map: C149→¶1 C150→¶1 C179→¶1 C5→¶1 C151→¶1 C166→¶1 C175→¶1 C1→¶2 C4→¶2 C6→¶3 C7→¶4 C8→¶4 C9→¶4 C167→¶4 C10→¶4 C11→¶5 C12→¶5 C13→¶5 C14→¶5 C15→¶5 C16→¶5 C142→¶5 C17→¶6 C18→¶6 C19→¶6 C20→¶7 C21→¶7 C22→¶7 C23→¶8 C24→¶8 C25→¶8 C27→¶8 C152→¶8 C28→¶8 C29→¶8 C30→¶8 C31→¶8 C32→¶8 C33→¶8 C34→¶8 C35→¶8 C36→¶8 C37→¶8 C38→¶8 C39→¶8 C40→¶9 C41→¶9 C42→¶9 C163→¶9 C43→¶9 C44→¶10 C165→¶10 C46→¶11 C47→¶11 C48→¶11 C49→¶12 C50→¶12 C51→¶13 C52→¶13 C53→¶14 C54→¶14 C55→¶14 C56→¶14 C57→¶14 C58→¶14 C59→¶14 C60→¶14 C61→¶14 C62→¶14 C63→¶14 C64→¶14 C65→¶14 C66→¶14 C67→¶14 C68→¶14 C69→¶14 C70→¶14 C71→¶15 C72→¶15 C174→¶15 C73→¶15 C180→¶15 C74→¶15 C75→¶15 C173→¶16 C76→¶16 C164→¶16 C77→¶16 C153→¶16 C78→¶16 C79→¶16 C80→¶16 C154→¶16 C81→¶16 C82→¶16 C83→¶17 C84→¶17 C176→¶17 C85→¶17 C86→¶18 C169→¶18 C87→¶18 C143→¶18 C88→¶19 C93→¶19 C89→¶19 C90→¶19 C91→¶20 C92→¶20 C94→¶20 C95→¶21 C103→¶21 C155→¶22 C97→¶22 C156→¶22 C182→¶22 C183→¶22 C98→¶22 C157→¶22 C158→¶22 C99→¶23 C144→¶23 C100→¶23 C101→¶23 C171→¶23 C172→¶23 C102→¶23 C104→¶24 C106→¶24 C105→¶24 C107→¶25 C108→¶25 C159→¶25 C109→¶25 C110→¶26 C111→¶26 C112→¶26 C113→¶27 C114→¶27 C170→¶27 C115→¶27 C116→¶27 C117→¶27 C118→¶27 C119→¶27 C120→¶28 C145→¶28 C121→¶29 C177→¶29 C122→¶29 C123→¶29 C124→¶29 C146→¶29 C125→¶29 C126→¶29 C127→¶29 C128→¶29 C129→¶30 C130→¶30 C132→¶30 C178→¶30 C131→¶30 C133→¶31 C134→¶31 C160→¶31 C135→¶31 C185→¶31 C161→¶31 C136→¶31 C181→¶31 C138→¶32 C139→¶32 C147→¶32 C148→¶32 C184→¶32 C162→¶32 C140→¶32 -->

@@ -426,7 +426,8 @@ Status carries the round; the brief lists that form.
 | Round | Prose words | IR claims | Findings | Per 1,000 words | Verdict |
 |---|---|---|---|---|---|
 | 1 | 2,877 | 176 | 15 | 5.2 | not readable (7 in-prose definitions without claims; 1 contradiction; 0 undefined terms) |
-| 2 | 2771 | 176 | | | |
+| 2 | 2,771 | 176 | 9 | 3.2 | not readable (restatement mismatch on C44, the stranger's own; 1 contradiction, 1 undefined term) |
+| 3 | 2796 | 177 | | | |
 
 ### Round 1, count 2, 2026-10-27
 
@@ -457,3 +458,24 @@ Prose 2,877 to 2,768 words. Claims check (stale-aware) before round
 fixed: "the term" without an antecedent (C136: "the ratified term");
 "That session" (C107 names the meta-review session, C108 uses the
 name). Claims check after: 3 changed, 0 missing, 0 stale.
+
+### Round 2, count 2, 2026-10-27
+
+2,771 words; 9 findings; 3.2 per thousand words. Restatement: 190
+words; one mismatch (C44) the stranger called its own, the status
+rule again. Contradictions 1 (the delivered text "judged" against the
+fixes applied at the readable verdict), undefined terms 1 ("anchored
+row"); verdict: not readable for RD-4. By fix kind as the stranger
+judged: cut 1, rephrase 1, add 7; by locus: both 9.
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1, 2, 3, 4, 5 | duties without an actor (C86, C169, C144, C135, C119) | SP-18 | rephrase: the reasoning role named; C135 split (C185) |
+| 6 | "to match" without its object | referent | rephrase C169: "to match the IR" |
+| 7 | the delivered text "judged" vs the fixes applied | contradiction | rephrase C155 to the stranger's wording |
+| 8 | "anchored row" undefined | term | rephrase C136: "a row with a `def-` anchor" |
+| 9 | "for the reader" | excess | cut from C74 |
+
+Prose 2,771 to 2796 words. Claims check (stale-aware) before round 3:
+9 changed or new claims, 0 missing, 0 stale. Same-instance
+confirmation: recorded below.

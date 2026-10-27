@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: draft (count 2, round 1 fixes confirmed, two new defects fixed; round 2 in progress; unratified terms 0)
+Status: draft (count 2, round 2 fixes applied, confirmation pending; unratified terms 0)
 Source: communication-pipeline evaluation case 008 (owner decision of 2026-10-27, change 5) for count 2; for count 1, docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md
@@ -227,7 +227,7 @@ C73. The paraphraser introduces no new claim. [decided: pipeline schema v1.2, 20
 
 C180. The paraphraser drops no claim. [decided: pipeline schema v1.2, 2026-10-25]
 
-C74. The paraphraser may add connective prose: a sentence that asserts nothing the IR holds and exists to join claims for the reader. [decided: pipeline schema v1.2, 2026-10-25]
+C74. The paraphraser may add connective prose: a sentence that asserts nothing the IR holds and exists to join claims. [decided: pipeline schema v1.2, 2026-10-25]
 
 C75. Relations and evidence are not rendered as sentences. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -261,9 +261,9 @@ C176. A paraphrase could change the force of normative text. [decided: owner, 20
 
 C85. When the reasoning role renders, it appends the render map in the paraphraser's form. [decided: owner, 2026-10-27]
 
-C86. A fix to rendered prose is made in the IR first. [decided: owner, 2026-10-27]
+C86. The reasoning role makes a fix to rendered prose in the IR first. [decided: owner, 2026-10-27]
 
-C169. After a fix to the IR, the prose is rendered again or edited to match. [decided: owner, 2026-10-27]
+C169. After a fix to the IR, the reasoning role renders the prose again or edits it to match the IR. [decided: owner, 2026-10-27]
 
 C87. A fix to prose rephrases or removes words before it adds words. evidence: E2. [decided: owner, 2026-10-27]
 
@@ -287,7 +287,7 @@ C94. A finding that proposes fewer words, a plainer phrase or a removed repetiti
 
 C95. The reasoning role records each round's findings, each finding's disposition, and the verdict in the review record. [decided: methodology PR #50, 2026-10-26]
 
-C155. The text delivered after a readable verdict is the text the readable round judged, with each finding fixed and confirmed or marked unfixed. [decided: owner, 2026-10-27]
+C155. The text delivered after a readable verdict is the judged text with the round's fixes applied, each finding confirmed or marked unfixed. [decided: owner, 2026-10-27]
 
 C97. At a readable verdict, the reasoning role fixes the round's findings in the IR and then in the prose. [decided: owner, 2026-10-27]
 
@@ -305,7 +305,7 @@ C99. At the limit the reasoning role does not deliver the text. [decided: owner,
 
 C158. At the end of a count, the reasoning role sets the IR's Status to `reviewed`. [decided: owner, 2026-10-27]
 
-C144. At the limit the review record states that the limit was reached. [decided: owner, 2026-10-26]
+C144. At the limit the reasoning role states in the review record that the limit was reached. [decided: owner, 2026-10-26]
 
 C101. Rework is an edit of the IR and the text by the reasoning role. [decided: owner, 2026-10-27]
 
@@ -357,7 +357,7 @@ C117. When the reader is RD-1 and the IR has more than six claims, a dependent a
 
 C118. When the reader is RD-3 and the IR has more than twelve claims or a dependent ask, the paraphraser renders. [decided: pipeline branch point v1.1, 2026-10-25]
 
-C119. Otherwise, for RD-1 or RD-3, the IR is delivered as it stands. [decided: pipeline branch point v1.1, 2026-10-25]
+C119. Otherwise, for RD-1 or RD-3, the reasoning role delivers the IR as it stands. [decided: pipeline branch point v1.1, 2026-10-25]
 
 C120. The counts in the conditions are provisional. [decided: methodology PR #49, 2026-10-26]
 
@@ -405,11 +405,13 @@ C134. The IR of an active document is edited whenever the document is. [decided:
 
 C160. A disagreement between an active document and its IR is a defect in the prose. [decided: pipeline schema v1.2, 2026-10-25]
 
-C135. The IR of a delivered report is a record whose Status becomes `delivered`. [decided: pipeline schema v1.2, 2026-10-25]
+C135. The IR of a delivered report is a record. [decided: pipeline schema v1.2, 2026-10-25]
+
+C185. At delivery, the reasoning role sets the Status of a report's IR to `delivered`. [decided: pipeline schema v1.2, 2026-10-25]
 
 C161. The IR of a delivered report is not edited after delivery. [decided: pipeline schema v1.2, 2026-10-25]
 
-C136. On ratification, the reasoning role adds an anchored row for the ratified term to the project vocabulary. [decided: methodology PR #48, 2026-10-26]
+C136. On ratification, the reasoning role adds a row with a `def-` anchor for the ratified term to the project vocabulary. [decided: methodology PR #48, 2026-10-26]
 
 C181. The vocabulary row of a ratified term is the term's definition site. [decided: methodology PR #48, 2026-10-26]
 
