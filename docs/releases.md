@@ -15,6 +15,25 @@ carry: amendment title and PR link · suggested by (evidencing instance)
 Minor — normative content, one constitutional change (the Article 5
 `Protects:` field).
 
+### The meta-review trigger is signal-based
+
+- **PR**: this amendment's PR.
+- **Suggested by**: the owner's decision of 2026-10-27 after five
+  recorded counts (10, 10, 6, 3 and 4 rounds): the trigger of three
+  rounds predated the measurements and fired on counts that converged
+  without any step failing, while every meta-review worth running was
+  foreshadowed by a signal in its review record. Four signals replace
+  the count, with the limit of ten kept as the one count-based trigger.
+  Amended in the specification's own IR, count 3 of its review record.
+- **Impact**: methodology (`methodology-corpus`) — *accommodated*: the
+  reasoning role checks four signals at the end of a count. Every other
+  project — *accommodated*: W-009 does not apply unless adopted by
+  declaration. communication-pipeline — *accommodated*: branch point
+  v1.6 carries the signals and a script that reads them.
+- **Migration note**: none.
+- **Protects**: proportional verification — a meta-review runs where
+  the record shows the process failing, not where a text was long.
+
 ### The readable round's findings are fixed and confirmed before delivery
 
 - **PR**: this amendment's PR, superseding the rule of PR #52 that a

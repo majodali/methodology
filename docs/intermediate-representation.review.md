@@ -546,6 +546,55 @@ confirmation found every fix holding and noted three new defects
 the status rule drew its seventh self-attributed restatement
 compression across the two counts, without a prose change this time.
 
-Meta-review: not required for count 2. Owner decision of 2026-10-27,
+Count 2 meta-review: not required. Owner decision of 2026-10-27,
 on accepting the amendment: the three-round trigger predates the
 measurements and is to be revisited.
+
+## Count 3, 2026-10-27: the meta-review trigger is signal-based
+
+Amendment by owner decision of 2026-10-27: the four signals replace
+the trigger of three rounds; the limit stays. Claims C104 and C105
+rewritten, C187 to C193 added, T20 proposed, R34 to R38 added. The
+prose edit is the Meta-review paragraph and one History sentence.
+Rounds under the pipeline's v1.5 procedure.
+
+### Curve, count 3
+
+| Round | Prose words | IR claims | Findings | Per 1,000 words | Verdict |
+|---|---|---|---|---|---|
+| 1 | 2,970 | 185 | 3 | 1.0 | readable (restatement matched; 0 contradictions, 0 undefined terms) |
+
+### Round 1, count 3, 2026-10-27
+
+2,970 words; 3 findings; 1.0 per thousand words. Restatement: 180
+words, matching the IR. Contradictions 0, undefined terms 0; verdict:
+readable for RD-4. The count ends at round 1. The three findings are
+fixed and the round's instance confirms each before delivery.
+
+| # | Finding (shortened) | Kind | Fix | Confirmation |
+|---|---|---|---|---|
+| 1 | "signal or none" | excess | cut (C192) | confirmed |
+| 2 | "meta-review subject" used in the signal's definition before the rule | term order | cut the clause; T20 points at the section | confirmed |
+| 3 | the kept review record has no actor | SP-18 | rephrase C172: the reasoning role keeps it | confirmed |
+
+Claims check (stale-aware) after the fixes: 2 changed claims, 0
+missing, 0 stale. Prose 2,970 to 2964 words.
+
+Same-instance confirmation before delivery: 3 of 3 fixes hold, each
+marked confirmed above; the instance noted that "named in this
+section" added words that supplied no definition or referent, against
+the fix rule, and the words were cut. Footprint before delivery:
+declared 5, changed 5, surprises 0, misses 0 (docs/vocabulary.md added
+to the declaration after a first run showed it as a surprise).
+
+### Verdict, count 3
+
+Readable for RD-4 at round 1. Findings 3, at 1.0 per thousand words;
+contradictions 0. Prose 2,970 words at round 1 and 2,961 at delivery;
+IR 185 claims.
+
+Meta-review: not indicated. Signals checked at the end of count 3,
+under the rule this count introduces: first, no fix rejected and no
+missing or stale claim; second, no finding raised again and no
+mismatch recurring; third, growth of minus 0.3 percent; fourth, no
+round after round 3. The limit was not reached.

@@ -2,10 +2,10 @@
 
 Reader: RD-4
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: delivered (count 2 accepted 2026-10-27; round 4 readable; fixes confirmed; surprises 0; misses 0; unratified terms 0)
-Source: communication-pipeline evaluation case 008 (owner decision of 2026-10-27, change 5) for count 2; for count 1, docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
+Status: reviewed (count 3, round 1 readable; fixes confirmed; surprises 0; misses 0; unratified terms 1)
+Source: the owner's decision of 2026-10-27 on signal-based meta-review triggers (count 3); communication-pipeline evaluation case 008 (owner decision of 2026-10-27, change 5) for count 2; for count 1, docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
-Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md; docs/releases.md
+Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md; docs/releases.md; docs/vocabulary.md
 
 ## Terms
 
@@ -46,6 +46,8 @@ T17. Register fact. defined-at: vocabulary.md#def-register-fact [decided: owner,
 T18. Normative text. defined-at: vocabulary.md#def-normative-text [decided: owner, 2026-10-27]
 
 T19. Limit. defined-at: vocabulary.md#def-limit [decided: owner, 2026-10-27]
+
+T20. Meta-review signal: one of four conditions in a review record. [proposed: this IR]
 
 ## Claims
 
@@ -315,7 +317,7 @@ C186. When the owner decides delivery, the reasoning role delivers the text. [de
 
 C171. Rework starts a new count from round one. [decided: owner, 2026-10-27]
 
-C172. The review record of the ended count is kept through rework. [decided: owner, 2026-10-27]
+C172. The reasoning role keeps the ended count's review record through rework. [decided: owner, 2026-10-27]
 
 C102. For an amendment, the owner's decision is its adjudication under Article 8. [decided: constitution Article 8]
 
@@ -323,9 +325,21 @@ C103. The review record holds, per round, the word count of the prose and the cl
 
 ### Meta-review
 
-C104. A text whose review record holds three or more rounds in one count is a meta-review subject. [decided: owner, 2026-10-26]
+C104. A text is a meta-review subject when its count reaches the limit or its review record shows a meta-review signal. [decided: owner, 2026-10-27]
 
-C105. When the reasoning role starts a third round, it writes the line `Meta-review: pending` in the review record. [decided: owner, 2026-10-27]
+C187. The first signal: in two or more rounds of the count, a fix did not reach the prose or was not confirmed. [decided: owner, 2026-10-27]
+
+C188. The second signal: a finding declined in an earlier round was raised again, or a restatement mismatch recurred on one passage. [decided: owner, 2026-10-27]
+
+C189. The third signal: the prose grew across the count by more than one tenth of its round-1 word count. [decided: owner, 2026-10-27]
+
+C190. The fourth signal: after round 3, a stranger found a contradiction in a passage an earlier round's fix touched. [decided: owner, 2026-10-27]
+
+C105. At the end of a count, the reasoning role checks the four signals against the review record. [decided: owner, 2026-10-27]
+
+C191. The reasoning role writes `Meta-review: pending` when the text is a subject and `Meta-review: not indicated` otherwise, naming the signals checked. [decided: owner, 2026-10-27]
+
+C192. The owner may dispatch a meta-review of any text. [decided: owner, 2026-10-27]
 
 C106. The reasoning role asks the owner, in the report that delivers a meta-review subject, to dispatch its meta-review. [decided: owner, 2026-10-27]
 
@@ -429,6 +443,8 @@ C148. The rounds until readable, the limit of ten and the meta-review were added
 
 C184. The fixing and confirmation of the readable round's findings before delivery were added on 2026-10-27, by owner decision on communication-pipeline evaluation case 008. [decided: owner, 2026-10-27]
 
+C193. The trigger of three rounds was replaced by the four signals on 2026-10-27, by owner decision after five recorded counts. [decided: owner, 2026-10-27]
+
 C162. The owner placed the meta-review in the communication-pipeline project until that project is archived, and in the methodology repository after. [decided: owner, 2026-10-26]
 
 C140. The specification was rewritten from this IR after ten rounds on PR #51's text grew the prose from 2,635 to 4,516 words without a readable verdict. evidence: E1, E2. [decided: owner, 2026-10-27]
@@ -471,7 +487,17 @@ R14. C102 refines C100 because adjudication is the owner's decision in the amend
 
 R15. C103 supports C140 because the recorded curve is what showed the growth.
 
-R16. C104 depends-on C88 because rounds beyond two exist only under the rounds rule.
+R16. C104 depends-on C88 because the count and its record exist only under the rounds rule.
+
+R34. C187 refines C104 because each signal is one condition of the rule.
+
+R35. C188 refines C104 because each signal is one condition of the rule.
+
+R36. C189 refines C104 because each signal is one condition of the rule.
+
+R37. C190 refines C104 because each signal is one condition of the rule.
+
+R38. C189 depends-on C103 because the growth is read from the recorded word counts.
 
 R17. C113 depends-on C84 because the first row selects the reasoning role as renderer.
 
@@ -516,3 +542,5 @@ A2 resolved: ratified by the owner, 2026-10-27; vocabulary rows added.
 A3. Ratify or strike the proposed claims C6, C85, C86, C87, C93, C94, C101, C103, C105, C106, C108, C109, C140, C143, C158, C159, C169, C171, C172. Depends: A1.
 
 A3 resolved: ratified by the owner, 2026-10-27; the claims carry decided provenance from that date.
+
+A4. Ratify or strike the term meta-review signal (T20). Depends: C104.

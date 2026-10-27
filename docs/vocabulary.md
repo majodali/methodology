@@ -261,7 +261,8 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   - <a id="def-meta-review"></a>**Meta-review** — a review, by a
     session with no part in the rounds, of a text's review record and
     the text itself, reporting whether the process needs a change. Due
-    for a text with three or more rounds in one count.
+    when a text's count reaches the limit or its review record shows a
+    meta-review signal (the specification's Meta-review section).
   - <a id="def-footprint"></a>**Footprint** — the files or directories
     an IR's deliverable is expected to change, declared in the IR's
     Footprint header and compared with the branch's changes before
