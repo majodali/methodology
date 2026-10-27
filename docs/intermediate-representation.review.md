@@ -37,7 +37,8 @@ Register, Entry, Target, Provenance) except as noted per round.
 | 3 | revised | 2,842 | 162 | 17 | 6.0 | not readable (contradictions 1 on the IR side, undefined terms 1; four restatement mismatches the stranger attributed to its own restatement) |
 | 4 | revised | 2,829 | 165 | 8 | 2.8 | not readable (contradictions 3, undefined terms 2; six restatement mismatches the stranger attributed to its own compressions) |
 | 5 | revised | 2,824 | 168 | 7 | 2.5 | not readable (contradictions 0, undefined terms 1; two restatement mismatches, the stranger's overstatement of C104) |
-| 6 | revised | 2,830 | 170 | | | |
+| 6 | revised | 2,830 | 170 | 12 | 4.2 | not readable (contradictions 2, undefined terms 1; restatement mismatches on C44, C45, C104 the stranger called its own, and on T19 held as a term only) |
+| 7 | revised | 2,839 | 173 | | | |
 
 ## Round 1a, 2026-10-26 (old brief)
 
@@ -239,3 +240,35 @@ Fixes after round 5: IR 168 to 170 claims, terms 18 to 19; prose
 2,824 to 2,830 words, the first round in which the prose grew (six
 words, for the limit's definition). Lint clean; round trip 170 of 170.
 Two findings declined, the first declines since round 1a.
+
+## Round 6, 2026-10-27 (revised brief, reads ordered)
+
+2,830 words; 12 findings; 4.2 per thousand words, up from 2.5.
+Restatement: 185 words; "each element" for the status rule and
+"required" for the meta-review subject, both called restatement
+error by the stranger; the limit held as a term with no claim.
+Contradictions 2, undefined terms 1; verdict: not readable for RD-4.
+By fix kind as the stranger judged: cut 0, rephrase 7, add 5; by
+locus: prose 4, IR 1, both 7. Both contradictions sit in the Stranger
+rounds paragraph that round 5's fixes rewrote: the until-readable rule
+against the limit, and the delivered text against the owner's
+delivery at the limit. The second stranger in a row read "meta-review
+subject" as mandatory, so the paragraph now puts the ask before the
+pending line.
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1 | "count" before its definition | term order | rephrase: the limit defined without the count ("ten rounds"); the count then uses the limit |
+| 2 | "rework" before its definition | term order | cut "or to rework" from T14; C171 covers the rework case |
+| 3 | until readable vs ends at the limit | contradiction | rephrase C88 "until a round returns readable or the count reaches the limit"; C89 becomes the limit claim |
+| 4 | delivered text vs delivery at the limit | contradiction | rephrase C155: "After a readable verdict" |
+| 5–7 | rule and reason in one sentence (C84, C121, C132) | compound | split: C176, C177, C178, each supporting its rule by relation |
+| 8 | "The performing session" | referent | rephrase C108: "The session the owner starts" |
+| 9 | "dependent asks" unlinked to its definition | term | rephrase C110: "dependent asks (asks with a `Depends:` field)" |
+| 10 | RD-1, RD-2, RD-3, RD-5 unnamed | identifier | declined, as in round 5; third stranger to raise it, the SP-05 brief wording ("name and link") is stricter than P-004 ("name or link") |
+| 11 | "The reasoning role records in the review record" repeated | excess | rephrase C103: "The review record holds, per round" |
+| 12 | the limit sentence had no claim | IR gap | C89 restated as the limit claim |
+
+Fixes after round 6: IR 170 to 173 claims (three reason splits);
+prose 2,830 to 2,839 words (nine words, from the three split reasons
+restating their subjects). Lint clean; round trip 173 of 173.

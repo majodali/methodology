@@ -35,7 +35,7 @@ T12. Review record: the file `<subject>.review.md` beside an IR, holding each ro
 
 T13. Round: one stranger review of an IR and its prose, returning findings and a verdict. [proposed: this IR]
 
-T14. Count: the sequence of rounds from a first round to a readable verdict, to the limit, or to rework. [proposed: this IR]
+T14. Count: the sequence of rounds from a first round to a readable verdict or to the limit. [proposed: this IR]
 
 T15. Meta-review: a review, by a session with no part in the rounds, of a text's review record and the text itself, reporting whether the process needs a change. [proposed: methodology PR #51]
 
@@ -45,7 +45,7 @@ T17. Register fact: a statement about the state of a Register or of a row in one
 
 T18. Normative text: a rule, a specification, or any text whose words bind. [proposed: this IR]
 
-T19. Limit: ten rounds in one count. [proposed: this IR]
+T19. Limit: ten rounds. [proposed: this IR]
 
 ## Claims
 
@@ -257,7 +257,9 @@ C82. The rendering states an empty Asks section as "No asks." [decided: methodol
 
 C83. The paraphraser appends a render map as one comment line of the form `<!-- render map: C1→¶1 C2→¶1 … -->`. [decided: pipeline schema v1.2, 2026-10-25]
 
-C84. Normative text is rendered by the reasoning role, not by the paraphraser, because a paraphrase could change its force. [decided: owner, 2026-10-25]
+C84. Normative text is rendered by the reasoning role, not by the paraphraser. [decided: owner, 2026-10-25]
+
+C176. A paraphrase could change the force of normative text. [decided: owner, 2026-10-25]
 
 C85. When the reasoning role renders, it appends the render map in the paraphraser's form. [proposed: this IR]
 
@@ -271,9 +273,9 @@ C143. A fix adds words only to supply a missing definition or a missing referent
 
 ### Stranger rounds
 
-C88. A stranger review runs in rounds until a round returns the verdict readable. [decided: owner, 2026-10-26]
+C88. A stranger review runs in rounds until a round returns the verdict readable or the count reaches the limit. [decided: owner, 2026-10-26]
 
-C89. A count ends at the limit when no round has returned readable. [decided: owner, 2026-10-26]
+C89. The limit is ten rounds. [decided: owner, 2026-10-26]
 
 C90. The rounds apply to every stranger review the rendering conditions select. [decided: owner, 2026-10-26]
 
@@ -287,7 +289,7 @@ C94. A finding that proposes fewer words, a plainer phrase or a removed repetiti
 
 C95. The reasoning role records each round's findings, each finding's disposition, and the verdict in the review record. [decided: methodology PR #50, 2026-10-26]
 
-C155. The text delivered is the text the readable round judged. [decided: methodology PR #50, 2026-10-26]
+C155. After a readable verdict, the text delivered is the text that round judged. [decided: methodology PR #50, 2026-10-26]
 
 C97. The findings of a readable round are recorded unfixed. [decided: methodology PR #51 rounds, 2026-10-26]
 
@@ -313,7 +315,7 @@ C172. The review record of the ended count is kept through rework. [proposed: me
 
 C102. For an amendment, the owner's decision on a text at the limit is its adjudication under Article 8. [decided: constitution Article 8]
 
-C103. The reasoning role records in the review record, per round, the word count of the prose and the claim count of the IR. [proposed: this IR]
+C103. The review record holds, per round, the word count of the prose and the claim count of the IR. [proposed: this IR]
 
 ### Meta-review
 
@@ -321,11 +323,11 @@ C104. A text whose review record holds three or more rounds in one count is a me
 
 C105. When the reasoning role starts a third round, it writes the line `Meta-review: pending` in the review record. [proposed: methodology PR #51]
 
-C106. At delivery of a meta-review subject, the reasoning role asks the owner, in the report that delivers the text, to dispatch the meta-review. [proposed: methodology PR #51]
+C106. The reasoning role asks the owner, in the report that delivers a meta-review subject, to dispatch its meta-review. [proposed: methodology PR #51]
 
 C107. The meta-review is performed by a session the owner starts. [decided: owner, 2026-10-26]
 
-C108. The performing session delivers the meta-review as its report to the owner. [proposed: methodology PR #51]
+C108. The session the owner starts delivers the meta-review as its report to the owner. [proposed: methodology PR #51]
 
 C159. On delivery of the meta-review, the reasoning role sets the review record's line to `Meta-review: delivered` with a link. [proposed: methodology PR #51]
 
@@ -333,7 +335,7 @@ C109. A `Meta-review: pending` line in the review record of an accepted delivera
 
 ### Rendering conditions
 
-C110. The inputs to the rendering conditions are the IR's reader, purpose, Normative header, claim count, proposed-term count, count of asks with `Depends:`, and longest claim, plus whether the owner asked for a review. [decided: pipeline branch point v1.1, 2026-10-25]
+C110. The inputs to the rendering conditions are the IR's reader, purpose, Normative header, claim count, proposed-term count, count of dependent asks (asks with a `Depends:` field), and longest claim, plus whether the owner asked for a review. [decided: pipeline branch point v1.1, 2026-10-25]
 
 C111. The mechanical checks run in every case. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -361,7 +363,9 @@ C145. A change to a count is an editorial change while it changes no obligation.
 
 ### The footprint
 
-C121. An IR whose deliverable is a chat message has no footprint, because no branch carries the deliverable. [decided: pipeline schema v1.3, 2026-10-26]
+C121. An IR whose deliverable is a chat message has no footprint. [decided: pipeline schema v1.3, 2026-10-26]
+
+C177. No branch carries a chat message. [decided: pipeline schema v1.3, 2026-10-26]
 
 C122. When the Footprint header is absent or empty, no comparison is made. [decided: pipeline schema v1.3, 2026-10-26]
 
@@ -387,7 +391,9 @@ C130. A report to RD-2 always starts as an IR. [decided: pipeline branch point v
 
 C131. A report to RD-1 or RD-3 that introduces no term, records no decision and states no register fact may be written as prose directly, under the style guide's mechanical checks. [decided: owner, 2026-10-25]
 
-C132. A term, a decision or a register fact requires the IR, because each is content a model would hold. [decided: owner, 2026-10-25]
+C132. A term, a decision or a register fact requires the IR. [decided: owner, 2026-10-25]
+
+C178. A term, a decision and a register fact are each content a model would hold. [decided: owner, 2026-10-25]
 
 ### Lifecycle
 
@@ -432,6 +438,12 @@ R5. C71 depends-on C110 because the conditions decide whether rendering happens.
 R29. C168 refines C71 because delivery as it stands is the case no condition selects.
 
 R6. C84 refines C72 because normative text swaps the renderer and keeps the rule of one claim per sentence.
+
+R30. C176 supports C84 because the risk to force is the reason for the renderer.
+
+R31. C177 supports C121 because a footprint is a branch comparison.
+
+R32. C178 supports C132 because model content is what the IR holds.
 
 R7. C85 refines C83 because the renderer changes and the map stays.
 
