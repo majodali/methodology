@@ -40,7 +40,8 @@ Register, Entry, Target, Provenance) except as noted per round.
 | 6 | revised | 2,830 | 170 | 12 | 4.2 | not readable (contradictions 2, undefined terms 1; restatement mismatches on C44, C45, C104 the stranger called its own, and on T19 held as a term only) |
 | 7 | revised | 2,839 | 173 | 7 | 2.5 | not readable (contradictions 2, undefined terms 0; one restatement mismatch the stranger called its own) |
 | 8 | revised | 2,823 | 173 | 7 | 2.5 | not readable (contradictions 0, undefined terms 0; restatement mismatch on C44, C45 only) |
-| 9 | revised | 2,814 | 173 | | | |
+| 9 | revised | 2,814 | 173 | 7 | 2.5 | not readable (restatement matched; contradictions 1, undefined terms 1) |
+| 10 | revised | 2,804 | 172 | | | |
 
 ## Round 1a, 2026-10-26 (old brief)
 
@@ -335,3 +336,28 @@ Fixes after round 8: IR 173 claims (one cut, one header claim
 added); prose 2,823 to 2,814 words. Lint clean; round trip 173 of
 173; the four changed passages re-read against C44, C88, C167, C173,
 T14.
+
+## Round 9, 2026-10-27 (revised brief, reads ordered)
+
+2,814 words; 7 findings; 2.5 per thousand words. Restatement: 185
+words, matching the IR, the first match of the count. Contradictions
+1 (the term element must hold the term's meaning, and a term with a
+definition site must not restate it; the IR's own T1 to T7 broke the
+rule), undefined terms 1 ("inline gloss"); verdict: not readable for
+RD-4. By fix kind as the stranger judged: cut 1, rephrase 2, add 4;
+by locus: prose 3, both 4.
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1 | C73 two prohibitions | compound | split: C73, C180 |
+| 2 | term body vs no restatement | contradiction | rephrase C23: "either `defined-at:` ... or its meaning"; C26 cut; T1 to T7 lose their restated meanings |
+| 3 | "inline gloss" undefined | term | rephrase C78: "carries its definition in parentheses instead of a link" |
+| 4 | RD-1, RD-2, RD-3, RD-5 unnamed | identifier | declined, as in rounds 5 to 8; sixth stranger |
+| 5, 6 | "Those rounds", "those rounds" | referent | rephrase: "The ten rounds", "the ten rounds" |
+| 7 | "Otherwise the IR is delivered as it stands" repeats the table's last row | excess | cut C168 and R29 |
+
+Fixes after round 9: IR 173 to 172 claims; prose 2,814 to 2,804
+words. Lint clean; round trip 172 of 172; the five changed passages
+re-read against C23, C73, C78, C140, C180. The first prose edit
+script aborted again on a wrapped anchor; the second applied every
+edit, checked by grep before the round was launched.

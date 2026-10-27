@@ -9,19 +9,19 @@ Footprint: docs/intermediate-representation.md; docs/intermediate-representation
 
 ## Terms
 
-T1. Intermediate representation (IR): the structured form the reasoning role writes before prose exists, holding the terms, claims, relations, evidence and asks of one communication. defined-at: vocabulary.md#def-intermediate-representation [decided: owner, 2026-10-24]
+T1. Intermediate representation (IR). defined-at: vocabulary.md#def-intermediate-representation [decided: owner, 2026-10-24]
 
-T2. Reasoning role: the agent that does the thinking and writes its output as an IR. defined-at: vocabulary.md#def-reasoning-role [decided: owner, 2026-10-24]
+T2. Reasoning role. defined-at: vocabulary.md#def-reasoning-role [decided: owner, 2026-10-24]
 
-T3. Paraphraser: the agent role that renders an IR into prose for a named reader and adds no claim. defined-at: vocabulary.md#def-paraphraser [decided: owner, 2026-10-24]
+T3. Paraphraser. defined-at: vocabulary.md#def-paraphraser [decided: owner, 2026-10-24]
 
-T4. Stranger: a reviewer with no access to the conversation that produced the text and no content contribution to the project. defined-at: vocabulary.md#def-stranger [decided: owner, 2026-10-23]
+T4. Stranger. defined-at: vocabulary.md#def-stranger [decided: owner, 2026-10-23]
 
-T5. Reader catalog: the five readers RD-1 to RD-5 of the style guide's Readers table, each with a readability test. defined-at: style.md#readers [decided: owner, 2026-10-26]
+T5. Reader catalog. defined-at: style.md#readers [decided: owner, 2026-10-26]
 
-T6. Convergence: the state in which a project's vocabulary is ratified and its predictions hold; read mechanically through the unratified-vocabulary and prediction-surprise indicators. defined-at: vocabulary.md#def-convergence [decided: owner, 2026-10-23]
+T6. Convergence. defined-at: vocabulary.md#def-convergence [decided: owner, 2026-10-23]
 
-T7. Definition site: the one place a term is defined, a vocabulary row or an anchored heading. defined-at: vocabulary.md#def-definition-site [decided: owner, 2026-10-26]
+T7. Definition site. defined-at: vocabulary.md#def-definition-site [decided: owner, 2026-10-26]
 
 T8. Provenance status: the tag ending each term, claim and cluster: decided, proposed or inferred. [proposed: this IR]
 
@@ -111,13 +111,11 @@ C21. An identifier is a kind letter and a number, unique within the IR. [decided
 
 C22. A split claim takes a new number, never a suffix. [decided: pipeline schema v1.2, 2026-10-25]
 
-C23. A term element (`T`) holds the word or phrase, its meaning in the communication, and `defined-at:` with a link when a definition site exists. [decided: pipeline schema v1.2, 2026-10-25]
+C23. A term element (`T`) holds the word or phrase and either `defined-at:` with a link to its definition site or its meaning in the communication. [decided: pipeline schema v1.2, 2026-10-25]
 
 C24. A term is defined once per IR. [decided: pipeline schema v1.2, 2026-10-25]
 
 C25. Every project-specific term used in a claim appears as a term element. [decided: pipeline schema v1.2, 2026-10-25]
-
-C26. A term with a definition site links the site and does not restate the definition. [decided: methodology PR #48, 2026-10-26]
 
 C27. A term without a definition site has status proposed. [decided: methodology PR #48, 2026-10-26]
 
@@ -221,13 +219,13 @@ C70. CK-16, element form, fires when a line inside a section is neither an eleme
 
 C71. Prose is rendered from the IR when a rendering condition selects rendering. [decided: owner, 2026-10-24]
 
-C168. When no rendering condition selects rendering, the IR is delivered as it stands. [decided: owner, 2026-10-24]
-
 C72. The paraphraser renders one claim as one sentence. [decided: pipeline schema v1.2, 2026-10-25]
 
 C174. The paraphraser renders one cluster as one paragraph in the cluster's order. [decided: pipeline schema v1.2, 2026-10-25]
 
-C73. The paraphraser introduces no new claim and drops no claim. [decided: pipeline schema v1.2, 2026-10-25]
+C73. The paraphraser introduces no new claim. [decided: pipeline schema v1.2, 2026-10-25]
+
+C180. The paraphraser drops no claim. [decided: pipeline schema v1.2, 2026-10-25]
 
 C74. The paraphraser may add connective prose: a sentence that asserts nothing the IR holds and exists to join claims for the reader. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -243,7 +241,7 @@ C77. A term the IR introduces is defined in a sentence of its own before its fir
 
 C153. A term the IR introduces is listed under *Terms introduced*. [decided: methodology PR #46, 2026-10-26]
 
-C78. For RD-5 a link becomes an inline gloss. [decided: methodology PR #48, 2026-10-26]
+C78. For RD-5, the first use of a term carries its definition in parentheses instead of a link. [decided: methodology PR #48, 2026-10-26]
 
 C79. For RD-1 or RD-2, a claim renders under the part its `part:` field names. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -434,8 +432,6 @@ R3. C35 refines C40 because a cross-claim reference is a referent the relation n
 R4. C50 depends-on C49 because the indicator counts unratified terms.
 
 R5. C71 depends-on C110 because the conditions decide whether rendering happens.
-
-R29. C168 refines C71 because delivery as it stands is the case no condition selects.
 
 R6. C84 refines C72 because normative text swaps the renderer and keeps the rule of one claim per sentence.
 
