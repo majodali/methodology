@@ -41,7 +41,7 @@ Register, Entry, Target, Provenance) except as noted per round.
 | 7 | revised | 2,839 | 173 | 7 | 2.5 | not readable (contradictions 2, undefined terms 0; one restatement mismatch the stranger called its own) |
 | 8 | revised | 2,823 | 173 | 7 | 2.5 | not readable (contradictions 0, undefined terms 0; restatement mismatch on C44, C45 only) |
 | 9 | revised | 2,814 | 173 | 7 | 2.5 | not readable (restatement matched; contradictions 1, undefined terms 1) |
-| 10 | revised | 2,804 | 172 | | | |
+| 10 | revised | 2,804 | 172 | 6 | 2.1 | readable (restatement matched; contradictions 0, undefined terms 0) |
 
 ## Round 1a, 2026-10-26 (old brief)
 
@@ -154,8 +154,6 @@ Fixes after round 2: IR 161 to 162 claims (two splits, two cuts, one
 header claim); prose 2,864 to 2,842 words. Lint clean; round trip
 162 of 162.
 
-Meta-review: pending (the third round starts; the rule C104 makes
-this text a meta-review subject).
 
 ## Round 3, 2026-10-27 (revised brief, reads ordered)
 
@@ -361,3 +359,39 @@ words. Lint clean; round trip 172 of 172; the five changed passages
 re-read against C23, C73, C78, C140, C180. The first prose edit
 script aborted again on a wrapped anchor; the second applied every
 edit, checked by grep before the round was launched.
+
+## Round 10, 2026-10-27 (revised brief, reads ordered)
+
+2,804 words; 6 findings; 2.1 per thousand words. Restatement: 190
+words, matching the IR. Contradictions 0, undefined terms 0;
+verdict: readable for RD-4. The count ends at round 10 with a
+readable verdict. The text delivered is the text this round judged.
+The six findings are recorded unfixed, as the rule for a readable
+round says; the next edit of the specification fixes them.
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1 | RD-5 rule's scope: terms with a definition site | term scope | accepted finding, unfixed; fix: C78 "a term with a definition site" |
+| 2 | "reworked" two sentences before Rework's definition | term order | accepted finding, unfixed; fix: C101 before C100 |
+| 3 | C136 two claims | compound | accepted finding, unfixed; fix: split |
+| 4 | RD-1, RD-2, RD-3, RD-5 unnamed | identifier | declined, as in rounds 5 to 9; seventh stranger; raised for the meta-review as a brief-versus-rule disagreement (SP-05 "name and link" against P-004 "name or link") |
+| 5 | "Register" unlinked at first use in its section | link | accepted finding, unfixed; fix: link |
+| 6 | "from a first round to its end" | excess | accepted finding, unfixed; fix: cut from T14 |
+
+Footprint before delivery: declared 3, changed 3, surprises 0,
+misses 0. IR Status set to `reviewed (unratified terms 12; surprises
+0; misses 0; round 10 readable)`.
+
+## Verdict
+
+Readable for RD-4 at round 10 of a count of ten, by the revised
+brief. Findings per thousand words by round: 7.6 (old brief) and 9.0
+(revised) at round 1, then 4.5, 6.0, 2.8, 2.5, 4.2, 2.5, 2.5, 2.5,
+2.1. Prose 2,884 words at round 1 and 2,804 at round 10; IR 148
+claims at round 1 and 172 at round 10, the growth from splits. The
+same rules in PR #51's text, fixed in prose, ran 2,572 to 4,516 words
+over ten rounds and never reached readable.
+
+Meta-review: pending. This text is a meta-review subject (ten rounds
+in one count). The delivering report asks the owner to dispatch the
+meta-review.
