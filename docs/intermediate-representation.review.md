@@ -403,8 +403,149 @@ declined. Prose 2,804 to 2,808 words;
 IR 172 to 173 claims (C136 split). The edit fixes accepted findings
 and ratification only, so it starts no new rounds.
 
-Meta-review: delivered, 2026-10-27, by a fresh session with no part in
-the rounds: communication-pipeline
+Count 1 meta-review: delivered, 2026-10-27, by a fresh session with no
+part in the rounds: communication-pipeline
 [evaluation case 007](https://github.com/majodali/communication-pipeline/blob/main/eval/cases/007-meta-review-full-ir-rounds-2026-10-27.md)
 (seven changes proposed, six recommended; the round-10 text judged
-readable for RD-4).
+readable for RD-4). Count 2 below has its own line.
+
+## Count 2, 2026-10-27: the readable round's findings fixed before delivery
+
+Amendment from communication-pipeline evaluation case 008, change 5,
+adopted by the owner on 2026-10-27. Claims C97, C155 and C156
+rewritten, C182 to C184 added, R27 and R28 changed, R33 added. The
+prose edit is the Stranger rounds paragraph on the readable verdict
+and one History sentence. Rounds under the pipeline's v1.5 procedure:
+the claims check before each round, the stranger reading the prose
+first, the confirmation after the fixes, declined findings carried.
+The document's status line stays `active` on main while the IR's
+Status carries the round; the brief lists that form.
+
+### Curve, count 2
+
+| Round | Prose words | IR claims | Findings | Per 1,000 words | Verdict |
+|---|---|---|---|---|---|
+| 1 | 2,877 | 176 | 15 | 5.2 | not readable (7 in-prose definitions without claims; 1 contradiction; 0 undefined terms) |
+| 2 | 2,771 | 176 | 9 | 3.2 | not readable (restatement mismatch on C44, the stranger's own; 1 contradiction, 1 undefined term) |
+| 3 | 2,796 | 177 | 5 | 1.8 | not readable (restatement mismatch on C44, the stranger's own; 1 contradiction, 0 undefined terms) |
+| 4 | 2,797 | 177 | 3 | 1.1 | readable (restatement matched; 0 contradictions, 0 undefined terms) |
+
+### Round 1, count 2, 2026-10-27
+
+2,877 words; 15 findings; 5.2 per thousand words. Restatement: 190
+words; seven mismatches, all in-prose definitions (round, count,
+referent, register fact, review record, meta-review, the normative
+gloss) that no claim backed once the terms were ratified and their T
+elements dropped their meanings. Contradictions 1 (the delivered text
+"fixed and confirmed" against an unfixed finding allowed), undefined
+terms 0; verdict: not readable for RD-4. By fix kind as the stranger
+judged: cut 7, rephrase 1, add 7; by locus: IR 7, both 8.
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1, 2, 5, 6 | definitions of round, count, referent, register fact in the prose without claims | duplicate definition | cut; the term linked to its vocabulary row at first use in the section (P-008) |
+| 3 | "by a session with no part in the rounds" (meta-review definition) | duplicate definition | cut with the definition sentence; the term linked |
+| 4 | the review record's file name | duplicate definition | cut; linked |
+| 7 | the normative gloss in the header row | duplicate definition | cut; linked |
+| 8 | C155 vs C183 | contradiction | rephrase C155: "with each finding fixed and confirmed or marked unfixed" |
+| 9 | "that round" | referent | rephrase: "the readable round" |
+| 10, 11, 12, 13 | duties without an actor (C152, C183, C136, C158) | SP-18 | rephrase: the reasoning role named |
+| 14 | "on a text at the limit" repeated | excess | cut from C102 |
+| 15 | "the owner starts" repeated | excess | rephrase C108: "That session" |
+
+Prose 2,877 to 2,768 words. Claims check (stale-aware) before round
+2: 7 changed claims, 0 missing, 0 stale. Same-instance confirmation:
+15 of 15 fixes hold; two new defects noted in the fixed passages and
+fixed: "the term" without an antecedent (C136: "the ratified term");
+"That session" (C107 names the meta-review session, C108 uses the
+name). Claims check after: 3 changed, 0 missing, 0 stale.
+
+### Round 2, count 2, 2026-10-27
+
+2,771 words; 9 findings; 3.2 per thousand words. Restatement: 190
+words; one mismatch (C44) the stranger called its own, the status
+rule again. Contradictions 1 (the delivered text "judged" against the
+fixes applied at the readable verdict), undefined terms 1 ("anchored
+row"); verdict: not readable for RD-4. By fix kind as the stranger
+judged: cut 1, rephrase 1, add 7; by locus: both 9.
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1, 2, 3, 4, 5 | duties without an actor (C86, C169, C144, C135, C119) | SP-18 | rephrase: the reasoning role named; C135 split (C185) |
+| 6 | "to match" without its object | referent | rephrase C169: "to match the IR" |
+| 7 | the delivered text "judged" vs the fixes applied | contradiction | rephrase C155 to the stranger's wording |
+| 8 | "anchored row" undefined | term | rephrase C136: "a row with a `def-` anchor" |
+| 9 | "for the reader" | excess | cut from C74 |
+
+Prose 2,771 to 2796 words. Claims check (stale-aware) before round 3:
+9 changed or new claims, 0 missing, 0 stale. Same-instance
+confirmation: 9 of 9 fixes hold, no new defect. Round 3 starts, so
+count 2 makes the text a meta-review subject again.
+
+### Round 3, count 2, 2026-10-27
+
+2,796 words; 5 findings; 1.8 per thousand words. Restatement: 170
+words; one mismatch (C44, C165) the stranger called its own, the
+status rule for the seventh time across the two counts. Contradictions
+1 (fixes required at the readable verdict against findings marked
+unfixed, with no condition for unfixed), undefined terms 0; verdict:
+not readable for RD-4. By fix kind as the stranger judged: cut 2, add
+3; by locus: prose 1, both 4.
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1 | "and then" | excess | cut "then" (C83) |
+| 2 | the marking duty repeats the disposition rule and C155 | excess | cut; C182 becomes the condition for unfixed |
+| 3 | no condition for an unfixed finding | contradiction | rephrase C182: "A finding whose fix the instance does not confirm is unfixed." |
+| 4 | the checks run with no actor | SP-18 | rephrase C111: "A lint runs" |
+| 5 | the IR edited with no actor | SP-18 | rephrase C134: the reasoning role |
+
+Prose 2,796 to 2794 words. Claims check (stale-aware) before round 4:
+4 changed claims, 0 missing, 0 stale. Same-instance confirmation: 5
+of 5 fixes hold; one new defect noted and fixed, "the instance" with
+its antecedent in the previous sentence (C182 names the readable
+round's stranger instance). Claims check after: 1 changed, 0 missing,
+0 stale.
+
+### Round 4, count 2, 2026-10-27
+
+2,797 words; 3 findings; 1.1 per thousand words. Restatement: 190
+words, matching the IR. Contradictions 0, undefined terms 0; verdict:
+readable for RD-4. The count ends at round 4. Under the rule this
+amendment introduces, the three findings are fixed and the round's
+instance confirms each before delivery. By fix kind as the stranger
+judged: cut 1, add 2; by locus: prose 2, both 1.
+
+| # | Finding (shortened) | Kind | Fix | Confirmation |
+|---|---|---|---|---|
+| 1 | no actor delivers after the owner's "delivered" decision | SP-18 | add C186: the reasoning role delivers (a rule PR #51's text had and the rewrite dropped) | confirmed |
+| 2 | "HTML" not in C83 | mismatch | cut | confirmed |
+| 3 | "that claim" | referent | rephrase C41: "the claim that holds the phrase" | confirmed |
+
+Claims check (stale-aware) after the fixes: 2 changed or new claims,
+0 missing, 0 stale. Prose 2,797 to 2811 words.
+
+Same-instance confirmation before delivery: 3 of 3 fixes hold, each
+marked confirmed above; none unfixed. The confirmation noted that the
+new delivery sentence read against "does not deliver the text" at the
+limit; C99 was scoped to the time before the owner's decision and the
+instance confirmed the pair. IR Status set to `reviewed (count 2,
+round 4 readable; fixes confirmed)`.
+
+### Verdict, count 2
+
+Readable for RD-4 at round 4 of a count of four. Findings per thousand
+words by round: 5.2, 3.2, 1.8, 1.1. Contradictions by round: 1, 1, 1,
+0, each a different conflict inside the new readable-round rule, and
+each found by the next stranger. Prose 2,877 words at round 1 and
+2,811 at delivery; IR 176 claims at round 1 and 178 at delivery. The
+procedure's steps on this count: the stale-aware claims check found no
+missing and no stale claim in five runs; the same-instance
+confirmation found every fix holding and noted three new defects
+(rounds 1, 3 and 4), each fixed; the carried decline was not raised;
+the status rule drew its seventh self-attributed restatement
+compression across the two counts, without a prose change this time.
+
+Meta-review: pending. Count 2 makes this text a meta-review subject
+again (four rounds in one count). The delivering report asks the
+owner to dispatch it or to decide that none is needed.
