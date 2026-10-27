@@ -35,7 +35,8 @@ Register, Entry, Target, Provenance) except as noted per round.
 | 1b | revised | 2,884 | 148 | 26 | 9.0 | not readable (contradictions 1, undefined terms 1; restatement matched in substance) |
 | 2 | revised | 2,864 | 161 | 13 | 4.5 | not readable (contradictions 1, undefined terms 0; restatement matched in substance) |
 | 3 | revised | 2,842 | 162 | 17 | 6.0 | not readable (contradictions 1 on the IR side, undefined terms 1; four restatement mismatches the stranger attributed to its own restatement) |
-| 4 | revised | 2,829 | 165 | | | |
+| 4 | revised | 2,829 | 165 | 8 | 2.8 | not readable (contradictions 3, undefined terms 2; six restatement mismatches the stranger attributed to its own compressions) |
+| 5 | revised | 2,824 | 168 | | | |
 
 ## Round 1a, 2026-10-26 (old brief)
 
@@ -187,3 +188,29 @@ Fixes after round 3: IR 162 to 165 claims (four splits, one cut);
 terms proposed 2 to 11; prose 2,842 to 2,829 words. Lint clean (the
 pipeline lint counts 8 unratified terms because its own vocabulary
 holds three of the nine); round trip 165 of 165.
+
+## Round 4, 2026-10-27 (revised brief, reads ordered)
+
+2,829 words; 8 findings; 2.8 per thousand words. Restatement: 196
+words; six claims compressed, which the stranger attributed to its
+restatement. Contradictions 3, undefined terms 2; verdict: not
+readable for RD-4. By fix kind as the stranger judged: cut 2,
+rephrase 1, add 5; by locus: prose 2, IR 4, both 2. The three
+contradictions are rule gaps the earlier rounds did not see: the
+footprint comparison keyed on a Status an unreviewed IR never
+reaches; the fix rule for readable rounds; "text" covering the IR
+under `docs/records/`.
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1 | footprint compared only when Status becomes `reviewed` | contradiction | rephrase C123: "Before delivery" |
+| 2 | "recorded and fixed" vs readable-round findings unfixed | contradiction | rephrase C94: "treated like any other finding" |
+| 3 | "A text under docs/" covers the IR | contradiction | rephrase C19: "Prose that will live under `docs/`" |
+| 4 | C101 two actions | compound | split: C101, C171, C172 |
+| 5 | "the unit" undefined | term | add C173, the unit's definition from P-008, 14 words (a rule the rewrite had dropped) |
+| 6 | "designation" undefined | term | rephrase C133: "the state of its prose: active or delivered" |
+| 7, 8 | reader glosses the Readers table holds | excess | cut: the glosses become links, which also satisfies P-004 |
+
+Fixes after round 4: IR 165 to 168 claims (two splits, one added
+definition); prose 2,829 to 2,824 words. Lint clean; round trip 168
+of 168.

@@ -95,7 +95,7 @@ C17. A `report` is read by someone who shares the conversation: RD-1, RD-2 or RD
 
 C18. A `document` is read by someone who does not share the conversation: RD-4 or RD-5. [decided: pipeline schema v1.2, 2026-10-25]
 
-C19. A text that will live under `docs/` is a `document`. [decided: owner, 2026-10-25]
+C19. Prose that will live under `docs/` is a `document`. [decided: owner, 2026-10-25]
 
 ### Element kinds
 
@@ -229,6 +229,8 @@ C75. Relations and evidence are not rendered as sentences. [decided: pipeline sc
 
 C76. A term with a definition site is linked at its first use in the unit P-008 defines. [decided: methodology PR #48, 2026-10-26]
 
+C173. The unit is the whole text for a report and the section for a document. [decided: methodology PR #48, 2026-10-26]
+
 C164. Later uses of a term with a definition site in the unit are not linked. [decided: methodology PR #48, 2026-10-26]
 
 C77. A term the IR introduces is defined in a sentence of its own before its first use. [decided: methodology PR #46, 2026-10-26]
@@ -275,7 +277,7 @@ C92. The stranger reviews the IR and the prose against the reader's readability 
 
 C93. The verdict is readable when three conditions hold: the stranger's restatement of the text's problem, terms and decisions matches the IR; the stranger finds no contradiction; the stranger finds no undefined term. [proposed: this IR]
 
-C94. A finding that proposes fewer words, a plainer phrase or a removed repetition is recorded and fixed like any other finding. [proposed: this IR]
+C94. A finding that proposes fewer words, a plainer phrase or a removed repetition is treated like any other finding. [proposed: this IR]
 
 C95. The reasoning role records each round's findings, each finding's disposition, and the verdict in the review record. [decided: methodology PR #50, 2026-10-26]
 
@@ -297,7 +299,11 @@ C144. At the limit the review record states that the limit was reached. [decided
 
 C100. The owner decides, when accepting or rejecting a text at the limit, whether the text is delivered, reworked or withdrawn. [decided: owner, 2026-10-26]
 
-C101. Rework is an edit of the IR and the text by the reasoning role, starting a new count from round one and keeping the review record of the ended count. [proposed: methodology PR #51]
+C101. Rework is an edit of the IR and the text by the reasoning role. [proposed: methodology PR #51]
+
+C171. Rework starts a new count from round one. [proposed: methodology PR #51]
+
+C172. The review record of the ended count is kept through rework. [proposed: methodology PR #51]
 
 C102. For an amendment, the owner's decision on a text at the limit is its adjudication under Article 8. [decided: constitution Article 8]
 
@@ -353,7 +359,7 @@ C121. An IR whose deliverable is a chat message has no footprint, because no bra
 
 C122. When the Footprint header is absent or empty, no comparison is made. [decided: pipeline schema v1.3, 2026-10-26]
 
-C123. When the IR's Status becomes `reviewed`, the reasoning role, or a lint, compares the Footprint header with the files the branch changed since its base. [decided: pipeline schema v1.3, 2026-10-26]
+C123. Before delivery, the reasoning role, or a lint, compares the Footprint header with the files the branch changed since its base. [decided: pipeline schema v1.3, 2026-10-26]
 
 C124. A file is changed when the branch's diff adds, modifies, deletes or renames it. [decided: pipeline schema v1.3, 2026-10-26]
 
@@ -379,7 +385,7 @@ C132. A term, a decision or a register fact requires the IR, because each is con
 
 ### Lifecycle
 
-C133. An IR's mutability follows the designation of its prose. [decided: pipeline schema v1.2, 2026-10-25]
+C133. An IR's mutability follows the state of its prose: active or delivered. [decided: pipeline schema v1.2, 2026-10-25]
 
 C134. The IR of an active document is edited whenever the document is. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -475,4 +481,4 @@ A1. Accept or reject the rewritten specification as the text of docs/intermediat
 
 A2. Ratify or strike the nine terms this specification defines (T8 to T13, T16 to T18) and the terms count (T14) and meta-review (T15). Depends: A1.
 
-A3. Ratify or strike the proposed claims C6, C85, C86, C87, C93, C94, C101, C103, C105, C106, C108, C109, C140, C143, C158, C159, C169. Depends: A1.
+A3. Ratify or strike the proposed claims C6, C85, C86, C87, C93, C94, C101, C103, C105, C106, C108, C109, C140, C143, C158, C159, C169, C171, C172. Depends: A1.
