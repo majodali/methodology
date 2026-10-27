@@ -15,6 +15,34 @@ carry: amendment title and PR link · suggested by (evidencing instance)
 Minor — normative content, one constitutional change (the Article 5
 `Protects:` field).
 
+### The IR specification is rewritten from a full IR; stranger rounds run until readable
+
+- **PR**: [#52](https://github.com/majodali/methodology/pull/52),
+  superseding [#51](https://github.com/majodali/methodology/pull/51).
+- **Suggested by**: the owner's ruling of 2026-10-26 (rounds until
+  readable, limit ten, meta-review from the third round) and the
+  per-finding analysis of PR #51's ten rounds in communication-pipeline
+  (`eval/analysis/pr51-findings.md`): the prose grew from 2,572 to
+  4,516 words, the IR was abandoned from round 3, and no round was
+  readable. The specification was written again as a full IR of 172
+  claims, [docs/intermediate-representation.ir.md](intermediate-representation.ir.md),
+  and rendered at 2,804 words; ten rounds with a revised stranger
+  brief, readable at round 10
+  ([review record](intermediate-representation.review.md)).
+- **Impact**: methodology (`methodology-corpus`) — *accommodated*:
+  rounds until readable with a limit of ten on every stranger review
+  the rendering conditions select; a meta-review for texts with three
+  or more rounds; fixes made in the IR first; CK-13 to CK-16. Every
+  other project — *accommodated*: W-009 does not apply unless adopted
+  by declaration. communication-pipeline — *accommodated*: its branch
+  point v1.3 and schema v1.4 already carry the rules.
+- **Migration note**: none. The specification's twelve terms without
+  a methodology vocabulary row are listed for ratification in the IR's
+  asks.
+- **Protects**: proportional verification — the review runs until the
+  text passes the reader's test, and a text the process cannot make
+  readable is examined before the process is trusted again.
+
 ### Normative text gets a second stranger round; the IR declares its footprint
 
 - **PR**: [#50](https://github.com/majodali/methodology/pull/50).
