@@ -271,6 +271,9 @@ in [constitution.md](constitution.md#draft-history-pre-10).
     the state of a [Register](#def-register) or of a row in one.
   - <a id="def-normative-text"></a>**Normative text** — a rule, a
     specification, or any text whose words bind.
+  - <a id="def-meta-review-signal"></a>**Meta-review signal** — one of
+    four conditions in a review record that make a text a meta-review
+    subject, named in the specification's Meta-review section.
 - <a id="def-report-audience"></a>**Report audience** — the reader a report is addressed to under
   [W-008](rules/working-agreement.md#w-008--reports-map-their-deliverables)
   (reports map their deliverables): the human owner directly (the

@@ -598,3 +598,6 @@ under the rule this count introduces: first, no fix rejected and no
 missing or stale claim; second, no finding raised again and no
 mismatch recurring; third, growth of minus 0.3 percent; fourth, no
 round after round 3. The limit was not reached.
+
+Count 3 accepted by the owner on 2026-10-27 (PR #57 merged); the term
+meta-review signal ratified and its vocabulary row added.
