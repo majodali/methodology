@@ -239,6 +239,37 @@ in [constitution.md](constitution.md#draft-history-pre-10).
     the conversation that produced the text and no content
     contributions to the project. The stranger judges a text against
     its reader's readability test.
+  The terms of the specification, ratified 2026-10-27:
+  - <a id="def-provenance-status"></a>**Provenance status** — the tag
+    ending each term, claim and cluster of an IR: decided, proposed or
+    inferred.
+  - <a id="def-referent"></a>**Referent** — anything a claim refers
+    to: a document, a project, a rule, a person, a role, or an earlier
+    claim's subject. A claim names each referent inside itself.
+  - <a id="def-cluster"></a>**Cluster** — an ordered list of claim
+    identifiers the paraphraser renders as one paragraph.
+  - <a id="def-render-map"></a>**Render map** — one comment line in
+    rendered prose listing the paragraph each claim landed in.
+  - <a id="def-review-record"></a>**Review record** — the file
+    `<subject>.review.md` beside an IR, holding each round's findings,
+    dispositions and verdict.
+  - <a id="def-round"></a>**Round** — one stranger review of an IR and
+    its prose, returning findings and a verdict.
+  - <a id="def-count"></a>**Count** — one review's sequence of rounds,
+    ending at a readable verdict or at the limit.
+  - <a id="def-limit"></a>**Limit** — ten rounds in one count.
+  - <a id="def-meta-review"></a>**Meta-review** — a review, by a
+    session with no part in the rounds, of a text's review record and
+    the text itself, reporting whether the process needs a change. Due
+    for a text with three or more rounds in one count.
+  - <a id="def-footprint"></a>**Footprint** — the files or directories
+    an IR's deliverable is expected to change, declared in the IR's
+    Footprint header and compared with the branch's changes before
+    delivery.
+  - <a id="def-register-fact"></a>**Register fact** — a statement about
+    the state of a [Register](#def-register) or of a row in one.
+  - <a id="def-normative-text"></a>**Normative text** — a rule, a
+    specification, or any text whose words bind.
 - <a id="def-report-audience"></a>**Report audience** — the reader a report is addressed to under
   [W-008](rules/working-agreement.md#w-008--reports-map-their-deliverables)
   (reports map their deliverables): the human owner directly (the
