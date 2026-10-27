@@ -426,7 +426,7 @@ Status carries the round; the brief lists that form.
 | Round | Prose words | IR claims | Findings | Per 1,000 words | Verdict |
 |---|---|---|---|---|---|
 | 1 | 2,877 | 176 | 15 | 5.2 | not readable (7 in-prose definitions without claims; 1 contradiction; 0 undefined terms) |
-| 2 | 2768 | 176 | | | |
+| 2 | 2771 | 176 | | | |
 
 ### Round 1, count 2, 2026-10-27
 
@@ -451,6 +451,9 @@ judged: cut 7, rephrase 1, add 7; by locus: IR 7, both 8.
 | 14 | "on a text at the limit" repeated | excess | cut from C102 |
 | 15 | "the owner starts" repeated | excess | rephrase C108: "That session" |
 
-Prose 2,877 to 2768 words. Claims check (stale-aware) before round 2:
-8 changed claims, 0 missing, 0 stale. Same-instance confirmation:
-recorded below.
+Prose 2,877 to 2,768 words. Claims check (stale-aware) before round
+2: 7 changed claims, 0 missing, 0 stale. Same-instance confirmation:
+15 of 15 fixes hold; two new defects noted in the fixed passages and
+fixed: "the term" without an antecedent (C136: "the ratified term");
+"That session" (C107 names the meta-review session, C108 uses the
+name). Claims check after: 3 changed, 0 missing, 0 stale.

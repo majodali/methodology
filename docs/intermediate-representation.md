@@ -209,7 +209,9 @@ dispatch its meta-review. When the reasoning role starts a third
 round, it writes the line `Meta-review: pending` in the review
 record.
 
-The meta-review is performed by a session the owner starts. That session delivers its meta-review as a report to the owner. On delivery of the meta-review, the reasoning role sets the
+A session the owner starts, the meta-review session, performs the
+meta-review. The meta-review session delivers the meta-review as a
+report to the owner. On delivery of the meta-review, the reasoning role sets the
 review record's line to `Meta-review: delivered` with a link. A
 `Meta-review: pending` line in the review record of an accepted
 deliverable is a finding of the next form audit under
@@ -271,8 +273,8 @@ active document is edited whenever the document is. A disagreement
 between an active document and its IR is a defect in the prose. The
 IR of a delivered report is a record whose Status becomes `delivered`.
 The IR of a delivered report is not edited after delivery.
-On ratification, the reasoning role adds an anchored row for the term
-to the project vocabulary. The vocabulary row of a ratified term is the term's
+On ratification, the reasoning role adds an anchored row for the
+ratified term to the project vocabulary. The vocabulary row of a ratified term is the term's
 [definition site](vocabulary.md#def-definition-site).
 
 ## History

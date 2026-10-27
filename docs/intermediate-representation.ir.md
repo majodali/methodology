@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: draft (count 2, round 1 fixes applied, confirmation pending; unratified terms 0)
+Status: draft (count 2, round 1 fixes confirmed, two new defects fixed; round 2 in progress; unratified terms 0)
 Source: communication-pipeline evaluation case 008 (owner decision of 2026-10-27, change 5) for count 2; for count 1, docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md
@@ -327,9 +327,9 @@ C105. When the reasoning role starts a third round, it writes the line `Meta-rev
 
 C106. The reasoning role asks the owner, in the report that delivers a meta-review subject, to dispatch its meta-review. [decided: owner, 2026-10-27]
 
-C107. The meta-review is performed by a session the owner starts. [decided: owner, 2026-10-26]
+C107. A session the owner starts, the meta-review session, performs the meta-review. [decided: owner, 2026-10-26]
 
-C108. That session delivers its meta-review as a report to the owner. [decided: owner, 2026-10-27]
+C108. The meta-review session delivers the meta-review as a report to the owner. [decided: owner, 2026-10-27]
 
 C159. On delivery of the meta-review, the reasoning role sets the review record's line to `Meta-review: delivered` with a link. [decided: owner, 2026-10-27]
 
@@ -409,7 +409,7 @@ C135. The IR of a delivered report is a record whose Status becomes `delivered`.
 
 C161. The IR of a delivered report is not edited after delivery. [decided: pipeline schema v1.2, 2026-10-25]
 
-C136. On ratification, the reasoning role adds an anchored row for the term to the project vocabulary. [decided: methodology PR #48, 2026-10-26]
+C136. On ratification, the reasoning role adds an anchored row for the ratified term to the project vocabulary. [decided: methodology PR #48, 2026-10-26]
 
 C181. The vocabulary row of a ratified term is the term's definition site. [decided: methodology PR #48, 2026-10-26]
 
