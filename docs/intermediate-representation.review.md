@@ -428,7 +428,7 @@ Status carries the round; the brief lists that form.
 | 1 | 2,877 | 176 | 15 | 5.2 | not readable (7 in-prose definitions without claims; 1 contradiction; 0 undefined terms) |
 | 2 | 2,771 | 176 | 9 | 3.2 | not readable (restatement mismatch on C44, the stranger's own; 1 contradiction, 1 undefined term) |
 | 3 | 2,796 | 177 | 5 | 1.8 | not readable (restatement mismatch on C44, the stranger's own; 1 contradiction, 0 undefined terms) |
-| 4 | 2794 | 177 | | | |
+| 4 | 2797 | 177 | | | |
 
 ### Round 1, count 2, 2026-10-27
 
@@ -501,5 +501,8 @@ not readable for RD-4. By fix kind as the stranger judged: cut 2, add
 | 5 | the IR edited with no actor | SP-18 | rephrase C134: the reasoning role |
 
 Prose 2,796 to 2794 words. Claims check (stale-aware) before round 4:
-4 changed claims, 0 missing, 0 stale. Same-instance confirmation:
-recorded below.
+4 changed claims, 0 missing, 0 stale. Same-instance confirmation: 5
+of 5 fixes hold; one new defect noted and fixed, "the instance" with
+its antecedent in the previous sentence (C182 names the readable
+round's stranger instance). Claims check after: 1 changed, 0 missing,
+0 stale.

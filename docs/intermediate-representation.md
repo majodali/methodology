@@ -185,7 +185,8 @@ The text delivered after a readable verdict is the judged text with
 the round's fixes applied, each finding confirmed or marked unfixed. At a readable verdict,
 the reasoning role fixes the round's findings in the IR and then in
 the prose. The readable round's stranger instance confirms each fix
-before delivery. A finding whose fix the instance does not confirm is unfixed. The reasoning role fixes an unfixed finding of the readable round at
+before delivery. A finding whose fix the readable round's stranger instance does not
+confirm is unfixed. The reasoning role fixes an unfixed finding of the readable round at
 the next edit of an active document. After a verdict of not readable, the
 reasoning role fixes the IR and then the prose. The next round
 reviews the fixed IR and the fixed prose. At the end of a count, the reasoning role sets the IR's Status to

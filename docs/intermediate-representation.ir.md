@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: draft (count 2, round 3 fixes applied, confirmation pending; unratified terms 0)
+Status: draft (count 2, round 3 fixes confirmed, one new defect fixed; round 4 in progress; unratified terms 0)
 Source: communication-pipeline evaluation case 008 (owner decision of 2026-10-27, change 5) for count 2; for count 1, docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md
@@ -293,7 +293,7 @@ C97. At a readable verdict, the reasoning role fixes the round's findings in the
 
 C156. The readable round's stranger instance confirms each fix before delivery. [decided: owner, 2026-10-27]
 
-C182. A finding whose fix the instance does not confirm is unfixed. [decided: owner, 2026-10-27]
+C182. A finding whose fix the readable round's stranger instance does not confirm is unfixed. [decided: owner, 2026-10-27]
 
 C183. The reasoning role fixes an unfixed finding of the readable round at the next edit of an active document. [decided: owner, 2026-10-27]
 
