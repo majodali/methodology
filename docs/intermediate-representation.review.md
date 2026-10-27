@@ -584,7 +584,8 @@ Same-instance confirmation before delivery: 3 of 3 fixes hold, each
 marked confirmed above; the instance noted that "named in this
 section" added words that supplied no definition or referent, against
 the fix rule, and the words were cut. Footprint before delivery:
-declared 4, changed 4, surprises 0, misses 0.
+declared 5, changed 5, surprises 0, misses 0 (docs/vocabulary.md added
+to the declaration after a first run showed it as a surprise).
 
 ### Verdict, count 3
 
