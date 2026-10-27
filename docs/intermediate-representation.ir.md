@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: draft (unratified terms 11)
+Status: draft (unratified terms 12)
 Source: docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md
@@ -45,9 +45,11 @@ T17. Register fact: a statement about the state of a Register or of a row in one
 
 T18. Normative text: a rule, a specification, or any text whose words bind. [proposed: this IR]
 
+T19. Limit: ten rounds in one count. [proposed: this IR]
+
 ## Claims
 
-### Purpose
+### Purpose and scope
 
 C1. The reasoning role writes an IR before any prose of the communication exists. [decided: owner, 2026-10-24]
 
@@ -62,6 +64,8 @@ C150. The specification's status is active. [decided: methodology PR #49, 2026-1
 C151. The reader is assumed to know W-008, P-008 and the style guide, including its Readers table. [decided: methodology PR #49, 2026-10-26]
 
 C166. The human owner reads the specification as RD-4 does. [decided: methodology PR #49, 2026-10-26]
+
+C175. RD-4 reads the specification in the reasoning, paraphraser or stranger role. [decided: methodology PR #49, 2026-10-26]
 
 C6. A case this specification does not name is decided by the human owner when accepting the deliverable. [proposed: this IR]
 
@@ -219,7 +223,9 @@ C71. Prose is rendered from the IR when a rendering condition selects rendering.
 
 C168. When no rendering condition selects rendering, the IR is delivered as it stands. [decided: owner, 2026-10-24]
 
-C72. The paraphraser renders one claim as one sentence, or one cluster as one paragraph in the cluster's order. [decided: pipeline schema v1.2, 2026-10-25]
+C72. The paraphraser renders one claim as one sentence. [decided: pipeline schema v1.2, 2026-10-25]
+
+C174. The paraphraser renders one cluster as one paragraph in the cluster's order. [decided: pipeline schema v1.2, 2026-10-25]
 
 C73. The paraphraser introduces no new claim and drops no claim. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -267,7 +273,7 @@ C143. A fix adds words only to supply a missing definition or a missing referent
 
 C88. A stranger review runs in rounds until a round returns the verdict readable. [decided: owner, 2026-10-26]
 
-C89. A count ends at the limit, ten rounds, when no round has returned readable. [decided: owner, 2026-10-26]
+C89. A count ends at the limit when no round has returned readable. [decided: owner, 2026-10-26]
 
 C90. The rounds apply to every stranger review the rendering conditions select. [decided: owner, 2026-10-26]
 
@@ -347,7 +353,7 @@ C117. When the reader is RD-1 and the IR has more than six claims, a dependent a
 
 C118. When the reader is RD-3 and the IR has more than twelve claims or a dependent ask, the paraphraser renders. [decided: pipeline branch point v1.1, 2026-10-25]
 
-C119. Otherwise, for RD-1 or RD-3, the checks run and the IR is delivered as it stands. [decided: pipeline branch point v1.1, 2026-10-25]
+C119. Otherwise, for RD-1 or RD-3, the IR is delivered as it stands. [decided: pipeline branch point v1.1, 2026-10-25]
 
 C120. The counts in the conditions are provisional. [decided: methodology PR #49, 2026-10-26]
 
@@ -479,6 +485,6 @@ E2. communication-pipeline eval/analysis/pr51-findings.md: words required by abo
 
 A1. Accept or reject the rewritten specification as the text of docs/intermediate-representation.md. Depends: C140.
 
-A2. Ratify or strike the nine terms this specification defines (T8 to T13, T16 to T18) and the terms count (T14) and meta-review (T15). Depends: A1.
+A2. Ratify or strike the nine terms this specification defines (T8 to T13, T16 to T18) and the terms count (T14), meta-review (T15) and limit (T19). Depends: A1.
 
 A3. Ratify or strike the proposed claims C6, C85, C86, C87, C93, C94, C101, C103, C105, C106, C108, C109, C140, C143, C158, C159, C169, C171, C172. Depends: A1.

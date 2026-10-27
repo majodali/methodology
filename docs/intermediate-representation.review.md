@@ -36,7 +36,8 @@ Register, Entry, Target, Provenance) except as noted per round.
 | 2 | revised | 2,864 | 161 | 13 | 4.5 | not readable (contradictions 1, undefined terms 0; restatement matched in substance) |
 | 3 | revised | 2,842 | 162 | 17 | 6.0 | not readable (contradictions 1 on the IR side, undefined terms 1; four restatement mismatches the stranger attributed to its own restatement) |
 | 4 | revised | 2,829 | 165 | 8 | 2.8 | not readable (contradictions 3, undefined terms 2; six restatement mismatches the stranger attributed to its own compressions) |
-| 5 | revised | 2,824 | 168 | | | |
+| 5 | revised | 2,824 | 168 | 7 | 2.5 | not readable (contradictions 0, undefined terms 1; two restatement mismatches, the stranger's overstatement of C104) |
+| 6 | revised | 2,830 | 170 | | | |
 
 ## Round 1a, 2026-10-26 (old brief)
 
@@ -214,3 +215,27 @@ under `docs/records/`.
 Fixes after round 4: IR 165 to 168 claims (two splits, one added
 definition); prose 2,829 to 2,824 words. Lint clean; round trip 168
 of 168.
+
+## Round 5, 2026-10-27 (revised brief, reads ordered)
+
+2,824 words; 7 findings; 2.5 per thousand words. Restatement: 170
+words; the stranger read "meta-review subject" as "required" and
+counted the overstatement against C104 and C106. Contradictions 0,
+undefined terms 1 ("the limit" one sentence before its definition);
+verdict: not readable for RD-4. By fix kind as the stranger judged:
+cut 1, rephrase 2, add 4; by locus: prose 1, IR 1, both 5.
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1 | "the limit" before its definition | term order | add T19 (limit: ten rounds in one count) and the sentence "The limit is ten rounds in one count" before the count's definition; C89 loses "ten rounds"; net six words |
+| 2 | C72 two rendering rules | compound | split: C72, C174 |
+| 3 | "the checks run and" repeats C111 | excess | cut from C119 |
+| 4 | the default clause under "Purpose" | header | rephrase: heading "Purpose and scope" |
+| 5 | RD-1, RD-2, RD-3, RD-5 linked but not named | identifier | declined: P-004 accepts a parenthesized name or a link; round 4 cut the names as excess |
+| 6 | "meta-review subject" read as a mandatory dispatch | restatement | declined: the two sentences that follow state what the label obliges (the pending line; the ask to the owner) |
+| 7 | Reader line's role clause has no claim | IR gap | add C175 in the IR |
+
+Fixes after round 5: IR 168 to 170 claims, terms 18 to 19; prose
+2,824 to 2,830 words, the first round in which the prose grew (six
+words, for the limit's definition). Lint clean; round trip 170 of 170.
+Two findings declined, the first declines since round 1a.
