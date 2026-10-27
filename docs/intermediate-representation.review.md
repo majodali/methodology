@@ -546,6 +546,6 @@ confirmation found every fix holding and noted three new defects
 the status rule drew its seventh self-attributed restatement
 compression across the two counts, without a prose change this time.
 
-Meta-review: pending. Count 2 makes this text a meta-review subject
-again (four rounds in one count). The delivering report asks the
-owner to dispatch it or to decide that none is needed.
+Meta-review: not required for count 2. Owner decision of 2026-10-27,
+on accepting the amendment: the three-round trigger predates the
+measurements and is to be revisited.
