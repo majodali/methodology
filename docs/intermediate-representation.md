@@ -209,7 +209,7 @@ rework. For an amendment, the owner's decision is its adjudication under
 ### Meta-review
 
 A [meta-review](vocabulary.md#def-meta-review) signal is one of four
-conditions in a review record, named in this section. A text is a meta-review subject when its count reaches the
+conditions in a review record. A text is a meta-review subject when its count reaches the
 limit or its review record shows a meta-review signal. The first
 signal: in two or more rounds of the count, a fix did not reach the
 prose or was not confirmed. The second signal: a finding declined in
