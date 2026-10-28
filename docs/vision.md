@@ -7,14 +7,15 @@ Status: under review (v1, round 1)
 Reader: RD-4, a fresh agent session described in the [reader catalog](style.md#readers).
 The reader has the methodology and the project's documents and does not have the conversation that produced them.
 Purpose: this document states the vision the portfolio builds toward over an iterative roadmap.
-The document gives the direction the owner set, the decisions already taken, what the portfolio already provides, the gaps a roadmap closes, and the decisions still open.
+The document gives the direction set, the decisions taken, what the portfolio already provides, the gaps a roadmap closes and the open decisions.
 
 ## The direction
 
 Every project in the portfolio that benefits uses the project-orchestrator, adopted one project at a time.
 Each project keeps a comprehensive plan in the project's repository, kept current by agents as the agents perform each task.
 An agent queries the project-orchestrator-service for available tasks, claims a task, changes the project's repository directly, then updates the plan when closing the task.
-An agent is enlisted from any Claude surface, namely Claude Code web, desktop or CLI, Claude Duet, the Claude web interface or Claude Mobile, or is delegated to by another agent.
+An agent is enlisted from any Claude surface: Claude Code web, desktop or CLI, Claude Duet, the Claude web interface or Claude Mobile.
+An agent is also delegated to by another agent.
 Projects and agents using the project-orchestrator standardize agent instructions across planning, documentation, communication and engineering practice.
 When Allegro provides modeling, project information and methodology practices are modeled in Allegro, which gives type checking, validation, constraint checking and defined model operations.
 An evolving standard set of models covers specification and design, planning, engineering, documentation and communication, and operations, serving every project.
@@ -24,55 +25,63 @@ The web view is the primary way a human sees status, drills into subtasks, code 
 Projects use a literate style in which planning, specification, documentation and implementation models are tightly integrated.
 A new reader gets up to speed by reading the project like a book.
 New functionality is defined by the literate approach and [specification-by-example](vocabulary.md#def-specification-by-example) as far as possible.
-Projects are implemented in larger [streams](vocabulary.md#def-stream) of autonomous work that focus on outcomes and risks rather than gating every chunk.
+Projects are implemented in larger [streams](vocabulary.md#def-stream) of autonomous work that focus on outcomes and risks rather than a [chunk gate](vocabulary.md#def-chunk-gate) on every chunk.
 [Convergence](vocabulary.md#def-convergence) is handled by evolving formal models, evolving agent instructions and adversarial agent review.
 Adversarial review is effective, with low efficiency until formal models and processes keep the review convergent.
 
 ## Decisions taken on 2026-10-28
 
 The vision is built by an iterative roadmap over time.
-A change to a methodology rule such as [K-003](rules/knowledge.md#k-003--the-backlog-is-the-single-source-of-progress-truth) happens at the point in the roadmap where a project needs the change.
+A change to a methodology rule such as [K-003](rules/knowledge.md#k-003--the-backlog-is-the-single-source-of-progress-truth), the Backlog rule, happens at the point in the roadmap where a project needs the change.
 The [Backlog](rules/knowledge.md#k-003--the-backlog-is-the-single-source-of-progress-truth)'s remaining jobs, namely the implementation map and the list of what is next, become renderings of the [planning/execution model](vocabulary.md#def-planning-execution-model).
 The Backlog becomes a rendering per project, as each project adopts the project-orchestrator.
-Completing service chunk 1 is the next step.
-The service's current state is reviewed after chunk 1, with changes to features or roadmap decided where the vision requires.
-Projects are added to the service one at a time, by benefit.
+Completing service [chunk 1](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md), the first chunk of the service plan, is the next step.
+The owner and the [reasoning role](vocabulary.md#def-reasoning-role) review the service's current state after chunk 1.
+The owner decides changes to the service's features or roadmap where the vision requires.
+The owner adds projects to the service by benefit.
 No project in the portfolio is known that should not use the service.
 Allegro's approach and the project-orchestrator's approach merge into one standard model, so that Allegro can adopt the project-orchestrator.
-The merge of the two approaches is decided after the [pilot](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md).
-The [plan model](https://github.com/majodali/project-orchestrator/blob/main/docs/process/plan-model.md), the [IR](vocabulary.md#def-intermediate-representation) and the role definitions stay document-shaped and liftable until Allegro models them, with nothing constructed ahead of need.
-The vision document lives in the methodology repository as docs/vision.md, drafted IR first by the [reasoning role](vocabulary.md#def-reasoning-role) and edited by the owner.
+The decision on the merge of the two approaches follows the [pilot](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md).
+The [plan model](https://github.com/majodali/project-orchestrator/blob/main/docs/process/plan-model.md), the [IR](vocabulary.md#def-intermediate-representation) and the role definitions stay documents until Allegro models them, with nothing constructed ahead of need.
+The vision document lives in the methodology repository as docs/vision.md.
+The reasoning role drafts the vision document IR first, for the owner to edit.
 
 ## What the portfolio already provides
 
-The [plan model](https://github.com/majodali/project-orchestrator/blob/main/docs/process/plan-model.md) defines a project's plan as a tree of nodes with seven stages, specified on the way down and verified on the way up.
+The [plan model](https://github.com/majodali/project-orchestrator/blob/main/docs/process/plan-model.md) defines a project's plan as a tree of nodes with seven stages.
+A node is specified on the way down the tree and verified on the way up.
 In the plan model a feature is its validation: the set of functional tests that constitute the feature.
 The service reads real plan state from git.
-Node P2-N010, plan-state update with an advisory lease, is not yet started in the [Plan register](https://github.com/majodali/project-orchestrator/blob/main/docs/process/plan-register.md).
+Node P2-N010, plan-state update with an [advisory lease](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md), is not yet started in the [Plan register](https://github.com/majodali/project-orchestrator/blob/main/docs/process/plan-register.md).
 Role definitions live once in the orchestrator plugin and are mirrored into projects by a script with a drift check.
 The methodology supplies the rules, while the project-orchestrator supplies the roles that apply the rules.
-Dispatch has approved scope as the hard boundary, with an optional task or token budget attached to a scope grant.
-The [IR](vocabulary.md#def-intermediate-representation), the claims check, same-instance confirmation and the four [meta-review signals](vocabulary.md#def-meta-review-signal) are the [convergence](vocabulary.md#def-convergence) machinery for prose.
+[Dispatch](https://github.com/majodali/project-orchestrator/blob/main/docs/process/dispatch.md) has approved scope as the hard boundary, with an optional task or token budget attached to a scope grant.
+The [IR](vocabulary.md#def-intermediate-representation), the [claims check](intermediate-representation.md#stranger-rounds), [same-instance confirmation](intermediate-representation.md#stranger-rounds) and the four [meta-review signals](vocabulary.md#def-meta-review-signal) are the [convergence](vocabulary.md#def-convergence) machinery for prose.
 Allegro's book is the portfolio's one literate project, developed as far as Allegro needed and no further.
-Allegro's [planning DSL](https://github.com/majodali/allegro/blob/main/docs/book/vivace/planning-dsl.md) exists as Allegro's first Vivace domain model, demoable at rung 3, modeling a plan as a directed acyclic graph of outcomes.
+Allegro's [planning DSL](https://github.com/majodali/allegro/blob/main/docs/book/vivace/planning-dsl.md) exists as Allegro's first [Vivace](https://github.com/majodali/allegro/blob/main/docs/book/vision.md) domain model, demonstrable at [rung 3](https://github.com/majodali/allegro/blob/main/docs/plans/release-track.md) of Allegro's demo ladder, modeling a plan as a directed acyclic graph of outcomes.
 The service stays a projection of git, which remains authoritative.
 The service spawns no agents on the server.
 The [task-pull loop](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md) is the standing substitute for server-side agent spawning.
-[K-003](rules/knowledge.md#k-003--the-backlog-is-the-single-source-of-progress-truth) makes the [Backlog](rules/knowledge.md#k-003--the-backlog-is-the-single-source-of-progress-truth) the single source of progress truth.
+[K-003](rules/knowledge.md#k-003--the-backlog-is-the-single-source-of-progress-truth), the Backlog rule, makes the Backlog the single source of progress truth.
 The orchestrator's founding ruling 1 keeps the Plan register and the Backlog in sync.
 
 ## Gaps the roadmap closes
 
 The [plan model](https://github.com/majodali/project-orchestrator/blob/main/docs/process/plan-model.md) and Allegro's [planning DSL](https://github.com/majodali/allegro/blob/main/docs/book/vivace/planning-dsl.md) hold two plan models: a tree with seven stages, a graph of outcomes.
-The standard model that Allegro and the project-orchestrator merge into combines the two plan models, because Allegro's planning DSL demo may not match the project-orchestrator's model.
-The dispatch loop stops at a gate, an empty actionable set, a blocked task or exhausted scope.
+The standard model that Allegro and the project-orchestrator merge into combines the two plan models.
+Allegro's planning DSL demo may not match the project-orchestrator's plan model.
+The [dispatch](https://github.com/majodali/project-orchestrator/blob/main/docs/process/dispatch.md) loop stops at a gate, an empty actionable set, a blocked task or exhausted scope.
 No stop signal exists inside a [stream](vocabulary.md#def-stream).
-Stop signals inside a stream take the shape of the [meta-review signals](vocabulary.md#def-meta-review-signal): mechanical where a count can be read, otherwise a wording hit for a hand check.
-Larger streams replace the [chunk gate](vocabulary.md#def-chunk-gate): the owner approves a stream as scope, budget and accepted risks, then the loop runs until a stop signal or the stream's end.
-A stream keeps a running record of findings and the confidence in each finding's fix.
+Stop signals inside a stream take the [meta-review signals](vocabulary.md#def-meta-review-signal)' shape: mechanical where a count exists, a wording hit for a hand check otherwise.
+Larger streams replace the [chunk gate](vocabulary.md#def-chunk-gate).
+The owner approves a stream as scope, budget and accepted risks.
+The dispatch loop then runs until a stop signal or the stream's end.
+The [reasoning role](vocabulary.md#def-reasoning-role) running a stream keeps a running record of findings and the confidence in each finding's fix.
 The [convergence](vocabulary.md#def-convergence) machinery applies to prose only, so plans and specifications have no [stranger](vocabulary.md#def-stranger).
-The stranger extends to plans and specifications: a fresh reviewer restates the plan from the [Plan register](https://github.com/majodali/project-orchestrator/blob/main/docs/process/plan-register.md) and the node criteria before reading the reasoning, with mismatches as findings.
-The rounds-until-readable rule and the meta-review signals carry over to plan review unchanged.
+The stranger extends to plans and specifications.
+A fresh reviewer restates the plan from the [Plan register](https://github.com/majodali/project-orchestrator/blob/main/docs/process/plan-register.md) and the node criteria before reading the plan's reasoning.
+A mismatch between the restatement and the plan is a finding.
+The [rounds-until-readable rule](intermediate-representation.md#stranger-rounds) and the meta-review signals carry over to plan review unchanged.
 Drilling from the [web view](vocabulary.md#def-web-view) to code and test results requires the plan model to record where each node's verification evidence lands.
 Today the plan model records verification criteria only, not where the evidence lands.
 No document type holds specification, examples and implementation pointers together.
@@ -82,20 +91,22 @@ Standardized agent instructions across projects pull against Allegro's own proce
 The web view reads from commits only, never from state the service holds alone.
 Enlistment today is a `.mcp.json` in the repository clone, which only Claude Code surfaces read.
 A surface without a repository clone reaches the service only as a remote MCP connector, which the service does not offer today.
-A surface without a repository clone cannot make the git commit the service expects from the session.
+Today a surface without a repository clone cannot make the git commit the service expects from the session.
 Standing constraint 1, git remains authoritative with the session as the only writer, needs a decision for surfaces without a repository clone.
-The literate approach and every project as a book are developed in more detail on the roadmap, beyond what Allegro's book settled.
+The owner and the reasoning role develop the literate approach and every project as a book in more detail on the roadmap, beyond what Allegro's book settled.
 
 ## Sequence
 
-Service chunk 1 closes with P2-N010, plan-state update under the lease, and P2-N011, degrade to git-only with enlistment documentation.
-The [task-pull loop](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md) is taken before topics once chunk 1 closes, with the [web view](vocabulary.md#def-web-view)'s first version drilling to node and task only.
-The first adopter is named by benefit, with the first adopter's plan as the [pilot](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md).
-The roadmap document is written after the service review, from this vision.
+Service [chunk 1](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md) closes with P2-N010, plan-state update under the lease, and P2-N011, degrade to git-only with enlistment documentation.
+The [task-pull loop](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md) is taken before [topics](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md), the service plan's third chunk, once chunk 1 closes.
+The [web view](vocabulary.md#def-web-view)'s first version drills to node and task only.
+The owner names the first adopter by benefit, with the first adopter's plan as the [pilot](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md).
+The [reasoning role](vocabulary.md#def-reasoning-role) writes the roadmap document after the service review, from this vision.
 
-## Open asks
+## Asks
 
-The owner is asked to name the first adopter.
-The owner ratified the draft and the four proposed terms on 2026-10-28, which authorized the [paraphraser](vocabulary.md#def-paraphraser)'s rendering of this document and the [stranger](vocabulary.md#def-stranger) rounds under [W-009](rules/working-agreement.md#w-009--the-methodology-corpus-writes-its-deliverables-ir-first).
+Open: the owner names the first adopter.
+Done on 2026-10-28: the owner ratified the draft and the four terms planning/execution model, stream, specification-by-example and web view.
+Done on 2026-10-28: the ratification authorized the [paraphraser](vocabulary.md#def-paraphraser)'s rendering of this document and the [stranger](vocabulary.md#def-stranger) rounds under [W-009](rules/working-agreement.md#w-009--the-methodology-corpus-writes-its-deliverables-ir-first), the IR-first rule.
 
-<!-- render map: C1→The direction sentence 1; C2→The direction sentence 2; C3→The direction sentence 3; C4→The direction sentence 4; C5→The direction sentence 5; C6→The direction sentence 6; C7→The direction sentence 7; C8→The direction sentence 8; C9→The direction sentence 9; C10→The direction sentence 10; C11→The direction sentence 11; C12→The direction sentence 12; C13→The direction sentence 13; C14→The direction sentence 14; C15→The direction sentence 15; C16→The direction sentence 16; C17→Decisions taken on 2026-10-28 sentence 1; C18→Decisions taken on 2026-10-28 sentence 2; C19→Decisions taken on 2026-10-28 sentence 3; C20→Decisions taken on 2026-10-28 sentence 4; C21→Decisions taken on 2026-10-28 sentence 5; C22→Decisions taken on 2026-10-28 sentence 6; C23→Decisions taken on 2026-10-28 sentence 7; C24→Decisions taken on 2026-10-28 sentence 8; C25→Decisions taken on 2026-10-28 sentence 9; C26→Decisions taken on 2026-10-28 sentence 10; C27→Decisions taken on 2026-10-28 sentence 11; C28→Decisions taken on 2026-10-28 sentence 12; C29→What the portfolio already provides sentence 1; C30→What the portfolio already provides sentence 2; C31→What the portfolio already provides sentence 3; C59→What the portfolio already provides sentence 4; C32→What the portfolio already provides sentence 5; C33→What the portfolio already provides sentence 6; C34→What the portfolio already provides sentence 7; C35→What the portfolio already provides sentence 8; C36→What the portfolio already provides sentence 9; C37→What the portfolio already provides sentence 10; C38→What the portfolio already provides sentence 11; C39→What the portfolio already provides sentence 12; C60→What the portfolio already provides sentence 13; C40→What the portfolio already provides sentence 14; C61→What the portfolio already provides sentence 15; C41→Gaps the roadmap closes sentence 1; C42→Gaps the roadmap closes sentence 2; C43→Gaps the roadmap closes sentence 3; C62→Gaps the roadmap closes sentence 4; C44→Gaps the roadmap closes sentence 5; C45→Gaps the roadmap closes sentence 6; C46→Gaps the roadmap closes sentence 7; C47→Gaps the roadmap closes sentence 8; C48→Gaps the roadmap closes sentence 9; C49→Gaps the roadmap closes sentence 10; C50→Gaps the roadmap closes sentence 11; C63→Gaps the roadmap closes sentence 12; C51→Gaps the roadmap closes sentence 13; C64→Gaps the roadmap closes sentence 14; C52→Gaps the roadmap closes sentence 15; C53→Gaps the roadmap closes sentence 16; C54→Gaps the roadmap closes sentence 17; C65→Gaps the roadmap closes sentence 18; C66→Gaps the roadmap closes sentence 19; C67→Gaps the roadmap closes sentence 20; C69→Gaps the roadmap closes sentence 21; C68→Gaps the roadmap closes sentence 22; C55→Sequence sentence 1; C56→Sequence sentence 2; C57→Sequence sentence 3; C58→Sequence sentence 4; A3→Open asks sentence 1; A4→Open asks sentence 2 -->
+<!-- render map: C1→The direction sentence 1; C2→The direction sentence 2; C3→The direction sentence 3; C4→The direction sentence 4; C70→The direction sentence 5; C5→The direction sentence 6; C6→The direction sentence 7; C7→The direction sentence 8; C8→The direction sentence 9; C9→The direction sentence 10; C10→The direction sentence 11; C11→The direction sentence 12; C12→The direction sentence 13; C13→The direction sentence 14; C14→The direction sentence 15; C15→The direction sentence 16; C16→The direction sentence 17; C17→Decisions taken on 2026-10-28 sentence 1; C18→Decisions taken on 2026-10-28 sentence 2; C19→Decisions taken on 2026-10-28 sentence 3; C20→Decisions taken on 2026-10-28 sentence 4; C21→Decisions taken on 2026-10-28 sentence 5; C22→Decisions taken on 2026-10-28 sentence 6; C79→Decisions taken on 2026-10-28 sentence 7; C23→Decisions taken on 2026-10-28 sentence 8; C24→Decisions taken on 2026-10-28 sentence 9; C25→Decisions taken on 2026-10-28 sentence 10; C26→Decisions taken on 2026-10-28 sentence 11; C27→Decisions taken on 2026-10-28 sentence 12; C28→Decisions taken on 2026-10-28 sentence 13; C77→Decisions taken on 2026-10-28 sentence 14; C29→What the portfolio already provides sentence 1; C71→What the portfolio already provides sentence 2; C30→What the portfolio already provides sentence 3; C31→What the portfolio already provides sentence 4; C59→What the portfolio already provides sentence 5; C32→What the portfolio already provides sentence 6; C33→What the portfolio already provides sentence 7; C34→What the portfolio already provides sentence 8; C35→What the portfolio already provides sentence 9; C36→What the portfolio already provides sentence 10; C37→What the portfolio already provides sentence 11; C38→What the portfolio already provides sentence 12; C39→What the portfolio already provides sentence 13; C60→What the portfolio already provides sentence 14; C40→What the portfolio already provides sentence 15; C61→What the portfolio already provides sentence 16; C41→Gaps the roadmap closes sentence 1; C42→Gaps the roadmap closes sentence 2; C72→Gaps the roadmap closes sentence 3; C43→Gaps the roadmap closes sentence 4; C62→Gaps the roadmap closes sentence 5; C44→Gaps the roadmap closes sentence 6; C45→Gaps the roadmap closes sentence 7; C73→Gaps the roadmap closes sentence 8; C74→Gaps the roadmap closes sentence 9; C46→Gaps the roadmap closes sentence 10; C47→Gaps the roadmap closes sentence 11; C48→Gaps the roadmap closes sentence 12; C75→Gaps the roadmap closes sentence 13; C76→Gaps the roadmap closes sentence 14; C49→Gaps the roadmap closes sentence 15; C50→Gaps the roadmap closes sentence 16; C63→Gaps the roadmap closes sentence 17; C51→Gaps the roadmap closes sentence 18; C64→Gaps the roadmap closes sentence 19; C52→Gaps the roadmap closes sentence 20; C53→Gaps the roadmap closes sentence 21; C54→Gaps the roadmap closes sentence 22; C65→Gaps the roadmap closes sentence 23; C66→Gaps the roadmap closes sentence 24; C67→Gaps the roadmap closes sentence 25; C69→Gaps the roadmap closes sentence 26; C68→Gaps the roadmap closes sentence 27; C55→Sequence sentence 1; C56→Sequence sentence 2; C78→Sequence sentence 3; C57→Sequence sentence 4; C58→Sequence sentence 5; A3→Asks sentence 1; A1→Asks sentence 2; A2→Asks sentence 2; A4→Asks sentence 3 -->

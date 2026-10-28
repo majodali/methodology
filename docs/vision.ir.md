@@ -48,7 +48,9 @@ C2. Each project keeps a comprehensive plan in the project's repository, kept cu
 
 C3. An agent queries the project-orchestrator-service for available tasks, claims a task, changes the project's repository directly, then updates the plan when closing the task. [decided: owner, 2026-10-28]
 
-C4. An agent is enlisted from any Claude surface, Claude Code web, desktop or CLI, Claude Duet, the Claude web interface or Claude Mobile, or is delegated to by another agent. [decided: owner, 2026-10-28]
+C4. An agent is enlisted from any Claude surface: Claude Code web, desktop or CLI, Claude Duet, the Claude web interface or Claude Mobile. [decided: owner, 2026-10-28]
+
+C70. An agent is also delegated to by another agent. [decided: owner, 2026-10-28]
 
 C5. Projects and agents using the project-orchestrator standardize agent instructions across planning, documentation, communication and engineering practice. [decided: owner, 2026-10-28]
 
@@ -68,7 +70,7 @@ C12. A new reader gets up to speed by reading the project like a book. [decided:
 
 C13. New functionality is defined by the literate approach and specification-by-example as far as possible. [decided: owner, 2026-10-28]
 
-C14. Projects are implemented in larger streams of autonomous work that focus on outcomes and risks rather than gating every chunk. [decided: owner, 2026-10-28]
+C14. Projects are implemented in larger streams of autonomous work that focus on outcomes and risks rather than a chunk gate on every chunk. [decided: owner, 2026-10-28]
 
 C15. Convergence is handled by evolving formal models, evolving agent instructions and adversarial agent review. [decided: owner, 2026-10-28]
 
@@ -86,23 +88,29 @@ C20. The Backlog becomes a rendering per project, as each project adopts the pro
 
 C21. Completing service chunk 1 is the next step. [decided: owner, 2026-10-28]
 
-C22. The service's current state is reviewed after chunk 1, with changes to features or roadmap decided where the vision requires. [decided: owner, 2026-10-28]
+C22. The owner and the reasoning role review the service's current state after chunk 1. [decided: owner, 2026-10-28]
 
-C23. Projects are added to the service one at a time, by benefit. [decided: owner, 2026-10-28]
+C79. The owner decides changes to the service's features or roadmap where the vision requires. [decided: owner, 2026-10-28]
+
+C23. The owner adds projects to the service by benefit. [decided: owner, 2026-10-28]
 
 C24. No project in the portfolio is known that should not use the service. [decided: owner, 2026-10-28]
 
 C25. Allegro's approach and the project-orchestrator's approach merge into one standard model, so that Allegro can adopt the project-orchestrator. [decided: owner, 2026-10-28]
 
-C26. The merge in C25 is decided after the pilot. [decided: owner, 2026-10-28]
+C26. The decision on the merge in C25 follows the pilot. [decided: owner, 2026-10-28]
 
-C27. The plan model, the IR and the role definitions stay document-shaped and liftable until Allegro models them, with nothing constructed ahead of need. [decided: owner, 2026-10-28]
+C27. The plan model, the IR and the role definitions stay documents until Allegro models them, with nothing constructed ahead of need. [decided: owner, 2026-10-28]
 
-C28. The vision document lives in the methodology repository as docs/vision.md, drafted IR first by the reasoning role and edited by the owner. [decided: owner, 2026-10-28]
+C28. The vision document lives in the methodology repository as docs/vision.md. [decided: owner, 2026-10-28]
+
+C77. The reasoning role drafts the vision document IR first, for the owner to edit. [decided: owner, 2026-10-28]
 
 ### What the portfolio already provides
 
-C29. The plan model defines a project's plan as a tree of nodes with seven stages, specified on the way down and verified on the way up. evidence: E1. [decided: project-orchestrator process specification]
+C29. The plan model defines a project's plan as a tree of nodes with seven stages. evidence: E1. [decided: project-orchestrator process specification]
+
+C71. A node is specified on the way down the tree and verified on the way up. evidence: E1. [decided: project-orchestrator process specification]
 
 C30. In the plan model a feature is its validation: the set of functional tests that constitute the feature. evidence: E1. [decided: project-orchestrator process specification]
 
@@ -136,21 +144,31 @@ C61. The orchestrator's founding ruling 1 keeps the Plan register and the Backlo
 
 C41. The plan model and Allegro's planning DSL hold two plan models: a tree with seven stages, a graph of outcomes. [inferred: R6]
 
-C42. The standard model of C25 combines the two plan models in C41, because Allegro's planning DSL demo may not match the project-orchestrator's model. [decided: owner, 2026-10-28]
+C42. The standard model of C25 combines the two plan models in C41. [decided: owner, 2026-10-28]
+
+C72. Allegro's planning DSL demo may not match the project-orchestrator's plan model. [decided: owner, 2026-10-28]
 
 C43. The dispatch loop stops at a gate, an empty actionable set, a blocked task or exhausted scope. evidence: E4. [decided: project-orchestrator process specification]
 
 C62. No stop signal exists inside a stream. [inferred: R9]
 
-C44. Stop signals inside a stream take the shape of the meta-review signals: mechanical where a count can be read, otherwise a wording hit for a hand check. [decided: owner, 2026-10-28]
+C44. Stop signals inside a stream take the meta-review signals' shape: mechanical where a count exists, a wording hit for a hand check otherwise. [decided: owner, 2026-10-28]
 
-C45. Larger streams replace the per-chunk gate: the owner approves a stream as scope, budget and accepted risks, then the loop runs until a stop signal or the stream's end. [decided: owner, 2026-10-28]
+C45. Larger streams replace the chunk gate. [decided: owner, 2026-10-28]
 
-C46. A stream keeps a running record of findings and the confidence in each finding's fix. [decided: owner, 2026-10-28]
+C73. The owner approves a stream as scope, budget and accepted risks. [decided: owner, 2026-10-28]
+
+C74. The dispatch loop then runs until a stop signal or the stream's end. [decided: owner, 2026-10-28]
+
+C46. The reasoning role running a stream keeps a running record of findings and the confidence in each finding's fix. [decided: owner, 2026-10-28]
 
 C47. The convergence machinery of C35 applies to prose only, so plans and specifications have no stranger. [decided: owner, 2026-10-28]
 
-C48. The stranger extends to plans and specifications: a fresh reviewer restates the plan from the Plan register and the node criteria before reading the reasoning, with mismatches as findings. [decided: owner, 2026-10-28]
+C48. The stranger extends to plans and specifications. [decided: owner, 2026-10-28]
+
+C75. A fresh reviewer restates the plan from the Plan register and the node criteria before reading the plan's reasoning. [decided: owner, 2026-10-28]
+
+C76. A mismatch between the restatement and the plan is a finding. [decided: owner, 2026-10-28]
 
 C49. The rounds-until-readable rule and the meta-review signals carry over to plan review unchanged. [decided: owner, 2026-10-28]
 
@@ -172,21 +190,23 @@ C65. Enlistment today is a `.mcp.json` in the repository clone, which only Claud
 
 C66. A surface without a repository clone reaches the service only as a remote MCP connector, which the service does not offer today. evidence: E12. [decided: owner, 2026-10-28]
 
-C67. A surface without a repository clone cannot make the git commit the service expects from the session. evidence: E12. [decided: owner, 2026-10-28]
+C67. Today a surface without a repository clone cannot make the git commit the service expects from the session. evidence: E12. [decided: owner, 2026-10-28]
 
 C69. Standing constraint 1, git remains authoritative with the session as the only writer, needs a decision for surfaces without a repository clone. [inferred: R22]
 
-C68. The literate approach and every project as a book are developed in more detail on the roadmap, beyond what Allegro's book settled. [decided: owner, 2026-10-28]
+C68. The owner and the reasoning role develop the literate approach and every project as a book in more detail on the roadmap, beyond what Allegro's book settled. [decided: owner, 2026-10-28]
 
 ### Sequence
 
 C55. Service chunk 1 closes with P2-N010, plan-state update under the lease, and P2-N011, degrade to git-only with enlistment documentation. evidence: E2. [decided: project-orchestrator Plan register]
 
-C56. The task-pull loop is taken before topics once chunk 1 closes, with the web view's first version drilling to node and task only. [decided: owner, 2026-10-28]
+C56. The task-pull loop is taken before topics once chunk 1 closes. [decided: owner, 2026-10-28]
 
-C57. The first adopter is named by benefit, with the first adopter's plan as the pilot. [decided: owner, 2026-10-28]
+C78. The web view's first version drills to node and task only. [decided: owner, 2026-10-28]
 
-C58. The roadmap document is written after the service review, from this vision. [decided: owner, 2026-10-28]
+C57. The owner names the first adopter by benefit, with the first adopter's plan as the pilot. [decided: owner, 2026-10-28]
+
+C58. The reasoning role writes the roadmap document after the service review, from this vision. [decided: owner, 2026-10-28]
 
 ## Relations
 
