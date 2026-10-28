@@ -494,7 +494,9 @@ entries update in the same commit as the work they describe
   smallest set first; standard types need a second project. Adopted
   2026-10-26 through the communication pipeline's graduation: the
   `Protects:` field (PR #47), P-007 and P-008 (PR #48), W-009 and the
-  IR specification (PR #49). Open: the vision document (owner writes);
+  IR specification (PR #49). Open: the vision document (IR drafted 2026-10-28 as
+  [docs/vision.ir.md](vision.ir.md), Status draft; the owner edits, then
+  rendering and stranger rounds);
   the vocabulary collision between Allegro's "promotion" and the
   methodology's *Promotion*; Allegro's P-009 to P-011 and document
   types, which wait for a second project.
