@@ -15,6 +15,7 @@ IR: [vision.ir.md](vision.ir.md). Prose: [vision.md](vision.md). Disposition D2 
 | 7 | 1,460 | 92 | 11 | not readable (restatement mismatch 1 prose-induced and 4 own; contradiction 0; undefined terms 4) |
 | 8 | 1,467 | 93 | 6 | not readable (restatement mismatch 1 prose-induced; contradiction 0; undefined terms 1) |
 | 9 | 1,471 | 94 | 5 | not readable (restatement mismatch 1 prose-induced; contradiction 0; undefined terms 1) |
+| 10 | 1,487 | 96 | 3 | not readable (restatement mismatch 1; contradiction 1; undefined terms 0); limit reached |
 
 ### Round 1
 
@@ -142,4 +143,16 @@ Declined: 6 (SP-26 on C64's phrase "holding specification, examples and implemen
 
 Claims after fixes: 96. Prose after fixes: 1,477 words. Confirmation by the round's instance: 4 of 4 fixes hold, the decline accepted, no contradiction, no undefined term. One defect introduced by fix 3, two identifiers without names in the closing sentence, fixed before round 10: the node sentences come first with their names, and C55 closes chunk 1 by the nodes' names.
 
-Meta-review: pending (signal 2 after round 4: a restatement mismatch recurred on the Sequence section's pilot order in rounds 3, 4 and 8, and after round 7 on the merge-decision sentence C26 in rounds 1 and 7; signal 1 after round 4's confirmation: fixes not confirmed in full in rounds 3 and 4; signal 4 after round 6: a contradiction reported in fix-touched passages, C29 against C87, declined, withdrawn by the instance at confirmation, counted as written; signal 3 after round 9's fixes: prose 1,477 words, growth 139 over round 1's 1,338, past the one-tenth bound of 134).
+### Round 10
+
+Claims check before the round: 7 changed claims, 0 missing, 0 stale (base: round 9 prose).
+
+Findings: 3 (SP-01 1, also the restatement mismatch; SP-25 1; SP-18 1). Accepted 3.
+
+Accepted, fixed IR first then prose: 1 ("taking over from the Backlog" cut from C8; C19 and C20 carry the Backlog's fate, R1 holds the link); 2 (C43 "stops at a stream's boundary: a gate, ..." so the prose carries the boundary R9 records); 3 (C77 "Before the vision document is rendered, the reasoning role drafts the document's IR for the owner to edit").
+
+Claims after fixes: 96. Prose after fixes: 1,489 words. Confirmation by the round's instance: pending.
+
+The count ends at the limit of ten without a readable verdict. The owner decides what follows: accept the text as it stands, dispatch the meta-review and then a second count, or both.
+
+Meta-review: pending (limit reached at round 10 without a readable verdict; signal 2 after round 4: a restatement mismatch recurred on the Sequence section's pilot order in rounds 3, 4 and 8, and after round 7 on the merge-decision sentence C26 in rounds 1 and 7; signal 1 after round 4's confirmation: fixes not confirmed in full in rounds 3 and 4; signal 4 after round 6: a contradiction reported in fix-touched passages, C29 against C87, declined, withdrawn by the instance at confirmation, counted as written; signal 3 after round 9's fixes: prose 1,477 words, growth 139 over round 1's 1,338, past the one-tenth bound of 134).

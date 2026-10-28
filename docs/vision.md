@@ -23,7 +23,7 @@ Projects and agents using the project-orchestrator standardize agent instruction
 When [Allegro](https://github.com/majodali/allegro) provides modeling, project information and methodology practices are modeled in Allegro.
 Modeling in Allegro gives type checking, validation, constraint checking and defined model operations.
 An evolving standard set of models covers specification and design, planning, engineering, documentation and communication, and operations, serving every project.
-Each project's [planning/execution model](vocabulary.md#def-planning-execution-model) is the primary source of progress and status truth, taking over from the [Backlog](rules/knowledge.md#k-003--the-backlog-is-the-single-source-of-progress-truth).
+Each project's [planning/execution model](vocabulary.md#def-planning-execution-model) is the primary source of progress and status truth.
 The project-orchestrator-service provides a [web view](vocabulary.md#def-web-view) of each project's planning/execution model.
 The web view is the primary way a human sees status, drills into subtasks, code and test results, and makes scheduling and delegation decisions.
 Projects use a literate style in which planning, specification, documentation and implementation models are tightly integrated.
@@ -49,7 +49,7 @@ After the [pilot](https://github.com/majodali/project-orchestrator/blob/main/doc
 The [plan model](https://github.com/majodali/project-orchestrator/blob/main/docs/process/plan-model.md), the [IR](vocabulary.md#def-intermediate-representation) and the role definitions stay documents until Allegro models them.
 The owner and the reasoning role construct nothing ahead of need.
 The vision document lives in the methodology repository as docs/vision.md.
-The reasoning role drafts the vision document IR first, for the owner to edit.
+Before the vision document is rendered, the reasoning role drafts the document's IR for the owner to edit.
 The owner names the first adopter by benefit before the pilot starts.
 The first adopter's plan is the [pilot](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md).
 The roadmap document, not this vision, places the pilot relative to the task-pull loop.
@@ -84,8 +84,8 @@ Adversarial review has low efficiency until formal models and processes keep the
 The [plan model](https://github.com/majodali/project-orchestrator/blob/main/docs/process/plan-model.md) and Allegro's [planning DSL](https://github.com/majodali/allegro/blob/main/docs/book/vivace/planning-dsl.md) hold two plan models: a tree with seven stages, a graph of outcomes.
 The merged model combines the two plan models.
 Allegro's planning DSL demo may not match the project-orchestrator's plan model.
-The [dispatch](https://github.com/majodali/project-orchestrator/blob/main/docs/process/dispatch.md) loop stops at a gate, an empty actionable set, a blocked task or exhausted scope.
-No stop signal exists inside a [stream](vocabulary.md#def-stream).
+The [dispatch](https://github.com/majodali/project-orchestrator/blob/main/docs/process/dispatch.md) loop stops at a [stream](vocabulary.md#def-stream)'s boundary: a gate, an empty actionable set, a blocked task or exhausted scope.
+No stop signal exists inside a stream.
 Stop signals inside a stream take the [meta-review signals](vocabulary.md#def-meta-review-signal)' shape: mechanical where a count exists, a wording match for a hand check otherwise.
 Before a stream starts, the owner approves the stream as scope, budget and accepted risks.
 The dispatch loop then runs until a stop signal or the stream's end.

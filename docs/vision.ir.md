@@ -64,7 +64,7 @@ C81. Modeling in Allegro gives type checking, validation, constraint checking an
 
 C7. An evolving standard set of models covers specification and design, planning, engineering, documentation and communication, and operations, serving every project. [decided: owner, 2026-10-28]
 
-C8. Each project's planning/execution model is the primary source of progress and status truth, taking over from the Backlog. [decided: owner, 2026-10-28]
+C8. Each project's planning/execution model is the primary source of progress and status truth. [decided: owner, 2026-10-28]
 
 C9. The project-orchestrator-service provides a web view of each project's planning/execution model. [decided: owner, 2026-10-28]
 
@@ -112,7 +112,7 @@ C89. The owner and the reasoning role construct nothing ahead of need. [decided:
 
 C28. The vision document lives in the methodology repository as docs/vision.md. [decided: owner, 2026-10-28]
 
-C77. The reasoning role drafts the vision document IR first, for the owner to edit. [decided: owner, 2026-10-28]
+C77. Before the vision document is rendered, the reasoning role drafts the document's IR for the owner to edit. [decided: owner, 2026-10-28]
 
 C57. The owner names the first adopter by benefit before the pilot starts. [decided: owner, 2026-10-28]
 
@@ -174,7 +174,7 @@ C42. The merged model of C25 combines the two plan models in C41. [decided: owne
 
 C72. Allegro's planning DSL demo may not match the project-orchestrator's plan model. [decided: owner, 2026-10-28]
 
-C43. The dispatch loop stops at a gate, an empty actionable set, a blocked task or exhausted scope. evidence: E4. [decided: project-orchestrator process specification]
+C43. The dispatch loop stops at a stream's boundary: a gate, an empty actionable set, a blocked task or exhausted scope. evidence: E4. [decided: project-orchestrator process specification]
 
 C62. No stop signal exists inside a stream. [inferred: R9]
 
