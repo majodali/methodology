@@ -12,8 +12,27 @@ carry: amendment title and PR link · suggested by (evidencing instance)
 
 ## Unreleased
 
+Nothing yet.
+
+## v1.6.0 — 2026-10-28
+
 Minor — normative content, one constitutional change (the Article 5
-`Protects:` field).
+`Protects:` field). Eight amendments accepted at interim adjudications
+between 2026-10-26 and 2026-10-27, all raised from the
+communication-pipeline project's work on the methodology repository
+as its first subject: the report contract gains its fourth part;
+rules name the invariant they protect; documents name their reader
+and define their terms once; the methodology corpus writes its
+deliverables IR first, with the intermediate-representation
+specification; and four amendments to that specification's review
+process (the second stranger round and the footprint; the rewrite
+from a full IR with rounds until readable; the readable round's
+findings fixed and confirmed before delivery; the signal-based
+meta-review trigger). Review round 1 was held before the v1.4.0 cut;
+this is the third minor release since, so the next round is owed by
+v1.7.0 and none is due now. Migration notes: one duty, the W-008
+bootstrap block (see the first amendment's note); every other note
+is `none`.
 
 ### The meta-review trigger is signal-based
 
