@@ -125,6 +125,6 @@ Step-6 note: the pilot-order mismatch recurred a third time (rounds 3, 4 and 8).
 
 Accepted, fixed IR first then prose: 1 (as above); 2 (C3 split, C96 the plan update); 3 (Standing constraint 1 linked to the service plan's Standing constraints section); 4 (C36 "developed only as far as Allegro needed"); 5 (C18 names the owner as the one who amends a rule); 6 (C89 names the owner and the reasoning role).
 
-Claims after fixes: 94. Prose after fixes: 1471 words. Confirmation by the round's instance: pending.
+Claims after fixes: 94. Prose after fixes: 1,471 words. Confirmation by the round's instance: 6 of 6 fixes hold, no new defect; First steps no longer reads as an order ending in the pilot.
 
 Meta-review: pending (signal 2 after round 4: a restatement mismatch recurred on the Sequence section's pilot order in rounds 3, 4 and 8, and after round 7 on the merge-decision sentence C26 in rounds 1 and 7; signal 1 after round 4's confirmation: fixes not confirmed in full in rounds 3 and 4; signal 4 after round 6: a contradiction reported in fix-touched passages, C29 against C87, declined, withdrawn by the instance at confirmation, counted as written; signal 3 checked, growth within the bound).
