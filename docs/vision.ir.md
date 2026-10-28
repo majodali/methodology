@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The vision the portfolio builds toward over an iterative roadmap: the direction the owner set, the decisions already taken, what the portfolio already provides, the gaps a roadmap closes, and the decisions still open.
-Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; round trip 83 of 83; round 2)
+Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; round trip 83 of 83; round 3)
 Source: the owner's message of 2026-10-28 stating the vision in eight points; the reasoning role's assessment of the same day; the owner's reply of 2026-10-28 deciding four asks and agreeing the recommendations and terms; the owner's two notes of 2026-10-28 on agent surfaces and on the literate approach.
 Footprint: docs/vision.ir.md; docs/vision.md; docs/vision.review.md; docs/backlog.md; docs/vocabulary.md
 
@@ -102,7 +102,7 @@ C23. The owner adds a project to the service when adoption benefits the project.
 
 C24. No project in the portfolio is known that should not use the service. [decided: owner, 2026-10-28]
 
-C25. Allegro's approach and the project-orchestrator's approach merge into one standard model. [decided: owner, 2026-10-28]
+C25. Eventually Allegro's approach and the project-orchestrator's approach merge into one standard model. [decided: owner, 2026-10-28]
 
 C83. The merged model lets Allegro adopt the project-orchestrator. [decided: owner, 2026-10-28]
 
@@ -210,7 +210,7 @@ C56. The task-pull loop is taken before topics once chunk 1 closes. [decided: ow
 
 C78. The web view's first version drills to node and task only. [decided: owner, 2026-10-28]
 
-C57. The owner names the first adopter by benefit. [decided: owner, 2026-10-28]
+C57. The owner names the first adopter by benefit before the pilot starts. [decided: owner, 2026-10-28]
 
 C84. The first adopter's plan is the pilot. [decided: owner, 2026-10-28]
 

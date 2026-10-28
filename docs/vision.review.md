@@ -31,6 +31,8 @@ Accepted, fixed IR first then prose: 2 (a connective sentence opens The directio
 
 Declined: 1 (the instance's own grouping error, no prose sentence misled it, by its own report); 8 ("literate style" is defined in the sentence of its first use, "a literate style in which planning, specification, documentation and implementation models are tightly integrated").
 
-Claims after fixes: 83. Prose after fixes: 1,426 words. Confirmation by the round's instance: pending.
+Claims after fixes: 83. Prose after fixes: 1,426 words. Confirmation by the round's instance: 18 of 18 fixes hold; both declines accepted. The instance noted two pre-existing weaknesses in touched sentences, fixed before round 3: C25 now opens "Eventually", so the merge is not read as settled beside C26; C57 gains the trigger "before the pilot starts".
+
+Meta-review after round 2: not indicated. Signal 1 (a fix not reaching the prose or unconfirmed in two rounds): none. Signal 2 (a declined finding raised again, or a restatement mismatch recurring on one passage): none; round 1's mismatches were on C26 and the Asks section, round 2's on C8. Signal 3 (growth over one tenth of round-1 words, 134): growth 88. Signal 4 applies after round 3.
 
 Meta-review: pending (signals checked after each round).

@@ -1,6 +1,6 @@
 # Vision for the methodology and the portfolio
 
-Status: under review (v1, round 2)
+Status: under review (v1, round 3)
 
 ## Reader and purpose
 
@@ -44,7 +44,7 @@ The owner and the [reasoning role](vocabulary.md#def-reasoning-role) review the 
 The owner decides changes to the service's features or roadmap where the vision requires.
 The owner adds a project to the service when adoption benefits the project.
 No project in the portfolio is known that should not use the service.
-Allegro's approach and the project-orchestrator's approach merge into one standard model.
+Eventually Allegro's approach and the project-orchestrator's approach merge into one standard model.
 The merged model lets Allegro adopt the project-orchestrator.
 The decision on the merge of the two approaches follows the [pilot](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md).
 The [plan model](https://github.com/majodali/project-orchestrator/blob/main/docs/process/plan-model.md), the [IR](vocabulary.md#def-intermediate-representation) and the role definitions stay documents until Allegro models them, with nothing constructed ahead of need.
@@ -104,7 +104,7 @@ The owner and the reasoning role develop the literate approach, every project as
 Service [chunk 1](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md) closes with P2-N010, plan-state update under the lease, and P2-N011, degrade to git-only with enlistment documentation.
 The [task-pull loop](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md) is taken before [topics](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md) once chunk 1 closes.
 The [web view](vocabulary.md#def-web-view)'s first version drills to node and task only.
-The owner names the first adopter by benefit.
+The owner names the first adopter by benefit before the pilot starts.
 The first adopter's plan is the [pilot](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md).
 The [reasoning role](vocabulary.md#def-reasoning-role) writes the roadmap document after the service review, from this vision.
 
