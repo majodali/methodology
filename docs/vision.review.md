@@ -80,6 +80,6 @@ Accepted, fixed IR first then prose: 3 (C50 split, C91 the ordering); 4 (C32 "a 
 
 Not prose defects, by the instance's own report: 1 and 2.
 
-Claims after fixes: 90. Prose after fixes: 1457 words. Confirmation by the round's instance: pending.
+Claims after fixes: 90. Prose after fixes: 1,457 words. Confirmation by the round's instance: 5 of 5 fixes hold, no new defect.
 
 Meta-review: pending (signal 2 after round 4: a restatement mismatch recurred on the Sequence section's pilot order in rounds 3 and 4; signal 1 after round 4's confirmation: fixes not confirmed in full in rounds 3 and 4; signals 3 and 4 checked, not fired).
