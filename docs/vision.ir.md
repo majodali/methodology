@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The vision the portfolio builds toward over an iterative roadmap: the direction the owner set, the decisions already taken, what the portfolio already provides, the gaps a roadmap closes, and the decisions still open.
-Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; round trip 83 of 83; round 3)
+Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; round trip 88 of 88; round 3)
 Source: the owner's message of 2026-10-28 stating the vision in eight points; the reasoning role's assessment of the same day; the owner's reply of 2026-10-28 deciding four asks and agreeing the recommendations and terms; the owner's two notes of 2026-10-28 on agent surfaces and on the literate approach.
 Footprint: docs/vision.ir.md; docs/vision.md; docs/vision.review.md; docs/backlog.md; docs/vocabulary.md
 
@@ -80,11 +80,11 @@ C15. Convergence is handled by evolving formal models, evolving agent instructio
 
 C16. Adversarial review is effective. [decided: owner, 2026-10-28]
 
-C82. Adversarial review has low efficiency until formal models and processes keep the review convergent. [decided: owner, 2026-10-28]
+C82. Today adversarial review has low efficiency until formal models and processes keep the review convergent. [decided: owner, 2026-10-28]
 
 ### Decisions taken on 2026-10-28
 
-C17. The vision is built by an iterative roadmap over time. [decided: owner, 2026-10-28]
+C17. The vision is built by an iterative roadmap. [decided: owner, 2026-10-28]
 
 C18. A change to a methodology rule such as K-003 happens at the point in the roadmap where a project needs the change. [decided: owner, 2026-10-28]
 
@@ -102,7 +102,7 @@ C23. The owner adds a project to the service when adoption benefits the project.
 
 C24. No project in the portfolio is known that should not use the service. [decided: owner, 2026-10-28]
 
-C25. Eventually Allegro's approach and the project-orchestrator's approach merge into one standard model. [decided: owner, 2026-10-28]
+C25. Eventually Allegro's approach and the project-orchestrator's approach merge into one model. [decided: owner, 2026-10-28]
 
 C83. The merged model lets Allegro adopt the project-orchestrator. [decided: owner, 2026-10-28]
 
@@ -128,7 +128,9 @@ C59. Plan-state update with an advisory lease is node P2-N010, not yet started. 
 
 C32. Role definitions live once in the orchestrator plugin and are mirrored into projects by a script with a drift check. evidence: E3. [decided: project-orchestrator plugin]
 
-C33. The methodology supplies the rules, while the project-orchestrator supplies the roles that apply the rules. evidence: E3. [decided: project-orchestrator process specification]
+C33. The methodology supplies the rules. evidence: E3. [decided: project-orchestrator process specification]
+
+C88. The project-orchestrator supplies the roles that apply the rules. evidence: E3. [decided: project-orchestrator process specification]
 
 C34. Dispatch has approved scope as the hard boundary, with an optional task or token budget attached to a scope grant. evidence: E4. [decided: project-orchestrator process specification]
 
@@ -136,7 +138,11 @@ C35. The IR, the claims check, same-instance confirmation and the four meta-revi
 
 C36. Allegro's book is the portfolio's one literate project, developed as far as Allegro needed and no further. evidence: E6. [decided: owner, 2026-10-28]
 
-C37. Allegro's planning DSL exists as Allegro's first Vivace domain model, demoable at rung 3, modeling a plan as a directed acyclic graph of outcomes. evidence: E7. [decided: allegro, 2026-10-25]
+C37. Allegro's planning DSL exists as Allegro's first Vivace domain model. evidence: E7. [decided: allegro, 2026-10-25]
+
+C86. The planning DSL is demonstrable at rung 3 of Allegro's demo ladder. evidence: E7. [decided: allegro, 2026-10-25]
+
+C87. The planning DSL models a plan as a directed acyclic graph of outcomes. evidence: E7. [decided: allegro, 2026-10-25]
 
 C38. The service stays a projection of git, which remains authoritative. evidence: E8. [decided: owner, 2026-08-26]
 
@@ -152,7 +158,7 @@ C61. The orchestrator's founding ruling 1 keeps the Plan register and the Backlo
 
 C41. The plan model and Allegro's planning DSL hold two plan models: a tree with seven stages, a graph of outcomes. [inferred: R6]
 
-C42. The standard model of C25 combines the two plan models in C41. [decided: owner, 2026-10-28]
+C42. The merged model of C25 combines the two plan models in C41. [decided: owner, 2026-10-28]
 
 C72. Allegro's planning DSL demo may not match the project-orchestrator's plan model. [decided: owner, 2026-10-28]
 
@@ -168,7 +174,7 @@ C74. The dispatch loop then runs until a stop signal or the stream's end. [decid
 
 C46. The reasoning role running a stream keeps a running record of findings and the confidence in each finding's fix. [decided: owner, 2026-10-28]
 
-C47. The convergence machinery of C35 applies to prose only, so plans and specifications have no stranger. [decided: owner, 2026-10-28]
+C47. Today the convergence machinery of C35 applies to prose only, so plans and specifications have no stranger. [decided: owner, 2026-10-28]
 
 C48. The stranger extends to plans and specifications. [decided: owner, 2026-10-28]
 
@@ -190,7 +196,7 @@ C52. The first orchestrated project is the second project the conceptual-model p
 
 C53. Standardized agent instructions across projects pull against Allegro's own process documents until Allegro's approach and the project-orchestrator's approach merge. [decided: owner, 2026-10-28]
 
-C54. The web view reads from commits only, never from state the service holds alone. [decided: owner, 2026-10-28]
+C54. The web view reads from commits only. [decided: owner, 2026-10-28]
 
 C65. Enlistment today is a `.mcp.json` in the repository clone, which only Claude Code surfaces read. evidence: E12. [decided: project-orchestrator-service documentation]
 
@@ -198,15 +204,15 @@ C66. A surface without a repository clone reaches the service only as a remote M
 
 C67. Today a surface without a repository clone cannot make the git commit the service expects from the session. evidence: E12. [decided: owner, 2026-10-28]
 
-C69. Standing constraint 1, git remains authoritative with the session as the only writer, needs a decision for surfaces without a repository clone. [inferred: R22]
+C69. Standing constraint 1, git remains authoritative with the session as the only writer, needs the owner's decision at the service review for surfaces without a repository clone. [inferred: R22]
 
 C68. The owner and the reasoning role develop the literate approach, every project as a book, on the roadmap beyond what Allegro's book settled. [decided: owner, 2026-10-28]
 
 ### Sequence
 
-C55. Service chunk 1 closes with P2-N010, plan-state update under the lease, and P2-N011, degrade to git-only with enlistment documentation. evidence: E2. [decided: project-orchestrator Plan register]
+C55. Service chunk 1 closes with P2-N010, plan-state update under the advisory lease, and P2-N011, degrade to git-only with enlistment documentation. evidence: E2. [decided: project-orchestrator Plan register]
 
-C56. The task-pull loop is taken before topics once chunk 1 closes. [decided: owner, 2026-10-28]
+C56. Once chunk 1 closes, the task-pull loop comes before topics. [decided: owner, 2026-10-28]
 
 C78. The web view's first version drills to node and task only. [decided: owner, 2026-10-28]
 
@@ -215,6 +221,8 @@ C57. The owner names the first adopter by benefit before the pilot starts. [deci
 C84. The first adopter's plan is the pilot. [decided: owner, 2026-10-28]
 
 C58. The reasoning role writes the roadmap document after the service review, from this vision. [decided: owner, 2026-10-28]
+
+C85. The roadmap document places the pilot relative to the task-pull loop. [inferred: R25]
 
 ## Relations
 
@@ -263,6 +271,10 @@ R21. C68 refines C11 because C68 says the literate style is still to be designed
 R22. C69 depends-on C67 because the writer the constraint assumes is absent on those surfaces.
 
 R23. C42 depends-on C72 because the possible mismatch is why the two plan models are combined rather than one adopted.
+
+R24. C69 depends-on C79 because the owner's decisions on the service fall at the service review.
+
+R25. C85 depends-on C58 because the sequence beyond chunk 1 is the roadmap document's content, not this vision's.
 
 ## Evidence
 

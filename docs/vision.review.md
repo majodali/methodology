@@ -8,6 +8,7 @@ IR: [vision.ir.md](vision.ir.md). Prose: [vision.md](vision.md). Disposition D2 
 |---|---|---|---|---|
 | 1 | 1,338 | 69 | 38 | not readable (restatement mismatches 2, contradiction 1, undefined terms 9) |
 | 2 | 1,396 | 79 | 20 | not readable (restatement mismatches 2, contradiction 1, undefined terms 5) |
+| 3 | 1,431 | 83 | 14 | not readable (restatement mismatch 1 prose-induced and 2 own, contradictions 2, undefined terms 2) |
 
 ### Round 1
 
@@ -34,5 +35,19 @@ Declined: 1 (the instance's own grouping error, no prose sentence misled it, by 
 Claims after fixes: 83. Prose after fixes: 1,426 words. Confirmation by the round's instance: 18 of 18 fixes hold; both declines accepted. The instance noted two pre-existing weaknesses in touched sentences, fixed before round 3: C25 now opens "Eventually", so the merge is not read as settled beside C26; C57 gains the trigger "before the pilot starts".
 
 Meta-review after round 2: not indicated. Signal 1 (a fix not reaching the prose or unconfirmed in two rounds): none. Signal 2 (a declined finding raised again, or a restatement mismatch recurring on one passage): none; round 1's mismatches were on C26 and the Asks section, round 2's on C8. Signal 3 (growth over one tenth of round-1 words, 134): growth 88. Signal 4 applies after round 3.
+
+### Round 3
+
+Claims check before the round: 15 changed claims, 0 missing, 0 stale (base: round 2 prose).
+
+Findings: 14 (restatement mismatch 3, of which 2 the instance attributes to its own restatement; SP-01 2; SP-03 1; SP-04 2; SP-18 2; SP-25 2; SP-26 2). Accepted 12, not prose defects 2.
+
+Accepted, fixed IR first then prose: 2 (C85 added: the roadmap document places the pilot relative to the task-pull loop, inferred by R25 from C58); 4 (C82 opens with "Today"); 5 (C17 "over time" cut); 6 (C25 "one model", C42 "the merged model", matching C83); 7 (C33 split, C88); 8 (C37 split, C86, C87); 9 (C47 opens with "Today"); 10 (C54 second clause cut); 11 (MCP linked to the enlistment document); 12 (C69 names the owner and the service review, R24); 13 ("under the advisory lease"); 14 (C56 recast without the passive duty).
+
+Not prose defects, by the instance's own report: 1 and 3.
+
+Signal 4 note: the two contradictions of round 3 (findings 4 and 9) sit in passages earlier fixes touched: C82 came from round 2's split of C16, and C47 and C48 were touched in round 1. Both are the same tense framing that the "Today" marker from round 1 introduced. The specification's fourth signal reads "after round 3", so on the strict reading it does not fire on a round-3 finding; the owner may dispatch a meta-review regardless.
+
+Claims after fixes: 88. Confirmation by the round's instance: pending.
 
 Meta-review: pending (signals checked after each round).
