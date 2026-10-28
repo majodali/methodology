@@ -1,6 +1,6 @@
 # Vision for the methodology and the portfolio
 
-Status: under review (v1, round 1)
+Status: under review (v1, round 2)
 
 ## Reader and purpose
 
@@ -33,7 +33,7 @@ Adversarial review is effective, with low efficiency until formal models and pro
 
 The vision is built by an iterative roadmap over time.
 A change to a methodology rule such as [K-003](rules/knowledge.md#k-003--the-backlog-is-the-single-source-of-progress-truth), the Backlog rule, happens at the point in the roadmap where a project needs the change.
-The [Backlog](rules/knowledge.md#k-003--the-backlog-is-the-single-source-of-progress-truth)'s remaining jobs, namely the implementation map and the list of what is next, become renderings of the [planning/execution model](vocabulary.md#def-planning-execution-model).
+The [Backlog](rules/knowledge.md#k-003--the-backlog-is-the-single-source-of-progress-truth)'s remaining jobs, namely the implementation map and the list of what is next, become [renderings](intermediate-representation.md#rendering-rule) of the [planning/execution model](vocabulary.md#def-planning-execution-model).
 The Backlog becomes a rendering per project, as each project adopts the project-orchestrator.
 Completing service [chunk 1](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md), the first chunk of the service plan, is the next step.
 The owner and the [reasoning role](vocabulary.md#def-reasoning-role) review the service's current state after chunk 1.
@@ -58,7 +58,7 @@ The methodology supplies the rules, while the project-orchestrator supplies the 
 [Dispatch](https://github.com/majodali/project-orchestrator/blob/main/docs/process/dispatch.md) has approved scope as the hard boundary, with an optional task or token budget attached to a scope grant.
 The [IR](vocabulary.md#def-intermediate-representation), the [claims check](intermediate-representation.md#stranger-rounds), [same-instance confirmation](intermediate-representation.md#stranger-rounds) and the four [meta-review signals](vocabulary.md#def-meta-review-signal) are the [convergence](vocabulary.md#def-convergence) machinery for prose.
 Allegro's book is the portfolio's one literate project, developed as far as Allegro needed and no further.
-Allegro's [planning DSL](https://github.com/majodali/allegro/blob/main/docs/book/vivace/planning-dsl.md) exists as Allegro's first [Vivace](https://github.com/majodali/allegro/blob/main/docs/book/vision.md) domain model, demonstrable at [rung 3](https://github.com/majodali/allegro/blob/main/docs/plans/release-track.md) of Allegro's demo ladder, modeling a plan as a directed acyclic graph of outcomes.
+Allegro's [planning DSL](https://github.com/majodali/allegro/blob/main/docs/book/vivace/planning-dsl.md) exists as Allegro's first [Vivace](https://github.com/majodali/allegro/blob/main/docs/book/vision.md) domain model, demonstrable at [rung 3](https://github.com/majodali/allegro/blob/main/docs/plans/release-track.md), modeling a plan as a directed acyclic graph of outcomes.
 The service stays a projection of git, which remains authoritative.
 The service spawns no agents on the server.
 The [task-pull loop](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md) is the standing substitute for server-side agent spawning.
@@ -80,7 +80,7 @@ The [reasoning role](vocabulary.md#def-reasoning-role) running a stream keeps a 
 The [convergence](vocabulary.md#def-convergence) machinery applies to prose only, so plans and specifications have no [stranger](vocabulary.md#def-stranger).
 The stranger extends to plans and specifications.
 A fresh reviewer restates the plan from the [Plan register](https://github.com/majodali/project-orchestrator/blob/main/docs/process/plan-register.md) and the node criteria before reading the plan's reasoning.
-A mismatch between the restatement and the plan is a finding.
+A mismatch between the fresh reviewer's restatement and the plan is a finding.
 The [rounds-until-readable rule](intermediate-representation.md#stranger-rounds) and the meta-review signals carry over to plan review unchanged.
 Drilling from the [web view](vocabulary.md#def-web-view) to code and test results requires the plan model to record where each node's verification evidence lands.
 Today the plan model records verification criteria only, not where the evidence lands.
@@ -93,12 +93,12 @@ Enlistment today is a `.mcp.json` in the repository clone, which only Claude Cod
 A surface without a repository clone reaches the service only as a remote MCP connector, which the service does not offer today.
 Today a surface without a repository clone cannot make the git commit the service expects from the session.
 Standing constraint 1, git remains authoritative with the session as the only writer, needs a decision for surfaces without a repository clone.
-The owner and the reasoning role develop the literate approach and every project as a book in more detail on the roadmap, beyond what Allegro's book settled.
+The owner and the reasoning role develop the literate approach, every project as a book, on the roadmap beyond what Allegro's book settled.
 
 ## Sequence
 
 Service [chunk 1](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md) closes with P2-N010, plan-state update under the lease, and P2-N011, degrade to git-only with enlistment documentation.
-The [task-pull loop](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md) is taken before [topics](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md), the service plan's third chunk, once chunk 1 closes.
+The [task-pull loop](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md) is taken before [topics](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md) once chunk 1 closes.
 The [web view](vocabulary.md#def-web-view)'s first version drills to node and task only.
 The owner names the first adopter by benefit, with the first adopter's plan as the [pilot](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md).
 The [reasoning role](vocabulary.md#def-reasoning-role) writes the roadmap document after the service review, from this vision.

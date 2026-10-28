@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The vision the portfolio builds toward over an iterative roadmap: the direction the owner set, the decisions already taken, what the portfolio already provides, the gaps a roadmap closes, and the decisions still open.
-Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; round trip 69 of 69; round 1)
+Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; round trip 79 of 79; round 2)
 Source: the owner's message of 2026-10-28 stating the vision in eight points; the reasoning role's assessment of the same day; the owner's reply of 2026-10-28 deciding four asks and agreeing the recommendations and terms; the owner's two notes of 2026-10-28 on agent surfaces and on the literate approach.
 Footprint: docs/vision.ir.md; docs/vision.md; docs/vision.review.md; docs/backlog.md; docs/vocabulary.md
 
@@ -168,7 +168,7 @@ C48. The stranger extends to plans and specifications. [decided: owner, 2026-10-
 
 C75. A fresh reviewer restates the plan from the Plan register and the node criteria before reading the plan's reasoning. [decided: owner, 2026-10-28]
 
-C76. A mismatch between the restatement and the plan is a finding. [decided: owner, 2026-10-28]
+C76. A mismatch between the fresh reviewer's restatement and the plan is a finding. [decided: owner, 2026-10-28]
 
 C49. The rounds-until-readable rule and the meta-review signals carry over to plan review unchanged. [decided: owner, 2026-10-28]
 
@@ -194,7 +194,7 @@ C67. Today a surface without a repository clone cannot make the git commit the s
 
 C69. Standing constraint 1, git remains authoritative with the session as the only writer, needs a decision for surfaces without a repository clone. [inferred: R22]
 
-C68. The owner and the reasoning role develop the literate approach and every project as a book in more detail on the roadmap, beyond what Allegro's book settled. [decided: owner, 2026-10-28]
+C68. The owner and the reasoning role develop the literate approach, every project as a book, on the roadmap beyond what Allegro's book settled. [decided: owner, 2026-10-28]
 
 ### Sequence
 
@@ -253,6 +253,8 @@ R20. C67 depends-on C4 because the surfaces C4 names include ones with no reposi
 R21. C68 refines C11 because C68 says the literate style is still to be designed, not copied from Allegro.
 
 R22. C69 depends-on C67 because the writer the constraint assumes is absent on those surfaces.
+
+R23. C42 depends-on C72 because the possible mismatch is why the two plan models are combined rather than one adopted.
 
 ## Evidence
 

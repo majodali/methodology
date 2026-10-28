@@ -18,6 +18,6 @@ Accepted, fixed IR first then prose: 1 (C26 reworded, decision follows the pilot
 
 Declined: 22 ("rendering" is plain English and the methodology's own use of the word for prose produced from a model); 30 ("like a book" is the owner's stated principle, carried verbatim in C68 as "every project as a book", a claim rather than a device standing for one); 31 ("a feature is its validation" quotes the plan model's formal definition, and the colon supplies the definition).
 
-Claims after fixes: 79. Prose after fixes: 1,407 words. Confirmation by the round's instance: pending.
+Claims after fixes: 79. Prose after fixes: 1,407 words. Confirmation by the round's instance: 35 of 35 fixes hold. The instance reported four defects the fixes introduced, fixed before round 2: C76 names the fresh reviewer's restatement; the appositive "the service plan's third chunk" cut from C56's sentence; "of Allegro's demo ladder" cut from C37's sentence; C68 shortened to 22 words. The instance accepted the reason for 31, rejected the reasons for 22 and 30: 22 accepted after all, "renderings" linked to the specification's rendering rule; 30 stays declined and is carried to round 2's brief. R23 added so C72's link to C42 is held in the IR.
 
 Meta-review: pending (signals checked after each round).
