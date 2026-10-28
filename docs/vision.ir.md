@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The vision the portfolio builds toward over an iterative roadmap: the direction the owner set, the decisions already taken, what the portfolio already provides, the gaps a roadmap closes, and the decisions still open.
-Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; round trip 87 of 87; round 3)
+Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; round trip 87 of 87; round 4)
 Source: the owner's message of 2026-10-28 stating the vision in eight points; the reasoning role's assessment of the same day; the owner's reply of 2026-10-28 deciding four asks and agreeing the recommendations and terms; the owner's two notes of 2026-10-28 on agent surfaces and on the literate approach.
 Footprint: docs/vision.ir.md; docs/vision.md; docs/vision.review.md; docs/backlog.md; docs/vocabulary.md
 
@@ -78,10 +78,6 @@ C14. Projects are implemented in larger streams of autonomous work that focus on
 
 C15. Convergence is handled by evolving formal models, evolving agent instructions and adversarial agent review. [decided: owner, 2026-10-28]
 
-C16. Adversarial review is effective. [decided: owner, 2026-10-28]
-
-C82. Today adversarial review has low efficiency until formal models and processes keep the review convergent. [decided: owner, 2026-10-28]
-
 ### Decisions taken on 2026-10-28
 
 C17. The vision is built by an iterative roadmap. [decided: owner, 2026-10-28]
@@ -154,6 +150,10 @@ C40. Today K-003 makes the Backlog the single source of progress truth. evidence
 
 C61. The orchestrator's founding ruling 1 keeps the Plan register and the Backlog in sync. evidence: E9. [decided: project-orchestrator ruling 1, 2026-08-24]
 
+C16. Adversarial review is effective. [decided: owner, 2026-10-28]
+
+C82. Adversarial review has low efficiency until formal models and processes keep the review convergent. [decided: owner, 2026-10-28]
+
 ### Gaps the roadmap closes
 
 C41. The plan model and Allegro's planning DSL hold two plan models: a tree with seven stages, a graph of outcomes. [inferred: R6]
@@ -204,7 +204,7 @@ C66. A surface without a repository clone reaches the service only as a remote M
 
 C67. Today a surface without a repository clone cannot make the git commit the service expects from the session. evidence: E12. [decided: owner, 2026-10-28]
 
-C69. Standing constraint 1, git remains authoritative with the session as the only writer, needs the owner's decision at the service review for surfaces without a repository clone. [inferred: R22]
+C69. Standing constraint 1, the session as git's only writer, needs the owner's decision at the service review for surfaces without a repository clone. [inferred: R22]
 
 C68. The owner and the reasoning role develop the literate approach, every project as a book, on the roadmap beyond what Allegro's book settled. [decided: owner, 2026-10-28]
 

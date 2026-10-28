@@ -48,6 +48,8 @@ Not prose defects, by the instance's own report: 1 and 3.
 
 Signal 4 note: the two contradictions of round 3 (findings 4 and 9) sit in passages earlier fixes touched: C82 came from round 2's split of C16, and C47 and C48 were touched in round 1. Both are the same tense framing that the "Today" marker from round 1 introduced. The specification's fourth signal reads "after round 3", so on the strict reading it does not fire on a round-3 finding; the owner may dispatch a meta-review regardless.
 
-Claims after fixes: 87. Prose after fixes: 1,442 words. Confirmation by the round's instance: pending.
+Claims after fixes: 87. Prose after fixes: 1,442 words. Confirmation by the round's instance: 10 of 11 prose fixes hold in full; fix 4 held for C82 only, because C16 "Adversarial review is effective" still sat in the target-state section, and fix 12 left C69 at 27 words. Fixed before round 4: C16 and C82 moved to the section on what the portfolio provides, where present observations belong, and C82's "Today" dropped as redundant there; C69 shortened to 22 words.
+
+Meta-review after round 3: not indicated. Signal 1: one round (round 3) with a fix not confirmed in full; the signal needs two. Signal 2: none. Signal 3: growth 104 of the 134 allowed. Signal 4: see the note above; strict reading, not fired.
 
 Meta-review: pending (signals checked after each round).
