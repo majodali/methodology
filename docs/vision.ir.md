@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The vision the portfolio builds toward over an iterative roadmap: the direction the owner set, the decisions already taken, what the portfolio already provides, the gaps a roadmap closes, and the decisions still open.
-Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; round trip 94 of 94; round 9)
+Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; round trip 96 of 96; round 9)
 Source: the owner's message of 2026-10-28 stating the vision in eight points; the reasoning role's assessment of the same day; the owner's reply of 2026-10-28 deciding four asks and agreeing the recommendations and terms; the owner's two notes of 2026-10-28 on agent surfaces and on the literate approach.
 Footprint: docs/vision.ir.md; docs/vision.md; docs/vision.review.md; docs/backlog.md; docs/vocabulary.md
 
@@ -104,7 +104,7 @@ C25. Eventually Allegro's approach and the project-orchestrator's approach merge
 
 C83. The merged model lets Allegro adopt the project-orchestrator. [decided: owner, 2026-10-28]
 
-C26. After the pilot, the owner decides how Allegro's approach and the project-orchestrator's approach merge. [decided: owner, 2026-10-28]
+C26. After the pilot, the owner decides how and when Allegro's approach and the project-orchestrator's approach merge. [decided: owner, 2026-10-28]
 
 C27. The plan model, the IR and the role definitions stay documents until Allegro models them. [decided: owner, 2026-10-28]
 
@@ -224,19 +224,23 @@ C93. The service does not offer a remote MCP connector today. evidence: E12. [de
 
 C67. Today a surface without a repository clone cannot make the git commit the service expects from the session. evidence: E12. [decided: owner, 2026-10-28]
 
-C69. Standing constraint 1, the session as git's only writer, needs the owner's decision at the service review for surfaces without a repository clone. [inferred: R22]
+C69. Standing constraint 1, the session as git's only writer, needs the owner's decision at the review of the service for surfaces without a repository clone. [inferred: R22]
 
-C68. The owner and the reasoning role develop the literate style, every project as a book, on the roadmap beyond what Allegro's book settled. [decided: owner, 2026-10-28]
+C68. The literate style, every project as a book, is roadmap work beyond what Allegro's book settled. [decided: owner, 2026-10-28]
 
 ### First steps
 
-C55. Service chunk 1 closes with P2-N010, plan-state update under the advisory lease, and P2-N011, degrade to git-only with enlistment documentation. evidence: E2. [decided: project-orchestrator Plan register]
+C55. Service chunk 1 closes when nodes P2-N010 and P2-N011 are done. evidence: E2. [decided: project-orchestrator Plan register]
+
+C97. P2-N010 is plan-state update under the advisory lease. evidence: E2. [decided: project-orchestrator Plan register]
+
+C98. P2-N011 is degrade to git-only with enlistment documentation. evidence: E2. [decided: project-orchestrator Plan register]
 
 C56. Once chunk 1 closes, the task-pull loop comes before topics. [decided: owner, 2026-10-28]
 
 C78. The web view's first version drills to node and task only. [decided: owner, 2026-10-28]
 
-C58. The reasoning role writes the roadmap document after the service review, from this vision. [decided: owner, 2026-10-28]
+C58. The reasoning role writes the roadmap document after the review of the service, from this vision. [decided: owner, 2026-10-28]
 
 ## Relations
 
@@ -286,7 +290,7 @@ R22. C69 depends-on C67 because the writer the constraint assumes is absent on t
 
 R23. C42 depends-on C72 because the possible mismatch is why the two plan models are combined rather than one adopted.
 
-R24. C69 depends-on C79 because the owner's decisions on the service fall at the service review.
+R24. C69 depends-on C79 because the owner's decisions on the service fall at the review of the service after chunk 1.
 
 R25. C85 depends-on C58 because the sequence beyond chunk 1 is the roadmap document's content, not this vision's.
 

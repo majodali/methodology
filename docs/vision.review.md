@@ -14,6 +14,7 @@ IR: [vision.ir.md](vision.ir.md). Prose: [vision.md](vision.md). Disposition D2 
 | 6 | 1,457 | 90 | 11 | not readable (restatement mismatches 2, both own; contradiction 1, declined; undefined terms 0) |
 | 7 | 1,460 | 92 | 11 | not readable (restatement mismatch 1 prose-induced and 4 own; contradiction 0; undefined terms 4) |
 | 8 | 1,467 | 93 | 6 | not readable (restatement mismatch 1 prose-induced; contradiction 0; undefined terms 1) |
+| 9 | 1,471 | 94 | 5 | not readable (restatement mismatch 1 prose-induced; contradiction 0; undefined terms 1) |
 
 ### Round 1
 
@@ -126,5 +127,19 @@ Step-6 note: the pilot-order mismatch recurred a third time (rounds 3, 4 and 8).
 Accepted, fixed IR first then prose: 1 (as above); 2 (C3 split, C96 the plan update); 3 (Standing constraint 1 linked to the service plan's Standing constraints section); 4 (C36 "developed only as far as Allegro needed"); 5 (C18 names the owner as the one who amends a rule); 6 (C89 names the owner and the reasoning role).
 
 Claims after fixes: 94. Prose after fixes: 1,471 words. Confirmation by the round's instance: 6 of 6 fixes hold, no new defect; First steps no longer reads as an order ending in the pilot.
+
+### Round 9
+
+Claims check before the round: 5 changed claims, 0 missing, 0 stale (base: round 8 prose).
+
+Findings: 5 (restatement mismatch 1; SP-01 1; SP-04 1; SP-18 1; SP-26 1). Accepted 4, declined 1.
+
+Step-6 note: the merge-timing mismatch on C26 recurred a third time (rounds 1, 7 and 9), after round 7's structural fix. Every stranger reads the merge as following the pilot, which is true: the merge cannot precede the decision on it. C26 now reads "After the pilot, the owner decides how and when Allegro's approach and the project-orchestrator's approach merge", so the reading the strangers make is the claim.
+
+Accepted, fixed IR first then prose: 1 (as above); 3 (C55 split into C55, C97 and C98, one node each); 4 ("the service review" replaced by "the review of the service" in C58 and C69, matching C22's wording); 5 (C68 recast as a statement of roadmap work, no duty; round 1's finding 35 had added the actors under SP-18, and round 9 asks for the trigger, the SP-18 oscillation noted for the meta-review).
+
+Declined: 6 (SP-26 on C64's phrase "holding specification, examples and implementation links together"). Round 2 cut the phrase under SP-26, round 4 restored it under SP-03, the referent rule, and the brief's exemption for a repeated noun phrase that names a referent covers it.
+
+Claims after fixes: 96. Prose after fixes: 1477 words. Confirmation by the round's instance: pending.
 
 Meta-review: pending (signal 2 after round 4: a restatement mismatch recurred on the Sequence section's pilot order in rounds 3, 4 and 8, and after round 7 on the merge-decision sentence C26 in rounds 1 and 7; signal 1 after round 4's confirmation: fixes not confirmed in full in rounds 3 and 4; signal 4 after round 6: a contradiction reported in fix-touched passages, C29 against C87, declined, withdrawn by the instance at confirmation, counted as written; signal 3 checked, growth within the bound).
