@@ -13,6 +13,7 @@ IR: [vision.ir.md](vision.ir.md). Prose: [vision.md](vision.md). Disposition D2 
 | 5 | 1,459 | 89 | 7 | not readable (restatement mismatches 2, both own; contradiction 0; undefined terms 2) |
 | 6 | 1,457 | 90 | 11 | not readable (restatement mismatches 2, both own; contradiction 1, declined; undefined terms 0) |
 | 7 | 1,460 | 92 | 11 | not readable (restatement mismatch 1 prose-induced and 4 own; contradiction 0; undefined terms 4) |
+| 8 | 1,467 | 93 | 6 | not readable (restatement mismatch 1 prose-induced; contradiction 0; undefined terms 1) |
 
 ### Round 1
 
@@ -114,4 +115,16 @@ Not prose defects, by the instance's own report: 2, 3, 4, 5.
 
 Claims after fixes: 93. Prose after fixes: 1,467 words. Confirmation by the round's instance: 6 of 6 fixes hold; the decline accepted, the instance noting that no undefined term then remains. One defect introduced by fix 6, "the source" with its antecedent in the previous sentence, fixed before round 8 as "match the plugin".
 
-Meta-review: pending (signal 2 after round 4: a restatement mismatch recurred on the Sequence section's pilot order in rounds 3 and 4, and after round 7 on the merge-decision sentence C26 in rounds 1 and 7; signal 1 after round 4's confirmation: fixes not confirmed in full in rounds 3 and 4; signal 4 after round 6: a contradiction reported in fix-touched passages, C29 against C87, declined, withdrawn by the instance at confirmation, counted as written; signal 3 checked, growth within the bound).
+### Round 8
+
+Claims check before the round: 6 changed claims, 0 missing, 0 stale (base: round 7 prose).
+
+Findings: 6 (restatement mismatch 1; SP-01 1; SP-04 1; SP-08 1; SP-18 2). Accepted 6.
+
+Step-6 note: the pilot-order mismatch recurred a third time (rounds 3, 4 and 8). The earlier fixes added a disclaimer sentence and renamed the section; both left the pilot sentences inside the list, where a reader takes list position as order. Structural fix: C57, C84 and C85 move from First steps to Decisions taken on 2026-10-28, where they are decisions, and First steps holds only chunk 1, the task-pull loop and the web view's first version.
+
+Accepted, fixed IR first then prose: 1 (as above); 2 (C3 split, C96 the plan update); 3 (Standing constraint 1 linked to the service plan's Standing constraints section); 4 (C36 "developed only as far as Allegro needed"); 5 (C18 names the owner as the one who amends a rule); 6 (C89 names the owner and the reasoning role).
+
+Claims after fixes: 94. Prose after fixes: 1471 words. Confirmation by the round's instance: pending.
+
+Meta-review: pending (signal 2 after round 4: a restatement mismatch recurred on the Sequence section's pilot order in rounds 3, 4 and 8, and after round 7 on the merge-decision sentence C26 in rounds 1 and 7; signal 1 after round 4's confirmation: fixes not confirmed in full in rounds 3 and 4; signal 4 after round 6: a contradiction reported in fix-touched passages, C29 against C87, declined, withdrawn by the instance at confirmation, counted as written; signal 3 checked, growth within the bound).

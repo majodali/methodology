@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The vision the portfolio builds toward over an iterative roadmap: the direction the owner set, the decisions already taken, what the portfolio already provides, the gaps a roadmap closes, and the decisions still open.
-Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; round trip 93 of 93; round 8)
+Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; round trip 94 of 94; round 8)
 Source: the owner's message of 2026-10-28 stating the vision in eight points; the reasoning role's assessment of the same day; the owner's reply of 2026-10-28 deciding four asks and agreeing the recommendations and terms; the owner's two notes of 2026-10-28 on agent surfaces and on the literate approach.
 Footprint: docs/vision.ir.md; docs/vision.md; docs/vision.review.md; docs/backlog.md; docs/vocabulary.md
 
@@ -46,7 +46,9 @@ C1. Every project in the portfolio that benefits uses the project-orchestrator, 
 
 C2. Each project keeps a comprehensive plan in the project's repository, kept current by agents as the agents perform each task. [decided: owner, 2026-10-28]
 
-C3. An agent queries the project-orchestrator-service for available tasks, claims a task, then updates the plan when closing the task. [decided: owner, 2026-10-28]
+C3. An agent queries the project-orchestrator-service for available tasks and claims a task. [decided: owner, 2026-10-28]
+
+C96. The agent updates the plan when closing the task. [decided: owner, 2026-10-28]
 
 C80. The agent changes the project's repository directly while performing the task. [decided: owner, 2026-10-28]
 
@@ -82,7 +84,7 @@ C15. Convergence is handled by evolving formal models, evolving agent instructio
 
 C17. The vision is built by an iterative roadmap. [decided: owner, 2026-10-28]
 
-C18. A change to a methodology rule such as K-003 happens at the point in the roadmap where a project needs the change. [decided: owner, 2026-10-28]
+C18. The owner amends a methodology rule such as K-003 at the point in the roadmap where a project needs the change. [decided: owner, 2026-10-28]
 
 C19. The Backlog's remaining jobs, the implementation map and the list of what is next, become renderings of the planning/execution model. [decided: owner, 2026-10-28]
 
@@ -106,11 +108,17 @@ C26. After the pilot, the owner decides how Allegro's approach and the project-o
 
 C27. The plan model, the IR and the role definitions stay documents until Allegro models them. [decided: owner, 2026-10-28]
 
-C89. Nothing is constructed ahead of need. [decided: owner, 2026-10-28]
+C89. The owner and the reasoning role construct nothing ahead of need. [decided: owner, 2026-10-28]
 
 C28. The vision document lives in the methodology repository as docs/vision.md. [decided: owner, 2026-10-28]
 
 C77. The reasoning role drafts the vision document IR first, for the owner to edit. [decided: owner, 2026-10-28]
+
+C57. The owner names the first adopter by benefit before the pilot starts. [decided: owner, 2026-10-28]
+
+C84. The first adopter's plan is the pilot. [decided: owner, 2026-10-28]
+
+C85. The roadmap document, not this vision, places the pilot relative to the task-pull loop. [inferred: R25]
 
 ### What the portfolio already provides
 
@@ -136,7 +144,7 @@ C34. Dispatch has approved scope as the hard boundary, with an optional task or 
 
 C35. The IR, the claims check, same-instance confirmation and the four meta-review signals are the convergence machinery for prose. evidence: E5. [decided: IR specification]
 
-C36. Allegro's book is the portfolio's one literate project, developed as far as Allegro needed and no further. evidence: E6. [decided: owner, 2026-10-28]
+C36. Allegro's book is the portfolio's one literate project, developed only as far as Allegro needed. evidence: E6. [decided: owner, 2026-10-28]
 
 C37. Allegro's planning DSL exists as Allegro's first Vivace domain model. evidence: E7. [decided: allegro, 2026-10-25]
 
@@ -228,13 +236,7 @@ C56. Once chunk 1 closes, the task-pull loop comes before topics. [decided: owne
 
 C78. The web view's first version drills to node and task only. [decided: owner, 2026-10-28]
 
-C57. The owner names the first adopter by benefit before the pilot starts. [decided: owner, 2026-10-28]
-
-C84. The first adopter's plan is the pilot. [decided: owner, 2026-10-28]
-
 C58. The reasoning role writes the roadmap document after the service review, from this vision. [decided: owner, 2026-10-28]
-
-C85. The roadmap document, not this vision, places the pilot relative to the task-pull loop. [inferred: R25]
 
 ## Relations
 
