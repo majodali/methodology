@@ -120,7 +120,7 @@ C35. The IR, the claims check, same-instance confirmation and the four meta-revi
 
 C36. Allegro's book is the portfolio's one literate project, developed as far as Allegro needed and no further. evidence: E6. [decided: owner, 2026-10-28]
 
-C37. Allegro's planning DSL exists as the first Vivace pilot, demoable at rung 3, modeling a plan as a directed acyclic graph of outcomes. evidence: E7. [decided: allegro, 2026-10-25]
+C37. Allegro's planning DSL exists as Allegro's first Vivace domain model, demoable at rung 3, modeling a plan as a directed acyclic graph of outcomes. evidence: E7. [decided: allegro, 2026-10-25]
 
 C38. The service stays a projection of git, which remains authoritative. evidence: E8. [decided: owner, 2026-08-26]
 
@@ -268,4 +268,4 @@ A2. Ratify or strike the four proposed terms. Done: ratified by the owner on 202
 
 A3. Name the first adopter. Depends: C57.
 
-A4. After the edit, authorize the paraphraser's rendering of docs/vision.md and the stranger rounds, so the document is delivered under W-009. Depends: A1.
+A4. Authorize the paraphraser's rendering of docs/vision.md and the stranger rounds, so the document is delivered under W-009. Done: the owner's ratification of 2026-10-28 authorized both; rendered the same day. Depends: A1.
