@@ -1,5 +1,7 @@
 # Vision for the methodology and the portfolio
 
+Status: under review (v1, round 1)
+
 ## Reader and purpose
 
 Reader: RD-4, a fresh agent session described in the [reader catalog](style.md#readers).
