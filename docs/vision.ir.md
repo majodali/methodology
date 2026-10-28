@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The vision the portfolio builds toward over an iterative roadmap: the direction the owner set, the decisions already taken, what the portfolio already provides, the gaps a roadmap closes, and the decisions still open.
-Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; round trip 89 of 89; round 5)
+Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; round trip 90 of 90; round 5)
 Source: the owner's message of 2026-10-28 stating the vision in eight points; the reasoning role's assessment of the same day; the owner's reply of 2026-10-28 deciding four asks and agreeing the recommendations and terms; the owner's two notes of 2026-10-28 on agent surfaces and on the literate approach.
 Footprint: docs/vision.ir.md; docs/vision.md; docs/vision.review.md; docs/backlog.md; docs/vocabulary.md
 
@@ -124,7 +124,7 @@ C31. The service reads real plan state from git. evidence: E2. [decided: project
 
 C59. Plan-state update with an advisory lease is node P2-N010, not yet started. evidence: E2. [decided: project-orchestrator Plan register]
 
-C32. Role definitions live once in the orchestrator plugin and are mirrored into projects by a script with a drift check. evidence: E3. [decided: project-orchestrator plugin]
+C32. Role definitions live once in the orchestrator plugin and are mirrored into projects by a script that checks the copies match the source. evidence: E3. [decided: project-orchestrator plugin]
 
 C33. The methodology supplies the rules. evidence: E3. [decided: project-orchestrator process specification]
 
@@ -186,13 +186,15 @@ C76. A mismatch between the fresh reviewer's restatement and the plan is a findi
 
 C49. The rounds-until-readable rule and the meta-review signals carry over to plan review unchanged. [decided: owner, 2026-10-28]
 
-C50. The reasoning role amends the plan model to record where each node's verification evidence lands, before the web view drills to code and test results. [inferred: R16]
+C50. The reasoning role amends the plan model to record where each node's verification evidence lands. [inferred: R16]
+
+C91. The amendment in C50 precedes the web view's drill-down to code and test results. [inferred: R16]
 
 C63. Today the plan model records verification criteria only, not where the evidence lands. evidence: E1. [decided: project-orchestrator process specification]
 
-C51. No document type holds specification, examples and implementation pointers together. evidence: E10. [decided: owner, 2026-10-28]
+C51. No document type holds specification, examples and implementation links together. evidence: E10. [decided: owner, 2026-10-28]
 
-C64. Allegro's conceptual-model proposal is the closest existing draft of a document type holding specification, examples and implementation pointers together. evidence: E10. [decided: owner, 2026-10-28]
+C64. Allegro's conceptual-model proposal is the closest existing draft of a document type holding specification, examples and implementation links together. evidence: E10. [decided: owner, 2026-10-28]
 
 C52. The first orchestrated project is the second project the conceptual-model proposal waits for. evidence: E10. [decided: owner, 2026-10-28]
 

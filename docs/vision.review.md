@@ -10,6 +10,7 @@ IR: [vision.ir.md](vision.ir.md). Prose: [vision.md](vision.md). Disposition D2 
 | 2 | 1,396 | 79 | 20 | not readable (restatement mismatches 2, contradiction 1, undefined terms 5) |
 | 3 | 1,431 | 83 | 14 | not readable (restatement mismatch 1 prose-induced and 2 own, contradictions 2, undefined terms 2) |
 | 4 | 1,437 | 87 | 14 | not readable (restatement mismatch 1 prose-induced and 4 own, contradiction 0, undefined terms 3) |
+| 5 | 1,459 | 89 | 7 | not readable (restatement mismatches 2, both own; contradiction 0; undefined terms 2) |
 
 ### Round 1
 
@@ -68,5 +69,17 @@ Not prose defects, by the instance's own report: 2, 3, 4 (but see the step-6 fin
 Meta-review after round 4: pending. Signal 2 fired: a restatement mismatch recurred on one passage, the Sequence section's pilot order, in rounds 3 and 4. Signal 1: one round with a fix not confirmed in full. Signal 3: growth within the bound. Signal 4: not fired on the strict reading.
 
 Claims after fixes: 88. Prose after fixes: 1,449 words. Confirmation by the round's instance: 8 of 10 fixes hold; the step-6 fix holds (the section no longer reads as a complete order). Not held: 1 (C66 still read as "cannot reach", which is the present state, so C66 now states that plainly and C90 carries the missing route) and 13 (C50 now names the reasoning role as the actor who amends the plan model, inferred by R16). Both fixed before round 5. Round 4 is the second round with a fix not confirmed in full, so signal 1 is now also met.
+
+### Round 5
+
+Claims check before the round: 9 changed claims, 0 missing, 0 stale (base: round 4 prose).
+
+Findings: 7 (restatement mismatch 2, both the instance's own; SP-01 1; SP-04 2; SP-05 1; SP-26 1). Accepted 5, not prose defects 2.
+
+Accepted, fixed IR first then prose: 3 (C50 split, C91 the ordering); 4 (C32 "a script that checks the copies match the source"); 5 (C51 and C64 "implementation links"); 6 (founding ruling 1 linked to the plan model's Backlog section); 7 (the appositive on chunk 1 cut, the link now carrying the name).
+
+Not prose defects, by the instance's own report: 1 and 2.
+
+Claims after fixes: 90. Prose after fixes: 1457 words. Confirmation by the round's instance: pending.
 
 Meta-review: pending (signal 2 after round 4: a restatement mismatch recurred on the Sequence section's pilot order in rounds 3 and 4; signal 1 after round 4's confirmation: fixes not confirmed in full in rounds 3 and 4; signals 3 and 4 checked, not fired).
