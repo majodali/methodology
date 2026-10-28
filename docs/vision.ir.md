@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The vision the portfolio builds toward over an iterative roadmap: the direction the owner set, the decisions already taken, what the portfolio already provides, the gaps a roadmap closes, and the decisions still open.
-Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; round trip 93 of 93; round 7)
+Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; round trip 93 of 93; round 8)
 Source: the owner's message of 2026-10-28 stating the vision in eight points; the reasoning role's assessment of the same day; the owner's reply of 2026-10-28 deciding four asks and agreeing the recommendations and terms; the owner's two notes of 2026-10-28 on agent surfaces and on the literate approach.
 Footprint: docs/vision.ir.md; docs/vision.md; docs/vision.review.md; docs/backlog.md; docs/vocabulary.md
 
@@ -126,7 +126,7 @@ C59. Plan-state update with an advisory lease is node P2-N010, not yet started. 
 
 C32. Role definitions live once in the orchestrator plugin. evidence: E3. [decided: project-orchestrator plugin]
 
-C95. A script mirrors the role definitions into projects and checks the copies match the source. evidence: E3. [decided: project-orchestrator plugin]
+C95. A script mirrors the role definitions into projects and checks the copies match the plugin. evidence: E3. [decided: project-orchestrator plugin]
 
 C33. The methodology supplies the rules. evidence: E3. [decided: project-orchestrator process specification]
 

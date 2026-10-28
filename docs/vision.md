@@ -1,6 +1,6 @@
 # Vision for the methodology and the portfolio
 
-Status: under review (v1, round 7)
+Status: under review (v1, round 8)
 
 ## Reader and purpose
 
@@ -58,7 +58,7 @@ In the plan model a feature is its validation: the set of functional tests that 
 The service reads real plan state from git.
 Node P2-N010, plan-state update with an [advisory lease](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md), is not yet started in the [Plan register](https://github.com/majodali/project-orchestrator/blob/main/docs/process/plan-register.md).
 Role definitions live once in the [orchestrator plugin](https://github.com/majodali/project-orchestrator/blob/main/plugin/README.md).
-A script mirrors the role definitions into projects and checks the copies match the source.
+A script mirrors the role definitions into projects and checks the copies match the plugin.
 The methodology supplies the rules.
 The project-orchestrator supplies the roles that apply the rules.
 [Dispatch](https://github.com/majodali/project-orchestrator/blob/main/docs/process/dispatch.md) has approved scope as the hard boundary, with an optional task or token budget attached when the owner grants scope.

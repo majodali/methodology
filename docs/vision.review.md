@@ -112,6 +112,6 @@ Declined: 8 ("Claude Duet" is a product name in the owner's list of surfaces, ex
 
 Not prose defects, by the instance's own report: 2, 3, 4, 5.
 
-Claims after fixes: 93. Prose after fixes: 1467 words. Confirmation by the round's instance: pending.
+Claims after fixes: 93. Prose after fixes: 1,467 words. Confirmation by the round's instance: 6 of 6 fixes hold; the decline accepted, the instance noting that no undefined term then remains. One defect introduced by fix 6, "the source" with its antecedent in the previous sentence, fixed before round 8 as "match the plugin".
 
 Meta-review: pending (signal 2 after round 4: a restatement mismatch recurred on the Sequence section's pilot order in rounds 3 and 4, and after round 7 on the merge-decision sentence C26 in rounds 1 and 7; signal 1 after round 4's confirmation: fixes not confirmed in full in rounds 3 and 4; signal 4 after round 6: a contradiction reported in fix-touched passages, C29 against C87, declined, withdrawn by the instance at confirmation, counted as written; signal 3 checked, growth within the bound).
