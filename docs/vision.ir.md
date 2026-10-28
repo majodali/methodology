@@ -3,7 +3,7 @@
 Reader: RD-4
 Purpose: document. The vision the portfolio builds toward over an iterative roadmap: the direction the owner set, the decisions already taken, what the portfolio already provides, the gaps a roadmap closes, and the decisions still open.
 Status: draft
-Source: the owner's message of 2026-10-28 stating the vision in eight points; the reasoning role's assessment of the same day; the owner's reply of 2026-10-28 deciding four asks and agreeing the recommendations and terms.
+Source: the owner's message of 2026-10-28 stating the vision in eight points; the reasoning role's assessment of the same day; the owner's reply of 2026-10-28 deciding four asks and agreeing the recommendations and terms; the owner's two notes of 2026-10-28 on agent surfaces and on the literate approach.
 Footprint: docs/vision.ir.md; docs/backlog.md
 
 ## Terms
@@ -48,7 +48,7 @@ C2. Each project keeps a comprehensive plan in the project's repository, kept cu
 
 C3. An agent queries the project-orchestrator-service for available tasks, claims a task, changes the project's repository directly, then updates the plan when closing the task. [decided: owner, 2026-10-28]
 
-C4. An agent is enlisted from Claude Code or delegated to by another agent. [decided: owner, 2026-10-28]
+C4. An agent is enlisted from any Claude surface, Claude Code web, desktop or CLI, Claude Duet, the Claude web interface or Claude Mobile, or is delegated to by another agent. [decided: owner, 2026-10-28]
 
 C5. Projects and agents using the project-orchestrator standardize agent instructions across planning, documentation, communication and engineering practice. [decided: owner, 2026-10-28]
 
@@ -118,7 +118,7 @@ C34. Dispatch has approved scope as the hard boundary, with an optional task or 
 
 C35. The IR, the claims check, same-instance confirmation and the four meta-review signals are the convergence machinery for prose. evidence: E5. [decided: IR specification]
 
-C36. Allegro's book is the portfolio's one literate project. evidence: E6. [decided: allegro, 2026-10-21]
+C36. Allegro's book is the portfolio's one literate project, developed as far as Allegro needed and no further. evidence: E6. [decided: owner, 2026-10-28]
 
 C37. Allegro's planning DSL exists as the first Vivace pilot, demoable at rung 3, modeling a plan as a directed acyclic graph of outcomes. evidence: E7. [decided: allegro, 2026-10-25]
 
@@ -168,6 +168,14 @@ C53. Standardized agent instructions across projects pull against Allegro's own 
 
 C54. The web view reads from commits only, never from state the service holds alone. [proposed: this IR]
 
+C65. Enlistment today is a `.mcp.json` in the repository clone, which only Claude Code surfaces read. evidence: E12. [decided: project-orchestrator-service documentation]
+
+C66. A surface without a repository clone reaches the service only as a remote MCP connector, which the service does not offer today. evidence: E12. [proposed: this IR]
+
+C67. A surface without a repository clone cannot make the git commit the service expects from the session, so standing constraint 1 needs a decision for those surfaces. evidence: E12. [proposed: this IR]
+
+C68. The literate approach and every project as a book are developed in more detail on the roadmap, beyond what Allegro's book settled. [decided: owner, 2026-10-28]
+
 ### Sequence
 
 C55. Service chunk 1 closes with P2-N010, plan-state update under the lease, and P2-N011, degrade to git-only with enlistment documentation. evidence: E2. [decided: project-orchestrator Plan register]
@@ -216,6 +224,12 @@ R15. C46 supports C16 because a record of findings and fix confidence is one of 
 
 R16. C50 depends-on C10 because the drill-down to test results is what the web view promises.
 
+R19. C66 depends-on C4 because the surfaces C4 names include ones with no repository clone.
+
+R20. C67 depends-on C4 because the surfaces C4 names include ones with no repository clone.
+
+R21. C68 refines C11 because C68 says the literate style is still to be designed, not copied from Allegro.
+
 ## Evidence
 
 E1. project-orchestrator docs/process/plan-model.md, sections "The hierarchy", "Features" and "The node lifecycle": the tree, the V-shaped progression, the seven-stage table, and the sentence "a feature is its validation".
@@ -240,9 +254,11 @@ E10. allegro docs/plans/conceptual-model-methodology-delta.md (status: draft pro
 
 E11. The session of 2026-10-28: the owner's vision message (eight points), the reasoning role's assessment, and the owner's reply ("You can draft the vision in IR"; "I agree with all your recommendations and terms, except let's change define-by-example to specification-by-example").
 
+E12. project-orchestrator-service README.md ("every write is the session's own git commit, which this service validates but never makes"); docs/mcp-enlistment.md ("Claude Code reads a repository-root `.mcp.json` automatically on both the local and web surfaces"); src/auth.ts, bearer-token auth only.
+
 ## Asks
 
-A1. Edit the draft: confirm, change or strike each proposed claim, C44 to C54, C56 to C58 and C64. Depends: C44, C45, C46, C47, C48, C49, C50, C51, C52, C53, C54, C56, C57, C58, C64.
+A1. Edit the draft: confirm, change or strike each proposed claim, C44 to C54, C56 to C58, C64, C66 and C67. Depends: C44, C45, C46, C47, C48, C49, C50, C51, C52, C53, C54, C56, C57, C58, C64, C66, C67.
 
 A2. Ratify or strike the four proposed terms at the vision document's gate. Depends: T12, T13, T14, T15.
 
