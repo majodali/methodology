@@ -28,9 +28,9 @@ C7. The register's census line now records that pins were refreshed on 2026-10-2
 
 C8. The methodology row now records its migration to 1.6.0 on 2026-10-28 by PR #60. [decided: this refresh]
 
-C9. The project-orchestrator row now records the Paraphraser and Reviewer (stranger) roles, accepted on 2026-10-26 and revised with the pipeline's branch point v1.5 and v1.6. [decided: project-orchestrator PRs #7 to #10]
+C9. The project-orchestrator row now records the Paraphraser and Reviewer (stranger) roles, accepted on 2026-10-26 and revised with the pipeline's branch point v1.5 and v1.6. [decided: this refresh]
 
-C10. The communication-pipeline row now records its evaluation corpus as cases 001 to 008 and its branch point at v1.6. [decided: communication-pipeline main, 2026-10-28]
+C10. The communication-pipeline row now records its evaluation corpus as cases 001 to 008 and its branch point at v1.6. [decided: this refresh]
 
 C11. mc-tools has no pin and no bootstrap, so the round had no PR for it. [decided: Portfolio register]
 
