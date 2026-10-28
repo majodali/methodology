@@ -11,6 +11,7 @@ IR: [vision.ir.md](vision.ir.md). Prose: [vision.md](vision.md). Disposition D2 
 | 3 | 1,431 | 83 | 14 | not readable (restatement mismatch 1 prose-induced and 2 own, contradictions 2, undefined terms 2) |
 | 4 | 1,437 | 87 | 14 | not readable (restatement mismatch 1 prose-induced and 4 own, contradiction 0, undefined terms 3) |
 | 5 | 1,459 | 89 | 7 | not readable (restatement mismatches 2, both own; contradiction 0; undefined terms 2) |
+| 6 | 1,457 | 90 | 11 | not readable (restatement mismatches 2, both own; contradiction 1, declined; undefined terms 0) |
 
 ### Round 1
 
@@ -82,4 +83,18 @@ Not prose defects, by the instance's own report: 1 and 2.
 
 Claims after fixes: 90. Prose after fixes: 1,457 words. Confirmation by the round's instance: 5 of 5 fixes hold, no new defect.
 
-Meta-review: pending (signal 2 after round 4: a restatement mismatch recurred on the Sequence section's pilot order in rounds 3 and 4; signal 1 after round 4's confirmation: fixes not confirmed in full in rounds 3 and 4; signals 3 and 4 checked, not fired).
+### Round 6
+
+Claims check before the round: 5 changed claims, 0 missing, 0 stale (base: round 5 prose).
+
+Findings: 11 (restatement mismatch 2, both the instance's own; SP-01 3; SP-03 1; SP-08 1; SP-18 1; SP-25 1; SP-26 2). Accepted 8, declined 1, not prose defects 2.
+
+Accepted, fixed IR first then prose: 4 (C65 split, C92); 5 (C90 split, C93); 6 (C47 split, C94 inferred by R26); 7 (C26's sentence names both approaches); 8 (C53 "conflict with"); 9 (C50 and C91 merged back with the trigger first, "Before the web view drills to code and test results, the reasoning role amends ..."; round 5's finding 3 had split the same sentence under SP-01, and round 6's finding 9 wants the trigger in the duty under SP-18, a tension between the two rules for the meta-review); 10 (the Asks line reads "Open: which project is the first adopter", a decision rather than a second statement of the duty); 11 ("also" cut).
+
+Declined: 3 (SP-25 on C29 against C87). The two sentences describe two different models, the orchestrator's plan model and Allegro's planning DSL, each named in its sentence; the text reports the difference as the gap C41 names and asserts neither as the portfolio's definition. The IR records the relation as R6. Carried to round 7's brief.
+
+Signal 4: the declined contradiction sits in passages earlier fixes touched (C29 split in round 1, C37 split in round 3), after round 3, so the fourth signal is met as written.
+
+Claims after fixes: 93. Prose after fixes: 1460 words. Confirmation by the round's instance: pending.
+
+Meta-review: pending (signal 2 after round 4: a restatement mismatch recurred on the Sequence section's pilot order in rounds 3 and 4; signal 1 after round 4's confirmation: fixes not confirmed in full in rounds 3 and 4; signal 4 after round 6: a contradiction reported in fix-touched passages, C29 against C87, declined but counted; signal 3 checked, growth within the bound).

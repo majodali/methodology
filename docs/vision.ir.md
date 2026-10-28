@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The vision the portfolio builds toward over an iterative roadmap: the direction the owner set, the decisions already taken, what the portfolio already provides, the gaps a roadmap closes, and the decisions still open.
-Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; round trip 90 of 90; round 6)
+Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; round trip 93 of 93; round 6)
 Source: the owner's message of 2026-10-28 stating the vision in eight points; the reasoning role's assessment of the same day; the owner's reply of 2026-10-28 deciding four asks and agreeing the recommendations and terms; the owner's two notes of 2026-10-28 on agent surfaces and on the literate approach.
 Footprint: docs/vision.ir.md; docs/vision.md; docs/vision.review.md; docs/backlog.md; docs/vocabulary.md
 
@@ -176,7 +176,9 @@ C74. The dispatch loop then runs until a stop signal or the stream's end. [decid
 
 C46. The reasoning role running a stream keeps a running record of findings and the confidence in each finding's fix. [decided: owner, 2026-10-28]
 
-C47. Today the convergence machinery of C35 applies to prose only, so plans and specifications have no stranger. [decided: owner, 2026-10-28]
+C47. Today the convergence machinery of C35 applies to prose only. [decided: owner, 2026-10-28]
+
+C94. Plans and specifications therefore have no stranger. [inferred: R26]
 
 C48. The stranger extends to plans and specifications. [decided: owner, 2026-10-28]
 
@@ -186,9 +188,7 @@ C76. A mismatch between the fresh reviewer's restatement and the plan is a findi
 
 C49. The rounds-until-readable rule and the meta-review signals carry over to plan review unchanged. [decided: owner, 2026-10-28]
 
-C50. The reasoning role amends the plan model to record where each node's verification evidence lands. [inferred: R16]
-
-C91. The amendment in C50 precedes the web view's drill-down to code and test results. [inferred: R16]
+C50. Before the web view drills to code and test results, the reasoning role amends the plan model to record where each node's verification evidence lands. [inferred: R16]
 
 C63. Today the plan model records verification criteria only, not where the evidence lands. evidence: E1. [decided: project-orchestrator process specification]
 
@@ -198,15 +198,19 @@ C64. Allegro's conceptual-model proposal is the closest existing draft of a docu
 
 C52. The first orchestrated project is the second project the conceptual-model proposal waits for. evidence: E10. [decided: owner, 2026-10-28]
 
-C53. Standardized agent instructions across projects pull against Allegro's own process documents until Allegro's approach and the project-orchestrator's approach merge. [decided: owner, 2026-10-28]
+C53. Standardized agent instructions across projects conflict with Allegro's own process documents until Allegro's approach and the project-orchestrator's approach merge. [decided: owner, 2026-10-28]
 
 C54. The web view reads from commits only. [decided: owner, 2026-10-28]
 
-C65. Enlistment today is a `.mcp.json` in the repository clone, which only Claude Code surfaces read. evidence: E12. [decided: project-orchestrator-service documentation]
+C65. Enlistment today is a `.mcp.json` in the repository clone. evidence: E12. [decided: project-orchestrator-service documentation]
+
+C92. Only Claude Code surfaces read a repository's `.mcp.json`. evidence: E12. [decided: project-orchestrator-service documentation]
 
 C66. Today a surface without a repository clone cannot reach the service. evidence: E12. [decided: owner, 2026-10-28]
 
-C90. The route for a surface without a repository clone is a remote MCP connector, which the service does not offer today. evidence: E12. [decided: owner, 2026-10-28]
+C90. The route for a surface without a repository clone is a remote MCP connector. evidence: E12. [decided: owner, 2026-10-28]
+
+C93. The service does not offer a remote MCP connector today. evidence: E12. [decided: project-orchestrator-service documentation]
 
 C67. Today a surface without a repository clone cannot make the git commit the service expects from the session. evidence: E12. [decided: owner, 2026-10-28]
 
@@ -281,6 +285,8 @@ R23. C42 depends-on C72 because the possible mismatch is why the two plan models
 R24. C69 depends-on C79 because the owner's decisions on the service fall at the service review.
 
 R25. C85 depends-on C58 because the sequence beyond chunk 1 is the roadmap document's content, not this vision's.
+
+R26. C94 depends-on C47 because a stranger for plans would be part of the machinery C47 limits to prose.
 
 ## Evidence
 
