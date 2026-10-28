@@ -2,7 +2,7 @@
 
 Reader: RD-1
 Purpose: report. The register refresh that closes the 1.6.0 migration round: every pinned project observed at 1.6.0 with the amended W-008 block, the Portfolio register's rows and census line updated.
-Status: draft
+Status: rendered (paraphraser, 2026-10-28, disposition D1 by BP-07; round trip 11 of 11; declared 3, changed 3, surprises 0, misses 0)
 Source: the owner's instruction of 2026-10-28 ("All merged - go ahead with the register refresh"); the ten merged migration PRs; the observed Classifications and bootstraps of ten checkouts on 2026-10-28.
 Footprint: docs/registers/portfolio.md; docs/records/portfolio-1.6.0-refresh.ir.md; docs/records/portfolio-1.6.0-refresh.md
 
