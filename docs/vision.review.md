@@ -67,6 +67,6 @@ Not prose defects, by the instance's own report: 2, 3, 4 (but see the step-6 fin
 
 Meta-review after round 4: pending. Signal 2 fired: a restatement mismatch recurred on one passage, the Sequence section's pilot order, in rounds 3 and 4. Signal 1: one round with a fix not confirmed in full. Signal 3: growth within the bound. Signal 4: not fired on the strict reading.
 
-Claims after fixes: 88. Prose after fixes: 1449 words. Confirmation by the round's instance: pending.
+Claims after fixes: 88. Prose after fixes: 1,449 words. Confirmation by the round's instance: 8 of 10 fixes hold; the step-6 fix holds (the section no longer reads as a complete order). Not held: 1 (C66 still read as "cannot reach", which is the present state, so C66 now states that plainly and C90 carries the missing route) and 13 (C50 now names the reasoning role as the actor who amends the plan model, inferred by R16). Both fixed before round 5. Round 4 is the second round with a fix not confirmed in full, so signal 1 is now also met.
 
-Meta-review: pending (signal 2 after round 4: a restatement mismatch recurred on the Sequence section's pilot order in rounds 3 and 4; signals 1, 3 and 4 checked, not fired).
+Meta-review: pending (signal 2 after round 4: a restatement mismatch recurred on the Sequence section's pilot order in rounds 3 and 4; signal 1 after round 4's confirmation: fixes not confirmed in full in rounds 3 and 4; signals 3 and 4 checked, not fired).

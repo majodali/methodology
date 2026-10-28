@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The vision the portfolio builds toward over an iterative roadmap: the direction the owner set, the decisions already taken, what the portfolio already provides, the gaps a roadmap closes, and the decisions still open.
-Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; round trip 88 of 88; round 4)
+Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; round trip 89 of 89; round 5)
 Source: the owner's message of 2026-10-28 stating the vision in eight points; the reasoning role's assessment of the same day; the owner's reply of 2026-10-28 deciding four asks and agreeing the recommendations and terms; the owner's two notes of 2026-10-28 on agent surfaces and on the literate approach.
 Footprint: docs/vision.ir.md; docs/vision.md; docs/vision.review.md; docs/backlog.md; docs/vocabulary.md
 
@@ -186,7 +186,7 @@ C76. A mismatch between the fresh reviewer's restatement and the plan is a findi
 
 C49. The rounds-until-readable rule and the meta-review signals carry over to plan review unchanged. [decided: owner, 2026-10-28]
 
-C50. Drilling from the web view to code and test results requires a plan model that records where each node's verification evidence lands. [decided: owner, 2026-10-28]
+C50. The reasoning role amends the plan model to record where each node's verification evidence lands, before the web view drills to code and test results. [inferred: R16]
 
 C63. Today the plan model records verification criteria only, not where the evidence lands. evidence: E1. [decided: project-orchestrator process specification]
 
@@ -202,7 +202,9 @@ C54. The web view reads from commits only. [decided: owner, 2026-10-28]
 
 C65. Enlistment today is a `.mcp.json` in the repository clone, which only Claude Code surfaces read. evidence: E12. [decided: project-orchestrator-service documentation]
 
-C66. A surface without a repository clone reaches the service only as a remote MCP connector, which the service does not offer today. evidence: E12. [decided: owner, 2026-10-28]
+C66. Today a surface without a repository clone cannot reach the service. evidence: E12. [decided: owner, 2026-10-28]
+
+C90. The route for a surface without a repository clone is a remote MCP connector, which the service does not offer today. evidence: E12. [decided: owner, 2026-10-28]
 
 C67. Today a surface without a repository clone cannot make the git commit the service expects from the session. evidence: E12. [decided: owner, 2026-10-28]
 
@@ -262,7 +264,7 @@ R14. C57 depends-on C23 because adoption by benefit decides who comes first.
 
 R15. C46 supports C16 because a record of findings and fix confidence is one of the processes that keep review convergent.
 
-R16. C50 depends-on C10 because the drill-down to test results is what the web view promises.
+R16. C50 depends-on C10 because the drill-down to test results is what the web view promises, and C63 says the plan model does not yet record the evidence.
 
 R19. C66 depends-on C4 because the surfaces C4 names include ones with no repository clone.
 
