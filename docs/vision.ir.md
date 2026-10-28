@@ -172,7 +172,9 @@ C65. Enlistment today is a `.mcp.json` in the repository clone, which only Claud
 
 C66. A surface without a repository clone reaches the service only as a remote MCP connector, which the service does not offer today. evidence: E12. [proposed: this IR]
 
-C67. A surface without a repository clone cannot make the git commit the service expects from the session, so standing constraint 1 needs a decision for those surfaces. evidence: E12. [proposed: this IR]
+C67. A surface without a repository clone cannot make the git commit the service expects from the session. evidence: E12. [proposed: this IR]
+
+C69. Standing constraint 1, git remains authoritative with the session as the only writer, needs a decision for surfaces without a repository clone. [inferred: R22]
 
 C68. The literate approach and every project as a book are developed in more detail on the roadmap, beyond what Allegro's book settled. [decided: owner, 2026-10-28]
 
@@ -229,6 +231,8 @@ R19. C66 depends-on C4 because the surfaces C4 names include ones with no reposi
 R20. C67 depends-on C4 because the surfaces C4 names include ones with no repository clone.
 
 R21. C68 refines C11 because C68 says the literate style is still to be designed, not copied from Allegro.
+
+R22. C69 depends-on C67 because the writer the constraint assumes is absent on those surfaces.
 
 ## Evidence
 
