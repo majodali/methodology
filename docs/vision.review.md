@@ -12,6 +12,7 @@ IR: [vision.ir.md](vision.ir.md). Prose: [vision.md](vision.md). Disposition D2 
 | 4 | 1,437 | 87 | 14 | not readable (restatement mismatch 1 prose-induced and 4 own, contradiction 0, undefined terms 3) |
 | 5 | 1,459 | 89 | 7 | not readable (restatement mismatches 2, both own; contradiction 0; undefined terms 2) |
 | 6 | 1,457 | 90 | 11 | not readable (restatement mismatches 2, both own; contradiction 1, declined; undefined terms 0) |
+| 7 | 1,460 | 92 | 11 | not readable (restatement mismatch 1 prose-induced and 4 own; contradiction 0; undefined terms 4) |
 
 ### Round 1
 
@@ -97,4 +98,20 @@ Signal 4: the declined contradiction sits in passages earlier fixes touched (C29
 
 Claims after fixes: 92. Prose after fixes: 1,460 words. Confirmation by the round's instance: 8 of 8 fixes hold, no new defect; the instance accepted the reason for the declined contradiction and withdrew the finding, so the round's defect count after confirmation is 8 with no contradiction. The round's verdict as returned stands as not readable; round 7 seeks a readable verdict from a fresh instance.
 
-Meta-review: pending (signal 2 after round 4: a restatement mismatch recurred on the Sequence section's pilot order in rounds 3 and 4; signal 1 after round 4's confirmation: fixes not confirmed in full in rounds 3 and 4; signal 4 after round 6: a contradiction reported in fix-touched passages, C29 against C87, declined, withdrawn by the instance at confirmation, counted as written; signal 3 checked, growth within the bound).
+### Round 7
+
+Claims check before the round: 8 changed claims, 0 missing, 0 stale (base: round 6 prose).
+
+Findings: 11 (restatement mismatch 5, of which 4 the instance's own; SP-01 1; SP-04 4; SP-18 1). Accepted 6, declined 1, not prose defects 4.
+
+Step-6 note: the prose-induced mismatch (finding 1) is on C26, the merge-decision sentence, where round 1's finding 1 was also a mismatch. The recurrence makes the sentence a structural finding: C26 now reads "After the pilot, the owner decides how Allegro's approach and the project-orchestrator's approach merge", with actor, trigger and the object of the decision.
+
+Accepted, fixed IR first then prose: 1 (C26 as above); 6 (C32 split, C95 the mirroring script); 7 (C73 gains the trigger "Before a stream starts"); 9 (orchestrator plugin linked to the plugin's README); 10 (C75 "each node's verification criteria", linked to the plan model's node lifecycle); 11 (C34 "when the owner grants scope").
+
+Declined: 8 ("Claude Duet" is a product name in the owner's list of surfaces, exempt as a name like Claude Code and Claude Mobile).
+
+Not prose defects, by the instance's own report: 2, 3, 4, 5.
+
+Claims after fixes: 93. Prose after fixes: 1467 words. Confirmation by the round's instance: pending.
+
+Meta-review: pending (signal 2 after round 4: a restatement mismatch recurred on the Sequence section's pilot order in rounds 3 and 4, and after round 7 on the merge-decision sentence C26 in rounds 1 and 7; signal 1 after round 4's confirmation: fixes not confirmed in full in rounds 3 and 4; signal 4 after round 6: a contradiction reported in fix-touched passages, C29 against C87, declined, withdrawn by the instance at confirmation, counted as written; signal 3 checked, growth within the bound).

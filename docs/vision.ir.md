@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The vision the portfolio builds toward over an iterative roadmap: the direction the owner set, the decisions already taken, what the portfolio already provides, the gaps a roadmap closes, and the decisions still open.
-Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; round trip 92 of 92; round 7)
+Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; round trip 93 of 93; round 7)
 Source: the owner's message of 2026-10-28 stating the vision in eight points; the reasoning role's assessment of the same day; the owner's reply of 2026-10-28 deciding four asks and agreeing the recommendations and terms; the owner's two notes of 2026-10-28 on agent surfaces and on the literate approach.
 Footprint: docs/vision.ir.md; docs/vision.md; docs/vision.review.md; docs/backlog.md; docs/vocabulary.md
 
@@ -102,7 +102,7 @@ C25. Eventually Allegro's approach and the project-orchestrator's approach merge
 
 C83. The merged model lets Allegro adopt the project-orchestrator. [decided: owner, 2026-10-28]
 
-C26. The decision on the merge in C25 follows the pilot. [decided: owner, 2026-10-28]
+C26. After the pilot, the owner decides how Allegro's approach and the project-orchestrator's approach merge. [decided: owner, 2026-10-28]
 
 C27. The plan model, the IR and the role definitions stay documents until Allegro models them. [decided: owner, 2026-10-28]
 
@@ -124,13 +124,15 @@ C31. The service reads real plan state from git. evidence: E2. [decided: project
 
 C59. Plan-state update with an advisory lease is node P2-N010, not yet started. evidence: E2. [decided: project-orchestrator Plan register]
 
-C32. Role definitions live once in the orchestrator plugin and are mirrored into projects by a script that checks the copies match the source. evidence: E3. [decided: project-orchestrator plugin]
+C32. Role definitions live once in the orchestrator plugin. evidence: E3. [decided: project-orchestrator plugin]
+
+C95. A script mirrors the role definitions into projects and checks the copies match the source. evidence: E3. [decided: project-orchestrator plugin]
 
 C33. The methodology supplies the rules. evidence: E3. [decided: project-orchestrator process specification]
 
 C88. The project-orchestrator supplies the roles that apply the rules. evidence: E3. [decided: project-orchestrator process specification]
 
-C34. Dispatch has approved scope as the hard boundary, with an optional task or token budget attached to a scope grant. evidence: E4. [decided: project-orchestrator process specification]
+C34. Dispatch has approved scope as the hard boundary, with an optional task or token budget attached when the owner grants scope. evidence: E4. [decided: project-orchestrator process specification]
 
 C35. The IR, the claims check, same-instance confirmation and the four meta-review signals are the convergence machinery for prose. evidence: E5. [decided: IR specification]
 
@@ -170,7 +172,7 @@ C62. No stop signal exists inside a stream. [inferred: R9]
 
 C44. Stop signals inside a stream take the meta-review signals' shape: mechanical where a count exists, a wording match for a hand check otherwise. [decided: owner, 2026-10-28]
 
-C73. The owner approves a stream as scope, budget and accepted risks. [decided: owner, 2026-10-28]
+C73. Before a stream starts, the owner approves the stream as scope, budget and accepted risks. [decided: owner, 2026-10-28]
 
 C74. The dispatch loop then runs until a stop signal or the stream's end. [decided: owner, 2026-10-28]
 
@@ -182,7 +184,7 @@ C94. Plans and specifications therefore have no stranger. [inferred: R26]
 
 C48. The stranger extends to plans and specifications. [decided: owner, 2026-10-28]
 
-C75. A fresh reviewer restates the plan from the Plan register and the node criteria before reading the plan's reasoning. [decided: owner, 2026-10-28]
+C75. A fresh reviewer restates the plan from the Plan register and each node's verification criteria before reading the plan's reasoning. [decided: owner, 2026-10-28]
 
 C76. A mismatch between the fresh reviewer's restatement and the plan is a finding. [decided: owner, 2026-10-28]
 
