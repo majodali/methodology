@@ -1,6 +1,6 @@
 # Review record: Vision for the methodology and the portfolio
 
-IR: [vision.ir.md](vision.ir.md). Prose: [vision.md](vision.md). Disposition D2 (purpose document, reader RD-4; BP-03). Paraphraser rendering 2026-10-28, round trip 69 of 69.
+IR: [vision.ir.md](vision.ir.md). Prose: [vision.md](vision.md). Disposition D2 (purpose document, reader RD-4; BP-03). Paraphraser rendering 2026-10-28, round trip 69 of 69. Count 1: ten rounds on 2026-10-28, limit reached without a readable verdict; every accepted fix confirmed by its round's instance; findings per round 38, 20, 14, 14, 7, 11, 11, 6, 5, 3; prose 1,338 to 1,489 words; claims 69 to 96. Signals script note: the script reads signal 1 as not fired because round 3's confirmation line says "10 of 11 prose fixes hold in full", a form it does not parse; the hand check counts rounds 3 and 4.
 
 ## Count 1
 
@@ -151,7 +151,7 @@ Findings: 3 (SP-01 1, also the restatement mismatch; SP-25 1; SP-18 1). Accepted
 
 Accepted, fixed IR first then prose: 1 ("taking over from the Backlog" cut from C8; C19 and C20 carry the Backlog's fate, R1 holds the link); 2 (C43 "stops at a stream's boundary: a gate, ..." so the prose carries the boundary R9 records); 3 (C77 "Before the vision document is rendered, the reasoning role drafts the document's IR for the owner to edit").
 
-Claims after fixes: 96. Prose after fixes: 1,489 words. Confirmation by the round's instance: pending.
+Claims after fixes: 96. Prose after fixes: 1,489 words. Confirmation by the round's instance: 3 of 3 fixes hold, no new defect. All three findings of the final round are marked confirmed; none unfixed.
 
 The count ends at the limit of ten without a readable verdict. The owner decides what follows: accept the text as it stands, dispatch the meta-review and then a second count, or both.
 

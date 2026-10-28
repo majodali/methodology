@@ -496,7 +496,9 @@ entries update in the same commit as the work they describe
   `Protects:` field (PR #47), P-007 and P-008 (PR #48), W-009 and the
   IR specification (PR #49). Open: the vision document (IR drafted 2026-10-28 as
   [docs/vision.ir.md](vision.ir.md), ratified by the owner with four
-  terms the same day; rendering and stranger rounds next);
+  terms the same day, rendered as [docs/vision.md](vision.md) and taken
+  through ten stranger rounds to the limit without a readable verdict;
+  meta-review pending, see [vision.review.md](vision.review.md));
   the vocabulary collision between Allegro's "promotion" and the
   methodology's *Promotion*; Allegro's P-009 to P-011 and document
   types, which wait for a second project.

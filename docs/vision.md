@@ -1,6 +1,6 @@
 # Vision for the methodology and the portfolio
 
-Status: under review (v1, round 10)
+Status: under review (v1, count 1 ended at round 10, limit reached; meta-review pending)
 
 ## Reader and purpose
 
