@@ -2,9 +2,9 @@
 
 Reader: RD-4
 Purpose: document. The vision the portfolio builds toward over an iterative roadmap: the direction the owner set, the decisions already taken, what the portfolio already provides, the gaps a roadmap closes, and the decisions still open.
-Status: draft
+Status: draft (ratified by the owner 2026-10-28 with the four terms; rendering pending; unratified terms 0)
 Source: the owner's message of 2026-10-28 stating the vision in eight points; the reasoning role's assessment of the same day; the owner's reply of 2026-10-28 deciding four asks and agreeing the recommendations and terms; the owner's two notes of 2026-10-28 on agent surfaces and on the literate approach.
-Footprint: docs/vision.ir.md; docs/backlog.md
+Footprint: docs/vision.ir.md; docs/backlog.md; docs/vocabulary.md
 
 ## Terms
 
@@ -30,13 +30,13 @@ T10. Meta-review signal. defined-at: vocabulary.md#def-meta-review-signal [decid
 
 T11. Planning DSL. defined-at: https://github.com/majodali/allegro/blob/main/docs/book/vivace/planning-dsl.md [decided: allegro, 2026-10-25]
 
-T12. Planning/execution model. The plan model of a project plus the verification evidence of each node: the thing the web view renders and the source of progress truth. [proposed: this IR]
+T12. Planning/execution model. defined-at: vocabulary.md#def-planning-execution-model [decided: owner, 2026-10-28]
 
-T13. Stream. A unit of approved autonomous work bounded by scope, budget and accepted risks rather than by chunk gates. [proposed: this IR]
+T13. Stream. defined-at: vocabulary.md#def-stream [decided: owner, 2026-10-28]
 
-T14. Specification-by-example. A specification given as examples that double as tests. [proposed: this IR]
+T14. Specification-by-example. defined-at: vocabulary.md#def-specification-by-example [decided: owner, 2026-10-28]
 
-T15. Web view. The project-orchestrator-service's interface for a project's planning/execution model, called the plan view in service chunk 2. [proposed: this IR]
+T15. Web view. defined-at: vocabulary.md#def-web-view [decided: owner, 2026-10-28]
 
 ## Claims
 
@@ -142,37 +142,37 @@ C43. The dispatch loop stops at a gate, an empty actionable set, a blocked task 
 
 C62. No stop signal exists inside a stream. [inferred: R9]
 
-C44. Stop signals inside a stream take the shape of the meta-review signals: mechanical where a count can be read, otherwise a wording hit for a hand check. [proposed: this IR]
+C44. Stop signals inside a stream take the shape of the meta-review signals: mechanical where a count can be read, otherwise a wording hit for a hand check. [decided: owner, 2026-10-28]
 
-C45. Larger streams replace the per-chunk gate: the owner approves a stream as scope, budget and accepted risks, then the loop runs until a stop signal or the stream's end. [proposed: this IR]
+C45. Larger streams replace the per-chunk gate: the owner approves a stream as scope, budget and accepted risks, then the loop runs until a stop signal or the stream's end. [decided: owner, 2026-10-28]
 
-C46. A stream keeps a running record of findings and the confidence in each finding's fix. [proposed: this IR]
+C46. A stream keeps a running record of findings and the confidence in each finding's fix. [decided: owner, 2026-10-28]
 
-C47. The convergence machinery of C35 applies to prose only, so plans and specifications have no stranger. [proposed: this IR]
+C47. The convergence machinery of C35 applies to prose only, so plans and specifications have no stranger. [decided: owner, 2026-10-28]
 
-C48. The stranger extends to plans and specifications: a fresh reviewer restates the plan from the Plan register and the node criteria before reading the reasoning, with mismatches as findings. [proposed: this IR]
+C48. The stranger extends to plans and specifications: a fresh reviewer restates the plan from the Plan register and the node criteria before reading the reasoning, with mismatches as findings. [decided: owner, 2026-10-28]
 
-C49. The rounds-until-readable rule and the meta-review signals carry over to plan review unchanged. [proposed: this IR]
+C49. The rounds-until-readable rule and the meta-review signals carry over to plan review unchanged. [decided: owner, 2026-10-28]
 
-C50. Drilling from the web view to code and test results requires the plan model to record where each node's verification evidence lands. [proposed: this IR]
+C50. Drilling from the web view to code and test results requires the plan model to record where each node's verification evidence lands. [decided: owner, 2026-10-28]
 
 C63. Today the plan model records verification criteria only, not where the evidence lands. evidence: E1. [decided: project-orchestrator process specification]
 
-C51. No document type holds specification, examples and implementation pointers together. evidence: E10. [proposed: this IR]
+C51. No document type holds specification, examples and implementation pointers together. evidence: E10. [decided: owner, 2026-10-28]
 
-C64. Allegro's conceptual-model proposal is the closest draft of the document type C51 lacks. evidence: E10. [proposed: this IR]
+C64. Allegro's conceptual-model proposal is the closest draft of the document type C51 lacks. evidence: E10. [decided: owner, 2026-10-28]
 
-C52. The first orchestrated project is the second project the conceptual-model proposal waits for. evidence: E10. [proposed: this IR]
+C52. The first orchestrated project is the second project the conceptual-model proposal waits for. evidence: E10. [decided: owner, 2026-10-28]
 
-C53. Standardized agent instructions across projects pull against Allegro's own process documents until the merge of C25. [proposed: this IR]
+C53. Standardized agent instructions across projects pull against Allegro's own process documents until the merge of C25. [decided: owner, 2026-10-28]
 
-C54. The web view reads from commits only, never from state the service holds alone. [proposed: this IR]
+C54. The web view reads from commits only, never from state the service holds alone. [decided: owner, 2026-10-28]
 
 C65. Enlistment today is a `.mcp.json` in the repository clone, which only Claude Code surfaces read. evidence: E12. [decided: project-orchestrator-service documentation]
 
-C66. A surface without a repository clone reaches the service only as a remote MCP connector, which the service does not offer today. evidence: E12. [proposed: this IR]
+C66. A surface without a repository clone reaches the service only as a remote MCP connector, which the service does not offer today. evidence: E12. [decided: owner, 2026-10-28]
 
-C67. A surface without a repository clone cannot make the git commit the service expects from the session. evidence: E12. [proposed: this IR]
+C67. A surface without a repository clone cannot make the git commit the service expects from the session. evidence: E12. [decided: owner, 2026-10-28]
 
 C69. Standing constraint 1, git remains authoritative with the session as the only writer, needs a decision for surfaces without a repository clone. [inferred: R22]
 
@@ -182,11 +182,11 @@ C68. The literate approach and every project as a book are developed in more det
 
 C55. Service chunk 1 closes with P2-N010, plan-state update under the lease, and P2-N011, degrade to git-only with enlistment documentation. evidence: E2. [decided: project-orchestrator Plan register]
 
-C56. The task-pull loop is taken before topics once chunk 1 closes, with the web view's first version drilling to node and task only. [proposed: this IR]
+C56. The task-pull loop is taken before topics once chunk 1 closes, with the web view's first version drilling to node and task only. [decided: owner, 2026-10-28]
 
-C57. The first adopter is named by benefit, with the first adopter's plan as the pilot. [proposed: this IR]
+C57. The first adopter is named by benefit, with the first adopter's plan as the pilot. [decided: owner, 2026-10-28]
 
-C58. The roadmap document is written after the service review, from this vision. [proposed: this IR]
+C58. The roadmap document is written after the service review, from this vision. [decided: owner, 2026-10-28]
 
 ## Relations
 
@@ -262,9 +262,9 @@ E12. project-orchestrator-service README.md ("every write is the session's own g
 
 ## Asks
 
-A1. Edit the draft: confirm, change or strike each proposed claim, C44 to C54, C56 to C58, C64, C66 and C67. Depends: C44, C45, C46, C47, C48, C49, C50, C51, C52, C53, C54, C56, C57, C58, C64, C66, C67.
+A1. Edit the draft: confirm, change or strike each proposed claim. Done: the owner ratified the draft on 2026-10-28. Depends: C44, C45, C46, C47, C48, C49, C50, C51, C52, C53, C54, C56, C57, C58, C64, C66, C67.
 
-A2. Ratify or strike the four proposed terms at the vision document's gate. Depends: T12, T13, T14, T15.
+A2. Ratify or strike the four proposed terms. Done: ratified by the owner on 2026-10-28. Depends: T12, T13, T14, T15.
 
 A3. Name the first adopter. Depends: C57.
 
