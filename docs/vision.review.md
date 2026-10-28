@@ -95,6 +95,6 @@ Declined: 3 (SP-25 on C29 against C87). The two sentences describe two different
 
 Signal 4: the declined contradiction sits in passages earlier fixes touched (C29 split in round 1, C37 split in round 3), after round 3, so the fourth signal is met as written.
 
-Claims after fixes: 92. Prose after fixes: 1,460 words. Confirmation by the round's instance: pending.
+Claims after fixes: 92. Prose after fixes: 1,460 words. Confirmation by the round's instance: 8 of 8 fixes hold, no new defect; the instance accepted the reason for the declined contradiction and withdrew the finding, so the round's defect count after confirmation is 8 with no contradiction. The round's verdict as returned stands as not readable; round 7 seeks a readable verdict from a fresh instance.
 
-Meta-review: pending (signal 2 after round 4: a restatement mismatch recurred on the Sequence section's pilot order in rounds 3 and 4; signal 1 after round 4's confirmation: fixes not confirmed in full in rounds 3 and 4; signal 4 after round 6: a contradiction reported in fix-touched passages, C29 against C87, declined but counted; signal 3 checked, growth within the bound).
+Meta-review: pending (signal 2 after round 4: a restatement mismatch recurred on the Sequence section's pilot order in rounds 3 and 4; signal 1 after round 4's confirmation: fixes not confirmed in full in rounds 3 and 4; signal 4 after round 6: a contradiction reported in fix-touched passages, C29 against C87, declined, withdrawn by the instance at confirmation, counted as written; signal 3 checked, growth within the bound).
