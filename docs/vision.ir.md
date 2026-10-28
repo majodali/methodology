@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The vision the portfolio builds toward over an iterative roadmap: the direction the owner set, the decisions already taken, what the portfolio already provides, the gaps a roadmap closes, and the decisions still open.
-Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; round trip 87 of 87; round 4)
+Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; round trip 88 of 88; round 4)
 Source: the owner's message of 2026-10-28 stating the vision in eight points; the reasoning role's assessment of the same day; the owner's reply of 2026-10-28 deciding four asks and agreeing the recommendations and terms; the owner's two notes of 2026-10-28 on agent surfaces and on the literate approach.
 Footprint: docs/vision.ir.md; docs/vision.md; docs/vision.review.md; docs/backlog.md; docs/vocabulary.md
 
@@ -72,7 +72,7 @@ C11. Projects use a literate style in which planning, specification, documentati
 
 C12. A new reader gets up to speed by reading the project like a book. [decided: owner, 2026-10-28]
 
-C13. New functionality is defined by the literate approach and specification-by-example as far as possible. [decided: owner, 2026-10-28]
+C13. New functionality is defined by the literate style and specification-by-example as far as possible. [decided: owner, 2026-10-28]
 
 C14. Projects are implemented in larger streams of autonomous work that focus on outcomes and risks rather than a chunk gate on every chunk. [decided: owner, 2026-10-28]
 
@@ -104,7 +104,9 @@ C83. The merged model lets Allegro adopt the project-orchestrator. [decided: own
 
 C26. The decision on the merge in C25 follows the pilot. [decided: owner, 2026-10-28]
 
-C27. The plan model, the IR and the role definitions stay documents until Allegro models them, with nothing constructed ahead of need. [decided: owner, 2026-10-28]
+C27. The plan model, the IR and the role definitions stay documents until Allegro models them. [decided: owner, 2026-10-28]
+
+C89. Nothing is constructed ahead of need. [decided: owner, 2026-10-28]
 
 C28. The vision document lives in the methodology repository as docs/vision.md. [decided: owner, 2026-10-28]
 
@@ -184,13 +186,13 @@ C76. A mismatch between the fresh reviewer's restatement and the plan is a findi
 
 C49. The rounds-until-readable rule and the meta-review signals carry over to plan review unchanged. [decided: owner, 2026-10-28]
 
-C50. Drilling from the web view to code and test results requires the plan model to record where each node's verification evidence lands. [decided: owner, 2026-10-28]
+C50. Drilling from the web view to code and test results requires a plan model that records where each node's verification evidence lands. [decided: owner, 2026-10-28]
 
 C63. Today the plan model records verification criteria only, not where the evidence lands. evidence: E1. [decided: project-orchestrator process specification]
 
 C51. No document type holds specification, examples and implementation pointers together. evidence: E10. [decided: owner, 2026-10-28]
 
-C64. Allegro's conceptual-model proposal is the closest draft of the missing document type. evidence: E10. [decided: owner, 2026-10-28]
+C64. Allegro's conceptual-model proposal is the closest existing draft of a document type holding specification, examples and implementation pointers together. evidence: E10. [decided: owner, 2026-10-28]
 
 C52. The first orchestrated project is the second project the conceptual-model proposal waits for. evidence: E10. [decided: owner, 2026-10-28]
 
@@ -206,9 +208,9 @@ C67. Today a surface without a repository clone cannot make the git commit the s
 
 C69. Standing constraint 1, the session as git's only writer, needs the owner's decision at the service review for surfaces without a repository clone. [inferred: R22]
 
-C68. The owner and the reasoning role develop the literate approach, every project as a book, on the roadmap beyond what Allegro's book settled. [decided: owner, 2026-10-28]
+C68. The owner and the reasoning role develop the literate style, every project as a book, on the roadmap beyond what Allegro's book settled. [decided: owner, 2026-10-28]
 
-### Sequence
+### First steps
 
 C55. Service chunk 1 closes with P2-N010, plan-state update under the advisory lease, and P2-N011, degrade to git-only with enlistment documentation. evidence: E2. [decided: project-orchestrator Plan register]
 
@@ -222,7 +224,7 @@ C84. The first adopter's plan is the pilot. [decided: owner, 2026-10-28]
 
 C58. The reasoning role writes the roadmap document after the service review, from this vision. [decided: owner, 2026-10-28]
 
-C85. The roadmap document places the pilot relative to the task-pull loop. [inferred: R25]
+C85. The roadmap document, not this vision, places the pilot relative to the task-pull loop. [inferred: R25]
 
 ## Relations
 

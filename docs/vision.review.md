@@ -9,6 +9,7 @@ IR: [vision.ir.md](vision.ir.md). Prose: [vision.md](vision.md). Disposition D2 
 | 1 | 1,338 | 69 | 38 | not readable (restatement mismatches 2, contradiction 1, undefined terms 9) |
 | 2 | 1,396 | 79 | 20 | not readable (restatement mismatches 2, contradiction 1, undefined terms 5) |
 | 3 | 1,431 | 83 | 14 | not readable (restatement mismatch 1 prose-induced and 2 own, contradictions 2, undefined terms 2) |
+| 4 | 1,437 | 87 | 14 | not readable (restatement mismatch 1 prose-induced and 4 own, contradiction 0, undefined terms 3) |
 
 ### Round 1
 
@@ -52,4 +53,20 @@ Claims after fixes: 87. Prose after fixes: 1,442 words. Confirmation by the roun
 
 Meta-review after round 3: not indicated. Signal 1: one round (round 3) with a fix not confirmed in full; the signal needs two. Signal 2: none. Signal 3: growth 104 of the 134 allowed. Signal 4: see the note above; strict reading, not fired.
 
-Meta-review: pending (signals checked after each round).
+### Round 4
+
+Claims check before the round: 14 changed claims, 0 missing, 0 stale (base: round 3 prose).
+
+Findings: 14 (restatement mismatch 5, of which 4 the instance attributes to its own restatement; SP-01 2; SP-03 2; SP-04 3; SP-18 1; SP-26 1). Accepted 10, not prose defects 4, plus one step-6 finding.
+
+Step-6 finding: the restatement mismatch on the Sequence section's pilot order recurred, round 3 finding 2 (prose-induced) and round 4 finding 4 (own). Under the branch point's step 6 the recurrence is a prose finding whatever the strangers attributed it to. Fixed: C85 now reads "The roadmap document, not this vision, places the pilot relative to the task-pull loop", and the section is renamed First steps so the list is not read as a complete order.
+
+Accepted, fixed IR first then prose: 1 (prose-induced mismatch on C66; no wording change beyond finding 10's link, the restatement error being the flat "cannot reach"; carried to round 5's brief as watched); 6 (the connective sentence reduced to one claim); 7 (C27 split, C89); 8 (C64 names the type again; reverses round 2's finding 15 in part, the referent rule outranking the excess-words rule); 9 (the Asks sentences name the owner's ratification of the IR); 10 (projection linked to the service plan); 11 (C13 and C68 say "literate style", the term C11 defines); 12 (the conceptual-model proposal linked); 13 (C50 states a property of the plan model, not a duty); 14 ("over an iterative roadmap" cut from the purpose sentence).
+
+Not prose defects, by the instance's own report: 2, 3, 4 (but see the step-6 finding), 5.
+
+Meta-review after round 4: pending. Signal 2 fired: a restatement mismatch recurred on one passage, the Sequence section's pilot order, in rounds 3 and 4. Signal 1: one round with a fix not confirmed in full. Signal 3: growth within the bound. Signal 4: not fired on the strict reading.
+
+Claims after fixes: 88. Prose after fixes: 1449 words. Confirmation by the round's instance: pending.
+
+Meta-review: pending (signal 2 after round 4: a restatement mismatch recurred on the Sequence section's pilot order in rounds 3 and 4; signals 1, 3 and 4 checked, not fired).
