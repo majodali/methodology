@@ -48,6 +48,6 @@ Not prose defects, by the instance's own report: 1 and 3.
 
 Signal 4 note: the two contradictions of round 3 (findings 4 and 9) sit in passages earlier fixes touched: C82 came from round 2's split of C16, and C47 and C48 were touched in round 1. Both are the same tense framing that the "Today" marker from round 1 introduced. The specification's fourth signal reads "after round 3", so on the strict reading it does not fire on a round-3 finding; the owner may dispatch a meta-review regardless.
 
-Claims after fixes: 88. Confirmation by the round's instance: pending.
+Claims after fixes: 87. Prose after fixes: 1,442 words. Confirmation by the round's instance: pending.
 
 Meta-review: pending (signals checked after each round).
