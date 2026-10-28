@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The vision the portfolio builds toward over an iterative roadmap: the direction the owner set, the decisions already taken, what the portfolio already provides, the gaps a roadmap closes, and the decisions still open.
-Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; round trip 79 of 79; round 2)
+Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; round trip 83 of 83; round 2)
 Source: the owner's message of 2026-10-28 stating the vision in eight points; the reasoning role's assessment of the same day; the owner's reply of 2026-10-28 deciding four asks and agreeing the recommendations and terms; the owner's two notes of 2026-10-28 on agent surfaces and on the literate approach.
 Footprint: docs/vision.ir.md; docs/vision.md; docs/vision.review.md; docs/backlog.md; docs/vocabulary.md
 
@@ -46,7 +46,9 @@ C1. Every project in the portfolio that benefits uses the project-orchestrator, 
 
 C2. Each project keeps a comprehensive plan in the project's repository, kept current by agents as the agents perform each task. [decided: owner, 2026-10-28]
 
-C3. An agent queries the project-orchestrator-service for available tasks, claims a task, changes the project's repository directly, then updates the plan when closing the task. [decided: owner, 2026-10-28]
+C3. An agent queries the project-orchestrator-service for available tasks, claims a task, then updates the plan when closing the task. [decided: owner, 2026-10-28]
+
+C80. The agent changes the project's repository directly while performing the task. [decided: owner, 2026-10-28]
 
 C4. An agent is enlisted from any Claude surface: Claude Code web, desktop or CLI, Claude Duet, the Claude web interface or Claude Mobile. [decided: owner, 2026-10-28]
 
@@ -54,7 +56,9 @@ C70. An agent is also delegated to by another agent. [decided: owner, 2026-10-28
 
 C5. Projects and agents using the project-orchestrator standardize agent instructions across planning, documentation, communication and engineering practice. [decided: owner, 2026-10-28]
 
-C6. When Allegro provides modeling, project information and methodology practices are modeled in Allegro, which gives type checking, validation, constraint checking and defined model operations. [decided: owner, 2026-10-28]
+C6. When Allegro provides modeling, project information and methodology practices are modeled in Allegro. [decided: owner, 2026-10-28]
+
+C81. Modeling in Allegro gives type checking, validation, constraint checking and defined model operations. [decided: owner, 2026-10-28]
 
 C7. An evolving standard set of models covers specification and design, planning, engineering, documentation and communication, and operations, serving every project. [decided: owner, 2026-10-28]
 
@@ -74,7 +78,9 @@ C14. Projects are implemented in larger streams of autonomous work that focus on
 
 C15. Convergence is handled by evolving formal models, evolving agent instructions and adversarial agent review. [decided: owner, 2026-10-28]
 
-C16. Adversarial review is effective, with low efficiency until formal models and processes keep the review convergent. [decided: owner, 2026-10-28]
+C16. Adversarial review is effective. [decided: owner, 2026-10-28]
+
+C82. Adversarial review has low efficiency until formal models and processes keep the review convergent. [decided: owner, 2026-10-28]
 
 ### Decisions taken on 2026-10-28
 
@@ -92,11 +98,13 @@ C22. The owner and the reasoning role review the service's current state after c
 
 C79. The owner decides changes to the service's features or roadmap where the vision requires. [decided: owner, 2026-10-28]
 
-C23. The owner adds projects to the service by benefit. [decided: owner, 2026-10-28]
+C23. The owner adds a project to the service when adoption benefits the project. [decided: owner, 2026-10-28]
 
 C24. No project in the portfolio is known that should not use the service. [decided: owner, 2026-10-28]
 
-C25. Allegro's approach and the project-orchestrator's approach merge into one standard model, so that Allegro can adopt the project-orchestrator. [decided: owner, 2026-10-28]
+C25. Allegro's approach and the project-orchestrator's approach merge into one standard model. [decided: owner, 2026-10-28]
+
+C83. The merged model lets Allegro adopt the project-orchestrator. [decided: owner, 2026-10-28]
 
 C26. The decision on the merge in C25 follows the pilot. [decided: owner, 2026-10-28]
 
@@ -136,7 +144,7 @@ C39. The service spawns no agents on the server. evidence: E8. [decided: owner, 
 
 C60. The task-pull loop is the standing substitute for server-side agent spawning. evidence: E8. [decided: owner, 2026-08-26]
 
-C40. K-003 makes the Backlog the single source of progress truth. evidence: E9. [decided: methodology K-003]
+C40. Today K-003 makes the Backlog the single source of progress truth. evidence: E9. [decided: methodology K-003]
 
 C61. The orchestrator's founding ruling 1 keeps the Plan register and the Backlog in sync. evidence: E9. [decided: project-orchestrator ruling 1, 2026-08-24]
 
@@ -152,9 +160,7 @@ C43. The dispatch loop stops at a gate, an empty actionable set, a blocked task 
 
 C62. No stop signal exists inside a stream. [inferred: R9]
 
-C44. Stop signals inside a stream take the meta-review signals' shape: mechanical where a count exists, a wording hit for a hand check otherwise. [decided: owner, 2026-10-28]
-
-C45. Larger streams replace the chunk gate. [decided: owner, 2026-10-28]
+C44. Stop signals inside a stream take the meta-review signals' shape: mechanical where a count exists, a wording match for a hand check otherwise. [decided: owner, 2026-10-28]
 
 C73. The owner approves a stream as scope, budget and accepted risks. [decided: owner, 2026-10-28]
 
@@ -178,11 +184,11 @@ C63. Today the plan model records verification criteria only, not where the evid
 
 C51. No document type holds specification, examples and implementation pointers together. evidence: E10. [decided: owner, 2026-10-28]
 
-C64. Allegro's conceptual-model proposal is the closest draft of the document type C51 lacks. evidence: E10. [decided: owner, 2026-10-28]
+C64. Allegro's conceptual-model proposal is the closest draft of the missing document type. evidence: E10. [decided: owner, 2026-10-28]
 
 C52. The first orchestrated project is the second project the conceptual-model proposal waits for. evidence: E10. [decided: owner, 2026-10-28]
 
-C53. Standardized agent instructions across projects pull against Allegro's own process documents until the merge of C25. [decided: owner, 2026-10-28]
+C53. Standardized agent instructions across projects pull against Allegro's own process documents until Allegro's approach and the project-orchestrator's approach merge. [decided: owner, 2026-10-28]
 
 C54. The web view reads from commits only, never from state the service holds alone. [decided: owner, 2026-10-28]
 
@@ -204,7 +210,9 @@ C56. The task-pull loop is taken before topics once chunk 1 closes. [decided: ow
 
 C78. The web view's first version drills to node and task only. [decided: owner, 2026-10-28]
 
-C57. The owner names the first adopter by benefit, with the first adopter's plan as the pilot. [decided: owner, 2026-10-28]
+C57. The owner names the first adopter by benefit. [decided: owner, 2026-10-28]
+
+C84. The first adopter's plan is the pilot. [decided: owner, 2026-10-28]
 
 C58. The reasoning role writes the roadmap document after the service review, from this vision. [decided: owner, 2026-10-28]
 
@@ -224,7 +232,7 @@ R6. C37 contradicts C29 because one portfolio holds two definitions of a plan.
 
 R7. C42 refines C25 because C42 names which two things are combined.
 
-R8. C45 refines C14 because C45 states what approving a stream means.
+R8. C73 refines C14 because C73 states what approving a stream means.
 
 R9. C62 depends-on C43 because the four stops in C43 are all at a stream's boundary, none inside a stream.
 
@@ -284,7 +292,7 @@ E12. project-orchestrator-service README.md ("every write is the session's own g
 
 ## Asks
 
-A1. Edit the draft: confirm, change or strike each proposed claim. Done: the owner ratified the draft on 2026-10-28. Depends: C44, C45, C46, C47, C48, C49, C50, C51, C52, C53, C54, C56, C57, C58, C64, C66, C67.
+A1. Edit the draft: confirm, change or strike each proposed claim. Done: the owner ratified the draft on 2026-10-28. Depends: C44, C46, C47, C48, C49, C50, C51, C52, C53, C54, C56, C57, C58, C64, C66, C67.
 
 A2. Ratify or strike the four proposed terms. Done: ratified by the owner on 2026-10-28. Depends: T12, T13, T14, T15.
 
