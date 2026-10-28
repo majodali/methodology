@@ -140,6 +140,6 @@ Accepted, fixed IR first then prose: 1 (as above); 3 (C55 split into C55, C97 an
 
 Declined: 6 (SP-26 on C64's phrase "holding specification, examples and implementation links together"). Round 2 cut the phrase under SP-26, round 4 restored it under SP-03, the referent rule, and the brief's exemption for a repeated noun phrase that names a referent covers it.
 
-Claims after fixes: 96. Prose after fixes: 1477 words. Confirmation by the round's instance: pending.
+Claims after fixes: 96. Prose after fixes: 1,477 words. Confirmation by the round's instance: 4 of 4 fixes hold, the decline accepted, no contradiction, no undefined term. One defect introduced by fix 3, two identifiers without names in the closing sentence, fixed before round 10: the node sentences come first with their names, and C55 closes chunk 1 by the nodes' names.
 
 Meta-review: pending (signal 2 after round 4: a restatement mismatch recurred on the Sequence section's pilot order in rounds 3, 4 and 8, and after round 7 on the merge-decision sentence C26 in rounds 1 and 7; signal 1 after round 4's confirmation: fixes not confirmed in full in rounds 3 and 4; signal 4 after round 6: a contradiction reported in fix-touched passages, C29 against C87, declined, withdrawn by the instance at confirmation, counted as written; signal 3 after round 9's fixes: prose 1,477 words, growth 139 over round 1's 1,338, past the one-tenth bound of 134).

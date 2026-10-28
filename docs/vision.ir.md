@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The vision the portfolio builds toward over an iterative roadmap: the direction the owner set, the decisions already taken, what the portfolio already provides, the gaps a roadmap closes, and the decisions still open.
-Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; round trip 96 of 96; round 9)
+Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; round trip 96 of 96; round 10)
 Source: the owner's message of 2026-10-28 stating the vision in eight points; the reasoning role's assessment of the same day; the owner's reply of 2026-10-28 deciding four asks and agreeing the recommendations and terms; the owner's two notes of 2026-10-28 on agent surfaces and on the literate approach.
 Footprint: docs/vision.ir.md; docs/vision.md; docs/vision.review.md; docs/backlog.md; docs/vocabulary.md
 
@@ -230,11 +230,11 @@ C68. The literate style, every project as a book, is roadmap work beyond what Al
 
 ### First steps
 
-C55. Service chunk 1 closes when nodes P2-N010 and P2-N011 are done. evidence: E2. [decided: project-orchestrator Plan register]
+C97. Node P2-N010 of service chunk 1 is plan-state update under the advisory lease. evidence: E2. [decided: project-orchestrator Plan register]
 
-C97. P2-N010 is plan-state update under the advisory lease. evidence: E2. [decided: project-orchestrator Plan register]
+C98. Node P2-N011 is degrade to git-only with enlistment documentation. evidence: E2. [decided: project-orchestrator Plan register]
 
-C98. P2-N011 is degrade to git-only with enlistment documentation. evidence: E2. [decided: project-orchestrator Plan register]
+C55. Service chunk 1 closes when the plan-state update and the degrade to git-only are done. evidence: E2. [decided: project-orchestrator Plan register]
 
 C56. Once chunk 1 closes, the task-pull loop comes before topics. [decided: owner, 2026-10-28]
 
