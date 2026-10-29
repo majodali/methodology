@@ -612,5 +612,22 @@ Lint before round 1 (case 009 change 17): IR checks clean. Prose SP-02: nine sen
 
 | Round | Prose words | IR claims | Findings | Per 1,000 words | Verdict |
 |---|---|---|---|---|---|
-| 1 | 3,089 | 192 | | | pending |
+| 1 | 3,089 | 192 | 9 | 2.9 | not readable (restatement matched, 2 own mismatches; contradictions 0; undefined terms 3) |
 
+### Round 1, count 4, 2026-10-29
+
+Stranger model: claude-haiku. Prose 3,089 words; 9 findings, 2.9 per thousand words. Restatement: matched the IR; two mismatches the instance attributed to its own restatement, each naming its claim and quoting the sentence relied on. Contradictions 0, undefined terms 3; verdict: not readable for RD-4. Every finding sits on text older than this count. By fix kind as the stranger judged: rephrase 6, add 3.
+
+Mismatches: C44 (own), C104 (own)
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1, 2 | own-caused mismatches on provenance scope (C44) and the subject rule's limit condition (C104) | restatement | no prose defect; claims named |
+| 3 | the proposed-term listing has no trigger | SP-18 | rephrase C152: in the report that delivers the text |
+| 4 | "The rendering follows", "The rendering states" name no actor | SP-18 | rephrase C81, C82: the renderer, the paraphraser or the reasoning role |
+| 5, 6 | "unratified-vocabulary indicator", "prediction-surprise indicator" undefined | SP-04 | rephrase C50, C127: the mechanical measure of unratified vocabulary (prediction surprise), one indicator of convergence |
+| 7 | "Methodology-level specification" undefined | SP-04 | rephrase C179: a methodology Specification, the document type, linked |
+| 8 | header "When an IR is required" is a clause | SP-10 | rephrase: "Texts that require an IR" |
+| 9 | the delivered-text sentence carries the marking rule too | SP-01 | split C155; C202 |
+
+Claims after fixes: 193. Prose after fixes: 3,117 words.
