@@ -201,3 +201,5 @@ Claims after fixes: 102. Prose after fixes: 1,656 words.
 Confirmation: 3 of 4 fixes hold. Not held: 1. Declines accepted: 0 of 0. New defects: 1.
 
 Not held, 1: the comma list read as a third merging item. New defect: SP-01 on the same sentence, for the same reason. Re-fixed before round 3, IR first then prose: C25 reads "Eventually Allegro's approach (its planning DSL and process documents) and the project-orchestrator's approach merge into one model." The re-fix awaits round 3's restatement.
+
+Brief calibration added before round 3, under SP-01: a parenthesis that defines a term at its first use is part of that term, not a second claim (branch point v1.7, brief calibrations).
