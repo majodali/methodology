@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: rendered (reasoning role, 2026-10-29; count 4, round 3)
+Status: rendered (reasoning role, 2026-10-29; count 4, round 4)
 Source: the owner's adoption of 2026-10-29 of communication-pipeline evaluation case 009's nineteen changes, of which changes 2, 14, 15 and 18 amend this specification (count 4); the owner's decision of 2026-10-27 on signal-based meta-review triggers (count 3); communication-pipeline evaluation case 008 (owner decision of 2026-10-27, change 5) for count 2; for count 1, docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md; docs/releases.md; docs/vocabulary.md
@@ -48,6 +48,8 @@ T18. Normative text. defined-at: vocabulary.md#def-normative-text [decided: owne
 T19. Limit. defined-at: vocabulary.md#def-limit [decided: owner, 2026-10-27]
 
 T20. Meta-review signal. defined-at: vocabulary.md#def-meta-review-signal [decided: owner, 2026-10-27]
+
+T21. Restatement. defined-at: https://github.com/majodali/communication-pipeline/blob/main/docs/vocabulary.md#def-restatement [decided: owner, 2026-10-27]
 
 ## Claims
 
@@ -251,7 +253,7 @@ C80. Without a `part:` field, a decided claim renders under *What is already cov
 
 C154. Without a `part:` field, a proposed or inferred claim renders under *What changed*. [decided: methodology PR #50, 2026-10-26]
 
-C81. The renderer, the paraphraser or the reasoning role, follows the style guide's rows for the IR's reader. [decided: pipeline schema v1.2, 2026-10-25]
+C81. When rendering, the renderer, the paraphraser or the reasoning role, follows the style guide's rows for the IR's reader. [decided: pipeline schema v1.2, 2026-10-25]
 
 C82. The renderer states an empty Asks section as "No asks." [decided: methodology PR #46, 2026-10-26]
 
@@ -286,6 +288,8 @@ C92. The stranger reviews the IR and the prose against the reader's readability 
 C93. In a round, the verdict is readable when three conditions hold. [decided: owner, 2026-10-27]
 
 C203. The conditions: the stranger's restatement of the problem, terms and decisions matches the IR; the stranger finds no contradiction; the stranger finds no undefined term. [decided: owner, 2026-10-27]
+
+C211. A restatement mismatch is a disagreement between the stranger's restatement and the IR. [decided: owner, 2026-10-27]
 
 C194. A contradiction or undefined-term finding withdrawn by the round's stranger instance at confirmation, on a reason quoting the prose, does not count against the verdict. evidence: E3. [decided: owner, 2026-10-29]
 
@@ -457,7 +461,9 @@ C181. The vocabulary row of a ratified term is the term's definition site. [deci
 
 ### History
 
-C138. The specification was adopted on 2026-10-26 at v1.2 of the communication-pipeline project's schema and is amended here since. [decided: methodology PR #49, 2026-10-26]
+C138. The specification was adopted on 2026-10-26 at v1.2 of the communication-pipeline project's schema. [decided: methodology PR #49, 2026-10-26]
+
+C212. The specification is amended here since adoption. [decided: methodology PR #49, 2026-10-26]
 
 C139. CK-12 was added at adoption after a stranger review. [decided: methodology PR #49, 2026-10-26]
 

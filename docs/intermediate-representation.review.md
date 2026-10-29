@@ -614,6 +614,7 @@ Lint before round 1 (case 009 change 17): IR checks clean. Prose SP-02: nine sen
 |---|---|---|---|---|---|
 | 1 | 3,089 | 192 | 9 | 2.9 | not readable (restatement matched, 2 own mismatches; contradictions 0; undefined terms 3) |
 | 2 | 3,117 | 193 | 16 | 5.1 | not readable (restatement matched, 4 own mismatches; contradictions 0; undefined term 1) |
+| 3 | 3,143 | 201 | 4 | 1.3 | not readable (restatement matched; contradictions 0; undefined term 1) |
 
 ### Round 1, count 4, 2026-10-29
 
@@ -664,3 +665,18 @@ Claims after fixes: 200. Prose after fixes: 3143 words. The prose fixes landed o
 Confirmation: 9 of 11 fixes hold. Not held: F12, F13. Declines accepted: 1 of 1. New defects: 2.
 
 Fixed again before round 3: C4 shortened to 22 words; C207 split, C210 the growth figures; C203 restored to one condition per list item at 24 words (the two new defects N1 and N2 of the confirmation).
+
+### Round 3, count 4, 2026-10-29
+
+Claims check before the round: 20 changed claims, 0 missing, 0 stale (base: round 2 prose). Stranger model: claude-haiku. Prose 3,143 words; 4 findings, 1.3 per thousand words. Restatement: matched the IR, no mismatch. Contradictions 0, undefined terms 1 ("restatement mismatch", a term this count's C195 introduced); verdict: not readable for RD-4. By fix kind as the stranger judged: rephrase 4.
+
+Mismatches: none
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1 | "restatement mismatch" undefined | SP-04 | add T21 restatement, defined at the pipeline's vocabulary, linked at first use; C211 defines a restatement mismatch in a sentence of its own |
+| 2 | the style-rows duty has three actors and no trigger | SP-18 | rephrase C81: "When rendering, ..." |
+| 3 | the Footprint section opens with its exemption | SP-11 | reorder: the comparison duty first, the chat-message exemption after; no claim changed |
+| 4 | the History's adoption sentence holds two facts | SP-01 | split C138; C212 |
+
+Claims after fixes: 203. Prose after fixes: 3163 words.
