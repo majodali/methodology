@@ -2,8 +2,8 @@
 
 Reader: RD-4
 Purpose: document. The vision the portfolio builds toward over an iterative roadmap: the direction the owner set, the decisions already taken, what the portfolio already provides, the gaps a roadmap closes, and the decisions still open.
-Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; count 1 ended at the limit, round 10 not readable, round 10's fixes confirmed; round trip 96 of 96; declared 5, changed 5, surprises 0, misses 0; unratified terms 0)
-Source: the owner's message of 2026-10-28 stating the vision in eight points; the reasoning role's assessment of the same day; the owner's reply of 2026-10-28 deciding four asks and agreeing the recommendations and terms; the owner's two notes of 2026-10-28 on agent surfaces and on the literate approach.
+Status: rendered (paraphraser, 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; count 1 ended at the limit, round 10 not readable, round 10's fixes confirmed; edited after the count on 2026-10-29, C99 to C101 and A3, not yet reviewed; round trip 99 of 99; declared 5, changed 5, surprises 0, misses 0; unratified terms 0)
+Source: the owner's message of 2026-10-28 stating the vision in eight points; the owner's decision of 2026-10-29 naming the first adopter; the reasoning role's assessment of the same day; the owner's reply of 2026-10-28 deciding four asks and agreeing the recommendations and terms; the owner's two notes of 2026-10-28 on agent surfaces and on the literate approach.
 Footprint: docs/vision.ir.md; docs/vision.md; docs/vision.review.md; docs/backlog.md; docs/vocabulary.md
 
 ## Terms
@@ -119,6 +119,14 @@ C57. The owner names the first adopter by benefit before the pilot starts. [deci
 C84. The first adopter's plan is the pilot. [decided: owner, 2026-10-28]
 
 C85. The roadmap document, not this vision, places the pilot relative to the task-pull loop. [inferred: R25]
+
+### Decisions taken on 2026-10-29
+
+C99. The owner named methodology-tools the first adopter on 2026-10-29. [decided: owner, 2026-10-29]
+
+C100. The project-orchestrator adopts the service by construction when service chunk 5 moves the orchestrator's own orchestration onto the service. [decided: owner, 2026-10-29]
+
+C101. The project-orchestrator's adoption is not the pilot. [decided: owner, 2026-10-29]
 
 ### What the portfolio already provides
 
@@ -328,6 +336,6 @@ A1. Edit the draft: confirm, change or strike each proposed claim. Done: the own
 
 A2. Ratify or strike the four proposed terms. Done: ratified by the owner on 2026-10-28. Depends: T12, T13, T14, T15.
 
-A3. Name the first adopter. Depends: C57.
+A3. Name the first adopter. Done: methodology-tools, named by the owner on 2026-10-29. Depends: C57.
 
 A4. Authorize the paraphraser's rendering of docs/vision.md and the stranger rounds, so the document is delivered under W-009. Done: the owner's ratification of 2026-10-28 authorized both; rendered the same day. Depends: A1.
