@@ -1,6 +1,6 @@
 # Intermediate representation
 
-Status: under review (count 4, round 4). A methodology [Specification](vocabulary.md#def-specification), the document type, required by
+Status: active (count 4 readable at round 4 on 2026-10-29, awaiting the owner's adjudication). A methodology [Specification](vocabulary.md#def-specification), the document type, required by
 [W-009](rules/working-agreement.md#w-009--the-methodology-corpus-writes-its-deliverables-ir-first)
 (the methodology corpus writes its deliverables IR first). Any project
 that adopts W-009 by declaration uses this specification.

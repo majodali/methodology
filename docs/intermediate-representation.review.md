@@ -693,11 +693,22 @@ Mismatches: C41 (own)
 | # | Finding (shortened) | Kind | Fix | Confirmation |
 |---|---|---|---|---|
 | 1 | own-caused mismatch on C41 | restatement | no prose defect | n/a |
-| 2, 3 | the P-008 unit sentence attributes the unit to P-008 and runs to 26 words | SP-01, SP-02 | rephrase C173: "The unit for P-008 is the whole text for a report and the section for a document." | pending |
-| 4 | two additions in one History sentence | SP-01 | split C147; C213 | pending |
-| 5 | three additions in one History sentence | SP-01 | split C148; C214 | pending |
-| 6 | two changes in one History sentence | SP-01 | split C200; C215 | pending |
-| 7 | the Rendering conditions section opens with its inputs | SP-11 | reorder: "The first row whose condition holds decides." moves to the front; no claim changed | pending |
-| 8 | "here" | SP-26 | cut from C212 | pending |
+| 2, 3 | the P-008 unit sentence attributes the unit to P-008 and runs to 26 words | SP-01, SP-02 | rephrase C173: "The unit for P-008 is the whole text for a report and the section for a document." | confirmed |
+| 4 | two additions in one History sentence | SP-01 | split C147; C213 | confirmed |
+| 5 | three additions in one History sentence | SP-01 | split C148; C214 | confirmed |
+| 6 | two changes in one History sentence | SP-01 | split C200; C215 | confirmed |
+| 7 | the Rendering conditions section opens with its inputs | SP-11 | reorder: "The first row whose condition holds decides." moves to the front; no claim changed | confirmed |
+| 8 | "here" | SP-26 | cut from C212 | confirmed |
 
 Claims after fixes: 207. Prose after fixes: 3181 words. The prose fixes landed three commits after the IR's, edit scripts having stopped on anchors broken by line wraps; the instance's first two confirmation reads saw the unfixed prose and were discarded; C148 was split a second time (C216) and C215 names the case's repository at the instance's note. The prose fixes landed one commit after the IR's, an edit script having stopped on the first anchor; the instance was told to re-read before confirming.
+
+Confirmation: 7 of 7 fixes hold. Not held: none. Declines accepted: 0 of 0. New defects: 0.
+
+The instance's first two confirmation reads saw the prose before its fixes landed and were discarded; the third read, on commit 108e26d, is the one recorded. At the instance's notes, C148 was split a second time (C216) and C215 names the case's repository.
+
+### Verdict, count 4
+
+Readable for RD-4 at round 4 of a count of four. Findings per thousand words by round: 2.9, 5.1, 1.3, 2.5. Contradictions by round: 0, 0, 0, 0. Prose 3,089 words at round 1 and 3,181 at delivery; IR 192 claims at round 1 and 207 at delivery, the growth from splits for one claim per sentence and the sentences shortened under case 009's change 17. Every accepted fix confirmed by its round's instance; one decline (round 2, F16) accepted by the instance. Thirty-six of the thirty-seven findings fell on text older than this count.
+
+Meta-review: not indicated. Signals checked at the end of count 4 by `scripts/signals.mjs` (reading the last count) and by reading: first, no fix not held in two rounds (round 1's one and round 2's two were fixed again and confirmed) and no missing or stale claim; second, no claim on two rounds' Mismatches lines and no declined finding raised again; third, words per IR claim 16.1 to 15.4, minus 4 percent; fourth, no contradiction in round 3 or later.
+
