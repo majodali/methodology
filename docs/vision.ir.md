@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The vision the portfolio builds toward over an iterative roadmap: the direction the owner set, the decisions already taken, what the portfolio already provides, the gaps a roadmap closes, and the decisions still open.
-Status: reviewed (paraphraser rendering 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; count 1 ended at the limit, round 10 not readable, round 10's fixes confirmed; edited after the count on 2026-10-29, C99 to C101 and A3, and on the same day the chunk-1 corrections C21, C31, C55, C59, C69, C97, C98, E2, new C102 and E13 from the service review, re-rendered; count 2 in progress, round 1 fixes C21 split into C21 and C103, C69 split into C69 and C104, C42, C80; round trip 99 of 99; declared 5, changed 5, surprises 0, misses 0; unratified terms 0)
+Status: reviewed (paraphraser rendering 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; count 1 ended at the limit, round 10 not readable, round 10's fixes confirmed; edited after the count on 2026-10-29, C99 to C101 and A3, and on the same day the chunk-1 corrections C21, C31, C55, C59, C69, C97, C98, E2, new C102 and E13 from the service review, re-rendered; count 2 in progress, round 1 fixes C21 split into C21 and C103, C69 split into C69 and C104, C42, C80; round 2 fixes C25, C56, C58, C69, C103; round trip 99 of 99; declared 5, changed 5, surprises 0, misses 0; unratified terms 0)
 Source: the owner's message of 2026-10-28 stating the vision in eight points; the owner's decision of 2026-10-29 naming the first adopter; the reasoning role's assessment of the same day; the owner's reply of 2026-10-28 deciding four asks and agreeing the recommendations and terms; the owner's two notes of 2026-10-28 on agent surfaces and on the literate approach.
 Footprint: docs/vision.ir.md; docs/vision.md; docs/vision.review.md; docs/backlog.md; docs/vocabulary.md
 
@@ -92,7 +92,7 @@ C20. The Backlog becomes a rendering per project, as each project adopts the pro
 
 C21. On 2026-10-28 the owner named completing service chunk 1 as the next step. [decided: owner, 2026-10-28]
 
-C103. Chunk 1's closure of 2026-09-16 reached main on 2026-10-29 through pull request 13 of the project-orchestrator. evidence: E2. [decided: project-orchestrator Plan register]
+C103. The Plan register's record of chunk 1 done, dated 2026-09-16, reached main on 2026-10-29 through pull request 13 of the project-orchestrator. evidence: E2. [decided: project-orchestrator Plan register]
 
 C22. The owner and the reasoning role review the service's current state after chunk 1. [decided: owner, 2026-10-28]
 
@@ -102,7 +102,7 @@ C23. The owner adds a project to the service when adoption benefits the project.
 
 C24. No project in the portfolio is known that should not use the service. [decided: owner, 2026-10-28]
 
-C25. Eventually Allegro's approach and the project-orchestrator's approach merge into one model. [decided: owner, 2026-10-28]
+C25. Eventually Allegro's approach, its planning DSL and process documents, and the project-orchestrator's approach merge into one model. [decided: owner, 2026-10-28]
 
 C83. The merged model lets Allegro adopt the project-orchestrator. [decided: owner, 2026-10-28]
 
@@ -234,7 +234,7 @@ C93. The service does not offer a remote MCP connector today. evidence: E12. [de
 
 C67. Today a surface without a repository clone cannot make the git commit the service expects from the session. evidence: E12. [decided: owner, 2026-10-28]
 
-C69. The write model, decision 3 of the service skeleton plan for node P2-N002, makes the session git's only writer. evidence: E13. [decided: owner, 2026-08-26]
+C69. The write model, decision 3 of the service skeleton plan for node P2-N002, service skeleton and plan state, makes the session git's only writer. evidence: E13. [decided: owner, 2026-08-26]
 
 C104. The owner kept the write model at the review of the service on 2026-10-29. evidence: E13. [decided: owner, 2026-10-29]
 
@@ -250,11 +250,11 @@ C98. Node P2-N011, degrade to git-only with enlistment documentation, reached do
 
 C55. Service chunk 1 closed on 2026-09-16, with the plan-state update and the degrade to git-only done. evidence: E2. [decided: project-orchestrator Plan register]
 
-C56. Once chunk 1 closes, the task-pull loop comes before topics. [decided: owner, 2026-10-28]
+C56. Now that chunk 1 has closed, the task-pull loop comes before topics. [decided: owner, 2026-10-28]
 
 C78. The web view's first version drills to node and task only. [decided: owner, 2026-10-28]
 
-C58. The reasoning role writes the roadmap document after the review of the service, from this vision. [decided: owner, 2026-10-28]
+C58. The reasoning role writes the roadmap document after the review of the service of 2026-10-29, from this vision. [decided: owner, 2026-10-28]
 
 ## Relations
 

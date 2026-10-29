@@ -167,7 +167,8 @@ Opened 2026-10-29 after the service review's corrections (C21, C31, C55, C59, C6
 
 | Round | Prose words | IR claims | Findings | Verdict |
 |---|---|---|---|---|
-| 1 | 1610 | 100 | 9 | not readable (restatement mismatches 4, all own; contradiction 1; undefined terms 0) |
+| 1 | 1,610 | 100 | 9 | not readable (restatement mismatches 4, all own; contradiction 1; undefined terms 0) |
+| 2 | 1,636 | 102 | 4 | not readable (restatement mismatch 1, prose-caused; contradiction 1; undefined terms 0) |
 
 ### Round 1
 
@@ -184,3 +185,15 @@ Claims after fixes: 102. Prose after fixes: 1,634 words.
 Confirmation: 5 of 6 fixes hold. Not held: 4. Declines accepted: 0 of 0. New defects: 1.
 
 Not held, 4: the split left the naming of 2026-10-28 and the closure of 2026-09-16 in one sentence. New defect: SP-03, "the design branch" in C103's sentence has no antecedent. Re-fixed before round 2, IR first then prose: C21 now reads "On 2026-10-28 the owner named completing service chunk 1 as the next step" (an owner decision, provenance owner 2026-10-28), and C103 reads "Chunk 1's closure of 2026-09-16 reached main on 2026-10-29 through pull request 13 of the project-orchestrator", the pull request linked. The closure date itself stays C55's claim. Both re-fixes await round 2's restatement.
+
+### Round 2
+
+Restatement did not match the IR: C25 and C26, prose-caused, because "Allegro's approach" was never defined and the reader took it for Allegro's modeling. Contradiction found: C55 (chunk 1 closed) against C56 ("Once chunk 1 closes"). Undefined terms: 0. Round 1's re-fixes of C21 and C103 drew no finding on SP-01 or SP-03; the reviewer asked which event C103's date marks.
+
+Mismatches: C25, C26
+
+Findings on the prose: 3 (SP-25 1, SP-03 1, SP-05 1), plus the restatement mismatch. Accepted 4.
+
+Accepted, fixed IR first then prose: 1 (C25 defines Allegro's approach at first use as its planning DSL and process documents); 2 (C56 reads "Now that chunk 1 has closed"; C103 names the event: the Plan register's record of chunk 1 done, dated 2026-09-16, reached main on 2026-10-29); 3 (C58 names the review by date, 2026-10-29); 4 (C69 names node P2-N002, service skeleton and plan state).
+
+Claims after fixes: 102. Prose after fixes: 1,656 words.

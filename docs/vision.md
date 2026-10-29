@@ -39,12 +39,12 @@ The owner amends a methodology rule such as [K-003](rules/knowledge.md#k-003--th
 The [Backlog](rules/knowledge.md#k-003--the-backlog-is-the-single-source-of-progress-truth)'s remaining jobs, namely the implementation map and the list of what is next, become [renderings](intermediate-representation.md#rendering-rule) of the [planning/execution model](vocabulary.md#def-planning-execution-model).
 The Backlog becomes a rendering per project, as each project adopts the project-orchestrator.
 On 2026-10-28 the owner named completing service [chunk 1](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md) as the next step.
-Chunk 1's closure of 2026-09-16 reached main on 2026-10-29 through [pull request 13](https://github.com/majodali/project-orchestrator/pull/13) of the project-orchestrator.
+The Plan register's record of chunk 1 done, dated 2026-09-16, reached main on 2026-10-29 through [pull request 13](https://github.com/majodali/project-orchestrator/pull/13) of the project-orchestrator.
 The owner and the [reasoning role](vocabulary.md#def-reasoning-role) review the service's current state after chunk 1.
 The owner decides changes to the service's features or roadmap where the vision requires.
 The owner adds a project to the service when adoption benefits the project.
 No project in the portfolio is known that should not use the service.
-Eventually Allegro's approach and the project-orchestrator's approach merge into one model.
+Eventually Allegro's approach, its planning DSL and process documents, and the project-orchestrator's approach merge into one model.
 The merged model lets Allegro adopt the project-orchestrator.
 After the [pilot](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md), the owner decides how and when Allegro's approach and the project-orchestrator's approach merge.
 The [plan model](https://github.com/majodali/project-orchestrator/blob/main/docs/process/plan-model.md), the [IR](vocabulary.md#def-intermediate-representation) and the role definitions stay documents until Allegro models them.
@@ -116,7 +116,7 @@ Today a [surface without a repository clone](vocabulary.md#def-surface-without-a
 The route for a surface without a repository clone is a [remote MCP connector](vocabulary.md#def-remote-mcp-connector).
 The service does not offer a remote MCP connector today.
 Today a surface without a repository clone cannot make the git commit the service expects from the session.
-The write model, decision 3 of the [service skeleton plan](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/p2-n002-service-skeleton.md) for node P2-N002, makes the session git's only writer.
+The write model, decision 3 of the [service skeleton plan](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/p2-n002-service-skeleton.md) for node P2-N002, service skeleton and plan state, makes the session git's only writer.
 The owner kept the write model at the review of the service on 2026-10-29.
 Surfaces without a repository clone receive read, question and delegation tools through a remote MCP connector, in a node placed after the pilot.
 The literate style, every project as a book, is roadmap work beyond what Allegro's book settled.
@@ -126,9 +126,9 @@ The literate style, every project as a book, is roadmap work beyond what Allegro
 Node P2-N010 of service [chunk 1](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md), plan-state update under the [advisory lease](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md), is done.
 Node P2-N011, degrade to git-only with enlistment documentation, reached done on 2026-09-07.
 Service chunk 1 closed on 2026-09-16, with the plan-state update and the degrade to git-only done.
-Once chunk 1 closes, the [task-pull loop](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md) comes before [topics](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md).
+Now that chunk 1 has closed, the [task-pull loop](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md) comes before [topics](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md).
 The [web view](vocabulary.md#def-web-view)'s first version drills to node and task only.
-The [reasoning role](vocabulary.md#def-reasoning-role) writes the roadmap document after the review of the service, from this vision.
+The [reasoning role](vocabulary.md#def-reasoning-role) writes the roadmap document after the review of the service of 2026-10-29, from this vision.
 
 ## Asks
 
