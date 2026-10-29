@@ -216,3 +216,9 @@ Findings on the prose: 2 (SP-01 2). Accepted 2.
 Accepted, fixed IR first then prose: 4 (C31 split: C31 the service reads plan state from git, C105 the service validates the plan-state updates a session commits); 5 (C34 split: C34 approved scope as the hard boundary, C106 the owner may attach a task or token budget when granting scope).
 
 Claims after fixes: 104. Prose after fixes: 1656 words.
+
+Confirmation: 2 of 2 fixes hold. Not held: none. Declines accepted: 0 of 0. New defects: 0.
+
+The count ends readable at round 3. Signals (scripts/signals.mjs of the communication-pipeline, run 2026-10-29): signal 1 fired (fixes not held in rounds 1 and 2); signal 2 fired (C26 on the Mismatches lines of rounds 1 and 2, C25 of rounds 2 and 3); signal 3 not fired (16.1 to 16.24 words per claim); signal 4 not fired.
+
+Meta-review: pending (signals 1 and 2).

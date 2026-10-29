@@ -1,6 +1,6 @@
 # Vision for the methodology and the portfolio
 
-Status: under review (v1, count 1 ended at round 10, limit reached; meta-review delivered as case 009; edited after the count on 2026-10-29 and re-rendered for the chunk-1 corrections; count 2 pending)
+Status: reviewed (v1, count 2 readable at round 3 on 2026-10-29 after the chunk-1 corrections; count 1 ended at the limit, meta-review delivered as case 009; meta-review of count 2 pending)
 
 ## Reader and purpose
 
