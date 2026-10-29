@@ -90,9 +90,9 @@ C19. The Backlog's remaining jobs, the implementation map and the list of what i
 
 C20. The Backlog becomes a rendering per project, as each project adopts the project-orchestrator. [decided: owner, 2026-10-28]
 
-C21. Service chunk 1, named the next step on 2026-10-28, had already closed on 2026-09-16. evidence: E2. [decided: project-orchestrator Plan register]
+C21. On 2026-10-28 the owner named completing service chunk 1 as the next step. [decided: owner, 2026-10-28]
 
-C103. Chunk 1's closure reached main on 2026-10-29, when the design branch was merged. evidence: E2. [decided: project-orchestrator Plan register]
+C103. Chunk 1's closure of 2026-09-16 reached main on 2026-10-29 through pull request 13 of the project-orchestrator. evidence: E2. [decided: project-orchestrator Plan register]
 
 C22. The owner and the reasoning role review the service's current state after chunk 1. [decided: owner, 2026-10-28]
 

@@ -180,3 +180,7 @@ Findings on the prose: 6 (SP-01 2, SP-02 1, SP-03 1, SP-05 1, SP-25 1). Accepted
 Accepted, fixed IR first then prose: 4 (C21 split: C21 keeps the naming and the closure, C103 carries the merge to main); 5 and 6 (C69 split: C69 defines the write model, C104 records that the owner kept it; R27 now hangs on C104); 7 (the P2-N002 plan linked and named as the service skeleton plan, in C69's sentence); 8 (C42 names the merged model as the merge of Allegro's approach and the project-orchestrator's); 9 (C80 reads "An agent performing a task from a surface with a repository clone changes the project's repository directly", and R29 records that a surface without a clone delegates the performing to an agent with one).
 
 Claims after fixes: 102. Prose after fixes: 1,634 words.
+
+Confirmation: 5 of 6 fixes hold. Not held: 4. Declines accepted: 0 of 0. New defects: 1.
+
+Not held, 4: the split left the naming of 2026-10-28 and the closure of 2026-09-16 in one sentence. New defect: SP-03, "the design branch" in C103's sentence has no antecedent. Re-fixed before round 2, IR first then prose: C21 now reads "On 2026-10-28 the owner named completing service chunk 1 as the next step" (an owner decision, provenance owner 2026-10-28), and C103 reads "Chunk 1's closure of 2026-09-16 reached main on 2026-10-29 through pull request 13 of the project-orchestrator", the pull request linked. The closure date itself stays C55's claim. Both re-fixes await round 2's restatement.

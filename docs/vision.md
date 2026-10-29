@@ -38,8 +38,8 @@ The vision is built by an iterative roadmap.
 The owner amends a methodology rule such as [K-003](rules/knowledge.md#k-003--the-backlog-is-the-single-source-of-progress-truth), the Backlog rule, at the point in the roadmap where a project needs the change.
 The [Backlog](rules/knowledge.md#k-003--the-backlog-is-the-single-source-of-progress-truth)'s remaining jobs, namely the implementation map and the list of what is next, become [renderings](intermediate-representation.md#rendering-rule) of the [planning/execution model](vocabulary.md#def-planning-execution-model).
 The Backlog becomes a rendering per project, as each project adopts the project-orchestrator.
-Service [chunk 1](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md), named the next step on 2026-10-28, had already closed on 2026-09-16.
-Chunk 1's closure reached main on 2026-10-29, when the design branch was merged.
+On 2026-10-28 the owner named completing service [chunk 1](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md) as the next step.
+Chunk 1's closure of 2026-09-16 reached main on 2026-10-29 through [pull request 13](https://github.com/majodali/project-orchestrator/pull/13) of the project-orchestrator.
 The owner and the [reasoning role](vocabulary.md#def-reasoning-role) review the service's current state after chunk 1.
 The owner decides changes to the service's features or roadmap where the vision requires.
 The owner adds a project to the service when adoption benefits the project.
