@@ -286,6 +286,18 @@ in [constitution.md](constitution.md#draft-history-pre-10).
 - <a id="def-web-view"></a>**Web view** — the project-orchestrator-service's interface for a
   project's planning/execution model, called the plan view in service
   chunk 2 (owner, 2026-10-28, [vision](vision.ir.md)).
+- <a id="def-surface-without-a-repository-clone"></a>**Surface without a repository clone** — a Claude surface whose
+  session has no checkout of the project's repository: the Claude web
+  interface, Claude Mobile and Claude Duet (owner, 2026-10-29,
+  [service review](records/service-review-2026-10-29.ir.md)).
+- <a id="def-remote-mcp-connector"></a>**Remote MCP connector** — the project-orchestrator-service's MCP
+  endpoint registered on a Claude surface as a connector, reached by
+  URL rather than through a checked-in `.mcp.json` (owner, 2026-10-29,
+  [service review](records/service-review-2026-10-29.ir.md)).
+- <a id="def-roadmap-document"></a>**Roadmap document** — the document the reasoning role writes after
+  the review of the service, sequencing the [vision](vision.md)'s gaps
+  into steps (owner, 2026-10-29,
+  [service review](records/service-review-2026-10-29.ir.md)).
 - <a id="def-report-audience"></a>**Report audience** — the reader a report is addressed to under
   [W-008](rules/working-agreement.md#w-008--reports-map-their-deliverables)
   (reports map their deliverables): the human owner directly (the
