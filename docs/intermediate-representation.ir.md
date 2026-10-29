@@ -579,7 +579,7 @@ R43. C198 depends-on C197 because the instance confirms the fixes the reasoning 
 
 ## Evidence
 
-E1. docs/records/stranger-rounds-until-readable.review.md on branch stranger-rounds-until-readable: ten rounds, 232 findings, verdict not readable in every round; prose 2,635 to 4,516 words.
+E1. docs/records/stranger-rounds-until-readable.review.md (kept on main from the closed branch of PR #51 since 2026-10-29): ten rounds, 232 findings, verdict not readable in every round; prose 2,635 to 4,516 words.
 
 E2. communication-pipeline eval/analysis/pr51-findings.md: words required by about 18 findings and added for 139; 150 of 232 findings on fix-introduced text; the IR stopped changing after round 2.
 
