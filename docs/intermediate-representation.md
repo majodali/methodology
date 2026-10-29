@@ -209,8 +209,7 @@ deliverable is a finding of the next form audit under
 
 ## Rendering conditions
 
-The inputs are the IR's reader, purpose, Normative header, claim count, proposed-term count, count of dependent asks and longest claim. A dependent ask is an ask with a `Depends:` field. A further input is whether the owner asked for a review. A lint runs the mechanical checks in every case. The
-first row whose condition holds decides.
+The first row whose condition holds decides. The inputs are the IR's reader, purpose, Normative header, claim count, proposed-term count, count of dependent asks and longest claim. A dependent ask is an ask with a `Depends:` field. A further input is whether the owner asked for a review. A lint runs the mechanical checks in every case.
 
 | Condition | What follows |
 |---|---|
