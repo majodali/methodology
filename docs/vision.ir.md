@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The vision the portfolio builds toward over an iterative roadmap: the direction the owner set, the decisions already taken, what the portfolio already provides, the gaps a roadmap closes, and the decisions still open.
-Status: reviewed (paraphraser rendering 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; count 1 ended at the limit, round 10 not readable, round 10's fixes confirmed; edited after the count on 2026-10-29, C99 to C101 and A3, and on the same day the chunk-1 corrections C21, C31, C55, C59, C69, C97, C98, E2, new C102 and E13 from the service review, re-rendered and count 2 pending; round trip 99 of 99; declared 5, changed 5, surprises 0, misses 0; unratified terms 0)
+Status: reviewed (paraphraser rendering 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; count 1 ended at the limit, round 10 not readable, round 10's fixes confirmed; edited after the count on 2026-10-29, C99 to C101 and A3, and on the same day the chunk-1 corrections C21, C31, C55, C59, C69, C97, C98, E2, new C102 and E13 from the service review, re-rendered; count 2 in progress, round 1 fixes C21 split into C21 and C103, C69 split into C69 and C104, C42, C80; round trip 99 of 99; declared 5, changed 5, surprises 0, misses 0; unratified terms 0)
 Source: the owner's message of 2026-10-28 stating the vision in eight points; the owner's decision of 2026-10-29 naming the first adopter; the reasoning role's assessment of the same day; the owner's reply of 2026-10-28 deciding four asks and agreeing the recommendations and terms; the owner's two notes of 2026-10-28 on agent surfaces and on the literate approach.
 Footprint: docs/vision.ir.md; docs/vision.md; docs/vision.review.md; docs/backlog.md; docs/vocabulary.md
 
@@ -50,7 +50,7 @@ C3. An agent queries the project-orchestrator-service for available tasks and cl
 
 C96. The agent updates the plan when closing the task. [decided: owner, 2026-10-28]
 
-C80. The agent changes the project's repository directly while performing the task. [decided: owner, 2026-10-28]
+C80. An agent performing a task from a surface with a repository clone changes the project's repository directly. [decided: owner, 2026-10-28]
 
 C4. An agent is enlisted from any Claude surface: Claude Code web, desktop or CLI, Claude Duet, the Claude web interface or Claude Mobile. [decided: owner, 2026-10-28]
 
@@ -90,7 +90,9 @@ C19. The Backlog's remaining jobs, the implementation map and the list of what i
 
 C20. The Backlog becomes a rendering per project, as each project adopts the project-orchestrator. [decided: owner, 2026-10-28]
 
-C21. Service chunk 1, named the next step on 2026-10-28, had already closed on 2026-09-16 on a branch merged to main on 2026-10-29. evidence: E2. [decided: project-orchestrator Plan register]
+C21. Service chunk 1, named the next step on 2026-10-28, had already closed on 2026-09-16. evidence: E2. [decided: project-orchestrator Plan register]
+
+C103. Chunk 1's closure reached main on 2026-10-29, when the design branch was merged. evidence: E2. [decided: project-orchestrator Plan register]
 
 C22. The owner and the reasoning role review the service's current state after chunk 1. [decided: owner, 2026-10-28]
 
@@ -178,7 +180,7 @@ C82. Adversarial review has low efficiency until formal models and processes kee
 
 C41. The plan model and Allegro's planning DSL hold two plan models: a tree with seven stages, a graph of outcomes. [inferred: R6]
 
-C42. The merged model of C25 combines the two plan models in C41. [decided: owner, 2026-10-28]
+C42. The merged model of Allegro's approach and the project-orchestrator's approach, C25, combines the two plan models in C41. [decided: owner, 2026-10-28]
 
 C72. Allegro's planning DSL demo may not match the project-orchestrator's plan model. [decided: owner, 2026-10-28]
 
@@ -232,7 +234,9 @@ C93. The service does not offer a remote MCP connector today. evidence: E12. [de
 
 C67. Today a surface without a repository clone cannot make the git commit the service expects from the session. evidence: E12. [decided: owner, 2026-10-28]
 
-C69. The write model, decision 3 of the P2-N002 plan, under which the session is git's only writer, was kept at the review of the service on 2026-10-29. evidence: E13. [decided: owner, 2026-10-29]
+C69. The write model, decision 3 of the service skeleton plan for node P2-N002, makes the session git's only writer. evidence: E13. [decided: owner, 2026-08-26]
+
+C104. The owner kept the write model at the review of the service on 2026-10-29. evidence: E13. [decided: owner, 2026-10-29]
 
 C102. Surfaces without a repository clone receive read, question and delegation tools through a remote MCP connector, in a node placed after the pilot. evidence: E13. [decided: owner, 2026-10-29]
 
@@ -306,7 +310,9 @@ R25. C85 depends-on C58 because the sequence beyond chunk 1 is the roadmap docum
 
 R26. C94 depends-on C47 because a stranger for plans would be part of the machinery C47 limits to prose.
 
-R27. C102 depends-on C69 because keeping the session as the only writer is what limits those surfaces to tools that write nothing.
+R27. C102 depends-on C104 because keeping the session as the only writer is what limits those surfaces to tools that write nothing.
+
+R29. C80 depends-on C102 because a surface without a clone delegates the performing of a task to an agent with one.
 
 R28. C102 depends-on C90 because the remote MCP connector is the route C90 names for those surfaces.
 

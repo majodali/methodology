@@ -160,3 +160,23 @@ Meta-review: delivered (2026-10-29, [case 009](https://github.com/majodali/commu
 Post-count edit, 2026-10-29: the owner named the first adopter, so C99 to C101 and the Decisions taken on 2026-10-29 section were added and A3 closed. The edit is not reviewed; the meta-review's inputs were frozen before it. A second count, if the owner dispatches one, covers it.
 
 Status note, 2026-10-29: the IR's Status set to `reviewed` at the end of the count, per the specification's Stranger rounds section; case 009's observation 6 found it still read `rendered`.
+
+## Count 2
+
+Opened 2026-10-29 after the service review's corrections (C21, C31, C55, C59, C69, C97, C98, E2, new C102 and E13) were applied to the IR and the prose re-rendered by the paraphraser for the changed claims only (round trip 100 of 100). Stranger model: Haiku, one fresh instance per round, confirmation by the same instance. SP-02 warnings before round 1: none (mtool style, 0 violations). Procedure: branch point v1.7 of the communication-pipeline.
+
+| Round | Prose words | IR claims | Findings | Verdict |
+|---|---|---|---|---|
+| 1 | 1610 | 100 | 9 | not readable (restatement mismatches 4, all own; contradiction 1; undefined terms 0) |
+
+### Round 1
+
+Restatement matched the IR; the four mismatches (C6, C7, C13, C26) were own-caused, no prose sentence relied on misled the reviewer. Contradiction found: C80 against C102 (an agent changes the repository directly, while surfaces without a clone get tools that write nothing). Undefined terms: 0.
+
+Mismatches: C6 (own), C7 (own), C13 (own), C26 (own)
+
+Findings on the prose: 6 (SP-01 2, SP-02 1, SP-03 1, SP-05 1, SP-25 1). Accepted 6.
+
+Accepted, fixed IR first then prose: 4 (C21 split: C21 keeps the naming and the closure, C103 carries the merge to main); 5 and 6 (C69 split: C69 defines the write model, C104 records that the owner kept it; R27 now hangs on C104); 7 (the P2-N002 plan linked and named as the service skeleton plan, in C69's sentence); 8 (C42 names the merged model as the merge of Allegro's approach and the project-orchestrator's); 9 (C80 reads "An agent performing a task from a surface with a repository clone changes the project's repository directly", and R29 records that a surface without a clone delegates the performing to an agent with one).
+
+Claims after fixes: 102. Prose after fixes: 1,634 words.
