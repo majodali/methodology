@@ -700,4 +700,4 @@ Mismatches: C41 (own)
 | 7 | the Rendering conditions section opens with its inputs | SP-11 | reorder: "The first row whose condition holds decides." moves to the front; no claim changed | pending |
 | 8 | "here" | SP-26 | cut from C212 | pending |
 
-Claims after fixes: 206. Prose after fixes: 3163 words.
+Claims after fixes: 206. Prose after fixes: 3163 words. The prose fixes landed one commit after the IR's, an edit script having stopped on the first anchor; the instance was told to re-read before confirming.
