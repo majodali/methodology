@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The vision the portfolio builds toward over an iterative roadmap: the direction the owner set, the decisions already taken, what the portfolio already provides, the gaps a roadmap closes, and the decisions still open.
-Status: reviewed (paraphraser rendering 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; count 1 ended at the limit, round 10 not readable, round 10's fixes confirmed; edited after the count on 2026-10-29, C99 to C101 and A3, not yet reviewed; round trip 99 of 99; declared 5, changed 5, surprises 0, misses 0; unratified terms 0)
+Status: reviewed (paraphraser rendering 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; count 1 ended at the limit, round 10 not readable, meta-review delivered as case 009; edited after the count on 2026-10-29, C99 to C101 and A3, and the chunk-1 corrections from the service review, C21, C31, C55, C59, C69, C97, C98, E2, new C102 and E13, re-rendered; count 2 readable at round 3 on 2026-10-29, fixes confirmed, claims split into C103 to C106; meta-review pending, signals 1 and 2; round trip 104 of 104; declared 5, changed 5, surprises 0, misses 0; unratified terms 0)
 Source: the owner's message of 2026-10-28 stating the vision in eight points; the owner's decision of 2026-10-29 naming the first adopter; the reasoning role's assessment of the same day; the owner's reply of 2026-10-28 deciding four asks and agreeing the recommendations and terms; the owner's two notes of 2026-10-28 on agent surfaces and on the literate approach.
 Footprint: docs/vision.ir.md; docs/vision.md; docs/vision.review.md; docs/backlog.md; docs/vocabulary.md
 
@@ -50,7 +50,7 @@ C3. An agent queries the project-orchestrator-service for available tasks and cl
 
 C96. The agent updates the plan when closing the task. [decided: owner, 2026-10-28]
 
-C80. The agent changes the project's repository directly while performing the task. [decided: owner, 2026-10-28]
+C80. An agent performing a task from a surface with a repository clone changes the project's repository directly. [decided: owner, 2026-10-28]
 
 C4. An agent is enlisted from any Claude surface: Claude Code web, desktop or CLI, Claude Duet, the Claude web interface or Claude Mobile. [decided: owner, 2026-10-28]
 
@@ -90,7 +90,9 @@ C19. The Backlog's remaining jobs, the implementation map and the list of what i
 
 C20. The Backlog becomes a rendering per project, as each project adopts the project-orchestrator. [decided: owner, 2026-10-28]
 
-C21. Completing service chunk 1 is the next step. [decided: owner, 2026-10-28]
+C21. On 2026-10-28 the owner named completing service chunk 1 as the next step. [decided: owner, 2026-10-28]
+
+C103. The Plan register's record of chunk 1 done, dated 2026-09-16, reached main on 2026-10-29 through pull request 13 of the project-orchestrator. evidence: E2. [decided: project-orchestrator Plan register]
 
 C22. The owner and the reasoning role review the service's current state after chunk 1. [decided: owner, 2026-10-28]
 
@@ -100,7 +102,7 @@ C23. The owner adds a project to the service when adoption benefits the project.
 
 C24. No project in the portfolio is known that should not use the service. [decided: owner, 2026-10-28]
 
-C25. Eventually Allegro's approach and the project-orchestrator's approach merge into one model. [decided: owner, 2026-10-28]
+C25. Eventually Allegro's approach (its planning DSL and process documents) and the project-orchestrator's approach merge into one model. [decided: owner, 2026-10-28]
 
 C83. The merged model lets Allegro adopt the project-orchestrator. [decided: owner, 2026-10-28]
 
@@ -136,9 +138,11 @@ C71. A node is specified on the way down the tree and verified on the way up. ev
 
 C30. In the plan model a feature is its validation: the set of functional tests that constitute the feature. evidence: E1. [decided: project-orchestrator process specification]
 
-C31. The service reads real plan state from git. evidence: E2. [decided: project-orchestrator Plan register]
+C31. The service reads plan state from git. evidence: E2. [decided: project-orchestrator Plan register]
 
-C59. Plan-state update with an advisory lease is node P2-N010, not yet started. evidence: E2. [decided: project-orchestrator Plan register]
+C105. The service validates the plan-state updates a session commits. evidence: E2. [decided: project-orchestrator Plan register]
+
+C59. Node P2-N010, plan-state update with an advisory lease, is done in the Plan register. evidence: E2. [decided: project-orchestrator Plan register]
 
 C32. Role definitions live once in the orchestrator plugin. evidence: E3. [decided: project-orchestrator plugin]
 
@@ -148,7 +152,9 @@ C33. The methodology supplies the rules. evidence: E3. [decided: project-orchest
 
 C88. The project-orchestrator supplies the roles that apply the rules. evidence: E3. [decided: project-orchestrator process specification]
 
-C34. Dispatch has approved scope as the hard boundary, with an optional task or token budget attached when the owner grants scope. evidence: E4. [decided: project-orchestrator process specification]
+C34. Dispatch has approved scope as the hard boundary. evidence: E4. [decided: project-orchestrator process specification]
+
+C106. The owner may attach a task or token budget when granting scope. evidence: E4. [decided: project-orchestrator process specification]
 
 C35. The IR, the claims check, same-instance confirmation and the four meta-review signals are the convergence machinery for prose. evidence: E5. [decided: IR specification]
 
@@ -178,7 +184,7 @@ C82. Adversarial review has low efficiency until formal models and processes kee
 
 C41. The plan model and Allegro's planning DSL hold two plan models: a tree with seven stages, a graph of outcomes. [inferred: R6]
 
-C42. The merged model of C25 combines the two plan models in C41. [decided: owner, 2026-10-28]
+C42. The merged model of Allegro's approach and the project-orchestrator's approach, C25, combines the two plan models in C41. [decided: owner, 2026-10-28]
 
 C72. Allegro's planning DSL demo may not match the project-orchestrator's plan model. [decided: owner, 2026-10-28]
 
@@ -232,23 +238,27 @@ C93. The service does not offer a remote MCP connector today. evidence: E12. [de
 
 C67. Today a surface without a repository clone cannot make the git commit the service expects from the session. evidence: E12. [decided: owner, 2026-10-28]
 
-C69. Standing constraint 1, the session as git's only writer, needs the owner's decision at the review of the service for surfaces without a repository clone. [inferred: R22]
+C69. The write model, decision 3 of the service skeleton plan for node P2-N002, service skeleton and plan state, makes the session git's only writer. evidence: E13. [decided: owner, 2026-08-26]
+
+C104. The owner kept the write model at the review of the service on 2026-10-29. evidence: E13. [decided: owner, 2026-10-29]
+
+C102. Surfaces without a repository clone receive read, question and delegation tools through a remote MCP connector, in a node placed after the pilot. evidence: E13. [decided: owner, 2026-10-29]
 
 C68. The literate style, every project as a book, is roadmap work beyond what Allegro's book settled. [decided: owner, 2026-10-28]
 
 ### First steps
 
-C97. Node P2-N010 of service chunk 1 is plan-state update under the advisory lease. evidence: E2. [decided: project-orchestrator Plan register]
+C97. Node P2-N010 of service chunk 1, plan-state update under the advisory lease, is done. evidence: E2. [decided: project-orchestrator Plan register]
 
-C98. Node P2-N011 is degrade to git-only with enlistment documentation. evidence: E2. [decided: project-orchestrator Plan register]
+C98. Node P2-N011, degrade to git-only with enlistment documentation, reached done on 2026-09-07. evidence: E2. [decided: project-orchestrator Plan register]
 
-C55. Service chunk 1 closes when the plan-state update and the degrade to git-only are done. evidence: E2. [decided: project-orchestrator Plan register]
+C55. Service chunk 1 closed on 2026-09-16, with the plan-state update and the degrade to git-only done. evidence: E2. [decided: project-orchestrator Plan register]
 
-C56. Once chunk 1 closes, the task-pull loop comes before topics. [decided: owner, 2026-10-28]
+C56. Now that chunk 1 has closed, the task-pull loop comes before topics. [decided: owner, 2026-10-28]
 
 C78. The web view's first version drills to node and task only. [decided: owner, 2026-10-28]
 
-C58. The reasoning role writes the roadmap document after the review of the service, from this vision. [decided: owner, 2026-10-28]
+C58. The reasoning role writes the roadmap document after the review of the service of 2026-10-29, from this vision. [decided: owner, 2026-10-28]
 
 ## Relations
 
@@ -304,11 +314,17 @@ R25. C85 depends-on C58 because the sequence beyond chunk 1 is the roadmap docum
 
 R26. C94 depends-on C47 because a stranger for plans would be part of the machinery C47 limits to prose.
 
+R27. C102 depends-on C104 because keeping the session as the only writer is what limits those surfaces to tools that write nothing.
+
+R29. C80 depends-on C102 because a surface without a clone delegates the performing of a task to an agent with one.
+
+R28. C102 depends-on C90 because the remote MCP connector is the route C90 names for those surfaces.
+
 ## Evidence
 
 E1. project-orchestrator docs/process/plan-model.md, sections "The hierarchy", "Features" and "The node lifecycle": the tree, the V-shaped progression, the seven-stage table, and the sentence "a feature is its validation".
 
-E2. project-orchestrator docs/plan-register.md at main (merge of PR #11): P2-N009 `[done]`, P2-N010 `[identified]`, P2-N011 `[identified]`.
+E2. project-orchestrator docs/plan-register.md at main (merge of PR #13, 2026-10-29): P2-N002 `[done]` on 2026-09-16 with all five children P2-N007 to P2-N011 `[done]`; P2-N012 `[done]`.
 
 E3. project-orchestrator plugin/README.md line 45: `sync_agents.ts` mirrors the plugin's agents into `.claude/agents/`, with `--check` verifying the mirror; docs/process/roles.md cites methodology rules by identifier for each role's duties.
 
@@ -329,6 +345,8 @@ E10. allegro docs/plans/conceptual-model-methodology-delta.md (status: draft pro
 E11. The session of 2026-10-28: the owner's vision message (eight points), the reasoning role's assessment, and the owner's reply ("You can draft the vision in IR"; "I agree with all your recommendations and terms, except let's change define-by-example to specification-by-example").
 
 E12. project-orchestrator-service README.md ("every write is the session's own git commit, which this service validates but never makes"); docs/mcp-enlistment.md ("Claude Code reads a repository-root `.mcp.json` automatically on both the local and web surfaces"); src/auth.ts, bearer-token auth only.
+
+E13. docs/records/service-review-2026-10-29.ir.md: asks A8 and A14, adopted by the owner on 2026-10-29; the write model kept, a remote MCP connector node after the pilot, read, question and delegation tools only for surfaces without a repository clone.
 
 ## Asks
 

@@ -497,8 +497,13 @@ entries update in the same commit as the work they describe
   IR specification (PR #49). Open: the vision document (IR drafted 2026-10-28 as
   [docs/vision.ir.md](vision.ir.md), ratified by the owner with four
   terms the same day, rendered as [docs/vision.md](vision.md) and taken
-  through ten stranger rounds to the limit without a readable verdict;
-  meta-review pending, see [vision.review.md](vision.review.md));
+  through ten stranger rounds to the limit without a readable verdict,
+  meta-reviewed as case 009; corrected after the service review of
+  2026-10-29 and taken through a second count, readable at round 3,
+  its meta-review pending on signals 1 and 2, see
+  [vision.review.md](vision.review.md); the roadmap document's IR
+  drafted the same day as [docs/roadmap.ir.md](roadmap.ir.md) for the
+  owner to edit);
   the vocabulary collision between Allegro's "promotion" and the
   methodology's *Promotion*; Allegro's P-009 to P-011 and document
   types, which wait for a second project.

@@ -160,3 +160,65 @@ Meta-review: delivered (2026-10-29, [case 009](https://github.com/majodali/commu
 Post-count edit, 2026-10-29: the owner named the first adopter, so C99 to C101 and the Decisions taken on 2026-10-29 section were added and A3 closed. The edit is not reviewed; the meta-review's inputs were frozen before it. A second count, if the owner dispatches one, covers it.
 
 Status note, 2026-10-29: the IR's Status set to `reviewed` at the end of the count, per the specification's Stranger rounds section; case 009's observation 6 found it still read `rendered`.
+
+## Count 2
+
+Opened 2026-10-29 after the service review's corrections (C21, C31, C55, C59, C69, C97, C98, E2, new C102 and E13) were applied to the IR and the prose re-rendered by the paraphraser for the changed claims only (round trip 100 of 100). Stranger model: Haiku, one fresh instance per round, confirmation by the same instance. SP-02 warnings before round 1: none (mtool style, 0 violations). Procedure: branch point v1.7 of the communication-pipeline.
+
+| Round | Prose words | IR claims | Findings | Verdict |
+|---|---|---|---|---|
+| 1 | 1,610 | 100 | 9 | not readable (restatement mismatches 4, all own; contradiction 1; undefined terms 0) |
+| 2 | 1,636 | 102 | 4 | not readable (restatement mismatch 1, prose-caused; contradiction 1; undefined terms 0) |
+| 3 | 1,656 | 102 | 5 | readable (restatement mismatches 3, all own; contradiction 0; undefined terms 0) |
+
+### Round 1
+
+Restatement matched the IR; the four mismatches (C6, C7, C13, C26) were own-caused, no prose sentence relied on misled the reviewer. Contradiction found: C80 against C102 (an agent changes the repository directly, while surfaces without a clone get tools that write nothing). Undefined terms: 0.
+
+Mismatches: C6 (own), C7 (own), C13 (own), C26 (own)
+
+Findings on the prose: 6 (SP-01 2, SP-02 1, SP-03 1, SP-05 1, SP-25 1). Accepted 6.
+
+Accepted, fixed IR first then prose: 4 (C21 split: C21 keeps the naming and the closure, C103 carries the merge to main); 5 and 6 (C69 split: C69 defines the write model, C104 records that the owner kept it; R27 now hangs on C104); 7 (the P2-N002 plan linked and named as the service skeleton plan, in C69's sentence); 8 (C42 names the merged model as the merge of Allegro's approach and the project-orchestrator's); 9 (C80 reads "An agent performing a task from a surface with a repository clone changes the project's repository directly", and R29 records that a surface without a clone delegates the performing to an agent with one).
+
+Claims after fixes: 102. Prose after fixes: 1,634 words.
+
+Confirmation: 5 of 6 fixes hold. Not held: 4. Declines accepted: 0 of 0. New defects: 1.
+
+Not held, 4: the split left the naming of 2026-10-28 and the closure of 2026-09-16 in one sentence. New defect: SP-03, "the design branch" in C103's sentence has no antecedent. Re-fixed before round 2, IR first then prose: C21 now reads "On 2026-10-28 the owner named completing service chunk 1 as the next step" (an owner decision, provenance owner 2026-10-28), and C103 reads "Chunk 1's closure of 2026-09-16 reached main on 2026-10-29 through pull request 13 of the project-orchestrator", the pull request linked. The closure date itself stays C55's claim. Both re-fixes await round 2's restatement.
+
+### Round 2
+
+Restatement did not match the IR: C25 and C26, prose-caused, because "Allegro's approach" was never defined and the reader took it for Allegro's modeling. Contradiction found: C55 (chunk 1 closed) against C56 ("Once chunk 1 closes"). Undefined terms: 0. Round 1's re-fixes of C21 and C103 drew no finding on SP-01 or SP-03; the reviewer asked which event C103's date marks.
+
+Mismatches: C25, C26
+
+Findings on the prose: 3 (SP-25 1, SP-03 1, SP-05 1), plus the restatement mismatch. Accepted 4.
+
+Accepted, fixed IR first then prose: 1 (C25 defines Allegro's approach at first use as its planning DSL and process documents); 2 (C56 reads "Now that chunk 1 has closed"; C103 names the event: the Plan register's record of chunk 1 done, dated 2026-09-16, reached main on 2026-10-29); 3 (C58 names the review by date, 2026-10-29); 4 (C69 names node P2-N002, service skeleton and plan state).
+
+Claims after fixes: 102. Prose after fixes: 1,656 words.
+
+Confirmation: 3 of 4 fixes hold. Not held: 1. Declines accepted: 0 of 0. New defects: 1.
+
+Not held, 1: the comma list read as a third merging item. New defect: SP-01 on the same sentence, for the same reason. Re-fixed before round 3, IR first then prose: C25 reads "Eventually Allegro's approach (its planning DSL and process documents) and the project-orchestrator's approach merge into one model." The re-fix awaits round 3's restatement.
+
+Brief calibration added before round 3, under SP-01: a parenthesis that defines a term at its first use is part of that term, not a second claim (branch point v1.7, brief calibrations).
+
+### Round 3
+
+Restatement matched the IR; the three mismatches (C25; C57 and C84; C66 and C93) were own-caused, each with the sentence relied on quoted. Contradiction found: none. Undefined terms: 0. Verdict: readable for RD-4. Round 2's re-fix of C25 drew no finding.
+
+Mismatches: C25 (own), C57 (own), C84 (own), C66 (own), C93 (own)
+
+Findings on the prose: 2 (SP-01 2). Accepted 2.
+
+Accepted, fixed IR first then prose: 4 (C31 split: C31 the service reads plan state from git, C105 the service validates the plan-state updates a session commits); 5 (C34 split: C34 approved scope as the hard boundary, C106 the owner may attach a task or token budget when granting scope).
+
+Claims after fixes: 104. Prose after fixes: 1656 words.
+
+Confirmation: 2 of 2 fixes hold. Not held: none. Declines accepted: 0 of 0. New defects: 0.
+
+The count ends readable at round 3. Signals (scripts/signals.mjs of the communication-pipeline, run 2026-10-29): signal 1 fired (fixes not held in rounds 1 and 2); signal 2 fired (C26 on the Mismatches lines of rounds 1 and 2, C25 of rounds 2 and 3); signal 3 not fired (16.1 to 16.24 words per claim); signal 4 not fired.
+
+Meta-review: pending (signals 1 and 2).
