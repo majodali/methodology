@@ -237,7 +237,7 @@ C75. Relations and evidence are not rendered as sentences. [decided: pipeline sc
 
 C76. The renderer links a term with a definition site at its first use in the unit. [decided: methodology PR #48, 2026-10-26]
 
-C173. The unit is the whole text for a report and the section for a document. [decided: methodology PR #48, 2026-10-26]
+C173. The unit for P-008 is the whole text for a report and the section for a document. [decided: methodology PR #48, 2026-10-26]
 
 C164. Later uses of a term with a definition site in the unit are not linked. [decided: methodology PR #48, 2026-10-26]
 
@@ -463,17 +463,23 @@ C181. The vocabulary row of a ratified term is the term's definition site. [deci
 
 C138. The specification was adopted on 2026-10-26 at v1.2 of the communication-pipeline project's schema. [decided: methodology PR #49, 2026-10-26]
 
-C212. The specification is amended here since adoption. [decided: methodology PR #49, 2026-10-26]
+C212. The specification is amended since adoption. [decided: methodology PR #49, 2026-10-26]
 
 C139. CK-12 was added at adoption after a stranger review. [decided: methodology PR #49, 2026-10-26]
 
-C147. The Footprint header and the second stranger round were added on 2026-10-26. [decided: methodology PR #50, 2026-10-26]
+C147. The Footprint header was added on 2026-10-26. [decided: methodology PR #50, 2026-10-26]
 
-C148. The rounds until readable, the limit of ten and the meta-review were added by owner ruling of 2026-10-26. [decided: owner, 2026-10-26]
+C213. The second stranger round was added on 2026-10-26. [decided: methodology PR #50, 2026-10-26]
+
+C148. The rounds until readable and the limit of ten were added by owner ruling of 2026-10-26. [decided: owner, 2026-10-26]
+
+C214. The meta-review was added by owner ruling of 2026-10-26. [decided: owner, 2026-10-26]
 
 C184. The fixing and confirmation of the readable round's findings before delivery were added on 2026-10-27, by owner decision on communication-pipeline evaluation case 008. [decided: owner, 2026-10-27]
 
-C200. The withdrawal at confirmation and the final round's fixes confirmed at the limit were added on 2026-10-29, by owner decision on communication-pipeline evaluation case 009. evidence: E3. [decided: owner, 2026-10-29]
+C200. The withdrawal at confirmation was added on 2026-10-29, by owner decision on communication-pipeline evaluation case 009. evidence: E3. [decided: owner, 2026-10-29]
+
+C215. The final round's fixes confirmed at the limit were added on 2026-10-29 by the owner decision on case 009. evidence: E3. [decided: owner, 2026-10-29]
 
 C201. The third and fourth signals were reworded on 2026-10-29 by the owner decision on communication-pipeline evaluation case 009. evidence: E3. [decided: owner, 2026-10-29]
 

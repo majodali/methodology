@@ -615,6 +615,7 @@ Lint before round 1 (case 009 change 17): IR checks clean. Prose SP-02: nine sen
 | 1 | 3,089 | 192 | 9 | 2.9 | not readable (restatement matched, 2 own mismatches; contradictions 0; undefined terms 3) |
 | 2 | 3,117 | 193 | 16 | 5.1 | not readable (restatement matched, 4 own mismatches; contradictions 0; undefined term 1) |
 | 3 | 3,143 | 201 | 4 | 1.3 | not readable (restatement matched; contradictions 0; undefined term 1) |
+| 4 | 3,163 | 203 | 8 | 2.5 | readable (restatement matched, 1 own mismatch; contradictions 0; undefined terms 0) |
 
 ### Round 1, count 4, 2026-10-29
 
@@ -682,3 +683,21 @@ Mismatches: none
 Claims after fixes: 203. Prose after fixes: 3163 words.
 
 Confirmation: 4 of 4 fixes hold. Not held: none. Declines accepted: 0 of 0. New defects: 0.
+
+### Round 4, count 4, 2026-10-29
+
+Claims check before the round: 4 changed claims, 0 missing, 0 stale (base: round 3 prose). Stranger model: claude-haiku. Prose 3,163 words; 8 findings, 2.5 per thousand words, 7 of them prose findings. Restatement: matched the IR; one mismatch the instance attributed to its own restatement, naming C41 and the sentence relied on. Contradictions 0, undefined terms 0; verdict: readable for RD-4. The count ends at round 4. Under step 7, the findings are fixed and the round's instance confirms each before delivery. By fix kind as the stranger judged: rephrase 6, cut 1.
+
+Mismatches: C41 (own)
+
+| # | Finding (shortened) | Kind | Fix | Confirmation |
+|---|---|---|---|---|
+| 1 | own-caused mismatch on C41 | restatement | no prose defect | n/a |
+| 2, 3 | the P-008 unit sentence attributes the unit to P-008 and runs to 26 words | SP-01, SP-02 | rephrase C173: "The unit for P-008 is the whole text for a report and the section for a document." | pending |
+| 4 | two additions in one History sentence | SP-01 | split C147; C213 | pending |
+| 5 | three additions in one History sentence | SP-01 | split C148; C214 | pending |
+| 6 | two changes in one History sentence | SP-01 | split C200; C215 | pending |
+| 7 | the Rendering conditions section opens with its inputs | SP-11 | reorder: "The first row whose condition holds decides." moves to the front; no claim changed | pending |
+| 8 | "here" | SP-26 | cut from C212 | pending |
+
+Claims after fixes: 206. Prose after fixes: 3163 words.
