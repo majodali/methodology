@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: rendered (reasoning role, 2026-10-29; count 4, round 2)
+Status: rendered (reasoning role, 2026-10-29; count 4, round 3)
 Source: the owner's adoption of 2026-10-29 of communication-pipeline evaluation case 009's nineteen changes, of which changes 2, 14, 15 and 18 amend this specification (count 4); the owner's decision of 2026-10-27 on signal-based meta-review triggers (count 3); communication-pipeline evaluation case 008 (owner decision of 2026-10-27, change 5) for count 2; for count 1, docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md; docs/releases.md; docs/vocabulary.md
@@ -55,7 +55,7 @@ T20. Meta-review signal. defined-at: vocabulary.md#def-meta-review-signal [decid
 
 C1. The reasoning role writes an IR before any prose of the communication exists. [decided: owner, 2026-10-24]
 
-C4. The IR prevents three failure modes of prose written directly: several claims compressed into one sentence, referents left unnamed, and conversation terms used as if defined. [decided: owner, 2026-10-24]
+C4. The IR prevents three failure modes of directly written prose: several claims compressed into one sentence, referents left unnamed, and conversation terms used as if defined. [decided: owner, 2026-10-24]
 
 C5. Any project that adopts W-009 by declaration uses this specification. [decided: methodology PR #49, 2026-10-26]
 
@@ -233,19 +233,19 @@ C74. The paraphraser may add connective prose: a sentence that asserts nothing t
 
 C75. Relations and evidence are not rendered as sentences. [decided: pipeline schema v1.2, 2026-10-25]
 
-C76. A term with a definition site is linked at its first use in the unit P-008 defines. [decided: methodology PR #48, 2026-10-26]
+C76. The renderer links a term with a definition site at its first use in the unit. [decided: methodology PR #48, 2026-10-26]
 
 C173. The unit is the whole text for a report and the section for a document. [decided: methodology PR #48, 2026-10-26]
 
 C164. Later uses of a term with a definition site in the unit are not linked. [decided: methodology PR #48, 2026-10-26]
 
-C77. A term the IR introduces is defined in a sentence of its own before its first use. [decided: methodology PR #46, 2026-10-26]
+C77. The renderer defines a term the IR introduces in a sentence of its own before its first use. [decided: methodology PR #46, 2026-10-26]
 
 C153. A term the IR introduces is listed under *Terms introduced*. [decided: methodology PR #46, 2026-10-26]
 
 C78. For RD-5, the first use of a term with a definition site carries its definition in parentheses instead of a link. [decided: methodology PR #48, 2026-10-26]
 
-C79. For RD-1 or RD-2, a claim renders under the part its `part:` field names. [decided: pipeline schema v1.2, 2026-10-25]
+C79. For RD-1 or RD-2, the renderer places a claim under the part its `part:` field names. [decided: pipeline schema v1.2, 2026-10-25]
 
 C80. Without a `part:` field, a decided claim renders under *What is already covered*. [decided: methodology PR #50, 2026-10-26]
 
@@ -283,19 +283,21 @@ C91. The reasoning role starts each round by dispatching a stranger with a fresh
 
 C92. The stranger reviews the IR and the prose against the reader's readability test. [decided: methodology PR #50, 2026-10-26]
 
-C93. The verdict is readable when three conditions hold: the stranger's restatement of the text's problem, terms and decisions matches the IR; the stranger finds no contradiction; the stranger finds no undefined term. [decided: owner, 2026-10-27]
+C93. In a round, the verdict is readable when three conditions hold. [decided: owner, 2026-10-27]
+
+C203. The conditions: the stranger's restatement of the text's problem, terms and decisions matches the IR; the stranger finds no contradiction and no undefined term. [decided: owner, 2026-10-27]
 
 C194. A contradiction or undefined-term finding withdrawn by the round's stranger instance at confirmation, on a reason quoting the prose, does not count against the verdict. evidence: E3. [decided: owner, 2026-10-29]
 
 C195. A restatement mismatch is not withdrawn at confirmation. evidence: E3. [decided: owner, 2026-10-29]
 
-C94. A finding that proposes fewer words, a plainer phrase or a removed repetition is treated like any other finding. [decided: owner, 2026-10-27]
+C94. The reasoning role treats a finding that proposes fewer words, a plainer phrase or a removed repetition like any other finding. [decided: owner, 2026-10-27]
 
 C95. The reasoning role records each round's findings, each finding's disposition, and the verdict in the review record. [decided: methodology PR #50, 2026-10-26]
 
 C155. The text delivered after a readable verdict is the judged text with the round's fixes applied. [decided: owner, 2026-10-27]
 
-C202. Each finding of the readable round is confirmed or marked unfixed in the delivered text. [decided: owner, 2026-10-27]
+C202. The reasoning role marks each finding of the readable round confirmed or unfixed in the delivered text. [decided: owner, 2026-10-27]
 
 C97. At a readable verdict, the reasoning role fixes the round's findings in the IR and then in the prose. [decided: owner, 2026-10-27]
 
@@ -341,7 +343,9 @@ C104. A text is a meta-review subject when its count reaches the limit or its re
 
 C187. The first signal: in two or more rounds of the count, a fix did not reach the prose or was not confirmed. [decided: owner, 2026-10-27]
 
-C188. The second signal: a finding declined in an earlier round was raised again, or a restatement mismatch recurred on one passage. [decided: owner, 2026-10-27]
+C188. The second signal: a finding declined in an earlier round was raised again. [decided: owner, 2026-10-27]
+
+C208. The second signal also fires when a restatement mismatch recurred on one passage. [decided: owner, 2026-10-27]
 
 C189. The third signal: at the count's end, words per IR claim exceed round 1's words per claim by more than one tenth. evidence: E3. [decided: owner, 2026-10-29]
 
@@ -349,7 +353,9 @@ C190. The fourth signal: in round 3 or later, a stranger found a contradiction i
 
 C105. At the end of a count, the reasoning role checks the four signals against the review record. [decided: owner, 2026-10-27]
 
-C191. The reasoning role writes `Meta-review: pending` when the text is a subject and `Meta-review: not indicated` otherwise, naming the signals checked. [decided: owner, 2026-10-27]
+C191. The reasoning role writes `Meta-review: pending` when the text is a subject and `Meta-review: not indicated` otherwise. [decided: owner, 2026-10-27]
+
+C209. The `Meta-review:` line names the signals checked. [decided: owner, 2026-10-27]
 
 C192. The owner may dispatch a meta-review of any text. [decided: owner, 2026-10-27]
 
@@ -365,7 +371,11 @@ C109. A `Meta-review: pending` line in the review record of an accepted delivera
 
 ### Rendering conditions
 
-C110. The inputs are the IR's reader, purpose, Normative header, claim count, proposed-term count, count of dependent asks (asks with a `Depends:` field), and longest claim, plus whether the owner asked for a review. [decided: pipeline branch point v1.1, 2026-10-25]
+C110. The inputs are the IR's reader, purpose, Normative header, claim count, proposed-term count, count of dependent asks and longest claim. [decided: pipeline branch point v1.1, 2026-10-25]
+
+C204. A dependent ask is an ask with a `Depends:` field. [decided: pipeline branch point v1.1, 2026-10-25]
+
+C205. A further input is whether the owner asked for a review. [decided: pipeline branch point v1.1, 2026-10-25]
 
 C111. A lint runs the mechanical checks in every case. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -419,7 +429,9 @@ C129. A document always starts as an IR. [decided: owner, 2026-10-25]
 
 C130. A report to RD-2 always starts as an IR. [decided: pipeline branch point v1.1, 2026-10-25]
 
-C131. A report to RD-1 or RD-3 that introduces no term, records no decision and states no register fact may be written as prose directly, under the style guide's mechanical checks. [decided: owner, 2026-10-25]
+C131. A report to RD-1 or RD-3 that introduces no term, records no decision and states no register fact may be written as prose directly. [decided: owner, 2026-10-25]
+
+C206. Prose written directly is under the style guide's mechanical checks. [decided: owner, 2026-10-25]
 
 C132. A term, a decision or a register fact requires the IR. [decided: owner, 2026-10-25]
 
@@ -463,7 +475,9 @@ C193. The trigger of three rounds was replaced by the four signals on 2026-10-27
 
 C162. The owner placed the meta-review in the communication-pipeline project until that project is archived, and in the methodology repository after. [decided: owner, 2026-10-26]
 
-C140. The specification was rewritten from this IR after ten rounds on PR #51's text grew the prose from 2,635 to 4,516 words without a readable verdict. evidence: E1, E2. [decided: owner, 2026-10-27]
+C140. The specification was rewritten from this IR, `intermediate-representation.ir.md` beside the prose. [decided: owner, 2026-10-27]
+
+C207. The rewrite followed ten stranger rounds on methodology PR #51's amendment text that ended without a readable verdict, the prose grown from 2,635 to 4,516 words. [decided: owner, 2026-10-27]
 
 ## Relations
 

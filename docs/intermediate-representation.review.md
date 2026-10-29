@@ -613,6 +613,7 @@ Lint before round 1 (case 009 change 17): IR checks clean. Prose SP-02: nine sen
 | Round | Prose words | IR claims | Findings | Per 1,000 words | Verdict |
 |---|---|---|---|---|---|
 | 1 | 3,089 | 192 | 9 | 2.9 | not readable (restatement matched, 2 own mismatches; contradictions 0; undefined terms 3) |
+| 2 | 3,117 | 193 | 16 | 5.1 | not readable (restatement matched, 4 own mismatches; contradictions 0; undefined term 1) |
 
 ### Round 1, count 4, 2026-10-29
 
@@ -635,3 +636,27 @@ Claims after fixes: 193. Prose after fixes: 3,117 words.
 Confirmation: 6 of 7 fixes hold. Not held: 6. Declines accepted: 0 of 0. New defects: 0.
 
 Finding 6 fixed again before round 2: C127 now reads "The counts of surprises and misses measure one indicator of convergence: how far the footprint's prediction missed", defining the indicator in the sentence. Findings 1 and 2 needed no fix.
+
+### Round 2, count 4, 2026-10-29
+
+Claims check before the round: 8 changed claims, 0 missing, 0 stale (base: round 1 prose). Stranger model: claude-haiku. Prose 3,117 words; 16 findings, 5.1 per thousand words, 12 of them prose findings. Restatement: matched the IR; four mismatches the instance attributed to its own restatement, each naming its claim and the sentence relied on. Contradictions 0, undefined terms 1 ("footprint" unlinked in the Footprint section); verdict: not readable for RD-4. Every prose finding sits on text older than this count, five of them the long sentences round 1's lint note had left for the editorial pass. By fix kind as the stranger judged: rephrase 10, cut 1, add 1.
+
+Mismatches: C93 (own), C41 (own), C73 (own), C74 (own), C135 (own)
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| F1 to F4 | own-caused mismatches | restatement | no prose defect; claims named |
+| F5 | the marking of readable-round findings has no actor | SP-18 | rephrase C202: the reasoning role marks |
+| F6 | "is treated like any other finding" | SP-18 | rephrase C94: the reasoning role treats |
+| F7 | the linking, defining and placing duties have no actor | SP-18 | rephrase C76, C77, C79: the renderer links, defines, places |
+| F8 | "footprint" unlinked | SP-04 | add the link to the vocabulary row |
+| F9 | the verdict sentence at 35 words | SP-02 | split C93; C203 the conditions |
+| F10 | the inputs sentence at 33 words | SP-02 | split C110; C204, C205 |
+| F11 | the direct-prose sentence at 30 words | SP-02 | split C131; C206 |
+| F12 | the History's rewrite sentence at 28 words | SP-02 | split C140; C207 |
+| F13 | the three-failure-modes sentence at 26 words | SP-02 | rephrase C4: directly written prose |
+| F14 | the second signal's two conditions in one sentence | SP-01 | split C188; C208 |
+| F15 | the Meta-review line's write and naming in one sentence | SP-01 | split C191; C209 |
+| F16 | "The IR of a delivered report is a record." as excess | SP-26 | declined: the sentence states the IR's status, record, from which the next sentence's rule follows; cutting it loses C135 and the term's use |
+
+Claims after fixes: 200. Prose after fixes: 3117 words.
