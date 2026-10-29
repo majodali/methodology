@@ -274,6 +274,18 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   - <a id="def-meta-review-signal"></a>**Meta-review signal** — one of
     four conditions in a review record that make a text a meta-review
     subject, named in the specification's Meta-review section.
+- <a id="def-planning-execution-model"></a>**Planning/execution model** — the plan model of a project plus
+  the verification evidence of each node: what the web view renders
+  and the source of progress truth (owner, 2026-10-28,
+  [vision](vision.ir.md)).
+- <a id="def-stream"></a>**Stream** — a unit of approved autonomous work bounded by scope,
+  budget and accepted risks rather than by chunk gates (owner,
+  2026-10-28, [vision](vision.ir.md)).
+- <a id="def-specification-by-example"></a>**Specification-by-example** — a specification given as examples
+  that double as tests (owner, 2026-10-28, [vision](vision.ir.md)).
+- <a id="def-web-view"></a>**Web view** — the project-orchestrator-service's interface for a
+  project's planning/execution model, called the plan view in service
+  chunk 2 (owner, 2026-10-28, [vision](vision.ir.md)).
 - <a id="def-report-audience"></a>**Report audience** — the reader a report is addressed to under
   [W-008](rules/working-agreement.md#w-008--reports-map-their-deliverables)
   (reports map their deliverables): the human owner directly (the
