@@ -1,6 +1,6 @@
 # Intermediate representation
 
-Status: under review (count 4, round 1). A methodology [Specification](vocabulary.md#def-specification), the document type, required by
+Status: under review (count 4, round 2). A methodology [Specification](vocabulary.md#def-specification), the document type, required by
 [W-009](rules/working-agreement.md#w-009--the-methodology-corpus-writes-its-deliverables-ir-first)
 (the methodology corpus writes its deliverables IR first). Any project
 that adopts W-009 by declaration uses this specification.
@@ -258,7 +258,7 @@ its base. A file is changed when the branch's diff adds, modifies,
 deletes or renames it. The IR and its review record are not counted as
 changed files. A changed file that no declared entry covers is a
 surprise. A declared file that did not change, or a declared directory
-under which no file changed, is a miss. The counts of surprises and misses are the mechanical measure of prediction surprise, one indicator of [convergence](vocabulary.md#def-convergence). The reasoning role
+under which no file changed, is a miss. The counts of surprises and misses measure one indicator of [convergence](vocabulary.md#def-convergence): how far the footprint's prediction missed. The reasoning role
 records the unratified-term count, the surprise count and the miss
 count in the Status parenthesis when the IR is delivered.
 

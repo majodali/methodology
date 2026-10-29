@@ -631,3 +631,7 @@ Mismatches: C44 (own), C104 (own)
 | 9 | the delivered-text sentence carries the marking rule too | SP-01 | split C155; C202 |
 
 Claims after fixes: 193. Prose after fixes: 3,117 words.
+
+Confirmation: 6 of 7 fixes hold. Not held: 6. Declines accepted: 0 of 0. New defects: 0.
+
+Finding 6 fixed again before round 2: C127 now reads "The counts of surprises and misses measure one indicator of convergence: how far the footprint's prediction missed", defining the indicator in the sentence. Findings 1 and 2 needed no fix.
