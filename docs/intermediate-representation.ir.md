@@ -471,7 +471,9 @@ C147. The Footprint header was added on 2026-10-26. [decided: methodology PR #50
 
 C213. The second stranger round was added on 2026-10-26. [decided: methodology PR #50, 2026-10-26]
 
-C148. The rounds until readable and the limit of ten were added by owner ruling of 2026-10-26. [decided: owner, 2026-10-26]
+C148. The rounds until readable were added by owner ruling of 2026-10-26. [decided: owner, 2026-10-26]
+
+C216. The limit of ten was added by owner ruling of 2026-10-26. [decided: owner, 2026-10-26]
 
 C214. The meta-review was added by owner ruling of 2026-10-26. [decided: owner, 2026-10-26]
 
@@ -479,7 +481,7 @@ C184. The fixing and confirmation of the readable round's findings before delive
 
 C200. The withdrawal at confirmation was added on 2026-10-29, by owner decision on communication-pipeline evaluation case 009. evidence: E3. [decided: owner, 2026-10-29]
 
-C215. The final round's fixes confirmed at the limit were added on 2026-10-29 by the owner decision on case 009. evidence: E3. [decided: owner, 2026-10-29]
+C215. The final round's fixes confirmed at the limit were added on 2026-10-29 by the owner decision on communication-pipeline evaluation case 009. evidence: E3. [decided: owner, 2026-10-29]
 
 C201. The third and fourth signals were reworded on 2026-10-29 by the owner decision on communication-pipeline evaluation case 009. evidence: E3. [decided: owner, 2026-10-29]
 
