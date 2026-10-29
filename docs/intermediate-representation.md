@@ -214,7 +214,7 @@ limit or its review record shows a meta-review signal. The first
 signal: in two or more rounds of the count, a fix did not reach the
 prose or was not confirmed. The second signal: a finding declined in
 an earlier round was raised again, or a restatement mismatch recurred
-on one passage. The third signal: at the end of the count the prose's words per IR claim exceed round 1's words per claim by more than one tenth. The fourth signal: in round 3 or later, a stranger found a contradiction in a passage an
+on one passage. The third signal: at the count's end, words per IR claim exceed round 1's words per claim by more than one tenth. The fourth signal: in round 3 or later, a stranger found a contradiction in a passage an
 earlier round's fix touched. At the end of a count, the reasoning
 role checks the four signals against the review record. The
 reasoning role writes `Meta-review: pending` when the text is a
