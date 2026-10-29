@@ -12,7 +12,22 @@ carry: amendment title and PR link · suggested by (evidencing instance)
 
 ## Unreleased
 
-Nothing yet.
+### The stranger rounds take evaluation case 009's four changes
+
+- **PR**: this amendment's PR.
+- **Suggested by**: the owner's adoption on 2026-10-29 of
+  communication-pipeline evaluation case 009, the meta-review of the
+  vision document's ten rounds (methodology PR #62): a contradiction or
+  undefined-term finding withdrawn at confirmation does not count
+  against the verdict (change 2); the fourth signal reads "in round 3
+  or later" (14); the third signal measures words per IR claim (15);
+  the final round's findings are fixed and confirmed at the limit (18).
+- **Impact assessment**: methodology, the specification and its IR;
+  communication-pipeline, branch point v1.7 carries the same changes
+  with the other twelve; project-orchestrator, the Reviewer (stranger)
+  role's clauses; every other pinned project: none, the rules bind the
+  methodology corpus and the roles that run stranger reviews.
+- **Migration note**: none.
 
 ## v1.6.0 — 2026-10-28
 

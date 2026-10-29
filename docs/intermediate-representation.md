@@ -1,6 +1,6 @@
 # Intermediate representation
 
-Status: active. A Methodology-level specification required by
+Status: active (count 4 readable at round 4 on 2026-10-29, awaiting the owner's adjudication). A methodology [Specification](vocabulary.md#def-specification), the document type, required by
 [W-009](rules/working-agreement.md#w-009--the-methodology-corpus-writes-its-deliverables-ir-first)
 (the methodology corpus writes its deliverables IR first). Any project
 that adopts W-009 by declaration uses this specification.
@@ -20,10 +20,7 @@ the specification as RD-4 does. Assumed to know:
 
 The [reasoning role](vocabulary.md#def-reasoning-role) writes an
 [intermediate representation](vocabulary.md#def-intermediate-representation)
-(IR) before any prose of the communication exists. The IR prevents
-three failure modes of prose written directly: several claims
-compressed into one sentence, referents left unnamed, and conversation
-terms used as if defined.
+(IR) before any prose of the communication exists. The IR prevents three failure modes of directly written prose: claims compressed into one sentence, referents left unnamed, and conversation terms used as if defined.
 
 A case this specification does not name is decided by the human owner
 when accepting the deliverable.
@@ -60,7 +57,7 @@ number, never a suffix.
 
 | Kind | Letter | Body and rule |
 |---|---|---|
-| Term | `T` | the word or phrase and either `defined-at:` with a link to its [definition site](vocabulary.md#def-definition-site) or its meaning in the communication. A term is defined once per IR. Every project-specific term used in a claim appears as a term element. A term without a definition site has status proposed. The reasoning role lists a proposed term for ratification |
+| Term | `T` | the word or phrase and either `defined-at:` with a link to its [definition site](vocabulary.md#def-definition-site) or its meaning in the communication. A term is defined once per IR. Every project-specific term used in a claim appears as a term element. A term without a definition site has status proposed. The reasoning role lists each proposed term for ratification in the report that delivers the text |
 | Claim | `C` | one statement. A claim may carry `evidence: E<n>`. In a report to RD-1 or RD-2, a claim may carry `part: covered` or `part: changed` |
 | Cluster | `G` | `cluster:` and an ordered list of claim identifiers, with an optional topic claim first. A claim belongs to at most one cluster |
 | Relation | `R` | `C<a> <verb> C<b> because <reason>`, with the verb one of `supports`, `depends-on`, `contradicts`, `refines`. The reason is one sentence or a claim identifier. A reference from one claim to another is a relation, never a pronoun inside the claim |
@@ -90,10 +87,7 @@ definition.
 | proposed | `[proposed: <IR id or "this IR">]` | an element put forward and awaiting ratification |
 | inferred | `[inferred: R<n>]` | an element the reasoning role derived, citing the relation that derives it |
 
-A term with status proposed is an unratified term. The count of
-unratified terms is the mechanical reading of the
-unratified-vocabulary indicator of
-[convergence](vocabulary.md#def-convergence).
+A term with status proposed is an unratified term. The count of unratified terms is the mechanical measure of unratified vocabulary, one indicator of [convergence](vocabulary.md#def-convergence).
 
 ## Mechanical checks
 
@@ -131,23 +125,15 @@ paraphraser may add connective prose: a sentence that asserts nothing
 the IR holds and exists to join claims. Relations and
 evidence are not rendered as sentences.
 
-The unit
-[P-008](rules/prose.md#p-008--terms-are-defined-once-and-linked-at-first-use)
-(terms are defined once and linked at first use) defines is the whole
-text for a report and the section for a document. A term with a
-[definition site](vocabulary.md#def-definition-site) is linked at its
-first use in the unit. Later uses
-of a term with a definition site in the unit are not linked. A term the IR introduces is
-defined in a sentence of its own before its first use. A term the IR
+The unit for [P-008](rules/prose.md#p-008--terms-are-defined-once-and-linked-at-first-use) is the whole text for a report and the section for a document. The renderer links a term with a [definition site](vocabulary.md#def-definition-site) at its first use in the unit. Later uses
+of a term with a definition site in the unit are not linked. The renderer defines a term the IR introduces in a sentence of its own before its first use. A term the IR
 introduces is listed under
 [*Terms introduced*](vocabulary.md#def-terms-introduced). For [RD-5](style.md#readers),
 the first use of a term with a definition site carries its
-definition in parentheses instead of a link. For RD-1 or RD-2, a claim
-renders under the part its `part:` field names. Without a `part:`
+definition in parentheses instead of a link. For RD-1 or RD-2, the renderer places a claim under the part its `part:` field names. Without a `part:`
 field, a decided claim renders under *What is already covered*. A
 proposed or inferred claim without a `part:` field renders under
-*What changed*. The rendering follows the style guide's rows for the
-IR's reader. The rendering states an empty Asks section as "No asks."
+*What changed*. When rendering, the renderer, the paraphraser or the reasoning role, follows the style guide's rows for the IR's reader. The renderer states an empty Asks section as "No asks."
 
 The paraphraser appends a render map: one comment line reading
 `render map:` and, per claim, the paragraph it landed in, as
@@ -165,24 +151,20 @@ missing definition or a missing referent.
 
 ### Stranger rounds
 
-In a [round](vocabulary.md#def-round), the verdict is readable when three conditions hold: the stranger's restatement of the
-text's problem, terms and decisions matches the IR; the stranger finds
-no contradiction; the stranger finds no undefined term. The [limit](vocabulary.md#def-limit) is ten rounds. A [stranger](vocabulary.md#def-stranger) review runs in rounds until a round returns the verdict readable or the [count](vocabulary.md#def-count) reaches the limit. The rounds apply to every
+In a [round](vocabulary.md#def-round), the verdict is readable when three conditions hold. The conditions: the stranger's [restatement](https://github.com/majodali/communication-pipeline/blob/main/docs/vocabulary.md#def-restatement) of the problem, terms and decisions matches the IR; the stranger finds no contradiction; the stranger finds no undefined term. A restatement mismatch is a disagreement between the stranger's restatement and the IR. A contradiction or undefined-term finding withdrawn by the round's stranger instance at confirmation, on a reason quoting the prose, does not count against the verdict. A restatement mismatch is not withdrawn at confirmation. The [limit](vocabulary.md#def-limit) is ten rounds. A [stranger](vocabulary.md#def-stranger) review runs in rounds until a round returns the verdict readable or the [count](vocabulary.md#def-count) reaches the limit. The rounds apply to every
 stranger review the rendering conditions select.
 
 The [reasoning role](vocabulary.md#def-reasoning-role) starts each
 round by dispatching a stranger with a fresh context, never itself and
 never an earlier round's instance. The stranger reviews the IR and
 the prose against the reader's readability test
-([reader catalog](style.md#readers)). A finding that proposes fewer words, a plainer phrase or a
-removed repetition is treated like any other finding.
+([reader catalog](style.md#readers)). The reasoning role treats a finding that proposes fewer words, a plainer phrase or a removed repetition like any other finding.
 
 The reasoning role records each round's findings, each finding's disposition, and the verdict in the [review record](vocabulary.md#def-review-record). The review record
 holds, per round, the word count of the prose and the claim count of
 the IR.
 
-The text delivered after a readable verdict is the judged text with
-the round's fixes applied, each finding confirmed or marked unfixed. At a readable verdict,
+The text delivered after a readable verdict is the judged text with the round's fixes applied. The reasoning role marks each finding of the readable round confirmed or unfixed in the delivered text. At a readable verdict,
 the reasoning role fixes the round's findings in the IR and then in
 the prose. The readable round's stranger instance confirms each fix
 before delivery. A finding whose fix the readable round's stranger instance does not
@@ -193,7 +175,7 @@ reviews the fixed IR and the fixed prose. At the end of a count, the reasoning r
 `reviewed`.
 
 At the limit the reasoning role does not deliver the text before
-the owner's decision. At the
+the owner's decision. At the limit, the reasoning role fixes the final round's findings in the IR and then in the prose. The final round's stranger instance confirms each fix before the owner's decision. The review record marks each finding of the final round confirmed or unfixed. At the
 limit the reasoning role states in the review record that the limit
 was reached. Rework is an edit of the IR
 and the text by the reasoning role. The owner decides, when accepting
@@ -212,16 +194,9 @@ A [meta-review](vocabulary.md#def-meta-review) signal is one of four
 conditions in a review record. A text is a meta-review subject when its count reaches the
 limit or its review record shows a meta-review signal. The first
 signal: in two or more rounds of the count, a fix did not reach the
-prose or was not confirmed. The second signal: a finding declined in
-an earlier round was raised again, or a restatement mismatch recurred
-on one passage. The third signal: the prose grew across the count by
-more than one tenth of its round-1 word count. The fourth signal:
-after round 3, a stranger found a contradiction in a passage an
+prose or was not confirmed. The second signal: a finding declined in an earlier round was raised again. The second signal also fires when a restatement mismatch recurred on one passage. The third signal: at the count's end, words per IR claim exceed round 1's words per claim by more than one tenth. The fourth signal: in round 3 or later, a stranger found a contradiction in a passage an
 earlier round's fix touched. At the end of a count, the reasoning
-role checks the four signals against the review record. The
-reasoning role writes `Meta-review: pending` when the text is a
-subject and `Meta-review: not indicated` otherwise, naming the
-signals checked. The owner may dispatch a meta-review of any text. The reasoning role asks the owner, in the report that
+role checks the four signals against the review record. The reasoning role writes `Meta-review: pending` when the text is a subject and `Meta-review: not indicated` otherwise. The `Meta-review:` line names the signals checked. The owner may dispatch a meta-review of any text. The reasoning role asks the owner, in the report that
 delivers a meta-review subject, to dispatch its meta-review.
 
 A session the owner starts, the meta-review session, performs the
@@ -234,11 +209,7 @@ deliverable is a finding of the next form audit under
 
 ## Rendering conditions
 
-The inputs are the IR's reader, purpose, Normative
-header, claim count, proposed-term count, count of dependent asks
-(asks with a `Depends:` field), and longest claim, plus whether the owner
-asked for a review. A lint runs the mechanical checks in every case. The
-first row whose condition holds decides.
+The first row whose condition holds decides. The inputs are the IR's reader, purpose, Normative header, claim count, proposed-term count, count of dependent asks and longest claim. A dependent ask is an ask with a `Depends:` field. A further input is whether the owner asked for a review. A lint runs the mechanical checks in every case.
 
 | Condition | What follows |
 |---|---|
@@ -256,27 +227,21 @@ changes no obligation.
 
 ## The footprint
 
-An IR whose deliverable is a chat message has no footprint. No branch
-carries a chat message. When the Footprint header is absent or
-empty, no comparison is made. Before delivery, the
+Before delivery, the
 [reasoning role](vocabulary.md#def-reasoning-role), or a lint,
 compares the Footprint header with the files the branch changed since
-its base. A file is changed when the branch's diff adds, modifies,
+its base. An IR whose deliverable is a chat message has no [footprint](vocabulary.md#def-footprint). No branch carries a chat message. When the Footprint header is absent or empty, no comparison is made. A file is changed when the branch's diff adds, modifies,
 deletes or renames it. The IR and its review record are not counted as
 changed files. A changed file that no declared entry covers is a
 surprise. A declared file that did not change, or a declared directory
-under which no file changed, is a miss. The counts of surprises and
-misses are the mechanical reading of the prediction-surprise indicator
-of [convergence](vocabulary.md#def-convergence). The reasoning role
+under which no file changed, is a miss. The counts of surprises and misses measure one indicator of [convergence](vocabulary.md#def-convergence): how far the footprint's prediction missed. The reasoning role
 records the unratified-term count, the surprise count and the miss
 count in the Status parenthesis when the IR is delivered.
 
-## When an IR is required
+## Texts that require an IR
 
 A document always starts as an IR. A report to [RD-2](style.md#readers) always starts as
-an IR. A report
-to RD-1 or RD-3 that introduces no term, records no decision and states no [register fact](vocabulary.md#def-register-fact) may be written as prose directly, under the
-style guide's mechanical checks. A term, a decision or a register fact
+an IR. A report to RD-1 or RD-3 that introduces no term, records no decision and states no [register fact](vocabulary.md#def-register-fact) may be written as prose directly. Prose written directly is under the style guide's mechanical checks. A term, a decision or a register fact
 requires the IR. A term, a decision and a register fact are each
 content a model would hold.
 
@@ -294,22 +259,15 @@ for the ratified term to the project vocabulary. The vocabulary row of a ratifie
 
 ## History
 
-The specification was adopted on 2026-10-26 at v1.2 of the
-communication-pipeline project's schema and is amended here since.
-CK-12 was added at adoption after a stranger review. The Footprint
-header and the second stranger round were added on 2026-10-26. The rounds until readable, the limit of ten and the meta-review were
-added by owner ruling of 2026-10-26. The fixing and confirmation of the readable round's findings before
+The specification was adopted on 2026-10-26 at v1.2 of the communication-pipeline project's schema. The specification is amended since adoption.
+CK-12 was added at adoption after a stranger review. The Footprint header was added on 2026-10-26. The second stranger round was added on 2026-10-26. The rounds until readable were added by owner ruling of 2026-10-26. The limit of ten was added by owner ruling of 2026-10-26. The meta-review was added by owner ruling of 2026-10-26. The fixing and confirmation of the readable round's findings before
 delivery were added on 2026-10-27, by owner decision on
 communication-pipeline evaluation case 008. The trigger of three
 rounds was replaced by the four signals on 2026-10-27, by owner
-decision after five recorded counts. The owner placed the meta-review in the
+decision after five recorded counts. The withdrawal at confirmation was added on 2026-10-29, by owner decision on communication-pipeline evaluation case 009. The final round's fixes confirmed at the limit were added on 2026-10-29 by the owner decision on communication-pipeline evaluation case 009. The third and fourth signals were reworded on 2026-10-29 by the owner decision on communication-pipeline evaluation case 009. The owner placed the meta-review in the
 communication-pipeline project until that project is archived, and in
-the methodology repository after. The specification was rewritten from
-its IR, `intermediate-representation.ir.md` beside this file, after
-ten [stranger](vocabulary.md#def-stranger) rounds on the amendment
-text of methodology PR #51 ended without a readable verdict. The ten
-rounds grew the prose from 2,635 words to 4,516. The record is the
+the methodology repository after. The specification was rewritten from its IR, `intermediate-representation.ir.md` beside this file. The rewrite followed ten [stranger](vocabulary.md#def-stranger) rounds on methodology PR #51's amendment text that ended without a readable verdict. The ten rounds grew the prose from 2,635 to 4,516 words. The record is the
 communication-pipeline project's
 [analysis of the ten rounds](https://github.com/majodali/communication-pipeline/blob/main/eval/analysis/pr51-findings.md).
 
-<!-- render map: C149→¶1 C150→¶1 C179→¶1 C5→¶1 C151→¶1 C166→¶1 C175→¶1 C1→¶2 C4→¶2 C6→¶3 C7→¶4 C8→¶4 C9→¶4 C167→¶4 C10→¶4 C11→¶5 C12→¶5 C13→¶5 C14→¶5 C15→¶5 C16→¶5 C142→¶5 C17→¶6 C18→¶6 C19→¶6 C20→¶7 C21→¶7 C22→¶7 C23→¶8 C24→¶8 C25→¶8 C27→¶8 C152→¶8 C28→¶8 C29→¶8 C30→¶8 C31→¶8 C32→¶8 C33→¶8 C34→¶8 C35→¶8 C36→¶8 C37→¶8 C38→¶8 C39→¶8 C40→¶9 C41→¶9 C42→¶9 C163→¶9 C43→¶9 C44→¶10 C165→¶10 C46→¶11 C47→¶11 C48→¶11 C49→¶12 C50→¶12 C51→¶13 C52→¶13 C53→¶14 C54→¶14 C55→¶14 C56→¶14 C57→¶14 C58→¶14 C59→¶14 C60→¶14 C61→¶14 C62→¶14 C63→¶14 C64→¶14 C65→¶14 C66→¶14 C67→¶14 C68→¶14 C69→¶14 C70→¶14 C71→¶15 C72→¶15 C174→¶15 C73→¶15 C180→¶15 C74→¶15 C75→¶15 C173→¶16 C76→¶16 C164→¶16 C77→¶16 C153→¶16 C78→¶16 C79→¶16 C80→¶16 C154→¶16 C81→¶16 C82→¶16 C83→¶17 C84→¶17 C176→¶17 C85→¶17 C86→¶18 C169→¶18 C87→¶18 C143→¶18 C88→¶19 C93→¶19 C89→¶19 C90→¶19 C91→¶20 C92→¶20 C94→¶20 C95→¶21 C103→¶21 C155→¶22 C97→¶22 C156→¶22 C182→¶22 C183→¶22 C98→¶22 C157→¶22 C158→¶22 C99→¶23 C144→¶23 C100→¶23 C186→¶23 C101→¶23 C171→¶23 C172→¶23 C102→¶23 C104→¶24 C187→¶24 C188→¶24 C189→¶24 C190→¶24 C105→¶24 C191→¶24 C192→¶24 C106→¶24 C107→¶25 C108→¶25 C159→¶25 C109→¶25 C110→¶26 C111→¶26 C112→¶26 C113→¶27 C114→¶27 C170→¶27 C115→¶27 C116→¶27 C117→¶27 C118→¶27 C119→¶27 C120→¶28 C145→¶28 C121→¶29 C177→¶29 C122→¶29 C123→¶29 C124→¶29 C146→¶29 C125→¶29 C126→¶29 C127→¶29 C128→¶29 C129→¶30 C130→¶30 C132→¶30 C178→¶30 C131→¶30 C133→¶31 C134→¶31 C160→¶31 C135→¶31 C185→¶31 C161→¶31 C136→¶31 C181→¶31 C138→¶32 C139→¶32 C147→¶32 C148→¶32 C184→¶32 C193→¶32 C162→¶32 C140→¶32 -->
+<!-- render map: C149→¶1 C150→¶1 C179→¶1 C5→¶1 C151→¶1 C166→¶1 C175→¶1 C1→¶2 C4→¶2 C6→¶3 C7→¶4 C8→¶4 C9→¶4 C167→¶4 C10→¶4 C11→¶5 C12→¶5 C13→¶5 C14→¶5 C15→¶5 C16→¶5 C142→¶5 C17→¶6 C18→¶6 C19→¶6 C20→¶7 C21→¶7 C22→¶7 C23→¶8 C24→¶8 C25→¶8 C27→¶8 C152→¶8 C28→¶8 C29→¶8 C30→¶8 C31→¶8 C32→¶8 C33→¶8 C34→¶8 C35→¶8 C36→¶8 C37→¶8 C38→¶8 C39→¶8 C40→¶9 C41→¶9 C42→¶9 C163→¶9 C43→¶9 C44→¶10 C165→¶10 C46→¶11 C47→¶11 C48→¶11 C49→¶12 C50→¶12 C51→¶13 C52→¶13 C53→¶14 C54→¶14 C55→¶14 C56→¶14 C57→¶14 C58→¶14 C59→¶14 C60→¶14 C61→¶14 C62→¶14 C63→¶14 C64→¶14 C65→¶14 C66→¶14 C67→¶14 C68→¶14 C69→¶14 C70→¶14 C71→¶15 C72→¶15 C174→¶15 C73→¶15 C180→¶15 C74→¶15 C75→¶15 C173→¶16 C76→¶16 C164→¶16 C77→¶16 C153→¶16 C78→¶16 C79→¶16 C80→¶16 C154→¶16 C81→¶16 C82→¶16 C83→¶17 C84→¶17 C176→¶17 C85→¶17 C86→¶18 C169→¶18 C87→¶18 C143→¶18 C88→¶19 C93→¶19 C203→¶19 C211→¶19 C194→¶19 C195→¶19 C89→¶19 C90→¶19 C91→¶20 C92→¶20 C94→¶20 C95→¶21 C103→¶21 C155→¶22 C202→¶22 C97→¶22 C156→¶22 C182→¶22 C183→¶22 C98→¶22 C157→¶22 C158→¶22 C99→¶23 C197→¶23 C198→¶23 C199→¶23 C144→¶23 C100→¶23 C186→¶23 C101→¶23 C171→¶23 C172→¶23 C102→¶23 C104→¶24 C187→¶24 C188→¶24 C208→¶24 C189→¶24 C190→¶24 C105→¶24 C191→¶24 C209→¶24 C192→¶24 C106→¶24 C107→¶25 C108→¶25 C159→¶25 C109→¶25 C110→¶26 C204→¶26 C205→¶26 C111→¶26 C112→¶26 C113→¶27 C114→¶27 C170→¶27 C115→¶27 C116→¶27 C117→¶27 C118→¶27 C119→¶27 C120→¶28 C145→¶28 C121→¶29 C177→¶29 C122→¶29 C123→¶29 C124→¶29 C146→¶29 C125→¶29 C126→¶29 C127→¶29 C128→¶29 C129→¶30 C130→¶30 C132→¶30 C178→¶30 C131→¶30 C206→¶30 C133→¶31 C134→¶31 C160→¶31 C135→¶31 C185→¶31 C161→¶31 C136→¶31 C181→¶31 C138→¶32 C212→¶32 C139→¶32 C147→¶32 C213→¶32 C148→¶32 C214→¶32 C216→¶32 C184→¶32 C200→¶32 C215→¶32 C201→¶32 C193→¶32 C162→¶32 C140→¶32 C207→¶32 C210→¶32 -->

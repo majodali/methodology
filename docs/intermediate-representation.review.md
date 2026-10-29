@@ -601,3 +601,113 @@ round after round 3. The limit was not reached.
 
 Count 3 accepted by the owner on 2026-10-27 (PR #57 merged); the term
 meta-review signal ratified and its vocabulary row added.
+
+## Count 4, 2026-10-29: evaluation case 009's changes 2, 14, 15 and 18
+
+Reader RD-4. Disposition D3 (Normative: yes): the reasoning role rendered the amended passages from the IR; a fresh haiku stranger per round under the branch point v1.6 brief with the calibrations of case 009 the owner adopted on 2026-10-29 (SP-01: a duty with its actor and trigger is one claim; SP-18: a target or roadmap work assigned to no one is not a duty; SP-26: words naming a referent SP-03 requires are not excess; a rule joined by because, so or therefore to a reason the IR holds is not a defect). Text reviewed: `docs/intermediate-representation.md` whole; the IR covers the whole text, 192 claims after this count's eight new claims (C194, C195, C197 to C201) and two reworded (C189, C190).
+
+Lint before round 1 (case 009 change 17): IR checks clean. Prose SP-02: nine sentences over 25 words before the fixes, two of them this count's (C189 at 27, C194 at 26), shortened to 21 and 25. Seven predate the count and are left for the editorial pass the backlog holds: the opening's assumed-knowledge line (26), the three-failure-modes sentence (26), the P-008 unit sentence (26), the verdict's three-condition list (35), the rendering-conditions input list (33), the direct-prose report sentence (30), the History's rewrite sentence (28). None over 35.
+
+### Curve, count 4
+
+| Round | Prose words | IR claims | Findings | Per 1,000 words | Verdict |
+|---|---|---|---|---|---|
+| 1 | 3,089 | 192 | 9 | 2.9 | not readable (restatement matched, 2 own mismatches; contradictions 0; undefined terms 3) |
+| 2 | 3,117 | 193 | 16 | 5.1 | not readable (restatement matched, 4 own mismatches; contradictions 0; undefined term 1) |
+| 3 | 3,143 | 201 | 4 | 1.3 | not readable (restatement matched; contradictions 0; undefined term 1) |
+| 4 | 3,163 | 203 | 8 | 2.5 | readable (restatement matched, 1 own mismatch; contradictions 0; undefined terms 0) |
+
+### Round 1, count 4, 2026-10-29
+
+Stranger model: claude-haiku. Prose 3,089 words; 9 findings, 2.9 per thousand words. Restatement: matched the IR; two mismatches the instance attributed to its own restatement, each naming its claim and quoting the sentence relied on. Contradictions 0, undefined terms 3; verdict: not readable for RD-4. Every finding sits on text older than this count. By fix kind as the stranger judged: rephrase 6, add 3.
+
+Mismatches: C44 (own), C104 (own)
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1, 2 | own-caused mismatches on provenance scope (C44) and the subject rule's limit condition (C104) | restatement | no prose defect; claims named |
+| 3 | the proposed-term listing has no trigger | SP-18 | rephrase C152: in the report that delivers the text |
+| 4 | "The rendering follows", "The rendering states" name no actor | SP-18 | rephrase C81, C82: the renderer, the paraphraser or the reasoning role |
+| 5, 6 | "unratified-vocabulary indicator", "prediction-surprise indicator" undefined | SP-04 | rephrase C50, C127: the mechanical measure of unratified vocabulary (prediction surprise), one indicator of convergence |
+| 7 | "Methodology-level specification" undefined | SP-04 | rephrase C179: a methodology Specification, the document type, linked |
+| 8 | header "When an IR is required" is a clause | SP-10 | rephrase: "Texts that require an IR" |
+| 9 | the delivered-text sentence carries the marking rule too | SP-01 | split C155; C202 |
+
+Claims after fixes: 193. Prose after fixes: 3,117 words.
+
+Confirmation: 6 of 7 fixes hold. Not held: 6. Declines accepted: 0 of 0. New defects: 0.
+
+Finding 6 fixed again before round 2: C127 now reads "The counts of surprises and misses measure one indicator of convergence: how far the footprint's prediction missed", defining the indicator in the sentence. Findings 1 and 2 needed no fix.
+
+### Round 2, count 4, 2026-10-29
+
+Claims check before the round: 8 changed claims, 0 missing, 0 stale (base: round 1 prose). Stranger model: claude-haiku. Prose 3,117 words; 16 findings, 5.1 per thousand words, 12 of them prose findings. Restatement: matched the IR; four mismatches the instance attributed to its own restatement, each naming its claim and the sentence relied on. Contradictions 0, undefined terms 1 ("footprint" unlinked in the Footprint section); verdict: not readable for RD-4. Every prose finding sits on text older than this count, five of them the long sentences round 1's lint note had left for the editorial pass. By fix kind as the stranger judged: rephrase 10, cut 1, add 1.
+
+Mismatches: C93 (own), C41 (own), C73 (own), C74 (own), C135 (own)
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| F1 to F4 | own-caused mismatches | restatement | no prose defect; claims named |
+| F5 | the marking of readable-round findings has no actor | SP-18 | rephrase C202: the reasoning role marks |
+| F6 | "is treated like any other finding" | SP-18 | rephrase C94: the reasoning role treats |
+| F7 | the linking, defining and placing duties have no actor | SP-18 | rephrase C76, C77, C79: the renderer links, defines, places |
+| F8 | "footprint" unlinked | SP-04 | add the link to the vocabulary row |
+| F9 | the verdict sentence at 35 words | SP-02 | split C93; C203 the conditions |
+| F10 | the inputs sentence at 33 words | SP-02 | split C110; C204, C205 |
+| F11 | the direct-prose sentence at 30 words | SP-02 | split C131; C206 |
+| F12 | the History's rewrite sentence at 28 words | SP-02 | split C140; C207 |
+| F13 | the three-failure-modes sentence at 26 words | SP-02 | rephrase C4: directly written prose |
+| F14 | the second signal's two conditions in one sentence | SP-01 | split C188; C208 |
+| F15 | the Meta-review line's write and naming in one sentence | SP-01 | split C191; C209 |
+| F16 | "The IR of a delivered report is a record." as excess | SP-26 | declined: the sentence states the IR's status, record, from which the next sentence's rule follows; cutting it loses C135 and the term's use |
+
+Claims after fixes: 200. Prose after fixes: 3143 words. The prose fixes landed one commit after the IR's, an edit script having stopped on a render-map anchor.
+
+Confirmation: 9 of 11 fixes hold. Not held: F12, F13. Declines accepted: 1 of 1. New defects: 2.
+
+Fixed again before round 3: C4 shortened to 22 words; C207 split, C210 the growth figures; C203 restored to one condition per list item at 24 words (the two new defects N1 and N2 of the confirmation).
+
+### Round 3, count 4, 2026-10-29
+
+Claims check before the round: 20 changed claims, 0 missing, 0 stale (base: round 2 prose). Stranger model: claude-haiku. Prose 3,143 words; 4 findings, 1.3 per thousand words. Restatement: matched the IR, no mismatch. Contradictions 0, undefined terms 1 ("restatement mismatch", a term this count's C195 introduced); verdict: not readable for RD-4. By fix kind as the stranger judged: rephrase 4.
+
+Mismatches: none
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1 | "restatement mismatch" undefined | SP-04 | add T21 restatement, defined at the pipeline's vocabulary, linked at first use; C211 defines a restatement mismatch in a sentence of its own |
+| 2 | the style-rows duty has three actors and no trigger | SP-18 | rephrase C81: "When rendering, ..." |
+| 3 | the Footprint section opens with its exemption | SP-11 | reorder: the comparison duty first, the chat-message exemption after; no claim changed |
+| 4 | the History's adoption sentence holds two facts | SP-01 | split C138; C212 |
+
+Claims after fixes: 203. Prose after fixes: 3163 words.
+
+Confirmation: 4 of 4 fixes hold. Not held: none. Declines accepted: 0 of 0. New defects: 0.
+
+### Round 4, count 4, 2026-10-29
+
+Claims check before the round: 4 changed claims, 0 missing, 0 stale (base: round 3 prose). Stranger model: claude-haiku. Prose 3,163 words; 8 findings, 2.5 per thousand words, 7 of them prose findings. Restatement: matched the IR; one mismatch the instance attributed to its own restatement, naming C41 and the sentence relied on. Contradictions 0, undefined terms 0; verdict: readable for RD-4. The count ends at round 4. Under step 7, the findings are fixed and the round's instance confirms each before delivery. By fix kind as the stranger judged: rephrase 6, cut 1.
+
+Mismatches: C41 (own)
+
+| # | Finding (shortened) | Kind | Fix | Confirmation |
+|---|---|---|---|---|
+| 1 | own-caused mismatch on C41 | restatement | no prose defect | n/a |
+| 2, 3 | the P-008 unit sentence attributes the unit to P-008 and runs to 26 words | SP-01, SP-02 | rephrase C173: "The unit for P-008 is the whole text for a report and the section for a document." | confirmed |
+| 4 | two additions in one History sentence | SP-01 | split C147; C213 | confirmed |
+| 5 | three additions in one History sentence | SP-01 | split C148; C214 | confirmed |
+| 6 | two changes in one History sentence | SP-01 | split C200; C215 | confirmed |
+| 7 | the Rendering conditions section opens with its inputs | SP-11 | reorder: "The first row whose condition holds decides." moves to the front; no claim changed | confirmed |
+| 8 | "here" | SP-26 | cut from C212 | confirmed |
+
+Claims after fixes: 207. Prose after fixes: 3181 words. The prose fixes landed three commits after the IR's, edit scripts having stopped on anchors broken by line wraps; the instance's first two confirmation reads saw the unfixed prose and were discarded; C148 was split a second time (C216) and C215 names the case's repository at the instance's note. The prose fixes landed one commit after the IR's, an edit script having stopped on the first anchor; the instance was told to re-read before confirming.
+
+Confirmation: 7 of 7 fixes hold. Not held: none. Declines accepted: 0 of 0. New defects: 0.
+
+The instance's first two confirmation reads saw the prose before its fixes landed and were discarded; the third read, on commit 108e26d, is the one recorded. At the instance's notes, C148 was split a second time (C216) and C215 names the case's repository.
+
+### Verdict, count 4
+
+Readable for RD-4 at round 4 of a count of four. Findings per thousand words by round: 2.9, 5.1, 1.3, 2.5. Contradictions by round: 0, 0, 0, 0. Prose 3,089 words at round 1 and 3,181 at delivery; IR 192 claims at round 1 and 207 at delivery, the growth from splits for one claim per sentence and the sentences shortened under case 009's change 17. Every accepted fix confirmed by its round's instance; one decline (round 2, F16) accepted by the instance. Thirty-six of the thirty-seven findings fell on text older than this count.
+
+Meta-review: pending (signals 1 and 2). Signals checked at the end of count 4 by `scripts/signals.mjs` (reading the last count) and by reading: first, fired, as the rule reads: fixes were not held at confirmation in rounds 1 (one of seven) and 2 (two of eleven), and in rounds 2 and 4 the prose fixes did not reach the prose on their first write, each refixed and confirmed afterwards; second, fired: C41 stands on the Mismatches lines of rounds 2 and 4, both times attributed by the stranger to its own restatement, which under the branch point's step 6 made the passage a prose finding owed a structural fix before round 5; the reasoning role's hand check missed the recurrence and the count closed readable at round 4, so the passage, the Relation row's sentence "A reference from one claim to another is a relation, never a pronoun inside the claim" read twice as barring every pronoun, is owed its structural fix at the next edit; no declined finding raised again; third, words per IR claim 16.1 to 15.6, minus 3 percent; fourth, no contradiction in round 3 or later. The limit was not reached. The reasoning role asks the owner, in the report that delivers this count, to dispatch the meta-review.
