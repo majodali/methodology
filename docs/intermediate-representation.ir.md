@@ -63,7 +63,7 @@ C149. W-009 requires this specification. [decided: methodology PR #49, 2026-10-2
 
 C150. The specification's status is active. [decided: methodology PR #49, 2026-10-26]
 
-C179. The specification is Methodology-level. [decided: methodology PR #49, 2026-10-26]
+C179. The specification is a methodology Specification, the document type. [decided: methodology PR #49, 2026-10-26]
 
 C151. The reader is assumed to know W-008, P-008 and the style guide, including its Readers table. [decided: methodology PR #49, 2026-10-26]
 
@@ -121,7 +121,7 @@ C25. Every project-specific term used in a claim appears as a term element. [dec
 
 C27. A term without a definition site has status proposed. [decided: methodology PR #48, 2026-10-26]
 
-C152. The reasoning role lists a proposed term for ratification. [decided: methodology PR #48, 2026-10-26]
+C152. The reasoning role lists each proposed term for ratification in the report that delivers the text. [decided: methodology PR #48, 2026-10-26]
 
 C28. A claim element (`C`) makes one statement. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -173,7 +173,7 @@ C48. The status inferred, written `[inferred: R<n>]`, marks an element the reaso
 
 C49. A term with status proposed is an unratified term. [decided: pipeline schema v1.2, 2026-10-25]
 
-C50. The count of unratified terms is the mechanical reading of the unratified-vocabulary indicator of convergence. [decided: owner, 2026-10-23]
+C50. The count of unratified terms is the mechanical measure of unratified vocabulary, one indicator of convergence. [decided: owner, 2026-10-23]
 
 ### Mechanical checks
 
@@ -251,9 +251,9 @@ C80. Without a `part:` field, a decided claim renders under *What is already cov
 
 C154. Without a `part:` field, a proposed or inferred claim renders under *What changed*. [decided: methodology PR #50, 2026-10-26]
 
-C81. The rendering follows the style guide's rows for the IR's reader. [decided: pipeline schema v1.2, 2026-10-25]
+C81. The renderer, the paraphraser or the reasoning role, follows the style guide's rows for the IR's reader. [decided: pipeline schema v1.2, 2026-10-25]
 
-C82. The rendering states an empty Asks section as "No asks." [decided: methodology PR #46, 2026-10-26]
+C82. The renderer states an empty Asks section as "No asks." [decided: methodology PR #46, 2026-10-26]
 
 C83. The paraphraser appends a render map as one comment line reading `render map:` and, per claim, the paragraph it landed in, as `C1→¶1 C2→¶1 …`. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -293,7 +293,9 @@ C94. A finding that proposes fewer words, a plainer phrase or a removed repetiti
 
 C95. The reasoning role records each round's findings, each finding's disposition, and the verdict in the review record. [decided: methodology PR #50, 2026-10-26]
 
-C155. The text delivered after a readable verdict is the judged text with the round's fixes applied, each finding confirmed or marked unfixed. [decided: owner, 2026-10-27]
+C155. The text delivered after a readable verdict is the judged text with the round's fixes applied. [decided: owner, 2026-10-27]
+
+C202. Each finding of the readable round is confirmed or marked unfixed in the delivered text. [decided: owner, 2026-10-27]
 
 C97. At a readable verdict, the reasoning role fixes the round's findings in the IR and then in the prose. [decided: owner, 2026-10-27]
 
@@ -407,7 +409,7 @@ C125. A changed file that no declared entry covers is a surprise. [decided: pipe
 
 C126. A declared file that did not change, or a declared directory under which no file changed, is a miss. [decided: pipeline schema v1.3, 2026-10-26]
 
-C127. The counts of surprises and misses are the mechanical reading of the prediction-surprise indicator of convergence. [decided: owner, 2026-10-23]
+C127. The counts of surprises and misses are the mechanical measure of prediction surprise, one indicator of convergence. [decided: owner, 2026-10-23]
 
 C128. The reasoning role records the unratified-term count, the surprise count and the miss count in the Status parenthesis when the IR is delivered. [decided: pipeline schema v1.3, 2026-10-26]
 
