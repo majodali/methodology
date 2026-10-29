@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The vision the portfolio builds toward over an iterative roadmap: the direction the owner set, the decisions already taken, what the portfolio already provides, the gaps a roadmap closes, and the decisions still open.
-Status: reviewed (paraphraser rendering 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; count 1 ended at the limit, round 10 not readable, round 10's fixes confirmed; edited after the count on 2026-10-29, C99 to C101 and A3, and on the same day the chunk-1 corrections C21, C31, C55, C59, C69, C97, C98, E2, new C102 and E13 from the service review, re-rendered; count 2 in progress, round 1 fixes C21 split into C21 and C103, C69 split into C69 and C104, C42, C80; round 2 fixes C25, C56, C58, C69, C103; round trip 99 of 99; declared 5, changed 5, surprises 0, misses 0; unratified terms 0)
+Status: reviewed (paraphraser rendering 2026-10-28, disposition D2 by BP-03; ratified by the owner 2026-10-28 with the four terms; count 1 ended at the limit, round 10 not readable, round 10's fixes confirmed; edited after the count on 2026-10-29, C99 to C101 and A3, and on the same day the chunk-1 corrections C21, C31, C55, C59, C69, C97, C98, E2, new C102 and E13 from the service review, re-rendered; count 2 in progress, round 1 fixes C21 split into C21 and C103, C69 split into C69 and C104, C42, C80; round 2 fixes C25, C56, C58, C69, C103; round 3 readable, fixes C31 split into C31 and C105, C34 split into C34 and C106; round trip 99 of 99; declared 5, changed 5, surprises 0, misses 0; unratified terms 0)
 Source: the owner's message of 2026-10-28 stating the vision in eight points; the owner's decision of 2026-10-29 naming the first adopter; the reasoning role's assessment of the same day; the owner's reply of 2026-10-28 deciding four asks and agreeing the recommendations and terms; the owner's two notes of 2026-10-28 on agent surfaces and on the literate approach.
 Footprint: docs/vision.ir.md; docs/vision.md; docs/vision.review.md; docs/backlog.md; docs/vocabulary.md
 
@@ -138,7 +138,9 @@ C71. A node is specified on the way down the tree and verified on the way up. ev
 
 C30. In the plan model a feature is its validation: the set of functional tests that constitute the feature. evidence: E1. [decided: project-orchestrator process specification]
 
-C31. The service reads plan state from git and validates the plan-state updates a session commits. evidence: E2. [decided: project-orchestrator Plan register]
+C31. The service reads plan state from git. evidence: E2. [decided: project-orchestrator Plan register]
+
+C105. The service validates the plan-state updates a session commits. evidence: E2. [decided: project-orchestrator Plan register]
 
 C59. Node P2-N010, plan-state update with an advisory lease, is done in the Plan register. evidence: E2. [decided: project-orchestrator Plan register]
 
@@ -150,7 +152,9 @@ C33. The methodology supplies the rules. evidence: E3. [decided: project-orchest
 
 C88. The project-orchestrator supplies the roles that apply the rules. evidence: E3. [decided: project-orchestrator process specification]
 
-C34. Dispatch has approved scope as the hard boundary, with an optional task or token budget attached when the owner grants scope. evidence: E4. [decided: project-orchestrator process specification]
+C34. Dispatch has approved scope as the hard boundary. evidence: E4. [decided: project-orchestrator process specification]
+
+C106. The owner may attach a task or token budget when granting scope. evidence: E4. [decided: project-orchestrator process specification]
 
 C35. The IR, the claims check, same-instance confirmation and the four meta-review signals are the convergence machinery for prose. evidence: E5. [decided: IR specification]
 

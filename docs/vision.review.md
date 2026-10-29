@@ -169,6 +169,7 @@ Opened 2026-10-29 after the service review's corrections (C21, C31, C55, C59, C6
 |---|---|---|---|---|
 | 1 | 1,610 | 100 | 9 | not readable (restatement mismatches 4, all own; contradiction 1; undefined terms 0) |
 | 2 | 1,636 | 102 | 4 | not readable (restatement mismatch 1, prose-caused; contradiction 1; undefined terms 0) |
+| 3 | 1,656 | 102 | 5 | readable (restatement mismatches 3, all own; contradiction 0; undefined terms 0) |
 
 ### Round 1
 
@@ -203,3 +204,15 @@ Confirmation: 3 of 4 fixes hold. Not held: 1. Declines accepted: 0 of 0. New def
 Not held, 1: the comma list read as a third merging item. New defect: SP-01 on the same sentence, for the same reason. Re-fixed before round 3, IR first then prose: C25 reads "Eventually Allegro's approach (its planning DSL and process documents) and the project-orchestrator's approach merge into one model." The re-fix awaits round 3's restatement.
 
 Brief calibration added before round 3, under SP-01: a parenthesis that defines a term at its first use is part of that term, not a second claim (branch point v1.7, brief calibrations).
+
+### Round 3
+
+Restatement matched the IR; the three mismatches (C25; C57 and C84; C66 and C93) were own-caused, each with the sentence relied on quoted. Contradiction found: none. Undefined terms: 0. Verdict: readable for RD-4. Round 2's re-fix of C25 drew no finding.
+
+Mismatches: C25 (own), C57 (own), C84 (own), C66 (own), C93 (own)
+
+Findings on the prose: 2 (SP-01 2). Accepted 2.
+
+Accepted, fixed IR first then prose: 4 (C31 split: C31 the service reads plan state from git, C105 the service validates the plan-state updates a session commits); 5 (C34 split: C34 approved scope as the hard boundary, C106 the owner may attach a task or token budget when granting scope).
+
+Claims after fixes: 104. Prose after fixes: 1656 words.
