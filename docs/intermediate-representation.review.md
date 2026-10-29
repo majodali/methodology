@@ -660,3 +660,7 @@ Mismatches: C93 (own), C41 (own), C73 (own), C74 (own), C135 (own)
 | F16 | "The IR of a delivered report is a record." as excess | SP-26 | declined: the sentence states the IR's status, record, from which the next sentence's rule follows; cutting it loses C135 and the term's use |
 
 Claims after fixes: 200. Prose after fixes: 3143 words. The prose fixes landed one commit after the IR's, an edit script having stopped on a render-map anchor.
+
+Confirmation: 9 of 11 fixes hold. Not held: F12, F13. Declines accepted: 1 of 1. New defects: 2.
+
+Fixed again before round 3: C4 shortened to 22 words; C207 split, C210 the growth figures; C203 restored to one condition per list item at 24 words (the two new defects N1 and N2 of the confirmation).

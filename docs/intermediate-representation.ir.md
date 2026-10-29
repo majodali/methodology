@@ -55,7 +55,7 @@ T20. Meta-review signal. defined-at: vocabulary.md#def-meta-review-signal [decid
 
 C1. The reasoning role writes an IR before any prose of the communication exists. [decided: owner, 2026-10-24]
 
-C4. The IR prevents three failure modes of directly written prose: several claims compressed into one sentence, referents left unnamed, and conversation terms used as if defined. [decided: owner, 2026-10-24]
+C4. The IR prevents three failure modes of directly written prose: claims compressed into one sentence, referents left unnamed, and conversation terms used as if defined. [decided: owner, 2026-10-24]
 
 C5. Any project that adopts W-009 by declaration uses this specification. [decided: methodology PR #49, 2026-10-26]
 
@@ -285,7 +285,7 @@ C92. The stranger reviews the IR and the prose against the reader's readability 
 
 C93. In a round, the verdict is readable when three conditions hold. [decided: owner, 2026-10-27]
 
-C203. The conditions: the stranger's restatement of the text's problem, terms and decisions matches the IR; the stranger finds no contradiction and no undefined term. [decided: owner, 2026-10-27]
+C203. The conditions: the stranger's restatement of the problem, terms and decisions matches the IR; the stranger finds no contradiction; the stranger finds no undefined term. [decided: owner, 2026-10-27]
 
 C194. A contradiction or undefined-term finding withdrawn by the round's stranger instance at confirmation, on a reason quoting the prose, does not count against the verdict. evidence: E3. [decided: owner, 2026-10-29]
 
@@ -477,7 +477,9 @@ C162. The owner placed the meta-review in the communication-pipeline project unt
 
 C140. The specification was rewritten from this IR, `intermediate-representation.ir.md` beside the prose. [decided: owner, 2026-10-27]
 
-C207. The rewrite followed ten stranger rounds on methodology PR #51's amendment text that ended without a readable verdict, the prose grown from 2,635 to 4,516 words. [decided: owner, 2026-10-27]
+C207. The rewrite followed ten stranger rounds on methodology PR #51's amendment text that ended without a readable verdict. [decided: owner, 2026-10-27]
+
+C210. The ten rounds grew the prose from 2,635 to 4,516 words. [decided: owner, 2026-10-27]
 
 ## Relations
 
