@@ -105,7 +105,7 @@ Vision claim C21, completing service chunk 1 as the next step, is fulfilled: ser
 
 ## Terms introduced
 
-Ask 14 requests the ratification or striking of these three terms.
+Ask 14 requested the ratification or striking of these three terms. The owner ratified all three on 2026-10-29, adopting every default of this review.
 
 - Surface without a repository clone: a Claude surface whose session has no checkout of the project's repository; in this review, the Claude web interface, Claude Mobile and Claude Duet.
 - Remote MCP connector: the service's MCP endpoint registered on a Claude surface as a connector, reached by URL rather than through a checked-in `.mcp.json`.

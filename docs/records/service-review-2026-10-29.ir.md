@@ -2,7 +2,7 @@
 
 Reader: RD-1
 Purpose: report. The review of the project-orchestrator-service's current state after service chunk 1 against the vision, with proposed changes to the service's roadmap and the corrections the vision IR needs, for the owner's decisions.
-Status: draft
+Status: delivered (paraphraser rendering 2026-10-29, disposition D1 by BP-07, no stranger rounds, RD-1 report; round trip 142 of 142; the owner adopted all fourteen defaults and ratified the three terms on 2026-10-29; unratified terms 0)
 Source: the owner's request of 2026-10-29 for the review the vision schedules (vision claims C22 and C79); the files of project-orchestrator, project-orchestrator-service and methodology read on 2026-10-29, listed under Evidence.
 Footprint: docs/records/service-review-2026-10-29.ir.md; docs/records/service-review-2026-10-29.md
 
@@ -60,11 +60,11 @@ T25. Stranger. defined-at: ../vocabulary.md#def-stranger [decided: owner, 2026-1
 
 T26. Intermediate representation (IR). defined-at: ../vocabulary.md#def-intermediate-representation [decided: owner, 2026-10-24]
 
-T27. Surface without a repository clone. A Claude surface whose session has no checkout of the project's repository; in this review, the Claude web interface, Claude Mobile and Claude Duet. [proposed: this IR]
+T27. Surface without a repository clone. A Claude surface whose session has no checkout of the project's repository; in this review, the Claude web interface, Claude Mobile and Claude Duet. [decided: owner, 2026-10-29, ratified at the review]
 
-T28. Remote MCP connector. The service's MCP endpoint registered on a Claude surface as a connector, reached by URL rather than through a checked-in `.mcp.json`. [proposed: this IR]
+T28. Remote MCP connector. The service's MCP endpoint registered on a Claude surface as a connector, reached by URL rather than through a checked-in `.mcp.json`. [decided: owner, 2026-10-29, ratified at the review]
 
-T29. Roadmap document. The document the reasoning role writes after this review, sequencing the vision's gaps into steps (vision claim C58). [proposed: this IR]
+T29. Roadmap document. The document the reasoning role writes after this review, sequencing the vision's gaps into steps (vision claim C58). [decided: owner, 2026-10-29, ratified at the review]
 
 ## Claims
 
