@@ -680,3 +680,5 @@ Mismatches: none
 | 4 | the History's adoption sentence holds two facts | SP-01 | split C138; C212 |
 
 Claims after fixes: 203. Prose after fixes: 3163 words.
+
+Confirmation: 4 of 4 fixes hold. Not held: none. Declines accepted: 0 of 0. New defects: 0.
