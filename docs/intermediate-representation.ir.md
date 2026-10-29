@@ -2,8 +2,8 @@
 
 Reader: RD-4
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: delivered (count 3 accepted 2026-10-27; round 1 readable; fixes confirmed; surprises 0; misses 0; unratified terms 0)
-Source: the owner's decision of 2026-10-27 on signal-based meta-review triggers (count 3); communication-pipeline evaluation case 008 (owner decision of 2026-10-27, change 5) for count 2; for count 1, docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
+Status: rendered (reasoning role, 2026-10-29; count 4, round 1)
+Source: the owner's adoption of 2026-10-29 of communication-pipeline evaluation case 009's nineteen changes, of which changes 2, 14, 15 and 18 amend this specification (count 4); the owner's decision of 2026-10-27 on signal-based meta-review triggers (count 3); communication-pipeline evaluation case 008 (owner decision of 2026-10-27, change 5) for count 2; for count 1, docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md; docs/releases.md; docs/vocabulary.md
 
@@ -285,6 +285,10 @@ C92. The stranger reviews the IR and the prose against the reader's readability 
 
 C93. The verdict is readable when three conditions hold: the stranger's restatement of the text's problem, terms and decisions matches the IR; the stranger finds no contradiction; the stranger finds no undefined term. [decided: owner, 2026-10-27]
 
+C194. A contradiction or undefined-term finding withdrawn by the round's stranger instance at confirmation, on a reason quoting the prose, does not count against the verdict. evidence: E3. [decided: owner, 2026-10-29]
+
+C195. A restatement mismatch is not withdrawn at confirmation. evidence: E3. [decided: owner, 2026-10-29]
+
 C94. A finding that proposes fewer words, a plainer phrase or a removed repetition is treated like any other finding. [decided: owner, 2026-10-27]
 
 C95. The reasoning role records each round's findings, each finding's disposition, and the verdict in the review record. [decided: methodology PR #50, 2026-10-26]
@@ -304,6 +308,12 @@ C98. After a verdict of not readable, the reasoning role fixes the IR and then t
 C157. The next round reviews the fixed IR and the fixed prose. [decided: owner, 2026-10-26]
 
 C99. At the limit the reasoning role does not deliver the text before the owner's decision. [decided: owner, 2026-10-26]
+
+C197. At the limit, the reasoning role fixes the final round's findings in the IR and then in the prose. evidence: E3. [decided: owner, 2026-10-29]
+
+C198. The final round's stranger instance confirms each fix before the owner's decision. evidence: E3. [decided: owner, 2026-10-29]
+
+C199. The review record marks each finding of the final round confirmed or unfixed. evidence: E3. [decided: owner, 2026-10-29]
 
 C158. At the end of a count, the reasoning role sets the IR's Status to `reviewed`. [decided: owner, 2026-10-27]
 
@@ -331,9 +341,9 @@ C187. The first signal: in two or more rounds of the count, a fix did not reach 
 
 C188. The second signal: a finding declined in an earlier round was raised again, or a restatement mismatch recurred on one passage. [decided: owner, 2026-10-27]
 
-C189. The third signal: the prose grew across the count by more than one tenth of its round-1 word count. [decided: owner, 2026-10-27]
+C189. The third signal: at the end of the count the prose's words per IR claim exceed round 1's words per claim by more than one tenth. evidence: E3. [decided: owner, 2026-10-29]
 
-C190. The fourth signal: after round 3, a stranger found a contradiction in a passage an earlier round's fix touched. [decided: owner, 2026-10-27]
+C190. The fourth signal: in round 3 or later, a stranger found a contradiction in a passage an earlier round's fix touched. evidence: E3. [decided: owner, 2026-10-29]
 
 C105. At the end of a count, the reasoning role checks the four signals against the review record. [decided: owner, 2026-10-27]
 
@@ -443,6 +453,10 @@ C148. The rounds until readable, the limit of ten and the meta-review were added
 
 C184. The fixing and confirmation of the readable round's findings before delivery were added on 2026-10-27, by owner decision on communication-pipeline evaluation case 008. [decided: owner, 2026-10-27]
 
+C200. The withdrawal at confirmation and the final round's fixes confirmed at the limit were added on 2026-10-29, by owner decision on communication-pipeline evaluation case 009. evidence: E3. [decided: owner, 2026-10-29]
+
+C201. The third and fourth signals were reworded on 2026-10-29 by the owner decision on communication-pipeline evaluation case 009. evidence: E3. [decided: owner, 2026-10-29]
+
 C193. The trigger of three rounds was replaced by the four signals on 2026-10-27, by owner decision after five recorded counts. [decided: owner, 2026-10-27]
 
 C162. The owner placed the meta-review in the communication-pipeline project until that project is archived, and in the methodology repository after. [decided: owner, 2026-10-26]
@@ -523,11 +537,21 @@ R33. C183 depends-on C182 because the next edit owes what the instance did not c
 
 R28. C183 depends-on C161 because a delivered report has no next edit, so only an active document takes one.
 
+R40. C194 refines C93 because a withdrawn finding is no longer a finding under the second or third condition.
+
+R41. C195 refines C194 because the confirming instance has read the IR and can no longer restate as a stranger.
+
+R42. C197 refines C99 because the fixes precede the owner's decision that C99 waits for.
+
+R43. C198 depends-on C197 because the instance confirms the fixes the reasoning role made.
+
 ## Evidence
 
 E1. docs/records/stranger-rounds-until-readable.review.md on branch stranger-rounds-until-readable: ten rounds, 232 findings, verdict not readable in every round; prose 2,635 to 4,516 words.
 
 E2. communication-pipeline eval/analysis/pr51-findings.md: words required by about 18 findings and added for 139; 150 of 232 findings on fix-introduced text; the IR stopped changing after round 2.
+
+E3. communication-pipeline eval/cases/009-meta-review-vision-rounds-2026-10-29.md, Outcome, changes 2, 14, 15 and 18; adopted by the owner on 2026-10-29 ("adopt all nineteen as proposed").
 
 ## Asks
 
