@@ -102,7 +102,7 @@ C23. The owner adds a project to the service when adoption benefits the project.
 
 C24. No project in the portfolio is known that should not use the service. [decided: owner, 2026-10-28]
 
-C25. Eventually Allegro's approach, its planning DSL and process documents, and the project-orchestrator's approach merge into one model. [decided: owner, 2026-10-28]
+C25. Eventually Allegro's approach (its planning DSL and process documents) and the project-orchestrator's approach merge into one model. [decided: owner, 2026-10-28]
 
 C83. The merged model lets Allegro adopt the project-orchestrator. [decided: owner, 2026-10-28]
 

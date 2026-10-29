@@ -197,3 +197,7 @@ Findings on the prose: 3 (SP-25 1, SP-03 1, SP-05 1), plus the restatement misma
 Accepted, fixed IR first then prose: 1 (C25 defines Allegro's approach at first use as its planning DSL and process documents); 2 (C56 reads "Now that chunk 1 has closed"; C103 names the event: the Plan register's record of chunk 1 done, dated 2026-09-16, reached main on 2026-10-29); 3 (C58 names the review by date, 2026-10-29); 4 (C69 names node P2-N002, service skeleton and plan state).
 
 Claims after fixes: 102. Prose after fixes: 1,656 words.
+
+Confirmation: 3 of 4 fixes hold. Not held: 1. Declines accepted: 0 of 0. New defects: 1.
+
+Not held, 1: the comma list read as a third merging item. New defect: SP-01 on the same sentence, for the same reason. Re-fixed before round 3, IR first then prose: C25 reads "Eventually Allegro's approach (its planning DSL and process documents) and the project-orchestrator's approach merge into one model." The re-fix awaits round 3's restatement.

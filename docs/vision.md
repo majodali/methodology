@@ -44,7 +44,7 @@ The owner and the [reasoning role](vocabulary.md#def-reasoning-role) review the 
 The owner decides changes to the service's features or roadmap where the vision requires.
 The owner adds a project to the service when adoption benefits the project.
 No project in the portfolio is known that should not use the service.
-Eventually Allegro's approach, its planning DSL and process documents, and the project-orchestrator's approach merge into one model.
+Eventually Allegro's approach (its planning DSL and process documents) and the project-orchestrator's approach merge into one model.
 The merged model lets Allegro adopt the project-orchestrator.
 After the [pilot](https://github.com/majodali/project-orchestrator/blob/main/docs/plans/orchestration-service.md), the owner decides how and when Allegro's approach and the project-orchestrator's approach merge.
 The [plan model](https://github.com/majodali/project-orchestrator/blob/main/docs/process/plan-model.md), the [IR](vocabulary.md#def-intermediate-representation) and the role definitions stay documents until Allegro models them.
