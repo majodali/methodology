@@ -1,6 +1,6 @@
 # Intermediate representation
 
-Status: under review (count 4, round 1)
+Status: under review (count 4, round 1). A Methodology-level specification required by
 [W-009](rules/working-agreement.md#w-009--the-methodology-corpus-writes-its-deliverables-ir-first)
 (the methodology corpus writes its deliverables IR first). Any project
 that adopts W-009 by declaration uses this specification.
