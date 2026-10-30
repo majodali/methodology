@@ -747,6 +747,7 @@ Three gaps remain from the edit of 2026-10-30 for IR-only documents. This count 
 |---|---|---|---|---|---|
 | 1 | 3,368 | 216 | 20 | 5.9 | not readable (four own mismatches on five claims, C104 a step-6 mismatch that counts; contradictions 2; undefined terms 4) |
 | 2 | 3,413 | 220 | 6 | 1.8 | not readable (two own mismatches, C41 a step-6 mismatch that counts; contradiction 1; undefined terms 0) |
+| 3 | 3,443 | 222 | 9 | 2.6 | not readable (two own mismatches, quoted; contradictions 0; undefined terms 3) |
 
 ### Round 1, count 5, 2026-10-30
 
@@ -862,3 +863,32 @@ Awaiting restatement: round 2's step-6 fix on the referent rule (C41 and C231). 
 Declined findings carried in the brief: round 1's 6, 11 (the instance did not accept the decline) and 16; round 2's 6; each with its reason.
 
 Signals script before the round: signal 1 fired as before round 2 (rounds 1 and 2, the second by the C13 stale report only); signal 2 fired on C104 and C41, both already step-6 findings; signals 3 and 4 not fired; no line unparsed.
+
+Stranger model: claude-haiku-5-5, a fresh instance at the frugal tier. Prose 3,443 words by `wordCount`; IR 222 claims; 9 findings, 2.6 per thousand words. Restatement: two mismatches, each attributed by the stranger to its own restatement, each quoted. Contradictions 0, undefined terms 3 (findings 3, 5, 8); verdict: not readable for RD-4, on the undefined terms.
+
+The stranger's quoted sentences: for C227, "The first condition: the stranger's restatement of the problem, terms and decisions has no mismatch with the IR."; for C194, "The second and third conditions: the stranger finds no contradiction and no undefined term."
+Mismatches: C227 (own; relied on C203), C194 (own; relied on C221)
+
+Each quoted sentence carries a neighbouring claim (C203, C221), not the contradicted one. The Orchestrator read both as not counting under the exception. On the branch point's round 3 the Orchestrator read the same case (C25 relied on C23) as counting; under that reading both mismatches here count as well. The verdict is not readable either way.
+
+Signals script after the `Mismatches:` line: no new recurrence; C227 and C194 stood on no earlier line. Signal 1 and signal 2 (C104, C41) as before the round. Round 1's C223 mismatch sat on the same verdict rule as C227, on a different claim; the script reads claims, not passages.
+
+Awaiting restatement from round 2: the restatement matched on the referent rule (C41, C231 and C35). Round 2's step-6 fix is confirmed by restatement.
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1 | own mismatch on C227 | restatement | no prose defect; see the note on the exception above |
+| 2 | own mismatch on C194 | restatement | no prose defect; see the note on the exception above |
+| 3 | "project-specific term" in the Term row before CK-04 defines it | SP-04 | add an anchor on CK-04's definition and link the Term row's phrase to it |
+| 4 | "A fix to prose rephrases …" and "A fix adds words only …" name no actor | SP-18 | rephrase C87 and C143: "The reasoning role rephrases …", "The reasoning role adds words …"; both inferred (R59, R60) |
+| 5 | "confirmation" undefined at first use | SP-04 | add C233 at first use: "Confirmation is the step at which the round's stranger instance says whether each fix holds."; inferred by R58 |
+| 6 | "The review record marks each finding of the final round confirmed or unfixed." names no actor | SP-18 | rephrase C199: "The reasoning role marks … in the review record."; inferred by R61 |
+| 7 | the first signal's two triggers joined by "or" | SP-01 | declined: the sentence states one signal whose condition is a disjunction; its wording is case 010 change 5's adopted text, and the branch point carries the same sentence |
+| 8 | "dependent ask" used in the input list before its definition | SP-04 | reorder: C204 before C110; no claim changed |
+| 9 | the case identifiers in the History unlinked | SP-05 | add links to cases 008, 009, 010 and 011 in communication-pipeline at first use |
+
+Claims after fixes: 223. Prose after fixes: 3,471 words. Claims check after the fixes (base: round 3 prose): 4 changed claims, 0 missing, 0 stale. Round trip: 223 of 223.
+
+Decided claims the fixes changed, for the owner: C87 and C143 (the fix discipline ratified on 2026-10-27) and C199 (case 009 change 18) gain the reasoning role as actor and become inferred.
+
+Declined findings for round 4's brief: round 1's 6, 11 and 16; round 2's 6; round 3's 7; each with its reason.

@@ -283,9 +283,9 @@ C86. The reasoning role makes a fix to rendered prose in the IR first. [decided:
 
 C169. After a fix to the IR, the reasoning role renders the prose again or edits it to match the IR. [decided: owner, 2026-10-27]
 
-C87. A fix to prose rephrases or removes words before it adds words. evidence: E2. [decided: owner, 2026-10-27]
+C87. The reasoning role rephrases or removes words in a fix to prose before it adds words. evidence: E2. [inferred: R59]
 
-C143. A fix adds words only to supply a missing definition or a missing referent. evidence: E2. [decided: owner, 2026-10-27]
+C143. The reasoning role adds words in a fix only to supply a missing definition or a missing referent. evidence: E2. [inferred: R60]
 
 ### Stranger rounds
 
@@ -317,6 +317,8 @@ C228. A passage is the prose sentences that carry one claim or one cluster. [inf
 
 C224. The first condition's override: a restatement mismatch on one passage in two rounds always counts. evidence: E5. [inferred: R52]
 
+C233. Confirmation is the step at which the round's stranger instance says whether each fix holds. [inferred: R58]
+
 C194. A contradiction or undefined-term finding withdrawn by the round's stranger instance at confirmation, on a reason quoting the prose, does not count against the verdict. evidence: E3. [decided: owner, 2026-10-29]
 
 C195. A restatement mismatch is not withdrawn at confirmation. evidence: E3. [decided: owner, 2026-10-29]
@@ -347,7 +349,7 @@ C197. At the limit, the reasoning role fixes the final round's findings in the I
 
 C198. The final round's stranger instance confirms each fix before the owner's decision. evidence: E3. [decided: owner, 2026-10-29]
 
-C199. The review record marks each finding of the final round confirmed or unfixed. evidence: E3. [decided: owner, 2026-10-29]
+C199. The reasoning role marks each finding of the final round confirmed or unfixed in the review record. evidence: E3. [inferred: R61]
 
 C158. At the end of a count, the reasoning role sets the IR's Status to `reviewed`. [decided: owner, 2026-10-27]
 
@@ -401,9 +403,9 @@ C109. A `Meta-review: pending` line in the review record of an accepted delivera
 
 ### Rendering conditions
 
-C110. The inputs are the IR's reader, purpose, Normative header, claim count, proposed-term count, count of dependent asks, longest claim and two owner inputs. [decided: owner, 2026-10-30]
-
 C204. A dependent ask is an ask with a `Depends:` field. [decided: pipeline branch point v1.1, 2026-10-25]
+
+C110. The inputs are the IR's reader, purpose, Normative header, claim count, proposed-term count, count of dependent asks, longest claim and two owner inputs. [decided: owner, 2026-10-30]
 
 C205. The first owner input is whether the owner asked for a review. [decided: pipeline branch point v1.1, 2026-10-25; reworded for form in count 5, round 2]
 
@@ -644,6 +646,14 @@ R55. C228 refines C224 because a claim renders as one sentence (C72) and a clust
 R56. C208 refines C224 because the second signal and the first condition's override count the same recurrence, a mismatch on one passage in two rounds.
 
 R57. C230 depends-on C220 because the renderer's definition holds the cut sentence's rule.
+
+R58. C233 refines C156 because the instance's confirming of each fix is the step the term names.
+
+R59. C87 depends-on C86 because the reasoning role makes every fix to rendered prose, and the owner's ratification of 2026-10-27 named no actor.
+
+R60. C143 depends-on C86 because the reasoning role makes every fix to rendered prose, and the owner's ratification of 2026-10-27 named no actor.
+
+R61. C199 depends-on C197 because the reasoning role fixes the final round's findings and writes the review record, and case 009 change 18 named no actor.
 
 ## Evidence
 
