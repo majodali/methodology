@@ -1031,3 +1031,15 @@ Claims after fixes: 236. Prose after fixes: 3,727 words. Claims check after the 
 Decided claims the fixes changed, for the owner: C164, C195, C191, C239 and C207, added to A6; new rules C248 to C251.
 
 Declined findings for round 7's brief: round 1's 6, 11 and 16; round 2's 6; round 3's 7; each with its reason. Nothing awaits restatement in round 7.
+
+### Round 7, count 5, 2026-10-30
+
+Branch point version and commit: v1.9 as at communication-pipeline branch `branch-point-v1.9-cases-010-011`, its round 7 opening commit. Prose 3,727 words; IR 236 claims; unratified terms 3 (T24, T25, T26). Round 6's confirmation was not yet back when round 7 opened; its line is recorded in round 6's entry when it arrives.
+
+Claims check before the round: 14 changed claims, 0 missing, 0 stale (base: round 6 prose).
+
+Awaiting restatement: none; round 6 matched on all three passages.
+
+Declined findings carried in the brief: round 1's 6, 11 (the instance did not accept the decline) and 16; round 2's 6; round 3's 7; each with its reason.
+
+Signals script before the round: signals 1 and 2 fire as before; signal 3 not fired; signal 4 fired by reading: round 6's contradiction (finding 5) sat on the readable round's marking rule, C202, which round 4's fix moved after C182; no line unparsed.
