@@ -1277,6 +1277,7 @@ Lint before round 1: IR checks 0 violations, 0 warnings.
 | 1 | 4,129 | 265 | 8 | 1.9 | not readable (two mismatches, both on step-6 passages; contradictions 0; undefined terms 0) |
 | 2 | 4,208 | 272 | 10 | 2.4 | not readable (two mismatches on the verdict table, a step-6 passage; contradictions 0; undefined terms 2) |
 | 3 | 4,273 | 276 | 5 | 1.2 | not readable (one mismatch, the stranger's slip, first occurrence; contradictions 0; undefined term 1) |
+| 4 | 4,291 | 277 | 8 | 1.9 | readable (mismatches 0; contradictions 0; undefined terms 0) |
 
 ### Round 1, count 6, 2026-10-30
 
@@ -1438,3 +1439,25 @@ Owner-pending findings: none.
 Forms added to the brief: none.
 
 Signals script before the round: signal 2 as recorded (C104, C106, C194); signal 1 reads one round with a stale claim, so it does not fire; no line unparsed.
+
+Stranger model: claude-haiku-5-5, a fresh instance at the frugal tier (a937df4dc4f54b856), reading at commit db45aa5. Prose 4,291 words by `wordCount` (the stranger's hand estimate: about 5,000); IR 277 claims; 8 findings, 1.9 per thousand words. Restatement: no mismatch. Listed passages: none. Contradictions 0, undefined terms 0; verdict: readable for RD-4.
+Mismatches: none
+
+Side effect: the instance made one read-only listing of scheduled tasks outside the brief's two files. It did not use the result.
+
+Omissions noticed, not counted: two, "each passage" for "each listed passage", and that a readable verdict also stops the rounds.
+
+Step 7 applies. The eight findings are fixed IR first; the round's instance confirms each fix before the count closes. Under case 012 change 8, a new defect the confirmation names goes to the owner's list and is not fixed in this count.
+
+| # | Finding (shortened) | Kind | Decision |
+|---|---|---|---|
+| 1 | the rewording sentence states two duties | SP-01 | split C282: "When a fix rewords a decided claim, the reasoning role keeps the claim's decided source."; C304: "The reasoning role notes the rewording as `reworded in count N, round M`." |
+| 2 | "After the restatement and" restates the step | SP-26 | cut, C267: "Before reading the IR, the stranger restates each listed passage in one sentence." |
+| 3 | "The next edit of the text fixes the new defect" names no actor | SP-18 | C278: "The reasoning role fixes the new defect in the next edit of the text.", as the branch point reads |
+| 4 | History's "beside this file" | SP-03 | "beside `docs/intermediate-representation.md`" |
+| 5 | IR C5 and C151 carry rule identifiers without names | SP-05 | the names added in the IR, as the prose carries them; C151 also drops "including its Readers table", which round 1 cut from the prose |
+| 6 | IR: "IR-only" with no term element | SP-04 | T36 added, IR-only document, linked to the vocabulary row |
+| 7 | IR: the IR-only sub-section after History | SP-09 | moved before History |
+| 8 | IR E6: "the branch point v1.9's C67" against this IR's C67 | SP-05 | E6 names communication-pipeline `docs/records/branch-point-v1.9.ir.md` and its claim C67 |
+
+Claims after fixes: 278. Prose after fixes: 4,297 words. Claims check after the fix pass (base: round 4 prose): 6 changed claims, 0 missing, 2 stale. The stale claims are C5 and C151: their fixes brought the IR to prose that already carried them, so no prose sentence changes. Round trip: 278 of 278. IR check: 0 violations, 0 warnings.

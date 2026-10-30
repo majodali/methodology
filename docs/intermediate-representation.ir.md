@@ -79,6 +79,8 @@ T34. Step-6 fix. defined-at: https://github.com/majodali/communication-pipeline/
 
 T35. Awaiting restatement. defined-at: https://github.com/majodali/communication-pipeline/blob/main/docs/vocabulary.md#def-awaiting-restatement [decided: owner, 2026-10-30]
 
+T36. IR-only document. defined-at: vocabulary.md#def-ir-only-document [decided: owner, 2026-10-30]
+
 ## Claims
 
 ### Purpose and scope
@@ -87,7 +89,7 @@ C1. For each text that requires an IR, the reasoning role writes the IR before a
 
 C4. The IR prevents three failure modes of directly written prose: claims compressed into one sentence, referents left unnamed, and conversation terms used as if defined. [decided: owner, 2026-10-24]
 
-C5. Any project that adopts W-009 by declaration uses this specification. [decided: methodology PR #49, 2026-10-26]
+C5. Any project that adopts W-009 (the methodology corpus writes its deliverables IR first) by declaration uses this specification. [decided: methodology PR #49, 2026-10-26; reworded in count 6, round 4]
 
 C149. W-009 requires this specification. [decided: methodology PR #49, 2026-10-26]
 
@@ -95,7 +97,7 @@ C150. The specification's status is active. [decided: methodology PR #49, 2026-1
 
 C179. The specification is a methodology Specification, the document type. [decided: methodology PR #49, 2026-10-26]
 
-C151. The reader is assumed to know W-008, P-008 and the style guide, including its Readers table. [decided: methodology PR #49, 2026-10-26]
+C151. The reader is assumed to know W-008 (reports map their deliverables), P-008 (terms are defined once and linked at first use) and the style guide. [decided: methodology PR #49, 2026-10-26; reworded in count 6, rounds 1 and 4]
 
 C166. The human owner reads the specification as RD-4 does. [decided: methodology PR #49, 2026-10-26]
 
@@ -333,7 +335,9 @@ C280. When a finding needs a new rule, the reasoning role lists the finding for 
 
 C281. Until the owner decides, a finding that needs a new rule counts against the verdict like a mismatch, contradiction or undefined-term finding. evidence: E8. [proposed: case 012 change 9]
 
-C282. A decided claim a fix rewords keeps its decided source and notes the rewording, as `reworded in count N, round M`. evidence: E8. [proposed: case 012 change 14]
+C282. When a fix rewords a decided claim, the reasoning role keeps the claim's decided source. evidence: E8. [proposed: case 012 change 14]
+
+C304. The reasoning role notes the rewording as `reworded in count N, round M`. evidence: E8. [proposed: case 012 change 14]
 
 C283. The owner ratifies the reworded claims as one list at the count's close. evidence: E8. [proposed: case 012 change 14]
 
@@ -351,7 +355,7 @@ C92. The stranger reviews the IR and the prose against the reader's readability 
 
 C266. In each round's stranger brief, the reasoning role lists each passage awaiting restatement. evidence: E8. [proposed: case 012 change 4]
 
-C267. After the restatement and before reading the IR, the stranger restates each listed passage in one sentence. evidence: E8. [proposed: case 012 change 4]
+C267. Before reading the IR, the stranger restates each listed passage in one sentence. evidence: E8. [proposed: case 012 change 4]
 
 C268. The reasoning role checks each listed passage's step-6 fix against the stranger's one-sentence restatement of the passage. evidence: E8. [proposed: case 012 change 4]
 
@@ -451,7 +455,7 @@ C276. At a readable verdict and at the limit, the reasoning role does not fix in
 
 C277. The reasoning role lists each new defect of that confirmation for the owner. evidence: E8. [proposed: case 012 change 8]
 
-C278. The next edit of the text fixes the new defect. evidence: E8. [proposed: case 012 change 8]
+C278. The reasoning role fixes the new defect in the next edit of the text. evidence: E8. [proposed: case 012 change 8]
 
 C158. At the end of a count, the reasoning role sets the IR's Status to `reviewed`. [decided: owner, 2026-10-27]
 
@@ -609,6 +613,14 @@ C136. On ratification, the reasoning role adds a row with a `def-` anchor for th
 
 C181. The vocabulary row of a ratified term is the term's definition site. [decided: methodology PR #48, 2026-10-26]
 
+### IR-only documents (added 2026-10-30)
+
+C217. A document the owner designates IR-only, whose header does not carry `Normative: yes`, is delivered as its IR with no rendering and no stranger rounds. [decided: owner, 2026-10-30]
+
+C218. An IR-only document's Status reads `delivered IR-only`. [decided: owner, 2026-10-30]
+
+C219. CK-14 exempts an IR whose Status is `delivered IR-only`. [decided: owner, 2026-10-30]
+
 ### History
 
 C138. The specification was adopted on 2026-10-26 at v1.2 of the communication-pipeline project's schema. [decided: methodology PR #49, 2026-10-26]
@@ -656,14 +668,6 @@ C140. The specification was rewritten from this IR, `intermediate-representation
 C207. The rewrite followed ten stranger rounds on methodology PR #51's amendment text, rounds that ended without a readable verdict. [decided: owner, 2026-10-30]
 
 C210. The ten rounds grew the prose from 2,635 to 4,516 words. [decided: owner, 2026-10-27]
-
-### IR-only documents (added 2026-10-30)
-
-C217. A document the owner designates IR-only, whose header does not carry `Normative: yes`, is delivered as its IR with no rendering and no stranger rounds. [decided: owner, 2026-10-30]
-
-C218. An IR-only document's Status reads `delivered IR-only`. [decided: owner, 2026-10-30]
-
-C219. CK-14 exempts an IR whose Status is `delivered IR-only`. [decided: owner, 2026-10-30]
 
 ## Relations
 
@@ -827,7 +831,7 @@ E4. communication-pipeline eval/cases/010-meta-review-ir-spec-count-4-2026-10-30
 
 E5. communication-pipeline eval/cases/011-meta-review-vision-count-2-2026-10-30.md, Outcome, change 1, and the term own mismatch; adopted and ratified by the owner on 2026-10-30.
 
-E6. communication-pipeline eval/cases/010-meta-review-ir-spec-count-4-2026-10-30.md change 7 and eval/cases/011-meta-review-vision-count-2-2026-10-30.md change 7, the unparsed-line rule; the branch point v1.9's C67 states the same rule.
+E6. communication-pipeline eval/cases/010-meta-review-ir-spec-count-4-2026-10-30.md change 7 and eval/cases/011-meta-review-vision-count-2-2026-10-30.md change 7, the unparsed-line rule; communication-pipeline docs/records/branch-point-v1.9.ir.md, its claim C67, states the same rule.
 
 E7. methodology docs/roadmap.ir.md ask A2 and docs/records/ir-only-documents.ir.md ask A2: two IR-only deliverables whose own Asks sections asked the owner to ratify their proposed terms.
 
