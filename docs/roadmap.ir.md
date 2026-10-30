@@ -2,15 +2,15 @@
 
 Reader: RD-4
 Purpose: document. The roadmap document the vision schedules after the review of the service: the vision's gaps sequenced into steps, each step naming the plan nodes that close it and the condition that opens it, carrying the owner's decisions of 2026-10-29.
-Status: draft
+Status: delivered IR-only (approved by the owner on 2026-10-30 with its five proposed claims confirmed and the term roadmap step ratified; no prose rendering and no stranger rounds, under the IR-only delivery the owner adopted the same day; mtool ir check 0 violations; unratified terms 0)
 Source: the vision (docs/vision.ir.md); the service review after chunk 1 (docs/records/service-review-2026-10-29.ir.md) and the owner's reply of 2026-10-29 adopting its fourteen defaults; the project-orchestrator's Plan register after the specification gates of 2026-10-29.
-Footprint: docs/roadmap.ir.md; docs/roadmap.md; docs/roadmap.review.md; docs/vocabulary.md
+Footprint: docs/roadmap.ir.md; docs/vocabulary.md
 
 ## Terms
 
 T1. Roadmap document. defined-at: vocabulary.md#def-roadmap-document [decided: owner, 2026-10-29]
 
-T2. Roadmap step. One unit of the roadmap: the plan nodes that close one gap or one part of a gap, and the condition that opens them. [proposed: this IR]
+T2. Roadmap step. defined-at: vocabulary.md#def-roadmap-step [decided: owner, 2026-10-30]
 
 T3. Planning/execution model. defined-at: vocabulary.md#def-planning-execution-model [decided: owner, 2026-10-28]
 
@@ -38,9 +38,9 @@ T12. Reasoning role. defined-at: vocabulary.md#def-reasoning-role [decided: meth
 
 C1. The roadmap document sequences the vision's gaps into roadmap steps. evidence: E1, E2. [decided: owner, 2026-10-29]
 
-C2. Each roadmap step names the plan nodes that close it and the condition that opens it. [proposed: this IR]
+C2. Each roadmap step names the plan nodes that close it and the condition that opens it. [decided: owner, 2026-10-30]
 
-C3. A roadmap step's condition is a state of the planning/execution model, never a date. [proposed: this IR]
+C3. A roadmap step's condition is a state of the planning/execution model, never a date. [decided: owner, 2026-10-30]
 
 C4. The Plan register of each project stays the source of progress truth, and the roadmap document is a statement of intent over it. evidence: E3. [decided: owner, 2026-10-29]
 
@@ -58,7 +58,7 @@ C9. The common risk catalogue, node P3-N003, runs as three children: one class e
 
 C10. Sequence mode, node P3-N005, runs as four children: the stop conditions P3-N013, the loop P3-N014, the demonstration P3-N015, and the determination P3-N016. evidence: E3. [decided: project-orchestrator Plan register]
 
-C11. Node P1-N014, role contracts adopt the methodology's conduct rules, is executing, and lands before the pilot. evidence: E2, E3. [decided: owner, 2026-10-29]
+C11. Node P1-N014, role contracts adopt the methodology's conduct rules, reached done on 2026-10-29, before the pilot. evidence: E2, E3. [decided: project-orchestrator Plan register]
 
 C12. Node P3-N007 drafts the amendment of K-003 by one conditional clause, under which a project that declares a planning/execution model takes that model as its progress truth. evidence: E3. [decided: owner, 2026-10-29]
 
@@ -100,11 +100,11 @@ C27. The project-orchestrator's adoption of the service at chunk 5 is by constru
 
 C28. At the pilot, methodology-tools declares its planning/execution model in its Classification, and K-003's amended clause then applies to it. [inferred: R4]
 
-C29. The pilot's close is the next review of this roadmap. [proposed: this IR]
+C29. The pilot's close is the next review of this roadmap. [decided: owner, 2026-10-30]
 
 ### Step 5: after the pilot
 
-C30. Step 5 opens when the pilot closes. [proposed: this IR]
+C30. Step 5 opens when the pilot closes. [decided: owner, 2026-10-30]
 
 C31. The owner question queue, the second node split out of P2-N003, carries the web view's scheduling and delegation decisions and comes after the pilot. evidence: E2. [decided: owner, 2026-10-29]
 
@@ -126,7 +126,7 @@ C38. Whether Allegro's planning DSL and the project-orchestrator's plan model me
 
 C39. The stranger extends to plans and specifications as a methodology step, with no plan node yet. evidence: E1. [decided: owner, 2026-10-28]
 
-C40. The stranger's extension to plans opens when node P3-N016 delivers its determination on sequence mode. [proposed: this IR]
+C40. The stranger's extension to plans opens when node P3-N016 delivers its determination on sequence mode. [decided: owner, 2026-10-30]
 
 C41. Stop signals inside a stream are a methodology step after node P3-N016. evidence: E1, E3. [decided: owner, 2026-10-29]
 
@@ -180,8 +180,8 @@ E4. project-orchestrator docs/plans/orchestration-service.md: chunks 2 to 5 as n
 
 ## Asks
 
-A1. Edit the draft: confirm, change or strike each proposed claim. Default: confirm. Depends: C2, C3, C29, C30, C40.
+A1. Edit the draft: confirm, change or strike each proposed claim. Done: all five confirmed by the owner on 2026-10-30. Depends: C2, C3, C29, C30, C40.
 
-A2. Ratify or strike the term roadmap step. Default: ratify. Depends: T2.
+A2. Ratify or strike the term roadmap step. Done: ratified by the owner on 2026-10-30. Depends: T2.
 
-A3. Authorize the paraphraser's rendering of docs/roadmap.md and the stranger rounds under W-009. Default: authorize. Depends: A1.
+A3. Authorize the paraphraser's rendering of docs/roadmap.md and the stranger rounds under W-009. Done otherwise: the owner chose IR-only delivery on 2026-10-30, so no rendering runs and the IR is the roadmap document. Depends: A1.

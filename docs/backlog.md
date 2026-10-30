@@ -442,6 +442,13 @@ entries update in the same commit as the work they describe
   [docs/records/normative-second-round.ir.md](records/normative-second-round.ir.md).
 
 ## Upcoming
+- [ ] **Editorial findings on W-009's older text** — When: 2026-10-30, the
+  stranger read of the IR-only clause. Status: open; the statement's first
+  sentence runs 35 words and the Motivated-by field 51; RD-4 and RD-5 are
+  bare at first use; stranger, reasoning role, register fact, paraphraser,
+  intermediate representation and Classification are unlinked in the
+  section; "author" in the rationale names no role; two rationale
+  sentences hold several claims. Pointer: [W-009](rules/working-agreement.md).
 - [ ] **Editorial passes for existing documents** — restyle per the
   [style guide](style.md), highest-traffic reference documents first
   (constitution, vocabulary, rules, classifications); each pass is an

@@ -1,6 +1,6 @@
 # Intermediate representation
 
-Status: active (count 4 readable at round 4 on 2026-10-29, awaiting the owner's adjudication). A methodology [Specification](vocabulary.md#def-specification), the document type, required by
+Status: active (count 4 readable at round 4 on 2026-10-29, awaiting the owner's adjudication; edited on 2026-10-30 for IR-only documents, one rendering-conditions row, the Status value and CK-14's exemption, rendered by the reasoning role, not yet reviewed). A methodology [Specification](vocabulary.md#def-specification), the document type, required by
 [W-009](rules/working-agreement.md#w-009--the-methodology-corpus-writes-its-deliverables-ir-first)
 (the methodology corpus writes its deliverables IR first). Any project
 that adopts W-009 by declaration uses this specification.
@@ -37,7 +37,7 @@ Evidence, Asks. The Claims section may use any sub-headings.
 |---|---|
 | Reader | one [reader catalog](style.md#readers) identifier |
 | Purpose | `report` or `document`, then one sentence saying what the communication is for |
-| Status | `draft`, `reviewed`, `rendered` or `delivered`, optionally followed by a parenthesis holding the counts this specification asks the reasoning role to record |
+| Status | `draft`, `reviewed`, `rendered`, `delivered` or `delivered IR-only`, optionally followed by a parenthesis holding the counts this specification asks the reasoning role to record |
 | Source | the conversation, document or event that occasioned the IR |
 | Normative | optional: `yes` when the prose is [normative text](vocabulary.md#def-normative-text) |
 | Footprint | optional: files or directories separated by semicolons. A directory ends in `/` and covers every file under it |
@@ -109,7 +109,7 @@ as a finding. methodology-tools runs the checks as `mtool ir check`.
 | CK-11 | definition site | a term's `defined-at:` target does not resolve |
 | CK-12 | identifier uniqueness | two elements carry one identifier |
 | CK-13 | term uniqueness | two term elements name one term |
-| CK-14 | review record | an IR whose Status is `reviewed` or `delivered` after rounds has no review record beside it, or a review record without a verdict per round |
+| CK-14 | review record | an IR whose Status is `reviewed` or `delivered` after rounds has no review record beside it, or a review record without a verdict per round; an IR whose Status is `delivered IR-only` is exempt |
 | CK-15 | round trip | the render map (Rendering rule) omits a claim, names an identifier the IR does not hold, or is absent from paraphrased prose |
 | CK-16 | element form | a line inside a section is neither an element, a heading, a continuation of the element above, nor a comment |
 
@@ -209,10 +209,11 @@ deliverable is a finding of the next form audit under
 
 ## Rendering conditions
 
-The first row whose condition holds decides. The inputs are the IR's reader, purpose, Normative header, claim count, proposed-term count, count of dependent asks and longest claim. A dependent ask is an ask with a `Depends:` field. A further input is whether the owner asked for a review. A lint runs the mechanical checks in every case.
+The first row whose condition holds decides. The inputs are the IR's reader, purpose, Normative header, claim count, proposed-term count, count of dependent asks and longest claim. A dependent ask is an ask with a `Depends:` field. A further input is whether the owner asked for a review, and another is whether the owner designated the document IR-only. A lint runs the mechanical checks in every case.
 
 | Condition | What follows |
 |---|---|
+| the owner designated the document [IR-only](vocabulary.md#def-ir-only-document) and the header does not carry `Normative: yes` | no rendering and no [stranger](vocabulary.md#def-stranger) rounds; the IR is the deliverable, and its Status reads `delivered IR-only` |
 | the header carries `Normative: yes` | the [reasoning role](vocabulary.md#def-reasoning-role) renders and runs the stranger rounds |
 | the owner asked for a review, or purpose is `document`, or reader is RD-4 or RD-5 | the [paraphraser](vocabulary.md#def-paraphraser) renders. The [stranger](vocabulary.md#def-stranger) rounds run |
 | proposed terms > 0 | the paraphraser renders, with the ratification ask |
