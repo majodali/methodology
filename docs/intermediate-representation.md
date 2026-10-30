@@ -209,11 +209,11 @@ deliverable is a finding of the next form audit under
 
 ## Rendering conditions
 
-The first row whose condition holds decides. The inputs are the IR's reader, purpose, Normative header, claim count, proposed-term count, count of dependent asks and longest claim. A dependent ask is an ask with a `Depends:` field. A further input is whether the owner asked for a review. A lint runs the mechanical checks in every case.
+The first row whose condition holds decides. The inputs are the IR's reader, purpose, Normative header, claim count, proposed-term count, count of dependent asks and longest claim. A dependent ask is an ask with a `Depends:` field. A further input is whether the owner asked for a review, and another is whether the owner designated the document IR-only. A lint runs the mechanical checks in every case.
 
 | Condition | What follows |
 |---|---|
-| the owner designated the document [IR-only](vocabulary.md#def-ir-only-document) and the header does not carry `Normative: yes` | no rendering and no stranger rounds; the IR is the deliverable, and its Status reads `delivered IR-only` |
+| the owner designated the document [IR-only](vocabulary.md#def-ir-only-document) and the header does not carry `Normative: yes` | no rendering and no [stranger](vocabulary.md#def-stranger) rounds; the IR is the deliverable, and its Status reads `delivered IR-only` |
 | the header carries `Normative: yes` | the [reasoning role](vocabulary.md#def-reasoning-role) renders and runs the stranger rounds |
 | the owner asked for a review, or purpose is `document`, or reader is RD-4 or RD-5 | the [paraphraser](vocabulary.md#def-paraphraser) renders. The [stranger](vocabulary.md#def-stranger) rounds run |
 | proposed terms > 0 | the paraphraser renders, with the ratification ask |

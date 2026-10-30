@@ -2,7 +2,7 @@
 
 Reader: RD-2
 Purpose: document. The owner's decision of 2026-10-30 that some documents are delivered as their IR alone, with no prose rendering and no stranger rounds, and the three texts the decision changes: W-009, the IR specification's rendering rule, and the communication-pipeline's branch point.
-Status: delivered IR-only (the owner adopted the option on 2026-10-30 while approving the roadmap; this record is the first document delivered under it after the roadmap itself; mtool ir check 0 violations; unratified terms 0)
+Status: delivered IR-only (owner designation of 2026-10-30; the owner adopted the option on 2026-10-30 while approving the roadmap; this record is the first document delivered under it after the roadmap itself; mtool ir check 0 violations; unratified terms 0)
 Source: the owner's message of 2026-10-30 approving the roadmap IR: "I find the IR very readable, for this and some other documents IR-only will work, no prose version required. We should update the docs/comms pipeline to include that option."
 Footprint: docs/records/ir-only-documents.ir.md; docs/rules/working-agreement.md; docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/vocabulary.md; docs/releases.md; communication-pipeline docs/branch-point.md
 
@@ -42,9 +42,9 @@ C9. A report to RD-1 or RD-3 that the rendering conditions leave unrendered was 
 
 ### The three text changes
 
-C10. W-009's Statement gains one sentence after "Otherwise the IR is delivered as it stands": "A document the owner designates IR-only is delivered as its IR, whatever its reader, and no prose is rendered for it." [proposed: this IR]
+C10. W-009's Statement gains one sentence after "Otherwise the IR is delivered as it stands": "A document the owner designates IR-only, other than normative text, is delivered as its IR, whatever its reader, and no prose is rendered for it." W-009's sentence on RD-4 and RD-5 gains the exception "unless the owner designates the document IR-only". [proposed: this IR]
 
-C11. The IR specification's rendering conditions gain a first row: the owner designates the document IR-only, disposition: no rendering and no rounds; the IR is the deliverable. [proposed: this IR]
+C11. The IR specification's rendering conditions gain a first row: the owner designated the document IR-only and the header does not carry `Normative: yes`, disposition: no rendering and no rounds; the IR is the deliverable. The owner's designation joins the list of inputs. [proposed: this IR]
 
 C12. The IR specification's Status vocabulary gains `delivered IR-only`. [proposed: this IR]
 
