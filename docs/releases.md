@@ -12,6 +12,23 @@ carry: amendment title and PR link · suggested by (evidencing instance)
 
 ## Unreleased
 
+### The stranger rounds take evaluation cases 010 and 011's changes
+
+- **PR**: this amendment's PR.
+- **Suggested by**: the owner's adoption on 2026-10-30 of
+  communication-pipeline evaluation cases 010 and 011, the
+  meta-reviews of this specification's count 4 and of the vision
+  document's count 2. Seven adopted changes amend this specification.
+  The seven set the verdict's first condition, the own-mismatch rule,
+  two signals' wording, the cross-claim sentence's place, the
+  renderer's definition and inferred provenance.
+- **Impact assessment**: methodology, the specification's rules and
+  its IR, count 5, and the vocabulary row *own mismatch*.
+  communication-pipeline, branch point v1.9 and the signals script.
+  project-orchestrator, its Reviewer (stranger) contract follows.
+  Other projects unaffected.
+- **Migration note**: none.
+
 ### IR-only documents
 
 - **PR**: this amendment's PR.
