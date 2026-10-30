@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: rendered (count 5, round 2, edited 2026-10-30 for communication-pipeline evaluation cases 010 and 011, rendered by the reasoning role; count 4 round 4 readable 2026-10-29; declared 5, changed 5, surprises 0, misses 0; unratified terms 2)
+Status: rendered (count 5, round 3, edited 2026-10-30 for communication-pipeline evaluation cases 010 and 011, rendered by the reasoning role; count 4 round 4 readable 2026-10-29; declared 5, changed 5, surprises 0, misses 0; unratified terms 2)
 Source: the owner's adoption of 2026-10-30 of communication-pipeline evaluation cases 010 and 011's recommended changes, of which case 010's changes 1, 5, 9, 11, 12 and 13 and case 011's change 1 amend this specification (count 5); the owner's adoption of 2026-10-29 of communication-pipeline evaluation case 009's nineteen changes, of which changes 2, 14, 15 and 18 amend this specification (count 4); the owner's decision of 2026-10-27 on signal-based meta-review triggers (count 3); communication-pipeline evaluation case 008 (owner decision of 2026-10-27, change 5) for count 2; for count 1, docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md; docs/releases.md; docs/vocabulary.md
@@ -405,9 +405,9 @@ C110. The inputs are the IR's reader, purpose, Normative header, claim count, pr
 
 C204. A dependent ask is an ask with a `Depends:` field. [decided: pipeline branch point v1.1, 2026-10-25]
 
-C205. The first owner input is whether the owner asked for a review. [decided: pipeline branch point v1.1, 2026-10-25]
+C205. The first owner input is whether the owner asked for a review. [decided: pipeline branch point v1.1, 2026-10-25; reworded for form in count 5, round 2]
 
-C229. The second owner input is whether the owner designated the document IR-only. [decided: owner, 2026-10-30]
+C229. The second owner input is whether the owner designated the document IR-only. [decided: owner, 2026-10-30; reworded for form in count 5, round 2]
 
 C111. A lint runs the mechanical checks in every case. [decided: pipeline schema v1.2, 2026-10-25]
 

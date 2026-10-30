@@ -837,6 +837,28 @@ Awaiting restatement from round 1: the C104 passage matched in part; the restate
 
 Claims after fixes: 222. Prose after fixes: 3,443 words. Claims check after the fixes (base: round 2 prose): 7 changed claims, 0 missing, 0 stale. Round trip: 222 of 222.
 
+Confirmation: 5 of 5 fixes hold. Not held: none. Declines accepted: 1 of 1. New defects: 1.
+
+The five are findings 3, 4 and 5 and the two mismatch dispositions: finding 1 is the step-6 fix, which stays `awaiting restatement`, and finding 2 is an own mismatch with no fix. For findings 3, 4 and 5 the instance's verdict words ("does not hold") judged the finding, and its statement that each defect is gone in the current text is the confirmation. On finding 1 the instance noted that its restatement still omits the determiner-phrase rule, now C231. The instance accepted finding 6's decline on its own reason: the sentence states retention.
+
+Re-fixed before round 3:
+
+| # | New defect (shortened) | Kind | Re-fix |
+|---|---|---|---|
+| N1 | C205 reworded in round 2 but keeps its v1.1 provenance unmarked | provenance | C205: "[decided: pipeline branch point v1.1, 2026-10-25; reworded for form in count 5, round 2]"; C229 likewise, "[decided: owner, 2026-10-30; reworded for form in count 5, round 2]". The specification has no rule for a decided claim reworded for form; the decided source stays and the note records the rewording. |
+
 Decided claims the fixes changed, for the owner: C41 split into C41 and C231 (the step-6 structural fix); C58 split into C58 and C232; C110 names two owner inputs, decided by the owner's IR-only option of 2026-10-30; C205 and C229 renamed as the first and second owner inputs.
 
 Declined findings for round 3's brief: round 1's 6, 11 and 16, and round 2's 6, each with its reason.
+
+### Round 3, count 5, 2026-10-30
+
+Branch point version and commit: v1.9 as at communication-pipeline branch `branch-point-v1.9-cases-010-011`, this round's opening commit. Prose 3,443 words; IR 222 claims; unratified terms 2 (T24, T25).
+
+Claims check before the round: 7 changed claims, 0 missing, 0 stale (base: round 2 prose).
+
+Awaiting restatement: round 2's step-6 fix on the referent rule (C41 and C231). C208, round 1's re-fix, was named neither on round 2's `Mismatches:` line nor in a finding, so it no longer awaits restatement. This round's entry states whether the restatement matched on the referent rule's determiner-phrase sentence.
+
+Declined findings carried in the brief: round 1's 6, 11 (the instance did not accept the decline) and 16; round 2's 6; each with its reason.
+
+Signals script before the round: signal 1 fired as before round 2 (rounds 1 and 2, the second by the C13 stale report only); signal 2 fired on C104 and C41, both already step-6 findings; signals 3 and 4 not fired; no line unparsed.
