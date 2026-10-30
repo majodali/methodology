@@ -988,3 +988,15 @@ Claims after fixes: 232. Prose after fixes: 3,640 words. Claims check after the 
 Decided claims the fixes changed, for the owner: C203, C223, C227, C195 and C88, added to A6 where not already listed; new rule C247.
 
 Declined findings for round 6's brief: round 1's 6, 11 and 16; round 2's 6; round 3's 7; each with its reason. Passages awaiting restatement in round 6: the verdict table (C203, C227, C223, C224, C195, C221, C234) and the withdrawal cells (C194, C235).
+
+### Round 6, count 5, 2026-10-30
+
+Branch point version and commit: v1.9 as at communication-pipeline branch `branch-point-v1.9-cases-010-011`, its round 6 opening commit. Prose 3,640 words; IR 232 claims; unratified terms 3 (T24, T25, T26). Round 5's confirmation was not yet back when round 6 opened; its line is recorded in round 5's entry when it arrives.
+
+Claims check before the round: 8 changed claims, 0 missing, 0 stale (base: round 5 prose).
+
+Awaiting restatement: round 5's second structural fixes, the verdict table (C203, C227, C223, C224, C195, C221, C234) and the withdrawal cells (C194, C235). This round's entry states whether the restatement matched on each.
+
+Declined findings carried in the brief: round 1's 6, 11 (the instance did not accept the decline) and 16; round 2's 6; round 3's 7; each with its reason.
+
+Signals script before the round: signals 1 and 2 fire as before; signal 3 not fired; the script's signal 4 check matches the wording of round 5's own signals note, not a finding, so signal 4 is not fired; no line unparsed.
