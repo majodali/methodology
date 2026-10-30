@@ -1418,3 +1418,23 @@ Signals script after the `Mismatches:` line: C53 and C70 stand on no earlier lin
 Claims after fixes: 277. Prose after fixes: 4,290 words. Claims check after the fix pass (base: round 3 prose): 5 changed claims, 0 missing, 0 stale. Round trip: 277 of 277. IR check: 0 violations, 0 warnings.
 
 Decided claims the fixes reworded, for the owner's list at the count's close: C291 (again), C299, C300; and the form split of the owner-adopted sentence (C301, C302), the claims unchanged.
+
+Confirmation: 5 of 5 fixes hold. Not held: none. Declines accepted: 0 of 0. New defects: 3.
+
+The instance (adf97d5d9e5de46f7) read both files in full at fix commit 0855b0f. The three new defects, fixed IR first before round 4 opens (case 012 change 6): N6 (SP-03), "like any finding of its kind" lost its referent when the parenthesis went; C281 reads "... counts against the verdict like a mismatch, contradiction or undefined-term finding." N7, C291's note lacked the count; it reads "reworded in count 6, round 3". N8, C299 and C300 were reworded in round 3 with no note; each now carries "reworded in count 6, round 3".
+
+Claims check after the confirmation's fixes (base: the round 3 fix pass's prose): 1 changed claim, 0 missing, 0 stale. Claims: 277. Prose: 4,291 words. Round trip: 277 of 277.
+
+### Round 4, count 6, 2026-10-30
+
+Branch point version and commit: v1.10 at communication-pipeline commit 387dc43. Round 4 reads the text at this round's opening commit, named in the brief. Prose 4,291 words; IR 277 claims; unratified terms 0.
+
+Passages awaiting restatement: none; round 3 made no step-6 fix, and the verdict table matched.
+
+Declined findings carried in the brief from count 5: round 1's 6, 11 and 16; round 2's 6; round 3's 7; round 8's 8; round 10's 2. Each with its reason.
+
+Owner-pending findings: none.
+
+Forms added to the brief: none.
+
+Signals script before the round: signal 2 as recorded (C104, C106, C194); signal 1 reads one round with a stale claim, so it does not fire; no line unparsed.

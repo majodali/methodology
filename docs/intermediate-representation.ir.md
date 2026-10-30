@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: rendered (count 6, round 3, edited 2026-10-30 for communication-pipeline evaluation case 012, rendered by the reasoning role; count 5 accepted and delivered 2026-10-30; unratified terms 0)
+Status: rendered (count 6, round 4, edited 2026-10-30 for communication-pipeline evaluation case 012, rendered by the reasoning role; count 5 accepted and delivered 2026-10-30; unratified terms 0)
 Source: the owner's adoption of 2026-10-30 of communication-pipeline evaluation case 012's fifteen changes, of which changes 1, 2, 4 to 9, 11, 13 and 14 amend this specification (count 6); the owner's adoption of 2026-10-30 of communication-pipeline evaluation cases 010 and 011's recommended changes, of which case 010's changes 1, 5, 9, 11, 12 and 13 and case 011's change 1 amend this specification (count 5); the owner's adoption of 2026-10-29 of communication-pipeline evaluation case 009's nineteen changes, of which changes 2, 14, 15 and 18 amend this specification (count 4); the owner's decision of 2026-10-27 on signal-based meta-review triggers (count 3); communication-pipeline evaluation case 008 (owner decision of 2026-10-27, change 5) for count 2; for count 1, docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md; docs/releases.md; docs/vocabulary.md
@@ -331,7 +331,7 @@ C279. The reasoning role adds no rule in a fix beyond the changes the owner adop
 
 C280. When a finding needs a new rule, the reasoning role lists the finding for the owner with a proposed wording. evidence: E8. [proposed: case 012 change 9]
 
-C281. Until the owner decides, a finding that needs a new rule counts against the verdict like any finding of its kind. evidence: E8. [proposed: case 012 change 9]
+C281. Until the owner decides, a finding that needs a new rule counts against the verdict like a mismatch, contradiction or undefined-term finding. evidence: E8. [proposed: case 012 change 9]
 
 C282. A decided claim a fix rewords keeps its decided source and notes the rewording, as `reworded in count N, round M`. evidence: E8. [proposed: case 012 change 14]
 
@@ -415,7 +415,7 @@ C183. The reasoning role fixes an unfixed finding of the readable round at the n
 
 C254. At that edit, the reasoning role revises the unconfirmed words. [decided: owner, 2026-10-30; reworded in count 6, round 1, split]
 
-C291. The next count's stranger instances review the revised words. [decided: owner, 2026-10-30; split from C254 in count 6, round 1; reworded in round 3]
+C291. The next count's stranger instances review the revised words. [decided: owner, 2026-10-30; split from C254 in count 6, round 1; reworded in count 6, round 3]
 
 C98. After a verdict of not readable, the reasoning role fixes the IR and then the prose. [decided: owner, 2026-10-26]
 
@@ -641,9 +641,9 @@ C285. Count 6 carried communication-pipeline evaluation case 012's changes 1, 2,
 
 C286. Case 012's change 1 struck two qualifiers of the first condition. evidence: E8. [proposed: case 012 change 1]
 
-C299. The exception read: an own mismatch does not count when the stranger quotes a prose sentence that carries an IR claim. evidence: E5, E8. [decided: owner, 2026-10-30]
+C299. The exception read: an own mismatch does not count when the stranger quotes a prose sentence that carries an IR claim. evidence: E5, E8. [decided: owner, 2026-10-30; reworded in count 6, round 3]
 
-C300. The override read: a restatement mismatch on one passage in any two rounds of the text's counts always counts. evidence: E5, E8. [decided: owner, 2026-10-30]
+C300. The override read: a restatement mismatch on one passage in any two rounds of the text's counts always counts. evidence: E5, E8. [decided: owner, 2026-10-30; reworded in count 6, round 3]
 
 C230. In count 5, the sentence giving normative text to the reasoning role was cut as a repeat of the renderer's definition. [inferred: R57]
 

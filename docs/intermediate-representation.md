@@ -1,6 +1,6 @@
 # Intermediate representation
 
-Status: active, under review (count 6, round 3, 2026-10-30: communication-pipeline evaluation case 012's adopted changes). A methodology [Specification](vocabulary.md#def-specification), the document type, required by
+Status: active, under review (count 6, round 4, 2026-10-30: communication-pipeline evaluation case 012's adopted changes). A methodology [Specification](vocabulary.md#def-specification), the document type, required by
 [W-009](rules/working-agreement.md#w-009--the-methodology-corpus-writes-its-deliverables-ir-first)
 (the methodology corpus writes its deliverables IR first). Any project
 that adopts W-009 by declaration uses this specification.
@@ -146,7 +146,7 @@ The reasoning role makes a fix to rendered prose in the IR first.
 After a fix to the IR, the reasoning role renders the prose again or
 edits it to match the IR. The reasoning role rephrases or
 removes words in a fix to prose before it adds words. The reasoning role adds words in a fix only to supply a
-missing definition or a missing referent. The reasoning role adds no rule in a fix beyond the [changes the owner adopted](https://github.com/majodali/communication-pipeline/blob/main/eval/README.md#meta-review-records) for the count. When a finding needs a new rule, the reasoning role lists the finding for the owner with a proposed wording. Until the owner decides, a finding that needs a new rule counts against the verdict like any finding of its kind. A decided claim a fix rewords keeps its decided source and notes the rewording, as `reworded in count N, round M`. The owner ratifies the reworded claims as one list at the count's close.
+missing definition or a missing referent. The reasoning role adds no rule in a fix beyond the [changes the owner adopted](https://github.com/majodali/communication-pipeline/blob/main/eval/README.md#meta-review-records) for the count. When a finding needs a new rule, the reasoning role lists the finding for the owner with a proposed wording. Until the owner decides, a finding that needs a new rule counts against the verdict like a mismatch, contradiction or undefined-term finding. A decided claim a fix rewords keeps its decided source and notes the rewording, as `reworded in count N, round M`. The owner ratifies the reworded claims as one list at the count's close.
 
 ### Stranger rounds
 
