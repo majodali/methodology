@@ -1276,6 +1276,7 @@ Lint before round 1: IR checks 0 violations, 0 warnings.
 |---|---|---|---|---|---|
 | 1 | 4,129 | 265 | 8 | 1.9 | not readable (two mismatches, both on step-6 passages; contradictions 0; undefined terms 0) |
 | 2 | 4,208 | 272 | 10 | 2.4 | not readable (two mismatches on the verdict table, a step-6 passage; contradictions 0; undefined terms 2) |
+| 3 | 4,273 | 276 | 5 | 1.2 | not readable (one mismatch, the stranger's slip, first occurrence; contradictions 0; undefined term 1) |
 
 ### Round 1, count 6, 2026-10-30
 
@@ -1396,3 +1397,24 @@ Owner-pending findings: none.
 Forms added to the brief: none.
 
 Signals script before the round: signal 2 fires on C104 and C106, as recorded, and on C194, the claim round 2's first entry relied on, which recurred in count 5; signal 1 reads the stale report above in one round, so it does not fire; no line unparsed.
+
+Stranger model: claude-haiku-5-5, a fresh instance at the frugal tier (adf97d5d9e5de46f7). Prose 4,273 words by `wordCount` (the stranger's hand estimate: about 5,800); IR 276 claims; 5 findings, 1.2 per thousand words. Restatement: one mismatch, the stranger's own slip, "ten mechanical checks" against CK-01 to CK-16; it counts under the first condition as count 6 reads it. A first occurrence on the Mechanical checks passage; not a step-6 passage. Contradictions 0, undefined term 1 (finding 4); verdict: not readable for RD-4.
+
+The listed passage, the verdict table, restated as "each restatement mismatch counts against a readable verdict and is never withdrawn at confirmation, each contradiction or undefined-term finding counts unless withdrawn at confirmation on a reason that quotes the prose, and an omission never counts." The sentence matches C195, C194, C235, C227 and C265. The `awaiting restatement` mark clears.
+
+Omissions noticed, not counted: about a dozen, among them the IR-only documents (C217 to C219), the unparsed-line rules, the one-sentence restatement procedure, the new-defect rules and the recurrence rule (C208).
+Mismatches: C53 (relied on C70)
+
+Signals script after the `Mismatches:` line: C53 and C70 stand on no earlier line; signal 2 as before (C104, C106, C194).
+
+| # | Finding (shortened) | Kind | Decision |
+|---|---|---|---|
+| 1 | mismatch on the check count: "ten mechanical checks" | restatement | the section opens with a sentence that carries the count: "The IR has sixteen mechanical checks, one per row of the table below." (C303, inferred by R84) |
+| 2 | the new-rule finding sentence at 26 words | SP-02 | rephrase C281: "Until the owner decides, a finding that needs a new rule counts against the verdict like any finding of its kind." |
+| 3 | the owner's adopted sentence joins a state and a duty with a semicolon | SP-01 | split into two sentences; the claims C301 and C302 were already separate. A form split of an owner-adopted text, listed for the close |
+| 4 | History's "exception" and "override" undefined | SP-04 | each former qualifier's wording stated: C299, "The exception read: an own mismatch does not count when the stranger quotes a prose sentence that carries an IR claim."; C300, "The override read: a restatement mismatch on one passage in any two rounds of the text's counts always counts." |
+| 5 | "The next count's rounds review the revised words" names no actor | SP-18 | rephrase C291: "The next count's stranger instances review the revised words." |
+
+Claims after fixes: 277. Prose after fixes: 4,290 words. Claims check after the fix pass (base: round 3 prose): 5 changed claims, 0 missing, 0 stale. Round trip: 277 of 277. IR check: 0 violations, 0 warnings.
+
+Decided claims the fixes reworded, for the owner's list at the count's close: C291 (again), C299, C300; and the form split of the owner-adopted sentence (C301, C302), the claims unchanged.

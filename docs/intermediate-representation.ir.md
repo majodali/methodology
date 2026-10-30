@@ -227,6 +227,8 @@ C50. The count of unratified terms is the mechanical measure of unratified vocab
 
 ### Mechanical checks
 
+C303. The IR has sixteen mechanical checks, one per row of the table below. [inferred: R84]
+
 C51. A lint or a stranger reports each mechanical check as a finding. [decided: pipeline schema v1.2, 2026-10-25]
 
 C52. methodology-tools runs the checks as `mtool ir check`. [decided: methodology PR #48, 2026-10-26]
@@ -329,7 +331,7 @@ C279. The reasoning role adds no rule in a fix beyond the changes the owner adop
 
 C280. When a finding needs a new rule, the reasoning role lists the finding for the owner with a proposed wording. evidence: E8. [proposed: case 012 change 9]
 
-C281. A finding that needs a new rule counts against the verdict as a finding of its kind (mismatch, contradiction or undefined term) until the owner decides. evidence: E8. [proposed: case 012 change 9]
+C281. Until the owner decides, a finding that needs a new rule counts against the verdict like any finding of its kind. evidence: E8. [proposed: case 012 change 9]
 
 C282. A decided claim a fix rewords keeps its decided source and notes the rewording, as `reworded in count N, round M`. evidence: E8. [proposed: case 012 change 14]
 
@@ -413,7 +415,7 @@ C183. The reasoning role fixes an unfixed finding of the readable round at the n
 
 C254. At that edit, the reasoning role revises the unconfirmed words. [decided: owner, 2026-10-30; reworded in count 6, round 1, split]
 
-C291. The next count's rounds review the revised words. [decided: owner, 2026-10-30; split from C254 in count 6, round 1]
+C291. The next count's stranger instances review the revised words. [decided: owner, 2026-10-30; split from C254 in count 6, round 1; reworded in round 3]
 
 C98. After a verdict of not readable, the reasoning role fixes the IR and then the prose. [decided: owner, 2026-10-26]
 
@@ -639,9 +641,9 @@ C285. Count 6 carried communication-pipeline evaluation case 012's changes 1, 2,
 
 C286. Case 012's change 1 struck two qualifiers of the first condition. evidence: E8. [proposed: case 012 change 1]
 
-C299. The exception had let an own mismatch with a quoted prose sentence that carried the claim go uncounted. evidence: E8. [decided: owner, 2026-10-30]
+C299. The exception read: an own mismatch does not count when the stranger quotes a prose sentence that carries an IR claim. evidence: E5, E8. [decided: owner, 2026-10-30]
 
-C300. The override had counted a mismatch that recurred on one passage in two rounds. evidence: E8. [decided: owner, 2026-10-30]
+C300. The override read: a restatement mismatch on one passage in any two rounds of the text's counts always counts. evidence: E5, E8. [decided: owner, 2026-10-30]
 
 C230. In count 5, the sentence giving normative text to the reasoning role was cut as a repeat of the renderer's definition. [inferred: R57]
 
@@ -810,6 +812,8 @@ R80. C265 depends-on C263 because an omission is not a restatement mismatch, and
 R81. C288 depends-on C284 because the review records of earlier counts name the first, second and fourth signals by number.
 
 R83. C290 depends-on C91 because the reasoning role starts each round by dispatching a fresh stranger, and that stranger answers at the round's confirmation.
+
+R84. C303 refines C51 because the table holds one row per check, CK-01 to CK-16, and a count stated in a sentence carries the number for a reader who skims the table.
 
 ## Evidence
 
