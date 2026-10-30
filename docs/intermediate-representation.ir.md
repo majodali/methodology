@@ -183,7 +183,9 @@ C43. A determiner followed by the noun it names, such as "this specification", i
 
 ### Provenance
 
-C259. Terms, claims and clusters, and no other element, carry a provenance status. [decided: pipeline schema v1.2, 2026-10-25; split from C44 in count 5, round 8; C260 merged into it in round 9]
+C259. Terms, claims and clusters carry a provenance status. [decided: pipeline schema v1.2, 2026-10-25; split from C44 in count 5, round 8; C260 merged into it in round 9; the merge reversed in round 10]
+
+C260. No other element carries a provenance status. [decided: pipeline schema v1.2, 2026-10-25; split from C44 in count 5, round 8; restored in round 10]
 
 C44. Each term, claim and cluster ends with one status in square brackets. [decided: pipeline schema v1.2, 2026-10-25; reworded in count 5, round 8]
 
@@ -249,7 +251,7 @@ C71. Prose is rendered from the IR when a rendering condition selects rendering.
 
 C72. The paraphraser renders one claim as one sentence. [decided: pipeline schema v1.2, 2026-10-25]
 
-C174. The paraphraser renders one cluster as one paragraph in the cluster's order. [decided: pipeline schema v1.2, 2026-10-25]
+C174. The paraphraser renders one cluster as one paragraph in the cluster's order, except a cluster whose claims fall under different parts. [decided: pipeline schema v1.2, 2026-10-25; reworded in count 5, round 10]
 
 C73. The paraphraser introduces no new claim. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -773,6 +775,6 @@ A4 resolved: ratified by the owner, 2026-10-27; vocabulary row added.
 
 A5. Ratify or strike the terms passage (T24), topic claim (T25) and confirmation (T26). Depends: C228, C226, C233.
 
-A6. Ratify or strike the new wording of the decided claims count 5 reworded or split in its rounds: C1; C13; C31 and C240; C41 and C231; C58 and C232; C87; C102; C110; C143; C161; C191 and C239; C194 and C235; C199; C203; C205; C208; C221 and C234; C223; C224; C227; C229; C88; C195; C164; C207; C1; C12; C23; C106; C109; C206; C44 with C259 and C260, C260 merged into C259 in round 9; C46. New rules for the owner: the `Meta-review: unparsed` line (C236 to C238) and its form-audit finding, merged into C109; a withdrawal without a quoted reason still counts (C250, C251); an unconfirmed fix's words stay in the delivered prose (C248) and are revised at the next edit (C254); the claims-check line (C252, C253); the override governs the exception (C255). Depends: C1, C13, C31, C41, C58, C87, C102, C110, C143, C161, C191, C194, C199, C203, C205, C208, C221, C223, C224, C227, C229, C88, C195, C164, C207, C237, C248, C250, C252, C254, C255, C12, C23, C106, C206, C44, C259, C46.
+A6. Ratify or strike the new wording of the decided claims count 5 reworded or split in its rounds: C1; C13; C31 and C240; C41 and C231; C58 and C232; C87; C102; C110; C143; C161; C191 and C239; C194 and C235; C199; C203; C205; C208; C221 and C234; C223; C224; C227; C229; C88; C195; C164; C207; C1; C12; C23; C106; C109; C206; C44 with C259 and C260, C260 merged into C259 in round 9 and the merge reversed in round 10 on a one-claim-per-sentence finding; C46; C174, whose exception names the cluster C256 splits. New rules for the owner: the `Meta-review: unparsed` line (C236 to C238) and its form-audit finding, merged into C109; a withdrawal without a quoted reason still counts (C250, C251); an unconfirmed fix's words stay in the delivered prose (C248) and are revised at the next edit (C254); the claims-check line (C252, C253); the override governs the exception (C255). Depends: C1, C13, C31, C41, C58, C87, C102, C110, C143, C161, C191, C194, C199, C203, C205, C208, C221, C223, C224, C227, C229, C88, C195, C164, C207, C237, C248, C250, C252, C254, C255, C12, C23, C106, C206, C44, C259, C46, C174.
 
-A7. Ratify or strike two rules count 5's round 8 found missing: a cluster whose claims fall under different parts renders as one paragraph per part (C256); an IR-only deliverable's own Asks section lists each proposed term for ratification (C257). Decide also whether a finding's disposition, fixed or declined (C261), keeps its name beside the communication-pipeline's dispositions D0 to D3 of a text. Depends: C256, C257, C261.
+A7. Ratify or strike two rules count 5's round 8 found missing: a cluster whose claims fall under different parts renders as one paragraph per part (C256), the exception C174 names; an IR-only deliverable's own Asks section lists each proposed term for ratification (C257). Decide also whether a finding's disposition, fixed or declined (C261), keeps its name beside the communication-pipeline's branch-point dispositions of a text. Depends: C256, C257, C261, C174.

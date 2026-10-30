@@ -754,6 +754,7 @@ Three gaps remain from the edit of 2026-10-30 for IR-only documents. This count 
 | 7 | 3,727 | 236 | 14 | 3.8 | not readable (five own mismatches, three counting; contradictions 0; undefined term 1) |
 | 8 | 3,752 | 238 | 8 | 2.1 | not readable (three own mismatches, two on step-6 passages counting under the override; contradictions 2; undefined terms 0) |
 | 9 | 3,836 | 244 | 4 | 1.0 | not readable (one own mismatch, quoted, not counting by the Orchestrator's ruling; contradiction 1; undefined term 1) |
+| 10 | 3,864 | 244 | 2 | 0.5 | not readable (restatement matched; contradiction 1; undefined terms 0) |
 
 ### Round 1, count 5, 2026-10-30
 
@@ -1183,3 +1184,21 @@ Declined findings carried in the brief: round 1's 6, 11 (the instance did not ac
 At the limit, the reasoning role fixes round 10's findings in the IR and then in the prose, and round 10's stranger instance confirms each fix before the owner's decision, other than a step-6 fix. A step-6 fix stays awaiting restatement and counts as unfixed.
 
 Signals script before the round: signal 1 fires as before; signal 2 as before, with no new claim (C132 stands on one line); signal 3 not fired (15.72 words per claim against round 1's 15.59); signal 4 fired by reading again: round 9's contradiction (finding 3) sat on C258, which round 8's fix added; no line unparsed. The text is a meta-review subject at the count's end.
+
+Stranger model: claude-haiku-5-5, a fresh instance at the frugal tier (a730555ad1a871eb3). Prose 3,864 words by `wordCount` (the stranger's estimate: about 4,500 to 5,000, by hand); IR 244 claims; 2 findings, 0.5 per thousand words. Restatement: no mismatch. The stranger noted one omission of its own, that a readable verdict also stops a count, and quoted the sentence that carries C88. Contradiction 1 (finding 1), undefined terms 0; verdict: not readable for RD-4, on the contradiction alone.
+Mismatches: none
+
+Restatement matches on the passages awaiting restatement: the verdict section (third fix, round 7) matched; the C1 sentence in its round 9 wording matched; the Provenance opening in its two-sentence form (C259, C44) matched; C132's passage matched. The referent passage matched. Each mark clears. The stranger also found C206, C252 and C254 matching the prose, as their round 8 declines stated. It raised no declined finding.
+
+Side effect: before reading, the instance made one call to a docs guide menu outside the brief's two files. The call read no file and created nothing.
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1 | C174 against C256: one paragraph per cluster, and one paragraph per part | SP-25 | rephrase C174, as queued from round 9's confirmation: "The paraphraser renders one cluster as one paragraph in the cluster's order, except a cluster whose claims fall under different parts."; C174 joins A6, and A7 names it as C256's exception |
+| 2 | the first-condition cell's "never withdraws a restatement mismatch" against the withdrawal sentence (C195 against C258) | SP-26 | declined: the cell is C195's only prose carrier, and the communication-pipeline branch point carries the same verdict table, which stays identical; C258 states which findings a withdrawal covers, and C195 states the first condition's rule. A fold into C258 under 25 words would join two claims in one sentence |
+
+Round 9's confirmation defects applied in the same pass: defect 1 is finding 1 above. Defect 2: the Provenance opening splits into two sentences again, "Terms, claims and clusters carry a provenance status. No other element carries a provenance status."; C260 is restored, and A6 notes that the merge was reversed. Defect 3: A7 names "the communication-pipeline's branch-point dispositions" without the identifiers.
+
+Claims after fixes: 245 (C260 restored). Prose after fixes: 3,876 words. Claims check after the fixes (base: round 10 prose): 3 changed claims, 0 missing, 0 stale. Round trip: 245 of 245. IR check: 0 violations, 0 warnings. Lint and style warnings: 27 and 50, as before the pass. Footprint: declared 5, changed 5, surprises 0, misses 0.
+
+Decided claims the fixes changed, for the owner: C174 and C259 with C260, added to A6.
