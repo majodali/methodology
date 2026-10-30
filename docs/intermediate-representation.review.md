@@ -1076,6 +1076,10 @@ Queued items applied in the same pass: round 6's N1 (C236 split; C252 defines th
 
 Finding of count 5 for the owner: the verdict passage has drawn restatement omissions in five rounds (1, 3, 4, 5, 7). A 200-word restatement of a text near 3,700 words compresses a qualified rule; the meta-review should weigh this against the 200-word limit.
 
+Confirmation: 8 of 9 fixes hold. Not held: 9. Declines accepted: 0 of 0. New defects: 8.
+
+The instance (a91d38d881607604a) re-read the prose and the IR. Finding 9 did not hold: the CK-14 link goes to the Stranger rounds heading, which uses "round" without defining it; the link should go to the vocabulary row. Fixes 10 and 14 hold, with residue carried as new defects 1 and 3. The eight new defects: 1, the CK-15 row still says "(Rendering rule)"; 2, the CK-14 link, as not-held 9; 3, "The author of prose written directly" names no defined role; 4, "The override governs the exception." repeats the override; 5, "before a round" names no round; 6, "the next count's confirmation" names an event no sentence describes; 7, the IR heading "### Rendering rule" is stale; 8, C253 cites R62, which does not derive it. Defect 4 is declined: the sentence states precedence, which "always" alone did not, and the branch point carries the same sentence under a finding its round 7 instance confirmed. The re-fix and defects 1 to 3 and 5 to 8 are fixed in round 8's fix pass.
+
 Claims after fixes: 238. Prose after fixes: 3,752 words. Claims check after the fixes (base: round 7 prose): 12 changed claims, 0 missing, 0 stale; C247 and C249 removed. Round trip: 238 of 238.
 
 Decided claims the fixes changed, for the owner: C1, C12, C23, C106, C109 and C206, added to A6; new rules C252 to C255.
