@@ -12,6 +12,21 @@ carry: amendment title and PR link · suggested by (evidencing instance)
 
 ## Unreleased
 
+### IR-only documents
+
+- **PR**: this amendment's PR.
+- **Suggested by**: the owner's approval of the roadmap IR on
+  2026-10-30 without a prose rendering: "for this and some other
+  documents IR-only will work".
+- **Impact assessment**: methodology, W-009 gains one sentence, the
+  IR specification gains a rendering-conditions row, the Status value
+  `delivered IR-only` and CK-14's exemption, the vocabulary gains
+  *IR-only document*; communication-pipeline, the branch point gains
+  row BP-00; methodology-tools, `mtool ir check` exempts the new
+  Status from CK-14. Other projects unaffected.
+- **Migration note**: none; the option applies only where the owner
+  designates a document.
+
 ### The stranger rounds take evaluation case 009's four changes
 
 - **PR**: this amendment's PR.

@@ -40,6 +40,8 @@ C3. Prose for a human-owner reader or a delegating agent is rendered from the IR
 
 C19. Below the thresholds, the IR is delivered as it stands. [decided: owner, 2026-10-24]
 
+C27. A document the owner designates IR-only is delivered as its IR, whatever its reader, with no prose rendered (added 2026-10-30). [decided: owner, 2026-10-30]
+
 C4. Normative text is rendered by its author and reviewed by a stranger. [decided: owner, 2026-10-25]
 
 C5. A report to the human owner or a delegating agent that introduces no term, records no decision and states no register fact may be written as prose directly. [decided: owner, 2026-10-25]

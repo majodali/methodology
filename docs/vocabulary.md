@@ -302,6 +302,11 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   nodes that close one gap or one part of a gap, and the condition that
   opens them (owner, 2026-10-30,
   [roadmap](roadmap.ir.md)).
+- <a id="def-ir-only-document"></a>**IR-only document** — a document the owner designates to be
+  delivered as its intermediate representation alone, with no prose
+  rendering and no stranger rounds; the IR check is its gate, and its
+  Status reads `delivered IR-only`. Normative text is never IR-only
+  (owner, 2026-10-30, [record](records/ir-only-documents.ir.md)).
 - <a id="def-report-audience"></a>**Report audience** — the reader a report is addressed to under
   [W-008](rules/working-agreement.md#w-008--reports-map-their-deliverables)
   (reports map their deliverables): the human owner directly (the

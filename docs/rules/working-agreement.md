@@ -268,7 +268,10 @@ decision, or states a register fact, MUST be written first as an
 for RD-4 or RD-5 MUST be rendered from the IR and reviewed by a
 stranger. Prose for RD-1, RD-2 or RD-3 MUST be rendered from the IR
 when the specification's rendering conditions select rendering.
-Otherwise the IR is delivered as it stands. Normative text (a rule,
+Otherwise the IR is delivered as it stands. A document the owner
+designates [IR-only](../vocabulary.md#def-ir-only-document) is
+delivered as its IR, whatever its reader, and no prose is rendered for
+it. Normative text (a rule,
 a specification, or any text whose words bind) MUST be rendered by
 the reasoning role that wrote the IR and reviewed by a stranger. A
 report to RD-1 or RD-3 that introduces no term, records no decision
