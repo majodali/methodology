@@ -753,6 +753,7 @@ Three gaps remain from the edit of 2026-10-30 for IR-only documents. This count 
 | 6 | 3,640 | 232 | 8 | 2.2 | not readable (one own mismatch, quoted, not counting; contradiction 1; undefined terms 0) |
 | 7 | 3,727 | 236 | 14 | 3.8 | not readable (five own mismatches, three counting; contradictions 0; undefined term 1) |
 | 8 | 3,752 | 238 | 8 | 2.1 | not readable (three own mismatches, two on step-6 passages counting under the override; contradictions 2; undefined terms 0) |
+| 9 | 3,836 | 244 | 4 | 1.0 | not readable (one own mismatch, quoted, not counting by the Orchestrator's ruling; contradiction 1; undefined term 1) |
 
 ### Round 1, count 5, 2026-10-30
 
@@ -1138,3 +1139,29 @@ Awaiting restatement: the verdict section (third fix, round 7); the C1 passage (
 Declined findings carried in the brief: round 1's 6, 11 (the instance did not accept the decline) and 16; round 2's 6; round 3's 7; round 7's new defect 4; round 8's 8; each with its reason.
 
 Signals script before the round: signal 1 fires as before; signal 2 on C104, C41, C223, C194, C195, C227, C203, C1 and C44; signal 3 not fired; signal 4 fired by reading in round 6; no line unparsed. The text is a meta-review subject at the count's end.
+
+Stranger model: claude-haiku-5-5, a fresh instance at the frugal tier (a2127801c8f655ec2). Prose 3,836 words by `wordCount` (the stranger's estimate: about 4,500, by hand); IR 244 claims; 4 findings, 1.0 per thousand words. Restatement: one mismatch, on C132, attributed by the stranger to its own restatement, which dropped "register fact"; it quotes both sentences of Texts that require an IR that carry C132: "A report to RD-1 or RD-3 that introduces no term, records no decision and states no register fact may be written as prose directly." and "A term, a decision or a register fact requires the IR." Contradiction 1 (finding 3), undefined term 1 (finding 2); verdict: not readable for RD-4.
+Mismatches: C132 (own; relied on C132)
+
+The two readings of finding 1. The stranger counted the mismatch: it read the listed Purpose passage (C1) as covering the when condition through "that requires one", so the override applied. The Orchestrator's ruling: the mismatch sits on C132's passage, its first occurrence; the quoted sentences carry C132 faithfully, so the exception applies and it does not count. The stranger restated C1 itself without mismatch. The verdict is not readable on findings 2 and 3 under either reading. C132's passage joins round 10's restatement-match list.
+
+Restatement matches on the passages awaiting restatement: the verdict section (third fix, round 7) matched; the C1 passage matched; the Provenance opening (C259, C260, C44) matched; the meta-review subject paragraph (C104, C106, C192) matched; the footprint comparison (C123) matched. The referent passage (C35, C41, C33) matched. Each mark clears.
+
+Row 2 of round 8, checked against the committed file: the instance was right. The subject sentences (C104, C106, C192) followed the signal list in one paragraph; round 8's fix had separated them only from the `Meta-review:` line rules. The round 8 entry's stale-read note on row 2 is wrong. This pass breaks the paragraph after the signals; no word changes.
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1 | own mismatch on C132: "register fact" dropped, quoted | restatement | does not count, under the exception (the Orchestrator's ruling); no prose defect; the passage joins round 10's restatement-match list |
+| 2 | "governed document" undefined, Provenance table, decided row | SP-04 | the methodology vocabulary has no row for it; rephrase C46: "quoted from a document the human owner ratified"; no term added |
+| 3 | the withdrawal sentence lets the instance withdraw a restatement mismatch, which the first row forbids | SP-25 | rephrase C258, with round 8's new defect 2: "At confirmation, the round's stranger instance withdraws a finding other than a restatement mismatch by saying the finding no longer applies to the prose."; R77 cites C195 |
+| 4 | "after delivery" repeats "delivered" | SP-26 | cut: C161 reads "The reasoning role does not edit the IR of a delivered report." |
+
+Round 8's carried items applied in the same pass. Row 4 re-fixed: C256 moves to the rendering parts and reads "The renderer renders a cluster whose claims fall under different parts as one paragraph per part." (proposed, A7). Row 5's residue: C152 reads "When a report delivers the text, the reasoning role lists each proposed term for ratification in that report." New defect 1: the Provenance opening is two sentences; C260 merges into C259, "Terms, claims and clusters, and no other element, carry a provenance status."; the merge is listed in A6. New defect 2: taken in finding 3's wording. New defect 3: C262 added, "A confirmed or unfixed mark is not a disposition: the mark records whether the round's stranger instance confirmed a fix." (inferred, R79). New defect 7: C1 reads "For each text that requires an intermediate representation (IR), the reasoning role writes the IR before any prose of the text exists.", the link to Texts that require an IR kept. A7 also asks whether a finding's disposition (C261) keeps its name beside the communication-pipeline's dispositions D0 to D3.
+
+New defects 4 to 6 of round 8 are declined as stale reads. The committed IR already carries the prose's wording: C206, "The reasoning role runs the style guide's mechanical checks on prose it writes directly."; C252, "A claims-check line is the review-record line in which the reasoning role records the claims check run before each round from round 2."; C254, "At that edit, the reasoning role revises the unconfirmed words, which the next count's rounds then review."
+
+Claims after fixes: 244 (C260 removed, C262 added). Prose after fixes: 3,864 words. Claims check after the fixes (base: round 9 prose): 8 changed claims, 0 missing, 0 stale; C260 removed. Round trip: 244 of 244. IR check: 0 violations, 0 warnings. Lint and style warnings: 27 and 50, as before the pass.
+
+Decided claims the fixes changed, for the owner: C1 again, C259 with C260 merged into it, and C46, added to A6. Proposed C256 reworded in A7.
+
+Declined findings for round 10's brief: round 1's 6, 11 and 16; round 2's 6; round 3's 7; round 7's new defect 4; round 8's 8 and new defects 4 to 6; each with its reason. Passages awaiting restatement in round 10: the verdict section; the C1 sentence in its new wording; the Provenance opening in its two-sentence form; C132's passage, first occurrence, listed for its match.
