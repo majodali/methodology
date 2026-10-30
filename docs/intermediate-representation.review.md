@@ -746,6 +746,7 @@ Three gaps remain from the edit of 2026-10-30 for IR-only documents. This count 
 | Round | Prose words | IR claims | Findings | Per 1,000 words | Verdict |
 |---|---|---|---|---|---|
 | 1 | 3,368 | 216 | 20 | 5.9 | not readable (four own mismatches on five claims, C104 a step-6 mismatch that counts; contradictions 2; undefined terms 4) |
+| 2 | 3,413 | 220 | 6 | 1.8 | not readable (two own mismatches, C41 a step-6 mismatch that counts; contradiction 1; undefined terms 0) |
 
 ### Round 1, count 5, 2026-10-30
 
@@ -815,3 +816,27 @@ Claims check before the round: 11 changed claims, 0 missing, 1 stale (base: roun
 Awaiting restatement: finding 21, the step-6 fix on the C104 passage (the meta-review subject sentence); C208, the second fix of finding 13. This round's entry states whether the restatement matched on each.
 
 Signals script before the round: signal 1 fired on rounds 1 and 2, round 1 by finding 13 not held and both rounds by the C13 stale report; without the C13 report, signal 1 reads round 1 only. Signal 2 fired on C104 (count 4 round 1, count 5 round 1), already taken as finding 21. Signals 3 and 4 not fired. No line unparsed.
+
+Stranger model: claude-haiku-5-5, a fresh instance at the frugal tier. Prose 3,413 words by `wordCount` (the stranger's eye: about 5,000); IR 220 claims; 6 findings, 1.8 per thousand words. Restatement: two mismatches, each attributed by the stranger to its own restatement, each with a quoted sentence. Contradiction 1 (finding 5), undefined terms 0; verdict: not readable for RD-4, on the contradiction and on the step-6 mismatch on C41.
+
+The stranger's quoted sentences: for C41, "The bare pronouns are it, this, that, these and those, with no noun after."; for C217, "Prose is rendered from the IR when a rendering condition selects rendering."
+Mismatches: C41 (own; relied on C42), C217 (own; relied on C71)
+
+Signals script after the `Mismatches:` line: signal 2 fired on C41 (count 4 rounds 2 and 4, count 5 round 2) and on C104 (count 4 round 1, count 5 round 1). C41 is therefore a step-6 finding: a prose finding whatever the attribution, owed a structural fix, and under the override it counts against the first condition. C217 stood on no earlier line. Signal 1 as before round 2.
+
+Awaiting restatement from round 1: the C104 passage matched in part; the restatement omitted the limit trigger but did not disagree with it. Round 1's step-6 fix on C104 is recorded as matched on restatement. C208, the re-fix of finding 13, was named neither on the `Mismatches:` line nor in a finding.
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1 | own mismatch on C41: the restatement dropped the determiner phrases from the antecedent rule | restatement, step 6 | structural fix: C41 split; C41 states the antecedent rule for a bare pronoun, beside the pronoun list, and C231 states it for a bare determiner phrase, beside the determiner list; C35 stays after C41; `awaiting restatement` |
+| 2 | own mismatch on C217 | restatement | no prose defect, under the exception |
+| 3 | CK-04's sentence at 29 words | SP-02 | split C58; C232 "a term in the project's `docs/vocabulary.md` is also a project-specific term" |
+| 4 | "render map" first used at CK-15 before its definition | SP-04 | add the link to the vocabulary row, T11's definition site |
+| 5 | the input list stated as complete, then extended by two owner inputs | SP-25 | rephrase C110: "…, longest claim and two owner inputs"; C205 and C229: "The first owner input is …", "The second owner input is …" |
+| 6 | "The IR of a delivered report is a record" against the next sentence | SP-26 | declined: C135 is a decided claim stating the delivered IR's lifecycle state, and the next sentence is the duty that follows from it (C161, with its relation); a rendering drops no claim |
+
+Claims after fixes: 222. Prose after fixes: 3,443 words. Claims check after the fixes (base: round 2 prose): 7 changed claims, 0 missing, 0 stale. Round trip: 222 of 222.
+
+Decided claims the fixes changed, for the owner: C41 split into C41 and C231 (the step-6 structural fix); C58 split into C58 and C232; C110 names two owner inputs, decided by the owner's IR-only option of 2026-10-30; C205 and C229 renamed as the first and second owner inputs.
+
+Declined findings for round 3's brief: round 1's 6, 11 and 16, and round 2's 6, each with its reason.

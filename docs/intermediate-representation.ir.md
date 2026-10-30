@@ -161,11 +161,13 @@ C39. Every IR for RD-1 or RD-2 has an Asks section, holding asks or the single l
 
 C40. A claim names each referent inside itself. [decided: pipeline schema v1.2, 2026-10-25]
 
-C41. A bare pronoun or determiner phrase inside a claim is legal only when its antecedent is a noun phrase earlier in the claim that holds the phrase. [decided: pipeline schema v1.2, 2026-10-25]
+C41. A bare pronoun inside a claim is legal only when its antecedent is a noun phrase earlier in the claim that holds the pronoun. [decided: pipeline schema v1.2, 2026-10-25]
 
 C35. A reference from one claim to another is a relation, never a pronoun inside the claim. [decided: pipeline schema v1.2, 2026-10-25]
 
 C42. The bare pronouns are it, this, that, these and those, with no noun after. [decided: pipeline schema v1.2, 2026-10-25]
+
+C231. A bare determiner phrase inside a claim is legal only when its antecedent is a noun phrase earlier in the claim that holds the phrase. [decided: pipeline schema v1.2, 2026-10-25]
 
 C163. The bare determiner phrases are the word "the" followed by other, above, former, latter or same, with no noun after. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -203,7 +205,9 @@ C56. For CK-03, a semicolon or a final `, and` that follows a colon separates li
 
 C57. CK-04, undefined term, fires when a project-specific term appears in a claim and is neither a term element nor linked to a definition site. [decided: pipeline schema v1.2, 2026-10-25]
 
-C58. For CK-04, a project-specific term is a bolded term, a capitalized multi-word phrase that is not the name of a person, product or place, or a term in the project's `docs/vocabulary.md`. [decided: pipeline schema v1.2, 2026-10-25]
+C58. For CK-04, a project-specific term is a bolded term or a capitalized multi-word phrase that is not the name of a person, product or place. [decided: pipeline schema v1.2, 2026-10-25]
+
+C232. For CK-04, a term in the project's `docs/vocabulary.md` is also a project-specific term. [decided: pipeline schema v1.2, 2026-10-25]
 
 C59. CK-05, provenance, fires when a term, claim or cluster has no status, or a status without its required fields. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -397,13 +401,13 @@ C109. A `Meta-review: pending` line in the review record of an accepted delivera
 
 ### Rendering conditions
 
-C110. The inputs are the IR's reader, purpose, Normative header, claim count, proposed-term count, count of dependent asks and longest claim. [decided: pipeline branch point v1.1, 2026-10-25]
+C110. The inputs are the IR's reader, purpose, Normative header, claim count, proposed-term count, count of dependent asks, longest claim and two owner inputs. [decided: owner, 2026-10-30]
 
 C204. A dependent ask is an ask with a `Depends:` field. [decided: pipeline branch point v1.1, 2026-10-25]
 
-C205. A further input is whether the owner asked for a review. [decided: pipeline branch point v1.1, 2026-10-25]
+C205. The first owner input is whether the owner asked for a review. [decided: pipeline branch point v1.1, 2026-10-25]
 
-C229. Another input is whether the owner designated the document IR-only. [decided: owner, 2026-10-30]
+C229. The second owner input is whether the owner designated the document IR-only. [decided: owner, 2026-10-30]
 
 C111. A lint runs the mechanical checks in every case. [decided: pipeline schema v1.2, 2026-10-25]
 
