@@ -944,3 +944,15 @@ Claims after fixes: 230. Prose after fixes: 3,568 words. Claims check after the 
 Decided claims the fixes changed, for the owner: all are listed in A6. New rule for the owner: the `Meta-review: unparsed` line (C236 to C238).
 
 Declined findings for round 5's brief: round 1's 6, 11 and 16; round 2's 6; round 3's 7; each with its reason. Passages awaiting restatement in round 5: the verdict's conditions (C203, C227, C223, C224, C195) and the withdrawal rule (C194, C235).
+
+### Round 5, count 5, 2026-10-30
+
+Branch point version and commit: v1.9 as at communication-pipeline branch `branch-point-v1.9-cases-010-011`, its round 5 opening commit. Prose 3,568 words; IR 230 claims; unratified terms 3 (T24, T25, T26). Round 4's confirmation was not yet back when round 5 opened; its line is recorded in round 4's entry when it arrives.
+
+Claims check before the round: 14 changed claims, 0 missing, 0 stale (base: round 4 prose).
+
+Awaiting restatement: round 4's two step-6 fixes, the verdict's conditions (C203, C227, C223, C224, C195) and the withdrawal rule (C194, C235). This round's entry states whether the restatement matched on each.
+
+Declined findings carried in the brief: round 1's 6, 11 (the instance did not accept the decline) and 16; round 2's 6; round 3's 7; each with its reason.
+
+Signals script before the round: signal 1 fired on rounds 1 and 3 by fixes not held, without the C13 report; signal 2 fired on C104, C41, C223 and C194, all step-6 findings already taken; signals 3 and 4 not fired (round 4's contradiction, C1 against C131, sat on sentences no earlier fix touched); no line unparsed.
