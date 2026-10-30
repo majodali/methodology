@@ -286,5 +286,5 @@ findings were fixed before the next round. Each reviewer instance was
 fresh: rounds 1 to 10 were run by ten different haiku-model
 instances, dispatched by the reasoning role.
 
-Meta-review: pending. Subject from round 3. Instances: ten fresh
+Meta-review: delivered (pending at the close on 2026-10-26): [evaluation case 005](https://github.com/majodali/communication-pipeline/blob/main/eval/cases/005-meta-review-stranger-rounds-2026-10-26.md), 2026-10-26. Subject from round 3. Instances: ten fresh
 haiku-model subagents, one per round, named in the session log only.
