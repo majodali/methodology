@@ -1368,3 +1368,31 @@ Signals script after the `Mismatches:` line: signal 2 fires on C104 and C106 as 
 Claims after fixes: 274. Prose after fixes: 4,238 words. Claims check after the fix pass (base: round 2 prose): 14 changed claims, 0 missing, 0 stale; C250 and C251 removed. Round trip: 274 of 274. IR check: 0 violations, 0 warnings.
 
 Decided claims the fixes reworded, for the owner's list at the count's close: C194 (with C250), C235 (with C251), C225.
+
+Confirmation: 8 of 8 fixes hold. Not held: none. Declines accepted: 0 of 0. New defects: 5.
+
+The instance (a5ed0a53e139b94f9) read both files in full at fix commit f3098a0. The confirmable fixes are rows 3 to 10; rows 1 and 2 are step-6 fixes, not confirmed by the instance. The five new defects, four in the IR, fixed IR first before round 3 opens (case 012 change 6):
+
+- N1: ask A6 still named C250 and C251, and also C223, C224 and C255, in its sentence and its resolved line after their removal. The references now name the rules in words. `mtool ir check` did not flag them: CK-06 checks an ask's `Depends:` field only, and the field had already dropped them.
+- N2: R40 read "a withdrawn finding is no longer a finding", against C194 as now worded; R40 now reads the quoting qualifier, as R69 held.
+- N3: History's "carrier sentence" undefined; C299 reads "with a quoted prose sentence that carried the claim".
+- N4: C299 and C300 cited E5; they cite E8 (case 012).
+- N5: ask A8's list omitted C297 and C298; added to its sentence and its `Depends:` field.
+
+The owner adopted the branch point's ask A2 on 2026-10-30. The rule came from the branch point v1.10's round 1 finding 5. The matching sentence in Rounds, the limit and rework, C156, now reads the adopted wording: "At a readable verdict, the round's stranger instance confirms each fix other than a step-6 fix. A step-6 fix made in that round's fix pass stays `awaiting restatement`; the reasoning role lists its passage in the next count's round 1 brief." C156 reworded, with C301 and C302 added, all decided (owner, 2026-10-30). The owner's wording keeps its semicolon; `mtool style` reports it under SP-09. "Fix pass" is linked at this first use, and the definition sentence that follows drops its link.
+
+Claims check after the confirmation's fixes (base: the round 2 fix pass's prose): 5 changed claims, 0 missing, 1 stale. The stale claim is C300: its change was the evidence field, E5 to E8, and its sentence needs no change. Claims: 276. Prose: 4,273 words. Round trip: 276 of 276.
+
+### Round 3, count 6, 2026-10-30
+
+Branch point version and commit: v1.10 at communication-pipeline commit 387dc43. Round 3 reads the text at this round's opening commit, named in the brief. Prose 4,273 words; IR 276 claims; unratified terms 0.
+
+Passages awaiting restatement, listed in the brief for a one-sentence restatement (case 012 change 4): the verdict table under "The verdict" (C203, C227, C195, C265, C221, C194, C234, C235), round 2's step-6 fix.
+
+Declined findings carried in the brief from count 5: round 1's 6, 11 and 16; round 2's 6; round 3's 7; round 8's 8; round 10's 2. Each with its reason.
+
+Owner-pending findings: none.
+
+Forms added to the brief: none.
+
+Signals script before the round: signal 2 fires on C104 and C106, as recorded, and on C194, the claim round 2's first entry relied on, which recurred in count 5; signal 1 reads the stale report above in one round, so it does not fire; no line unparsed.
