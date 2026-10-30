@@ -985,6 +985,10 @@ Findings of count 5 for the owner, from the stranger's open points: the lifecycl
 
 Claims after fixes: 232. Prose after fixes: 3,640 words. Claims check after the fixes (base: round 5 prose): 8 changed claims, 0 missing, 0 stale. Round trip: 232 of 232.
 
+Confirmation: 2 of 2 fixes hold. Not held: none. Declines accepted: 0 of 0. New defects: 3.
+
+The two are findings 4 and 5; findings 1 to 3 are the step-6 table, awaiting restatement. The three new defects sit on the new table and its neighbours and are fixed in round 6's fix pass, on both texts where the table is shared: N1 (SP-25, the first row's Counts cell stands unqualified against the Does-not-count cell), N2 (a gap, rows 2 and 3 do not say what a withdrawal without a quoted reason does) and N3 (SP-03, the Rendering conditions subject sentence does not cover the IR-only row; two adjacent "decides").
+
 Decided claims the fixes changed, for the owner: C203, C223, C227, C195 and C88, added to A6 where not already listed; new rule C247.
 
 Declined findings for round 6's brief: round 1's 6, 11 and 16; round 2's 6; round 3's 7; each with its reason. Passages awaiting restatement in round 6: the verdict table (C203, C227, C223, C224, C195, C221, C234) and the withdrawal cells (C194, C235).
