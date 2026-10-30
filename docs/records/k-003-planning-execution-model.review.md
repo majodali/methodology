@@ -40,7 +40,7 @@ Changes to K-003 beyond the proposal's replacement text, each in the IR:
 | Round | Prose words | IR claims | Findings | Per 1,000 words | Verdict |
 |---|---|---|---|---|---|
 | 1 | 261 | 43 | 8 | 30.7 | not readable (one own mismatch on C8 and C9, quoted, not counting; contradiction 1; undefined terms 2) |
-| 2 | 268 | 43 | pending | pending | pending |
+| 2 | 268 | 43 | 5 | 18.7 | not readable (one own mismatch on C2 with T7, quoted, not counting; contradictions 2; undefined term 1) |
 
 ### Round 1, count 1, 2026-10-30
 
@@ -82,7 +82,7 @@ Neither re-fix changes a claim. Claims check after the re-fixes (base: the prose
 
 ### Round 2, count 1, 2026-10-30
 
-Branch point version and commit: v1.9 at communication-pipeline `main`, commit `d1c5b55`. Prose 268 words; IR 43 claims; unratified terms 0. Brief: `k003-r2-brief.md` in the reasoning role's scratchpad, naming the round 2 commit.
+Branch point version and commit: v1.9 at communication-pipeline `main`, commit `d1c5b55`. Prose 268 words; IR 43 claims; unratified terms 0. Brief: `k003-r2-brief.md` in the reasoning role's scratchpad, naming commit `d29bf2d`.
 
 Claims check before the round (base: round 1 prose at `0ba6aa9`): 4 changed claims (C3 to C6), 0 missing, 0 stale.
 
@@ -91,3 +91,25 @@ Awaiting restatement: the re-fixes of finding 4 and of new defect N1. This round
 Signals script before the round: no signal fired; no line unparsed.
 
 Carried into the brief: declines 5, 6 and 8 with their reasons, and the readability note. No passage is listed: no passage has drawn a mismatch that counts.
+
+Stranger: instance `ae595e6a0b5723585`, a fresh instance, at commit `d29bf2d`. Prose 268 words by `wordCount`; IR 43 claims; 5 findings, 18.7 per thousand words. Restatement: one mismatch, on C2 with the term T7 (referent), attributed by the stranger to its own restatement, with a quoted prose sentence. Contradictions 2 (findings 2 and 5), undefined term 1 (finding 3); verdict: not readable for RD-4. Fixed 2; declined 2; finding 1 needs no fix under the exception.
+
+Mismatches: C2 (own; relied on C2)
+
+The quoted sentence is in the stranger's report, which the Orchestrator holds. The Orchestrator reports that the quote carries an IR claim, so the own mismatch does not count. The "relied on" entry names C2, the claim of the referent clauses' passage; the Orchestrator corrects it if the quote carries another claim. The passage, the referent clauses with the appended sentence, draws its first mismatch here. Round 1's own mismatch was on another passage, the Cites line's declaration (C8 and C9). Signals script after the `Mismatches:` line: no signal fired.
+
+Awaiting restatement from round 1: the re-fix of finding 4 (the Applies line) and of new defect N1 ("the project-orchestrator's Project model"). Round 2 names neither on its `Mismatches:` line or in a finding.
+
+| # | Finding (shortened) | Kind | Decision |
+|---|---|---|---|
+| 1 | own mismatch on C2 with T7, the referent clauses and the exception | restatement | no fix: the quote carries an IR claim, so the mismatch does not count |
+| 2 | the title, "the single source of progress truth", against the appended sentence | SP-25 | declined: the reason of round 1, finding 7. The owner decided at P3-N007's gate on 2026-10-30 that the title and the referent clauses stand, with "instead" marking the exception; the title is the rule's name (C38). The instance offered to withdraw it if the rule records the precedence |
+| 3 | "implementation map" in the Motivated-by line before the Statement defines it | SP-04 | fixed: the Motivated-by line links "implementation map" to K-003's own anchor, whose Statement defines it |
+| 4 | "which" in the Cites line has no clear antecedent | SP-03 | fixed: "and the entry names the custom document types that make up the model, with no new Classification field", per C10 and C11 |
+| 5 | the referent clauses, "no other document may claim that role", against the appended sentence | SP-25 | declined: the reason of 2 |
+
+Two instances in a row, rounds 1 and 2, read the title and the referent clauses as contradicting the appended sentence. The Orchestrator is putting the marker to the owner now: "no other document may claim that role, except as the next sentence provides", and no change to the title (C38). The round 2 confirmation table carries findings 2 and 5 as declines the instance may withdraw by quoting the appended sentence.
+
+Claims after fixes: 43. Prose after fixes: 269 words. Claims check after the fixes (base: the prose at `d29bf2d`): 0 changed claims, 0 missing, 0 stale. No claim changed. Round trip: 43 of 43 claims mapped. IR checks: 0 violations, 0 warnings. `mtool audit form`: no findings. Fix commit: pending, the Orchestrator commits the staged pass.
+
+The confirmation line is written when the round 2 instance answers.
