@@ -745,5 +745,41 @@ Three gaps remain from the edit of 2026-10-30 for IR-only documents. This count 
 
 | Round | Prose words | IR claims | Findings | Per 1,000 words | Verdict |
 |---|---|---|---|---|---|
+| 1 | 3,368 | 216 | 20 | 5.9 | not readable (four own mismatches on five claims, C104 a step-6 mismatch that counts; contradictions 2; undefined terms 4) |
 
-### Round 1, count 5
+### Round 1, count 5, 2026-10-30
+
+Stranger model: claude-haiku-5-5, a fresh instance at the frugal tier. Prose 3,368 words (whitespace-separated words, comments stripped, by `wordCount` in the communication-pipeline's `scripts/ir.mjs`); IR 216 claims; 20 findings, 5.9 per thousand words. Restatement: four mismatches, each attributed by the stranger to its own restatement, each with a quoted prose sentence. Contradictions 2 (findings 12, 20), undefined terms 4 (findings 5, 7, 8, 13); verdict: not readable for RD-4. Accepted 17 and one step-6 finding; declined 3.
+
+Mismatches: C223 (own; relied on C223), C195 (own; relied on C195), C104 (own; relied on C104), C84 (own; relied on C220)
+
+The relied-on claims are read from the Orchestrator's report that each quoted sentence carries the IR's claim. The quoted sentences themselves are not in this record; the Orchestrator holds the stranger's report.
+
+Signals script after the `Mismatches:` line (branch point v1.9 step 6, case 010 change 2): signal 2 fired, "C104 in count 4 round 1; count 5 round 1". C84, C195 and C223 stood on no earlier count's line. Earlier counts' claims listed as information: C44, C93, C73, C74, C135 (count 4) and C41 (count 4, rounds 2 and 4). C104 is therefore a step-6 finding (finding 21 below): a prose finding whatever the attribution, owed a structural fix, and under the override it counts against the first condition. The first condition is not met in round 1. The own mismatches on C223, C195 and C84 do not count under the exception.
+
+The C41 passage (case 010 change 11): the stranger states that its restatement matched on the passage of C35 and C41, after C35's move into The referent rule. Count 4's step-6 fix holds.
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1 to 4 | own mismatches on C223, C195, C104, and C84 with C220 | restatement | C223, C195, C84: no prose defect under the exception; C104: finding 21 |
+| 5 | `delivered IR-only` unlinked in the Status row | SP-04 | add the link to the vocabulary row |
+| 6 | "Every project-specific term used in a claim appears as a term element" names no actor | SP-18 | declined: a sentence stating what the document contains is a form rule, not a duty |
+| 7 | "cluster" unlinked; "topic claim" undefined | SP-04 | add the link; add C226 "A topic claim is the claim that states the cluster's subject.", inferred by R53 |
+| 8 | "review record" in CK-14 before its definition | SP-04 | add the link |
+| 9 | `mtool ir check` with no link | SP-05 | add the link to methodology-tools |
+| 10 | "Normative text is rendered by the reasoning role, not by the paraphraser" repeats the renderer's definition | SP-26 | cut C84; C176 moves beside C220; R6, R17 and R30 point at C220 |
+| 11 | the IR-then-prose order stated four times | SP-26 | declined: each sentence is a rule for a distinct moment (a fix to rendered prose, the readable verdict, a not-readable verdict, the limit); they share the order and differ in trigger |
+| 12 | the first condition counts every mismatch; the next sentences exempt one | SP-25 | rephrase C203, add C227, rephrase C223 and C224: the first condition with one exception and one override, as one rule; the definitions of restatement mismatch, own mismatch and passage moved before it |
+| 13 | "passage" undefined; "recurred" with no round count | SP-04 | add C228 "A passage is the prose sentences that carry one claim or one cluster.", inferred by R55; C224 reads "on one passage in two rounds" |
+| 14 | "rendering condition" before its section | SP-09 | rephrase: a link to the Rendering conditions section for "(table below)" |
+| 15 | the input sentence holds two inputs | SP-01 | split; C229 "Another input is whether the owner designated the document IR-only." |
+| 16 | "A term, a decision or a register fact requires the IR." names no actor | SP-18 | declined: a condition statement, not a duty |
+| 17 | "The IR of a delivered report is not edited after delivery." names no actor | SP-18 | rephrase C161: "The reasoning role does not edit ..."; C161 inferred by R54 |
+| 18 | "The record is the communication-pipeline project's analysis" has no antecedent | SP-03 | rephrase: "The communication-pipeline project's analysis records the ten rounds." |
+| 19 | PR #51 unlinked at first use | SP-05 | add the link |
+| 20 | C13's Status values omit `delivered IR-only` while C218 requires it | SP-25 | rephrase C13 to hold the value; the prose row already held it; the render map gains C217 to C219 |
+| 21 | step 6: the mismatch on C104 in count 4 round 1 and count 5 round 1 | restatement, step 6 | structural fix: the subject sentence (C104) moves after the four signals and the reasoning role's check, and the ask to the owner (C106) moves beside the pending line, before "The owner may dispatch"; no claim changed; `awaiting restatement` |
+
+Claims after fixes: 219. Prose after fixes: 3,389 words. Claims check after the fixes (base: round 1 prose): 9 changed claims, 0 missing, 1 stale (C13), 1 removed (C84). C13 reads stale because the fix brought the IR to the prose's existing Status row; the prose sentence carried the value before the fix. Round trip: 219 of 219 claims mapped.
+
+Decided claims the fixes changed, for the owner: C84 cut (its rule is C220's); C161 gains the reasoning role and becomes inferred; C13 holds `delivered IR-only`, decided by the owner's IR-only option of 2026-10-30; C203, C223 and C224, with the new C227, join case 010 change 1's and case 011 change 1's texts into one rule.

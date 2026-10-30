@@ -95,7 +95,7 @@ C11. The Reader header holds one reader catalog identifier. [decided: pipeline s
 
 C12. The Purpose header holds `report` or `document`, then one sentence saying what the communication is for. [decided: pipeline schema v1.2, 2026-10-25]
 
-C13. The Status header holds one of `draft`, `reviewed`, `rendered`, `delivered`, optionally followed by a parenthesis holding the counts this specification asks the reasoning role to record. [decided: pipeline schema v1.2, 2026-10-25]
+C13. The Status header holds one of `draft`, `reviewed`, `rendered`, `delivered` or `delivered IR-only`, optionally followed by a parenthesis holding the counts this specification asks the reasoning role to record. [decided: owner, 2026-10-30]
 
 C14. The Source header names the conversation, document or event that occasioned the IR. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -136,6 +136,8 @@ C29. A claim may carry `evidence: E<n>`. [decided: pipeline schema v1.2, 2026-10
 C30. In a report to RD-1 or RD-2, a claim may carry `part: covered` or `part: changed`. [decided: pipeline schema v1.2, 2026-10-25]
 
 C31. A cluster element (`G`) holds `cluster:` and an ordered list of claim identifiers, with an optional topic claim first. [decided: pipeline schema v1.2, 2026-10-25]
+
+C226. A topic claim is the claim that states the cluster's subject. [inferred: R53]
 
 C32. A claim belongs to at most one cluster. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -265,8 +267,6 @@ C82. The renderer states an empty Asks section as "No asks." [inferred: R47]
 
 C83. The paraphraser appends a render map as one comment line reading `render map:` and, per claim, the paragraph it landed in, as `C1→¶1 C2→¶1 …`. [decided: pipeline schema v1.2, 2026-10-25]
 
-C84. Normative text is rendered by the reasoning role, not by the paraphraser. [decided: owner, 2026-10-25]
-
 C176. A paraphrase could change the force of normative text. [decided: owner, 2026-10-25]
 
 C85. When the reasoning role renders, it appends the render map in the paraphraser's form. [decided: owner, 2026-10-27]
@@ -293,7 +293,9 @@ C92. The stranger reviews the IR and the prose against the reader's readability 
 
 C93. In a round, the verdict is readable when three conditions hold. [decided: owner, 2026-10-27]
 
-C203. The first condition: the stranger's restatement of the problem, terms and decisions has no mismatch with the IR, whatever the stranger attributes a mismatch to. evidence: E4. [decided: owner, 2026-10-30]
+C203. The first condition: the stranger's restatement of the problem, terms and decisions has no mismatch with the IR. evidence: E4. [decided: owner, 2026-10-30]
+
+C227. Under the first condition, a mismatch counts whatever the stranger attributes it to, with one exception and one override. evidence: E4. [decided: owner, 2026-10-30]
 
 C221. The second and third conditions: the stranger finds no contradiction and no undefined term. [decided: owner, 2026-10-27]
 
@@ -301,9 +303,11 @@ C211. A restatement mismatch is a disagreement between the stranger's restatemen
 
 C222. An own mismatch is a restatement mismatch the stranger attributes to its own restatement. evidence: E5. [decided: owner, 2026-10-30]
 
-C223. An own mismatch does not count against the verdict when the stranger quotes a prose sentence that carries the IR's claim. evidence: E5. [decided: owner, 2026-10-30]
+C223. The first condition's exception: an own mismatch does not count when the stranger quotes a prose sentence that carries the IR's claim. evidence: E5. [decided: owner, 2026-10-30]
 
-C224. A restatement mismatch that recurred on one passage always counts against the verdict. evidence: E5. [inferred: R52]
+C228. A passage is the prose sentences that carry one claim or one cluster. [inferred: R55]
+
+C224. The first condition's override: a restatement mismatch on one passage in two rounds always counts. evidence: E5. [inferred: R52]
 
 C194. A contradiction or undefined-term finding withdrawn by the round's stranger instance at confirmation, on a reason quoting the prose, does not count against the verdict. evidence: E3. [decided: owner, 2026-10-29]
 
@@ -395,6 +399,8 @@ C204. A dependent ask is an ask with a `Depends:` field. [decided: pipeline bran
 
 C205. A further input is whether the owner asked for a review. [decided: pipeline branch point v1.1, 2026-10-25]
 
+C229. Another input is whether the owner designated the document IR-only. [decided: owner, 2026-10-30]
+
 C111. A lint runs the mechanical checks in every case. [decided: pipeline schema v1.2, 2026-10-25]
 
 C112. The first row of the Rendering conditions table whose condition holds decides. [decided: methodology PR #50, 2026-10-26]
@@ -467,7 +473,7 @@ C135. The IR of a delivered report is a record. [decided: pipeline schema v1.2, 
 
 C185. At delivery, the reasoning role sets the Status of a report's IR to `delivered`. [decided: pipeline schema v1.2, 2026-10-25]
 
-C161. The IR of a delivered report is not edited after delivery. [decided: pipeline schema v1.2, 2026-10-25]
+C161. The reasoning role does not edit the IR of a delivered report after delivery. [inferred: R54]
 
 C136. On ratification, the reasoning role adds a row with a `def-` anchor for the ratified term to the project vocabulary. [decided: methodology PR #48, 2026-10-26]
 
@@ -531,9 +537,9 @@ R4. C50 depends-on C49 because the indicator counts unratified terms.
 
 R5. C71 depends-on C110 because the conditions decide whether rendering happens.
 
-R6. C84 refines C72 because normative text swaps the renderer and keeps the rule of one claim per sentence.
+R6. C220 refines C72 because normative text swaps the renderer and keeps the rule of one claim per sentence.
 
-R30. C176 supports C84 because the risk to force is the reason for the renderer.
+R30. C176 supports C220 because the risk to force is the reason for the renderer.
 
 R31. C177 supports C121 because a footprint is a branch comparison.
 
@@ -569,7 +575,7 @@ R37. C190 refines C104 because each signal is one condition of the rule.
 
 R38. C189 depends-on C103 because the growth is read from the recorded word counts.
 
-R17. C113 depends-on C84 because the first row selects the reasoning role as renderer.
+R17. C113 depends-on C220 because the first row selects the reasoning role as renderer.
 
 R18. C116 depends-on C130 because the returning owner's report needs a state paragraph only the paraphraser writes.
 
@@ -618,6 +624,12 @@ R50. C202 depends-on C95 because the reasoning role records each finding's dispo
 R51. C223 refines C203 because the quoted sentence shows the prose carries the claim, so the mismatch lies in the restatement alone.
 
 R52. C224 refines C223 because the branch point's step 6 makes a mismatch on one passage in two rounds a prose finding, whatever the stranger attributes it to.
+
+R53. C226 refines C31 because a cluster renders as one paragraph (C174), and the claim placed first states the paragraph's subject; count 5 round 1 finding 7.
+
+R54. C161 depends-on C134 because the reasoning role is the actor that edits an IR; the source, the pipeline schema v1.2, names no actor; count 5 round 1 finding 17.
+
+R55. C228 refines C224 because a claim renders as one sentence (C72) and a cluster as one paragraph (C174), so the prose that carries one of them is the unit a mismatch recurs on; count 5 round 1 finding 13.
 
 ## Evidence
 
