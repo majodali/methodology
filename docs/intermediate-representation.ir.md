@@ -295,7 +295,7 @@ C143. The reasoning role adds words in a fix only to supply a missing definition
 
 ### Stranger rounds
 
-C88. A stranger review runs in rounds until a round returns the verdict readable or the count reaches the limit. [decided: owner, 2026-10-26]
+C88. The reasoning role runs a stranger review in rounds until a round returns the verdict readable or the count reaches the limit. [inferred: R65]
 
 C89. The limit is ten rounds. [decided: owner, 2026-10-26]
 
@@ -315,15 +315,15 @@ C228. A passage is the prose sentences that carry one claim or one cluster. [inf
 
 C233. Confirmation is the step at which the round's stranger instance says whether each fix holds. [inferred: R58]
 
-C203. The first condition: the restatement of the problem, terms and decisions has no mismatch with the IR that counts under the exception and override below. evidence: E4. [decided: owner, 2026-10-30; reworded in count 5, round 4]
+C203. The first condition: the restatement of the problem, terms and decisions has no mismatch with the IR that counts. evidence: E4. [decided: owner, 2026-10-30; reworded in count 5, rounds 1, 4 and 5]
 
-C227. Under the first condition, a mismatch counts whatever the stranger attributes it to, with one exception and one override. evidence: E4. [decided: owner, 2026-10-30]
+C227. Under the first condition, a mismatch counts whatever the stranger attributes it to. evidence: E4. [decided: owner, 2026-10-30; reworded in count 5, round 5]
 
-C223. The first condition's exception: an own mismatch does not count when the stranger quotes a prose sentence that carries the IR's claim. evidence: E5. [decided: owner, 2026-10-30]
+C223. The first condition's exception: an own mismatch does not count when the stranger quotes a prose sentence that carries an IR claim. evidence: E5. [decided: owner, 2026-10-30; reworded in count 5, round 5, to the reading adopted on 2026-10-30]
 
 C224. The first condition's override: a restatement mismatch on one passage in two rounds always counts. evidence: E5. [inferred: R52]
 
-C195. A restatement mismatch is not withdrawn at confirmation. evidence: E3. [decided: owner, 2026-10-29]
+C195. A restatement mismatch is never withdrawn at confirmation. evidence: E3. [decided: owner, 2026-10-29; reworded in count 5, round 5]
 
 C221. The second condition: the stranger finds no contradiction. [decided: owner, 2026-10-27; reworded in count 5, round 4]
 
@@ -401,7 +401,7 @@ C236. An unparsed line is a review-record line the communication-pipeline's sign
 
 C237. While a line is unparsed, the reasoning role writes `Meta-review: unparsed`, naming the line, in place of `pending` or `not indicated`. evidence: E6. [inferred: R63]
 
-C238. When the line parses, the reasoning role writes `pending` again for a subject text. evidence: E6. [inferred: R64]
+C238. When the unparsed line parses, the reasoning role writes `pending` again for a subject text. evidence: E6. [inferred: R64]
 
 C239. When the text is no subject and no line is unparsed, the reasoning role writes `Meta-review: not indicated`. [decided: owner, 2026-10-27; reworded in count 5, round 4]
 
@@ -419,7 +419,11 @@ C159. On delivery of the meta-review, the reasoning role sets the review record'
 
 C109. A `Meta-review: pending` line in the review record of an accepted deliverable is a finding of the next form audit under Article 9. [decided: owner, 2026-10-27]
 
+C247. A `Meta-review: unparsed` line in the review record of an accepted deliverable is a finding of the next form audit under Article 9. evidence: E6. [inferred: R67]
+
 ### Rendering conditions
+
+C246. The rendering conditions decide, for one IR, who renders its prose and whether the stranger rounds run. [inferred: R66]
 
 C204. A dependent ask is an ask with a `Depends:` field. [decided: pipeline branch point v1.1, 2026-10-25]
 
@@ -665,12 +669,6 @@ R56. C208 refines C224 because the second signal and the first condition's overr
 
 R57. C230 depends-on C220 because the renderer's definition holds the cut sentence's rule.
 
-R62. C236 refines C237 because the unparsed line rule names the line the script cannot read.
-
-R63. C237 refines C239 because case 010 change 7 and case 011 change 7 bar `Meta-review: not indicated` while a line is unparsed, so the record needs a line of its own; the branch point v1.9 states the same rule.
-
-R64. C238 refines C237 because `unparsed` stands in for `pending` only while the line stays unparsed.
-
 R58. C233 refines C156 because the instance's confirming of each fix is the step the term names.
 
 R59. C87 depends-on C86 because the reasoning role makes every fix to rendered prose, and the owner's ratification of 2026-10-27 named no actor.
@@ -678,6 +676,18 @@ R59. C87 depends-on C86 because the reasoning role makes every fix to rendered p
 R60. C143 depends-on C86 because the reasoning role makes every fix to rendered prose, and the owner's ratification of 2026-10-27 named no actor.
 
 R61. C199 depends-on C197 because the reasoning role fixes the final round's findings and writes the review record, and case 009 change 18 named no actor.
+
+R62. C236 refines C237 because the unparsed line rule names the line the script cannot read.
+
+R63. C237 refines C239 because case 010 change 7 and case 011 change 7 bar `Meta-review: not indicated` while a line is unparsed, so the record needs a line of its own; the branch point v1.9 states the same rule.
+
+R64. C238 refines C237 because `unparsed` stands in for `pending` only while the line stays unparsed.
+
+R65. C88 depends-on C91 because the reasoning role starts each round; the owner's ruling of 2026-10-26 named no actor.
+
+R66. C246 refines C71 because the table's rows decide when prose is rendered and by whom.
+
+R67. C247 refines C109 because an unparsed line hides whether the text is a subject, as a pending line shows one owed.
 
 ## Evidence
 
@@ -689,9 +699,9 @@ E3. communication-pipeline eval/cases/009-meta-review-vision-rounds-2026-10-29.m
 
 E4. communication-pipeline eval/cases/010-meta-review-ir-spec-count-4-2026-10-30.md, Outcome, changes 1, 5, 9, 11, 12 and 13; adopted by the owner on 2026-10-30 ("For cases 010 and 011 - go with all recommendations, all terms ratified.").
 
-E6. communication-pipeline eval/cases/010-meta-review-ir-spec-count-4-2026-10-30.md change 7 and eval/cases/011-meta-review-vision-count-2-2026-10-30.md change 7, the unparsed-line rule; the branch point v1.9's C67 states the same rule.
-
 E5. communication-pipeline eval/cases/011-meta-review-vision-count-2-2026-10-30.md, Outcome, change 1, and the term own mismatch; adopted and ratified by the owner on 2026-10-30.
+
+E6. communication-pipeline eval/cases/010-meta-review-ir-spec-count-4-2026-10-30.md change 7 and eval/cases/011-meta-review-vision-count-2-2026-10-30.md change 7, the unparsed-line rule; the branch point v1.9's C67 states the same rule.
 
 ## Asks
 
@@ -713,4 +723,4 @@ A4 resolved: ratified by the owner, 2026-10-27; vocabulary row added.
 
 A5. Ratify or strike the terms passage (T24), topic claim (T25) and confirmation (T26). Depends: C228, C226, C233.
 
-A6. Ratify or strike the new wording of the decided claims count 5 reworded or split in its rounds: C1; C13; C31 and C240; C41 and C231; C58 and C232; C87; C102; C110; C143; C161; C191 and C239; C194 and C235; C199; C203; C205; C208; C221 and C234; C223; C224; C227; C229. Depends: C1, C13, C31, C41, C58, C87, C102, C110, C143, C161, C191, C194, C199, C203, C205, C208, C221, C223, C224, C227, C229.
+A6. Ratify or strike the new wording of the decided claims count 5 reworded or split in its rounds: C1; C13; C31 and C240; C41 and C231; C58 and C232; C87; C102; C110; C143; C161; C191 and C239; C194 and C235; C199; C203; C205; C208; C221 and C234; C223; C224; C227; C229; C88; C195. New rules for the owner: the `Meta-review: unparsed` line (C236 to C238) and its form-audit finding (C247). Depends: C1, C13, C31, C41, C58, C87, C102, C110, C143, C161, C191, C194, C199, C203, C205, C208, C221, C223, C224, C227, C229, C88, C195, C237, C247.

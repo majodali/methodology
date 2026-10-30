@@ -749,6 +749,7 @@ Three gaps remain from the edit of 2026-10-30 for IR-only documents. This count 
 | 2 | 3,413 | 220 | 6 | 1.8 | not readable (two own mismatches, C41 a step-6 mismatch that counts; contradiction 1; undefined terms 0) |
 | 3 | 3,443 | 222 | 9 | 2.6 | not readable (two own mismatches, quoted; contradictions 0; undefined terms 3) |
 | 4 | 3,471 | 223 | 8 | 2.3 | not readable (three own mismatches, quoted, two step-6 passages that count; contradiction 1; undefined terms 3) |
+| 5 | 3,568 | 230 | 5 | 1.4 | not readable (three own mismatches on the two step-6 passages, counting under the override; contradictions 0; undefined terms 0) |
 
 ### Round 1, count 5, 2026-10-30
 
@@ -962,3 +963,28 @@ Declined findings carried in the brief: round 1's 6, 11 (the instance did not ac
 Signals script before the round: signal 1 fired on rounds 1 and 3 by fixes not held, without the C13 report; signal 2 fired on C104, C41, C223 and C194, all step-6 findings already taken; signals 3 and 4 not fired (round 4's contradiction, C1 against C131, sat on sentences no earlier fix touched); no line unparsed.
 
 Stranger brief: before round 5 the Orchestrator brought the brief's Readability verdict sentence to the current rule: three conditions, the first with the own-mismatch exception and the recurrence override, the second and third plain. In rounds 1 to 4 that sentence had quoted the round 1 rule. Later rounds' briefs start from the updated round 5 brief.
+
+Stranger model: claude-haiku-5-5, a fresh instance at the frugal tier, under the brief with the current verdict sentence. Prose 3,568 words by `wordCount`; IR 230 claims; 5 findings, 1.4 per thousand words. Restatement: three mismatches, each attributed by the stranger to its own restatement, each quoting the prose sentence that carries its claim. The restatement gave the verdict without the exception and the override, and applied withdrawal to all three conditions. Contradictions 0, undefined terms 0; verdict: not readable for RD-4, because both mismatch passages are step-6 passages and count under the override.
+
+The quoted sentences, as the round 5 text carries them: for C195, "A restatement mismatch is not withdrawn at confirmation."; for C194 (with C235), "A contradiction finding withdrawn by the round's stranger instance at confirmation, on a reason quoting the prose, does not count against the verdict."; for C227 (with C223 and C224), "The exception: an own mismatch does not count when the stranger quotes a prose sentence that carries the IR's claim."
+Mismatches: C195 (own; relied on C195), C194 (own; relied on C194), C227 (own; relied on C223)
+
+Signals script after the `Mismatches:` line: signal 2 fired on C223 (rounds 1, 4 and 5), C194 (rounds 3, 4 and 5), C195 (rounds 1 and 5) and C227 (rounds 3 and 5), with C104 and C41 as before. Both passages awaiting restatement, the verdict's conditions and the withdrawal rule, did not match: round 4's structural fixes did not hold on restatement. The referent passage (C41, C231, C35) matched.
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1 to 3 | own mismatches on C195, C194 with C235, and C227 with C223 and C224 | restatement, step 6 | second structural fix on both passages: the verdict becomes a table, one row per condition, with the columns "Counts against the verdict" and "Does not count against the verdict"; the exception and the override sit in the first condition's row, each withdrawal in its own condition's row, and C195 in the first row's "counts" column; the claims keep their identifiers, C203, C227 and C195 reworded to the table's cells; `awaiting restatement` |
+| 4 | Rendering conditions opens with the input list before the table that is its subject | SP-10 | add C246 first: "The rendering conditions decide, for one IR, who renders its prose and whether the stranger rounds run."; inferred by R66 |
+| 5 | "A stranger review runs in rounds until …" names no actor | SP-18 | rephrase C88: "The reasoning role runs a stranger review in rounds until …"; inferred by R65; added to A6 |
+
+This is the second structural fix on each passage. The reasoning role judged the table no worse a reading than the list: each row holds a condition with its qualifiers, so a restatement that takes a condition reads its row.
+
+Queued items applied in the same pass: round 4's N1 (C239 rendered with its condition: "When the text is no subject and no line is unparsed, the reasoning role writes `Meta-review: not indicated`."); N2 (C247, inferred by R67: "A `Meta-review: unparsed` line in the review record of an accepted deliverable is a finding of the next form audit under Article 9."); N3 (E6 after E5; R62 to R64 after R61); defect A, shared with the branch point (C238: "When the unparsed line parses, …"). The branch point's round 5 finding 7 applied here too: the exception reads "a prose sentence that carries an IR claim", the reading adopted on 2026-10-30 (C223).
+
+Findings of count 5 for the owner, from the stranger's open points: the lifecycle does not say how an IR-only document's IR is kept; the text does not say whether an unconfirmed fix stays in the delivered text. The exception's wording now follows the adopted reading, and the exception-reading finding stays on the owner's list with it.
+
+Claims after fixes: 232. Prose after fixes: 3,640 words. Claims check after the fixes (base: round 5 prose): 8 changed claims, 0 missing, 0 stale. Round trip: 232 of 232.
+
+Decided claims the fixes changed, for the owner: C203, C223, C227, C195 and C88, added to A6 where not already listed; new rule C247.
+
+Declined findings for round 6's brief: round 1's 6, 11 and 16; round 2's 6; round 3's 7; each with its reason. Passages awaiting restatement in round 6: the verdict table (C203, C227, C223, C224, C195, C221, C234) and the withdrawal cells (C194, C235).
