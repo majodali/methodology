@@ -39,8 +39,31 @@ Changes to K-003 beyond the proposal's replacement text, each in the IR:
 
 | Round | Prose words | IR claims | Findings | Per 1,000 words | Verdict |
 |---|---|---|---|---|---|
-| 1 | 261 | 43 | pending | pending | pending |
+| 1 | 261 | 43 | 8 | 30.7 | not readable (one own mismatch on C8 and C9, quoted, not counting; contradiction 1; undefined terms 2) |
 
 ### Round 1, count 1, 2026-10-30
 
-Brief: `k003-r1-brief.md` in the reasoning role's scratchpad, dispatched by the Orchestrator. Prose 261 words (whitespace-separated words of K-003 from its heading to the next rule's heading, the render map stripped, by `wordCount` in the communication-pipeline's `scripts/ir.mjs`); IR 43 claims. The stranger model, the findings, the decision on each finding, the `Mismatches:` line, the confirmation line and the verdict are recorded here when the stranger reports.
+Brief: `k003-r1-brief.md` in the reasoning role's scratchpad, naming commit `0ba6aa9`, dispatched by the Orchestrator. Stranger: instance `ace605047a865643a`, a fresh instance, at commit `0ba6aa9`. Prose 261 words (whitespace-separated words of K-003 from its heading to the next rule's heading, the render map stripped, by `wordCount` in the communication-pipeline's `scripts/ir.mjs`; the stranger's count: about 257); IR 43 claims; 8 findings, 30.7 per thousand words. Restatement: one mismatch, on C8 and C9, attributed by the stranger to its own restatement, with a quoted prose sentence that carries C8. Contradiction 1 (finding 7), undefined terms 2 (findings 2 and 3); verdict: not readable for RD-4. Fixed 3; declined 4; finding 1 needs no fix under the exception.
+
+Mismatches: C8 (own; relied on C8), C9 (own; relied on C8)
+
+The quoted sentence is the Cites line's declaration clause, which carries C8. The quote's exact words are in the stranger's report, which the Orchestrator holds. Under the first condition's exception the own mismatch does not count. Signals script after the `Mismatches:` line: no signal fired; C8 and C9 stand on no earlier line.
+
+Readability note, recorded without a fix: the stranger found that the prose states no problem. A rule states a norm and its reason; its form has no problem section.
+
+| # | Finding (shortened) | Kind | Decision |
+|---|---|---|---|
+| 1 | own mismatch on C8 and C9, the declaration in the Cites line | restatement | no fix: the quoted sentence carries C8, so the mismatch does not count |
+| 2 | "slice" in the Motivated-by line undefined | SP-04 | fixed: rephrased to avoid the project-orchestrator term: "with the record of its Project model at commit `86a1330` as the evidencing instance", the link on "record" kept (the slice record); C3, C4 and C5 reworded |
+| 3 | "verifying gate" in the Motivated-by line undefined | SP-04 | fixed: rephrased: "approved by the owner for carrying at that project's node P3-N007 on 2026-10-30", the link on "P3-N007" kept (the gate record); C6 reworded |
+| 4 | "C1+" in the Applies line has no link | SP-05 | fixed: the Cites line opens with the C-tier vocabulary row, "the criticality scale the Applies tag `[C1+]` reads: C1 and above". The Applies line itself stays unlinked: `mtool` parses every bracketed span on that line as an applicability tag, so a link there breaks the form audit |
+| 5 | "Checked entries MUST be rewritten ..." names no actor | SP-18 | declined: K-003's released v1.6.0 sentence, outside this amendment's scope; an actor added to a MUST sentence is an amendment of its own. Listed for the owner as a candidate for the next K-003 edit |
+| 6 | "entries MUST carry current stage designations" names no actor | SP-18 | declined: the reason of 5. Listed for the next K-003 edit |
+| 7 | the title and the referent clauses contradict the appended sentence | SP-25 | declined: the owner decided at P3-N007's gate on 2026-10-30 that the title and the referent clauses stand as drafted, "instead" marking the exception. A fresh stranger again reads them as a contradiction. Listed for the owner with the smallest marker that would resolve it, should the owner want it: "no other document may claim that role, except as the next sentence provides" |
+| 8 | the Rationale's dash clause ("— a mirror, not a duplication") is excess | SP-26 | declined: the reason of 5 (released text, outside scope). Listed for the next K-003 edit |
+
+Claims after fixes: 43. Prose after fixes: 266 words. Claims check after the fixes (base: round 1 prose, over K-003, the vocabulary rows and the release-register entry): 4 changed claims (C3 to C6), 0 missing, 0 stale. Round trip: 43 of 43 claims mapped. IR checks: 0 violations, 0 warnings. `mtool audit form`: no findings. Fix commit: named in the confirmation table sent to the Orchestrator.
+
+Decided claims the fixes changed, for the owner: C3, C4 and C5 name the record of the Project model at commit `86a1330` in place of the slice; C6 names node P3-N007 without its gate's stage.
+
+Confirmation: pending.

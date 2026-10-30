@@ -2,7 +2,7 @@
 
 Reader: RD-4 (a fresh agent session) reading K-003 (the Backlog is the single source of progress truth) as amended; the owner adjudicates the amendment.
 Purpose: document. The amendment of K-003 in place, by which a project whose Classification declares a planning/execution model takes that model as its referent for what is done and what is next, with the vocabulary rows and the release-register entry the amendment needs.
-Status: rendered (count 1, round 1; rendered by the reasoning role on 2026-10-30, not yet reviewed; unratified terms 0)
+Status: rendered (count 1, round 1 not readable, 3 findings fixed and 4 declined, confirmation pending; rendered by the reasoning role on 2026-10-30; unratified terms 0)
 Source: the project-orchestrator proposal "A declared planning/execution model is the source of progress truth" and its IR (93 claims, 17 terms) at project-orchestrator commit 25e92e8, approved for carrying by the owner at node P3-N007's verifying gate on 2026-10-30; the owner's decision of 2026-10-30 that the proposal lands in this repository as a methodology change, by pull request.
 Normative: yes
 Footprint: docs/rules/knowledge.md; docs/vocabulary.md; docs/releases.md; docs/records/k-003-planning-execution-model.ir.md; docs/records/k-003-planning-execution-model.review.md
@@ -55,13 +55,13 @@ C2. The appended sentence is an exception to the two referent clauses before it,
 
 ### The header fields
 
-C3. K-003's Motivated-by line gains a citation of the evidencing instance, the slice of the project-orchestrator Project model at commit 86a1330. evidence: E1, E3. [decided: owner, 2026-10-30]
+C3. K-003's Motivated-by line gains a citation of the evidencing instance, the record of the project-orchestrator Project model at commit 86a1330. evidence: E1, E3. [decided: owner, 2026-10-30]
 
-C4. The slice rendered the implementation map and the list of what is next. evidence: E3. [decided: project-orchestrator slice record at commit 86a1330]
+C4. The project-orchestrator Project model at commit 86a1330 rendered the implementation map and the list of what is next. evidence: E3. [decided: project-orchestrator slice record at commit 86a1330]
 
-C5. The slice's renderings were compared with the project-orchestrator Backlog. evidence: E3. [decided: project-orchestrator slice record at commit 86a1330]
+C5. The renderings of the project-orchestrator Project model at commit 86a1330 were compared with the project-orchestrator Backlog. evidence: E3. [decided: project-orchestrator slice record at commit 86a1330]
 
-C6. K-003's Motivated-by line names the project-orchestrator proposal and the owner's approval of the proposal for carrying at node P3-N007's verifying gate on 2026-10-30. evidence: E4. [proposed: this IR]
+C6. K-003's Motivated-by line names the project-orchestrator proposal and the owner's approval of the proposal for carrying at project-orchestrator node P3-N007 on 2026-10-30. evidence: E4. [proposed: this IR]
 
 C7. K-003's Cites line names Constitution Article 7 for the Custom definitions section in which a Classification declares a planning/execution model. [proposed: this IR]
 
