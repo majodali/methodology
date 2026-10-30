@@ -221,4 +221,4 @@ Confirmation: 2 of 2 fixes hold. Not held: none. Declines accepted: 0 of 0. New 
 
 The count ends readable at round 3. Signals (scripts/signals.mjs of the communication-pipeline, run 2026-10-29): signal 1 fired (fixes not held in rounds 1 and 2); signal 2 fired (C26 on the Mismatches lines of rounds 1 and 2, C25 of rounds 2 and 3); signal 3 not fired (16.1 to 16.24 words per claim); signal 4 not fired.
 
-Meta-review: pending (signals 1 and 2).
+Meta-review: delivered (signals 1 and 2; pending at the close on 2026-10-29): [evaluation case 011](https://github.com/majodali/communication-pipeline/blob/main/eval/cases/011-meta-review-vision-count-2-2026-10-30.md), 2026-10-30.
