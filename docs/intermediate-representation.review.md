@@ -889,6 +889,10 @@ Awaiting restatement from round 2: the restatement matched on the referent rule 
 
 Claims after fixes: 223. Prose after fixes: 3,471 words. Claims check after the fixes (base: round 3 prose): 4 changed claims, 0 missing, 0 stale. Round trip: 223 of 223.
 
+Confirmation: 4 of 7 fixes hold. Not held: 3, 5, 8. Declines accepted: 1 of 1. New defects: 2.
+
+The seven fixes are 3, 4 (two claims, C87 and C143), 5, 6, 8 and 9. The instance held the prose of 3, 4, 6, 8 and 9 and reported the IR behind the prose on 3, 5 and 8. The Orchestrator's message gave the count as 5 of 7; the reasoning role records 4 of 7, the count the not-held list implies. On 5 and 8 the IR at this round's fix commit (2b7627d) already held C233 at first use and C204 before C110; the instance also found no term element for confirmation, which is true. Finding 3 stands for the IR: C25 uses "project-specific term" before C58 defines it. These, and the new defect on the provenance of reworded claims, are fixed in round 4's fix pass.
+
 Decided claims the fixes changed, for the owner: C87 and C143 (the fix discipline ratified on 2026-10-27) and C199 (case 009 change 18) gain the reasoning role as actor and become inferred.
 
 Declined findings for round 4's brief: round 1's 6, 11 and 16; round 2's 6; round 3's 7; each with its reason.
