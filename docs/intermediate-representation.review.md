@@ -1255,3 +1255,34 @@ The owner's decision, 2026-10-30: count 5 accepted and delivered (methodology PR
 8. Passed to the meta-review, which the owner dispatched with the branch point's as one task.
 
 Meta-review: delivered (signals 1, 2 and 4): [evaluation case 012](https://github.com/majodali/communication-pipeline/blob/main/eval/cases/012-meta-review-branch-point-v1.9-and-ir-spec-count-5-2026-10-30.md), 2026-10-30.
+
+## Count 6, 2026-10-30: evaluation case 012
+
+Inputs: the owner's adoption on 2026-10-30 of communication-pipeline evaluation case 012 (all fifteen changes adopted as recommended; terms by the default). Eleven adopted changes amend this specification: changes 1, 2, 4 to 9, 11, 13 and 14. Change 3 is no change; change 10 is the branch point's; change 12 is the signals script's; change 15 is the evaluation corpus README's. Reader RD-4. Disposition D3 (Normative: yes): the reasoning role rendered the amended passages from the IR. Text reviewed: `docs/intermediate-representation.md` whole; the IR covers the whole text.
+
+Branch point version and commit the count runs under: v1.10, communication-pipeline commit 387dc43 on branch `branch-point-v1.10-case-012`, the changes the owner adopted before this count. The pipeline's own rounds on v1.10 run in parallel.
+
+Changes to the IR. Each claim that renders a case 012 change is proposed, with the change number as its source, under ask A8. C203 and C227 reworded: every restatement mismatch counts. C222 (own mismatch), C223 (the exception), C224 (the override) and C255 (the override governs the exception) struck, with relations R51, R52 and R75. C263 and C264 added, the omission, with C265 inferred by R80. C266 to C268 added, the one-sentence restatement of each listed passage. C269 to C275 added: the fix pass, the claims check after it, the fix commit read in full, the new defect and the next round's opening. C276 to C278 added, a new defect at the final confirmation. C279 to C283 added in the fix rules: no new rule in a fix; a reworded decided claim keeps its source. C189 (the third signal) struck, with R36 and R38; C284 and C288 added; C105 reads "the signals". C252 and C253 read the claims-check line after a fix pass. C285 and C286 added to the History. R55 and R56 retargeted from C224 to C208 and C228. Terms T30 to T35 added; T23 points to the pipeline's vocabulary row. 245 claims before the count's edit; 265 after.
+
+Not changed: the own-mismatch vocabulary row. Neither text uses the term outside its history after count 6; ask A9 asks the owner to strike or keep it. The vocabulary row *meta-review signal* now reads three conditions.
+
+Sentences over 25 words before round 1: 2, the Status line (54 words, `mtool style`) and the Reader paragraph's assumed-knowledge sentence (26 words). Both are resolved: each sentence of the Status line is under 25 words, and the assumed-knowledge sentence drops "including its Readers table", which the Reader line's reader catalog link already carries. At round 1: 0.
+
+Lint before round 1: IR checks 0 violations, 0 warnings.
+
+### Curve, count 6
+
+| Round | Prose words | IR claims | Findings | Per 1,000 words | Verdict |
+|---|---|---|---|---|---|
+
+### Round 1, count 6, 2026-10-30
+
+Branch point version and commit: v1.10 at communication-pipeline commit 387dc43. Prose 4,129 words (whitespace-separated words, comments stripped, by `wordCount` in the communication-pipeline's `scripts/ir.mjs`); IR 265 claims; unratified terms 0.
+
+Claims check: none before round 1; under case 012 change 13 the check runs after each fix pass. The edit's claims check against main: 30 changed claims, 0 missing, 0 stale; C189, C222, C223, C224 and C255 removed.
+
+Passages awaiting restatement: none; every passage that awaited restatement in count 5 matched by its round 10.
+
+Declined findings carried in the brief from count 5, where the text under them stands: round 1's 6, 11 and 16; round 2's 6; round 3's 7; round 8's 8; round 10's 2, its reason restated without the shared table, which v1.10 removes from the branch point. Each with its reason. Not carried: round 7's new defect 4, because "The override governs the exception." is struck; round 8's new defects 4 to 6, stale reads with no text under them.
+
+Signals script before the round: no round of count 6 recorded yet; nothing to read.
