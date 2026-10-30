@@ -1274,6 +1274,7 @@ Lint before round 1: IR checks 0 violations, 0 warnings.
 
 | Round | Prose words | IR claims | Findings | Per 1,000 words | Verdict |
 |---|---|---|---|---|---|
+| 1 | 4,129 | 265 | 8 | 1.9 | not readable (two mismatches, both on step-6 passages; contradictions 0; undefined terms 0) |
 
 ### Round 1, count 6, 2026-10-30
 
