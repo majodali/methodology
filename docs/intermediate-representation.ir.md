@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: reviewed (count 5 reached the limit at round 10 on 2026-10-30, not readable, awaiting the owner's decision on delivery, rework or withdrawal; edited 2026-10-30 for communication-pipeline evaluation cases 010 and 011, rendered by the reasoning role; count 4 round 4 readable 2026-10-29; declared 5, changed 5, surprises 0, misses 0; unratified terms 3)
+Status: delivered (count 5 accepted and delivered by the owner 2026-10-30, after reaching the limit at round 10; edited 2026-10-30 for communication-pipeline evaluation cases 010 and 011, rendered by the reasoning role; count 4 round 4 readable 2026-10-29; declared 5, changed 5, surprises 0, misses 0; unratified terms 0)
 Source: the owner's adoption of 2026-10-30 of communication-pipeline evaluation cases 010 and 011's recommended changes, of which case 010's changes 1, 5, 9, 11, 12 and 13 and case 011's change 1 amend this specification (count 5); the owner's adoption of 2026-10-29 of communication-pipeline evaluation case 009's nineteen changes, of which changes 2, 14, 15 and 18 amend this specification (count 4); the owner's decision of 2026-10-27 on signal-based meta-review triggers (count 3); communication-pipeline evaluation case 008 (owner decision of 2026-10-27, change 5) for count 2; for count 1, docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md; docs/releases.md; docs/vocabulary.md
@@ -55,19 +55,23 @@ T22. Own mismatch. defined-at: vocabulary.md#def-own-mismatch [decided: owner, 2
 
 T23. Claims check. defined-at: https://github.com/majodali/communication-pipeline/blob/main/docs/branch-point.md#rounds [decided: owner, 2026-10-30]
 
-T24. Passage: the prose sentences that carry one claim or one cluster. [proposed: this IR]
+T24. Passage. defined-at: vocabulary.md#def-passage [decided: owner, 2026-10-30]
 
-T25. Topic claim: the claim that states a cluster's subject. [proposed: this IR]
+T25. Topic claim. defined-at: vocabulary.md#def-topic-claim [decided: owner, 2026-10-30]
 
-T26. Confirmation: the step at which the round's stranger instance says whether each fix holds. [proposed: this IR]
+T26. Confirmation. defined-at: vocabulary.md#def-confirmation [decided: owner, 2026-10-30]
 
 T27. Project-specific term. defined-at: intermediate-representation.md#project-specific-term [decided: pipeline schema v1.2, 2026-10-25]
+
+T28. Withdrawal. defined-at: vocabulary.md#def-withdrawal [decided: owner, 2026-10-30]
+
+T29. Decision on a finding. defined-at: vocabulary.md#def-decision-on-a-finding [decided: owner, 2026-10-30]
 
 ## Claims
 
 ### Purpose and scope
 
-C1. For each text that requires an IR, the reasoning role writes the IR before any prose of the text exists. [decided: owner, 2026-10-24; reworded in count 5, rounds 4, 7, 8 and 9]
+C1. For each text that requires an IR, the reasoning role writes the IR before any prose of the text exists. [decided: owner, 2026-10-30]
 
 C4. The IR prevents three failure modes of directly written prose: claims compressed into one sentence, referents left unnamed, and conversation terms used as if defined. [decided: owner, 2026-10-24]
 
@@ -101,7 +105,7 @@ C10. The Claims section may use any sub-headings. [decided: pipeline schema v1.2
 
 C11. The Reader header holds one reader catalog identifier. [decided: pipeline schema v1.2, 2026-10-25]
 
-C12. The Purpose header holds `report` or `document`, then one sentence saying what the text is for. [decided: pipeline schema v1.2, 2026-10-25; reworded in count 5, round 7]
+C12. The Purpose header holds `report` or `document`, then one sentence saying what the text is for. [decided: owner, 2026-10-30]
 
 C13. The Status header holds one of `draft`, `reviewed`, `rendered`, `delivered` or `delivered IR-only`, optionally followed by a parenthesis holding the counts this specification asks the reasoning role to record. [decided: owner, 2026-10-30]
 
@@ -127,7 +131,7 @@ C21. An identifier is a kind letter and a number, unique within the IR. [decided
 
 C22. A split claim takes a new number, never a suffix. [decided: pipeline schema v1.2, 2026-10-25]
 
-C23. A term element (`T`) holds the word or phrase and either `defined-at:` with a link to its definition site or its meaning in the text. [decided: pipeline schema v1.2, 2026-10-25; reworded in count 5, round 7]
+C23. A term element (`T`) holds the word or phrase and either `defined-at:` with a link to its definition site or its meaning in the text. [decided: owner, 2026-10-30]
 
 C24. A term is defined once per IR. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -137,7 +141,7 @@ C27. A term without a definition site has status proposed. [decided: methodology
 
 C152. When a report delivers the text, the reasoning role lists each proposed term for ratification in that report. [inferred: R49]
 
-C257. When the IR is the deliverable, the IR's own Asks section lists each proposed term for ratification. evidence: E7. [proposed: this IR]
+C257. When the IR is the deliverable, the IR's own Asks section lists each proposed term for ratification. evidence: E7. [decided: owner, 2026-10-30]
 
 C28. A claim element (`C`) makes one statement. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -145,11 +149,11 @@ C29. A claim may carry `evidence: E<n>`. [decided: pipeline schema v1.2, 2026-10
 
 C30. In a report to RD-1 or RD-2, a claim may carry `part: covered` or `part: changed`. [decided: pipeline schema v1.2, 2026-10-25]
 
-C31. A cluster element (`G`) holds `cluster:` and an ordered list of claim identifiers. [decided: pipeline schema v1.2, 2026-10-25; reworded in count 5, round 4]
+C31. A cluster element (`G`) holds `cluster:` and an ordered list of claim identifiers. [decided: owner, 2026-10-30]
 
-C226. A topic claim is the claim that states the cluster's subject. [inferred: R53]
+C226. A topic claim is the claim that states the cluster's subject. [decided: owner, 2026-10-30]
 
-C240. A cluster's list may open with a topic claim. [decided: pipeline schema v1.2, 2026-10-25; reworded in count 5, round 4]
+C240. A cluster's list may open with a topic claim. [decided: owner, 2026-10-30]
 
 C32. A claim belongs to at most one cluster. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -171,27 +175,27 @@ C40. A claim names each referent inside itself. [decided: pipeline schema v1.2, 
 
 C42. The bare pronouns are it, this, that, these and those, with no noun after. [decided: pipeline schema v1.2, 2026-10-25]
 
-C41. A bare pronoun inside a claim is legal only when its antecedent is a noun phrase earlier in the claim that holds the pronoun. [decided: pipeline schema v1.2, 2026-10-25]
+C41. A bare pronoun inside a claim is legal only when its antecedent is a noun phrase earlier in the claim that holds the pronoun. [decided: owner, 2026-10-30]
 
 C35. A reference from one claim to another is a relation, never a pronoun inside the claim. [decided: pipeline schema v1.2, 2026-10-25]
 
 C163. The bare determiner phrases are the word "the" followed by other, above, former, latter or same, with no noun after. [decided: pipeline schema v1.2, 2026-10-25]
 
-C231. A bare determiner phrase inside a claim is legal only when its antecedent is a noun phrase earlier in the claim that holds the phrase. [decided: pipeline schema v1.2, 2026-10-25]
+C231. A bare determiner phrase inside a claim is legal only when its antecedent is a noun phrase earlier in the claim that holds the phrase. [decided: owner, 2026-10-30]
 
 C43. A determiner followed by the noun it names, such as "this specification", is not bare. [decided: methodology PR #49, 2026-10-26]
 
 ### Provenance
 
-C259. Terms, claims and clusters carry a provenance status. [decided: pipeline schema v1.2, 2026-10-25; split from C44 in count 5, round 8; C260 merged into it in round 9; the merge reversed in round 10]
+C259. Terms, claims and clusters carry a provenance status. [decided: owner, 2026-10-30]
 
-C260. No other element carries a provenance status. [decided: pipeline schema v1.2, 2026-10-25; split from C44 in count 5, round 8; restored in round 10]
+C260. No other element carries a provenance status. [decided: owner, 2026-10-30]
 
-C44. Each term, claim and cluster ends with one status in square brackets. [decided: pipeline schema v1.2, 2026-10-25; reworded in count 5, round 8]
+C44. Each term, claim and cluster ends with one status in square brackets. [decided: owner, 2026-10-30]
 
 C165. A relation is the reasoning role's inference by definition. [decided: pipeline schema v1.2, 2026-10-25]
 
-C46. The status decided, written `[decided: <who>, <date>]` or `[decided: <source>]`, marks an element ratified by the human owner or quoted from a document the human owner ratified. [decided: pipeline schema v1.2, 2026-10-25; reworded in count 5, round 9]
+C46. The status decided, written `[decided: <who>, <date>]` or `[decided: <source>]`, marks an element ratified by the human owner or quoted from a document the human owner ratified. [decided: owner, 2026-10-30]
 
 C47. The status proposed, written `[proposed: <IR id or "this IR">]`, marks an element put forward and awaiting ratification. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -217,9 +221,9 @@ C56. For CK-03, a semicolon or a final `, and` that follows a colon separates li
 
 C57. CK-04, undefined term, fires when a project-specific term appears in a claim and is neither a term element nor linked to a definition site. [decided: pipeline schema v1.2, 2026-10-25]
 
-C58. For CK-04, a project-specific term is a bolded term or a capitalized multi-word phrase that is not the name of a person, product or place. [decided: pipeline schema v1.2, 2026-10-25]
+C58. For CK-04, a project-specific term is a bolded term or a capitalized multi-word phrase that is not the name of a person, product or place. [decided: owner, 2026-10-30]
 
-C232. For CK-04, a term in the project's `docs/vocabulary.md` is also a project-specific term. [decided: pipeline schema v1.2, 2026-10-25]
+C232. For CK-04, a term in the project's `docs/vocabulary.md` is also a project-specific term. [decided: owner, 2026-10-30]
 
 C59. CK-05, provenance, fires when a term, claim or cluster has no status, or a status without its required fields. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -251,7 +255,7 @@ C71. Prose is rendered from the IR when a rendering condition selects rendering.
 
 C72. The paraphraser renders one claim as one sentence. [decided: pipeline schema v1.2, 2026-10-25]
 
-C174. The paraphraser renders one cluster as one paragraph in the cluster's order, except a cluster whose claims fall under different parts. [decided: pipeline schema v1.2, 2026-10-25; reworded in count 5, round 10]
+C174. The paraphraser renders one cluster as one paragraph in the cluster's order, except a cluster whose claims fall under different parts. [decided: owner, 2026-10-30]
 
 C73. The paraphraser introduces no new claim. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -267,7 +271,7 @@ C76. The renderer links a term with a definition site at its first use in the un
 
 C173. The unit for P-008 is the whole text for a report and the section for a document. [decided: methodology PR #48, 2026-10-26]
 
-C164. The renderer does not link a later use of a term with a definition site in the unit. [inferred: R70]
+C164. The renderer does not link a later use of a term with a definition site in the unit. [decided: owner, 2026-10-30]
 
 C77. The renderer defines a term the IR introduces in a sentence of its own before its first use. [inferred: R45]
 
@@ -281,7 +285,7 @@ C80. Without a `part:` field, a decided claim renders under *What is already cov
 
 C154. Without a `part:` field, a proposed or inferred claim renders under *What changed*. [decided: methodology PR #50, 2026-10-26]
 
-C256. The renderer renders a cluster whose claims fall under different parts as one paragraph per part. [proposed: this IR]
+C256. The renderer renders a cluster whose claims fall under different parts as one paragraph per part. [decided: owner, 2026-10-30]
 
 C81. When rendering, the renderer follows the style guide's rows for the IR's reader. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -297,13 +301,13 @@ C86. The reasoning role makes a fix to rendered prose in the IR first. [decided:
 
 C169. After a fix to the IR, the reasoning role renders the prose again or edits it to match the IR. [decided: owner, 2026-10-27]
 
-C87. The reasoning role rephrases or removes words in a fix to prose before it adds words. evidence: E2. [inferred: R59]
+C87. The reasoning role rephrases or removes words in a fix to prose before it adds words. evidence: E2. [decided: owner, 2026-10-30]
 
-C143. The reasoning role adds words in a fix only to supply a missing definition or a missing referent. evidence: E2. [inferred: R60]
+C143. The reasoning role adds words in a fix only to supply a missing definition or a missing referent. evidence: E2. [decided: owner, 2026-10-30]
 
 ### Stranger rounds
 
-C88. The reasoning role runs a stranger review in rounds until a round returns the verdict readable or the count reaches the limit. [inferred: R65]
+C88. The reasoning role runs a stranger review in rounds until a round returns the verdict readable or the count reaches the limit. [decided: owner, 2026-10-30]
 
 C89. The limit is ten rounds. [decided: owner, 2026-10-26]
 
@@ -319,43 +323,43 @@ C211. A restatement mismatch is a disagreement between the stranger's restatemen
 
 C222. An own mismatch is a restatement mismatch the stranger attributes to its own restatement. evidence: E5. [decided: owner, 2026-10-30]
 
-C228. A passage is the prose sentences that carry one claim or one cluster. [inferred: R55]
+C228. A passage is the prose sentences that carry one claim or one cluster. [decided: owner, 2026-10-30]
 
-C233. Confirmation is the step at which the round's stranger instance says whether each fix holds. [inferred: R58]
+C233. Confirmation is the step at which the round's stranger instance says whether each fix holds. [decided: owner, 2026-10-30]
 
-C258. At confirmation, the round's stranger instance withdraws a finding other than a restatement mismatch by saying the finding no longer applies to the prose. [inferred: R77]
+C258. At confirmation, the round's stranger instance withdraws a finding other than a restatement mismatch by saying the finding no longer applies to the prose. [decided: owner, 2026-10-30]
 
-C203. The first condition: the restatement of the problem, terms and decisions has no mismatch with the IR that counts. evidence: E4. [decided: owner, 2026-10-30; reworded in count 5, rounds 1, 4 and 5]
+C203. The first condition: the restatement of the problem, terms and decisions has no mismatch with the IR that counts. evidence: E4. [decided: owner, 2026-10-30]
 
-C227. Under the first condition, a mismatch counts whatever the stranger attributes it to, except as the first condition's exception states. evidence: E4. [decided: owner, 2026-10-30; reworded in count 5, rounds 5 and 6]
+C227. Under the first condition, a mismatch counts whatever the stranger attributes it to, except as the first condition's exception states. evidence: E4. [decided: owner, 2026-10-30]
 
-C223. The first condition's exception: an own mismatch does not count when the stranger quotes a prose sentence that carries an IR claim. evidence: E5. [decided: owner, 2026-10-30; reworded in count 5, round 5, to the reading adopted on 2026-10-30]
+C223. The first condition's exception: an own mismatch does not count when the stranger quotes a prose sentence that carries an IR claim. evidence: E5. [decided: owner, 2026-10-30]
 
-C224. The first condition's override: a restatement mismatch on one passage in any two rounds of the text's counts always counts. evidence: E5. [inferred: R52]
+C224. The first condition's override: a restatement mismatch on one passage in any two rounds of the text's counts always counts. evidence: E5. [decided: owner, 2026-10-30]
 
-C255. The first condition's override governs its exception. [inferred: R75]
+C255. The first condition's override governs its exception. [decided: owner, 2026-10-30]
 
-C195. The round's stranger instance never withdraws a restatement mismatch at confirmation. evidence: E3. [inferred: R68]
+C195. The round's stranger instance never withdraws a restatement mismatch at confirmation. evidence: E3. [decided: owner, 2026-10-30]
 
-C221. The second condition: the stranger finds no contradiction. [decided: owner, 2026-10-27; reworded in count 5, round 4]
+C221. The second condition: the stranger finds no contradiction. [decided: owner, 2026-10-30]
 
-C194. A contradiction finding withdrawn by the round's stranger instance at confirmation, on a reason quoting the prose, does not count against the verdict. evidence: E3. [decided: owner, 2026-10-29; reworded in count 5, round 4]
+C194. A contradiction finding withdrawn by the round's stranger instance at confirmation, on a reason quoting the prose, does not count against the verdict. evidence: E3. [decided: owner, 2026-10-30]
 
-C250. A contradiction finding withdrawn on a reason that does not quote the prose still counts. [inferred: R69]
+C250. A contradiction finding withdrawn on a reason that does not quote the prose still counts. [decided: owner, 2026-10-30]
 
-C234. The third condition: the stranger finds no undefined term. [decided: owner, 2026-10-27; reworded in count 5, round 4]
+C234. The third condition: the stranger finds no undefined term. [decided: owner, 2026-10-30]
 
-C235. An undefined-term finding withdrawn by the round's stranger instance at confirmation, on a reason quoting the prose, does not count against the verdict. evidence: E3. [decided: owner, 2026-10-29; reworded in count 5, round 4]
+C235. An undefined-term finding withdrawn by the round's stranger instance at confirmation, on a reason quoting the prose, does not count against the verdict. evidence: E3. [decided: owner, 2026-10-30]
 
-C251. An undefined-term finding withdrawn on a reason that does not quote the prose still counts. [inferred: R69]
+C251. An undefined-term finding withdrawn on a reason that does not quote the prose still counts. [decided: owner, 2026-10-30]
 
 C94. The reasoning role treats a finding that proposes fewer words, a plainer phrase or a removed repetition like any other finding. [inferred: R48]
 
-C95. The reasoning role records each round's findings, each finding's disposition, and the verdict in the review record. [decided: methodology PR #50, 2026-10-26]
+C95. The reasoning role records each round's findings, its decision on each finding, and the verdict in the review record. [decided: owner, 2026-10-30]
 
-C261. A finding's disposition is the reasoning role's decision on the finding: fixed, or declined with a reason. [inferred: R78]
+C261. The reasoning role's decision on a finding is one of two: fixed, or declined with a reason. [decided: owner, 2026-10-30]
 
-C262. A confirmed or unfixed mark is not a disposition: the mark records whether the round's stranger instance confirmed a fix. [inferred: R79]
+C262. A confirmed or unfixed mark is not a decision on a finding: the mark records whether the round's stranger instance confirmed a fix. [inferred: R79]
 
 C155. The text delivered after a readable verdict is the judged text with the round's fixes applied. [decided: owner, 2026-10-27]
 
@@ -367,11 +371,11 @@ C182. A finding whose fix the readable round's stranger instance does not confir
 
 C202. The reasoning role marks each finding of the readable round confirmed or unfixed in the delivered text. [inferred: R50]
 
-C248. An unconfirmed fix's words stay in the delivered prose. [inferred: R71]
+C248. An unconfirmed fix's words stay in the delivered prose. [decided: owner, 2026-10-30]
 
 C183. The reasoning role fixes an unfixed finding of the readable round at the next edit of an active document. [decided: owner, 2026-10-27]
 
-C254. At that edit, the reasoning role revises the unconfirmed words, which the next count's rounds then review. [inferred: R72]
+C254. At that edit, the reasoning role revises the unconfirmed words, which the next count's rounds then review. [decided: owner, 2026-10-30]
 
 C98. After a verdict of not readable, the reasoning role fixes the IR and then the prose. [decided: owner, 2026-10-26]
 
@@ -383,7 +387,7 @@ C197. At the limit, the reasoning role fixes the final round's findings in the I
 
 C198. The final round's stranger instance confirms each fix before the owner's decision. evidence: E3. [decided: owner, 2026-10-29]
 
-C199. The reasoning role marks each finding of the final round confirmed or unfixed in the review record. evidence: E3. [inferred: R61]
+C199. The reasoning role marks each finding of the final round confirmed or unfixed in the review record. evidence: E3. [decided: owner, 2026-10-30]
 
 C158. At the end of a count, the reasoning role sets the IR's Status to `reviewed`. [decided: owner, 2026-10-27]
 
@@ -399,7 +403,7 @@ C171. Rework starts a new count from round one. [decided: owner, 2026-10-27]
 
 C172. The reasoning role keeps the ended count's review record through rework. [decided: owner, 2026-10-27]
 
-C102. For an amendment, the owner's decision is the amendment's adjudication under Article 8. [decided: constitution Article 8; reworded in count 5, round 4]
+C102. For an amendment, the owner's decision is the amendment's adjudication under Article 8. [decided: owner, 2026-10-30]
 
 C103. The review record holds, per round, the word count of the prose and the claim count of the IR. [decided: owner, 2026-10-27]
 
@@ -407,7 +411,7 @@ C103. The review record holds, per round, the word count of the prose and the cl
 
 C104. A text is a meta-review subject when its count reaches the limit or its review record shows a meta-review signal. [decided: owner, 2026-10-27]
 
-C106. The reasoning role asks the owner, in the report that delivers a meta-review subject, to dispatch that subject's meta-review. [decided: owner, 2026-10-27; reworded in count 5, round 7]
+C106. The reasoning role asks the owner, in the report that delivers a meta-review subject, to dispatch that subject's meta-review. [decided: owner, 2026-10-30]
 
 C192. The owner may dispatch a meta-review of any text. [decided: owner, 2026-10-27]
 
@@ -415,7 +419,7 @@ C187. The first signal: in two or more rounds, a fix was not held at confirmatio
 
 C188. The second signal: a finding declined in an earlier round was raised again. [decided: owner, 2026-10-27]
 
-C208. The second signal also fires when a restatement mismatch recurred on one passage in two rounds of the text's counts. [inferred: R56]
+C208. The second signal also fires when a restatement mismatch recurred on one passage in two rounds of the text's counts. [decided: owner, 2026-10-30]
 
 C189. The third signal: in the count's last round, words per IR claim exceed round 1's words per claim by more than one tenth. evidence: E4. [decided: owner, 2026-10-30]
 
@@ -423,19 +427,19 @@ C190. The fourth signal: in round 3 or later, a stranger found a contradiction i
 
 C105. At the end of a count, the reasoning role checks the four signals against the review record. [decided: owner, 2026-10-27]
 
-C191. The reasoning role writes `Meta-review: pending` when the text is a meta-review subject. [decided: owner, 2026-10-27; reworded in count 5, rounds 4 and 6]
+C191. The reasoning role writes `Meta-review: pending` when the text is a meta-review subject. [decided: owner, 2026-10-30]
 
-C236. An unparsed line is a review-record line the communication-pipeline's signals script cannot read. [inferred: R62]
+C236. An unparsed line is a review-record line the communication-pipeline's signals script cannot read. [decided: owner, 2026-10-30]
 
-C252. A claims-check line is the review-record line in which the reasoning role records the claims check run before each round from round 2. [inferred: R73]
+C252. A claims-check line is the review-record line in which the reasoning role records the claims check run before each round from round 2. [decided: owner, 2026-10-30]
 
-C253. A round after round 1 with no claims-check line counts as an unparsed line. evidence: E6. [inferred: R76]
+C253. A round after round 1 with no claims-check line counts as an unparsed line. evidence: E6. [decided: owner, 2026-10-30]
 
-C237. While a line is unparsed, the reasoning role writes `Meta-review: unparsed`, naming the line, in place of `pending` or `not indicated`. evidence: E6. [inferred: R63]
+C237. While a line is unparsed, the reasoning role writes `Meta-review: unparsed`, naming the line, in place of `pending` or `not indicated`. evidence: E6. [decided: owner, 2026-10-30]
 
-C238. When the unparsed line parses, the reasoning role writes `pending` again for a text that is a meta-review subject. evidence: E6. [inferred: R64]
+C238. When the unparsed line parses, the reasoning role writes `pending` again for a text that is a meta-review subject. evidence: E6. [decided: owner, 2026-10-30]
 
-C239. When the text is no meta-review subject and no line is unparsed, the reasoning role writes `Meta-review: not indicated`. [decided: owner, 2026-10-27; reworded in count 5, rounds 4 and 6]
+C239. When the text is no meta-review subject and no line is unparsed, the reasoning role writes `Meta-review: not indicated`. [decided: owner, 2026-10-30]
 
 C209. The `Meta-review:` line names the signals checked. [decided: owner, 2026-10-27]
 
@@ -445,7 +449,7 @@ C108. The meta-review session delivers the meta-review as a report to the owner.
 
 C159. On delivery of the meta-review, the reasoning role sets the review record's line to `Meta-review: delivered` with a link. [decided: owner, 2026-10-27]
 
-C109. A `Meta-review: pending` or `Meta-review: unparsed` line in an accepted deliverable's review record is a finding of the next form audit under Article 9. [decided: owner, 2026-10-27; reworded in count 5, round 7, C247 merged in]
+C109. A `Meta-review: pending` or `Meta-review: unparsed` line in an accepted deliverable's review record is a finding of the next form audit under Article 9. [decided: owner, 2026-10-30]
 
 ### Rendering conditions
 
@@ -455,9 +459,9 @@ C204. A dependent ask is an ask with a `Depends:` field. [decided: pipeline bran
 
 C110. The inputs are the IR's reader, purpose, Normative header, claim count, proposed-term count, count of dependent asks, longest claim and two owner inputs. [decided: owner, 2026-10-30]
 
-C205. The first owner input is whether the owner asked for a review. [decided: pipeline branch point v1.1, 2026-10-25; reworded for form in count 5, round 2]
+C205. The first owner input is whether the owner asked for a review. [decided: owner, 2026-10-30]
 
-C229. The second owner input is whether the owner designated the document IR-only. [decided: owner, 2026-10-30; reworded for form in count 5, round 2]
+C229. The second owner input is whether the owner designated the document IR-only. [decided: owner, 2026-10-30]
 
 C111. A lint runs the mechanical checks in every case. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -513,7 +517,7 @@ C130. A report to RD-2 always starts as an IR. [decided: pipeline branch point v
 
 C131. A report to RD-1 or RD-3 that introduces no term, records no decision and states no register fact may be written as prose directly. [decided: owner, 2026-10-25]
 
-C206. The reasoning role runs the style guide's mechanical checks on prose it writes directly. [inferred: R74]
+C206. The reasoning role runs the style guide's mechanical checks on prose it writes directly. [decided: owner, 2026-10-30]
 
 C132. A term, a decision or a register fact requires the IR. [decided: owner, 2026-10-25]
 
@@ -531,7 +535,7 @@ C135. The IR of a delivered report is a record. [decided: pipeline schema v1.2, 
 
 C185. At delivery, the reasoning role sets the Status of a report's IR to `delivered`. [decided: pipeline schema v1.2, 2026-10-25]
 
-C161. The reasoning role does not edit the IR of a delivered report. [inferred: R54]
+C161. The reasoning role does not edit the IR of a delivered report. [decided: owner, 2026-10-30]
 
 C136. On ratification, the reasoning role adds a row with a `def-` anchor for the ratified term to the project vocabulary. [decided: methodology PR #48, 2026-10-26]
 
@@ -573,7 +577,7 @@ C162. The owner placed the meta-review in the communication-pipeline project unt
 
 C140. The specification was rewritten from this IR, `intermediate-representation.ir.md` beside the prose. [decided: owner, 2026-10-27]
 
-C207. The rewrite followed ten stranger rounds on methodology PR #51's amendment text, rounds that ended without a readable verdict. [decided: owner, 2026-10-27; reworded in count 5, round 6]
+C207. The rewrite followed ten stranger rounds on methodology PR #51's amendment text, rounds that ended without a readable verdict. [decided: owner, 2026-10-30]
 
 C210. The ten rounds grew the prose from 2,635 to 4,516 words. [decided: owner, 2026-10-27]
 
@@ -675,11 +679,11 @@ R46. C79 depends-on C220 because the placement is made when the text is rendered
 
 R47. C82 depends-on C220 because the Asks section is stated when the text is rendered, and the renderer renders; the source, methodology PR #46, names no actor.
 
-R48. C94 depends-on C95 because the reasoning role records each finding's disposition; the source, the owner's ratification of 2026-10-27 of a passive claim, names no actor.
+R48. C94 depends-on C95 because the reasoning role records its decision on each finding; the source, the owner's ratification of 2026-10-27 of a passive claim, names no actor.
 
 R49. C152 depends-on C153 because the report that delivers the text lists its terms under Terms introduced, and the reasoning role writes the IR that holds the proposed term; the source, methodology PR #48, names no actor and no trigger.
 
-R50. C202 depends-on C95 because the reasoning role records each finding's disposition; the source, communication-pipeline evaluation case 008 change 5 ("the record marks each confirmed or unfixed"), names no actor.
+R50. C202 depends-on C95 because the reasoning role records its decision on each finding; the source, communication-pipeline evaluation case 008 change 5 ("the record marks each confirmed or unfixed"), names no actor.
 
 R51. C223 refines C203 because the quoted sentence shows the prose carries the claim, so the mismatch lies in the restatement alone.
 
@@ -735,9 +739,9 @@ R76. C253 refines C237 because case 010 change 7 and case 011 change 7 make a ro
 
 R77. C258 refines C194 because the withdrawal the second and third conditions exempt is the instance's own statement at confirmation, and the first condition's row excludes a restatement mismatch from it (C195).
 
-R78. C261 refines C95 because the record holds each finding's disposition, and a finding is either fixed or declined.
+R78. C261 refines C95 because the record holds the decision on each finding, and a finding is either fixed or declined.
 
-R79. C262 refines C261 because the reasoning role marks a fix confirmed or unfixed from the instance's confirmation (C202, C199), while a disposition is the reasoning role's own decision.
+R79. C262 refines C261 because the reasoning role marks a fix confirmed or unfixed from the instance's confirmation (C202, C199), while a decision on a finding is the reasoning role's own.
 
 ## Evidence
 
@@ -775,6 +779,12 @@ A4 resolved: ratified by the owner, 2026-10-27; vocabulary row added.
 
 A5. Ratify or strike the terms passage (T24), topic claim (T25) and confirmation (T26). Depends: C228, C226, C233.
 
+A5 resolved: ratified by the owner, 2026-10-30, with the term withdrawal (T28); vocabulary rows added.
+
 A6. Ratify or strike the new wording of the decided claims count 5 reworded or split in its rounds: C1; C13; C31 and C240; C41 and C231; C58 and C232; C87; C102; C110; C143; C161; C191 and C239; C194 and C235; C199; C203; C205; C208; C221 and C234; C223; C224; C227; C229; C88; C195; C164; C207; C1; C12; C23; C106; C109; C206; C44 with C259 and C260, C260 merged into C259 in round 9 and the merge reversed in round 10 on a one-claim-per-sentence finding; C46; C174, whose exception describes the clusters C256 splits. New rules for the owner: the `Meta-review: unparsed` line (C236 to C238) and its form-audit finding, merged into C109; a withdrawal without a quoted reason still counts (C250, C251); an unconfirmed fix's words stay in the delivered prose (C248) and are revised at the next edit (C254); the claims-check line (C252, C253); the override governs the exception (C255). Depends: C1, C13, C31, C41, C58, C87, C102, C110, C143, C161, C191, C194, C199, C203, C205, C208, C221, C223, C224, C227, C229, C88, C195, C164, C207, C237, C248, C250, C252, C254, C255, C12, C23, C106, C206, C44, C259, C46, C174.
 
-A7. Ratify or strike two rules count 5's round 8 found missing: a cluster whose claims fall under different parts renders as one paragraph per part (C256), the exception C174 names; an IR-only deliverable's own Asks section lists each proposed term for ratification (C257). Decide also whether a finding's disposition, fixed or declined (C261), keeps its name beside the communication-pipeline's [disposition](https://github.com/majodali/communication-pipeline/blob/main/docs/vocabulary.md#def-disposition), the branch point's output for one IR. Depends: C256, C257, C261, C174.
+A6 resolved: ratified by the owner, 2026-10-30; the claims carry decided provenance from that date.
+
+A7. Ratify or strike two rules count 5's round 8 found missing: a cluster whose claims fall under different parts renders as one paragraph per part (C256), the exception C174 names; an IR-only deliverable's own Asks section lists each proposed term for ratification (C257). Decide also the name of the reasoning role's decision on a finding, fixed or declined (C261), beside the communication-pipeline's [disposition](https://github.com/majodali/communication-pipeline/blob/main/docs/vocabulary.md#def-disposition), the branch point's output for one IR. Depends: C256, C257, C261, C174.
+
+A7 resolved: ratified by the owner, 2026-10-30, C256 and C257 included; the disposition of a finding renamed decision on a finding (T29) and ratified under that name; the claims carry decided provenance from that date.

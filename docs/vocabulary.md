@@ -252,7 +252,7 @@ in [constitution.md](constitution.md#draft-history-pre-10).
     rendered prose listing the paragraph each claim landed in.
   - <a id="def-review-record"></a>**Review record** — the file
     `<subject>.review.md` beside an IR, holding each round's findings,
-    dispositions and verdict.
+    the decision on each finding and the verdict.
   - <a id="def-round"></a>**Round** — one stranger review of an IR and
     its prose, returning findings and a verdict.
   - <a id="def-count"></a>**Count** — one review's sequence of rounds,
@@ -310,6 +310,22 @@ in [constitution.md](constitution.md#draft-history-pre-10).
 - <a id="def-own-mismatch"></a>**Own mismatch** — a restatement mismatch the stranger attributes to its own
   restatement (owner, 2026-10-30,
   [specification](intermediate-representation.md#stranger-rounds)).
+- <a id="def-passage"></a>**Passage** — the prose sentences that carry one claim or one cluster
+  of an IR (owner, 2026-10-30,
+  [specification](intermediate-representation.md#the-verdict)).
+- <a id="def-topic-claim"></a>**Topic claim** — the claim that states a cluster's subject
+  (owner, 2026-10-30,
+  [specification](intermediate-representation.md#element-kinds)).
+- <a id="def-confirmation"></a>**Confirmation** — the step at which the round's stranger instance
+  says whether each fix holds (owner, 2026-10-30,
+  [specification](intermediate-representation.md#the-verdict)).
+- <a id="def-withdrawal"></a>**Withdrawal** — the round's stranger instance's statement, at
+  confirmation, that a finding other than a restatement mismatch no
+  longer applies to the prose (owner, 2026-10-30,
+  [specification](intermediate-representation.md#the-verdict)).
+- <a id="def-decision-on-a-finding"></a>**Decision on a finding** — the reasoning role's decision on one
+  finding of a round: fixed, or declined with a reason (owner,
+  2026-10-30, [specification](intermediate-representation.md#the-count)).
 - <a id="def-report-audience"></a>**Report audience** — the reader a report is addressed to under
   [W-008](rules/working-agreement.md#w-008--reports-map-their-deliverables)
   (reports map their deliverables): the human owner directly (the

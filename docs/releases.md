@@ -28,6 +28,15 @@ carry: amendment title and PR link · suggested by (evidencing instance)
   project-orchestrator, its Reviewer (stranger) contract follows.
   Other projects unaffected.
 - **Migration note**: none.
+- **Adjudication**: accepted and delivered by the owner on
+  2026-10-30 (methodology PR #69 merged). Count 5 reached the limit at
+  round 10; the owner ratified asks A5 to A7: the reworded claims, the
+  proposed rules C256 and C257, and the terms *passage*, *topic
+  claim*, *confirmation* and *withdrawal*; the reasoning role's
+  *disposition* of a finding renamed *decision on a finding* and
+  ratified under that name. Five vocabulary rows added. The
+  meta-review is dispatched; the review record reads
+  `Meta-review: pending` until it is delivered.
 
 ### IR-only documents
 
