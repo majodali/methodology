@@ -40,6 +40,7 @@ Changes to K-003 beyond the proposal's replacement text, each in the IR:
 | Round | Prose words | IR claims | Findings | Per 1,000 words | Verdict |
 |---|---|---|---|---|---|
 | 1 | 261 | 43 | 8 | 30.7 | not readable (one own mismatch on C8 and C9, quoted, not counting; contradiction 1; undefined terms 2) |
+| 2 | 268 | 43 | pending | pending | pending |
 
 ### Round 1, count 1, 2026-10-30
 
@@ -62,8 +63,31 @@ Readability note, recorded without a fix: the stranger found that the prose stat
 | 7 | the title and the referent clauses contradict the appended sentence | SP-25 | declined: the owner decided at P3-N007's gate on 2026-10-30 that the title and the referent clauses stand as drafted, "instead" marking the exception. A fresh stranger again reads them as a contradiction. Listed for the owner with the smallest marker that would resolve it, should the owner want it: "no other document may claim that role, except as the next sentence provides" |
 | 8 | the Rationale's dash clause ("— a mirror, not a duplication") is excess | SP-26 | declined: the reason of 5 (released text, outside scope). Listed for the next K-003 edit |
 
-Claims after fixes: 43. Prose after fixes: 266 words. Claims check after the fixes (base: round 1 prose, over K-003, the vocabulary rows and the release-register entry): 4 changed claims (C3 to C6), 0 missing, 0 stale. Round trip: 43 of 43 claims mapped. IR checks: 0 violations, 0 warnings. `mtool audit form`: no findings. Fix commit: named in the confirmation table sent to the Orchestrator.
+Claims after fixes: 43. Prose after fixes: 266 words. Claims check after the fixes (base: round 1 prose, over K-003, the vocabulary rows and the release-register entry): 4 changed claims (C3 to C6), 0 missing, 0 stale. Round trip: 43 of 43 claims mapped. IR checks: 0 violations, 0 warnings. `mtool audit form`: no findings. Fix commit: `a0adb86`.
 
 Decided claims the fixes changed, for the owner: C3, C4 and C5 name the record of the Project model at commit `86a1330` in place of the slice; C6 names node P3-N007 without its gate's stage.
 
-Confirmation: pending.
+Confirmation: 2 of 3 fixes hold. Not held: 4. Declines accepted: 4 of 4. New defects: 1.
+
+The round 1 instance confirmed at `a0adb86`. Finding 4 held in part: the Applies line is the first use of "C1+" and still carried no name. Finding 7 is withdrawn: the instance withdrew the contradiction on a reason quoting the prose, "that model is the referent instead", with C38. The round 1 verdict stays not readable as recorded; round 2 decides.
+
+Re-fixed before round 2:
+
+| # | Defect (shortened) | Kind | Re-fix |
+|---|---|---|---|
+| 4 | the Applies line's "C1+" carries no name | SP-05 | the Applies line reads `[C1+] (criticality tier C1 and above)`, the instance's proposed wording; `mtool audit form` accepts it (K-003 parses as C1 to C3, no findings). The Cites entry shortens to "the criticality scale of the Applies line". Marked `awaiting restatement` |
+| N1 | "its Project model" follows a date and a node, so "its" has no clear antecedent | SP-03 | "with the record of the project-orchestrator's Project model at commit `86a1330`". Marked `awaiting restatement` |
+
+Neither re-fix changes a claim. Claims check after the re-fixes (base: the prose at `a0adb86`): 0 changed claims, 0 missing, 0 stale. Round trip: 43 of 43.
+
+### Round 2, count 1, 2026-10-30
+
+Branch point version and commit: v1.9 at communication-pipeline `main`, commit `d1c5b55`. Prose 268 words; IR 43 claims; unratified terms 0. Brief: `k003-r2-brief.md` in the reasoning role's scratchpad, naming the round 2 commit.
+
+Claims check before the round (base: round 1 prose at `0ba6aa9`): 4 changed claims (C3 to C6), 0 missing, 0 stale.
+
+Awaiting restatement: the re-fixes of finding 4 and of new defect N1. This round's entry states whether the round names them on its `Mismatches:` line or in a finding.
+
+Signals script before the round: no signal fired; no line unparsed.
+
+Carried into the brief: declines 5, 6 and 8 with their reasons, and the readability note. No passage is listed: no passage has drawn a mismatch that counts.
