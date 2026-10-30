@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: rendered (count 6, round 1, edited 2026-10-30 for communication-pipeline evaluation case 012, rendered by the reasoning role; count 5 accepted and delivered 2026-10-30; unratified terms 0)
+Status: rendered (count 6, round 2, edited 2026-10-30 for communication-pipeline evaluation case 012, rendered by the reasoning role; count 5 accepted and delivered 2026-10-30; unratified terms 0)
 Source: the owner's adoption of 2026-10-30 of communication-pipeline evaluation case 012's fifteen changes, of which changes 1, 2, 4 to 9, 11, 13 and 14 amend this specification (count 6); the owner's adoption of 2026-10-30 of communication-pipeline evaluation cases 010 and 011's recommended changes, of which case 010's changes 1, 5, 9, 11, 12 and 13 and case 011's change 1 amend this specification (count 5); the owner's adoption of 2026-10-29 of communication-pipeline evaluation case 009's nineteen changes, of which changes 2, 14, 15 and 18 amend this specification (count 4); the owner's decision of 2026-10-27 on signal-based meta-review triggers (count 3); communication-pipeline evaluation case 008 (owner decision of 2026-10-27, change 5) for count 2; for count 1, docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md; docs/releases.md; docs/vocabulary.md
@@ -211,7 +211,7 @@ C294. An evidence element carries no provenance status. [decided: owner, 2026-10
 
 C295. An ask carries no provenance status. [decided: owner, 2026-10-30; reworded in count 6, round 1, split per kind into the Element kinds table]
 
-C44. Each term, claim and cluster ends with one status in square brackets. [decided: owner, 2026-10-30]
+C44. The status is the last thing in the element, in square brackets. [decided: owner, 2026-10-30; reworded in count 6, round 1, after confirmation]
 
 C165. A relation is the reasoning role's inference by definition. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -467,8 +467,6 @@ C103. The review record holds, per round, the word count of the prose and the cl
 
 ### Meta-review
 
-C289. The owner dispatches a meta-review. [inferred: R82]
-
 C104. A text becomes a meta-review subject when its count reaches the limit or its review record shows a meta-review signal. [decided: owner, 2026-10-27; reworded in count 6, round 1]
 
 C106. The reasoning role asks the owner, in the report that delivers a meta-review subject, to dispatch that subject's meta-review. [decided: owner, 2026-10-30]
@@ -497,7 +495,9 @@ C252. A claims-check line is the review-record line in which the reasoning role 
 
 C253. The signals script reports a round with a fix pass and no claims-check line as unparsed. evidence: E6, E8. [proposed: case 012 change 13]
 
-C237. While a line is unparsed, the reasoning role writes `Meta-review: unparsed`, naming the line, in place of `pending` or `not indicated`. evidence: E6. [decided: owner, 2026-10-30]
+C237. While a line is unparsed, the reasoning role writes `Meta-review: unparsed` in place of `pending` or `not indicated`. evidence: E6. [decided: owner, 2026-10-30; reworded in count 6, round 1, after confirmation, split]
+
+C296. The `Meta-review: unparsed` line names the unparsed line, or the round when the round has no claims-check line. evidence: E8. [proposed: case 012 change 13]
 
 C238. When the unparsed line parses, the reasoning role writes `pending` again for a text that is a meta-review subject. evidence: E6. [decided: owner, 2026-10-30]
 
@@ -791,7 +791,7 @@ R73. C252 refines C253 because the unparsed rule reads the line the claims check
 
 R74. C206 depends-on C131 because the author who writes prose directly is the one who can run the checks on it; the owner's ruling of 2026-10-25 named no actor.
 
-R76. C253 refines C237 because case 010 change 7 and case 011 change 7 make a round after round 1 with no claims-check line unparsed, so the record takes the unparsed line.
+R76. C253 refines C237 because case 012 change 13 makes a round with a fix pass and no claims-check line unparsed, so the record takes the unparsed line.
 
 R77. C258 refines C194 because the withdrawal the second and third conditions exempt is the instance's own statement at confirmation, and the first condition's row excludes a restatement mismatch from it (C195).
 
@@ -802,8 +802,6 @@ R79. C262 refines C261 because the reasoning role marks a fix confirmed or unfix
 R80. C265 depends-on C263 because an omission is not a restatement mismatch, and only a mismatch counts under the first condition.
 
 R81. C288 depends-on C284 because the review records of earlier counts name the first, second and fourth signals by number.
-
-R82. C289 depends-on C107 because the meta-review session is a session the owner starts, and C106 and C192 leave the dispatch to the owner.
 
 R83. C290 depends-on C91 because the reasoning role starts each round by dispatching a fresh stranger, and that stranger answers at the round's confirmation.
 

@@ -1313,3 +1313,28 @@ The instance's two uncounted observations, fixed in the same pass: C253 reads "T
 Claims after fixes: 272. Prose after fixes: 4,198 words. Claims check after the fixes (base: round 1 prose): 15 changed claims, 0 missing, 0 stale. Round trip: 272 of 272. IR check: 0 violations, 0 warnings.
 
 Decided claims the fixes reworded, for the owner's list at the count's close: C259 and C260 (split per kind), C104, C164, C153, C254 (split, with C291).
+
+Confirmation: 6 of 6 fixes hold. Not held: none. Declines accepted: 0 of 0. New defects: 3.
+
+The instance (ad9b27f6af3fa271f) read both files in full at fix commit 3e720f4. The confirmable fixes are rows 3 to 8; rows 1 and 2 are step-6 fixes, not confirmed by the instance. The three new defects and one uncounted observation, fixed IR first before round 2 opens (case 012 change 6):
+
+- N1 (SP-25, the `Meta-review:` line): a round with no claims-check line has no line to name. C237 split: "While a line is unparsed, the reasoning role writes `Meta-review: unparsed` in place of `pending` or `not indicated`." and C296, "The `Meta-review: unparsed` line names the unparsed line, or the round when the round has no claims-check line." (proposed, case 012 change 13). The fix specifies change 13's rule and adds no rule.
+- N2 (SP-26, "Who dispatches a meta-review"): the unqualified sentence "The owner dispatches a meta-review." cut, with C289 and R82. The structural fix over-reached and is trimmed; the section opens with the subject rule (C104), then C106 and C192, each stated once. The passage stays `awaiting restatement`.
+- N3 (SP-26, the presence rule in the table and the Provenance sentence): the table cells keep the presence rule; C44 reworded to the form only, "The status is the last thing in the element, in square brackets." The passage stays `awaiting restatement`.
+- R76 read "a round after round 1"; it now reads the fix-pass rule of case 012 change 13.
+
+Claims check after the confirmation's fixes (base: the round 1 fix pass's prose): 3 changed claims, 0 missing, 0 stale; C289 removed. Claims: 272. Prose: 4,208 words. Round trip: 272 of 272.
+
+Decided claims reworded after confirmation, for the owner's list at the count's close: C44, C237 (split, with C296).
+
+### Round 2, count 6, 2026-10-30
+
+Branch point version and commit: v1.10 at communication-pipeline commit 387dc43. Round 2 reads the text at this round's opening commit, named in the brief. Prose 4,208 words; IR 272 claims; unratified terms 0.
+
+Passages awaiting restatement, listed in the brief for a one-sentence restatement each (case 012 change 4): the Element kinds table's provenance column with the Provenance opening (C259, C292 to C295, C260, C44), round 1's step-6 fix; the "Who dispatches a meta-review" passage (C104, C106, C192), round 1's step-6 fix as trimmed after confirmation.
+
+Declined findings carried in the brief from count 5: round 1's 6, 11 and 16; round 2's 6; round 3's 7; round 8's 8; round 10's 2. Each with its reason.
+
+Forms added to the brief: none.
+
+Signals script before the round: signal 2 fires on C104 and C106, as recorded in round 1; no line unparsed.
