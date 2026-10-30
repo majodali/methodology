@@ -1254,4 +1254,4 @@ The owner's decision, 2026-10-30: count 5 accepted and delivered (methodology PR
 7. The three IR-only gaps: none remained at acceptance. Count 5's rounds had closed all three: C13 holds `delivered IR-only`; C229 carries the owner-input sentence; the render map maps C217 to C219. The list carried them from the count's opening note without re-checking.
 8. Passed to the meta-review, which the owner dispatched with the branch point's as one task.
 
-Meta-review: pending (signals 1, 2 and 4). The line stays until the meta-review is delivered.
+Meta-review: delivered (signals 1, 2 and 4): [evaluation case 012](https://github.com/majodali/communication-pipeline/blob/main/eval/cases/012-meta-review-branch-point-v1.9-and-ir-spec-count-5-2026-10-30.md), 2026-10-30.
