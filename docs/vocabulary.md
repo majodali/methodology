@@ -298,6 +298,10 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   the review of the service, sequencing the [vision](vision.md)'s gaps
   into steps (owner, 2026-10-29,
   [service review](records/service-review-2026-10-29.ir.md)).
+- <a id="def-roadmap-step"></a>**Roadmap step** — one unit of the roadmap document: the plan
+  nodes that close one gap or one part of a gap, and the condition that
+  opens them (owner, 2026-10-30,
+  [roadmap](roadmap.ir.md)).
 - <a id="def-report-audience"></a>**Report audience** — the reader a report is addressed to under
   [W-008](rules/working-agreement.md#w-008--reports-map-their-deliverables)
   (reports map their deliverables): the human owner directly (the
