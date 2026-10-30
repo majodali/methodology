@@ -1165,3 +1165,17 @@ Claims after fixes: 244 (C260 removed, C262 added). Prose after fixes: 3,864 wor
 Decided claims the fixes changed, for the owner: C1 again, C259 with C260 merged into it, and C46, added to A6. Proposed C256 reworded in A7.
 
 Declined findings for round 10's brief: round 1's 6, 11 and 16; round 2's 6; round 3's 7; round 7's new defect 4; round 8's 8 and new defects 4 to 6; each with its reason. Passages awaiting restatement in round 10: the verdict section; the C1 sentence in its new wording; the Provenance opening in its two-sentence form; C132's passage, first occurrence, listed for its match.
+
+### Round 10, count 5, 2026-10-30
+
+Round 10 is the limit. Branch point version and commit: v1.9 as at communication-pipeline branch `branch-point-v1.9-cases-010-011`, its closing commit a0f30be. Prose 3,864 words; IR 244 claims; unratified terms 3 (T24, T25, T26). Round 9's confirmation was not yet back when round 10 opened; its line is recorded in round 9's entry when it arrives.
+
+Claims check before the round: 8 changed claims, 0 missing, 0 stale (base: round 9 prose).
+
+Awaiting restatement: the verdict section (third fix, round 7); the C1 sentence in its round 9 wording; the Provenance opening in its two-sentence form (C259, C44); C132's passage, first occurrence, listed for its match. This round's entry states whether the restatement matched on each.
+
+Declined findings carried in the brief: round 1's 6, 11 (the instance did not accept the decline) and 16; round 2's 6; round 3's 7; round 7's new defect 4; round 8's 8 and new defects 4 to 6; each with its reason.
+
+At the limit, the reasoning role fixes round 10's findings in the IR and then in the prose, and round 10's stranger instance confirms each fix before the owner's decision, other than a step-6 fix. A step-6 fix stays awaiting restatement and counts as unfixed.
+
+Signals script before the round: signal 1 fires as before; signal 2 as before, with no new claim (C132 stands on one line); signal 3 not fired (15.72 words per claim against round 1's 15.59); signal 4 fired by reading again: round 9's contradiction (finding 3) sat on C258, which round 8's fix added; no line unparsed. The text is a meta-review subject at the count's end.
