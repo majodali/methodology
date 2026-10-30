@@ -1028,6 +1028,10 @@ Queued items applied in the same pass, shared with the branch point where the te
 
 Claims after fixes: 236. Prose after fixes: 3,727 words. Claims check after the fixes (base: round 6 prose): 14 changed claims, 0 missing, 0 stale. Round trip: 236 of 236. One new `mtool style` warning, on "Provenance", reads the word in the new link's anchor.
 
+Confirmation: 7 of 7 fixes hold. Not held: none. Declines accepted: 0 of 0. New defects: 3.
+
+The three new defects are fixed in round 7's fix pass, on both texts where the text is shared: N1 (SP-04, "claims-check line" undefined in the unparsed-line sentence, whose "or" joins two definitions), N2 (the second signal's "in two rounds" against the override's "in any two rounds of the text's counts") and N3 (the next-edit fix of an unfixed finding does not say what it changes, after "An unconfirmed fix's words stay in the delivered prose").
+
 Decided claims the fixes changed, for the owner: C164, C195, C191, C239 and C207, added to A6; new rules C248 to C251.
 
 Declined findings for round 7's brief: round 1's 6, 11 and 16; round 2's 6; round 3's 7; each with its reason. Nothing awaits restatement in round 7.
