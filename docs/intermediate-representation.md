@@ -20,7 +20,7 @@ the specification as RD-4 does. Assumed to know:
 
 The [reasoning role](vocabulary.md#def-reasoning-role) writes an
 [intermediate representation](vocabulary.md#def-intermediate-representation)
-(IR) before any prose of the communication exists, for each text [that requires one](#texts-that-require-an-ir). The IR prevents three failure modes of directly written prose: claims compressed into one sentence, referents left unnamed, and conversation terms used as if defined.
+(IR) before any prose of the text exists, for each text [that requires one](#texts-that-require-an-ir). The IR prevents three failure modes of directly written prose: claims compressed into one sentence, referents left unnamed, and conversation terms used as if defined.
 
 A case this specification does not name is decided by the human owner
 when accepting the deliverable.
@@ -36,7 +36,7 @@ Evidence, Asks. The Claims section may use any sub-headings.
 | Header | Value |
 |---|---|
 | Reader | one [reader catalog](style.md#readers) identifier |
-| Purpose | `report` or `document`, then one sentence saying what the communication is for |
+| Purpose | `report` or `document`, then one sentence saying what the text is for |
 | Status | `draft`, `reviewed`, `rendered`, `delivered` or [`delivered IR-only`](vocabulary.md#def-ir-only-document), optionally followed by a parenthesis holding the counts this specification asks the reasoning role to record |
 | Source | the conversation, document or event that occasioned the IR |
 | Normative | optional: `yes` when the prose is [normative text](vocabulary.md#def-normative-text) |
@@ -57,7 +57,7 @@ number, never a suffix.
 
 | Kind | Letter | Body and rule |
 |---|---|---|
-| Term | `T` | the word or phrase and either `defined-at:` with a link to its [definition site](vocabulary.md#def-definition-site) or its meaning in the communication. A term is defined once per IR. Every [project-specific term](#project-specific-term) used in a claim appears as a term element. A term without a definition site has status [proposed](#provenance). The reasoning role lists each proposed term for ratification in the report that delivers the text |
+| Term | `T` | the word or phrase and either `defined-at:` with a link to its [definition site](vocabulary.md#def-definition-site) or its meaning in the text. A term is defined once per IR. Every [project-specific term](#project-specific-term) used in a claim appears as a term element. A term without a definition site has status [proposed](#provenance). The reasoning role lists each proposed term for ratification in the report that delivers the text |
 | Claim | `C` | one statement. A claim may carry `evidence: E<n>`. In a report to RD-1 or RD-2, a claim may carry `part: covered` or `part: changed` |
 | [Cluster](vocabulary.md#def-cluster) | `G` | `cluster:` and an ordered list of claim identifiers. A topic claim is the claim that states the cluster's subject. A cluster's list may open with a topic claim. A claim belongs to at most one cluster |
 | Relation | `R` | `C<a> <verb> C<b> because <reason>`, with the verb one of `supports`, `depends-on`, `contradicts`, `refines`. The reason is one sentence or a claim identifier |
@@ -66,11 +66,11 @@ number, never a suffix.
 
 ### The referent rule
 
-A claim names each [referent](vocabulary.md#def-referent) inside itself. A bare pronoun is
+A claim names each [referent](vocabulary.md#def-referent) inside itself. The bare pronouns are it, this, that, these and those, with no
+noun after. A bare pronoun is
 legal only when its antecedent is a noun phrase earlier in the claim
-that holds the pronoun. A reference from one claim to another is a relation, never a pronoun inside the claim. The bare pronouns are it, this, that, these and those, with no
-noun after. A bare determiner phrase is legal only when its antecedent is a noun phrase earlier in the claim that holds the phrase. The bare determiner phrases are the word "the" followed
-by other, above, former, latter or same, with no noun after. A
+that holds the pronoun. A reference from one claim to another is a relation, never a pronoun inside the claim. The bare determiner phrases are the word "the" followed
+by other, above, former, latter or same, with no noun after. A bare determiner phrase is legal only when its antecedent is a noun phrase earlier in the claim that holds the phrase. A
 determiner followed by the noun it names, such as "this
 specification", is not bare.
 
@@ -109,11 +109,13 @@ as a finding. [methodology-tools](https://github.com/majodali/methodology-tools)
 | CK-11 | definition site | a term's `defined-at:` target does not resolve |
 | CK-12 | identifier uniqueness | two elements carry one identifier |
 | CK-13 | term uniqueness | two term elements name one term |
-| CK-14 | review record | an IR whose Status is `reviewed` or `delivered` after rounds has no [review record](vocabulary.md#def-review-record) beside it, or a review record without a verdict per round; an IR whose Status is `delivered IR-only` is exempt |
+| CK-14 | review record | an IR whose Status is `reviewed` or `delivered` after [rounds](#stranger-rounds) has no [review record](vocabulary.md#def-review-record) beside it, or a review record without a verdict per round; an IR whose Status is `delivered IR-only` is exempt |
 | CK-15 | round trip | the [render map](vocabulary.md#def-render-map) (Rendering rule) omits a claim, names an identifier the IR does not hold, or is absent from paraphrased prose |
 | CK-16 | element form | a line inside a section is neither an element, a heading, a continuation of the element above, nor a comment |
 
-## Rendering rule
+<a id="rendering-rule"></a>
+
+## Rendering and review
 
 Prose is rendered from the IR when a [rendering condition](#rendering-conditions)
 selects rendering. The
@@ -149,15 +151,19 @@ missing definition or a missing referent.
 
 ### Stranger rounds
 
+#### The verdict
+
 In a [round](vocabulary.md#def-round), the verdict is readable when three conditions hold. A restatement mismatch is a disagreement between the [stranger](vocabulary.md#def-stranger)'s [restatement](https://github.com/majodali/communication-pipeline/blob/main/docs/vocabulary.md#def-restatement) and the IR. An [own mismatch](vocabulary.md#def-own-mismatch) is a restatement mismatch the stranger attributes to its own restatement. A passage is the prose sentences that carry one claim or one cluster. Confirmation is the step at which the round's stranger instance says whether each fix holds.
 
 The conditions, each with what counts against the verdict and what does not:
 
 | Condition | Counts against the verdict | Does not count against the verdict |
 |---|---|---|
-| The first condition: the restatement of the problem, terms and decisions has no mismatch with the IR that counts. | A mismatch counts whatever the stranger attributes it to, except as the next column states. The override: a restatement mismatch on one passage in any two rounds of the text's counts always counts. The round's stranger instance never withdraws a restatement mismatch at confirmation. | The exception: an own mismatch does not count when the stranger quotes a prose sentence that carries an IR claim. |
+| The first condition: the restatement of the problem, terms and decisions has no mismatch with the IR that counts. | A mismatch counts whatever the stranger attributes it to, except as the next column states. The override: a restatement mismatch on one passage in any two rounds of the text's counts always counts. The override governs the exception. The round's stranger instance never withdraws a restatement mismatch at confirmation. | The exception: an own mismatch does not count when the stranger quotes a prose sentence that carries an IR claim. |
 | The second condition: the stranger finds no contradiction. | Each contradiction finding not withdrawn. A contradiction finding withdrawn on a reason that does not quote the prose still counts. | A contradiction finding withdrawn by the round's stranger instance at confirmation, on a reason quoting the prose. |
 | The third condition: the stranger finds no undefined term. | Each undefined-term finding not withdrawn. An undefined-term finding withdrawn on a reason that does not quote the prose still counts. | An undefined-term finding withdrawn by the round's stranger instance at confirmation, on a reason quoting the prose. |
+
+#### The count
 
 The [limit](vocabulary.md#def-limit) is ten rounds. The reasoning role runs a stranger review in rounds until a round returns the verdict readable or the [count](vocabulary.md#def-count) reaches the limit. The rounds apply to every
 stranger review the rendering conditions select.
@@ -176,8 +182,8 @@ The text delivered after a readable verdict is the judged text with the round's 
 the reasoning role fixes the round's findings in the IR and then in
 the prose. The readable round's stranger instance confirms each fix
 before delivery. A finding whose fix the readable round's stranger instance does not
-confirm is unfixed. The reasoning role marks each finding of the readable round confirmed or unfixed in the delivered text. An unconfirmed fix's words stay in the delivered prose. The unfixed mark records that the readable round's stranger instance did not confirm the fix. The reasoning role fixes an unfixed finding of the readable round at
-the next edit of an active document. After a verdict of not readable, the
+confirm is unfixed. The reasoning role marks each finding of the readable round confirmed or unfixed in the delivered text. An unconfirmed fix's words stay in the delivered prose. The reasoning role fixes an unfixed finding of the readable round at
+the next edit of an active document. At that edit, the reasoning role revises the unconfirmed words for the next count's confirmation. After a verdict of not readable, the
 reasoning role fixes the IR and then the prose. The next round
 reviews the fixed IR and the fixed prose. At the end of a count, the reasoning role sets the IR's Status to
 `reviewed`.
@@ -200,19 +206,18 @@ rework. For an amendment, the owner's decision is the amendment's adjudication u
 
 A [meta-review](vocabulary.md#def-meta-review) signal is one of four
 conditions in a review record. The first
-signal: in two or more rounds, a fix was not held at confirmation or the [claims check](https://github.com/majodali/communication-pipeline/blob/main/docs/branch-point.md#rounds) reported a missing or stale claim. The second signal: a finding declined in an earlier round was raised again. The second signal also fires when a restatement mismatch recurred on one passage in two rounds. The third signal: in the count's last round, words per IR claim exceed round 1's words per claim by more than one tenth. The fourth signal: in round 3 or later, a stranger found a contradiction in a passage an
+signal: in two or more rounds, a fix was not held at confirmation or the [claims check](https://github.com/majodali/communication-pipeline/blob/main/docs/branch-point.md#rounds) reported a missing or stale claim. The second signal: a finding declined in an earlier round was raised again. The second signal also fires when a restatement mismatch recurred on one passage in two rounds of the text's counts. The third signal: in the count's last round, words per IR claim exceed round 1's words per claim by more than one tenth. The fourth signal: in round 3 or later, a stranger found a contradiction in a passage an
 earlier round's fix touched. At the end of a count, the reasoning
 role checks the four signals against the review record. A text is a meta-review subject when its count reaches the
-limit or its review record shows a meta-review signal. The reasoning role writes `Meta-review: pending` when the text is a meta-review subject. An unparsed line is a review-record line the communication-pipeline's [signals script](https://github.com/majodali/communication-pipeline/blob/main/scripts/signals.mjs) cannot read, or a claims-check line a round after round 1 lacks. While a line is unparsed, the reasoning role writes `Meta-review: unparsed`, naming the line, in place of `pending` or `not indicated`. When the unparsed line parses, the reasoning role writes `pending` again for a text that is a meta-review subject. When the text is no meta-review subject and no line is unparsed, the reasoning role writes `Meta-review: not indicated`. The `Meta-review:` line names the signals checked. The reasoning role asks the owner, in the report that
-delivers a meta-review subject, to dispatch its meta-review. The owner may dispatch a meta-review of any text.
+limit or its review record shows a meta-review signal. The reasoning role writes `Meta-review: pending` when the text is a meta-review subject. An unparsed line is a review-record line the communication-pipeline's [signals script](https://github.com/majodali/communication-pipeline/blob/main/scripts/signals.mjs) cannot read. A claims-check line is the review-record line in which the reasoning role records the claims check's result before a round. A round after round 1 with no claims-check line counts as an unparsed line. While a line is unparsed, the reasoning role writes `Meta-review: unparsed`, naming the line, in place of `pending` or `not indicated`. When the unparsed line parses, the reasoning role writes `pending` again for a text that is a meta-review subject. When the text is no meta-review subject and no line is unparsed, the reasoning role writes `Meta-review: not indicated`. The `Meta-review:` line names the signals checked. The reasoning role asks the owner, in the report that
+delivers a meta-review subject, to dispatch that subject's meta-review. The owner may dispatch a meta-review of any text.
 
 A session the owner starts, the meta-review session, performs the
 meta-review. The meta-review session delivers the meta-review as a
 report to the owner. On delivery of the meta-review, the reasoning role sets the
-review record's line to `Meta-review: delivered` with a link. A
-`Meta-review: pending` line in the review record of an accepted
-deliverable is a finding of the next [form audit](constitution.md#article-9--audits) under
-Article 9 (audits). A `Meta-review: unparsed` line in the review record of an accepted deliverable is a finding of the next form audit under Article 9.
+review record's line to `Meta-review: delivered` with a link. A `Meta-review: pending` or `Meta-review: unparsed` line in an accepted
+deliverable's review record is a finding of the next [form audit](constitution.md#article-9--audits) under
+Article 9 (audits).
 
 ## Rendering conditions
 
@@ -249,7 +254,7 @@ count in the Status parenthesis when the IR is delivered.
 ## Texts that require an IR
 
 A document always starts as an IR. A report to [RD-2](style.md#readers) always starts as
-an IR. A report to RD-1 or RD-3 that introduces no term, records no decision and states no [register fact](vocabulary.md#def-register-fact) may be written as prose directly. Prose written directly is under the style guide's mechanical checks. A term, a decision or a register fact
+an IR. A report to RD-1 or RD-3 that introduces no term, records no decision and states no [register fact](vocabulary.md#def-register-fact) may be written as prose directly. The author of prose written directly runs the style guide's mechanical checks on it. A term, a decision or a register fact
 requires the IR. A term, a decision and a register fact are each
 content a model would hold.
 
@@ -277,4 +282,4 @@ communication-pipeline project until that project is archived, and in
 the methodology repository after. The specification was rewritten from its IR, `intermediate-representation.ir.md` beside this file. The rewrite followed ten [stranger](vocabulary.md#def-stranger) rounds on methodology [PR #51](https://github.com/majodali/methodology/pull/51)'s amendment text, rounds that ended without a readable verdict. The ten rounds grew the prose from 2,635 to 4,516 words. The communication-pipeline project's
 [analysis](https://github.com/majodali/communication-pipeline/blob/main/eval/analysis/pr51-findings.md) records the ten rounds.
 
-<!-- render map: C149→¶1 C150→¶1 C179→¶1 C5→¶1 C151→¶1 C166→¶1 C175→¶1 C1→¶2 C4→¶2 C6→¶3 C7→¶4 C8→¶4 C9→¶4 C167→¶4 C10→¶4 C11→¶5 C12→¶5 C13→¶5 C218→¶5 C14→¶5 C15→¶5 C16→¶5 C142→¶5 C17→¶6 C18→¶6 C19→¶6 C20→¶7 C21→¶7 C22→¶7 C23→¶8 C24→¶8 C25→¶8 C27→¶8 C152→¶8 C28→¶8 C29→¶8 C30→¶8 C31→¶8 C226→¶8 C240→¶8 C32→¶8 C33→¶8 C34→¶8 C36→¶8 C37→¶8 C38→¶8 C39→¶8 C40→¶9 C41→¶9 C35→¶9 C42→¶9 C231→¶9 C163→¶9 C43→¶9 C44→¶10 C165→¶10 C46→¶11 C47→¶11 C48→¶11 C49→¶12 C50→¶12 C51→¶13 C52→¶13 C53→¶14 C54→¶14 C55→¶14 C56→¶14 C57→¶14 C58→¶14 C232→¶14 C59→¶14 C60→¶14 C61→¶14 C62→¶14 C63→¶14 C64→¶14 C65→¶14 C66→¶14 C67→¶14 C68→¶14 C219→¶14 C69→¶14 C70→¶14 C71→¶15 C72→¶15 C174→¶15 C73→¶15 C180→¶15 C74→¶15 C75→¶15 C220→¶16 C176→¶16 C173→¶16 C76→¶16 C164→¶16 C77→¶16 C153→¶16 C78→¶16 C79→¶16 C80→¶16 C154→¶16 C81→¶16 C82→¶16 C83→¶17 C85→¶17 C86→¶18 C169→¶18 C87→¶18 C143→¶18 C88→¶19 C93→¶19 C211→¶19 C222→¶19 C228→¶19 C233→¶19 C203→¶19 C227→¶19 C223→¶19 C224→¶19 C195→¶19 C221→¶19 C194→¶19 C250→¶19 C234→¶19 C235→¶19 C251→¶19 C89→¶19 C90→¶19 C91→¶20 C92→¶20 C94→¶20 C95→¶21 C103→¶21 C155→¶22 C97→¶22 C156→¶22 C182→¶22 C202→¶22 C248→¶22 C249→¶22 C183→¶22 C98→¶22 C157→¶22 C158→¶22 C99→¶23 C197→¶23 C198→¶23 C199→¶23 C144→¶23 C100→¶23 C186→¶23 C101→¶23 C171→¶23 C172→¶23 C102→¶23 C104→¶24 C187→¶24 C188→¶24 C208→¶24 C189→¶24 C190→¶24 C105→¶24 C191→¶24 C236→¶24 C237→¶24 C238→¶24 C239→¶24 C209→¶24 C192→¶24 C106→¶24 C107→¶25 C108→¶25 C159→¶25 C109→¶25 C247→¶25 C204→¶26 C110→¶26 C205→¶26 C229→¶26 C111→¶26 C246→¶26 C112→¶26 C217→¶27 C113→¶27 C114→¶27 C170→¶27 C115→¶27 C116→¶27 C117→¶27 C118→¶27 C119→¶27 C120→¶28 C145→¶28 C121→¶29 C177→¶29 C122→¶29 C123→¶29 C124→¶29 C146→¶29 C125→¶29 C126→¶29 C127→¶29 C128→¶29 C129→¶30 C130→¶30 C132→¶30 C178→¶30 C131→¶30 C206→¶30 C133→¶31 C134→¶31 C160→¶31 C135→¶31 C185→¶31 C161→¶31 C136→¶31 C181→¶31 C138→¶32 C212→¶32 C139→¶32 C147→¶32 C213→¶32 C148→¶32 C214→¶32 C216→¶32 C184→¶32 C200→¶32 C215→¶32 C201→¶32 C225→¶32 C230→¶32 C193→¶32 C162→¶32 C140→¶32 C207→¶32 C210→¶32 -->
+<!-- render map: C149→¶1 C150→¶1 C179→¶1 C5→¶1 C151→¶1 C166→¶1 C175→¶1 C1→¶2 C4→¶2 C6→¶3 C7→¶4 C8→¶4 C9→¶4 C167→¶4 C10→¶4 C11→¶5 C12→¶5 C13→¶5 C218→¶5 C14→¶5 C15→¶5 C16→¶5 C142→¶5 C17→¶6 C18→¶6 C19→¶6 C20→¶7 C21→¶7 C22→¶7 C23→¶8 C24→¶8 C25→¶8 C27→¶8 C152→¶8 C28→¶8 C29→¶8 C30→¶8 C31→¶8 C226→¶8 C240→¶8 C32→¶8 C33→¶8 C34→¶8 C36→¶8 C37→¶8 C38→¶8 C39→¶8 C40→¶9 C42→¶9 C41→¶9 C35→¶9 C163→¶9 C231→¶9 C43→¶9 C44→¶10 C165→¶10 C46→¶11 C47→¶11 C48→¶11 C49→¶12 C50→¶12 C51→¶13 C52→¶13 C53→¶14 C54→¶14 C55→¶14 C56→¶14 C57→¶14 C58→¶14 C232→¶14 C59→¶14 C60→¶14 C61→¶14 C62→¶14 C63→¶14 C64→¶14 C65→¶14 C66→¶14 C67→¶14 C68→¶14 C219→¶14 C69→¶14 C70→¶14 C71→¶15 C72→¶15 C174→¶15 C73→¶15 C180→¶15 C74→¶15 C75→¶15 C220→¶16 C176→¶16 C173→¶16 C76→¶16 C164→¶16 C77→¶16 C153→¶16 C78→¶16 C79→¶16 C80→¶16 C154→¶16 C81→¶16 C82→¶16 C83→¶17 C85→¶17 C86→¶18 C169→¶18 C87→¶18 C143→¶18 C88→¶19 C93→¶19 C211→¶19 C222→¶19 C228→¶19 C233→¶19 C203→¶19 C227→¶19 C223→¶19 C224→¶19 C255→¶19 C195→¶19 C221→¶19 C194→¶19 C250→¶19 C234→¶19 C235→¶19 C251→¶19 C89→¶19 C90→¶19 C91→¶20 C92→¶20 C94→¶20 C95→¶21 C103→¶21 C155→¶22 C97→¶22 C156→¶22 C182→¶22 C202→¶22 C248→¶22 C183→¶22 C254→¶22 C98→¶22 C157→¶22 C158→¶22 C99→¶23 C197→¶23 C198→¶23 C199→¶23 C144→¶23 C100→¶23 C186→¶23 C101→¶23 C171→¶23 C172→¶23 C102→¶23 C104→¶24 C187→¶24 C188→¶24 C208→¶24 C189→¶24 C190→¶24 C105→¶24 C191→¶24 C236→¶24 C252→¶24 C253→¶24 C237→¶24 C238→¶24 C239→¶24 C209→¶24 C192→¶24 C106→¶24 C107→¶25 C108→¶25 C159→¶25 C109→¶25 C204→¶26 C110→¶26 C205→¶26 C229→¶26 C111→¶26 C246→¶26 C112→¶26 C217→¶27 C113→¶27 C114→¶27 C170→¶27 C115→¶27 C116→¶27 C117→¶27 C118→¶27 C119→¶27 C120→¶28 C145→¶28 C121→¶29 C177→¶29 C122→¶29 C123→¶29 C124→¶29 C146→¶29 C125→¶29 C126→¶29 C127→¶29 C128→¶29 C129→¶30 C130→¶30 C132→¶30 C178→¶30 C131→¶30 C206→¶30 C133→¶31 C134→¶31 C160→¶31 C135→¶31 C185→¶31 C161→¶31 C136→¶31 C181→¶31 C138→¶32 C212→¶32 C139→¶32 C147→¶32 C213→¶32 C148→¶32 C214→¶32 C216→¶32 C184→¶32 C200→¶32 C215→¶32 C201→¶32 C225→¶32 C230→¶32 C193→¶32 C162→¶32 C140→¶32 C207→¶32 C210→¶32 -->

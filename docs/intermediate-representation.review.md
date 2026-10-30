@@ -751,6 +751,7 @@ Three gaps remain from the edit of 2026-10-30 for IR-only documents. This count 
 | 4 | 3,471 | 223 | 8 | 2.3 | not readable (three own mismatches, quoted, two step-6 passages that count; contradiction 1; undefined terms 3) |
 | 5 | 3,568 | 230 | 5 | 1.4 | not readable (three own mismatches on the two step-6 passages, counting under the override; contradictions 0; undefined terms 0) |
 | 6 | 3,640 | 232 | 8 | 2.2 | not readable (one own mismatch, quoted, not counting; contradiction 1; undefined terms 0) |
+| 7 | 3,727 | 236 | 14 | 3.8 | not readable (five own mismatches, three counting; contradictions 0; undefined term 1) |
 
 ### Round 1, count 5, 2026-10-30
 
@@ -1047,3 +1048,36 @@ Awaiting restatement: none; round 6 matched on all three passages.
 Declined findings carried in the brief: round 1's 6, 11 (the instance did not accept the decline) and 16; round 2's 6; round 3's 7; each with its reason.
 
 Signals script before the round: signals 1 and 2 fire as before; signal 3 not fired; signal 4 fired by reading: round 6's contradiction (finding 5) sat on the readable round's marking rule, C202, which round 4's fix moved after C182; no line unparsed.
+
+Stranger model: claude-haiku-5-5, a fresh instance at the frugal tier. Prose 3,727 words by `wordCount`; IR 236 claims; 14 findings, 3.8 per thousand words. Restatement: five mismatches, each attributed by the stranger to its own restatement. Finding 1 (C50) ties meta-review signals to convergence with no prose basis and no quote, so it counts. Findings 2 and 3 (C1, C44) quote the sentences that carry them. Findings 4 and 5 (C203 without "that counts"; C194 and C235 without the withdrawals) sit on the verdict passage, which drew mismatches in rounds 1, 3, 4 and 5, so the override counts them. Contradictions 0, undefined term 1; verdict: not readable for RD-4.
+
+The quoted sentences, as the round 7 text carries them: for C1, "The reasoning role writes an intermediate representation (IR) before any prose of the communication exists, for each text that requires one."; for C44, "Each term, claim and cluster, and no other element, ends with one status in square brackets."; for C203, "The first condition: the restatement of the problem, terms and decisions has no mismatch with the IR that counts."; for C194, "A contradiction finding withdrawn by the round's stranger instance at confirmation, on a reason quoting the prose."
+Mismatches: C50 (own), C1 (own; relied on C1), C44 (own; relied on C44), C203 (own; relied on C203), C194 (own; relied on C194)
+
+Signals script after the `Mismatches:` line: signal 2 reports C203 (rounds 3 and 7), C194 (rounds 3, 4, 5 and 7), C1 (rounds 6 and 7) and C44 (count 4 round 1, count 5 round 7), with C104, C41, C223, C195 and C227 as before. By the script's reading, C1 and C44 also recur, so under the override they count and step 6 applies to their passages as well. The Orchestrator's reading counted neither. No structural fix is made on C1's or C44's passage in this pass, because the record holds neither misreading; C1's wording changes under finding 6. The question goes to the Orchestrator.
+
+The referent passage matched.
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1 | own mismatch on C50: signals tied to convergence | restatement | counts; no prose defect found: C50 states the unratified-term count as one indicator of convergence and names no signal |
+| 2, 3 | own mismatches on C1 and C44, quoted | restatement | see the signals note above |
+| 4, 5 | own mismatches on C203 and on C194 with C235: the verdict passage | restatement, step 6 | third structural fix: the verdict gets its own sub-header, "The verdict", under Stranger rounds, and the rest of the section its own, "The count"; nothing else moves; `awaiting restatement`, third fix |
+| 6 | "communication" undefined, beside "text" | SP-04 | rephrase C1, C12 and C23: "text" |
+| 7, 8 | "bare pronoun" and "bare determiner phrase" used before their lists | SP-04 | reorder: each list first, then its rule (C42 before C41, C163 before C231); C35 stays after C41 |
+| 9 | "rounds" in CK-14 unlinked | SP-04 | add the link to Stranger rounds |
+| 10 | the Rendering rule header over Stranger rounds and Meta-review | SP-08 | rename: "Rendering and review"; the anchor `rendering-rule`, which the vision document links, kept |
+| 11 | "The unfixed mark records …" after the sentence that defines unfixed | SP-26 | cut C249; no claim lost |
+| 12 | "its meta-review" | SP-03 | rephrase C106: "that subject's meta-review" |
+| 13 | the two form-audit sentences | SP-26 | merge C247 into C109: "A `Meta-review: pending` or `Meta-review: unparsed` line in an accepted deliverable's review record is a finding of the next form audit under Article 9 (audits)." |
+| 14 | "Prose written directly is under the style guide's mechanical checks." | SP-18 | rephrase C206: "The author of prose written directly runs the style guide's mechanical checks on it."; inferred by R74 |
+
+Queued items applied in the same pass: round 6's N1 (C236 split; C252 defines the claims-check line; C253 a round after round 1 with no claims-check line counts as unparsed); N2 (C208, "in two rounds of the text's counts"); N3 (C254: "At that edit, the reasoning role revises the unconfirmed words for the next count's confirmation."). The branch point's round 7 finding 6, shared: "The override governs the exception." in the table (C255, inferred by R75).
+
+Finding of count 5 for the owner: the verdict passage has drawn restatement omissions in five rounds (1, 3, 4, 5, 7). A 200-word restatement of a text near 3,700 words compresses a qualified rule; the meta-review should weigh this against the 200-word limit.
+
+Claims after fixes: 238. Prose after fixes: 3,752 words. Claims check after the fixes (base: round 7 prose): 12 changed claims, 0 missing, 0 stale; C247 and C249 removed. Round trip: 238 of 238.
+
+Decided claims the fixes changed, for the owner: C1, C12, C23, C106, C109 and C206, added to A6; new rules C252 to C255.
+
+Declined findings for round 8's brief: round 1's 6, 11 and 16; round 2's 6; round 3's 7; each with its reason. Passage awaiting restatement in round 8: the verdict section (C203, C227, C223, C224, C255, C195, C221, C194, C250, C234, C235, C251), third fix.
