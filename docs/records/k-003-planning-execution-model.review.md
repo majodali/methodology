@@ -110,6 +110,16 @@ Awaiting restatement from round 1: the re-fix of finding 4 (the Applies line) an
 
 Two instances in a row, rounds 1 and 2, read the title and the referent clauses as contradicting the appended sentence. The Orchestrator is putting the marker to the owner now: "no other document may claim that role, except as the next sentence provides", and no change to the title (C38). The round 2 confirmation table carries findings 2 and 5 as declines the instance may withdraw by quoting the appended sentence.
 
-Claims after fixes: 43. Prose after fixes: 269 words. Claims check after the fixes (base: the prose at `d29bf2d`): 0 changed claims, 0 missing, 0 stale. No claim changed. Round trip: 43 of 43 claims mapped. IR checks: 0 violations, 0 warnings. `mtool audit form`: no findings. Fix commit: pending, the Orchestrator commits the staged pass.
+Claims after fixes: 43. Prose after fixes: 269 words. Claims check after the fixes (base: the prose at `d29bf2d`): 0 changed claims, 0 missing, 0 stale. No claim changed. Round trip: 43 of 43 claims mapped. IR checks: 0 violations, 0 warnings. `mtool audit form`: no findings. Fix commit: `bec2473`.
 
-The confirmation line is written when the round 2 instance answers.
+Confirmation: 2 of 2 fixes hold. Not held: none. Declines accepted: 1 of 2. New defects: 1.
+
+The round 2 instance confirmed at `bec2473`. Finding 2 is withdrawn: the instance withdrew it on a reason quoting the appended sentence, the title being a name under the rule-heading form. Finding 5 stands as a decline, pending the owner. The instance holds that the appended sentence does not name the clause "no other document may claim that role". It would withdraw the finding when the rule carries the marker or the owner records the reading. The owner's answer on the marker is pending.
+
+Re-fixed after confirmation:
+
+| # | Defect (shortened) | Kind | Re-fix |
+|---|---|---|---|
+| N1 | "with no new Classification field" in the Cites line has no verb | SP-03 | "and the declaration needs no new Classification field", per C11. Marked `awaiting restatement` |
+
+The re-fix changes no claim.
