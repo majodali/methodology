@@ -325,11 +325,11 @@ C87. The reasoning role rephrases or removes words in a fix to prose before it a
 
 C143. The reasoning role adds words in a fix only to supply a missing definition or a missing referent. evidence: E2. [decided: owner, 2026-10-30]
 
-C279. A fix does not add a rule that the changes the owner adopted for the count do not hold. evidence: E8. [proposed: case 012 change 9]
+C279. The reasoning role adds no rule in a fix beyond the changes the owner adopted for the count. evidence: E8. [proposed: case 012 change 9]
 
 C280. When a finding needs a new rule, the reasoning role lists the finding for the owner with a proposed wording. evidence: E8. [proposed: case 012 change 9]
 
-C281. A finding that needs a new rule counts against the verdict as its kind does until the owner decides. evidence: E8. [proposed: case 012 change 9]
+C281. A finding that needs a new rule counts against the verdict as a finding of its kind (mismatch, contradiction or undefined term) until the owner decides. evidence: E8. [proposed: case 012 change 9]
 
 C282. A decided claim a fix rewords keeps its decided source and notes the rewording, as `reworded in count N, round M`. evidence: E8. [proposed: case 012 change 14]
 
@@ -347,7 +347,7 @@ C91. The reasoning role starts each round by dispatching a stranger with a fresh
 
 C92. The stranger reviews the IR and the prose against the reader's readability test. [decided: methodology PR #50, 2026-10-26]
 
-C266. The stranger brief lists each passage awaiting restatement. evidence: E8. [proposed: case 012 change 4]
+C266. In each round's stranger brief, the reasoning role lists each passage awaiting restatement. evidence: E8. [proposed: case 012 change 4]
 
 C267. After the restatement and before reading the IR, the stranger restates each listed passage in one sentence. evidence: E8. [proposed: case 012 change 4]
 
@@ -379,15 +379,11 @@ C265. An omission does not count against the verdict. [inferred: R80]
 
 C221. The second condition: the stranger finds no contradiction. [decided: owner, 2026-10-30]
 
-C194. A contradiction finding withdrawn by the round's stranger instance at confirmation, on a reason quoting the prose, does not count against the verdict. evidence: E3. [decided: owner, 2026-10-30]
-
-C250. A contradiction finding withdrawn on a reason that does not quote the prose still counts. [decided: owner, 2026-10-30]
+C194. Each contradiction finding counts against the verdict, unless the round's stranger instance withdrew the finding at confirmation on a reason that quotes the prose. evidence: E3. [decided: owner, 2026-10-29; reworded in count 6, round 2, C250 merged into it as a step-6 fix]
 
 C234. The third condition: the stranger finds no undefined term. [decided: owner, 2026-10-30]
 
-C235. An undefined-term finding withdrawn by the round's stranger instance at confirmation, on a reason quoting the prose, does not count against the verdict. evidence: E3. [decided: owner, 2026-10-30]
-
-C251. An undefined-term finding withdrawn on a reason that does not quote the prose still counts. [decided: owner, 2026-10-30]
+C235. Each undefined-term finding counts against the verdict, unless the round's stranger instance withdrew the finding at confirmation on a reason that quotes the prose. evidence: E3. [decided: owner, 2026-10-30; reworded in count 6, round 2, C251 merged into it as a step-6 fix]
 
 C94. The reasoning role treats a finding that proposes fewer words, a plainer phrase or a removed repetition like any other finding. [inferred: R48]
 
@@ -423,15 +419,19 @@ C269. A fix pass is the reasoning role's fixes of one round's findings, in the I
 
 C270. After each fix pass, the reasoning role runs the claims check against the previous round's prose. evidence: E8. [proposed: case 012 change 13]
 
-C271. The reasoning role fixes a claim the claims check reports missing or stale before the confirmation read and before the next round opens. evidence: E8. [proposed: case 012 change 13]
+C271. The reasoning role fixes a claim the claims check reports missing or stale before the confirmation and before the next round opens. evidence: E8. [proposed: case 012 change 13]
 
 C272. The reasoning role names the fix commit to the round's stranger instance. evidence: E8. [proposed: case 012 change 7]
 
 C273. The round's stranger instance reads the prose and the IR at the fix commit, in full, before answering. evidence: E8. [proposed: case 012 change 7]
 
-C274. A new defect is a defect a fix introduces, which the round's stranger instance names at confirmation. evidence: E8. [proposed: case 012 change 8]
+C274. A new defect is a defect a fix introduces. evidence: E8. [proposed: case 012 change 8]
 
-C275. The next round opens after the reasoning role records the round's confirmation and makes the fixes the confirmation calls for. evidence: E8. [proposed: case 012 change 6]
+C297. The round's stranger instance names each new defect at confirmation. evidence: E8. [proposed: case 012 change 8]
+
+C275. The next round opens after the reasoning role records the round's confirmation. evidence: E8. [proposed: case 012 change 6]
+
+C298. Before the next round opens, the reasoning role makes the fixes the confirmation calls for. evidence: E8. [proposed: case 012 change 6]
 
 C99. At the limit the reasoning role does not deliver the text before the owner's decision. [decided: owner, 2026-10-26]
 
@@ -629,11 +629,15 @@ C215. The final round's fixes confirmed at the limit were added on 2026-10-29 by
 
 C201. The third and fourth signals were reworded on 2026-10-29 by the owner decision on communication-pipeline evaluation case 009. evidence: E3. [decided: owner, 2026-10-29]
 
-C225. The own-mismatch rule was added on 2026-10-30, by owner decision on communication-pipeline evaluation cases 010 and 011. evidence: E5. [decided: owner, 2026-10-30]
+C225. The rule on an own mismatch was added on 2026-10-30, by owner decision on communication-pipeline evaluation cases 010 and 011. evidence: E5. [decided: owner, 2026-10-30; reworded in count 6, round 2]
 
 C285. Count 6 carried communication-pipeline evaluation case 012's changes 1, 2, 4 to 9, 11, 13 and 14 on 2026-10-30. evidence: E8. [proposed: case 012]
 
-C286. Case 012's change 1 struck the own-mismatch exception and its override. evidence: E8. [proposed: case 012 change 1]
+C286. Case 012's change 1 struck two qualifiers of the first condition. evidence: E8. [proposed: case 012 change 1]
+
+C299. The exception had let an own mismatch with a quoted carrier sentence go uncounted. evidence: E5. [decided: owner, 2026-10-30]
+
+C300. The override had counted a mismatch that recurred on one passage in two rounds. evidence: E5. [decided: owner, 2026-10-30]
 
 C230. In count 5, the sentence giving normative text to the reasoning role was cut as a repeat of the renderer's definition. [inferred: R57]
 
@@ -779,8 +783,6 @@ R67. C109 refines C237 because an unparsed line hides whether the text is a meta
 
 R68. C195 depends-on C233 because the round's stranger instance is the one that confirms and withdraws; case 009 change 2 named no actor.
 
-R69. C250 refines C194 because the withdrawal counts only on a reason quoting the prose, so a withdrawal on any other reason leaves the finding counting.
-
 R70. C164 depends-on C220 because the renderer places every link; methodology PR #48 named no actor.
 
 R71. C248 depends-on C155 because the delivered text is the judged text with the round's fixes applied, and C202 marks the fixes the instance did not confirm.
@@ -845,9 +847,9 @@ A5. Ratify or strike the terms passage (T24), topic claim (T25) and confirmation
 
 A5 resolved: ratified by the owner, 2026-10-30, with the term withdrawal (T28); vocabulary rows added.
 
-A6. Ratify or strike the new wording of the decided claims count 5 reworded or split in its rounds: C1; C13; C31 and C240; C41 and C231; C58 and C232; C87; C102; C110; C143; C161; C191 and C239; C194 and C235; C199; C203; C205; C208; C221 and C234; C223; C224; C227; C229; C88; C195; C164; C207; C1; C12; C23; C106; C109; C206; C44 with C259 and C260, C260 merged into C259 in round 9 and the merge reversed in round 10 on a one-claim-per-sentence finding; C46; C174, whose exception describes the clusters C256 splits. New rules for the owner: the `Meta-review: unparsed` line (C236 to C238) and its form-audit finding, merged into C109; a withdrawal without a quoted reason still counts (C250, C251); an unconfirmed fix's words stay in the delivered prose (C248) and are revised at the next edit (C254); the claims-check line (C252, C253); the override governs the exception (C255). Depends: C1, C13, C31, C41, C58, C87, C102, C110, C143, C161, C191, C194, C199, C203, C205, C208, C221, C227, C229, C88, C195, C164, C207, C237, C248, C250, C252, C254, C12, C23, C106, C206, C44, C259, C46, C174.
+A6. Ratify or strike the new wording of the decided claims count 5 reworded or split in its rounds: C1; C13; C31 and C240; C41 and C231; C58 and C232; C87; C102; C110; C143; C161; C191 and C239; C194 and C235; C199; C203; C205; C208; C221 and C234; C223; C224; C227; C229; C88; C195; C164; C207; C1; C12; C23; C106; C109; C206; C44 with C259 and C260, C260 merged into C259 in round 9 and the merge reversed in round 10 on a one-claim-per-sentence finding; C46; C174, whose exception describes the clusters C256 splits. New rules for the owner: the `Meta-review: unparsed` line (C236 to C238) and its form-audit finding, merged into C109; a withdrawal without a quoted reason still counts (C250, C251); an unconfirmed fix's words stay in the delivered prose (C248) and are revised at the next edit (C254); the claims-check line (C252, C253); the override governs the exception (C255). Depends: C1, C13, C31, C41, C58, C87, C102, C110, C143, C161, C191, C194, C199, C203, C205, C208, C221, C227, C229, C88, C195, C164, C207, C237, C248, C252, C254, C12, C23, C106, C206, C44, C259, C46, C174.
 
-A6 resolved: ratified by the owner, 2026-10-30; the claims carry decided provenance from that date. C223, C224 and C255 were struck in count 6 by case 012 change 1, and dropped from the Depends field.
+A6 resolved: ratified by the owner, 2026-10-30; the claims carry decided provenance from that date. C223, C224 and C255 were struck in count 6 by case 012 change 1, and dropped from the Depends field. C250 and C251 were merged into C194 and C235 in count 6, round 2, and C250 dropped from the Depends field.
 
 A7. Ratify or strike two rules count 5's round 8 found missing: a cluster whose claims fall under different parts renders as one paragraph per part (C256), the exception C174 names; an IR-only deliverable's own Asks section lists each proposed term for ratification (C257). Decide also the name of the reasoning role's decision on a finding, fixed or declined (C261), beside the communication-pipeline's [disposition](https://github.com/majodali/communication-pipeline/blob/main/docs/vocabulary.md#def-disposition), the branch point's output for one IR. Depends: C256, C257, C261, C174.
 
@@ -855,4 +857,4 @@ A7 resolved: ratified by the owner, 2026-10-30, C256 and C257 included; the disp
 
 A8. Ratify or strike count 6's rendering of communication-pipeline evaluation case 012's adopted changes: the first condition without the exception and the override (C203, C227); the omission (C263, C264); the one-sentence restatement of each listed passage (C266 to C268); the fix pass, the claims check after it and the fix commit read in full (C269 to C273, C252, C253); the new defect and its handling at the final confirmation (C274, C276 to C278); the next round's opening (C275); no new rule in a fix (C279 to C281); the reworded claims' sources (C282, C283); the third signal struck (C284, C105); the History (C285, C286). Depends: C203, C227, C263, C264, C266, C267, C268, C269, C270, C271, C272, C273, C252, C253, C274, C275, C276, C277, C278, C279, C280, C281, C282, C283, C284, C105, C285, C286.
 
-A9. Strike or keep the vocabulary row *own mismatch*: after count 6 and branch point v1.10 neither text uses the term outside its history. Depends: C286.
+A9. Strike or keep the vocabulary row *own mismatch*: after count 6 and branch point v1.10 neither text uses the term outside its history. Count 6's round 2 links the row from the History, so the row has that use. Depends: C286.

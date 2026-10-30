@@ -1275,6 +1275,7 @@ Lint before round 1: IR checks 0 violations, 0 warnings.
 | Round | Prose words | IR claims | Findings | Per 1,000 words | Verdict |
 |---|---|---|---|---|---|
 | 1 | 4,129 | 265 | 8 | 1.9 | not readable (two mismatches, both on step-6 passages; contradictions 0; undefined terms 0) |
+| 2 | 4,208 | 272 | 10 | 2.4 | not readable (two mismatches on the verdict table, a step-6 passage; contradictions 0; undefined terms 2) |
 
 ### Round 1, count 6, 2026-10-30
 
@@ -1338,3 +1339,32 @@ Declined findings carried in the brief from count 5: round 1's 6, 11 and 16; rou
 Forms added to the brief: none.
 
 Signals script before the round: signal 2 fires on C104 and C106, as recorded in round 1; no line unparsed.
+
+Stranger model: claude-haiku-5-5, a fresh instance at the frugal tier (a5ed0a53e139b94f9). Prose 4,208 words by `wordCount` (the stranger's hand estimate: about 5,500); IR 272 claims; 10 findings, 2.4 per thousand words. Restatement: two mismatches, both on the verdict table. Contradictions 0, undefined terms 2 (findings 6 and 10); verdict: not readable for RD-4.
+
+Side effect: the instance made one session-list read outside the brief's two files. It reports that it did not use the result.
+
+Listed passages, each restated in one sentence: the Element kinds provenance column with the Provenance opening, "term, claim and cluster elements carry a provenance status; relation, evidence and ask elements carry none; where a status is present it is the last item in square brackets in the element"; "Who dispatches a meta-review", "a text becomes a meta-review subject when its count reaches the limit or its review record shows a signal; the reasoning role asks the owner, in the report delivering that subject, to dispatch its meta-review, and the owner may dispatch one for any text". Both match the IR (C259, C292 to C295, C260, C44; C104, C106, C192). Both `awaiting restatement` marks clear.
+
+Omissions noticed, not counted, by topic: no new rule in a fix (C279 to C281); the delivered text with the fixes applied (C155); a relation as the reasoning role's inference; rework and the owner's three outcomes (C100); the per-round counts in the review record (C103); the footprint and the mechanical checks.
+
+The quoted sentences: for C250 with C194, "Each contradiction finding not withdrawn."; for C251 with C235, "Each undefined-term finding not withdrawn." The restatement read every unwithdrawn finding as counting and dropped who withdraws and on what reason.
+Mismatches: C250 (relied on C194), C251 (relied on C235)
+
+Signals script after the `Mismatches:` line: signal 2 fires on C104 and C106 as before. C250 and C251 stand on no earlier line; C194, their passage's claim, recurred in count 5's rounds 3, 4, 5 and 7. The verdict passage is a step-6 passage again, by reading.
+
+| # | Finding (shortened) | Kind | Decision |
+|---|---|---|---|
+| 1, 2 | mismatches on C250 with C194 and on C251 with C235: the counts cells drop who withdraws and on what reason | restatement, step 6 | structural fix: the qualifiers move into the counts cells, "Each contradiction finding counts against the verdict, unless the round's stranger instance withdrew the finding at confirmation on a reason that quotes the prose." (C194) and the same for undefined terms (C235); C250 and C251 merged into them; the does-not-count cells of rows 2 and 3 read "—"; `awaiting restatement`, listed for round 3 |
+| 3 | the no-new-rule sentence names no actor | SP-18 | rephrase C279: "The reasoning role adds no rule in a fix beyond the changes the owner adopted for the count." |
+| 4 | "as its kind does" | SP-03 | rephrase C281: "as a finding of its kind (mismatch, contradiction or undefined term)" |
+| 5 | "The stranger brief lists each passage awaiting restatement" names no actor | SP-18 | rephrase C266: "In each round's stranger brief, the reasoning role lists each passage awaiting restatement." |
+| 6 | "confirmation read" undefined | SP-04 | rephrase C271: "before the confirmation" |
+| 7 | "which" in the new-defect definition | SP-03 | split C274, C297 added: "The round's stranger instance names each new defect at confirmation." |
+| 8 | the next-round sentence joins two duties | SP-01 | split C275, C298 added: "Before the next round opens, the reasoning role makes the fixes the confirmation calls for." |
+| 9 | "meta-review signal" used before The signals | SP-10 | add "(see The signals below)"; the term was already linked |
+| 10 | History's own-mismatch rule, exception and override undefined | SP-04 | link *own mismatch* to the vocabulary row (C225 reads "The rule on an own mismatch"); C286 reads "Case 012's change 1 struck two qualifiers of the first condition.", glossed by C299 and C300; ask A9 notes that the History now links the row |
+
+Claims after fixes: 274. Prose after fixes: 4,238 words. Claims check after the fix pass (base: round 2 prose): 14 changed claims, 0 missing, 0 stale; C250 and C251 removed. Round trip: 274 of 274. IR check: 0 violations, 0 warnings.
+
+Decided claims the fixes reworded, for the owner's list at the count's close: C194 (with C250), C235 (with C251), C225.
