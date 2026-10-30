@@ -711,3 +711,39 @@ The instance's first two confirmation reads saw the prose before its fixes lande
 Readable for RD-4 at round 4 of a count of four. Findings per thousand words by round: 2.9, 5.1, 1.3, 2.5. Contradictions by round: 0, 0, 0, 0. Prose 3,089 words at round 1 and 3,181 at delivery; IR 192 claims at round 1 and 207 at delivery, the growth from splits for one claim per sentence and the sentences shortened under case 009's change 17. Every accepted fix confirmed by its round's instance; one decline (round 2, F16) accepted by the instance. Thirty-six of the thirty-seven findings fell on text older than this count.
 
 Meta-review: pending (signals 1 and 2). Signals checked at the end of count 4 by `scripts/signals.mjs` (reading the last count) and by reading: first, fired, as the rule reads: fixes were not held at confirmation in rounds 1 (one of seven) and 2 (two of eleven), and in rounds 2 and 4 the prose fixes did not reach the prose on their first write, each refixed and confirmed afterwards; second, fired: C41 stands on the Mismatches lines of rounds 2 and 4, both times attributed by the stranger to its own restatement, which under the branch point's step 6 made the passage a prose finding owed a structural fix before round 5; the reasoning role's hand check missed the recurrence and the count closed readable at round 4, so the passage, the Relation row's sentence "A reference from one claim to another is a relation, never a pronoun inside the claim" read twice as barring every pronoun, is owed its structural fix at the next edit; no declined finding raised again; third, words per IR claim 16.1 to 15.6, minus 3 percent; fourth, no contradiction in round 3 or later. The limit was not reached. The reasoning role asks the owner, in the report that delivers this count, to dispatch the meta-review.
+
+## Count 5, 2026-10-30: evaluation cases 010 and 011
+
+Inputs: the owner's adoption on 2026-10-30 of communication-pipeline evaluation cases 010 and 011 ("For cases 010 and 011 - go with all recommendations, all terms ratified."). Seven adopted changes amend this specification: case 010's changes 1, 5, 9, 11, 12 and 13 and case 011's change 1. The others amend the communication-pipeline branch point, as its v1.9. Reader RD-4. Disposition D3 (Normative: yes): the reasoning role rendered the amended passages from the IR. Text reviewed: `docs/intermediate-representation.md` whole; the IR covers the whole text.
+
+Branch point version and commit the count runs under (case 010 change 10): v1.9 as proposed, communication-pipeline commit 8019eee on branch `branch-point-v1.9-cases-010-011`, the changes the owner adopted before this count. The Orchestrator confirms or replaces this line before round 1.
+
+Changes to the IR. C203 reworded and split (C221). C222 to C224 added, the own-mismatch rule, with T22 own mismatch. C187 reworded to the branch point's first signal, with T23 claims check linked to the branch point's Rounds section. C189 reads "in the count's last round". C35 moved into The referent rule after C41, its identifier kept. C220 added, the renderer defined before C76; C81 drops its appositive. C76, C77, C79, C82, C94, C152 and C202 made inferred (R44 to R50). C225 added to the History. 210 claims before the count's edit; 216 after.
+
+Case 011 change 1 in this text. The case's sentence "A mismatch that step 6 makes a prose finding always counts" names the branch point's step 6, which this specification does not hold. C224 renders it in the second signal's words: "A restatement mismatch that recurred on one passage always counts against the verdict." C224 is inferred by R52.
+
+The C41 passage (case 010 change 11). C35, "A reference from one claim to another is a relation, never a pronoun inside the claim", moved from the Element kinds table's Relation row into The referent rule, after C41. The move is the structural fix for the mismatch on C41 in count 4's rounds 2 and 4. Round 1's entry of this count states whether its restatement matched on the passage of C41 and C35.
+
+The sources of eight claims (case 010 change 13). A claim whose source names no actor becomes inferred, with a relation naming its basis.
+
+| Claim | Source | Actor in the source | Decision |
+|---|---|---|---|
+| C76 | methodology PR #48: "A term with a definition site is linked at its first use" | none | inferred, R44 (the renderer, C220) |
+| C77 | methodology PR #46: "A term the IR introduces is defined in a sentence of its own" | none | inferred, R45 (the renderer, C220) |
+| C79 | pipeline schema v1.2: "a claim renders under the part its `part:` field names" | none | inferred, R46 (the renderer, C220) |
+| C81 | pipeline schema v1.2: "It follows the style specification for the IR's reader", after the paraphraser's and the reasoning role's sentences | the renderer, by the pronoun | stays decided; the appositive dropped (change 12) |
+| C82 | methodology PR #46: "The rendering states an empty Asks section" | none | inferred, R47 (the renderer, C220) |
+| C94 | the owner's ratification of 2026-10-27 of "a finding ... is a finding like any other" | none | inferred, R48 (the reasoning role records dispositions, C95) |
+| C152 | methodology PR #48: a proposed term "listed for ratification" | none, and no trigger | inferred, R49 (Terms introduced, C153) |
+| C202 | case 008 change 5: "the record marks each confirmed or unfixed" | none | inferred, R50 (the reasoning role records dispositions, C95) |
+
+Lint before round 1 (case 010 change 8, case 011 change 8). IR checks: 0 violations, 0 warnings. Sentences over 25 words in the prose: 2, the Status line (49) and the Reader paragraph's assumed-knowledge sentence (26), both header forms; `mtool style` warns on the Status line only. Neither was changed by this edit.
+
+Three gaps remain from the edit of 2026-10-30 for IR-only documents. This count does not change them. The render map omits C217 to C219. C13's Status values omit `delivered IR-only`. The prose's "another is whether the owner designated the document IR-only" has no claim.
+
+### Curve, count 5
+
+| Round | Prose words | IR claims | Findings | Per 1,000 words | Verdict |
+|---|---|---|---|---|---|
+
+### Round 1, count 5

@@ -307,6 +307,9 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   rendering and no stranger rounds; the IR check is its gate, and its
   Status reads `delivered IR-only`. Normative text is never IR-only
   (owner, 2026-10-30, [record](records/ir-only-documents.ir.md)).
+- <a id="def-own-mismatch"></a>**Own mismatch** — a restatement mismatch the stranger attributes to its own
+  restatement (owner, 2026-10-30,
+  [specification](intermediate-representation.md#stranger-rounds)).
 - <a id="def-report-audience"></a>**Report audience** — the reader a report is addressed to under
   [W-008](rules/working-agreement.md#w-008--reports-map-their-deliverables)
   (reports map their deliverables): the human owner directly (the

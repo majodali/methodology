@@ -2,10 +2,10 @@
 
 Reader: RD-4
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: reviewed (count 4, round 4 readable 2026-10-29; fixes confirmed; edited 2026-10-30 for IR-only documents, C217 to C219 added and rendered by the reasoning role, not yet reviewed; declared 4, changed 4, surprises 0, misses 0; unratified terms 0)
-Source: the owner's adoption of 2026-10-29 of communication-pipeline evaluation case 009's nineteen changes, of which changes 2, 14, 15 and 18 amend this specification (count 4); the owner's decision of 2026-10-27 on signal-based meta-review triggers (count 3); communication-pipeline evaluation case 008 (owner decision of 2026-10-27, change 5) for count 2; for count 1, docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
+Status: rendered (count 5, edited 2026-10-30 for communication-pipeline evaluation cases 010 and 011, rendered by the reasoning role, not yet reviewed; count 4 round 4 readable 2026-10-29; declared 5, changed 5, surprises 0, misses 0; unratified terms 0)
+Source: the owner's adoption of 2026-10-30 of communication-pipeline evaluation cases 010 and 011's recommended changes, of which case 010's changes 1, 5, 9, 11, 12 and 13 and case 011's change 1 amend this specification (count 5); the owner's adoption of 2026-10-29 of communication-pipeline evaluation case 009's nineteen changes, of which changes 2, 14, 15 and 18 amend this specification (count 4); the owner's decision of 2026-10-27 on signal-based meta-review triggers (count 3); communication-pipeline evaluation case 008 (owner decision of 2026-10-27, change 5) for count 2; for count 1, docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
-Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md; docs/releases.md
+Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md; docs/releases.md; docs/vocabulary.md
 
 ## Terms
 
@@ -50,6 +50,10 @@ T19. Limit. defined-at: vocabulary.md#def-limit [decided: owner, 2026-10-27]
 T20. Meta-review signal. defined-at: vocabulary.md#def-meta-review-signal [decided: owner, 2026-10-27]
 
 T21. Restatement. defined-at: https://github.com/majodali/communication-pipeline/blob/main/docs/vocabulary.md#def-restatement [decided: owner, 2026-10-27]
+
+T22. Own mismatch. defined-at: vocabulary.md#def-own-mismatch [decided: owner, 2026-10-30]
+
+T23. Claims check. defined-at: https://github.com/majodali/communication-pipeline/blob/main/docs/branch-point.md#rounds [decided: owner, 2026-10-30]
 
 ## Claims
 
@@ -123,7 +127,7 @@ C25. Every project-specific term used in a claim appears as a term element. [dec
 
 C27. A term without a definition site has status proposed. [decided: methodology PR #48, 2026-10-26]
 
-C152. The reasoning role lists each proposed term for ratification in the report that delivers the text. [decided: methodology PR #48, 2026-10-26]
+C152. The reasoning role lists each proposed term for ratification in the report that delivers the text. [inferred: R49]
 
 C28. A claim element (`C`) makes one statement. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -139,8 +143,6 @@ C33. A relation element (`R`) has the form `C<a> <verb> C<b> because <reason>`, 
 
 C34. The reason of a relation is one sentence or a claim identifier. [decided: pipeline schema v1.2, 2026-10-25]
 
-C35. A reference from one claim to another is a relation, never a pronoun inside the claim. [decided: pipeline schema v1.2, 2026-10-25]
-
 C36. An evidence element (`E`) holds a pointer (a file and line, a commit, a message date or a URL) with what the pointer shows. [decided: pipeline schema v1.2, 2026-10-25]
 
 C37. Evidence is cited by a claim's `evidence:` field, never free-standing. [decided: pipeline schema v1.2, 2026-10-25]
@@ -154,6 +156,8 @@ C39. Every IR for RD-1 or RD-2 has an Asks section, holding asks or the single l
 C40. A claim names each referent inside itself. [decided: pipeline schema v1.2, 2026-10-25]
 
 C41. A bare pronoun or determiner phrase inside a claim is legal only when its antecedent is a noun phrase earlier in the claim that holds the phrase. [decided: pipeline schema v1.2, 2026-10-25]
+
+C35. A reference from one claim to another is a relation, never a pronoun inside the claim. [decided: pipeline schema v1.2, 2026-10-25]
 
 C42. The bare pronouns are it, this, that, these and those, with no noun after. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -235,27 +239,29 @@ C74. The paraphraser may add connective prose: a sentence that asserts nothing t
 
 C75. Relations and evidence are not rendered as sentences. [decided: pipeline schema v1.2, 2026-10-25]
 
-C76. The renderer links a term with a definition site at its first use in the unit. [decided: methodology PR #48, 2026-10-26]
+C220. The renderer is the paraphraser or, for normative text, the reasoning role. evidence: E4. [decided: owner, 2026-10-30]
+
+C76. The renderer links a term with a definition site at its first use in the unit. [inferred: R44]
 
 C173. The unit for P-008 is the whole text for a report and the section for a document. [decided: methodology PR #48, 2026-10-26]
 
 C164. Later uses of a term with a definition site in the unit are not linked. [decided: methodology PR #48, 2026-10-26]
 
-C77. The renderer defines a term the IR introduces in a sentence of its own before its first use. [decided: methodology PR #46, 2026-10-26]
+C77. The renderer defines a term the IR introduces in a sentence of its own before its first use. [inferred: R45]
 
 C153. A term the IR introduces is listed under *Terms introduced*. [decided: methodology PR #46, 2026-10-26]
 
 C78. For RD-5, the first use of a term with a definition site carries its definition in parentheses instead of a link. [decided: methodology PR #48, 2026-10-26]
 
-C79. For RD-1 or RD-2, the renderer places a claim under the part its `part:` field names. [decided: pipeline schema v1.2, 2026-10-25]
+C79. For RD-1 or RD-2, the renderer places a claim under the part its `part:` field names. [inferred: R46]
 
 C80. Without a `part:` field, a decided claim renders under *What is already covered*. [decided: methodology PR #50, 2026-10-26]
 
 C154. Without a `part:` field, a proposed or inferred claim renders under *What changed*. [decided: methodology PR #50, 2026-10-26]
 
-C81. When rendering, the renderer, the paraphraser or the reasoning role, follows the style guide's rows for the IR's reader. [decided: pipeline schema v1.2, 2026-10-25]
+C81. When rendering, the renderer follows the style guide's rows for the IR's reader. [decided: pipeline schema v1.2, 2026-10-25]
 
-C82. The renderer states an empty Asks section as "No asks." [decided: methodology PR #46, 2026-10-26]
+C82. The renderer states an empty Asks section as "No asks." [inferred: R47]
 
 C83. The paraphraser appends a render map as one comment line reading `render map:` and, per claim, the paragraph it landed in, as `C1→¶1 C2→¶1 …`. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -287,21 +293,29 @@ C92. The stranger reviews the IR and the prose against the reader's readability 
 
 C93. In a round, the verdict is readable when three conditions hold. [decided: owner, 2026-10-27]
 
-C203. The conditions: the stranger's restatement of the problem, terms and decisions matches the IR; the stranger finds no contradiction; the stranger finds no undefined term. [decided: owner, 2026-10-27]
+C203. The first condition: the stranger's restatement of the problem, terms and decisions has no mismatch with the IR, whatever the stranger attributes a mismatch to. evidence: E4. [decided: owner, 2026-10-30]
+
+C221. The second and third conditions: the stranger finds no contradiction and no undefined term. [decided: owner, 2026-10-27]
 
 C211. A restatement mismatch is a disagreement between the stranger's restatement and the IR. [decided: owner, 2026-10-27]
+
+C222. An own mismatch is a restatement mismatch the stranger attributes to its own restatement. evidence: E5. [decided: owner, 2026-10-30]
+
+C223. An own mismatch does not count against the verdict when the stranger quotes a prose sentence that carries the IR's claim. evidence: E5. [decided: owner, 2026-10-30]
+
+C224. A restatement mismatch that recurred on one passage always counts against the verdict. evidence: E5. [inferred: R52]
 
 C194. A contradiction or undefined-term finding withdrawn by the round's stranger instance at confirmation, on a reason quoting the prose, does not count against the verdict. evidence: E3. [decided: owner, 2026-10-29]
 
 C195. A restatement mismatch is not withdrawn at confirmation. evidence: E3. [decided: owner, 2026-10-29]
 
-C94. The reasoning role treats a finding that proposes fewer words, a plainer phrase or a removed repetition like any other finding. [decided: owner, 2026-10-27]
+C94. The reasoning role treats a finding that proposes fewer words, a plainer phrase or a removed repetition like any other finding. [inferred: R48]
 
 C95. The reasoning role records each round's findings, each finding's disposition, and the verdict in the review record. [decided: methodology PR #50, 2026-10-26]
 
 C155. The text delivered after a readable verdict is the judged text with the round's fixes applied. [decided: owner, 2026-10-27]
 
-C202. The reasoning role marks each finding of the readable round confirmed or unfixed in the delivered text. [decided: owner, 2026-10-27]
+C202. The reasoning role marks each finding of the readable round confirmed or unfixed in the delivered text. [inferred: R50]
 
 C97. At a readable verdict, the reasoning role fixes the round's findings in the IR and then in the prose. [decided: owner, 2026-10-27]
 
@@ -345,13 +359,13 @@ C103. The review record holds, per round, the word count of the prose and the cl
 
 C104. A text is a meta-review subject when its count reaches the limit or its review record shows a meta-review signal. [decided: owner, 2026-10-27]
 
-C187. The first signal: in two or more rounds of the count, a fix did not reach the prose or was not confirmed. [decided: owner, 2026-10-27]
+C187. The first signal: in two or more rounds, a fix was not held at confirmation or the claims check reported a missing or stale claim. evidence: E4. [decided: owner, 2026-10-30]
 
 C188. The second signal: a finding declined in an earlier round was raised again. [decided: owner, 2026-10-27]
 
 C208. The second signal also fires when a restatement mismatch recurred on one passage. [decided: owner, 2026-10-27]
 
-C189. The third signal: at the count's end, words per IR claim exceed round 1's words per claim by more than one tenth. evidence: E3. [decided: owner, 2026-10-29]
+C189. The third signal: in the count's last round, words per IR claim exceed round 1's words per claim by more than one tenth. evidence: E4. [decided: owner, 2026-10-30]
 
 C190. The fourth signal: in round 3 or later, a stranger found a contradiction in a passage an earlier round's fix touched. evidence: E3. [decided: owner, 2026-10-29]
 
@@ -485,6 +499,8 @@ C215. The final round's fixes confirmed at the limit were added on 2026-10-29 by
 
 C201. The third and fourth signals were reworded on 2026-10-29 by the owner decision on communication-pipeline evaluation case 009. evidence: E3. [decided: owner, 2026-10-29]
 
+C225. The own-mismatch rule was added on 2026-10-30, by owner decision on communication-pipeline evaluation cases 010 and 011. evidence: E5. [decided: owner, 2026-10-30]
+
 C193. The trigger of three rounds was replaced by the four signals on 2026-10-27, by owner decision after five recorded counts. [decided: owner, 2026-10-27]
 
 C162. The owner placed the meta-review in the communication-pipeline project until that project is archived, and in the methodology repository after. [decided: owner, 2026-10-26]
@@ -585,6 +601,24 @@ R42. C197 refines C99 because the fixes precede the owner's decision that C99 wa
 
 R43. C198 depends-on C197 because the instance confirms the fixes the reasoning role made.
 
+R44. C76 depends-on C220 because the link is placed when the text is rendered, and the renderer renders; the source, methodology PR #48, names no actor.
+
+R45. C77 depends-on C220 because the definition is written when the text is rendered, and the renderer renders; the source, methodology PR #46, names no actor.
+
+R46. C79 depends-on C220 because the placement is made when the text is rendered, and the renderer renders; the source, the pipeline schema v1.2, names no actor.
+
+R47. C82 depends-on C220 because the Asks section is stated when the text is rendered, and the renderer renders; the source, methodology PR #46, names no actor.
+
+R48. C94 depends-on C95 because the reasoning role records each finding's disposition; the source, the owner's ratification of 2026-10-27 of a passive claim, names no actor.
+
+R49. C152 depends-on C153 because the report that delivers the text lists its terms under Terms introduced, and the reasoning role writes the IR that holds the proposed term; the source, methodology PR #48, names no actor and no trigger.
+
+R50. C202 depends-on C95 because the reasoning role records each finding's disposition; the source, communication-pipeline evaluation case 008 change 5 ("the record marks each confirmed or unfixed"), names no actor.
+
+R51. C223 refines C203 because the quoted sentence shows the prose carries the claim, so the mismatch lies in the restatement alone.
+
+R52. C224 refines C223 because the branch point's step 6 makes a mismatch on one passage in two rounds a prose finding, whatever the stranger attributes it to.
+
 ## Evidence
 
 E1. docs/records/stranger-rounds-until-readable.review.md (kept on main from the closed branch of PR #51 since 2026-10-29): ten rounds, 232 findings, verdict not readable in every round; prose 2,635 to 4,516 words.
@@ -592,6 +626,10 @@ E1. docs/records/stranger-rounds-until-readable.review.md (kept on main from the
 E2. communication-pipeline eval/analysis/pr51-findings.md: words required by about 18 findings and added for 139; 150 of 232 findings on fix-introduced text; the IR stopped changing after round 2.
 
 E3. communication-pipeline eval/cases/009-meta-review-vision-rounds-2026-10-29.md, Outcome, changes 2, 14, 15 and 18; adopted by the owner on 2026-10-29 ("adopt all nineteen as proposed").
+
+E4. communication-pipeline eval/cases/010-meta-review-ir-spec-count-4-2026-10-30.md, Outcome, changes 1, 5, 9, 11, 12 and 13; adopted by the owner on 2026-10-30 ("For cases 010 and 011 - go with all recommendations, all terms ratified.").
+
+E5. communication-pipeline eval/cases/011-meta-review-vision-count-2-2026-10-30.md, Outcome, change 1, and the term own mismatch; adopted and ratified by the owner on 2026-10-30.
 
 ## Asks
 
