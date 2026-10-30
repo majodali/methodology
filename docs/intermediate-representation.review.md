@@ -1242,3 +1242,16 @@ The owner's decision at the limit: deliver, rework or withdraw the text. Open it
 6. A7: decide whether a finding's disposition, fixed or declined (C261), keeps its name beside the communication-pipeline's disposition, the branch point's output for one IR.
 7. Three gaps for IR-only documents, carried unchanged from the edit of 2026-10-30: the render map omits C217 to C219; C13's Status values omit `delivered IR-only`; the prose's "another is whether the owner designated the document IR-only" has no claim.
 8. The finding of count 5 recorded in round 7: the verdict passage drew restatement omissions in five rounds; the meta-review should weigh the 200-word restatement limit against a text near 3,900 words.
+
+The owner's decision, 2026-10-30: count 5 accepted and delivered (methodology PR #69 merged). The items above, marked:
+
+1. A5: granted. The terms passage (T24), topic claim (T25) and confirmation (T26) ratified, with withdrawal (T28); vocabulary rows added.
+2. A6, the reworded decided claims: granted; the claims carry decided provenance from 2026-10-30.
+3. A6, the new rules: granted.
+4. A7, C256: granted; C174's clause stands.
+5. A7, C257: granted.
+6. A7, the name: "disposition" of a finding renamed "decision on a finding" (T29) and ratified under that name; C95, C261 and C262 and the vocabulary's review-record row reworded to it.
+7. The three IR-only gaps: none remained at acceptance. Count 5's rounds had closed all three: C13 holds `delivered IR-only`; C229 carries the owner-input sentence; the render map maps C217 to C219. The list carried them from the count's opening note without re-checking.
+8. Passed to the meta-review, which the owner dispatched with the branch point's as one task.
+
+Meta-review: pending (signals 1, 2 and 4). The line stays until the meta-review is delivered.
