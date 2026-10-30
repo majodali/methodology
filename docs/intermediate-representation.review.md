@@ -892,3 +892,15 @@ Claims after fixes: 223. Prose after fixes: 3,471 words. Claims check after the 
 Decided claims the fixes changed, for the owner: C87 and C143 (the fix discipline ratified on 2026-10-27) and C199 (case 009 change 18) gain the reasoning role as actor and become inferred.
 
 Declined findings for round 4's brief: round 1's 6, 11 and 16; round 2's 6; round 3's 7; each with its reason.
+
+### Round 4, count 5, 2026-10-30
+
+Branch point version and commit: v1.9 as at communication-pipeline branch `branch-point-v1.9-cases-010-011`, its round 4 opening commit. Prose 3,471 words; IR 223 claims; unratified terms 2 (T24, T25). Round 3's confirmation was not yet back when round 4 opened; its line is recorded in round 3's entry when it arrives.
+
+Claims check before the round: 4 changed claims, 0 missing, 0 stale (base: round 3 prose).
+
+Awaiting restatement: none; the referent rule's step-6 fix matched in round 3.
+
+Declined findings carried in the brief: round 1's 6, 11 (the instance did not accept the decline) and 16; round 2's 6; round 3's 7; each with its reason.
+
+Signals script before the round: signal 1 and signal 2 (C104, C41) as before; signals 3 and 4 not fired; round 3 found no contradiction; no line unparsed.
