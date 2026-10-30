@@ -1286,3 +1286,29 @@ Passages awaiting restatement: none; every passage that awaited restatement in c
 Declined findings carried in the brief from count 5, where the text under them stands: round 1's 6, 11 and 16; round 2's 6; round 3's 7; round 8's 8; round 10's 2, its reason restated without the shared table, which v1.10 removes from the branch point. Each with its reason. Not carried: round 7's new defect 4, because "The override governs the exception." is struck; round 8's new defects 4 to 6, stale reads with no text under them.
 
 Signals script before the round: no round of count 6 recorded yet; nothing to read.
+
+Stranger model: claude-haiku-5-5, a fresh instance at the frugal tier (ad9b27f6af3fa271f). Prose 4,129 words by `wordCount` (the stranger's estimate: about 4,500, by hand); IR 265 claims; 8 findings, 1.9 per thousand words. Restatement: two mismatches, each counting under the first condition as count 6 reads it. Listed passages: none. Omissions noticed: 9, by topic, not counted: the rendering-conditions rows; CK-01 to CK-16; the withdrawal rules for contradictions and undefined terms; the review record and the claims-check line; the unparsed-line rules and the `Meta-review:` line values; the footprint comparison; the IR-only exemption from CK-14; the delivery and lifecycle rules; the History. Contradictions 0, undefined terms 0 (two terms defined only after first use, findings 5 and 6); verdict: not readable for RD-4.
+
+The quoted sentences: for C260, "Terms, claims and clusters carry a provenance status. No other element carries a provenance status."; the restatement gave every element kind a status. For C104 with C106, "A text is a meta-review subject when its count reaches the limit or its review record shows a meta-review signal." and "The reasoning role asks the owner ... to dispatch that subject's meta-review."; the restatement had the signals trigger the meta-review.
+Mismatches: C260 (relied on C259), C104 (relied on C106)
+
+Signals script after the `Mismatches:` line: signal 2 fires on C104 (count 4 round 1; count 5 rounds 1 and 8; count 6 round 1) and C106 (count 5 round 8; count 6 round 1). The Provenance opening recurs by reading: its earlier mismatches stand on C44 (count 4 round 1; count 5 rounds 7 and 8), and this round's entry names C260, a claim of the same passage. Both passages are step-6 passages again.
+
+For the ruleset review: the Provenance opening and the meta-review subject passage drew restatement mismatches in counts 4, 5 and 6, with structural fixes between the counts. Count 5's fixes, a two-sentence Provenance opening and the subject sentences in their own paragraph, matched in count 5's rounds 9 and 10 and did not hold against this count's fresh reader.
+
+| # | Finding (shortened) | Kind | Decision |
+|---|---|---|---|
+| 1 | mismatch on C260: every element kind given a status | restatement, step 6 | structural fix: the Element kinds table gains a Provenance status column, a cell per kind; C259 and C260 split per kind (C259, C292, C293; C260, C294, C295); the Provenance opening keeps C44 only; `awaiting restatement` |
+| 2 | mismatch on C104 with C106: the signals read as triggering the meta-review | restatement, step 6 | structural fix: the Meta-review section takes three sub-headings; the first, "Who dispatches a meta-review", opens "The owner dispatches a meta-review." (C289, inferred by R82), then C104 ("A text becomes a meta-review subject when ..."), C106 and C192; the signals and the `Meta-review:` line follow under their own sub-headings; `awaiting restatement` |
+| 3 | "in the unit" repeats the scope | SP-26 | cut from C164 |
+| 4 | "A term the IR introduces is listed under Terms introduced" names no actor | SP-18 | rephrase C153: "When a report delivers the text, the reasoning role lists each term the IR introduces under *Terms introduced* in that report." |
+| 5 | "the owner's adopted changes" undefined | SP-04 | rephrase C279: "the changes the owner adopted for the count", linked to the communication-pipeline evaluation corpus's Meta-review records section |
+| 6 | "stranger instance" used before its definition | SP-04 | add C290 at first use: "The round's stranger instance is the stranger the reasoning role dispatched for the round." (inferred, R83) |
+| 7 | the header "The count" holds rounds, the limit, the record and rework | SP-08 | rename "Rounds, the limit and rework"; the anchor `the-count` kept |
+| 8 | the next-edit sentence joins a duty and the next count's review | SP-01 | split C254; C291 added |
+
+The instance's two uncounted observations, fixed in the same pass: C253 reads "The signals script reports a round with a fix pass and no claims-check line as unparsed.", so the definition of an unparsed line holds; R73 drops the round-1 exemption that case 012 change 13 struck.
+
+Claims after fixes: 272. Prose after fixes: 4,198 words. Claims check after the fixes (base: round 1 prose): 15 changed claims, 0 missing, 0 stale. Round trip: 272 of 272. IR check: 0 violations, 0 warnings.
+
+Decided claims the fixes reworded, for the owner's list at the count's close: C259 and C260 (split per kind), C104, C164, C153, C254 (split, with C291).

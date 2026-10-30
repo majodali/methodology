@@ -199,9 +199,17 @@ C43. A determiner followed by the noun it names, such as "this specification", i
 
 ### Provenance
 
-C259. Terms, claims and clusters carry a provenance status. [decided: owner, 2026-10-30]
+C259. A term carries a provenance status. [decided: owner, 2026-10-30; reworded in count 6, round 1, split per kind into the Element kinds table]
 
-C260. No other element carries a provenance status. [decided: owner, 2026-10-30]
+C292. A claim carries a provenance status. [decided: owner, 2026-10-30; reworded in count 6, round 1, split per kind into the Element kinds table]
+
+C293. A cluster carries a provenance status. [decided: owner, 2026-10-30; reworded in count 6, round 1, split per kind into the Element kinds table]
+
+C260. A relation carries no provenance status. [decided: owner, 2026-10-30; reworded in count 6, round 1, split per kind into the Element kinds table]
+
+C294. An evidence element carries no provenance status. [decided: owner, 2026-10-30; reworded in count 6, round 1, split per kind into the Element kinds table]
+
+C295. An ask carries no provenance status. [decided: owner, 2026-10-30; reworded in count 6, round 1, split per kind into the Element kinds table]
 
 C44. Each term, claim and cluster ends with one status in square brackets. [decided: owner, 2026-10-30]
 
@@ -283,11 +291,11 @@ C76. The renderer links a term with a definition site at its first use in the un
 
 C173. The unit for P-008 is the whole text for a report and the section for a document. [decided: methodology PR #48, 2026-10-26]
 
-C164. The renderer does not link a later use of a term with a definition site in the unit. [decided: owner, 2026-10-30]
+C164. The renderer does not link a later use of a term with a definition site. [decided: owner, 2026-10-30; reworded in count 6, round 1]
 
 C77. The renderer defines a term the IR introduces in a sentence of its own before its first use. [inferred: R45]
 
-C153. A term the IR introduces is listed under *Terms introduced*. [decided: methodology PR #46, 2026-10-26]
+C153. When a report delivers the text, the reasoning role lists each term the IR introduces under *Terms introduced* in that report. [decided: methodology PR #46, 2026-10-26; reworded in count 6, round 1]
 
 C78. For RD-5, the first use of a term with a definition site carries its definition in parentheses instead of a link. [decided: methodology PR #48, 2026-10-26]
 
@@ -317,7 +325,7 @@ C87. The reasoning role rephrases or removes words in a fix to prose before it a
 
 C143. The reasoning role adds words in a fix only to supply a missing definition or a missing referent. evidence: E2. [decided: owner, 2026-10-30]
 
-C279. A fix does not add a rule the owner's adopted changes do not hold. evidence: E8. [proposed: case 012 change 9]
+C279. A fix does not add a rule that the changes the owner adopted for the count do not hold. evidence: E8. [proposed: case 012 change 9]
 
 C280. When a finding needs a new rule, the reasoning role lists the finding for the owner with a proposed wording. evidence: E8. [proposed: case 012 change 9]
 
@@ -354,6 +362,8 @@ C263. A claim or a qualifier the restatement leaves out is an omission, not a re
 C264. A restatement that says a rule has no qualifier the IR holds has a mismatch. evidence: E8. [proposed: case 012 change 2]
 
 C228. A passage is the prose sentences that carry one claim or one cluster. [decided: owner, 2026-10-30]
+
+C290. The round's stranger instance is the stranger the reasoning role dispatched for the round. [inferred: R83]
 
 C233. Confirmation is the step at which the round's stranger instance says whether each fix holds. [decided: owner, 2026-10-30]
 
@@ -401,7 +411,9 @@ C248. An unconfirmed fix's words stay in the delivered prose. [decided: owner, 2
 
 C183. The reasoning role fixes an unfixed finding of the readable round at the next edit of an active document. [decided: owner, 2026-10-27]
 
-C254. At that edit, the reasoning role revises the unconfirmed words, which the next count's rounds then review. [decided: owner, 2026-10-30]
+C254. At that edit, the reasoning role revises the unconfirmed words. [decided: owner, 2026-10-30; reworded in count 6, round 1, split]
+
+C291. The next count's rounds review the revised words. [decided: owner, 2026-10-30; split from C254 in count 6, round 1]
 
 C98. After a verdict of not readable, the reasoning role fixes the IR and then the prose. [decided: owner, 2026-10-26]
 
@@ -455,7 +467,9 @@ C103. The review record holds, per round, the word count of the prose and the cl
 
 ### Meta-review
 
-C104. A text is a meta-review subject when its count reaches the limit or its review record shows a meta-review signal. [decided: owner, 2026-10-27]
+C289. The owner dispatches a meta-review. [inferred: R82]
+
+C104. A text becomes a meta-review subject when its count reaches the limit or its review record shows a meta-review signal. [decided: owner, 2026-10-27; reworded in count 6, round 1]
 
 C106. The reasoning role asks the owner, in the report that delivers a meta-review subject, to dispatch that subject's meta-review. [decided: owner, 2026-10-30]
 
@@ -481,7 +495,7 @@ C236. An unparsed line is a review-record line the communication-pipeline's sign
 
 C252. A claims-check line is the review-record line in which the reasoning role records the claims check run after each fix pass. evidence: E8. [proposed: case 012 change 13]
 
-C253. A round with a fix pass and no claims-check line counts as an unparsed line. evidence: E6, E8. [proposed: case 012 change 13]
+C253. The signals script reports a round with a fix pass and no claims-check line as unparsed. evidence: E6, E8. [proposed: case 012 change 13]
 
 C237. While a line is unparsed, the reasoning role writes `Meta-review: unparsed`, naming the line, in place of `pending` or `not indicated`. evidence: E6. [decided: owner, 2026-10-30]
 
@@ -773,7 +787,7 @@ R71. C248 depends-on C155 because the delivered text is the judged text with the
 
 R72. C254 refines C183 because the next edit's fix of an unfixed finding changes the words the instance did not confirm.
 
-R73. C252 refines C253 because the round-1 exemption and the unparsed rule read the line the claims check writes.
+R73. C252 refines C253 because the unparsed rule reads the line the claims check writes after each fix pass.
 
 R74. C206 depends-on C131 because the author who writes prose directly is the one who can run the checks on it; the owner's ruling of 2026-10-25 named no actor.
 
@@ -788,6 +802,10 @@ R79. C262 refines C261 because the reasoning role marks a fix confirmed or unfix
 R80. C265 depends-on C263 because an omission is not a restatement mismatch, and only a mismatch counts under the first condition.
 
 R81. C288 depends-on C284 because the review records of earlier counts name the first, second and fourth signals by number.
+
+R82. C289 depends-on C107 because the meta-review session is a session the owner starts, and C106 and C192 leave the dispatch to the owner.
+
+R83. C290 depends-on C91 because the reasoning role starts each round by dispatching a fresh stranger, and that stranger answers at the round's confirmation.
 
 ## Evidence
 
