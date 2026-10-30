@@ -12,6 +12,67 @@ carry: amendment title and PR link · suggested by (evidencing instance)
 
 ## Unreleased
 
+### A declared planning/execution model is the source of progress truth
+
+- **PR**: this amendment's PR.
+- **Suggested by**: project-orchestrator, 2026-10-30, with RU-021 (the
+  planning/execution model is the source of progress truth). The
+  evidencing instance is the slice of the project-orchestrator Project
+  model at commit
+  `86a1330`
+  ([proposal](https://github.com/majodali/project-orchestrator/blob/25e92e8ef541e0929e7e447f582edc15d3ec7629/docs/proposals/planning-execution-model-is-progress-truth.md),
+  [slice record](https://github.com/majodali/project-orchestrator/blob/86a13308f70574abc0223ddb4f044b7e43ca1eb6/docs/project-model-slice-record.md)).
+  On 2026-10-28 the owner decided that each project's
+  [planning/execution model](vocabulary.md#def-planning-execution-model)
+  is the primary source of truth about progress. A project may keep
+  such a model beside its Backlog. Under K-003 ([the Backlog is the
+  single source of progress truth](rules/knowledge.md#k-003--the-backlog-is-the-single-source-of-progress-truth))
+  as released, that project records what is done and what is next
+  twice. The slice rendered the
+  implementation map and the list of what is next from its five
+  entries and the project-orchestrator Plan register. The comparison
+  with that project's Backlog listed eleven differences. None of the
+  eleven was left unexplained. In both disagreements among them, the
+  Backlog showed finished work as unfinished, while the model showed
+  the work as done. The owner approved the proposal for carrying at
+  project-orchestrator node P3-N007's verifying gate on 2026-10-30.
+- **Impact assessment**: every row of the
+  [Portfolio register](registers/portfolio.md) at v1.6.0.
+  - methodology: *accommodated*, because K-003 gains one sentence and
+    this repository's [Classification](vocabulary.md#def-classification)
+    declares no planning/execution model.
+  - methodology-tools: *accommodated*, because the sentence binds it
+    only once its Classification declares a planning/execution model.
+    The [roadmap](roadmap.ir.md) expects that declaration at the
+    pilot.
+  - project-orchestrator: *accommodated* as the evidencing instance.
+    It declares its planning/execution model only after the amendment
+    is released and pinned there.
+  - allegro, in-real-life, in-real-life-ops, in-real-life-org,
+    project-orchestrator-service, serverless-web-app-template and
+    communication-pipeline: *accommodated*, because the sentence binds
+    each only once its Classification declares a planning/execution
+    model.
+  - The thirteen rows marked implicit C0: unaffected, because K-003
+    applies from C1.
+  - K-003 keeps its title, so links to its anchor keep resolving. The
+    title is the rule's name and not its text, so for a project that
+    declares a model the statement governs. The sentence on
+    [Workflow](vocabulary.md#def-workflow) stage designations is
+    unchanged.
+  - The vocabulary gains
+    [*list of what is next*](vocabulary.md#def-list-of-what-is-next)
+    and [*rendering*](vocabulary.md#def-rendering). The
+    [*referent*](vocabulary.md#def-referent) row gains K-003's sense. The *planning/execution model*
+    row, on `main` since commit `350f75f` and unreleased at v1.6.0,
+    ships in the release that carries this amendment.
+- **Migration note**: a project whose Classification declares no
+  planning/execution model changes nothing. A project that declares one
+  renders its Backlog's implementation map and list of what is next
+  from the model from the declaration on. From then on it rewrites its
+  checked entries by that rendering of the implementation map. K-003's
+  duty to rewrite checked entries stands, met by that rendering.
+
 ### The stranger rounds take evaluation cases 010 and 011's changes
 
 - **PR**: this amendment's PR.

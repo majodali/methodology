@@ -246,6 +246,12 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   - <a id="def-referent"></a>**Referent** — anything a claim refers
     to: a document, a project, a rule, a person, a role, or an earlier
     claim's subject. A claim names each referent inside itself.
+    K-003 ([the Backlog is the single source of progress
+    truth](rules/knowledge.md#k-003--the-backlog-is-the-single-source-of-progress-truth)) gives the word
+    a second sense. There the referent is the one record a reader
+    consults for what is done and what is next. Prefer that sense in
+    K-003 and in text that applies K-003. Prefer the first sense in an
+    IR.
   - <a id="def-cluster"></a>**Cluster** — an ordered list of claim
     identifiers the paraphraser renders as one paragraph.
   - <a id="def-render-map"></a>**Render map** — one comment line in
@@ -278,6 +284,25 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   the verification evidence of each node: what the web view renders
   and the source of progress truth (owner, 2026-10-28,
   [vision](vision.ir.md)).
+- <a id="def-list-of-what-is-next"></a>**List of what is next** — the answer a project's records
+  give to what is next. Where the project's
+  [Classification](#def-classification) declares no planning/execution
+  model, the list is the
+  [Backlog](rules/knowledge.md#k-003--the-backlog-is-the-single-source-of-progress-truth)'s
+  upcoming section. Where the Classification declares one, the list is
+  a [rendering](#def-rendering) of the model, one item per
+  [node](https://github.com/majodali/project-orchestrator/blob/198768a21da88d3b702563ae0a26a6dacfcace26/docs/process/README.md#def-node)
+  not yet done. The rendered list holds nodes only. In such a project, an open
+  Backlog entry that names no node stays in the upcoming section,
+  outside the list. Such an
+  entry joins the list on becoming a node or on entering a node's plan
+  (owner, 2026-10-30, ratified at project-orchestrator node P3-N007's
+  gate, [record](records/k-003-planning-execution-model.ir.md)).
+- <a id="def-rendering"></a>**Rendering** — a text produced from a source by a stated
+  procedure. The rendering adds no claim the source lacks. It drops no
+  claim the procedure says it carries (owner, 2026-10-30, ratified at
+  project-orchestrator node P3-N007's gate,
+  [record](records/k-003-planning-execution-model.ir.md)).
 - <a id="def-stream"></a>**Stream** — a unit of approved autonomous work bounded by scope,
   budget and accepted risks rather than by chunk gates (owner,
   2026-10-28, [vision](vision.ir.md)).

@@ -31,22 +31,28 @@ A reader who ignores it entirely MUST miss nothing authoritative
 ([K-001](#k-001--project-documentation-is-the-sole-authority)).
 
 ### K-003 — The Backlog is the single source of progress truth
-Applies: [C1+]
+Applies: [C1+] (criticality tier C1 and above)
 Keywords: MUST
-Motivated-by: [proposal A2](../practices.md); convergent independent practice in [allegro BACKLOG.md](https://github.com/majodali/allegro) and [in-real-life docs/backlog.md](https://github.com/majodali/in-real-life)
-Cites: —
+Motivated-by: [proposal A2](../practices.md); convergent independent practice in [allegro BACKLOG.md](https://github.com/majodali/allegro) and [in-real-life docs/backlog.md](https://github.com/majodali/in-real-life); extended by project-orchestrator in a [proposal](https://github.com/majodali/project-orchestrator/blob/25e92e8ef541e0929e7e447f582edc15d3ec7629/docs/proposals/planning-execution-model-is-progress-truth.md) approved by the [owner](../vocabulary.md#def-human-owner) for carrying at that project's node [P3-N007](https://github.com/majodali/project-orchestrator/blob/25e92e8ef541e0929e7e447f582edc15d3ec7629/docs/plans/p3-n007-type-declared-amendment-drafted.md#gate-record-2026-10-30-at-verifying) on 2026-10-30, with the [record](https://github.com/majodali/project-orchestrator/blob/86a13308f70574abc0223ddb4f044b7e43ca1eb6/docs/project-model-slice-record.md) of the project-orchestrator's [Project model](https://github.com/majodali/project-orchestrator/blob/38138c9b952ad995fc2e16725768564ae79a6571/docs/process/project-model.md) at commit `86a1330` as the evidencing instance, which rendered the implementation map and the [list of what is next](../vocabulary.md#def-list-of-what-is-next) and compared both with the project-orchestrator Backlog
+Cites: [C-tier](../vocabulary.md#def-c-tier) (the criticality scale of the Applies line); [Constitution Article 7](../constitution.md#article-7--the-c0-baseline-custom-definitions-and-the-sandbox) (custom definitions: a [Classification](../vocabulary.md#def-classification) declares a [planning/execution model](../vocabulary.md#def-planning-execution-model) by a definition-by-citation [entry](../vocabulary.md#def-entry) in its Custom definitions section, which names the [custom document types](../vocabulary.md#def-custom-document-type) that make up the model and needs no new Classification field)
+Protects: [provenance](../vocabulary.md#def-provenance) — each claim of what is done and what is next traces to one record
 
-Every project MUST keep a Backlog: one dependency-ordered Register of
+Every project MUST keep a Backlog: one dependency-ordered [Register](../vocabulary.md#def-register) of
 completed and upcoming work. Checked entries MUST be rewritten to
 describe what actually shipped, so the completed section doubles as the
-implementation map. Where the project declares a Workflow, entries MUST
+implementation map. Where the project declares a [Workflow](../vocabulary.md#def-workflow), entries MUST
 carry current stage designations (Article 4 declaration accuracy). The
-Backlog is the referent for "what is done and what is next"; no other
-document may claim that role.
+Backlog is the [referent](../vocabulary.md#def-referent) for "what is done and what is next"; no other
+document may claim that role. Where the project's Classification
+declares a planning/execution model, that model is the referent
+instead, and the Backlog's implementation map and list of what is next
+are [renderings](../vocabulary.md#def-rendering) of it.
 
 **Rationale**: the stage-designation clause deliberately mirrors
 Article 4's declaration-accuracy duty — a mirror, not a duplication
 (review round 1 adjudication, 2026-08-30).
+
+<!-- render map: K-003 ¶1 is the header, ¶2 the statement; claims rendered elsewhere name their file. IR: ../records/k-003-planning-execution-model.ir.md. C1→¶2 C2→¶2 C3→¶1 C4→¶1 C5→¶1 C6→¶1 C7→¶1 C8→¶1 C9→¶1 C10→¶1 C11→¶1 C12→¶1 C13→vocabulary.md#def-list-of-what-is-next C14→vocabulary.md#def-rendering C15→vocabulary.md#def-list-of-what-is-next C16→vocabulary.md#def-list-of-what-is-next C17→vocabulary.md#def-list-of-what-is-next C18→vocabulary.md#def-list-of-what-is-next C19→vocabulary.md#def-list-of-what-is-next C20→vocabulary.md#def-referent C21→releases.md C22→releases.md C23→releases.md C24→releases.md C25→releases.md C26→releases.md C27→releases.md C28→releases.md C29→releases.md C30→releases.md C31→releases.md C32→releases.md C33→releases.md C34→releases.md C35→releases.md C36→releases.md C37→releases.md C38→releases.md C39→releases.md C40→releases.md C41→releases.md C42→releases.md C43→releases.md -->
 
 ### K-004 — Decisions live in a numbered register
 Applies: [C2+]
