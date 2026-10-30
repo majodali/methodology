@@ -748,6 +748,7 @@ Three gaps remain from the edit of 2026-10-30 for IR-only documents. This count 
 | 1 | 3,368 | 216 | 20 | 5.9 | not readable (four own mismatches on five claims, C104 a step-6 mismatch that counts; contradictions 2; undefined terms 4) |
 | 2 | 3,413 | 220 | 6 | 1.8 | not readable (two own mismatches, C41 a step-6 mismatch that counts; contradiction 1; undefined terms 0) |
 | 3 | 3,443 | 222 | 9 | 2.6 | not readable (two own mismatches, quoted; contradictions 0; undefined terms 3) |
+| 4 | 3,471 | 223 | 8 | 2.3 | not readable (three own mismatches, quoted, two step-6 passages that count; contradiction 1; undefined terms 3) |
 
 ### Round 1, count 5, 2026-10-30
 
@@ -908,3 +909,38 @@ Awaiting restatement: none; the referent rule's step-6 fix matched in round 3.
 Declined findings carried in the brief: round 1's 6, 11 (the instance did not accept the decline) and 16; round 2's 6; round 3's 7; each with its reason.
 
 Signals script before the round: signal 1 and signal 2 (C104, C41) as before; signals 3 and 4 not fired; round 3 found no contradiction; no line unparsed.
+
+Stranger model: claude-haiku-5-5, a fresh instance at the frugal tier. Prose 3,471 words by `wordCount`; IR 223 claims; 8 findings, 2.3 per thousand words. Restatement: three mismatches, each attributed by the stranger to its own restatement, each quoting a sentence that carries an IR claim. Contradiction 1 (finding 4), undefined terms 3 (findings 5, 6 and 8, each a term used before its definition); verdict: not readable for RD-4, on the contradiction, the undefined terms and the two step-6 passages.
+
+The stranger's quoted sentences: for C223 and C224, "The exception: an own mismatch does not count when the stranger quotes a prose sentence that carries the IR's claim."; for C194, "A contradiction or undefined-term finding withdrawn by the round's stranger instance at confirmation, on a reason quoting the prose, does not count against the verdict."
+Mismatches: C223 (own; relied on C223), C224 (own; relied on C223), C194 (own; relied on C194)
+
+Reading of the exception, adopted by the Orchestrator on 2026-10-30 for both texts: "a prose sentence that carries the IR's claim" is a sentence that carries an IR claim faithfully, whichever claim, because the exception's point is that the prose is not at fault. Under that reading none of the three own mismatches counts by the exception.
+
+Finding of count 5 for the owner: the exception does not say which claim the quoted sentence must carry. One reading requires the contradicted claim; the other, adopted above, accepts any claim the sentence carries faithfully. The two readings gave different results on this text's rounds 2 and 3 and the branch point's round 3. The exception's wording is case 011 change 1's adopted text and is not changed here.
+
+Signals script after the `Mismatches:` line: signal 2 fired on C223 (rounds 1 and 4) and C194 (rounds 3 and 4), with C104 and C41 as before. By passage, the verdict rule drew own mismatches in rounds 1 (C223), 3 (C227) and 4 (C223, C224), and the withdrawal rule in rounds 3 and 4 (C194). Both are step-6 findings: prose findings whatever the attribution, owed a structural fix, and under the override they count against the first condition.
+
+The referent passage (C41, C231, C35) matched again.
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1, 2 | own mismatches on C223 and C224: the verdict rule | restatement, step 6 | structural fix: the three conditions become a numbered list, each condition carrying its own qualifiers; the first condition's sentence points at its exception and override, as the branch point's C23 does (C203, reworded); the definitions of restatement mismatch, own mismatch, passage and confirmation stand before the list; `awaiting restatement` |
+| 3 | own mismatch on C194: the withdrawal rule | restatement, step 6 | structural fix: C194 split by condition; the contradiction withdrawal (C194) sits in the second condition's item and the undefined-term withdrawal (C235) in the third's; C195 (no withdrawal of a mismatch) sits in the first condition's item; `awaiting restatement` |
+| 4 | C1 ("before any prose") against the RD-1 and RD-3 exception (C131) | SP-25 | rephrase C1: "… before any prose of the communication exists, for each text that requires one", linked to Texts that require an IR |
+| 5 | "topic claim" used before its definition in the Cluster row | SP-04 | reorder: C31 holds the list, C226 defines the topic claim, C240 "A cluster's list may open with a topic claim." |
+| 6 | "unfixed" used before its definition (C202 before C182) | SP-04 | reorder: C182 before C202, in the IR and the prose |
+| 7 | "its adjudication" (C102) | SP-03 | rephrase C102: "the amendment's adjudication under Article 8" |
+| 8 | "form audit" with the link on Article 9, not on the term (C109) | SP-04 | rephrase: the link on "form audit" |
+
+Queued items applied in the same pass:
+
+- Round 3's finding 3 for the IR: T27 project-specific term, defined at the prose's CK-04 anchor, so C25 uses a term element. Round 3's finding 5: T26 confirmation, status proposed, with C233; unratified terms 3; A5 extended.
+- Round 3's new defect on provenance: A6 asks the owner to ratify or strike the new wording of the decided claims count 5 reworded or split. Each such claim's provenance notes its rewording.
+- Ask 4 of 2026-10-30: C203 reads as the branch point's C23. The `Meta-review: unparsed` line enters the specification (C236 defines an unparsed line; C237 the line; C238 the return of `pending`; C239 `not indicated` otherwise; C191 reworded), worded as the branch point's rule after its round 4 pass.
+
+Claims after fixes: 230. Prose after fixes: 3,568 words. Claims check after the fixes (base: round 4 prose): 14 changed claims, 0 missing, 0 stale. Round trip: 230 of 230.
+
+Decided claims the fixes changed, for the owner: all are listed in A6. New rule for the owner: the `Meta-review: unparsed` line (C236 to C238).
+
+Declined findings for round 5's brief: round 1's 6, 11 and 16; round 2's 6; round 3's 7; each with its reason. Passages awaiting restatement in round 5: the verdict's conditions (C203, C227, C223, C224, C195) and the withdrawal rule (C194, C235).
