@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: rendered (count 5, round 1, edited 2026-10-30 for communication-pipeline evaluation cases 010 and 011, rendered by the reasoning role; count 4 round 4 readable 2026-10-29; declared 5, changed 5, surprises 0, misses 0; unratified terms 0)
+Status: rendered (count 5, round 2, edited 2026-10-30 for communication-pipeline evaluation cases 010 and 011, rendered by the reasoning role; count 4 round 4 readable 2026-10-29; declared 5, changed 5, surprises 0, misses 0; unratified terms 2)
 Source: the owner's adoption of 2026-10-30 of communication-pipeline evaluation cases 010 and 011's recommended changes, of which case 010's changes 1, 5, 9, 11, 12 and 13 and case 011's change 1 amend this specification (count 5); the owner's adoption of 2026-10-29 of communication-pipeline evaluation case 009's nineteen changes, of which changes 2, 14, 15 and 18 amend this specification (count 4); the owner's decision of 2026-10-27 on signal-based meta-review triggers (count 3); communication-pipeline evaluation case 008 (owner decision of 2026-10-27, change 5) for count 2; for count 1, docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md; docs/releases.md; docs/vocabulary.md
@@ -54,6 +54,10 @@ T21. Restatement. defined-at: https://github.com/majodali/communication-pipeline
 T22. Own mismatch. defined-at: vocabulary.md#def-own-mismatch [decided: owner, 2026-10-30]
 
 T23. Claims check. defined-at: https://github.com/majodali/communication-pipeline/blob/main/docs/branch-point.md#rounds [decided: owner, 2026-10-30]
+
+T24. Passage: the prose sentences that carry one claim or one cluster. [proposed: this IR]
+
+T25. Topic claim: the claim that states a cluster's subject. [proposed: this IR]
 
 ## Claims
 
@@ -367,7 +371,7 @@ C187. The first signal: in two or more rounds, a fix was not held at confirmatio
 
 C188. The second signal: a finding declined in an earlier round was raised again. [decided: owner, 2026-10-27]
 
-C208. The second signal also fires when a restatement mismatch recurred on one passage. [decided: owner, 2026-10-27]
+C208. The second signal also fires when a restatement mismatch recurred on one passage in two rounds. [inferred: R56]
 
 C189. The third signal: in the count's last round, words per IR claim exceed round 1's words per claim by more than one tenth. evidence: E4. [decided: owner, 2026-10-30]
 
@@ -507,6 +511,8 @@ C201. The third and fourth signals were reworded on 2026-10-29 by the owner deci
 
 C225. The own-mismatch rule was added on 2026-10-30, by owner decision on communication-pipeline evaluation cases 010 and 011. evidence: E5. [decided: owner, 2026-10-30]
 
+C230. In count 5, the sentence giving normative text to the reasoning role was cut as a repeat of the renderer's definition. [inferred: R57]
+
 C193. The trigger of three rounds was replaced by the four signals on 2026-10-27, by owner decision after five recorded counts. [decided: owner, 2026-10-27]
 
 C162. The owner placed the meta-review in the communication-pipeline project until that project is archived, and in the methodology repository after. [decided: owner, 2026-10-26]
@@ -625,11 +631,15 @@ R51. C223 refines C203 because the quoted sentence shows the prose carries the c
 
 R52. C224 refines C223 because the branch point's step 6 makes a mismatch on one passage in two rounds a prose finding, whatever the stranger attributes it to.
 
-R53. C226 refines C31 because a cluster renders as one paragraph (C174), and the claim placed first states the paragraph's subject; count 5 round 1 finding 7.
+R53. C226 refines C31 because a cluster renders as one paragraph (C174), and the claim placed first states the paragraph's subject.
 
-R54. C161 depends-on C134 because the reasoning role is the actor that edits an IR; the source, the pipeline schema v1.2, names no actor; count 5 round 1 finding 17.
+R54. C161 depends-on C134 because the reasoning role is the actor that edits an IR; the source, the pipeline schema v1.2, names no actor.
 
-R55. C228 refines C224 because a claim renders as one sentence (C72) and a cluster as one paragraph (C174), so the prose that carries one of them is the unit a mismatch recurs on; count 5 round 1 finding 13.
+R55. C228 refines C224 because a claim renders as one sentence (C72) and a cluster as one paragraph (C174), so the prose that carries one of them is the unit a mismatch recurs on.
+
+R56. C208 refines C224 because the second signal and the first condition's override count the same recurrence, a mismatch on one passage in two rounds.
+
+R57. C230 depends-on C220 because the renderer's definition holds the cut sentence's rule.
 
 ## Evidence
 
@@ -660,3 +670,5 @@ A3 resolved: ratified by the owner, 2026-10-27; the claims carry decided provena
 A4. Ratify or strike the term meta-review signal (T20). Depends: C104.
 
 A4 resolved: ratified by the owner, 2026-10-27; vocabulary row added.
+
+A5. Ratify or strike the terms passage (T24) and topic claim (T25). Depends: C228, C226.

@@ -782,4 +782,36 @@ The C41 passage (case 010 change 11): the stranger states that its restatement m
 
 Claims after fixes: 219. Prose after fixes: 3,389 words. Claims check after the fixes (base: round 1 prose): 9 changed claims, 0 missing, 1 stale (C13), 1 removed (C84). C13 reads stale because the fix brought the IR to the prose's existing Status row; the prose sentence carried the value before the fix. Round trip: 219 of 219 claims mapped.
 
-Decided claims the fixes changed, for the owner: C84 cut (its rule is C220's); C161 gains the reasoning role and becomes inferred; C13 holds `delivered IR-only`, decided by the owner's IR-only option of 2026-10-30; C203, C223 and C224, with the new C227, join case 010 change 1's and case 011 change 1's texts into one rule.
+The stranger's quoted sentences for the own mismatches (case 011 change 2):
+
+- C223: "An own mismatch does not count against the verdict when the stranger quotes a prose sentence that carries the IR's claim."
+- C195: "A restatement mismatch is not withdrawn at confirmation."
+- C104: "A text is a meta-review subject when its count reaches the limit or its review record shows a meta-review signal."
+- C84 with C220: "The renderer is the paraphraser or, for normative text, the reasoning role."
+
+Each quoted sentence carries the claim the `Mismatches:` line relies on.
+
+Confirmation: 16 of 17 fixes hold. Not held: 13. Declines accepted: 2 of 3. New defects: 4.
+
+Finding 13 held in part: the second signal's sentence still lacked "in two rounds". The declines of findings 6 and 16 were accepted. The decline of finding 11 was not accepted by the instance; the decline stands on its reason (each sentence is a rule for a distinct moment, sharing the order and differing in trigger). Findings 6, 11 and 16 go into round 2's brief with their reasons. Finding 21, the step-6 fix on C104, was not put to the instance; it stays `awaiting restatement`.
+
+Re-fixed before round 2:
+
+| # | Defect (shortened) | Kind | Re-fix |
+|---|---|---|---|
+| 13, N1 | the second signal's sentence says "recurred on one passage" with no round count | SP-04, SP-25 | C208: "The second signal also fires when a restatement mismatch recurred on one passage in two rounds."; C208 inferred by R56; marked `awaiting restatement` as a second fix |
+| N2 | passage and topic claim defined with no term element | CK-04 | T24 passage and T25 topic claim, status proposed; the Status parenthesis reads unratified terms 2; A5 asks the owner to ratify or strike them |
+| N3 | C84's removal unrecorded in the History while the `Mismatches:` line cites C84 | SP-26 | C230: "In count 5, the sentence giving normative text to the reasoning role was cut as a repeat of the renderer's definition." |
+| N4 | free-standing finding pointers at the end of R53, R54 and R55 | CK-16 | cut the pointers; each reason is one sentence |
+
+Decided claims the fixes changed, for the owner: C84 cut (its rule is C220's); C161 gains the reasoning role and becomes inferred; C13 holds `delivered IR-only`, decided by the owner's IR-only option of 2026-10-30; C203, C223 and C224, with the new C227, join case 010 change 1's and case 011 change 1's texts into one rule; C208 gains "in two rounds" and becomes inferred.
+
+### Round 2, count 5, 2026-10-30
+
+Branch point version and commit: v1.9 at communication-pipeline commit cafe4d1 on branch `branch-point-v1.9-cases-010-011`, with its own round 1 fixes and re-fixes. Prose 3,413 words; IR 220 claims; unratified terms 2 (T24, T25).
+
+Claims check before the round: 11 changed claims, 0 missing, 1 stale (base: round 1 prose). The stale claim is C13: the fix brought the IR to the prose's Status row, which held `delivered IR-only` before round 1. C84 removed.
+
+Awaiting restatement: finding 21, the step-6 fix on the C104 passage (the meta-review subject sentence); C208, the second fix of finding 13. This round's entry states whether the restatement matched on each.
+
+Signals script before the round: signal 1 fired on rounds 1 and 2, round 1 by finding 13 not held and both rounds by the C13 stale report; without the C13 report, signal 1 reads round 1 only. Signal 2 fired on C104 (count 4 round 1, count 5 round 1), already taken as finding 21. Signals 3 and 4 not fired. No line unparsed.
