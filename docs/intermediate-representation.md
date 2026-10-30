@@ -1,6 +1,6 @@
 # Intermediate representation
 
-Status: active (count 4 readable at round 4 on 2026-10-29, awaiting the owner's adjudication; edited on 2026-10-30 for IR-only documents, one rendering-conditions row, the Status value and CK-14's exemption; count 5 edited on 2026-10-30 for communication-pipeline evaluation cases 010 and 011, rendered by the reasoning role, under review, round 8). A methodology [Specification](vocabulary.md#def-specification), the document type, required by
+Status: active (count 4 readable at round 4 on 2026-10-29, awaiting the owner's adjudication; edited on 2026-10-30 for IR-only documents, one rendering-conditions row, the Status value and CK-14's exemption; count 5 edited on 2026-10-30 for communication-pipeline evaluation cases 010 and 011, rendered by the reasoning role, under review, round 9). A methodology [Specification](vocabulary.md#def-specification), the document type, required by
 [W-009](rules/working-agreement.md#w-009--the-methodology-corpus-writes-its-deliverables-ir-first)
 (the methodology corpus writes its deliverables IR first). Any project
 that adopts W-009 by declaration uses this specification.

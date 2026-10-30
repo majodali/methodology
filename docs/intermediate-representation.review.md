@@ -1122,3 +1122,15 @@ Claims after fixes: 244. Prose after fixes: 3,836 words. Claims check after the 
 Decided claims the fixes changed, for the owner: C1, C44 with C259 and C260, added to A6; new proposed rules C256 and C257 in A7; new inferred claims C258 and C261.
 
 Declined findings for round 9's brief: round 1's 6, 11 and 16; round 2's 6; round 3's 7; round 7's new defect 4; round 8's 8; each with its reason. Passages awaiting restatement in round 9: the verdict section; the C1 passage; the Provenance opening (C259, C260, C44); the meta-review subject paragraph (C104, C106, C192); the footprint passage (C123).
+
+### Round 9, count 5, 2026-10-30
+
+Branch point version and commit: v1.9 as at communication-pipeline branch `branch-point-v1.9-cases-010-011`, its round 8 fix commit. Prose 3,836 words; IR 244 claims; unratified terms 3 (T24, T25, T26). Round 8's confirmation was not yet back when round 9 opened; its line is recorded in round 8's entry when it arrives.
+
+Claims check before the round: 11 changed claims, 0 missing, 0 stale (base: round 8 prose).
+
+Awaiting restatement: the verdict section (third fix, round 7); the C1 passage (round 8); the Provenance opening, C259, C260 and C44 (round 8); the meta-review subject paragraph, C104, C106 and C192 (round 8); the footprint passage, C123, first occurrence, listed for its match. This round's entry states whether the restatement matched on each.
+
+Declined findings carried in the brief: round 1's 6, 11 (the instance did not accept the decline) and 16; round 2's 6; round 3's 7; round 7's new defect 4; round 8's 8; each with its reason.
+
+Signals script before the round: signal 1 fires as before; signal 2 on C104, C41, C223, C194, C195, C227, C203, C1 and C44; signal 3 not fired; signal 4 fired by reading in round 6; no line unparsed. The text is a meta-review subject at the count's end.
