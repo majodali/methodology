@@ -752,6 +752,7 @@ Three gaps remain from the edit of 2026-10-30 for IR-only documents. This count 
 | 5 | 3,568 | 230 | 5 | 1.4 | not readable (three own mismatches on the two step-6 passages, counting under the override; contradictions 0; undefined terms 0) |
 | 6 | 3,640 | 232 | 8 | 2.2 | not readable (one own mismatch, quoted, not counting; contradiction 1; undefined terms 0) |
 | 7 | 3,727 | 236 | 14 | 3.8 | not readable (five own mismatches, three counting; contradictions 0; undefined term 1) |
+| 8 | 3,752 | 238 | 8 | 2.1 | not readable (three own mismatches, two on step-6 passages counting under the override; contradictions 2; undefined terms 0) |
 
 ### Round 1, count 5, 2026-10-30
 
@@ -1097,3 +1098,27 @@ Awaiting restatement: round 7's third structural fix, the verdict section under 
 Declined findings carried in the brief: round 1's 6, 11 (the instance did not accept the decline) and 16; round 2's 6; round 3's 7; each with its reason.
 
 Signals script before the round: signals 1 and 2 fire as before, signal 2 now also on C203, C1 and C44; signal 3 not fired; signal 4 fired by reading in round 6; no line unparsed. The text is a meta-review subject at the count's end.
+
+Stranger model: claude-haiku-5-5, a fresh instance at the frugal tier (aa38f61075323bda0). Prose 3,752 words by `wordCount` (the stranger's estimate: about 4,400); IR 238 claims; 8 findings, 2.1 per thousand words. Restatement: three mismatches, each attributed by the stranger to its own restatement, each quoting the sentence that carries its claim: C44 ("Each term, claim and cluster, and no other element, ends with one status"), the restatement giving every element a status; C104 and C106 (the meta-review subject), the restatement saying the signals trigger a review of the count; C123 (the footprint), the restatement saying the footprint rules govern delivered IRs. The round 8 brief listed no earlier-round passages, so the stranger could not check the override. Contradictions 2 (findings 4 and 5), undefined terms 0; verdict: not readable for RD-4.
+Mismatches: C44 (own; relied on C44), C104 (own; relied on C104), C106 (own; relied on C106), C123 (own; relied on C123)
+
+Signals script after the `Mismatches:` line: C44 recurs (count 4 round 1; count 5 rounds 7 and 8), its third recurrence, so it counts under the override and the queued structural fix stands; the first condition fails on it. C104 also recurs (count 4 round 1; count 5 rounds 1 and 8): by the rule as written the meta-review subject passage is a step-6 passage, it counts, and it takes a structural fix in this pass. C106 and C123 stand on no earlier line; their passages join round 9's restatement-match list.
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1 | own mismatch on C44: every element given a status | restatement, step 6 | structural fix from the ruling of 2026-10-30: the Provenance section opens with the element kinds that carry a status, "Three element kinds carry a provenance status: terms, claims and clusters. No other element carries a provenance status.", then the format sentence (C259, C260, C44 reworded); `awaiting restatement` |
+| 2 | own mismatch on C104 and C106: the signals read as triggering a review | restatement, step 6 for C104 | structural fix: the ask to the owner (C106) and "The owner may dispatch a meta-review of any text." (C192) move beside the subject sentence (C104), in a paragraph of their own before the `Meta-review:` line rules; `awaiting restatement` |
+| 3 | own mismatch on C123: the footprint read as governing delivered IRs | restatement | no prose defect, under the exception; the passage joins round 9's restatement-match list |
+| 4 | a cluster renders as one paragraph, but its claims' `part:` fields may differ | SP-25 | add C256, proposed: "A cluster's claims share one `part:` value."; a rule without a check, because no tool runs a changed CK-09; A7 asks the owner |
+| 5 | an IR-only document has no report to list proposed terms | SP-25 | add C257, proposed: "When the IR is the deliverable, the IR's own Asks section lists each proposed term for ratification."; evidence E7, the roadmap's and the IR-only record's asks A2; A7 asks the owner |
+| 6 | "withdraws" undefined | SP-04 | add C258 at first use: "The round's stranger instance withdraws a finding at confirmation when it says the finding does not hold against the prose as it stands."; inferred by R77 |
+| 7 | "disposition" and "declined" undefined | SP-04 | add C261 at first use: "A finding's disposition is the reasoning role's decision on the finding: fixed, or declined with a reason."; inferred by R78; the vocabulary has no disposition row |
+| 8 | the final-round marking sentence repeats the recording duty | SP-26 | declined: C199 carries a distinct claim, the mark at the limit, in the review record, where no text is delivered (case 009 change 18) |
+
+Round 7's carried items applied in the same pass: fix 9 re-fixed (the CK-14 link goes to the vocabulary's round row); new defects 1 (CK-15 "(Rendering and review)"), 3 (C206: "The reasoning role runs the style guide's mechanical checks on prose it writes directly."), 5 (C252: "… records the claims check run before each round from round 2."), 6 (C254: "… revises the unconfirmed words, which the next count's rounds then review."), 7 (the IR heading "### Rendering and review"), 8 (C253 cites R76, which derives it). Defect 4 stays declined and is carried. The ruling's structural fix on C1: "For each text that requires one, the reasoning role writes an intermediate representation (IR) before any prose of the text exists."; `awaiting restatement`.
+
+Claims after fixes: 244. Prose after fixes: 3,836 words. Claims check after the fixes (base: round 8 prose): 11 changed claims, 0 missing, 0 stale. Round trip: 244 of 244.
+
+Decided claims the fixes changed, for the owner: C1, C44 with C259 and C260, added to A6; new proposed rules C256 and C257 in A7; new inferred claims C258 and C261.
+
+Declined findings for round 9's brief: round 1's 6, 11 and 16; round 2's 6; round 3's 7; round 7's new defect 4; round 8's 8; each with its reason. Passages awaiting restatement in round 9: the verdict section; the C1 passage; the Provenance opening (C259, C260, C44); the meta-review subject paragraph (C104, C106, C192); the footprint passage (C123).
