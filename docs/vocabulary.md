@@ -272,7 +272,7 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   - <a id="def-normative-text"></a>**Normative text** — a rule, a
     specification, or any text whose words bind.
   - <a id="def-meta-review-signal"></a>**Meta-review signal** — one of
-    four conditions in a review record that make a text a meta-review
+    three conditions in a review record that make a text a meta-review
     subject, named in the specification's Meta-review section.
 - <a id="def-planning-execution-model"></a>**Planning/execution model** — the plan model of a project plus
   the verification evidence of each node: what the web view renders
@@ -326,6 +326,19 @@ in [constitution.md](constitution.md#draft-history-pre-10).
 - <a id="def-decision-on-a-finding"></a>**Decision on a finding** — the reasoning role's decision on one
   finding of a round: fixed, or declined with a reason (owner,
   2026-10-30, [specification](intermediate-representation.md#the-count)).
+- <a id="def-omission"></a>**Omission** — a claim or a qualifier a stranger's restatement leaves
+  out; an omission is not a restatement mismatch (owner, 2026-10-30,
+  communication-pipeline evaluation case 012,
+  [specification](intermediate-representation.md#the-verdict)).
+- <a id="def-fix-pass"></a>**Fix pass** — the reasoning role's fixes of one round's findings, in
+  the IR and then in the prose (owner, 2026-10-30, case 012,
+  [specification](intermediate-representation.md#the-count)).
+- <a id="def-new-defect"></a>**New defect** — a defect a fix introduces, which the round's
+  stranger instance names at confirmation (owner, 2026-10-30, case
+  012, [specification](intermediate-representation.md#the-count)).
+- <a id="def-unparsed-line"></a>**Unparsed line** — a review-record line the communication-pipeline's
+  signals script cannot read (owner, 2026-10-30, case 012,
+  [specification](intermediate-representation.md#meta-review)).
 - <a id="def-report-audience"></a>**Report audience** — the reader a report is addressed to under
   [W-008](rules/working-agreement.md#w-008--reports-map-their-deliverables)
   (reports map their deliverables): the human owner directly (the
