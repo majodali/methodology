@@ -941,6 +941,10 @@ Queued items applied in the same pass:
 
 Claims after fixes: 230. Prose after fixes: 3,568 words. Claims check after the fixes (base: round 4 prose): 14 changed claims, 0 missing, 0 stale. Round trip: 230 of 230.
 
+Confirmation: 5 of 5 fixes hold. Not held: none. Declines accepted: 0 of 0. New defects: 3.
+
+The five are findings 4 to 8; findings 1 to 3 are the step-6 fixes, which await round 5's restatement. The three new defects are fixed in round 5's fix pass: N1 (SP-25, "Otherwise the reasoning role writes `Meta-review: not indicated`" lacks C239's condition), N2 (a gap: an accepted deliverable whose review record carries `Meta-review: unparsed` is also a finding of the next form audit) and N3 (the IR's order of E6 and R62 to R64).
+
 Decided claims the fixes changed, for the owner: all are listed in A6. New rule for the owner: the `Meta-review: unparsed` line (C236 to C238).
 
 Declined findings for round 5's brief: round 1's 6, 11 and 16; round 2's 6; round 3's 7; each with its reason. Passages awaiting restatement in round 5: the verdict's conditions (C203, C227, C223, C224, C195) and the withdrawal rule (C194, C235).
