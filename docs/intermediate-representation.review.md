@@ -1204,3 +1204,41 @@ Round 9's confirmation defects applied in the same pass: defect 1 is finding 1 a
 Claims after fixes: 245 (C260 restored). Prose after fixes: 3,876 words. Claims check after the fixes (base: round 10 prose): 3 changed claims, 0 missing, 0 stale. Round trip: 245 of 245. IR check: 0 violations, 0 warnings. Lint and style warnings: 27 and 50, as before the pass. Footprint: declared 5, changed 5, surprises 0, misses 0.
 
 Decided claims the fixes changed, for the owner: C174 and C259 with C260, added to A6.
+
+Confirmation: 1 of 1 fixes hold. Not held: none. Declines accepted: 1 of 1. New defects: 1.
+
+The instance (a730555ad1a871eb3) re-read the prose and the IR in full. Finding 1's fix holds; finding 2's decline is accepted. The new defect sits in the IR's asks only: A7's "the communication-pipeline's branch-point dispositions" names a term with no link (SP-04). The instance also noted, not counting it, that A6's "whose exception names the cluster C256 splits" overstates what C174 says. Both are applied after confirmation, in the closing commit, and touch no claim and no prose: A7 links the communication-pipeline vocabulary's disposition row, "the branch point's output for one IR"; A6 reads "C174, whose exception describes the clusters C256 splits."
+
+Final-round marks (the limit): finding 1, confirmed; finding 2, declined, the decline accepted by the instance. No step-6 fix was pending, so no fix stays awaiting restatement and no finding is unfixed.
+
+### Verdict, count 5
+
+The limit was reached at round 10 of count 5, on 2026-10-30. The final round's verdict: not readable for RD-4, on one contradiction (finding 1, C174 against C256), whose fix the instance confirmed. Under the limit rule the reasoning role does not deliver the text before the owner's decision.
+
+| Round | Findings per 1,000 words | Contradictions |
+|---|---|---|
+| 1 | 5.9 | 2 |
+| 2 | 1.8 | 1 |
+| 3 | 2.6 | 0 |
+| 4 | 2.3 | 1 |
+| 5 | 1.4 | 0 |
+| 6 | 2.2 | 1 |
+| 7 | 3.8 | 0 |
+| 8 | 2.1 | 2 |
+| 9 | 1.0 | 1 |
+| 10 | 0.5 | 1 |
+
+Findings in all: 84 across ten rounds. Prose 3,368 words at round 1 and 3,891 at close (3,876 after round 10's fixes; the closing Status line adds 15). IR 216 claims at round 1 and 245 at close. Restatement mismatches: none in round 10; every passage that awaited restatement matched by round 10.
+
+Meta-review: pending (signals 1, 2 and 4). Signals checked at the end of count 5 by `scripts/signals.mjs` (reading the last count) and by reading: first, fired: fixes not held at confirmation in rounds 1, 3, 7 and 8, and the claims check reported a stale claim before rounds 1 and 2; second, fired: restatement mismatches recurred on the passages of C44, C104, C41, C223, C195, C227, C203, C194 and C1, each given a structural fix that a later round matched; no declined finding was raised again; third, not fired: words per IR claim 15.59 at round 1 and 15.84 at round 10, 2 percent; fourth, fired by reading: the contradictions of rounds 6, 9 and 10 sat on passages an earlier round's fix touched (C202, C258, C256). The count also reached the limit, so the text is a meta-review subject on two grounds. The reasoning role asks the owner, in the report on this count, to dispatch the meta-review.
+
+The owner's decision at the limit: deliver, rework or withdraw the text. Open items for that decision, in one list:
+
+1. A5: ratify or strike the terms passage (T24), topic claim (T25) and confirmation (T26).
+2. A6: ratify or strike the new wording of the decided claims count 5 reworded, split or merged: C1; C13; C31 and C240; C41 and C231; C58 and C232; C87; C88; C102; C106; C109; C110; C143; C161; C164; C191 and C239; C194 and C235; C195; C199; C203; C205; C206; C207; C208; C221 and C234; C223; C224; C227; C229; C12; C23; C44 with C259 and C260 (merged in round 9, split again in round 10); C46; C174.
+3. A6: ratify or strike the new rules: the `Meta-review: unparsed` line (C236 to C238) and its form-audit finding, merged into C109; a withdrawal without a quoted reason still counts (C250, C251); an unconfirmed fix's words stay in the delivered prose (C248) and are revised at the next edit (C254); the claims-check line (C252, C253); the override governs the exception (C255).
+4. A7: ratify or strike C256, a cluster whose claims fall under different parts renders as one paragraph per part, the exception C174 now describes; striking C256 also strikes C174's clause.
+5. A7: ratify or strike C257, an IR-only deliverable's own Asks section lists each proposed term for ratification.
+6. A7: decide whether a finding's disposition, fixed or declined (C261), keeps its name beside the communication-pipeline's disposition, the branch point's output for one IR.
+7. Three gaps for IR-only documents, carried unchanged from the edit of 2026-10-30: the render map omits C217 to C219; C13's Status values omit `delivered IR-only`; the prose's "another is whether the owner designated the document IR-only" has no claim.
+8. The finding of count 5 recorded in round 7: the verdict passage drew restatement omissions in five rounds; the meta-review should weigh the 200-word restatement limit against a text near 3,900 words.
