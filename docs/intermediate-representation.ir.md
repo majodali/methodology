@@ -261,7 +261,7 @@ C76. The renderer links a term with a definition site at its first use in the un
 
 C173. The unit for P-008 is the whole text for a report and the section for a document. [decided: methodology PR #48, 2026-10-26]
 
-C164. Later uses of a term with a definition site in the unit are not linked. [decided: methodology PR #48, 2026-10-26]
+C164. The renderer does not link a later use of a term with a definition site in the unit. [inferred: R70]
 
 C77. The renderer defines a term the IR introduces in a sentence of its own before its first use. [inferred: R45]
 
@@ -317,21 +317,25 @@ C233. Confirmation is the step at which the round's stranger instance says wheth
 
 C203. The first condition: the restatement of the problem, terms and decisions has no mismatch with the IR that counts. evidence: E4. [decided: owner, 2026-10-30; reworded in count 5, rounds 1, 4 and 5]
 
-C227. Under the first condition, a mismatch counts whatever the stranger attributes it to. evidence: E4. [decided: owner, 2026-10-30; reworded in count 5, round 5]
+C227. Under the first condition, a mismatch counts whatever the stranger attributes it to, except as the first condition's exception states. evidence: E4. [decided: owner, 2026-10-30; reworded in count 5, rounds 5 and 6]
 
 C223. The first condition's exception: an own mismatch does not count when the stranger quotes a prose sentence that carries an IR claim. evidence: E5. [decided: owner, 2026-10-30; reworded in count 5, round 5, to the reading adopted on 2026-10-30]
 
-C224. The first condition's override: a restatement mismatch on one passage in two rounds always counts. evidence: E5. [inferred: R52]
+C224. The first condition's override: a restatement mismatch on one passage in any two rounds of the text's counts always counts. evidence: E5. [inferred: R52]
 
-C195. A restatement mismatch is never withdrawn at confirmation. evidence: E3. [decided: owner, 2026-10-29; reworded in count 5, round 5]
+C195. The round's stranger instance never withdraws a restatement mismatch at confirmation. evidence: E3. [inferred: R68]
 
 C221. The second condition: the stranger finds no contradiction. [decided: owner, 2026-10-27; reworded in count 5, round 4]
 
 C194. A contradiction finding withdrawn by the round's stranger instance at confirmation, on a reason quoting the prose, does not count against the verdict. evidence: E3. [decided: owner, 2026-10-29; reworded in count 5, round 4]
 
+C250. A contradiction finding withdrawn on a reason that does not quote the prose still counts. [inferred: R69]
+
 C234. The third condition: the stranger finds no undefined term. [decided: owner, 2026-10-27; reworded in count 5, round 4]
 
 C235. An undefined-term finding withdrawn by the round's stranger instance at confirmation, on a reason quoting the prose, does not count against the verdict. evidence: E3. [decided: owner, 2026-10-29; reworded in count 5, round 4]
+
+C251. An undefined-term finding withdrawn on a reason that does not quote the prose still counts. [inferred: R69]
 
 C94. The reasoning role treats a finding that proposes fewer words, a plainer phrase or a removed repetition like any other finding. [inferred: R48]
 
@@ -346,6 +350,10 @@ C156. The readable round's stranger instance confirms each fix before delivery. 
 C182. A finding whose fix the readable round's stranger instance does not confirm is unfixed. [decided: owner, 2026-10-27]
 
 C202. The reasoning role marks each finding of the readable round confirmed or unfixed in the delivered text. [inferred: R50]
+
+C248. An unconfirmed fix's words stay in the delivered prose. [inferred: R71]
+
+C249. The unfixed mark records that the readable round's stranger instance did not confirm the fix. [inferred: R71]
 
 C183. The reasoning role fixes an unfixed finding of the readable round at the next edit of an active document. [decided: owner, 2026-10-27]
 
@@ -395,15 +403,15 @@ C190. The fourth signal: in round 3 or later, a stranger found a contradiction i
 
 C105. At the end of a count, the reasoning role checks the four signals against the review record. [decided: owner, 2026-10-27]
 
-C191. The reasoning role writes `Meta-review: pending` when the text is a subject. [decided: owner, 2026-10-27; reworded in count 5, round 4]
+C191. The reasoning role writes `Meta-review: pending` when the text is a meta-review subject. [decided: owner, 2026-10-27; reworded in count 5, rounds 4 and 6]
 
-C236. An unparsed line is a review-record line the communication-pipeline's signals script cannot read. [inferred: R62]
+C236. An unparsed line is a review-record line the communication-pipeline's signals script cannot read, or a claims-check line a round after round 1 lacks. [inferred: R62]
 
 C237. While a line is unparsed, the reasoning role writes `Meta-review: unparsed`, naming the line, in place of `pending` or `not indicated`. evidence: E6. [inferred: R63]
 
-C238. When the unparsed line parses, the reasoning role writes `pending` again for a subject text. evidence: E6. [inferred: R64]
+C238. When the unparsed line parses, the reasoning role writes `pending` again for a text that is a meta-review subject. evidence: E6. [inferred: R64]
 
-C239. When the text is no subject and no line is unparsed, the reasoning role writes `Meta-review: not indicated`. [decided: owner, 2026-10-27; reworded in count 5, round 4]
+C239. When the text is no meta-review subject and no line is unparsed, the reasoning role writes `Meta-review: not indicated`. [decided: owner, 2026-10-27; reworded in count 5, rounds 4 and 6]
 
 C209. The `Meta-review:` line names the signals checked. [decided: owner, 2026-10-27]
 
@@ -423,7 +431,7 @@ C247. A `Meta-review: unparsed` line in the review record of an accepted deliver
 
 ### Rendering conditions
 
-C246. The rendering conditions decide, for one IR, who renders its prose and whether the stranger rounds run. [inferred: R66]
+C246. The rendering conditions settle, for one IR, whether prose is rendered, who renders it and whether the stranger rounds run. [inferred: R66]
 
 C204. A dependent ask is an ask with a `Depends:` field. [decided: pipeline branch point v1.1, 2026-10-25]
 
@@ -547,7 +555,7 @@ C162. The owner placed the meta-review in the communication-pipeline project unt
 
 C140. The specification was rewritten from this IR, `intermediate-representation.ir.md` beside the prose. [decided: owner, 2026-10-27]
 
-C207. The rewrite followed ten stranger rounds on methodology PR #51's amendment text that ended without a readable verdict. [decided: owner, 2026-10-27]
+C207. The rewrite followed ten stranger rounds on methodology PR #51's amendment text, rounds that ended without a readable verdict. [decided: owner, 2026-10-27; reworded in count 5, round 6]
 
 C210. The ten rounds grew the prose from 2,635 to 4,516 words. [decided: owner, 2026-10-27]
 
@@ -689,6 +697,14 @@ R66. C246 refines C71 because the table's rows decide when prose is rendered and
 
 R67. C247 refines C109 because an unparsed line hides whether the text is a subject, as a pending line shows one owed.
 
+R68. C195 depends-on C233 because the round's stranger instance is the one that confirms and withdraws; case 009 change 2 named no actor.
+
+R69. C250 refines C194 because the withdrawal counts only on a reason quoting the prose, so a withdrawal on any other reason leaves the finding counting.
+
+R70. C164 depends-on C220 because the renderer places every link; methodology PR #48 named no actor.
+
+R71. C248 depends-on C155 because the delivered text is the judged text with the round's fixes applied, and C202 marks the fixes the instance did not confirm.
+
 ## Evidence
 
 E1. docs/records/stranger-rounds-until-readable.review.md (kept on main from the closed branch of PR #51 since 2026-10-29): ten rounds, 232 findings, verdict not readable in every round; prose 2,635 to 4,516 words.
@@ -723,4 +739,4 @@ A4 resolved: ratified by the owner, 2026-10-27; vocabulary row added.
 
 A5. Ratify or strike the terms passage (T24), topic claim (T25) and confirmation (T26). Depends: C228, C226, C233.
 
-A6. Ratify or strike the new wording of the decided claims count 5 reworded or split in its rounds: C1; C13; C31 and C240; C41 and C231; C58 and C232; C87; C102; C110; C143; C161; C191 and C239; C194 and C235; C199; C203; C205; C208; C221 and C234; C223; C224; C227; C229; C88; C195. New rules for the owner: the `Meta-review: unparsed` line (C236 to C238) and its form-audit finding (C247). Depends: C1, C13, C31, C41, C58, C87, C102, C110, C143, C161, C191, C194, C199, C203, C205, C208, C221, C223, C224, C227, C229, C88, C195, C237, C247.
+A6. Ratify or strike the new wording of the decided claims count 5 reworded or split in its rounds: C1; C13; C31 and C240; C41 and C231; C58 and C232; C87; C102; C110; C143; C161; C191 and C239; C194 and C235; C199; C203; C205; C208; C221 and C234; C223; C224; C227; C229; C88; C195; C164; C207. New rules for the owner: the `Meta-review: unparsed` line (C236 to C238) and its form-audit finding (C247); a withdrawal without a quoted reason still counts (C250, C251); an unconfirmed fix's words stay in the delivered prose (C248, C249). Depends: C1, C13, C31, C41, C58, C87, C102, C110, C143, C161, C191, C194, C199, C203, C205, C208, C221, C223, C224, C227, C229, C88, C195, C164, C207, C237, C247, C248, C250.

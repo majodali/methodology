@@ -750,6 +750,7 @@ Three gaps remain from the edit of 2026-10-30 for IR-only documents. This count 
 | 3 | 3,443 | 222 | 9 | 2.6 | not readable (two own mismatches, quoted; contradictions 0; undefined terms 3) |
 | 4 | 3,471 | 223 | 8 | 2.3 | not readable (three own mismatches, quoted, two step-6 passages that count; contradiction 1; undefined terms 3) |
 | 5 | 3,568 | 230 | 5 | 1.4 | not readable (three own mismatches on the two step-6 passages, counting under the override; contradictions 0; undefined terms 0) |
+| 6 | 3,640 | 232 | 8 | 2.2 | not readable (one own mismatch, quoted, not counting; contradiction 1; undefined terms 0) |
 
 ### Round 1, count 5, 2026-10-30
 
@@ -1004,3 +1005,29 @@ Awaiting restatement: round 5's second structural fixes, the verdict table (C203
 Declined findings carried in the brief: round 1's 6, 11 (the instance did not accept the decline) and 16; round 2's 6; round 3's 7; each with its reason.
 
 Signals script before the round: signals 1 and 2 fire as before; signal 3 not fired; the script's signal 4 check matches the wording of round 5's own signals note, not a finding, so signal 4 is not fired; no line unparsed.
+
+Stranger model: claude-haiku-5-5, a fresh instance at the frugal tier. Prose 3,640 words by `wordCount`; IR 232 claims; 8 findings, 2.2 per thousand words. Restatement: one mismatch, attributed by the stranger to its own restatement, quoting the sentence that carries C1; no earlier mismatch on that passage. The first condition holds. Contradiction 1 (finding 5), undefined terms 0 (findings 2 and 6 are a missing link and a shortened term); verdict: not readable for RD-4, on the contradiction.
+Mismatches: C1 (own; relied on C1)
+
+Signals script after the `Mismatches:` line: C1 stood on no earlier line; signal 2 as before on C104, C41, C223, C194, C195 and C227; no line unparsed.
+
+Awaiting restatement: all three passages matched. The verdict table's first row matched on direction, and the withdrawal cells matched: the second structural fix on each of the two step-6 passages is confirmed by restatement. The referent passage matched again.
+
+| # | Finding (shortened) | Kind | Disposition |
+|---|---|---|---|
+| 1 | own mismatch on C1 | restatement | no prose defect, under the exception |
+| 2 | "proposed" used as a status in the Term row before Provenance defines it | SP-04 | add the link to Provenance at that use |
+| 3 | "Later uses of a term … are not linked." names no actor | SP-18 | rephrase C164: "The renderer does not link a later use of a term with a definition site in the unit."; inferred by R70; added to A6 |
+| 4 | "A restatement mismatch is never withdrawn at confirmation." names no actor | SP-18 | rephrase C195 in the table: "The round's stranger instance never withdraws a restatement mismatch at confirmation."; inferred by R68; the branch point's cell follows |
+| 5 | the delivered text "with the round's fixes applied" against findings marked unfixed | SP-25 | add C248 "An unconfirmed fix's words stay in the delivered prose." and C249 "The unfixed mark records that the readable round's stranger instance did not confirm the fix."; inferred by R71; for the owner with the count 5 findings, since they answer the open point round 5's stranger raised |
+| 6 | "subject" alone for "meta-review subject" | SP-04 | rephrase C191, C238 and C239: "meta-review subject"; the branch point's same sentences follow |
+| 7 | "communication-pipeline evaluation case 009" repeated in full after its first link | SP-26 | cut to "case 009" in the two later History mentions |
+| 8 | "that ended" attaches to the amendment text | SP-03 | rephrase C207: "… amendment text, rounds that ended without a readable verdict." |
+
+Queued items applied in the same pass, shared with the branch point where the text is shared: the first row's Counts cell "… except as the next column states" (C227); rows 2 and 3 "A … finding withdrawn on a reason that does not quote the prose still counts." (C250, C251, inferred by R69); C246 "The rendering conditions settle, for one IR, whether prose is rendered, who renders it and whether the stranger rounds run."; C236 "An unparsed line is … or a claims-check line a round after round 1 lacks."; C224 "on one passage in any two rounds of the text's counts". The specification has no fixed confirmation line, so the branch point's round 6 findings 4 and 5 do not apply here.
+
+Claims after fixes: 236. Prose after fixes: 3,727 words. Claims check after the fixes (base: round 6 prose): 14 changed claims, 0 missing, 0 stale. Round trip: 236 of 236. One new `mtool style` warning, on "Provenance", reads the word in the new link's anchor.
+
+Decided claims the fixes changed, for the owner: C164, C195, C191, C239 and C207, added to A6; new rules C248 to C251.
+
+Declined findings for round 7's brief: round 1's 6, 11 and 16; round 2's 6; round 3's 7; each with its reason. Nothing awaits restatement in round 7.
