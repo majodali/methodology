@@ -1081,3 +1081,15 @@ Claims after fixes: 238. Prose after fixes: 3,752 words. Claims check after the 
 Decided claims the fixes changed, for the owner: C1, C12, C23, C106, C109 and C206, added to A6; new rules C252 to C255.
 
 Declined findings for round 8's brief: round 1's 6, 11 and 16; round 2's 6; round 3's 7; each with its reason. Passage awaiting restatement in round 8: the verdict section (C203, C227, C223, C224, C255, C195, C221, C194, C250, C234, C235, C251), third fix.
+
+### Round 8, count 5, 2026-10-30
+
+Branch point version and commit: v1.9 as at communication-pipeline branch `branch-point-v1.9-cases-010-011`, its round 8 opening commit. Prose 3,752 words; IR 238 claims; unratified terms 3 (T24, T25, T26). Round 7's confirmation was not yet back when round 8 opened; its line is recorded in round 7's entry when it arrives.
+
+Claims check before the round: 12 changed claims, 0 missing, 0 stale (base: round 7 prose).
+
+Awaiting restatement: round 7's third structural fix, the verdict section under its own sub-header (C203, C227, C223, C224, C255, C195, C221, C194, C250, C234, C235, C251). This round's entry states whether the restatement matched on it. The C1 and C44 recurrences the script reported in round 7 wait for the Orchestrator's reading.
+
+Declined findings carried in the brief: round 1's 6, 11 (the instance did not accept the decline) and 16; round 2's 6; round 3's 7; each with its reason.
+
+Signals script before the round: signals 1 and 2 fire as before, signal 2 now also on C203, C1 and C44; signal 3 not fired; signal 4 fired by reading in round 6; no line unparsed. The text is a meta-review subject at the count's end.
