@@ -1,20 +1,20 @@
 # IR: IR-only documents
 
 Reader: RD-2
-Purpose: proposal. The owner's decision of 2026-10-30 that some documents are delivered as their IR alone, with no prose rendering and no stranger rounds, and the three texts the decision changes: W-009, the IR specification's rendering rule, and the communication-pipeline's branch point.
+Purpose: document. The owner's decision of 2026-10-30 that some documents are delivered as their IR alone, with no prose rendering and no stranger rounds, and the three texts the decision changes: W-009, the IR specification's rendering rule, and the communication-pipeline's branch point.
 Status: delivered IR-only (the owner adopted the option on 2026-10-30 while approving the roadmap; this record is the first document delivered under it after the roadmap itself; mtool ir check 0 violations; unratified terms 0)
 Source: the owner's message of 2026-10-30 approving the roadmap IR: "I find the IR very readable, for this and some other documents IR-only will work, no prose version required. We should update the docs/comms pipeline to include that option."
 Footprint: docs/records/ir-only-documents.ir.md; docs/rules/working-agreement.md; docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/vocabulary.md; docs/releases.md; communication-pipeline docs/branch-point.md
 
 ## Terms
 
-T1. IR-only document. defined-at: vocabulary.md#def-ir-only-document [decided: owner, 2026-10-30]
+T1. IR-only document. defined-at: ../vocabulary.md#def-ir-only-document [decided: owner, 2026-10-30]
 
-T2. Intermediate representation. defined-at: vocabulary.md#def-intermediate-representation [decided: methodology vocabulary]
+T2. Intermediate representation. defined-at: ../vocabulary.md#def-intermediate-representation [decided: methodology vocabulary]
 
-T3. Paraphraser. defined-at: vocabulary.md#def-paraphraser [decided: methodology vocabulary]
+T3. Paraphraser. defined-at: ../vocabulary.md#def-paraphraser [decided: methodology vocabulary]
 
-T4. Stranger. defined-at: vocabulary.md#def-stranger [decided: methodology vocabulary]
+T4. Stranger. defined-at: ../vocabulary.md#def-stranger [decided: methodology vocabulary]
 
 ## Claims
 
@@ -58,7 +58,7 @@ C16. The release register's Unreleased entry records the change as an amendment 
 
 ### Why
 
-C17. The owner found the roadmap IR readable without prose, and expects the same of other documents whose readers are the owner and agent sessions. [decided: owner, 2026-10-30]
+C17. The owner found the roadmap IR readable without prose, and expects other documents whose readers are the owner and agent sessions to read as well. [decided: owner, 2026-10-30]
 
 C18. An IR-only document costs one authoring pass and one mechanical check, where a rendered document costs a paraphraser pass and between one and ten stranger rounds. [inferred: R3]
 
