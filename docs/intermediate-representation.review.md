@@ -1160,6 +1160,10 @@ Round 8's carried items applied in the same pass. Row 4 re-fixed: C256 moves to 
 
 New defects 4 to 6 of round 8 are declined as stale reads. The committed IR already carries the prose's wording: C206, "The reasoning role runs the style guide's mechanical checks on prose it writes directly."; C252, "A claims-check line is the review-record line in which the reasoning role records the claims check run before each round from round 2."; C254, "At that edit, the reasoning role revises the unconfirmed words, which the next count's rounds then review."
 
+Confirmation: 3 of 3 fixes hold. Not held: none. Declines accepted: 0 of 0. New defects: 3.
+
+The instance (a2127801c8f655ec2) re-read the prose and the IR. The confirmable fixes are rows 2, 3 and 4. Row 1 has no text fix; the instance does not dispute the ruling and notes that the mismatch sits on C131 and C132, with both carriers quoted. The three new defects: 1, SP-25, C256 against C174 in Rendering and review, a cluster rendered as one paragraph and as one paragraph per part; 2, SP-01, the Provenance opening's first sentence joins the positive claim and the negative claim, which the merge of C260 into C259 made one; 3, SP-05 and SP-04, A7 names "dispositions D0 to D3" with no name or link. All three are taken in round 10's fix pass: C174 gains a clause naming C256's rule as its exception, and C174 joins A6; the Provenance opening splits into two sentences again, C259 and C260 restored, and A6 notes that the merge was reversed; A7 names the communication-pipeline's branch-point dispositions without the identifiers.
+
 Claims after fixes: 244 (C260 removed, C262 added). Prose after fixes: 3,864 words. Claims check after the fixes (base: round 9 prose): 8 changed claims, 0 missing, 0 stale; C260 removed. Round trip: 244 of 244. IR check: 0 violations, 0 warnings. Lint and style warnings: 27 and 50, as before the pass.
 
 Decided claims the fixes changed, for the owner: C1 again, C259 with C260 merged into it, and C46, added to A6. Proposed C256 reworded in A7.
