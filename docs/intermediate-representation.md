@@ -1,6 +1,6 @@
 # Intermediate representation
 
-Status: active, under review (count 6, round 4, 2026-10-30: communication-pipeline evaluation case 012's adopted changes). A methodology [Specification](vocabulary.md#def-specification), the document type, required by
+Status: active (count 6 readable at round 4 on 2026-10-30, awaiting the owner's acceptance of communication-pipeline evaluation case 012's adopted changes). A methodology [Specification](vocabulary.md#def-specification), the document type, required by
 [W-009](rules/working-agreement.md#w-009--the-methodology-corpus-writes-its-deliverables-ir-first)
 (the methodology corpus writes its deliverables IR first). Any project
 that adopts W-009 by declaration uses this specification.

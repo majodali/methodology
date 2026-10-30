@@ -1461,3 +1461,31 @@ Step 7 applies. The eight findings are fixed IR first; the round's instance conf
 | 8 | IR E6: "the branch point v1.9's C67" against this IR's C67 | SP-05 | E6 names communication-pipeline `docs/records/branch-point-v1.9.ir.md` and its claim C67 |
 
 Claims after fixes: 278. Prose after fixes: 4,297 words. Claims check after the fix pass (base: round 4 prose): 6 changed claims, 0 missing, 2 stale. The stale claims are C5 and C151: their fixes brought the IR to prose that already carried them, so no prose sentence changes. Round trip: 278 of 278. IR check: 0 violations, 0 warnings.
+
+Confirmation: 8 of 8 fixes hold. Not held: none. Declines accepted: 0 of 0. New defects: 2.
+
+The instance (a937df4dc4f54b856) read both files in full at fix commit 7f120f9. Final-round marks: findings 1 to 8 confirmed. The two new defects are in the IR: ask A8's `Depends:` field omits C304 (CK-07's dependency form, C38); T36 names the term "IR-only document" while C13, C217 and C219 write "IR-only" (CK-04). Under case 012 change 8 the reasoning role does not fix them in this count. Both are IR bookkeeping; they go to the owner's list, and the next edit fixes them.
+
+### Verdict, count 6
+
+Readable for RD-4 at round 4 of a count of four, on 2026-10-30. The limit was not reached.
+
+| Round | Findings per 1,000 words | Contradictions |
+|---|---|---|
+| 1 | 1.9 | 0 |
+| 2 | 2.4 | 0 |
+| 3 | 1.2 | 0 |
+| 4 | 1.9 | 0 |
+
+Findings in all: 31 across four rounds. Restatement mismatches: 2 in round 1, 2 in round 2, 1 in round 3, 0 in round 4. Prose 4,129 words at round 1 and 4,303 at close (4,297 after step 7's fixes; the closing Status line adds 6); IR 265 claims at round 1 and 278 at close. Step-6 fixes: three passages, the Element kinds provenance column with the Provenance opening, "Who dispatches a meta-review" and the verdict table. Each matched in the next round's one-sentence restatement. Every confirmable fix held at its first confirmation; no decline was made.
+
+Meta-review: pending (signals 1 and 2). Signals checked at the end of count 6 by `scripts/signals.mjs` (reading the last count) and by reading: first, fired by the script on stale claims in rounds 2 and 4. Both reports come from changes made in the IR only: round 2's C300 changed its evidence field, and round 4's C5 and C151 took names the prose already carried. No prose sentence was stale, and no fix failed to hold. The reading of signal 1 is that it fired on the claims check's form, not on a drift; the meta-review can weigh that. Second, fired: C104 (counts 4, 5 and 6), C106 (count 5 round 8, count 6 round 1) and C194 (count 5 rounds 3, 4, 5 and 7, count 6 round 2), each a passage that took a structural fix in this count and matched after it. No declined finding was raised again. Fourth, by reading: not fired; no round had a contradiction. The third signal is struck (case 012 change 11). The reasoning role asks the owner, in the report on this count, to dispatch the meta-review.
+
+The owner's decision: accept or reject count 6. Open items for that decision, in one list:
+
+1. A8: ratify or strike count 6's rendering of communication-pipeline evaluation case 012's adopted changes, every claim proposed with its change number: C203, C227, C252, C253, C263, C264, C266 to C268, C269 to C275, C276 to C281, C282, C304, C283, C284, C105, C285, C286, C296, C297, C298.
+2. A9: strike or keep the vocabulary row *own mismatch*. The History links the row since round 2.
+3. The decided claims count 6 reworded, each with its note (case 012 change 14): C259 and C260, split per kind with C292 to C295 (round 1); C104, C164, C153, and C254 split with C291 (round 1); C44 and C237, split with C296 (after round 1's confirmation); C194 and C235, each with its unquoted-withdrawal claim merged in, and C225 (round 2); C291, C299 and C300 (round 3); C5 and C151 (round 4).
+4. The owner-adopted rule from the branch point's ask A2, carried as C156, C301 and C302 (decided, 2026-10-30), and its form split at the semicolon in round 3. The claims are unchanged; the sentence reads as two.
+5. The two new defects of the step-7 confirmation, unfixed under case 012 change 8: A8's `Depends:` field omits C304; T36 "IR-only document" against "IR-only" in C13, C217 and C219. The next edit fixes both.
+6. Terms: none new on this text beyond the seven case 012 terms the owner ratified by the default (T30 to T35, with T23 repointed) and T36, which names the existing vocabulary row *IR-only document*.
