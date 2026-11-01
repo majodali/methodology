@@ -41,6 +41,7 @@ Changes to K-003 beyond the proposal's replacement text, each in the IR:
 |---|---|---|---|---|---|
 | 1 | 261 | 43 | 8 | 30.7 | not readable (one own mismatch on C8 and C9, quoted, not counting; contradiction 1; undefined terms 2) |
 | 2 | 268 | 43 | 5 | 18.7 | not readable (one own mismatch on C2 with T7, quoted, not counting; contradictions 2; undefined term 1) |
+| 3 | 278 | 44 | pending | pending | pending |
 
 ### Round 1, count 1, 2026-10-30
 
@@ -106,7 +107,7 @@ Awaiting restatement from round 1: the re-fix of finding 4 (the Applies line) an
 | 2 | the title, "the single source of progress truth", against the appended sentence | SP-25 | declined: the reason of round 1, finding 7. The owner decided at P3-N007's gate on 2026-10-30 that the title and the referent clauses stand, with "instead" marking the exception; the title is the rule's name (C38). The instance offered to withdraw it if the rule records the precedence |
 | 3 | "implementation map" in the Motivated-by line before the Statement defines it | SP-04 | fixed: the Motivated-by line links "implementation map" to K-003's own anchor, whose Statement defines it |
 | 4 | "which" in the Cites line has no clear antecedent | SP-03 | fixed: "and the entry names the custom document types that make up the model, with no new Classification field", per C10 and C11 |
-| 5 | the referent clauses, "no other document may claim that role", against the appended sentence | SP-25 | declined: the reason of 2 |
+| 5 | the referent clauses, "no other document may claim that role", against the appended sentence | SP-25 | declined: the reason of 2. Fixed after round 2 by the owner's decision of 2026-11-01, which adopted the marker (round 3 entry) |
 
 Two instances in a row, rounds 1 and 2, read the title and the referent clauses as contradicting the appended sentence. The Orchestrator is putting the marker to the owner now: "no other document may claim that role, except as the next sentence provides", and no change to the title (C38). The round 2 confirmation table carries findings 2 and 5 as declines the instance may withdraw by quoting the appended sentence.
 
@@ -123,3 +124,18 @@ Re-fixed after confirmation:
 | N1 | "with no new Classification field" in the Cites line has no verb | SP-03 | "and the declaration needs no new Classification field", per C11. Marked `awaiting restatement` |
 
 The re-fix changes no claim.
+
+### Round 3, count 1, 2026-11-01
+
+Branch: methodology PR #73 merged at `a1959c3`'s state, so the count continues on branch `k-003-count-1-rounds` from `main` at `be5f993`. Branch point version and commit: v1.9 at communication-pipeline `main`, commit `d1c5b55`, the version the count opened under; v1.9 is still the active version on that project's `main`. The specification on this repository's `main` now carries count 6. Under branch point v1.9 a change the owner adopts during a count applies from the next count, so this count's rounds keep the rules it opened under. Brief: `k003-r3-brief.md` in the reasoning role's scratchpad, naming the round 3 commit. Prose 278 words; IR 44 claims; unratified terms 0.
+
+The owner's decision of 2026-11-01 adopted the marker. The second referent clause now reads "no other document may claim that role, except as the next sentence provides" (C44, decided, evidence E10; R7 ties it to C2). Round 2's finding 5 is closed as fixed by that decision; it is no longer a decline. The title is unchanged (C37). The release-register entry's impact assessment gains one line on the marker.
+
+Claims check before the round (base: round 2 prose at `d29bf2d`): 1 changed claim, C44, new; 0 missing, 0 stale. Round trip: 44 of 44 claims mapped. IR checks: 0 violations, 0 warnings. `mtool audit form`: no findings.
+
+Awaiting restatement: the re-fix of round 2's new defect N1, the Cites line's "and the declaration needs no new Classification field". This round's entry states whether the round names it on its `Mismatches:` line or in a finding. The marked clause sits in the passage of C2, which drew round 2's own mismatch; a second mismatch on that passage counts under the override.
+
+Signals script before the round: no signal fired; no line unparsed.
+
+Carried into the brief: round 1's declines 5, 6 and 8 with their reasons, and the readability note.
+

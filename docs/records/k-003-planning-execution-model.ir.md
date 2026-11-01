@@ -2,7 +2,7 @@
 
 Reader: RD-4 (a fresh agent session) reading K-003 (the Backlog is the single source of progress truth) as amended; the owner adjudicates the amendment.
 Purpose: document. The amendment of K-003 in place, by which a project whose Classification declares a planning/execution model takes that model as its referent for what is done and what is next, with the vocabulary rows and the release-register entry the amendment needs.
-Status: rendered (count 1, round 2 not readable, 2 of 2 fixes held, finding 2 withdrawn, finding 5 declined pending the owner, 1 new defect fixed; round 1 not readable, 2 of 3 fixes held and 1 re-fixed, 1 new defect fixed, 4 declines accepted, finding 7 withdrawn; rendered by the reasoning role on 2026-10-30; unratified terms 0)
+Status: rendered (count 1, round 3; the referent clause marked by the owner's decision of 2026-11-01; round 2 not readable, 2 of 2 fixes held, finding 2 withdrawn, finding 5 declined pending the owner, 1 new defect fixed; round 1 not readable, 2 of 3 fixes held and 1 re-fixed, 1 new defect fixed, 4 declines accepted, finding 7 withdrawn; rendered by the reasoning role on 2026-10-30; unratified terms 0)
 Source: the project-orchestrator proposal "A declared planning/execution model is the source of progress truth" and its IR (93 claims, 17 terms) at project-orchestrator commit 25e92e8, approved for carrying by the owner at node P3-N007's verifying gate on 2026-10-30; the owner's decision of 2026-10-30 that the proposal lands in this repository as a methodology change, by pull request.
 Normative: yes
 Footprint: docs/rules/knowledge.md; docs/vocabulary.md; docs/releases.md; docs/records/k-003-planning-execution-model.ir.md; docs/records/k-003-planning-execution-model.review.md
@@ -52,6 +52,8 @@ C1. K-003's statement gains one sentence at its end: "Where the project's Classi
 
 C2. The appended sentence is an exception to the two referent clauses before it, "The Backlog is the referent for what is done and what is next" and "no other document may claim that role". evidence: E1. [decided: owner, 2026-10-30]
 
+
+C44. The second referent clause reads "no other document may claim that role, except as the next sentence provides". evidence: E10. [decided: owner, 2026-11-01]
 
 ### The header fields
 
@@ -155,6 +157,8 @@ R5. C28 supports C1 because the renderings the appended sentence requires were p
 
 R6. C30 supports C27 because the two records of progress already disagree in the evidencing instance.
 
+R7. C44 refines C2 because the marker names the exception inside the clause the appended sentence overrides.
+
 ## Evidence
 
 E1. The project-orchestrator proposal and its IR at commit 25e92e8ef541e0929e7e447f582edc15d3ec7629, docs/proposals/planning-execution-model-is-progress-truth.md and planning-execution-model-is-progress-truth.ir.md: sections "The change", "Open Backlog entries that name no node", "How a Classification declares a model" and "Release-register entry"; IR claims C8 to C17, C27 to C29, C54 to C69, C76, C77 and C83, terms T1 to T17. The proposal's quote of K-003 (its E1, at methodology v1.6.0, commit 3e34829) was re-checked on 2026-10-30 against this repository's main at commit e049bc6, the K-003 section from its heading to the next rule's heading: byte-identical, no drift.
@@ -174,6 +178,8 @@ E7. docs/registers/portfolio.md at v1.6.0: 23 rows, ten at C1 or C2 and thirteen
 E8. docs/classification.md at main, commit e049bc6, section Custom definitions: "No custom definitions."
 
 E9. docs/roadmap.ir.md at main, commit e049bc6: claim C28, "At the pilot, methodology-tools declares its planning/execution model in its Classification, and K-003's amended clause then applies to it."
+
+E10. The owner's decision of 2026-11-01, relayed by the Orchestrator to the reasoning role on 2026-11-01: the marker adopted, so that the referent clause reads "The Backlog is the referent for 'what is done and what is next'; no other document may claim that role, except as the next sentence provides." The Orchestrator put the marker to the owner after rounds 1 and 2 of count 1, in which two fresh stranger instances read the referent clauses as contradicting the appended sentence (review record, round 1 finding 7 and round 2 finding 5).
 
 ## Asks
 

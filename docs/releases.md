@@ -55,6 +55,8 @@ carry: amendment title and PR link · suggested by (evidencing instance)
     model.
   - The thirteen rows marked implicit C0: unaffected, because K-003
     applies from C1.
+  - The referent clause gains the marker "except as the next sentence
+    provides" (owner, 2026-11-01).
   - K-003 keeps its title, so links to its anchor keep resolving. The
     title is the rule's name and not its text, so for a project that
     declares a model the statement governs. The sentence on

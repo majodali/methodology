@@ -43,7 +43,8 @@ describe what actually shipped, so the completed section doubles as the
 implementation map. Where the project declares a [Workflow](../vocabulary.md#def-workflow), entries MUST
 carry current stage designations (Article 4 declaration accuracy). The
 Backlog is the [referent](../vocabulary.md#def-referent) for "what is done and what is next"; no other
-document may claim that role. Where the project's Classification
+document may claim that role, except as the next sentence provides.
+Where the project's Classification
 declares a planning/execution model, that model is the referent
 instead, and the Backlog's implementation map and list of what is next
 are [renderings](../vocabulary.md#def-rendering) of it.
@@ -52,7 +53,7 @@ are [renderings](../vocabulary.md#def-rendering) of it.
 Article 4's declaration-accuracy duty — a mirror, not a duplication
 (review round 1 adjudication, 2026-08-30).
 
-<!-- render map: K-003 ¶1 is the header, ¶2 the statement; claims rendered elsewhere name their file. IR: ../records/k-003-planning-execution-model.ir.md. C1→¶2 C2→¶2 C3→¶1 C4→¶1 C5→¶1 C6→¶1 C7→¶1 C8→¶1 C9→¶1 C10→¶1 C11→¶1 C12→¶1 C13→vocabulary.md#def-list-of-what-is-next C14→vocabulary.md#def-rendering C15→vocabulary.md#def-list-of-what-is-next C16→vocabulary.md#def-list-of-what-is-next C17→vocabulary.md#def-list-of-what-is-next C18→vocabulary.md#def-list-of-what-is-next C19→vocabulary.md#def-list-of-what-is-next C20→vocabulary.md#def-referent C21→releases.md C22→releases.md C23→releases.md C24→releases.md C25→releases.md C26→releases.md C27→releases.md C28→releases.md C29→releases.md C30→releases.md C31→releases.md C32→releases.md C33→releases.md C34→releases.md C35→releases.md C36→releases.md C37→releases.md C38→releases.md C39→releases.md C40→releases.md C41→releases.md C42→releases.md C43→releases.md -->
+<!-- render map: K-003 ¶1 is the header, ¶2 the statement; claims rendered elsewhere name their file. IR: ../records/k-003-planning-execution-model.ir.md. C1→¶2 C2→¶2 C3→¶1 C4→¶1 C5→¶1 C6→¶1 C7→¶1 C8→¶1 C9→¶1 C10→¶1 C11→¶1 C12→¶1 C13→vocabulary.md#def-list-of-what-is-next C14→vocabulary.md#def-rendering C15→vocabulary.md#def-list-of-what-is-next C16→vocabulary.md#def-list-of-what-is-next C17→vocabulary.md#def-list-of-what-is-next C18→vocabulary.md#def-list-of-what-is-next C19→vocabulary.md#def-list-of-what-is-next C20→vocabulary.md#def-referent C21→releases.md C22→releases.md C23→releases.md C24→releases.md C25→releases.md C26→releases.md C27→releases.md C28→releases.md C29→releases.md C30→releases.md C31→releases.md C32→releases.md C33→releases.md C34→releases.md C35→releases.md C36→releases.md C37→releases.md C38→releases.md C39→releases.md C40→releases.md C41→releases.md C42→releases.md C43→releases.md C44→¶2 -->
 
 ### K-004 — Decisions live in a numbered register
 Applies: [C2+]
