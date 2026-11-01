@@ -12,6 +12,31 @@ carry: amendment title and PR link · suggested by (evidencing instance)
 
 ## Unreleased
 
+### The stranger rounds take evaluation case 012's changes
+
+- **PR**: this amendment's PR.
+- **Suggested by**: the owner's adoption on 2026-10-30 of
+  communication-pipeline evaluation case 012, the meta-review of
+  branch point v1.9 and of this specification's count 5. Eleven of
+  its fifteen changes amend this specification as its count 6: every
+  restatement mismatch counts, without the own-mismatch exception and
+  the override; an omission is not a mismatch; the stranger restates
+  each passage awaiting restatement in one sentence; the claims check
+  runs once per fix pass; the instance reads both files in full at the
+  fix commit; the next round waits for the confirmation's fixes; a new
+  defect at the final confirmation goes to the owner; a fix adds no
+  rule the adopted changes do not hold; a reworded decided claim keeps
+  its source; the third signal is struck.
+- **Impact assessment**: methodology, the specification's rules and
+  its IR, count 6, and the vocabulary rows *omission*, *fix pass*,
+  *new defect* and *unparsed line*, with *meta-review signal* reading
+  three conditions. communication-pipeline, branch point v1.10, the
+  signals script and its vocabulary rows *claims check*, *step-6 fix*
+  and *awaiting restatement*. project-orchestrator, its Reviewer
+  (stranger) contract follows. Other projects unaffected.
+- **Migration note**: none. Review records written before count 6
+  keep their `(own)` marks and signal 3 readings as history.
+
 ### The stranger rounds take evaluation cases 010 and 011's changes
 
 - **PR**: this amendment's PR.
