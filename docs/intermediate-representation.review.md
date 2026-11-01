@@ -710,7 +710,7 @@ The instance's first two confirmation reads saw the prose before its fixes lande
 
 Readable for RD-4 at round 4 of a count of four. Findings per thousand words by round: 2.9, 5.1, 1.3, 2.5. Contradictions by round: 0, 0, 0, 0. Prose 3,089 words at round 1 and 3,181 at delivery; IR 192 claims at round 1 and 207 at delivery, the growth from splits for one claim per sentence and the sentences shortened under case 009's change 17. Every accepted fix confirmed by its round's instance; one decline (round 2, F16) accepted by the instance. Thirty-six of the thirty-seven findings fell on text older than this count.
 
-Meta-review: pending (signals 1 and 2). Signals checked at the end of count 4 by `scripts/signals.mjs` (reading the last count) and by reading: first, fired, as the rule reads: fixes were not held at confirmation in rounds 1 (one of seven) and 2 (two of eleven), and in rounds 2 and 4 the prose fixes did not reach the prose on their first write, each refixed and confirmed afterwards; second, fired: C41 stands on the Mismatches lines of rounds 2 and 4, both times attributed by the stranger to its own restatement, which under the branch point's step 6 made the passage a prose finding owed a structural fix before round 5; the reasoning role's hand check missed the recurrence and the count closed readable at round 4, so the passage, the Relation row's sentence "A reference from one claim to another is a relation, never a pronoun inside the claim" read twice as barring every pronoun, is owed its structural fix at the next edit; no declined finding raised again; third, words per IR claim 16.1 to 15.6, minus 3 percent; fourth, no contradiction in round 3 or later. The limit was not reached. The reasoning role asks the owner, in the report that delivers this count, to dispatch the meta-review.
+Meta-review: delivered (signals 1 and 2; pending at the close on 2026-10-29): [evaluation case 010](https://github.com/majodali/communication-pipeline/blob/main/eval/cases/010-meta-review-ir-spec-count-4-2026-10-30.md), 2026-10-30. Signals checked at the end of count 4 by `scripts/signals.mjs` (reading the last count) and by reading: first, fired, as the rule reads: fixes were not held at confirmation in rounds 1 (one of seven) and 2 (two of eleven), and in rounds 2 and 4 the prose fixes did not reach the prose on their first write, each refixed and confirmed afterwards; second, fired: C41 stands on the Mismatches lines of rounds 2 and 4, both times attributed by the stranger to its own restatement, which under the branch point's step 6 made the passage a prose finding owed a structural fix before round 5; the reasoning role's hand check missed the recurrence and the count closed readable at round 4, so the passage, the Relation row's sentence "A reference from one claim to another is a relation, never a pronoun inside the claim" read twice as barring every pronoun, is owed its structural fix at the next edit; no declined finding raised again; third, words per IR claim 16.1 to 15.6, minus 3 percent; fourth, no contradiction in round 3 or later. The limit was not reached. The reasoning role asks the owner, in the report that delivers this count, to dispatch the meta-review.
 
 ## Count 5, 2026-10-30: evaluation cases 010 and 011
 
@@ -1230,7 +1230,7 @@ The limit was reached at round 10 of count 5, on 2026-10-30. The final round's v
 
 Findings in all: 84 across ten rounds. Prose 3,368 words at round 1 and 3,891 at close (3,876 after round 10's fixes; the closing Status line adds 15). IR 216 claims at round 1 and 245 at close. Restatement mismatches: none in round 10; every passage that awaited restatement matched by round 10.
 
-Meta-review: pending (signals 1, 2 and 4). Signals checked at the end of count 5 by `scripts/signals.mjs` (reading the last count) and by reading: first, fired: fixes not held at confirmation in rounds 1, 3, 7 and 8, and the claims check reported a stale claim before rounds 1 and 2; second, fired: restatement mismatches recurred on the passages of C44, C104, C41, C223, C195, C227, C203, C194 and C1, each given a structural fix that a later round matched; no declined finding was raised again; third, not fired: words per IR claim 15.59 at round 1 and 15.84 at round 10, 2 percent; fourth, fired by reading: the contradictions of rounds 6, 9 and 10 sat on passages an earlier round's fix touched (C202, C258, C256). The count also reached the limit, so the text is a meta-review subject on two grounds. The reasoning role asks the owner, in the report on this count, to dispatch the meta-review.
+Meta-review: delivered (signals 1, 2 and 4; pending at the close on 2026-10-30): [evaluation case 012](https://github.com/majodali/communication-pipeline/blob/main/eval/cases/012-meta-review-branch-point-v1.9-and-ir-spec-count-5-2026-10-30.md). Signals checked at the end of count 5 by `scripts/signals.mjs` (reading the last count) and by reading: first, fired: fixes not held at confirmation in rounds 1, 3, 7 and 8, and the claims check reported a stale claim before rounds 1 and 2; second, fired: restatement mismatches recurred on the passages of C44, C104, C41, C223, C195, C227, C203, C194 and C1, each given a structural fix that a later round matched; no declined finding was raised again; third, not fired: words per IR claim 15.59 at round 1 and 15.84 at round 10, 2 percent; fourth, fired by reading: the contradictions of rounds 6, 9 and 10 sat on passages an earlier round's fix touched (C202, C258, C256). The count also reached the limit, so the text is a meta-review subject on two grounds. The reasoning role asks the owner, in the report on this count, to dispatch the meta-review.
 
 The owner's decision at the limit: deliver, rework or withdraw the text. Open items for that decision, in one list:
 
@@ -1254,4 +1254,238 @@ The owner's decision, 2026-10-30: count 5 accepted and delivered (methodology PR
 7. The three IR-only gaps: none remained at acceptance. Count 5's rounds had closed all three: C13 holds `delivered IR-only`; C229 carries the owner-input sentence; the render map maps C217 to C219. The list carried them from the count's opening note without re-checking.
 8. Passed to the meta-review, which the owner dispatched with the branch point's as one task.
 
-Meta-review: pending (signals 1, 2 and 4). The line stays until the meta-review is delivered.
+Meta-review: delivered (signals 1, 2 and 4): [evaluation case 012](https://github.com/majodali/communication-pipeline/blob/main/eval/cases/012-meta-review-branch-point-v1.9-and-ir-spec-count-5-2026-10-30.md), 2026-10-30.
+
+## Count 6, 2026-10-30: evaluation case 012
+
+Inputs: the owner's adoption on 2026-10-30 of communication-pipeline evaluation case 012 (all fifteen changes adopted as recommended; terms by the default). Eleven adopted changes amend this specification: changes 1, 2, 4 to 9, 11, 13 and 14. Change 3 is no change; change 10 is the branch point's; change 12 is the signals script's; change 15 is the evaluation corpus README's. Reader RD-4. Disposition D3 (Normative: yes): the reasoning role rendered the amended passages from the IR. Text reviewed: `docs/intermediate-representation.md` whole; the IR covers the whole text.
+
+Branch point version and commit the count runs under: v1.10, communication-pipeline commit 387dc43 on branch `branch-point-v1.10-case-012`, the changes the owner adopted before this count. The pipeline's own rounds on v1.10 run in parallel.
+
+Changes to the IR. Each claim that renders a case 012 change is proposed, with the change number as its source, under ask A8. C203 and C227 reworded: every restatement mismatch counts. C222 (own mismatch), C223 (the exception), C224 (the override) and C255 (the override governs the exception) struck, with relations R51, R52 and R75. C263 and C264 added, the omission, with C265 inferred by R80. C266 to C268 added, the one-sentence restatement of each listed passage. C269 to C275 added: the fix pass, the claims check after it, the fix commit read in full, the new defect and the next round's opening. C276 to C278 added, a new defect at the final confirmation. C279 to C283 added in the fix rules: no new rule in a fix; a reworded decided claim keeps its source. C189 (the third signal) struck, with R36 and R38; C284 and C288 added; C105 reads "the signals". C252 and C253 read the claims-check line after a fix pass. C285 and C286 added to the History. R55 and R56 retargeted from C224 to C208 and C228. Terms T30 to T35 added; T23 points to the pipeline's vocabulary row. 245 claims before the count's edit; 265 after.
+
+Not changed: the own-mismatch vocabulary row. Neither text uses the term outside its history after count 6; ask A9 asks the owner to strike or keep it. The vocabulary row *meta-review signal* now reads three conditions.
+
+Sentences over 25 words before round 1: 2, the Status line (54 words, `mtool style`) and the Reader paragraph's assumed-knowledge sentence (26 words). Both are resolved: each sentence of the Status line is under 25 words, and the assumed-knowledge sentence drops "including its Readers table", which the Reader line's reader catalog link already carries. At round 1: 0.
+
+Lint before round 1: IR checks 0 violations, 0 warnings.
+
+### Curve, count 6
+
+| Round | Prose words | IR claims | Findings | Per 1,000 words | Verdict |
+|---|---|---|---|---|---|
+| 1 | 4,129 | 265 | 8 | 1.9 | not readable (two mismatches, both on step-6 passages; contradictions 0; undefined terms 0) |
+| 2 | 4,208 | 272 | 10 | 2.4 | not readable (two mismatches on the verdict table, a step-6 passage; contradictions 0; undefined terms 2) |
+| 3 | 4,273 | 276 | 5 | 1.2 | not readable (one mismatch, the stranger's slip, first occurrence; contradictions 0; undefined term 1) |
+| 4 | 4,291 | 277 | 8 | 1.9 | readable (mismatches 0; contradictions 0; undefined terms 0) |
+
+### Round 1, count 6, 2026-10-30
+
+Branch point version and commit: v1.10 at communication-pipeline commit 387dc43. Prose 4,129 words (whitespace-separated words, comments stripped, by `wordCount` in the communication-pipeline's `scripts/ir.mjs`); IR 265 claims; unratified terms 0.
+
+Claims check: none before round 1; under case 012 change 13 the check runs after each fix pass. The edit's claims check against main: 30 changed claims, 0 missing, 0 stale; C189, C222, C223, C224 and C255 removed.
+
+Passages awaiting restatement: none; every passage that awaited restatement in count 5 matched by its round 10.
+
+Declined findings carried in the brief from count 5, where the text under them stands: round 1's 6, 11 and 16; round 2's 6; round 3's 7; round 8's 8; round 10's 2, its reason restated without the shared table, which v1.10 removes from the branch point. Each with its reason. Not carried: round 7's new defect 4, because "The override governs the exception." is struck; round 8's new defects 4 to 6, stale reads with no text under them.
+
+Signals script before the round: no round of count 6 recorded yet; nothing to read.
+
+Stranger model: claude-haiku-5-5, a fresh instance at the frugal tier (ad9b27f6af3fa271f). Prose 4,129 words by `wordCount` (the stranger's estimate: about 4,500, by hand); IR 265 claims; 8 findings, 1.9 per thousand words. Restatement: two mismatches, each counting under the first condition as count 6 reads it. Listed passages: none. Omissions noticed: 9, by topic, not counted: the rendering-conditions rows; CK-01 to CK-16; the withdrawal rules for contradictions and undefined terms; the review record and the claims-check line; the unparsed-line rules and the `Meta-review:` line values; the footprint comparison; the IR-only exemption from CK-14; the delivery and lifecycle rules; the History. Contradictions 0, undefined terms 0 (two terms defined only after first use, findings 5 and 6); verdict: not readable for RD-4.
+
+The quoted sentences: for C260, "Terms, claims and clusters carry a provenance status. No other element carries a provenance status."; the restatement gave every element kind a status. For C104 with C106, "A text is a meta-review subject when its count reaches the limit or its review record shows a meta-review signal." and "The reasoning role asks the owner ... to dispatch that subject's meta-review."; the restatement had the signals trigger the meta-review.
+Mismatches: C260 (relied on C259), C104 (relied on C106)
+
+Signals script after the `Mismatches:` line: signal 2 fires on C104 (count 4 round 1; count 5 rounds 1 and 8; count 6 round 1) and C106 (count 5 round 8; count 6 round 1). The Provenance opening recurs by reading: its earlier mismatches stand on C44 (count 4 round 1; count 5 rounds 7 and 8), and this round's entry names C260, a claim of the same passage. Both passages are step-6 passages again.
+
+For the ruleset review: the Provenance opening and the meta-review subject passage drew restatement mismatches in counts 4, 5 and 6, with structural fixes between the counts. Count 5's fixes, a two-sentence Provenance opening and the subject sentences in their own paragraph, matched in count 5's rounds 9 and 10 and did not hold against this count's fresh reader.
+
+| # | Finding (shortened) | Kind | Decision |
+|---|---|---|---|
+| 1 | mismatch on C260: every element kind given a status | restatement, step 6 | structural fix: the Element kinds table gains a Provenance status column, a cell per kind; C259 and C260 split per kind (C259, C292, C293; C260, C294, C295); the Provenance opening keeps C44 only; `awaiting restatement` |
+| 2 | mismatch on C104 with C106: the signals read as triggering the meta-review | restatement, step 6 | structural fix: the Meta-review section takes three sub-headings; the first, "Who dispatches a meta-review", opens "The owner dispatches a meta-review." (C289, inferred by R82), then C104 ("A text becomes a meta-review subject when ..."), C106 and C192; the signals and the `Meta-review:` line follow under their own sub-headings; `awaiting restatement` |
+| 3 | "in the unit" repeats the scope | SP-26 | cut from C164 |
+| 4 | "A term the IR introduces is listed under Terms introduced" names no actor | SP-18 | rephrase C153: "When a report delivers the text, the reasoning role lists each term the IR introduces under *Terms introduced* in that report." |
+| 5 | "the owner's adopted changes" undefined | SP-04 | rephrase C279: "the changes the owner adopted for the count", linked to the communication-pipeline evaluation corpus's Meta-review records section |
+| 6 | "stranger instance" used before its definition | SP-04 | add C290 at first use: "The round's stranger instance is the stranger the reasoning role dispatched for the round." (inferred, R83) |
+| 7 | the header "The count" holds rounds, the limit, the record and rework | SP-08 | rename "Rounds, the limit and rework"; the anchor `the-count` kept |
+| 8 | the next-edit sentence joins a duty and the next count's review | SP-01 | split C254; C291 added |
+
+The instance's two uncounted observations, fixed in the same pass: C253 reads "The signals script reports a round with a fix pass and no claims-check line as unparsed.", so the definition of an unparsed line holds; R73 drops the round-1 exemption that case 012 change 13 struck.
+
+Claims after fixes: 272. Prose after fixes: 4,198 words. Claims check after the fixes (base: round 1 prose): 15 changed claims, 0 missing, 0 stale. Round trip: 272 of 272. IR check: 0 violations, 0 warnings.
+
+Decided claims the fixes reworded, for the owner's list at the count's close: C259 and C260 (split per kind), C104, C164, C153, C254 (split, with C291).
+
+Confirmation: 6 of 6 fixes hold. Not held: none. Declines accepted: 0 of 0. New defects: 3.
+
+The instance (ad9b27f6af3fa271f) read both files in full at fix commit 3e720f4. The confirmable fixes are rows 3 to 8; rows 1 and 2 are step-6 fixes, not confirmed by the instance. The three new defects and one uncounted observation, fixed IR first before round 2 opens (case 012 change 6):
+
+- N1 (SP-25, the `Meta-review:` line): a round with no claims-check line has no line to name. C237 split: "While a line is unparsed, the reasoning role writes `Meta-review: unparsed` in place of `pending` or `not indicated`." and C296, "The `Meta-review: unparsed` line names the unparsed line, or the round when the round has no claims-check line." (proposed, case 012 change 13). The fix specifies change 13's rule and adds no rule.
+- N2 (SP-26, "Who dispatches a meta-review"): the unqualified sentence "The owner dispatches a meta-review." cut, with C289 and R82. The structural fix over-reached and is trimmed; the section opens with the subject rule (C104), then C106 and C192, each stated once. The passage stays `awaiting restatement`.
+- N3 (SP-26, the presence rule in the table and the Provenance sentence): the table cells keep the presence rule; C44 reworded to the form only, "The status is the last thing in the element, in square brackets." The passage stays `awaiting restatement`.
+- R76 read "a round after round 1"; it now reads the fix-pass rule of case 012 change 13.
+
+Claims check after the confirmation's fixes (base: the round 1 fix pass's prose): 3 changed claims, 0 missing, 0 stale; C289 removed. Claims: 272. Prose: 4,208 words. Round trip: 272 of 272.
+
+Decided claims reworded after confirmation, for the owner's list at the count's close: C44, C237 (split, with C296).
+
+### Round 2, count 6, 2026-10-30
+
+Branch point version and commit: v1.10 at communication-pipeline commit 387dc43. Round 2 reads the text at this round's opening commit, named in the brief. Prose 4,208 words; IR 272 claims; unratified terms 0.
+
+Passages awaiting restatement, listed in the brief for a one-sentence restatement each (case 012 change 4): the Element kinds table's provenance column with the Provenance opening (C259, C292 to C295, C260, C44), round 1's step-6 fix; the "Who dispatches a meta-review" passage (C104, C106, C192), round 1's step-6 fix as trimmed after confirmation.
+
+Declined findings carried in the brief from count 5: round 1's 6, 11 and 16; round 2's 6; round 3's 7; round 8's 8; round 10's 2. Each with its reason.
+
+Forms added to the brief: none.
+
+Signals script before the round: signal 2 fires on C104 and C106, as recorded in round 1; no line unparsed.
+
+Stranger model: claude-haiku-5-5, a fresh instance at the frugal tier (a5ed0a53e139b94f9). Prose 4,208 words by `wordCount` (the stranger's hand estimate: about 5,500); IR 272 claims; 10 findings, 2.4 per thousand words. Restatement: two mismatches, both on the verdict table. Contradictions 0, undefined terms 2 (findings 6 and 10); verdict: not readable for RD-4.
+
+Side effect: the instance made one session-list read outside the brief's two files. It reports that it did not use the result.
+
+Listed passages, each restated in one sentence: the Element kinds provenance column with the Provenance opening, "term, claim and cluster elements carry a provenance status; relation, evidence and ask elements carry none; where a status is present it is the last item in square brackets in the element"; "Who dispatches a meta-review", "a text becomes a meta-review subject when its count reaches the limit or its review record shows a signal; the reasoning role asks the owner, in the report delivering that subject, to dispatch its meta-review, and the owner may dispatch one for any text". Both match the IR (C259, C292 to C295, C260, C44; C104, C106, C192). Both `awaiting restatement` marks clear.
+
+Omissions noticed, not counted, by topic: no new rule in a fix (C279 to C281); the delivered text with the fixes applied (C155); a relation as the reasoning role's inference; rework and the owner's three outcomes (C100); the per-round counts in the review record (C103); the footprint and the mechanical checks.
+
+The quoted sentences: for C250 with C194, "Each contradiction finding not withdrawn."; for C251 with C235, "Each undefined-term finding not withdrawn." The restatement read every unwithdrawn finding as counting and dropped who withdraws and on what reason.
+Mismatches: C250 (relied on C194), C251 (relied on C235)
+
+Signals script after the `Mismatches:` line: signal 2 fires on C104 and C106 as before. C250 and C251 stand on no earlier line; C194, their passage's claim, recurred in count 5's rounds 3, 4, 5 and 7. The verdict passage is a step-6 passage again, by reading.
+
+| # | Finding (shortened) | Kind | Decision |
+|---|---|---|---|
+| 1, 2 | mismatches on C250 with C194 and on C251 with C235: the counts cells drop who withdraws and on what reason | restatement, step 6 | structural fix: the qualifiers move into the counts cells, "Each contradiction finding counts against the verdict, unless the round's stranger instance withdrew the finding at confirmation on a reason that quotes the prose." (C194) and the same for undefined terms (C235); C250 and C251 merged into them; the does-not-count cells of rows 2 and 3 read "—"; `awaiting restatement`, listed for round 3 |
+| 3 | the no-new-rule sentence names no actor | SP-18 | rephrase C279: "The reasoning role adds no rule in a fix beyond the changes the owner adopted for the count." |
+| 4 | "as its kind does" | SP-03 | rephrase C281: "as a finding of its kind (mismatch, contradiction or undefined term)" |
+| 5 | "The stranger brief lists each passage awaiting restatement" names no actor | SP-18 | rephrase C266: "In each round's stranger brief, the reasoning role lists each passage awaiting restatement." |
+| 6 | "confirmation read" undefined | SP-04 | rephrase C271: "before the confirmation" |
+| 7 | "which" in the new-defect definition | SP-03 | split C274, C297 added: "The round's stranger instance names each new defect at confirmation." |
+| 8 | the next-round sentence joins two duties | SP-01 | split C275, C298 added: "Before the next round opens, the reasoning role makes the fixes the confirmation calls for." |
+| 9 | "meta-review signal" used before The signals | SP-10 | add "(see The signals below)"; the term was already linked |
+| 10 | History's own-mismatch rule, exception and override undefined | SP-04 | link *own mismatch* to the vocabulary row (C225 reads "The rule on an own mismatch"); C286 reads "Case 012's change 1 struck two qualifiers of the first condition.", glossed by C299 and C300; ask A9 notes that the History now links the row |
+
+Claims after fixes: 274. Prose after fixes: 4,238 words. Claims check after the fix pass (base: round 2 prose): 14 changed claims, 0 missing, 0 stale; C250 and C251 removed. Round trip: 274 of 274. IR check: 0 violations, 0 warnings.
+
+Decided claims the fixes reworded, for the owner's list at the count's close: C194 (with C250), C235 (with C251), C225.
+
+Confirmation: 8 of 8 fixes hold. Not held: none. Declines accepted: 0 of 0. New defects: 5.
+
+The instance (a5ed0a53e139b94f9) read both files in full at fix commit f3098a0. The confirmable fixes are rows 3 to 10; rows 1 and 2 are step-6 fixes, not confirmed by the instance. The five new defects, four in the IR, fixed IR first before round 3 opens (case 012 change 6):
+
+- N1: ask A6 still named C250 and C251, and also C223, C224 and C255, in its sentence and its resolved line after their removal. The references now name the rules in words. `mtool ir check` did not flag them: CK-06 checks an ask's `Depends:` field only, and the field had already dropped them.
+- N2: R40 read "a withdrawn finding is no longer a finding", against C194 as now worded; R40 now reads the quoting qualifier, as R69 held.
+- N3: History's "carrier sentence" undefined; C299 reads "with a quoted prose sentence that carried the claim".
+- N4: C299 and C300 cited E5; they cite E8 (case 012).
+- N5: ask A8's list omitted C297 and C298; added to its sentence and its `Depends:` field.
+
+The owner adopted the branch point's ask A2 on 2026-10-30. The rule came from the branch point v1.10's round 1 finding 5. The matching sentence in Rounds, the limit and rework, C156, now reads the adopted wording: "At a readable verdict, the round's stranger instance confirms each fix other than a step-6 fix. A step-6 fix made in that round's fix pass stays `awaiting restatement`; the reasoning role lists its passage in the next count's round 1 brief." C156 reworded, with C301 and C302 added, all decided (owner, 2026-10-30). The owner's wording keeps its semicolon; `mtool style` reports it under SP-09. "Fix pass" is linked at this first use, and the definition sentence that follows drops its link.
+
+Claims check after the confirmation's fixes (base: the round 2 fix pass's prose): 5 changed claims, 0 missing, 1 stale. The stale claim is C300: its change was the evidence field, E5 to E8, and its sentence needs no change. Claims: 276. Prose: 4,273 words. Round trip: 276 of 276.
+
+### Round 3, count 6, 2026-10-30
+
+Branch point version and commit: v1.10 at communication-pipeline commit 387dc43. Round 3 reads the text at this round's opening commit, named in the brief. Prose 4,273 words; IR 276 claims; unratified terms 0.
+
+Passages awaiting restatement, listed in the brief for a one-sentence restatement (case 012 change 4): the verdict table under "The verdict" (C203, C227, C195, C265, C221, C194, C234, C235), round 2's step-6 fix.
+
+Declined findings carried in the brief from count 5: round 1's 6, 11 and 16; round 2's 6; round 3's 7; round 8's 8; round 10's 2. Each with its reason.
+
+Owner-pending findings: none.
+
+Forms added to the brief: none.
+
+Signals script before the round: signal 2 fires on C104 and C106, as recorded, and on C194, the claim round 2's first entry relied on, which recurred in count 5; signal 1 reads the stale report above in one round, so it does not fire; no line unparsed.
+
+Stranger model: claude-haiku-5-5, a fresh instance at the frugal tier (adf97d5d9e5de46f7). Prose 4,273 words by `wordCount` (the stranger's hand estimate: about 5,800); IR 276 claims; 5 findings, 1.2 per thousand words. Restatement: one mismatch, the stranger's own slip, "ten mechanical checks" against CK-01 to CK-16; it counts under the first condition as count 6 reads it. A first occurrence on the Mechanical checks passage; not a step-6 passage. Contradictions 0, undefined term 1 (finding 4); verdict: not readable for RD-4.
+
+The listed passage, the verdict table, restated as "each restatement mismatch counts against a readable verdict and is never withdrawn at confirmation, each contradiction or undefined-term finding counts unless withdrawn at confirmation on a reason that quotes the prose, and an omission never counts." The sentence matches C195, C194, C235, C227 and C265. The `awaiting restatement` mark clears.
+
+Omissions noticed, not counted: about a dozen, among them the IR-only documents (C217 to C219), the unparsed-line rules, the one-sentence restatement procedure, the new-defect rules and the recurrence rule (C208).
+Mismatches: C53 (relied on C70)
+
+Signals script after the `Mismatches:` line: C53 and C70 stand on no earlier line; signal 2 as before (C104, C106, C194).
+
+| # | Finding (shortened) | Kind | Decision |
+|---|---|---|---|
+| 1 | mismatch on the check count: "ten mechanical checks" | restatement | the section opens with a sentence that carries the count: "The IR has sixteen mechanical checks, one per row of the table below." (C303, inferred by R84) |
+| 2 | the new-rule finding sentence at 26 words | SP-02 | rephrase C281: "Until the owner decides, a finding that needs a new rule counts against the verdict like any finding of its kind." |
+| 3 | the owner's adopted sentence joins a state and a duty with a semicolon | SP-01 | split into two sentences; the claims C301 and C302 were already separate. A form split of an owner-adopted text, listed for the close |
+| 4 | History's "exception" and "override" undefined | SP-04 | each former qualifier's wording stated: C299, "The exception read: an own mismatch does not count when the stranger quotes a prose sentence that carries an IR claim."; C300, "The override read: a restatement mismatch on one passage in any two rounds of the text's counts always counts." |
+| 5 | "The next count's rounds review the revised words" names no actor | SP-18 | rephrase C291: "The next count's stranger instances review the revised words." |
+
+Claims after fixes: 277. Prose after fixes: 4,290 words. Claims check after the fix pass (base: round 3 prose): 5 changed claims, 0 missing, 0 stale. Round trip: 277 of 277. IR check: 0 violations, 0 warnings.
+
+Decided claims the fixes reworded, for the owner's list at the count's close: C291 (again), C299, C300; and the form split of the owner-adopted sentence (C301, C302), the claims unchanged.
+
+Confirmation: 5 of 5 fixes hold. Not held: none. Declines accepted: 0 of 0. New defects: 3.
+
+The instance (adf97d5d9e5de46f7) read both files in full at fix commit 0855b0f. The three new defects, fixed IR first before round 4 opens (case 012 change 6): N6 (SP-03), "like any finding of its kind" lost its referent when the parenthesis went; C281 reads "... counts against the verdict like a mismatch, contradiction or undefined-term finding." N7, C291's note lacked the count; it reads "reworded in count 6, round 3". N8, C299 and C300 were reworded in round 3 with no note; each now carries "reworded in count 6, round 3".
+
+Claims check after the confirmation's fixes (base: the round 3 fix pass's prose): 1 changed claim, 0 missing, 0 stale. Claims: 277. Prose: 4,291 words. Round trip: 277 of 277.
+
+### Round 4, count 6, 2026-10-30
+
+Branch point version and commit: v1.10 at communication-pipeline commit 387dc43. Round 4 reads the text at this round's opening commit, named in the brief. Prose 4,291 words; IR 277 claims; unratified terms 0.
+
+Passages awaiting restatement: none; round 3 made no step-6 fix, and the verdict table matched.
+
+Declined findings carried in the brief from count 5: round 1's 6, 11 and 16; round 2's 6; round 3's 7; round 8's 8; round 10's 2. Each with its reason.
+
+Owner-pending findings: none.
+
+Forms added to the brief: none.
+
+Signals script before the round: signal 2 as recorded (C104, C106, C194); signal 1 reads one round with a stale claim, so it does not fire; no line unparsed.
+
+Stranger model: claude-haiku-5-5, a fresh instance at the frugal tier (a937df4dc4f54b856), reading at commit db45aa5. Prose 4,291 words by `wordCount` (the stranger's hand estimate: about 5,000); IR 277 claims; 8 findings, 1.9 per thousand words. Restatement: no mismatch. Listed passages: none. Contradictions 0, undefined terms 0; verdict: readable for RD-4.
+Mismatches: none
+
+Side effect: the instance made one read-only listing of scheduled tasks outside the brief's two files. It did not use the result.
+
+Omissions noticed, not counted: two, "each passage" for "each listed passage", and that a readable verdict also stops the rounds.
+
+Step 7 applies. The eight findings are fixed IR first; the round's instance confirms each fix before the count closes. Under case 012 change 8, a new defect the confirmation names goes to the owner's list and is not fixed in this count.
+
+| # | Finding (shortened) | Kind | Decision |
+|---|---|---|---|
+| 1 | the rewording sentence states two duties | SP-01 | split C282: "When a fix rewords a decided claim, the reasoning role keeps the claim's decided source."; C304: "The reasoning role notes the rewording as `reworded in count N, round M`." |
+| 2 | "After the restatement and" restates the step | SP-26 | cut, C267: "Before reading the IR, the stranger restates each listed passage in one sentence." |
+| 3 | "The next edit of the text fixes the new defect" names no actor | SP-18 | C278: "The reasoning role fixes the new defect in the next edit of the text.", as the branch point reads |
+| 4 | History's "beside this file" | SP-03 | "beside `docs/intermediate-representation.md`" |
+| 5 | IR C5 and C151 carry rule identifiers without names | SP-05 | the names added in the IR, as the prose carries them; C151 also drops "including its Readers table", which round 1 cut from the prose |
+| 6 | IR: "IR-only" with no term element | SP-04 | T36 added, IR-only document, linked to the vocabulary row |
+| 7 | IR: the IR-only sub-section after History | SP-09 | moved before History |
+| 8 | IR E6: "the branch point v1.9's C67" against this IR's C67 | SP-05 | E6 names communication-pipeline `docs/records/branch-point-v1.9.ir.md` and its claim C67 |
+
+Claims after fixes: 278. Prose after fixes: 4,297 words. Claims check after the fix pass (base: round 4 prose): 6 changed claims, 0 missing, 2 stale. The stale claims are C5 and C151: their fixes brought the IR to prose that already carried them, so no prose sentence changes. Round trip: 278 of 278. IR check: 0 violations, 0 warnings.
+
+Confirmation: 8 of 8 fixes hold. Not held: none. Declines accepted: 0 of 0. New defects: 2.
+
+The instance (a937df4dc4f54b856) read both files in full at fix commit 7f120f9. Final-round marks: findings 1 to 8 confirmed. The two new defects are in the IR: ask A8's `Depends:` field omits C304 (CK-07's dependency form, C38); T36 names the term "IR-only document" while C13, C217 and C219 write "IR-only" (CK-04). Under case 012 change 8 the reasoning role does not fix them in this count. Both are IR bookkeeping; they go to the owner's list, and the next edit fixes them.
+
+### Verdict, count 6
+
+Readable for RD-4 at round 4 of a count of four, on 2026-10-30. The limit was not reached.
+
+| Round | Findings per 1,000 words | Contradictions |
+|---|---|---|
+| 1 | 1.9 | 0 |
+| 2 | 2.4 | 0 |
+| 3 | 1.2 | 0 |
+| 4 | 1.9 | 0 |
+
+Findings in all: 31 across four rounds. Restatement mismatches: 2 in round 1, 2 in round 2, 1 in round 3, 0 in round 4. Prose 4,129 words at round 1 and 4,303 at close (4,297 after step 7's fixes; the closing Status line adds 6); IR 265 claims at round 1 and 278 at close. Step-6 fixes: three passages, the Element kinds provenance column with the Provenance opening, "Who dispatches a meta-review" and the verdict table. Each matched in the next round's one-sentence restatement. Every confirmable fix held at its first confirmation; no decline was made.
+
+Meta-review: pending (signals 1 and 2). Signals checked at the end of count 6 by `scripts/signals.mjs` (reading the last count) and by reading: first, fired by the script on stale claims in rounds 2 and 4. Both reports come from changes made in the IR only: round 2's C300 changed its evidence field, and round 4's C5 and C151 took names the prose already carried. No prose sentence was stale, and no fix failed to hold. The reading of signal 1 is that it fired on the claims check's form, not on a drift; the meta-review can weigh that. Second, fired: C104 (counts 4, 5 and 6), C106 (count 5 round 8, count 6 round 1) and C194 (count 5 rounds 3, 4, 5 and 7, count 6 round 2), each a passage that took a structural fix in this count and matched after it. No declined finding was raised again. Fourth, by reading: not fired; no round had a contradiction. The third signal is struck (case 012 change 11). The reasoning role asks the owner, in the report on this count, to dispatch the meta-review.
+
+The owner's decision: accept or reject count 6. Open items for that decision, in one list:
+
+1. A8: ratify or strike count 6's rendering of communication-pipeline evaluation case 012's adopted changes, every claim proposed with its change number: C203, C227, C252, C253, C263, C264, C266 to C268, C269 to C275, C276 to C281, C282, C304, C283, C284, C105, C285, C286, C296, C297, C298.
+2. A9: strike or keep the vocabulary row *own mismatch*. The History links the row since round 2.
+3. The decided claims count 6 reworded, each with its note (case 012 change 14): C259 and C260, split per kind with C292 to C295 (round 1); C104, C164, C153, and C254 split with C291 (round 1); C44 and C237, split with C296 (after round 1's confirmation); C194 and C235, each with its unquoted-withdrawal claim merged in, and C225 (round 2); C291, C299 and C300 (round 3); C5 and C151 (round 4).
+4. The owner-adopted rule from the branch point's ask A2, carried as C156, C301 and C302 (decided, 2026-10-30), and its form split at the semicolon in round 3. The claims are unchanged; the sentence reads as two.
+5. The two new defects of the step-7 confirmation, unfixed under case 012 change 8: A8's `Depends:` field omits C304; T36 "IR-only document" against "IR-only" in C13, C217 and C219. The next edit fixes both.
+6. Terms: none new on this text beyond the seven case 012 terms the owner ratified by the default (T30 to T35, with T23 repointed) and T36, which names the existing vocabulary row *IR-only document*.
