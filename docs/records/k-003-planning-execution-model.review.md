@@ -42,7 +42,7 @@ Changes to K-003 beyond the proposal's replacement text, each in the IR:
 | 1 | 261 | 43 | 8 | 30.7 | not readable (one own mismatch on C8 and C9, quoted, not counting; contradiction 1; undefined terms 2) |
 | 2 | 268 | 43 | 5 | 18.7 | not readable (one own mismatch on C2 with T7, quoted, not counting; contradictions 2; undefined term 1) |
 | 3 | 278 | 44 | 2 | 7.2 | not readable (one own mismatch on C10, the Cites passage's second in two rounds, counting under the override; contradictions 0; undefined term 1) |
-| 4 | 251 | 44 | pending | pending | pending |
+| 4 | 251 | 44 | 1 | 4.0 | not readable pending confirmation (restatement matched; contradictions 0; undefined term 1, readable if withdrawn at confirmation) |
 
 ### Round 1, count 1, 2026-10-30
 
@@ -168,7 +168,7 @@ Two reader points from the instance, recorded without a fix:
 
 ### Round 4, count 1, 2026-11-01
 
-Branch point version and commit: v1.9 at communication-pipeline `main`, commit `d1c5b55`; the count keeps the rules it opened under. Brief: `k003-r4-brief.md` in the reasoning role's scratchpad, naming the round 4 commit. Prose 251 words; IR 44 claims; unratified terms 0.
+Branch point version and commit: v1.9 at communication-pipeline `main`, commit `d1c5b55`; the count keeps the rules it opened under. Brief: `k003-r4-brief.md` in the reasoning role's scratchpad, naming commit `351296b`. Prose 251 words; IR 44 claims; unratified terms 0.
 
 Claims check before the round (base: round 3 prose at `e404dce`): 1 changed claim (C7), 0 missing, 0 stale.
 
@@ -177,4 +177,25 @@ Awaiting restatement: the step-6 move of round 3's finding 1, the Cites line. Th
 Signals script before the round: no signal fired; no line unparsed. The second signal fired in round 3 on the Cites passage, read from the record (round 3 entry).
 
 Carried into the brief: round 1's declines 5, 6 and 8 with their reasons, and the readability note. The carrier note reads: K-003 carries C1 to C7, C12, C44 and the terms; the vocabulary rows and the release-register entry carry C8 to C11 and C13 to C43.
+
+Stranger: instance `aa54c592425d18317`, a fresh instance, at commit `351296b`. Side effect: the instance made one read-only `list_sessions` call, whose result it did not use; the brief allowed reading the two files only. Prose 251 words by `wordCount`; IR 44 claims; 1 finding, 4.0 per thousand words. Restatement: matched the IR; no restatement mismatch. Contradictions 0. Undefined term 1 (finding 2, in the instance's numbering).
+
+Mismatches: none
+
+The listed passage: the instance's one-sentence restatement of the Cites line matched the IR. The step-6 move of round 3's finding 1 holds; its `awaiting restatement` mark clears. Signals script after the `Mismatches:` line: no signal fired.
+
+| # | Finding (shortened) | Kind | Decision |
+|---|---|---|---|
+| 2 | "stage designations" in the released sentence "entries MUST carry current stage designations" is undefined | SP-04 | fixed: "stage designations" is linked at first use to the Workflow vocabulary row, which defines a Backlog entry's current stage as a designation. A first-use link is within the amendment's scope, as the first commit's links were; the sentence's words are unchanged. The finding falls outside round 1's declines 5, 6 and 8, which concern actors and the Rationale |
+
+Two points the instance did not count, fixed in the IR:
+
+- C7 omitted the C-tier citation the Cites line carries. The citation becomes its own claim, C45, proposed: "K-003's Cites line names the C-tier vocabulary row as the criticality scale of the Applies line." C7 keeps its words. A single extended C7 drew a compound-claim warning (CK-03), so the addition takes a new number.
+- T2 said "every project" where the Applies line limits K-003 to C1 and above. T2 now reads "every project at criticality tier C1 and above".
+
+Verdict: not readable, pending confirmation. Under the rule the count opened under, an undefined-term finding the round's instance withdraws at confirmation, on a reason quoting the prose, does not count against the verdict. If the instance withdraws finding 2 on the linked sentence, round 4 reads readable and step 7 applies.
+
+Claims after fixes: 45. Prose after fixes: 251 words. Claims check after the fixes (base: round 4 prose at `351296b`): 1 changed claim (C45, new), 0 missing, 0 stale. Round trip: 45 of 45 claims mapped. IR checks: 0 violations, 0 warnings. `mtool audit form`: no findings. Fix commit: pending, the Orchestrator commits the staged pass.
+
+The confirmation line is written when the round 4 instance answers.
 

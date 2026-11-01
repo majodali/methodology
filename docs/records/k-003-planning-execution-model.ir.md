@@ -2,7 +2,7 @@
 
 Reader: RD-4 (a fresh agent session) reading K-003 (the Backlog is the single source of progress truth) as amended; the owner adjudicates the amendment.
 Purpose: document. The amendment of K-003 in place, by which a project whose Classification declares a planning/execution model takes that model as its referent for what is done and what is next, with the vocabulary rows and the release-register entry the amendment needs.
-Status: rendered (count 1, round 4; round 3 not readable, the Cites passage given a step-6 fix awaiting restatement, no new defects at confirmation; the referent clause marked by the owner's decision of 2026-11-01; round 2 not readable, 2 of 2 fixes held, finding 2 withdrawn, finding 5 declined pending the owner, 1 new defect fixed; round 1 not readable, 2 of 3 fixes held and 1 re-fixed, 1 new defect fixed, 4 declines accepted, finding 7 withdrawn; rendered by the reasoning role on 2026-10-30; unratified terms 0)
+Status: rendered (count 1, round 4 not readable pending confirmation, 1 finding fixed; round 3 not readable, the Cites passage given a step-6 fix awaiting restatement, no new defects at confirmation; the referent clause marked by the owner's decision of 2026-11-01; round 2 not readable, 2 of 2 fixes held, finding 2 withdrawn, finding 5 declined pending the owner, 1 new defect fixed; round 1 not readable, 2 of 3 fixes held and 1 re-fixed, 1 new defect fixed, 4 declines accepted, finding 7 withdrawn; rendered by the reasoning role on 2026-10-30; unratified terms 0)
 Source: the project-orchestrator proposal "A declared planning/execution model is the source of progress truth" and its IR (93 claims, 17 terms) at project-orchestrator commit 25e92e8, approved for carrying by the owner at node P3-N007's verifying gate on 2026-10-30; the owner's decision of 2026-10-30 that the proposal lands in this repository as a methodology change, by pull request.
 Normative: yes
 Footprint: docs/rules/knowledge.md; docs/vocabulary.md; docs/releases.md; docs/records/k-003-planning-execution-model.ir.md; docs/records/k-003-planning-execution-model.review.md
@@ -11,7 +11,7 @@ Footprint: docs/rules/knowledge.md; docs/vocabulary.md; docs/releases.md; docs/r
 
 T1. Planning/execution model. defined-at: ../vocabulary.md#def-planning-execution-model [decided: owner, 2026-10-28]
 
-T2. Backlog: the one dependency-ordered register of completed and upcoming work that K-003 requires of every project. defined-at: https://github.com/majodali/methodology/blob/v1.6.0/docs/rules/knowledge.md#k-003--the-backlog-is-the-single-source-of-progress-truth [decided: methodology v1.6.0, K-003]
+T2. Backlog: the one dependency-ordered register of completed and upcoming work that K-003 requires of every project at criticality tier C1 and above. defined-at: https://github.com/majodali/methodology/blob/v1.6.0/docs/rules/knowledge.md#k-003--the-backlog-is-the-single-source-of-progress-truth [decided: methodology v1.6.0, K-003]
 
 T3. Classification. defined-at: ../vocabulary.md#def-classification [decided: methodology vocabulary]
 
@@ -64,6 +64,8 @@ C5. The renderings of the project-orchestrator Project model at commit 86a1330 w
 C6. K-003's Motivated-by line names the project-orchestrator proposal and the owner's approval of the proposal for carrying at project-orchestrator node P3-N007 on 2026-10-30. evidence: E4. [proposed: this IR]
 
 C7. K-003's Cites line names Constitution Article 7 and the vocabulary row for planning/execution model as the places that say how a Classification declares the model. [proposed: this IR]
+
+C45. K-003's Cites line names the C-tier vocabulary row as the criticality scale of the Applies line. [proposed: this IR]
 
 C12. K-003's Protects line names provenance, because each claim of what is done and what is next traces to one record. [proposed: this IR]
 
