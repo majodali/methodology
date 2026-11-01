@@ -42,6 +42,7 @@ Changes to K-003 beyond the proposal's replacement text, each in the IR:
 | 1 | 261 | 43 | 8 | 30.7 | not readable (one own mismatch on C8 and C9, quoted, not counting; contradiction 1; undefined terms 2) |
 | 2 | 268 | 43 | 5 | 18.7 | not readable (one own mismatch on C2 with T7, quoted, not counting; contradictions 2; undefined term 1) |
 | 3 | 278 | 44 | 2 | 7.2 | not readable (one own mismatch on C10, the Cites passage's second in two rounds, counting under the override; contradictions 0; undefined term 1) |
+| 4 | 251 | 44 | pending | pending | pending |
 
 ### Round 1, count 1, 2026-10-30
 
@@ -152,9 +153,28 @@ Awaiting restatement from round 2: the re-fix of N1, "and the declaration needs 
 | 1 | own mismatch on C10, "that make up the model" dropped from the Cites line's declaration; the passage's second mismatch in two rounds | restatement, step 6 | structural fix: the declaration mechanism (C8 to C11) moves out of K-003's Cites line into the vocabulary row for planning/execution model, where a declaration form belongs. The Cites line now cites Constitution Article 7 and that row in one short clause, "(how a Classification declares the model)"; C7 reworded to match. C8 to C11 keep their words and move to the IR's vocabulary section. No decided claim changed. Marked `awaiting restatement` |
 | 2 | "definition-by-citation" in the Cites line undefined | SP-04 | resolved by the move of 1: the term leaves K-003. The vocabulary row reads "a definition by citation under Article 7", linked to the Article |
 
-Claims after fixes: 44. Prose after fixes: 251 words. Claims check after the fixes (base: round 3 prose at `e404dce`, over K-003, the vocabulary rows and the release-register entry): 1 changed claim (C7), 0 missing, 0 stale. Round trip: 44 of 44 claims mapped; the render map sends C8 to C11 to the vocabulary row. IR checks: 0 violations, 0 warnings. `mtool audit form`: no findings. Fix commit: pending, the Orchestrator commits the staged pass.
+Claims after fixes: 44. Prose after fixes: 251 words. Claims check after the fixes (base: round 3 prose at `e404dce`, over K-003, the vocabulary rows and the release-register entry): 1 changed claim (C7), 0 missing, 0 stale. Round trip: 44 of 44 claims mapped; the render map sends C8 to C11 to the vocabulary row. IR checks: 0 violations, 0 warnings. `mtool audit form`: no findings. Fix commit: `ba4e286`.
 
 For round 4's brief: the Cites line, listed for a one-sentence restatement before the stranger opens the IR.
 
-The confirmation line is written when the round 3 instance answers. The step-6 move is not for confirmation; the instance checks it, and the resolution of finding 2, for new defects only.
+Confirmation: 0 of 0 fixes hold. Not held: none. Declines accepted: 0 of 0. New defects: 0.
+
+The round 3 instance read K-003 and the IR at `ba4e286` for new defects only, since the step-6 move is not for confirmation and finding 2 was resolved by the move. It found none, and confirmed that "definition-by-citation" is gone from K-003. The step-6 move stays `awaiting restatement`.
+
+Two reader points from the instance, recorded without a fix:
+
+- The Cites line's parenthesis glosses only the vocabulary row, so the line does not state Article 7's own contribution. C7 and the prose agree. If the round 4 stranger raises it, the fix names Article 7's role in two words.
+- The link to the planning/execution model row resolves on a released version only when the row ships with the amendment. C21 and C22 already hold that.
+
+### Round 4, count 1, 2026-11-01
+
+Branch point version and commit: v1.9 at communication-pipeline `main`, commit `d1c5b55`; the count keeps the rules it opened under. Brief: `k003-r4-brief.md` in the reasoning role's scratchpad, naming the round 4 commit. Prose 251 words; IR 44 claims; unratified terms 0.
+
+Claims check before the round (base: round 3 prose at `e404dce`): 1 changed claim (C7), 0 missing, 0 stale.
+
+Awaiting restatement: the step-6 move of round 3's finding 1, the Cites line. The brief lists the Cites line for a one-sentence restatement before the stranger opens the IR. This round's entry states whether that restatement matched. A mismatch on the Cites passage or on the referent clauses' passage (C2) counts under the override.
+
+Signals script before the round: no signal fired; no line unparsed. The second signal fired in round 3 on the Cites passage, read from the record (round 3 entry).
+
+Carried into the brief: round 1's declines 5, 6 and 8 with their reasons, and the readability note. The carrier note reads: K-003 carries C1 to C7, C12, C44 and the terms; the vocabulary rows and the release-register entry carry C8 to C11 and C13 to C43.
 
