@@ -2,7 +2,7 @@
 
 Reader: RD-4 (a fresh agent session) reading K-003 (the Backlog is the single source of progress truth) as amended; the owner adjudicates the amendment.
 Purpose: document. The amendment of K-003 in place, by which a project whose Classification declares a planning/execution model takes that model as its referent for what is done and what is next, with the vocabulary rows and the release-register entry the amendment needs.
-Status: rendered (count 1, round 3; the referent clause marked by the owner's decision of 2026-11-01; round 2 not readable, 2 of 2 fixes held, finding 2 withdrawn, finding 5 declined pending the owner, 1 new defect fixed; round 1 not readable, 2 of 3 fixes held and 1 re-fixed, 1 new defect fixed, 4 declines accepted, finding 7 withdrawn; rendered by the reasoning role on 2026-10-30; unratified terms 0)
+Status: rendered (count 1, round 3 not readable, the Cites passage given a step-6 fix awaiting restatement, confirmation pending; the referent clause marked by the owner's decision of 2026-11-01; round 2 not readable, 2 of 2 fixes held, finding 2 withdrawn, finding 5 declined pending the owner, 1 new defect fixed; round 1 not readable, 2 of 3 fixes held and 1 re-fixed, 1 new defect fixed, 4 declines accepted, finding 7 withdrawn; rendered by the reasoning role on 2026-10-30; unratified terms 0)
 Source: the project-orchestrator proposal "A declared planning/execution model is the source of progress truth" and its IR (93 claims, 17 terms) at project-orchestrator commit 25e92e8, approved for carrying by the owner at node P3-N007's verifying gate on 2026-10-30; the owner's decision of 2026-10-30 that the proposal lands in this repository as a methodology change, by pull request.
 Normative: yes
 Footprint: docs/rules/knowledge.md; docs/vocabulary.md; docs/releases.md; docs/records/k-003-planning-execution-model.ir.md; docs/records/k-003-planning-execution-model.review.md
@@ -49,9 +49,7 @@ T17. Register. defined-at: ../vocabulary.md#def-register [decided: methodology v
 
 C1. K-003's statement gains one sentence at its end: "Where the project's Classification declares a planning/execution model, that model is the referent instead, and the Backlog's implementation map and list of what is next are renderings of it." evidence: E1, E4. [decided: owner, 2026-10-30]
 
-
 C2. The appended sentence is an exception to the two referent clauses before it, "The Backlog is the referent for what is done and what is next" and "no other document may claim that role". evidence: E1. [decided: owner, 2026-10-30]
-
 
 C44. The second referent clause reads "no other document may claim that role, except as the next sentence provides". evidence: E10. [decided: owner, 2026-11-01]
 
@@ -65,7 +63,11 @@ C5. The renderings of the project-orchestrator Project model at commit 86a1330 w
 
 C6. K-003's Motivated-by line names the project-orchestrator proposal and the owner's approval of the proposal for carrying at project-orchestrator node P3-N007 on 2026-10-30. evidence: E4. [proposed: this IR]
 
-C7. K-003's Cites line names Constitution Article 7 for the Custom definitions section in which a Classification declares a planning/execution model. [proposed: this IR]
+C7. K-003's Cites line names Constitution Article 7 and the vocabulary row for planning/execution model as the places that say how a Classification declares the model. [proposed: this IR]
+
+C12. K-003's Protects line names provenance, because each claim of what is done and what is next traces to one record. [proposed: this IR]
+
+### The vocabulary
 
 C8. A Classification declares a planning/execution model by an entry in its Custom definitions section. evidence: E1. [decided: owner, 2026-10-30]
 
@@ -74,10 +76,6 @@ C9. The declaring entry is a definition by citation under Article 7. evidence: E
 C10. The declaring entry names the types that make up the planning/execution model. evidence: E1. [decided: owner, 2026-10-30]
 
 C11. The declaration needs no new Classification field. evidence: E1. [decided: owner, 2026-10-30]
-
-C12. K-003's Protects line names provenance, because each claim of what is done and what is next traces to one record. [proposed: this IR]
-
-### The vocabulary
 
 C13. The vocabulary gains a row for list of what is next, a term the owner ratified at node P3-N007's verifying gate on 2026-10-30. evidence: E4. [decided: owner, 2026-10-30]
 

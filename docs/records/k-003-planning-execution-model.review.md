@@ -41,7 +41,7 @@ Changes to K-003 beyond the proposal's replacement text, each in the IR:
 |---|---|---|---|---|---|
 | 1 | 261 | 43 | 8 | 30.7 | not readable (one own mismatch on C8 and C9, quoted, not counting; contradiction 1; undefined terms 2) |
 | 2 | 268 | 43 | 5 | 18.7 | not readable (one own mismatch on C2 with T7, quoted, not counting; contradictions 2; undefined term 1) |
-| 3 | 278 | 44 | pending | pending | pending |
+| 3 | 278 | 44 | 2 | 7.2 | not readable (one own mismatch on C10, the Cites passage's second in two rounds, counting under the override; contradictions 0; undefined term 1) |
 
 ### Round 1, count 1, 2026-10-30
 
@@ -127,7 +127,7 @@ The re-fix changes no claim.
 
 ### Round 3, count 1, 2026-11-01
 
-Branch: methodology PR #73 merged at `a1959c3`'s state, so the count continues on branch `k-003-count-1-rounds` from `main` at `be5f993`. Branch point version and commit: v1.9 at communication-pipeline `main`, commit `d1c5b55`, the version the count opened under; v1.9 is still the active version on that project's `main`. The specification on this repository's `main` now carries count 6. Under branch point v1.9 a change the owner adopts during a count applies from the next count, so this count's rounds keep the rules it opened under. Brief: `k003-r3-brief.md` in the reasoning role's scratchpad, naming the round 3 commit. Prose 278 words; IR 44 claims; unratified terms 0.
+Branch: methodology PR #73 merged at `a1959c3`'s state, so the count continues on branch `k-003-count-1-rounds` from `main` at `be5f993`. Branch point version and commit: v1.9 at communication-pipeline `main`, commit `d1c5b55`, the version the count opened under; v1.9 is still the active version on that project's `main`. The specification on this repository's `main` now carries count 6. Under branch point v1.9 a change the owner adopts during a count applies from the next count, so this count's rounds keep the rules it opened under. Brief: `k003-r3-brief.md` in the reasoning role's scratchpad, naming commit `e404dce`. Prose 278 words; IR 44 claims; unratified terms 0.
 
 The owner's decision of 2026-11-01 adopted the marker. The second referent clause now reads "no other document may claim that role, except as the next sentence provides" (C44, decided, evidence E10; R7 ties it to C2). Round 2's finding 5 is closed as fixed by that decision; it is no longer a decline. The title is unchanged (C37). The release-register entry's impact assessment gains one line on the marker.
 
@@ -138,4 +138,23 @@ Awaiting restatement: the re-fix of round 2's new defect N1, the Cites line's "a
 Signals script before the round: no signal fired; no line unparsed.
 
 Carried into the brief: round 1's declines 5, 6 and 8 with their reasons, and the readability note.
+
+Stranger: instance `a9f2d1b45960bf846`, a fresh instance, at commit `e404dce`. Prose 278 words by `wordCount`; IR 44 claims; 2 findings, 7.2 per thousand words. Restatement: one mismatch, on C10, attributed by the stranger to its own restatement, with a quoted prose sentence: the restatement dropped "that make up the model" from the Cites line's declaration. Contradictions 0: the marker holds, and no finding raises the referent clauses. Undefined term 1 (finding 2); verdict: not readable for RD-4.
+
+Mismatches: C10 (own; relied on C10)
+
+The quoted sentence is the Cites line's declaration clause, which carries C8 to C11; the quote's exact words are in the stranger's report, which the Orchestrator holds. The passage, the declaration in the Cites line, drew round 1's own mismatch on C8 and C9. This mismatch is the passage's second in two rounds, so it counts under the override, and step 6 applies. Signals script after the `Mismatches:` line: no signal fired; the script compares claims, and round 1's line named C8 and C9, not C10. The recurrence is on the passage, read from the review record. Under the specification's second meta-review signal, a restatement mismatch that recurred on one passage in two rounds fires the signal, so this text is a meta-review subject; the script misses the recurrence because it compares claims. The count's `Meta-review:` line, written at the count's end, reads `pending`.
+
+Awaiting restatement from round 2: the re-fix of N1, "and the declaration needs no new Classification field" in the Cites line. Round 3 names the passage that holds it, on its `Mismatches:` line and in finding 2.
+
+| # | Finding (shortened) | Kind | Decision |
+|---|---|---|---|
+| 1 | own mismatch on C10, "that make up the model" dropped from the Cites line's declaration; the passage's second mismatch in two rounds | restatement, step 6 | structural fix: the declaration mechanism (C8 to C11) moves out of K-003's Cites line into the vocabulary row for planning/execution model, where a declaration form belongs. The Cites line now cites Constitution Article 7 and that row in one short clause, "(how a Classification declares the model)"; C7 reworded to match. C8 to C11 keep their words and move to the IR's vocabulary section. No decided claim changed. Marked `awaiting restatement` |
+| 2 | "definition-by-citation" in the Cites line undefined | SP-04 | resolved by the move of 1: the term leaves K-003. The vocabulary row reads "a definition by citation under Article 7", linked to the Article |
+
+Claims after fixes: 44. Prose after fixes: 251 words. Claims check after the fixes (base: round 3 prose at `e404dce`, over K-003, the vocabulary rows and the release-register entry): 1 changed claim (C7), 0 missing, 0 stale. Round trip: 44 of 44 claims mapped; the render map sends C8 to C11 to the vocabulary row. IR checks: 0 violations, 0 warnings. `mtool audit form`: no findings. Fix commit: pending, the Orchestrator commits the staged pass.
+
+For round 4's brief: the Cites line, listed for a one-sentence restatement before the stranger opens the IR.
+
+The confirmation line is written when the round 3 instance answers. The step-6 move is not for confirmation; the instance checks it, and the resolution of finding 2, for new defects only.
 
