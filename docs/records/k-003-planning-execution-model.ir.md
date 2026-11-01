@@ -2,7 +2,7 @@
 
 Reader: RD-4 (a fresh agent session) reading K-003 (the Backlog is the single source of progress truth) as amended; the owner adjudicates the amendment.
 Purpose: document. The amendment of K-003 in place, by which a project whose Classification declares a planning/execution model takes that model as its referent for what is done and what is next, with the vocabulary rows and the release-register entry the amendment needs.
-Status: rendered (count 1, round 4 not readable pending confirmation, 1 finding fixed; round 3 not readable, the Cites passage given a step-6 fix awaiting restatement, no new defects at confirmation; the referent clause marked by the owner's decision of 2026-11-01; round 2 not readable, 2 of 2 fixes held, finding 2 withdrawn, finding 5 declined pending the owner, 1 new defect fixed; round 1 not readable, 2 of 3 fixes held and 1 re-fixed, 1 new defect fixed, 4 declines accepted, finding 7 withdrawn; rendered by the reasoning role on 2026-10-30; unratified terms 0)
+Status: reviewed (count 1 readable at round 4 of four on 2026-11-01, the round's fix confirmed and its finding withdrawn, one ask edit applied after confirmation; rendered by the reasoning role; awaiting the owner's adjudication under Article 8; Meta-review: pending, by the second signal in round 3; footprint: declared 5, changed 5, surprises 0, misses 0, on each of the count's two branches; unratified terms 0)
 Source: the project-orchestrator proposal "A declared planning/execution model is the source of progress truth" and its IR (93 claims, 17 terms) at project-orchestrator commit 25e92e8, approved for carrying by the owner at node P3-N007's verifying gate on 2026-10-30; the owner's decision of 2026-10-30 that the proposal lands in this repository as a methodology change, by pull request.
 Normative: yes
 Footprint: docs/rules/knowledge.md; docs/vocabulary.md; docs/releases.md; docs/records/k-003-planning-execution-model.ir.md; docs/records/k-003-planning-execution-model.review.md
@@ -185,5 +185,5 @@ E10. The owner's decision of 2026-11-01, relayed by the Orchestrator to the reas
 
 A1. The owner, under Article 8 (amendments, versions, and migration): accept the amendment, accept it with amendments, or reject it. Depends: C1, C22.
 
-A2. The owner: ratify or strike the four proposed claims, the Motivated-by wording (C6), the Cites entry (C7), the Protects line (C12) and the PR field (C24). Depends: C6, C7, C12, C24.
+A2. The owner: ratify or strike the five proposed claims, the Motivated-by wording (C6), the Cites entry for Article 7 and the planning/execution model row (C7), the Protects line (C12), the PR field (C24) and the Cites entry for the C-tier row (C45). Depends: C6, C7, C12, C24, C45.
 

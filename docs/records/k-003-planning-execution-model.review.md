@@ -42,7 +42,7 @@ Changes to K-003 beyond the proposal's replacement text, each in the IR:
 | 1 | 261 | 43 | 8 | 30.7 | not readable (one own mismatch on C8 and C9, quoted, not counting; contradiction 1; undefined terms 2) |
 | 2 | 268 | 43 | 5 | 18.7 | not readable (one own mismatch on C2 with T7, quoted, not counting; contradictions 2; undefined term 1) |
 | 3 | 278 | 44 | 2 | 7.2 | not readable (one own mismatch on C10, the Cites passage's second in two rounds, counting under the override; contradictions 0; undefined term 1) |
-| 4 | 251 | 44 | 1 | 4.0 | not readable pending confirmation (restatement matched; contradictions 0; undefined term 1, readable if withdrawn at confirmation) |
+| 4 | 251 | 44 | 1 | 4.0 | readable (restatement matched; contradictions 0; the undefined-term finding withdrawn at confirmation on a reason quoting the prose) |
 
 ### Round 1, count 1, 2026-10-30
 
@@ -195,7 +195,28 @@ Two points the instance did not count, fixed in the IR:
 
 Verdict: not readable, pending confirmation. Under the rule the count opened under, an undefined-term finding the round's instance withdraws at confirmation, on a reason quoting the prose, does not count against the verdict. If the instance withdraws finding 2 on the linked sentence, round 4 reads readable and step 7 applies.
 
-Claims after fixes: 45. Prose after fixes: 251 words. Claims check after the fixes (base: round 4 prose at `351296b`): 1 changed claim (C45, new), 0 missing, 0 stale. Round trip: 45 of 45 claims mapped. IR checks: 0 violations, 0 warnings. `mtool audit form`: no findings. Fix commit: pending, the Orchestrator commits the staged pass.
+Claims after fixes: 45. Prose after fixes: 251 words. Claims check after the fixes (base: round 4 prose at `351296b`): 1 changed claim (C45, new), 0 missing, 0 stale. Round trip: 45 of 45 claims mapped. IR checks: 0 violations, 0 warnings. `mtool audit form`: no findings. Fix commit: `c71dee7`.
 
-The confirmation line is written when the round 4 instance answers.
+Confirmation: 1 of 1 fixes hold. Not held: none. Declines accepted: 0 of 0. New defects: 1.
+
+The round 4 instance confirmed at `c71dee7`. The fix of finding 2 holds, and the instance withdrew finding 2 on a reason quoting the linked sentence, "entries MUST carry current stage designations". The withdrawn undefined-term finding does not count against the verdict. Round 4 reads readable.
+
+Step 7: the round's one finding, 2, was fixed in the IR's terms and the prose before confirmation and is marked **confirmed** (withdrawn). The new defect, N1, sits in the IR only: ask A2 named four proposed claims and omitted C45. A2 now names five, C6, C7, C12, C24 and C45. The edit is an ask-list edit with no prose change, so it needs no stranger read; it is applied after confirmation, as count 5 of the specification did. N1 is marked **applied after confirmation**.
+
+### Verdict, count 1
+
+Readable at round 4 of four, on 2026-11-01, under the rules the count opened under (the specification at `e049bc6`, branch point v1.9). Rounds 1 to 3 were not readable. The text is not delivered by the reasoning role: an amendment awaits the owner's adjudication under Article 8. The IR's Status reads `reviewed`. The release-register entry's Adjudication field reads pending.
+
+Footprint: declared 5, changed 5, surprises 0, misses 0, on branch `k-003-planning-execution-model` (PR #73, base `e049bc6`) and on branch `k-003-count-1-rounds` (base `be5f993`). Unratified terms: 0.
+
+Meta-review: pending. Signals checked: signal 1 (fixes not held or claims missing or stale in two or more rounds) did not fire: one fix not held, in round 1 only. Signal 2 fired: a restatement mismatch recurred on one passage, the declaration in the Cites line, in rounds 1 (C8, C9) and 3 (C10). The signal is read from the record; the signals script, which keys recurrence by claim, does not report it. Signal 3 did not fire: words per claim fell from 6.07 in round 1 to 5.70 in round 4. Signal 4 did not fire: no contradiction in round 3 or later. The text is a meta-review subject.
+
+### For the owner
+
+- A1: adjudicate the amendment under Article 8: accept, accept with amendments, or reject.
+- A2: ratify or strike the five proposed claims: C6, the Motivated-by wording; C7, the Cites entry for Article 7 and the planning/execution model row; C12, the Protects line; C24, the PR field; C45, the Cites entry for the C-tier row.
+- Candidates for the next K-003 edit, from round 1: finding 5, "Checked entries MUST be rewritten …" names no actor; finding 6, "entries MUST carry current stage designations" names no actor; finding 8, the Rationale's clause "a mirror, not a duplication". Each is released v1.6.0 text outside this amendment.
+- Terms: none unratified. The amendment's vocabulary rows, *list of what is next* and *rendering*, carry terms the owner ratified on 2026-10-30.
+- Decided claims the rounds reworded, for ratification in their new wording: C3, C4 and C5 name the record of the Project model at commit `86a1330` in place of the slice; C6 names node P3-N007 without its gate's stage; C8 to C11 moved, unworded, from the Cites line to the vocabulary row.
+- Ruleset note, for the communication-pipeline's review: the signals script keys recurrence by claim, not by passage, so it missed signal 2 in this count.
 

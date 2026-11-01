@@ -74,6 +74,10 @@ carry: amendment title and PR link · suggested by (evidencing instance)
   from the model from the declaration on. From then on it rewrites its
   checked entries by that rendering of the implementation map. K-003's
   duty to rewrite checked entries stands, met by that rendering.
+- **Adjudication**: pending. The owner adopted the referent-clause
+  marker on 2026-11-01. Count 1 of the stranger rounds read readable at
+  round 4 on 2026-11-01, awaiting the owner's adjudication under
+  Article 8. The review record reads `Meta-review: pending`.
   
 ### The stranger rounds take evaluation case 012's changes
 
