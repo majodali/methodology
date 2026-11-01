@@ -1489,3 +1489,14 @@ The owner's decision: accept or reject count 6. Open items for that decision, in
 4. The owner-adopted rule from the branch point's ask A2, carried as C156, C301 and C302 (decided, 2026-10-30), and its form split at the semicolon in round 3. The claims are unchanged; the sentence reads as two.
 5. The two new defects of the step-7 confirmation, unfixed under case 012 change 8: A8's `Depends:` field omits C304; T36 "IR-only document" against "IR-only" in C13, C217 and C219. The next edit fixes both.
 6. Terms: none new on this text beyond the seven case 012 terms the owner ratified by the default (T30 to T35, with T23 repointed) and T36, which names the existing vocabulary row *IR-only document*.
+
+The owner's decision, 2026-11-01: count 6 accepted and delivered (methodology PR #72 merged). The items above, marked:
+
+1. A8: ratified; the count 6 claims carry decided provenance from 2026-11-01.
+2. A9: the vocabulary row *own mismatch* is kept.
+3. The decided claims count 6 reworded: ratified, from 2026-11-01.
+4. The owner-adopted rule from the branch point's ask A2 and its form split: stand.
+5. The two new defects of the step-7 confirmation, fixed in the acceptance commit: A8's `Depends:` field gains C304; T36 is renamed "IR-only", matching C13, C217 and C219.
+6. Terms: none new on this text.
+
+Meta-review: pending (signals 1 and 2). The owner dispatched the meta-review of both counts as one task; the line stays until it is delivered.
