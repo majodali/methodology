@@ -1556,6 +1556,7 @@ Signals script before the round: no round of count 7 recorded yet.
 |---|---|---|---|---|---|
 | 1 | 4,434 | 278 | 20 | 4.5 | not readable (mismatches 3; contradictions 0; undefined terms 2; paraphrase-test findings 4) |
 | 2 | 4,472 | 278 | 9 | 2.0 | not readable (mismatch 1, recurring; contradictions 0; undefined terms 2; paraphrase-test findings 2) |
+| 3 | 4,505 | 280 | | | pending |
 
 ### Round 1, count 7, 2026-11-02
 
@@ -1668,4 +1669,29 @@ Checks: 0 sentences over 25 words; 279 of 279 claims mapped; 7 claims changed, 0
 
 `mtool ir check`: 0 violations, 0 warnings. `mtool style`: no sentence over 25 words. `mtool links check`: all relative links resolve. Claims after fixes: 279 (C339 added). Prose after fixes: 4,487 words. Decided claims the fixes reworded, for the owner at acceptance: C93, C143, C234, C307, C315, C316. Structural fix awaiting restatement: the C211 passage, with C268 moved.
 
-The confirmation is pending.
+Confirmation: 4 of 5 fixes hold. Not held: 4. Declines accepted: 1 of 3. New defects: 3.
+
+The instance read both files in full at fix commit 6f79470 and, as briefed, gave no answer on finding 1's structural fix. The confirmation's fixes, IR first, before round 3 opens:
+
+- Fix 4 did not hold, with N1 (against C279 and change 14): "a header" widened what a fix may add. Re-fixed: C143 reads "a state header" again, and a new sentence defines it before its use: "A state header names whether the sentences under it state what is done now or what the text aims at." (C340). C307 reads "under a state header". The instance also named R18's "state paragraph"; that paragraph is the returning owner's state paragraph, a different thing, and R18 stands.
+- N2 (one element, two names): the IR's section is the Terms section, as C167 names the five sections. C313 to C316 say "Terms section" throughout.
+- N3 (C268's place, a judgment call): C268 moves to the end of the reasoning role's recording paragraph, after "The review record keeps each restatement as written.", the record it checks against. It stays out of the stranger's steps; the passage still awaits restatement in round 3.
+- Decline 6 not accepted: the instance holds that C328 and C330 leave the human reader unnamed for a text whose Reader line names only an agent. The decline stands for this text, whose Reader line names the human owner. The general case, a Reader line that names no human, is a gap in change 26's rule; it is noted for the owner at the close, not filled by a fix (C279).
+- Decline 8 not accepted: the instance holds that its restatement used terms the text defines. The decline stands: the fourth condition counts a passage the stranger cannot restate without such a term, and the instance wrote that no passage resisted.
+- Q2 accepted.
+
+`node scripts/check.mjs docs/intermediate-representation.md --base 6f79470`:
+Checks: 0 sentences over 25 words; 280 of 280 claims mapped; 7 claims changed, 0 missing, 0 stale.
+
+`mtool ir check`: 0 violations, 0 warnings. `mtool style`: no sentence over 25 words. `mtool links check`: all relative links resolve. Prose after the confirmation's fixes: 4,505 words; IR 280 claims. Decided claims reworded after confirmation, for the owner at acceptance: C143, C307, C313 to C316; added: C340.
+
+Signals script after the confirmation line: signal 1 fires, on fixes not held in rounds 1 and 2, beside signal 2 on C211.
+
+### Round 3, count 7, 2026-11-02
+
+Branch point version and commit: v1.11 at communication-pipeline commit 8e3ceb8. The round reads the text at its opening commit, named in the brief. Prose 4,505 words; IR 280 claims; unratified terms 0. Human reader for the paraphrase test: the human owner. Stranger: pending, a fresh instance.
+
+Passages awaiting restatement, listed in the brief for a one-sentence restatement: the C211 passage, "A restatement mismatch is a disagreement the stranger finds between its restatement and the IR.", with C268 at its new place at the end of the recording paragraph.
+
+Declines carried in the round 3 brief: the six of count 5; round 1's 1 and 3; round 2's 6, each with its reason. Not carried: the restatement-check items and round 2's 8, which concerned earlier restatements. The brief names the passages round 2 and its confirmation changed, the departure kept for this count.
+
