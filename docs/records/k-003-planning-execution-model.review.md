@@ -209,9 +209,9 @@ Readable at round 4 of four, on 2026-11-01, under the rules the count opened und
 
 Footprint: declared 5, changed 5, surprises 0, misses 0, on branch `k-003-planning-execution-model` (PR #73, base `e049bc6`) and on branch `k-003-count-1-rounds` (base `be5f993`). Unratified terms: 0.
 
-Meta-review: pending. Signals checked: signal 1 (fixes not held or claims missing or stale in two or more rounds) did not fire: one fix not held, in round 1 only. Signal 2 fired: a restatement mismatch recurred on one passage, the declaration in the Cites line, in rounds 1 (C8, C9) and 3 (C10). The signal is read from the record; the signals script, which keys recurrence by claim, does not report it. Signal 3 did not fire: words per claim fell from 6.07 in round 1 to 5.70 in round 4. Signal 4 did not fire: no contradiction in round 3 or later. The text is a meta-review subject.
+Meta-review: delivered (signal 2; pending at the close on 2026-11-01): [evaluation case 015](https://github.com/majodali/communication-pipeline/blob/main/eval/cases/015-ruleset-simplification-review-2026-11-02.md), 2026-11-02. Signals checked: signal 1 (fixes not held or claims missing or stale in two or more rounds) did not fire: one fix not held, in round 1 only. Signal 2 fired: a restatement mismatch recurred on one passage, the declaration in the Cites line, in rounds 1 (C8, C9) and 3 (C10). The signal is read from the record; the signals script, which keys recurrence by claim, does not report it. Signal 3 did not fire: words per claim fell from 6.07 in round 1 to 5.70 in round 4. Signal 4 did not fire: no contradiction in round 3 or later. The text is a meta-review subject.
 
-The owner deferred the count's meta-review on 2026-11-02 to the communication-pipeline's ruleset review, which reads this record among its inputs. The `Meta-review:` line stays `pending` until that review delivers.
+The owner deferred the count's meta-review on 2026-11-02 to the communication-pipeline's ruleset review, which read this record among its inputs. That review is evaluation case 015; the owner adopted its change 30 on 2026-11-02, which records the meta-review as delivered.
 
 ### For the owner
 
@@ -220,5 +220,6 @@ The owner deferred the count's meta-review on 2026-11-02 to the communication-pi
 - Candidates for the next K-003 edit, from round 1: finding 5, "Checked entries MUST be rewritten …" names no actor; finding 6, "entries MUST carry current stage designations" names no actor; finding 8, the Rationale's clause "a mirror, not a duplication". Each is released v1.6.0 text outside this amendment. **Resolved**: queued for the next K-003 edit, 2026-11-02, as a Backlog entry.
 - Terms: none unratified. The amendment's vocabulary rows, *list of what is next* and *rendering*, carry terms the owner ratified on 2026-10-30. **Resolved**: nothing to ratify.
 - Decided claims the rounds reworded, for ratification in their new wording: C3, C4 and C5 name the record of the Project model at commit `86a1330` in place of the slice; C6 names node P3-N007 without its gate's stage; C8 to C11 moved, their words unchanged, from the Cites line to the vocabulary row. **Resolved**: accepted with the amendment as it stands, 2026-11-02.
-- Ruleset note, for the communication-pipeline's review: the signals script keys recurrence by claim, not by passage, so it missed signal 2 in this count. **Resolved**: listed for the pipeline's ruleset review, which also takes the deferred meta-review.
+- Ruleset note, for the communication-pipeline's review: the signals script keys recurrence by claim, not by passage, so it missed signal 2 in this count. **Resolved**: listed for the pipeline's ruleset review, evaluation case 015, which also delivered the meta-review.
 
+Meta-review: delivered (signal 2): [evaluation case 015](https://github.com/majodali/communication-pipeline/blob/main/eval/cases/015-ruleset-simplification-review-2026-11-02.md), 2026-11-02.
