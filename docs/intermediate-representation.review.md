@@ -1558,7 +1558,7 @@ Signals script before the round: no round of count 7 recorded yet.
 | 2 | 4,472 | 278 | 9 | 2.0 | not readable (mismatch 1, recurring; contradictions 0; undefined terms 2; paraphrase-test findings 2) |
 | 3 | 4,505 | 280 | 18 | 4.0 | not readable (mismatches 2; contradictions 0; undefined terms 0; paraphrase-test findings 5) |
 | 4 | 4,549 | 282 | 10 | 2.2 | not readable (mismatches 2; contradiction 1; undefined term 1; paraphrase-test findings 1) |
-| 5 | 4,560 | 282 | | | pending |
+| 5 | 4,560 | 282 | 12 | 2.6 | not readable (mismatches 2, one recurring; contradictions 2; undefined terms 2; paraphrase-test findings 2) |
 
 ### Round 1, count 7, 2026-11-02
 
@@ -1818,3 +1818,40 @@ Branch point version and commit: v1.11 at communication-pipeline commit 8e3ceb8.
 
 Declines carried in the round 5 brief: the six of count 5; round 1's 1 and 3; round 2's 6; round 3's 1, 4 and 5; round 4's 1 and 2, each with its reason. Not carried: the restatement-check items. The brief names the passages round 4 and its confirmation changed, the departure kept for this count. Passages awaiting restatement: none.
 
+Stranger model: claude-haiku-5-5, a fresh instance, reading at commit 336b2e6. It wrote its restatement before it opened the IR and made no call outside its brief.
+
+Restatement:
+
+> This text sets the method for writing certain documents in two steps. First, the writer lists the document's content as numbered statements, each with an identifier, a type and a source status. Second, the writer turns that list into prose, and fresh readers check the prose by restating it. The problem is that prose written directly tends to pack several claims into one sentence, leave the things it refers to unnamed, and use working terms as if they were defined. The text decides the form of the numbered list; which documents need it; who writes the prose and who checks it; how the writer fixes problems the readers find; when a review round ends with a verdict of readable; the limit of ten rounds; and when a second, whole-review check is reported to the owner. The owner decides on the rules and on any case the text does not name.
+
+Prose 4,560 words by `wordCount` (the stranger's estimate: about 5,800); IR 282 claims; 10 findings from the stranger and 2 from the restatement check, 12 in all, 2.6 per thousand words. Restatement: two mismatches. Listed passages: none. Contradictions 2 (findings 7 and 8), undefined terms 2 (findings 3 and 10), paraphrase-test findings 2 (the check's items; the stranger found none and calls its use of "round", "verdict" and "limit" its own lapse); verdict: not readable for RD-4. Omissions noticed, not counted: 2.
+
+The mismatches, each counting under the first condition though the stranger put both down to its own restatement. First, the restatement gave every numbered statement a source status; relations, evidence and asks carry none (C260, C294, C295), and the stranger relied on the Relation row (C260). The prose did not invite it. Second, the restatement had a whole-review check reported to the owner without the owner's decision; the stranger relied on "At the end of a count, the reasoning role reports to the owner the meta-review signals that fired ..." (C332). C333, "The owner decides whether a meta-review runs.", drew round 1's third mismatch too.
+Mismatches: C260, C333 (relied on C332)
+
+Restatement check, `node scripts/lint.mjs --restatement docs/intermediate-representation.review.md --round 5` in the communication-pipeline worktree: 2 items, X1 ("round") and X2 ("limit").
+
+Signals script after the `Mismatches:` line: signal 2 fires on C333 (count 7 rounds 1 and 5) and on C260 (count 6 round 1 and count 7 round 5), beside C211 from rounds 1 and 2. Signal 1 stands from rounds 1 and 2; signal 4 by reading from round 4. Step 5 owes two structural fixes.
+
+Step 5's structural fixes. Owed to C260: count 6 gave the Element kinds table a provenance column, and a reader again spread the status to every kind. The table splits in two under their own headings, "Kinds that carry a provenance status" (term, claim, cluster) and "Kinds that carry no provenance status" (relation, evidence, ask). The rows and claims are unchanged. Owed to C333: the report of the signals led the passage and the owner's decision followed, so a reader took the report as the trigger. The two sentences swap: the section now opens "The owner decides whether a meta-review runs.", then the report at a count's end, then "The owner may dispatch a meta-review of any text." The claims are unchanged. The two passages, the Element kinds tables and "Who decides on a meta-review", are marked `awaiting restatement` and go to round 6's brief as listed passages.
+
+| # | Finding (shortened) | Kind | Decision |
+|---|---|---|---|
+| 1 | every statement given a source status (C260) | restatement | structural fix: C260 recurred from count 6, so the Element kinds table splits into the kinds that carry a provenance status and those that carry none; `awaiting restatement` |
+| 2 | the check reported to the owner with no owner decision (C333, relying on C332) | restatement | structural fix, as above; `awaiting restatement` |
+| 3 | "methodology vocabulary" and "reader's project vocabulary" unlinked and undefined (C314) | SP-04 | fixed: "When neither the methodology vocabulary nor the project's `docs/vocabulary.md` defines an IR term ...", the first linked |
+| 4 | restatement mismatch, passage, paraphrase test and verdict before their definitions (C343; the CK-14 row) | SP-04 | fixed: C343 cut, with finding 5; verdict linked at its first use in the CK-14 row |
+| 5 | C343 repeats the four conditions | SP-26 | fixed: C343 cut, with R87; C281 reads "as its kind does under the verdict's four conditions", linked |
+| 6 | C254 restates C183 | SP-26 | declined: C183 states when the unfixed finding is fixed; C254 states what that fix changes, the unconfirmed words C248 keeps in the delivered prose |
+| 7 | the readable-verdict fix duty against the owner gate's "before the next round" (C97, C317 to C319) | SP-25 | fixed: the owner gate moves to the fix rules in Rendering and review, which govern every fix (C310). C318 reads "The reasoning role puts such a finding to the owner with a proposed wording, and the fix waits for the owner's answer." |
+| 8 | the structural fix defined as a move while C321 allows a claim change (C320, C321) | SP-25 | fixed: "A structural fix is one of two fixes for a misreading that a rewording does not settle." (C320); "The first structural fix moves the sentence ..." (C344); "The second structural fix changes the claim ..." (C321) |
+| 9 | the Article 8 sentence opens on an unintroduced amendment (C102) | SP-11 | fixed: "When the text at the limit is an amendment, the owner's decision is the amendment's adjudication under Article 8 ..." |
+| 10 | "register" unlinked in C342 | SP-04 | declined: round 4's fix landed; at commit 336b2e6 the sentence reads "a statement about the state of a [register](vocabulary.md#def-register) or of a row in one", linked to its definition |
+| X1, X2 | the restatement uses "round" and "limit" | paraphrase test | declined: the text says what each is in plain words, and the stranger names their use its own lapse; no passage resisted |
+
+`node scripts/check.mjs docs/intermediate-representation.md --base 336b2e6`, on the fixed text:
+Checks: 0 sentences over 25 words; 282 of 282 claims mapped; 7 claims changed, 0 missing, 0 stale.
+
+`mtool ir check`: 0 violations, 0 warnings. `mtool style`: no sentence over 25 words. `mtool links check`: all relative links resolve. Claims after fixes: 282 (C343 cut; C344 added). Prose after fixes: 4,563 words. Structural fixes awaiting restatement: the Element kinds tables, and the "Who decides on a meta-review" passage. Decided claims the fixes reworded, for the owner at acceptance: C102, C281, C314, C318, C320, C321.
+
+The confirmation is pending.
