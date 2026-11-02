@@ -1557,7 +1557,7 @@ Signals script before the round: no round of count 7 recorded yet.
 | 1 | 4,434 | 278 | 20 | 4.5 | not readable (mismatches 3; contradictions 0; undefined terms 2; paraphrase-test findings 4) |
 | 2 | 4,472 | 278 | 9 | 2.0 | not readable (mismatch 1, recurring; contradictions 0; undefined terms 2; paraphrase-test findings 2) |
 | 3 | 4,505 | 280 | 18 | 4.0 | not readable (mismatches 2; contradictions 0; undefined terms 0; paraphrase-test findings 5) |
-| 4 | 4,549 | 282 | | | pending |
+| 4 | 4,549 | 282 | 10 | 2.2 | not readable (mismatches 2; contradiction 1; undefined term 1; paraphrase-test findings 1) |
 
 ### Round 1, count 7, 2026-11-02
 
@@ -1762,3 +1762,39 @@ Branch point version and commit: v1.11 at communication-pipeline commit 8e3ceb8.
 
 Declines carried in the round 4 brief: the six of count 5; round 1's 1 and 3; round 2's 6; round 3's 1, 4 and 5, each with its reason. Not carried: the restatement-check items, which concerned earlier restatements. The brief names the passages round 3 and its confirmation changed, the departure kept for this count. Passages awaiting restatement: none; the C211 passage matched in round 3.
 
+Stranger model: claude-haiku-5-5, a fresh instance, reading at commit 3fe1cbd. It wrote its restatement before it opened the IR and made no call outside its brief.
+
+Restatement:
+
+> This text sets how a document is written when readers who did not take part in writing it must understand it. The writer first lists the document's content as a numbered list of single statements. Each statement has a label and a mark showing whether the owner approved it or the writer derived it. Only then does the writer turn the list into prose, one sentence per statement. Fresh readers then review the prose: each states its meaning in their own words, and any gap from the list is a defect. The writer fixes defects first in the list, then in the prose. The text says which documents need this method and which do not. It sets review passes, with a cap of ten, and says when a pass counts as passed. It requires the writer to list the decisions the owner must make, to separate what was already settled from what is new, and to list terms the owner must approve. It also says when the owner, not the writer, decides on a deeper review.
+
+Prose 4,549 words by `wordCount` (the stranger's estimate: about 4,700); IR 282 claims; 9 findings from the stranger and 1 from the restatement check, 10 in all, 2.2 per thousand words. Restatement: two mismatches. Listed passages: none. Contradiction 1 (finding 7), undefined term 1 (finding 9), paraphrase-test findings 1 (the check's item; the stranger found none); verdict: not readable for RD-4. Omissions noticed, not counted: 6.
+
+The mismatches, each counting under the first condition though the stranger put both down to its own restatement. First, the restatement gave the provenance mark two values; the Provenance table gives three (C47), and the stranger relied on its "proposed" row. Second, the restatement made some documents exempt from the IR; "A document always starts as an IR." (C129) says none is, and the exemption is for reports (C131). The prose invited neither reading. First occurrence of each claim; no structural fix is owed.
+Mismatches: C47, C129 (relied on C131)
+
+Restatement check, `node scripts/lint.mjs --restatement docs/intermediate-representation.review.md --round 4` in the communication-pipeline worktree: 1 item, T1, "counts".
+
+Signals script after the `Mismatches:` line: signals 1 and 2 stand from rounds 1 and 2; no claim of this round recurs. By reading, the fourth signal fires: finding 7 is a contradiction in round 4 in the fix-rules paragraph that round 3's fix touched ("In such an edit").
+
+Finding 7 settled. Case 012's adopted change 9 reads "The finding counts against the verdict as its kind does until the owner decides." A finding that needs a new rule is no fifth ground: it is a mismatch, a contradiction, an undefined term or a paraphrase-test finding, and it counts under that kind's condition. C281's wording, "like a mismatch, contradiction or undefined-term finding", read as a fifth ground beside the four conditions. It now follows the adopted text. No rule is added.
+
+| # | Finding (shortened) | Kind | Decision |
+|---|---|---|---|
+| 1 | the provenance mark given two values (C47) | restatement | declined: the prose did not invite it; the Provenance table has three rows. The mismatch counts |
+| 2 | some documents made exempt (C129, relying on C131) | restatement | declined: the prose did not invite it; "A document always starts as an IR." The mismatch counts |
+| 3 | the different-parts cluster rule stated twice (C174, C256) | SP-26 | fixed: one sentence, "The paraphraser renders one cluster as one paragraph in the cluster's order or, when its claims fall under different parts, as one paragraph per part." (C174); C256 cut |
+| 4 | "the reader's" with no noun (C314) | SP-03 | fixed: "the reader's project vocabulary" |
+| 5 | count and verdict before their definitions in Rendering and review | SP-04 | fixed: both linked at their first use there; rounds was linked in round 3 |
+| 6 | "rewording note" before its form | SP-04 | fixed: the two rewording sentences (C282, C304) now precede the words-a-fix-may-add sentence |
+| 7 | a new-rule finding counts beside the four conditions (C281, C93) | SP-25 | fixed: "Until the owner decides, a finding that needs a new rule counts against the verdict as its kind does under the four conditions." (C281), the adopted text of case 012 change 9 |
+| 8 | "it" in C339 | SP-03 | fixed: "the fixes made after that review" |
+| 9 | "judged text" undefined (C155) | SP-04 | fixed: "the text that round read, with the round's fixes applied" |
+| T1 | the restatement uses "counts" (T14) | paraphrase test | declined: "when a pass counts as passed" is the plain verb |
+
+`node scripts/check.mjs docs/intermediate-representation.md --base 3fe1cbd`, on the fixed text:
+Checks: 0 sentences over 25 words; 281 of 281 claims mapped; 5 claims changed, 0 missing, 0 stale.
+
+`mtool ir check`: 0 violations, 0 warnings. `mtool style`: no sentence over 25 words. `mtool links check`: all relative links resolve. Claims after fixes: 281 (C256 cut). Prose after fixes: 4,542 words. Structural fixes owed: none. Decided claims the fixes reworded, for the owner at acceptance: C155, C174, C281, C314, C339.
+
+The confirmation is pending.
