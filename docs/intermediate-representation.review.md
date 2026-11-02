@@ -1500,3 +1500,60 @@ The owner's decision, 2026-11-01: count 6 accepted and delivered (methodology PR
 6. Terms: none new on this text.
 
 Meta-review: delivered (signals 1 and 2): [evaluation case 014](https://github.com/majodali/communication-pipeline/blob/main/eval/cases/014-meta-review-branch-point-v1.10-and-ir-spec-count-6-2026-11-01.md), 2026-11-01.
+
+## Count 7, 2026-11-02: evaluation case 015
+
+Inputs: the owner's decision of 2026-11-02 on communication-pipeline [evaluation case 015](https://github.com/majodali/communication-pipeline/blob/main/eval/cases/015-ruleset-simplification-review-2026-11-02.md): changes 1 to 30 adopted, 31 to 35 declined. Under change 29's table, count 7 carries changes 2, 3, 5, 14 to 20 and 26. Change 5 brings case 013's changes 1 to 3 here. Reader RD-4. Disposition D3 (Normative: yes): the reasoning role rendered the amended passages from the IR. Text reviewed: `docs/intermediate-representation.md` whole; the IR covers the whole text.
+
+Branch point version and commit the count runs under: v1.11, communication-pipeline commit 8e3ceb8 on branch `branch-point-v1.11-case-015`. The pipeline's own count on v1.11 runs in parallel under the same version.
+
+Changes to the IR. Each new or reworded claim names the owner, 2026-11-02, case 015 and the change, as decided (case 015 change 13 settles the provenance in both IRs). Ask A10 asks for acceptance, which ratifies the reworded wording under change 19.
+
+- Change 2: C187, the first signal, reads fixes not held only. The claims-check line claims C252 and C253 struck.
+- Change 3: C208, the second signal, keys a recurrence on a claim; C323 keys the structural fix the same way.
+- Change 5: case 013's changes 1 to 3 as C317 to C319, C314 to C316 and C313.
+- Change 14: C143 lets a fix add a state header or a rewording note; C202 marks a readable round's findings in the review record.
+- Change 15: C307 to C312 and C320 to C325, the five rules from the branch point; C198 and C326 carry the branch point's limit rule for a fix still awaiting restatement.
+- Change 16: C270 and C271 (the claims check), C236 (the unparsed line) and the links to the stranger brief and the step-6 fix struck; C266, C268, C156, C301 and C302 reworded; C327 added.
+- Change 17: C104 and C106 struck for C332 and C333; C191, C239 and C109 reworded; C237, C296 and C238 struck; C334 to C336 added.
+- Change 18: the Provenance opening keeps count 6's form.
+- Change 19: C283 reworded.
+- Change 20: the History section, the History claims C138 to C210, evidence E5 and E6 and the resolved asks A1 to A9 moved to [the history record](records/intermediate-representation-history.md).
+- Change 26: C93 reads four conditions; C328, C337, C329, C330 and C331 added; term T38, paraphrase test, decided by the owner's default on 2026-11-02.
+- The plain purpose at the top, C305 and C306, inferred by R85 and R86. A Terms section before the body renders T21 and T35, the two terms defined in the pipeline's vocabulary, under case 013 change 2.
+
+278 claims before the edit and 278 after; prose 4,303 words at count 6's close and 4,434 now. The case estimated about 3,950: the History left, and the five moved rules, case 013's three changes and the paraphrase test added about 480 words.
+
+Departures for the owner. C198 and C326 carry the branch point v1.10 rule that a fix awaiting restatement at the limit counts as unfixed. Change 15 does not list it, and v1.11 links the specification for the final round, so the rule would otherwise be lost. The history record sits under `docs/records/`, as the Orchestrator directed; the case suggested this review record.
+
+Step 1 of branch point v1.11, before round 1, by `node scripts/check.mjs docs/intermediate-representation.md --base origin/main` (count 6 as accepted):
+Checks: 0 sentences over 25 words; 278 of 278 claims mapped; 48 claims changed, 0 missing, 0 stale.
+
+`mtool ir check`: 0 violations, 0 warnings. `mtool style` with the 25-word threshold of methodology-tools branch `style-sp02-25-words`: 0 sentences over 25 words. `mtool links check`: all relative links resolve.
+
+Declines carried in the round 1 brief, from count 5 by way of count 6, each with its text unchanged:
+
+- count 5 round 1's 6 (SP-18), on C25;
+- count 5 round 1's 11 (SP-26), the IR-then-prose order stated four times;
+- count 5 round 1's 16 (SP-18), on C132;
+- count 5 round 2's 6 (SP-26), on C135;
+- count 5 round 8's 8 (SP-26), on C199;
+- count 5 round 10's 2 (SP-26), the first condition's withdrawal cell.
+
+Not carried: count 5 round 3's 7 (SP-01), the first signal's two triggers joined by "or"; change 2 struck the second trigger. Count 6 declined no finding.
+
+Passages awaiting restatement: none. Count 6's three structural-fix passages matched by its round 3, so round 1's full restatement tests count 6's fixes afresh.
+
+Forms added to the brief, carried from count 6: an HTML comment in a fixed form, such as the render map; a numbered procedure step whose number is its only header. Neither bears on a finding yet.
+
+Signals script before the round: no round of count 7 recorded yet.
+
+### Curve, count 7
+
+| Round | Prose words | IR claims | Findings | Per 1,000 words | Verdict |
+|---|---|---|---|---|---|
+| 1 | 4,434 | 278 | | | pending |
+
+### Round 1, count 7, 2026-11-02
+
+Branch point version and commit: v1.11 at communication-pipeline commit 8e3ceb8. The round reads the text at its opening commit, named in the brief. Prose 4,434 words; IR 278 claims; unratified terms 0. Human reader for the paraphrase test: the human owner. Stranger: pending.
