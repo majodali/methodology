@@ -109,6 +109,15 @@ carry: amendment title and PR link · suggested by (evidencing instance)
   (stranger) contract follows. Other projects unaffected.
 - **Migration note**: none. Review records written before count 6
   keep their `(own)` marks and signal 3 readings as history.
+- **Adjudication**: accepted and delivered by the owner on
+  2026-11-01 (methodology PR #72 merged). Count 6 was readable at
+  round 4; the owner ratified ask A8, the count 6 claims, with the
+  decided claims the rounds reworded, and kept the vocabulary row
+  *own mismatch* (ask A9). Branch point v1.10 was accepted on the same
+  day with the terms *fix commit*, *process change*, *findings table*,
+  *declined finding*, *present state* and *target state*. The
+  meta-review of both counts is dispatched; the review record reads
+  `Meta-review: pending` until it is delivered.
 
 ### The stranger rounds take evaluation cases 010 and 011's changes
 

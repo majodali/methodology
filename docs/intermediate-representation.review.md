@@ -1479,7 +1479,7 @@ Readable for RD-4 at round 4 of a count of four, on 2026-10-30. The limit was no
 
 Findings in all: 31 across four rounds. Restatement mismatches: 2 in round 1, 2 in round 2, 1 in round 3, 0 in round 4. Prose 4,129 words at round 1 and 4,303 at close (4,297 after step 7's fixes; the closing Status line adds 6); IR 265 claims at round 1 and 278 at close. Step-6 fixes: three passages, the Element kinds provenance column with the Provenance opening, "Who dispatches a meta-review" and the verdict table. Each matched in the next round's one-sentence restatement. Every confirmable fix held at its first confirmation; no decline was made.
 
-Meta-review: pending (signals 1 and 2). Signals checked at the end of count 6 by `scripts/signals.mjs` (reading the last count) and by reading: first, fired by the script on stale claims in rounds 2 and 4. Both reports come from changes made in the IR only: round 2's C300 changed its evidence field, and round 4's C5 and C151 took names the prose already carried. No prose sentence was stale, and no fix failed to hold. The reading of signal 1 is that it fired on the claims check's form, not on a drift; the meta-review can weigh that. Second, fired: C104 (counts 4, 5 and 6), C106 (count 5 round 8, count 6 round 1) and C194 (count 5 rounds 3, 4, 5 and 7, count 6 round 2), each a passage that took a structural fix in this count and matched after it. No declined finding was raised again. Fourth, by reading: not fired; no round had a contradiction. The third signal is struck (case 012 change 11). The reasoning role asks the owner, in the report on this count, to dispatch the meta-review.
+Meta-review: delivered (signals 1 and 2; pending at the close on 2026-10-30): [evaluation case 014](https://github.com/majodali/communication-pipeline/blob/main/eval/cases/014-meta-review-branch-point-v1.10-and-ir-spec-count-6-2026-11-01.md), 2026-11-01. Signals checked at the end of count 6 by `scripts/signals.mjs` (reading the last count) and by reading: first, fired by the script on stale claims in rounds 2 and 4. Both reports come from changes made in the IR only: round 2's C300 changed its evidence field, and round 4's C5 and C151 took names the prose already carried. No prose sentence was stale, and no fix failed to hold. The reading of signal 1 is that it fired on the claims check's form, not on a drift; the meta-review can weigh that. Second, fired: C104 (counts 4, 5 and 6), C106 (count 5 round 8, count 6 round 1) and C194 (count 5 rounds 3, 4, 5 and 7, count 6 round 2), each a passage that took a structural fix in this count and matched after it. No declined finding was raised again. Fourth, by reading: not fired; no round had a contradiction. The third signal is struck (case 012 change 11). The reasoning role asks the owner, in the report on this count, to dispatch the meta-review.
 
 The owner's decision: accept or reject count 6. Open items for that decision, in one list:
 
@@ -1489,3 +1489,14 @@ The owner's decision: accept or reject count 6. Open items for that decision, in
 4. The owner-adopted rule from the branch point's ask A2, carried as C156, C301 and C302 (decided, 2026-10-30), and its form split at the semicolon in round 3. The claims are unchanged; the sentence reads as two.
 5. The two new defects of the step-7 confirmation, unfixed under case 012 change 8: A8's `Depends:` field omits C304; T36 "IR-only document" against "IR-only" in C13, C217 and C219. The next edit fixes both.
 6. Terms: none new on this text beyond the seven case 012 terms the owner ratified by the default (T30 to T35, with T23 repointed) and T36, which names the existing vocabulary row *IR-only document*.
+
+The owner's decision, 2026-11-01: count 6 accepted and delivered (methodology PR #72 merged). The items above, marked:
+
+1. A8: ratified; the count 6 claims carry decided provenance from 2026-11-01.
+2. A9: the vocabulary row *own mismatch* is kept.
+3. The decided claims count 6 reworded: ratified, from 2026-11-01.
+4. The owner-adopted rule from the branch point's ask A2 and its form split: stand.
+5. The two new defects of the step-7 confirmation, fixed in the acceptance commit: A8's `Depends:` field gains C304; T36 is renamed "IR-only", matching C13, C217 and C219.
+6. Terms: none new on this text.
+
+Meta-review: delivered (signals 1 and 2): [evaluation case 014](https://github.com/majodali/communication-pipeline/blob/main/eval/cases/014-meta-review-branch-point-v1.10-and-ir-spec-count-6-2026-11-01.md), 2026-11-01.
