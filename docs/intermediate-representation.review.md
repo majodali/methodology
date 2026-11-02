@@ -1557,6 +1557,7 @@ Signals script before the round: no round of count 7 recorded yet.
 | 1 | 4,434 | 278 | 20 | 4.5 | not readable (mismatches 3; contradictions 0; undefined terms 2; paraphrase-test findings 4) |
 | 2 | 4,472 | 278 | 9 | 2.0 | not readable (mismatch 1, recurring; contradictions 0; undefined terms 2; paraphrase-test findings 2) |
 | 3 | 4,505 | 280 | 18 | 4.0 | not readable (mismatches 2; contradictions 0; undefined terms 0; paraphrase-test findings 5) |
+| 4 | 4,549 | 282 | | | pending |
 
 ### Round 1, count 7, 2026-11-02
 
@@ -1740,4 +1741,24 @@ Checks: 0 sentences over 25 words; 282 of 282 claims mapped; 6 claims changed, 0
 
 `mtool ir check`: 0 violations, 0 warnings. `mtool style`: no sentence over 25 words. `mtool links check`: all relative links resolve. Claims after fixes: 282 (C341, C342 added). Prose after fixes: 4,549 words. Structural fixes owed: none; no passage awaits restatement. Decided claims the fixes reworded, for the owner at acceptance: C75, C95, C284.
 
-The confirmation is pending.
+Confirmation: 12 of 12 fixes hold. Not held: none. Declines accepted: 6 of 6. New defects: 3.
+
+The instance read both files in full at fix commit 20dc9c0. The confirmation's fixes, IR first, before round 4 opens:
+
+- N1 (against C313): C341, the definition of "a term the text introduces", is the reasoning role's wording; the owner adopted no such wording. It now reads `[proposed: this IR]`, with the term as T39 and ask A12 for the owner. Branch point v1.11 marks its own definition the same way. Unratified terms: 1.
+- N2 (SP-04): the definition now stands before the paraphrase test's sentence, the term's first use.
+- N3 (SP-04): "register" in C342's sentence links the vocabulary row; the claim is unchanged.
+
+`node scripts/check.mjs docs/intermediate-representation.md --base 20dc9c0`:
+Checks: 0 sentences over 25 words; 282 of 282 claims mapped; 0 claims changed, 0 missing, 0 stale.
+
+`mtool ir check`: 0 violations, 0 warnings. `mtool style`: no sentence over 25 words. `mtool links check`: all relative links resolve. Prose after the confirmation's fixes: 4,549 words; IR 282 claims.
+
+Signals script after the confirmation line: round 3 held every fix, so it adds nothing to signal 1. Signals 1 and 2 stand from rounds 1 and 2.
+
+### Round 4, count 7, 2026-11-02
+
+Branch point version and commit: v1.11 at communication-pipeline commit 8e3ceb8. The round reads the text at its opening commit, named in the brief. Prose 4,549 words; IR 282 claims; unratified terms 1 (T39). Human reader for the paraphrase test: the human owner. Stranger: pending, a fresh instance.
+
+Declines carried in the round 4 brief: the six of count 5; round 1's 1 and 3; round 2's 6; round 3's 1, 4 and 5, each with its reason. Not carried: the restatement-check items, which concerned earlier restatements. The brief names the passages round 3 and its confirmation changed, the departure kept for this count. Passages awaiting restatement: none; the C211 passage matched in round 3.
+

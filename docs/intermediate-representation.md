@@ -2,7 +2,7 @@
 
 This specification says how a text is first written as a numbered list of statements, then turned into prose and reviewed by fresh readers. Agents that write or review such texts read this specification, and so does the human owner who decides on its rules.
 
-Status: active; count 7 under review (round 3) for communication-pipeline evaluation case 015's adopted changes. Count 6 is the version the owner last accepted, on 2026-11-01. A methodology [Specification](vocabulary.md#def-specification), the document type, required by
+Status: active; count 7 under review (round 4) for communication-pipeline evaluation case 015's adopted changes. Count 6 is the version the owner last accepted, on 2026-11-01. A methodology [Specification](vocabulary.md#def-specification), the document type, required by
 [W-009](rules/working-agreement.md#w-009--the-methodology-corpus-writes-its-deliverables-ir-first)
 (the methodology corpus writes its deliverables [IR](vocabulary.md#def-intermediate-representation) first). Any project
 that adopts W-009 by declaration uses this specification.
@@ -159,7 +159,7 @@ The fix rules govern every fix, including an edit outside a round to an IR whose
 
 #### The verdict
 
-In a [round](vocabulary.md#def-round), the verdict is readable when four conditions hold. A round is one stranger's review of the text and the fixes after it. A restatement mismatch is a disagreement the [stranger](vocabulary.md#def-stranger) finds between its [restatement](https://github.com/majodali/communication-pipeline/blob/main/docs/vocabulary.md#def-restatement) and the IR. A claim or a qualifier the restatement leaves out is an [omission](vocabulary.md#def-omission), not a restatement mismatch. A restatement that says a rule has no qualifier the IR holds has a mismatch. A [passage](vocabulary.md#def-passage) is the prose sentences that carry one claim or one cluster. The round's stranger instance is the stranger the reasoning role dispatched for the round. [Confirmation](vocabulary.md#def-confirmation) is the step at which the round's stranger instance says whether each fix holds. At confirmation, the round's stranger instance [withdraws](vocabulary.md#def-withdrawal) a finding other than a restatement mismatch by saying the finding no longer applies to the prose. The <a id="paraphrase-test"></a>paraphrase test asks the stranger to restate the text for the human reader the Reader line names, without any term the text introduces. A term the text introduces is one the text defines or links to a vocabulary entry.
+In a [round](vocabulary.md#def-round), the verdict is readable when four conditions hold. A round is one stranger's review of the text and the fixes after it. A restatement mismatch is a disagreement the [stranger](vocabulary.md#def-stranger) finds between its [restatement](https://github.com/majodali/communication-pipeline/blob/main/docs/vocabulary.md#def-restatement) and the IR. A claim or a qualifier the restatement leaves out is an [omission](vocabulary.md#def-omission), not a restatement mismatch. A restatement that says a rule has no qualifier the IR holds has a mismatch. A [passage](vocabulary.md#def-passage) is the prose sentences that carry one claim or one cluster. The round's stranger instance is the stranger the reasoning role dispatched for the round. [Confirmation](vocabulary.md#def-confirmation) is the step at which the round's stranger instance says whether each fix holds. At confirmation, the round's stranger instance [withdraws](vocabulary.md#def-withdrawal) a finding other than a restatement mismatch by saying the finding no longer applies to the prose. A term the text introduces is one the text defines or links to a vocabulary entry. The <a id="paraphrase-test"></a>paraphrase test asks the stranger to restate the text for the human reader the Reader line names, without any term the text introduces.
 
 The conditions, each with what counts against the verdict and what does not:
 
@@ -271,7 +271,7 @@ count in the Status parenthesis when the IR is delivered.
 ## Texts that require an IR
 
 A document always starts as an IR. A report to [RD-2](style.md#readers) always starts as
-an IR. A report to RD-1 or RD-3 that introduces no term, records no decision and states no [register fact](vocabulary.md#def-register-fact) may be written as prose directly. A register fact is a statement about the state of a register or of a row in one. The [reasoning role](vocabulary.md#def-reasoning-role) runs the style guide's mechanical checks on prose it writes directly. A term, a decision or a register fact
+an IR. A report to RD-1 or RD-3 that introduces no term, records no decision and states no [register fact](vocabulary.md#def-register-fact) may be written as prose directly. A register fact is a statement about the state of a [register](vocabulary.md#def-register) or of a row in one. The [reasoning role](vocabulary.md#def-reasoning-role) runs the style guide's mechanical checks on prose it writes directly. A term, a decision or a register fact
 requires the IR. A term, a decision and a register fact are each
 content a model would hold.
 
