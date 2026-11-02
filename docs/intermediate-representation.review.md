@@ -1556,7 +1556,7 @@ Signals script before the round: no round of count 7 recorded yet.
 |---|---|---|---|---|---|
 | 1 | 4,434 | 278 | 20 | 4.5 | not readable (mismatches 3; contradictions 0; undefined terms 2; paraphrase-test findings 4) |
 | 2 | 4,472 | 278 | 9 | 2.0 | not readable (mismatch 1, recurring; contradictions 0; undefined terms 2; paraphrase-test findings 2) |
-| 3 | 4,505 | 280 | | | pending |
+| 3 | 4,505 | 280 | 18 | 4.0 | not readable (mismatches 2; contradictions 0; undefined terms 0; paraphrase-test findings 5) |
 
 ### Round 1, count 7, 2026-11-02
 
@@ -1695,3 +1695,49 @@ Passages awaiting restatement, listed in the brief for a one-sentence restatemen
 
 Declines carried in the round 3 brief: the six of count 5; round 1's 1 and 3; round 2's 6, each with its reason. Not carried: the restatement-check items and round 2's 8, which concerned earlier restatements. The brief names the passages round 2 and its confirmation changed, the departure kept for this count.
 
+Stranger model: claude-haiku-5-5, a fresh instance, reading at commit 49bf2a5. It wrote its restatement before it opened the IR and made no call outside its brief.
+
+Restatement:
+
+> The text sets how a document is written and checked. The author first lists the document's statements as a numbered list, with each term defined, each pronoun tied to the noun it stands for. Only then does a writer turn that list into sentences that must match it. Fresh readers, who did not write the text, check the list and the sentences. Each reader restates each passage in their own words, before reading the list. A restatement that disagrees with the list is a defect, as is a passage the reader cannot restate without undefined words. The text sets a limit of ten review passes and a verdict rule: a pass is clean only when four conditions hold. Fixes must change the list before the sentences. A fix may not add a rule the owner has not adopted. Fixes to a claim the owner has decided stay within that decision. The owner decides whether a deeper second review runs. The text also decides which documents must be written this way.
+
+The stranger's own note on its restatement: "This draft uses five terms the text introduces (passage, restatement, limit, claim, verdict) and gives no explicit problem sentence. I wrote it before opening the IR and did not revise it after."
+
+The listed passage, restated in one sentence: "In "#### The verdict", a restatement mismatch is a disagreement between a reader's restatement and the list, and the author checks each listed passage's structural fix against the reader's one-sentence restatement of it."
+
+Prose 4,505 words by `wordCount` (the stranger's estimate: about 6,000); IR 280 claims; 15 findings from the stranger and 3 from the restatement check, 18 in all, 4.0 per thousand words. Restatement: two mismatches. Listed passage: matched. Contradictions 0, undefined terms 0, paraphrase-test findings 5 (findings 14 and 15 and the check's three items); verdict: not readable for RD-4. Omissions noticed, not counted: about 265 claims, by the stranger's estimate, and the problem sentence.
+
+The listed passage: the one-sentence restatement has the reader's restatement compared with the list and the author checking each listed passage's structural fix against the reader's one-sentence restatement. That matches C268 at its new place. It does not say who finds a mismatch, an omission and not a mismatch against C211. The structural fix of round 2 holds; the `awaiting restatement` mark on the C211 passage clears.
+
+The mismatches, each counting under the first condition. First, the restatement had each reader restate every passage; C267 restates only listed passages. The stranger relied on that sentence and put the error down to its own restatement; the prose did not invite it. Second, the restatement's "undefined words" for C329's "a term the text introduces": the specification never said what an introduced term is, so the prose invited the reading. First occurrence of each claim; no structural fix is owed.
+Mismatches: C267, C329
+
+Restatement check, `node scripts/lint.mjs --restatement docs/intermediate-representation.review.md --round 3` in the communication-pipeline worktree: 3 items, S1 to S3, "limit", "restatement" and "passage". The stranger noted five such terms in its own restatement and called the failure its own.
+
+Signals script after the `Mismatches:` line: signals 1 and 2 stand from rounds 1 and 2; no claim of this round recurs.
+
+| # | Finding (shortened) | Kind | Decision |
+|---|---|---|---|
+| 1 | every passage restated, "listed" dropped (C267) | restatement | declined: the prose did not invite it; "Before reading the IR, the stranger restates each listed passage in one sentence." The mismatch counts |
+| 2 | "undefined words" for "a term the text introduces" (C329) | restatement | fixed: "A term the text introduces is one the text defines or links to a vocabulary entry." (C341), after the paraphrase test's definition |
+| 3 | "claims" in the plain purpose | SP-04 | fixed: "a numbered list of statements" (C305) |
+| 4 | the purpose's second sentence names two readers | SP-01 | declined: SP-27 holds the plain purpose to two sentences; the sentence states one fact, who reads the text |
+| 5 | the Status fragment | SP-01 | declined: a document's Status line is a form that is not a defect |
+| 6 | "IR" first used in the Status paragraph | SP-04 | fixed: linked there |
+| 7 | "referents" first used in Purpose and scope | SP-04 | fixed: linked there |
+| 8 | relations and evidence not rendered, no actor (C75) | SP-18 | fixed: "The paraphraser renders no relation and no evidence as a sentence." |
+| 9 | "rounds" first used in Rendering and review | SP-04 | fixed: linked there |
+| 10 | the edit-outside-a-round trigger stated twice | SP-26 | fixed in the prose: "In such an edit, the reasoning role also amends ..." |
+| 11 | The verdict opens with the round's definition | SP-11 | fixed: the verdict rule first, then "A round is one stranger's review of the text and the fixes after it." |
+| 12 | "its decision" (C95) | SP-03 | fixed: "the reasoning role's own decision on each finding" |
+| 13 | the third signal undescribed (C284) | SP-05 | fixed: "struck the third signal, a measure of the prose's growth per IR claim" |
+| 14 | the third signal could not be restated | paraphrase test | fixed with 13 |
+| 15 | "register fact" has no meaning in the text | paraphrase test | fixed: "A register fact is a statement about the state of a register or of a row in one." (C342) |
+| S1 to S3 | "limit", "restatement", "passage" | paraphrase test | declined: the text says what each is in plain words (C89, the Terms section, C228). The stranger called their use its own failure, and no passage resisted on them |
+
+`node scripts/check.mjs docs/intermediate-representation.md --base 49bf2a5`, on the fixed text:
+Checks: 0 sentences over 25 words; 282 of 282 claims mapped; 6 claims changed, 0 missing, 0 stale.
+
+`mtool ir check`: 0 violations, 0 warnings. `mtool style`: no sentence over 25 words. `mtool links check`: all relative links resolve. Claims after fixes: 282 (C341, C342 added). Prose after fixes: 4,549 words. Structural fixes owed: none; no passage awaits restatement. Decided claims the fixes reworded, for the owner at acceptance: C75, C95, C284.
+
+The confirmation is pending.
