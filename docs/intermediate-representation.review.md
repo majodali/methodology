@@ -1558,6 +1558,7 @@ Signals script before the round: no round of count 7 recorded yet.
 | 2 | 4,472 | 278 | 9 | 2.0 | not readable (mismatch 1, recurring; contradictions 0; undefined terms 2; paraphrase-test findings 2) |
 | 3 | 4,505 | 280 | 18 | 4.0 | not readable (mismatches 2; contradictions 0; undefined terms 0; paraphrase-test findings 5) |
 | 4 | 4,549 | 282 | 10 | 2.2 | not readable (mismatches 2; contradiction 1; undefined term 1; paraphrase-test findings 1) |
+| 5 | 4,560 | 282 | | | pending |
 
 ### Round 1, count 7, 2026-11-02
 
@@ -1797,4 +1798,23 @@ Checks: 0 sentences over 25 words; 281 of 281 claims mapped; 5 claims changed, 0
 
 `mtool ir check`: 0 violations, 0 warnings. `mtool style`: no sentence over 25 words. `mtool links check`: all relative links resolve. Claims after fixes: 281 (C256 cut). Prose after fixes: 4,542 words. Structural fixes owed: none. Decided claims the fixes reworded, for the owner at acceptance: C155, C174, C281, C314, C339.
 
-The confirmation is pending.
+Confirmation: 7 of 7 fixes hold. Not held: none. Declines accepted: 3 of 3. New defects: 1.
+
+The instance read both files in full at fix commit dbbf4d7. The confirmation's fixes, IR first, before round 5 opens:
+
+- N1 (SP-03, "its kind" in C281 names no category): C281 reads "Until the owner decides, a finding that needs a new rule counts against the verdict as its kind does.", case 012 change 9's adopted wording. A new sentence names the kinds: "Such a finding counts only as a restatement mismatch, a contradiction, an undefined term or a passage that fails the paraphrase test." (C343, inferred by R87 from the four conditions). No rule is added.
+- A leftover the instance flagged as not new: relation R71 said "judged text". It now reads "the text the round read with the round's fixes applied", as C155 does.
+
+`node scripts/check.mjs docs/intermediate-representation.md --base dbbf4d7`:
+Checks: 0 sentences over 25 words; 282 of 282 claims mapped; 2 claims changed, 0 missing, 0 stale.
+
+`mtool ir check`: 0 violations, 0 warnings. `mtool style`: no sentence over 25 words. `mtool links check`: all relative links resolve. Prose after the confirmation's fixes: 4,560 words; IR 282 claims.
+
+Signals script after the confirmation line: round 4 held every fix. Signals 1 and 2 stand from rounds 1 and 2, and signal 4 by reading from round 4.
+
+### Round 5, count 7, 2026-11-02
+
+Branch point version and commit: v1.11 at communication-pipeline commit 8e3ceb8. The round reads the text at its opening commit, named in the brief. Prose 4,560 words; IR 282 claims; unratified terms 1 (T39). Human reader for the paraphrase test: the human owner. Stranger: pending, a fresh instance.
+
+Declines carried in the round 5 brief: the six of count 5; round 1's 1 and 3; round 2's 6; round 3's 1, 4 and 5; round 4's 1 and 2, each with its reason. Not carried: the restatement-check items. The brief names the passages round 4 and its confirmation changed, the departure kept for this count. Passages awaiting restatement: none.
+
