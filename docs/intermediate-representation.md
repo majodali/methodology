@@ -2,7 +2,7 @@
 
 This specification says how a text is first written as a numbered list of claims, then turned into prose and reviewed by fresh readers. Agents that write or review such texts read this specification, and so does the human owner who decides on its rules.
 
-Status: active; count 7 under review (round 1) for communication-pipeline evaluation case 015's adopted changes. Count 6 is the version the owner last accepted, on 2026-11-01. A methodology [Specification](vocabulary.md#def-specification), the document type, required by
+Status: active; count 7 under review (round 2) for communication-pipeline evaluation case 015's adopted changes. Count 6 is the version the owner last accepted, on 2026-11-01. A methodology [Specification](vocabulary.md#def-specification), the document type, required by
 [W-009](rules/working-agreement.md#w-009--the-methodology-corpus-writes-its-deliverables-ir-first)
 (the methodology corpus writes its deliverables IR first). Any project
 that adopts W-009 by declaration uses this specification.
@@ -52,10 +52,10 @@ Evidence, Asks. The Claims section may use any sub-headings.
 | Footprint | optional: files or directories separated by semicolons. A directory ends in `/` and covers every file under it |
 
 A `report` is read by someone who shares the conversation:
-[RD-1](style.md#readers), [RD-2](style.md#readers) or
-[RD-3](style.md#readers). A `document` is read by someone who does
-not share the conversation: [RD-4](style.md#readers) or
-[RD-5](style.md#readers). Prose that will live under `docs/` is a
+[RD-1](style.md#readers) (the owner, in conversation), [RD-2](style.md#readers) (the owner, returning) or
+[RD-3](style.md#readers) (a delegating agent). A `document` is read by someone who does
+not share the conversation: [RD-4](style.md#readers) (a fresh agent session) or
+[RD-5](style.md#readers) (an external reader). Prose that will live under `docs/` is a
 `document`.
 
 ## Element kinds
@@ -67,7 +67,7 @@ number, never a suffix.
 | Kind | Letter | [Provenance status](vocabulary.md#def-provenance-status) | Body and rule |
 |---|---|---|---|
 | Term | `T` | carries a provenance status | the word or phrase and either `defined-at:` with a link to its [definition site](vocabulary.md#def-definition-site) or its meaning in the text. A term is defined once per IR. Every [project-specific term](#project-specific-term) used in a claim appears as a term element. A term without a definition site has status [proposed](#provenance). When the IR is the deliverable, the IR's own Asks section lists each proposed term for ratification |
-| Claim | `C` | carries a provenance status | one statement. A claim may carry `evidence: E<n>`. In a report to RD-1 or RD-2, a claim may carry `part: covered` or `part: changed`, naming the W-008 report part it renders under |
+| Claim | `C` | carries a provenance status | one statement. A claim may carry `evidence: E<n>`. In a report to RD-1 or RD-2, `part: covered` or `part: changed` places a claim under *What is already covered* or *What changed* |
 | [Cluster](vocabulary.md#def-cluster) | `G` | carries a provenance status | `cluster:` and an ordered list of claim identifiers. A [topic claim](vocabulary.md#def-topic-claim) is the claim that states the cluster's subject. A cluster's list may open with a topic claim. A claim belongs to at most one cluster |
 | Relation | `R` | carries no provenance status | `C<a> <verb> C<b> because <reason>`, with the verb one of `supports`, `depends-on`, `contradicts`, `refines`. The reason is one sentence or a claim identifier |
 | Evidence | `E` | carries no provenance status | a pointer (a file and line, a commit, a message date or a URL) with what the pointer shows. Evidence is cited by a claim's `evidence:` field, never free-standing |
@@ -136,9 +136,7 @@ the IR holds and exists to join claims. Relations and
 evidence are not rendered as sentences.
 
 The renderer is the paraphraser or, for [normative text](vocabulary.md#def-normative-text), the [reasoning role](vocabulary.md#def-reasoning-role). A paraphrase could change the force of normative text. The unit for [P-008](rules/prose.md#p-008--terms-are-defined-once-and-linked-at-first-use) is the whole text for a report and the section for a document. The renderer links a term with a [definition site](vocabulary.md#def-definition-site) at its first use in the unit. The renderer does not link a later use
-of a term with a definition site. The renderer defines a term the IR introduces in a sentence of its own before its first use. When a report delivers the text, the reasoning role lists each term the IR
-introduces under
-[*Terms introduced*](vocabulary.md#def-terms-introduced) in that report. When neither the methodology's vocabulary nor the reader's defines a term of the IR, the renderer puts the IR's Terms list before the body. Each entry of that Terms section gives the term, its IR definition and its link. When a term draws an undefined-term finding in two rounds, the reasoning role adds the term to that Terms section. For [RD-5](style.md#readers),
+of a term with a definition site. The renderer defines a term the IR introduces in a sentence of its own before its first use. When a report delivers the text, the reasoning role lists under [*Terms introduced*](vocabulary.md#def-terms-introduced) each term the IR introduces, for ratification. When neither the methodology's vocabulary nor the reader's defines a term of the IR, the renderer puts the IR's Terms list before the body. Each entry of that Terms section gives the term, its IR definition and its link. When a term draws an undefined-term finding in two rounds, the reasoning role adds the term to that Terms section. For [RD-5](style.md#readers),
 the first use of a term with a definition site carries its
 definition in parentheses instead of a link. For RD-1 or RD-2, the renderer places a claim under the part its `part:` field names. Without a `part:`
 field, a decided claim renders under *What is already covered*. A
@@ -154,7 +152,7 @@ paraphraser's form.
 The reasoning role makes a fix to rendered prose in the IR first.
 After a fix to the IR, the reasoning role renders the prose again or
 edits it to match the IR. The reasoning role rephrases or
-removes words in a fix to prose before it adds words. The reasoning role adds words in a fix only for a missing definition, a missing referent, a state header or a rewording note. The reasoning role adds no rule in a fix beyond the [changes the owner adopted](https://github.com/majodali/communication-pipeline/blob/main/eval/README.md#meta-review-records) for the count. When a finding needs a new rule, the reasoning role lists the finding for the owner with a proposed wording. Until the owner decides, a finding that needs a new rule counts against the verdict like a mismatch, contradiction or undefined-term finding. When a fix rewords a decided claim, the reasoning role keeps the claim's decided source. The reasoning role notes the rewording as `reworded in count N, round M`. The owner's acceptance of a text ratifies the text's reworded decided claims, unless the owner names one. To separate what is done now from what the text aims at, the reasoning role moves the sentence under a header naming its state. In a fix, the reasoning role does not mark a single sentence with "Today". In a fix, the reasoning role keeps the connective prose that joins a rule to a reason the IR holds as its own claim. When a fix brings in a term no vocabulary or IR element defines, the reasoning role adds it, as proposed, to the IR's Terms list.
+removes words in a fix to prose before it adds words. The reasoning role adds words in a fix only for a missing definition, a missing referent, a state header or a rewording note. The reasoning role adds no rule in a fix beyond the [changes the owner adopted](https://github.com/majodali/communication-pipeline/blob/main/eval/README.md#meta-review-records) for the count. When a finding needs a new rule, the reasoning role lists the finding for the owner with a proposed wording. Until the owner decides, a finding that needs a new rule counts against the verdict like a mismatch, contradiction or undefined-term finding. When a fix rewords a decided claim, the reasoning role keeps the claim's decided source. The reasoning role notes the rewording as `reworded in count N, round M`. The owner's acceptance of a text ratifies the text's reworded decided claims, unless the owner names one. When a fix separates the present from what the text aims at, the reasoning role moves the sentence under a header naming its state. In a fix, the reasoning role does not mark a single sentence with "Today". In a fix, the reasoning role keeps the connective prose that joins a rule to a reason the IR holds as its own claim. When a fix brings in a term no vocabulary or IR element defines, the reasoning role adds it, as proposed, to the IR's Terms list.
 
 The fix rules govern every fix, including an edit outside a round to an IR whose Status is reviewed. In an edit outside a round to a reviewed IR, the reasoning role cuts each claim the edit makes a duplicate. In an edit outside a round to a reviewed IR, the reasoning role amends each claim the edit makes stale.
 
@@ -162,7 +160,7 @@ The fix rules govern every fix, including an edit outside a round to an IR whose
 
 #### The verdict
 
-In a [round](vocabulary.md#def-round), the verdict is readable when four conditions hold. A restatement mismatch is a disagreement the [stranger](vocabulary.md#def-stranger) finds between its [restatement](https://github.com/majodali/communication-pipeline/blob/main/docs/vocabulary.md#def-restatement) and the IR. A claim or a qualifier the restatement leaves out is an [omission](vocabulary.md#def-omission), not a restatement mismatch. A restatement that says a rule has no qualifier the IR holds has a mismatch. A [passage](vocabulary.md#def-passage) is the prose sentences that carry one claim or one cluster. The round's stranger instance is the stranger the reasoning role dispatched for the round. [Confirmation](vocabulary.md#def-confirmation) is the step at which the round's stranger instance says whether each fix holds. At confirmation, the round's stranger instance [withdraws](vocabulary.md#def-withdrawal) a finding other than a restatement mismatch by saying the finding no longer applies to the prose. The <a id="paraphrase-test"></a>paraphrase test asks the stranger to restate the text for the human reader the Reader line names, without any term the text introduces.
+In a [round](vocabulary.md#def-round), one stranger's review of the text and the fixes after it, the verdict is readable when four conditions hold. A restatement mismatch is a disagreement the [stranger](vocabulary.md#def-stranger) finds between its [restatement](https://github.com/majodali/communication-pipeline/blob/main/docs/vocabulary.md#def-restatement) and the IR. A claim or a qualifier the restatement leaves out is an [omission](vocabulary.md#def-omission), not a restatement mismatch. A restatement that says a rule has no qualifier the IR holds has a mismatch. A [passage](vocabulary.md#def-passage) is the prose sentences that carry one claim or one cluster. The round's stranger instance is the stranger the reasoning role dispatched for the round. [Confirmation](vocabulary.md#def-confirmation) is the step at which the round's stranger instance says whether each fix holds. At confirmation, the round's stranger instance [withdraws](vocabulary.md#def-withdrawal) a finding other than a restatement mismatch by saying the finding no longer applies to the prose. The <a id="paraphrase-test"></a>paraphrase test asks the stranger to restate the text for the human reader the Reader line names, without any term the text introduces.
 
 The conditions, each with what counts against the verdict and what does not:
 

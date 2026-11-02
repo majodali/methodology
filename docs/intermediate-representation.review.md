@@ -1555,6 +1555,7 @@ Signals script before the round: no round of count 7 recorded yet.
 | Round | Prose words | IR claims | Findings | Per 1,000 words | Verdict |
 |---|---|---|---|---|---|
 | 1 | 4,434 | 278 | 20 | 4.5 | not readable (mismatches 3; contradictions 0; undefined terms 2; paraphrase-test findings 4) |
+| 2 | 4,472 | 278 | | | pending |
 
 ### Round 1, count 7, 2026-11-02
 
@@ -1607,4 +1608,29 @@ Claims after fixes: 278 (C152 cut, C338 added). Prose after fixes: 4,446 words. 
 
 For the ruleset's next review: the restatement check lists a term the restatement uses in its plain sense, such as "rounds" and "counts". Both counts' strangers used such words; the check cannot tell the senses apart.
 
-The confirmation is pending.
+Confirmation: 12 of 14 fixes hold. Not held: 5, 4. Declines accepted: 3 of 6. New defects: 3.
+
+The instance read both files in full at fix commit e2a2845. The confirmation's fixes, IR first, before round 2 opens:
+
+- Fix 4 did not hold, with N1 (SP-26): the cut of C152 also dropped "for ratification". Re-fixed: C153 reads "When a report delivers the text, the reasoning role lists under *Terms introduced* each term the IR introduces, for ratification."
+- Fix 5 did not hold (SP-04): "the W-008 report part" stayed undefined. Re-fixed: C30 reads "In a report to RD-1 or RD-2, `part: covered` or `part: changed` places a claim under *What is already covered* or *What changed*."
+- N2 (the prose against C17 and C18): the prose now carries each reader's name beside its link.
+- N3 (SP-18, C307's trigger): C307 reads "When a fix separates the present from what the text aims at, the reasoning role moves the sentence under a header naming its state."
+- P1, decline not accepted: the instance holds that the text links "round" without saying what it is. Fixed: C93 reads "In a round, one stranger's review of the text and the fixes after it, the verdict is readable when four conditions hold."
+- P3, decline not accepted: the restatement reused "restatement" after saying it plainly. The decline stands: the fourth condition counts a passage the stranger cannot restate without the term, and this sentence restated it plainly first.
+- P4, decline not accepted: the restatement copied C6's wording. The decline stands: the copied sentence holds no term the text introduces, so it shows no passage that can only be repeated.
+- Declines 1, 3 and P2 accepted.
+
+Claims check after the confirmation's fixes, `node scripts/check.mjs docs/intermediate-representation.md --base e2a2845`:
+Checks: 0 sentences over 25 words; 278 of 278 claims mapped; 4 claims changed, 0 missing, 0 stale.
+
+Prose after the confirmation's fixes: 4,472 words. Decided claims reworded after confirmation, for the owner at acceptance: C30, C93, C153, C307.
+
+Signals script after the confirmation line: no signal. Signal 1 needs fixes not held in two or more rounds; round 1 is the first.
+
+### Round 2, count 7, 2026-11-02
+
+Branch point version and commit: v1.11 at communication-pipeline commit 8e3ceb8. The round reads the text at its opening commit, named in the brief. Prose 4,472 words; IR 278 claims; unratified terms 0. Human reader for the paraphrase test: the human owner. Stranger: pending, a fresh instance.
+
+Declines carried in the round 2 brief: the six of count 5, and round 1's findings 1 and 3, each with its reason. Not carried: P2 to P4, which concern round 1's restatement and not the text. The brief also names the passages the confirmation's fixes changed, for the whole-text read. Passages awaiting restatement: none.
+
