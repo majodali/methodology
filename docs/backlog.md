@@ -442,6 +442,16 @@ entries update in the same commit as the work they describe
   [docs/records/normative-second-round.ir.md](records/normative-second-round.ir.md).
 
 ## Upcoming
+- [ ] **Editorial findings on K-003's released text** — When:
+  2026-10-30, round 1 of the K-003 amendment's count 1; queued by the
+  owner's adjudication of 2026-11-02 for the next K-003 edit. Status:
+  open; "Checked entries MUST be rewritten to describe what actually
+  shipped" names no actor; "entries MUST carry current stage
+  designations" names no actor; the Rationale's clause "a mirror, not a
+  duplication" is excess. An actor added to a MUST sentence changes an
+  obligation, so the edit is an amendment. Pointer:
+  [K-003](rules/knowledge.md#k-003--the-backlog-is-the-single-source-of-progress-truth),
+  [review record](records/k-003-planning-execution-model.review.md).
 - [ ] **Editorial findings on W-009's older text** — When: 2026-10-30, the
   stranger read of the IR-only clause. Status: open; the statement's first
   sentence runs 35 words and the Motivated-by field 51; RD-4 and RD-5 are

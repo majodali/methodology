@@ -74,10 +74,15 @@ carry: amendment title and PR link · suggested by (evidencing instance)
   from the model from the declaration on. From then on it rewrites its
   checked entries by that rendering of the implementation map. K-003's
   duty to rewrite checked entries stands, met by that rendering.
-- **Adjudication**: pending. The owner adopted the referent-clause
-  marker on 2026-11-01. Count 1 of the stranger rounds read readable at
-  round 4 on 2026-11-01, awaiting the owner's adjudication under
-  Article 8. The review record reads `Meta-review: pending`.
+- **Adjudication**: accepted as it stands by the owner on 2026-11-02,
+  under Article 8 (methodology PR #73 merged; count 1's later rounds on
+  PR #74). The owner adopted the referent-clause marker on 2026-11-01.
+  Count 1 of the stranger rounds read readable at round 4 on
+  2026-11-01. The owner ratified the five proposed claims. Three
+  findings on K-003's released text are queued in the
+  [Backlog](backlog.md) for the next K-003 edit. The meta-review is
+  deferred to the communication-pipeline's ruleset review, so the
+  review record reads `Meta-review: pending`.
   
 ### The stranger rounds take evaluation case 012's changes
 

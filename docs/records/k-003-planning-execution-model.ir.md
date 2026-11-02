@@ -2,10 +2,10 @@
 
 Reader: RD-4 (a fresh agent session) reading K-003 (the Backlog is the single source of progress truth) as amended; the owner adjudicates the amendment.
 Purpose: document. The amendment of K-003 in place, by which a project whose Classification declares a planning/execution model takes that model as its referent for what is done and what is next, with the vocabulary rows and the release-register entry the amendment needs.
-Status: reviewed (count 1 readable at round 4 of four on 2026-11-01, the round's fix confirmed and its finding withdrawn, one ask edit applied after confirmation; rendered by the reasoning role; awaiting the owner's adjudication under Article 8; Meta-review: pending, by the second signal in round 3; footprint: declared 5, changed 5, surprises 0, misses 0, on each of the count's two branches; unratified terms 0)
+Status: delivered (adjudicated and accepted as it stands by the owner on 2026-11-02 under Article 8, awaiting release; the five proposed claims ratified; count 1 readable at round 4 of four on 2026-11-01; rendered by the reasoning role; Meta-review: pending, deferred to the communication-pipeline's ruleset review; footprint: declared 6, changed 6, surprises 0, misses 0 on branch k-003-count-1-rounds, and declared 5, changed 5 on PR #73's branch before docs/backlog.md was declared; unratified terms 0)
 Source: the project-orchestrator proposal "A declared planning/execution model is the source of progress truth" and its IR (93 claims, 17 terms) at project-orchestrator commit 25e92e8, approved for carrying by the owner at node P3-N007's verifying gate on 2026-10-30; the owner's decision of 2026-10-30 that the proposal lands in this repository as a methodology change, by pull request.
 Normative: yes
-Footprint: docs/rules/knowledge.md; docs/vocabulary.md; docs/releases.md; docs/records/k-003-planning-execution-model.ir.md; docs/records/k-003-planning-execution-model.review.md
+Footprint: docs/rules/knowledge.md; docs/vocabulary.md; docs/releases.md; docs/backlog.md; docs/records/k-003-planning-execution-model.ir.md; docs/records/k-003-planning-execution-model.review.md
 
 ## Terms
 
@@ -61,13 +61,13 @@ C4. The project-orchestrator Project model at commit 86a1330 rendered the implem
 
 C5. The renderings of the project-orchestrator Project model at commit 86a1330 were compared with the project-orchestrator Backlog. evidence: E3. [decided: project-orchestrator slice record at commit 86a1330]
 
-C6. K-003's Motivated-by line names the project-orchestrator proposal and the owner's approval of the proposal for carrying at project-orchestrator node P3-N007 on 2026-10-30. evidence: E4. [proposed: this IR]
+C6. K-003's Motivated-by line names the project-orchestrator proposal and the owner's approval of the proposal for carrying at project-orchestrator node P3-N007 on 2026-10-30. evidence: E4. [decided: owner, 2026-11-02]
 
-C7. K-003's Cites line names Constitution Article 7 and the vocabulary row for planning/execution model as the places that say how a Classification declares the model. [proposed: this IR]
+C7. K-003's Cites line names Constitution Article 7 and the vocabulary row for planning/execution model as the places that say how a Classification declares the model. [decided: owner, 2026-11-02]
 
-C45. K-003's Cites line names the C-tier vocabulary row as the criticality scale of the Applies line. [proposed: this IR]
+C45. K-003's Cites line names the C-tier vocabulary row as the criticality scale of the Applies line. [decided: owner, 2026-11-02]
 
-C12. K-003's Protects line names provenance, because each claim of what is done and what is next traces to one record. [proposed: this IR]
+C12. K-003's Protects line names provenance, because each claim of what is done and what is next traces to one record. [decided: owner, 2026-11-02]
 
 ### The vocabulary
 
@@ -103,7 +103,7 @@ C22. The vocabulary row for planning/execution model ships in the release that c
 
 C23. The Release-register entry's title is "A declared planning/execution model is the source of progress truth". evidence: E1. [decided: owner, 2026-10-30]
 
-C24. The entry's PR field names this amendment's pull request, in the form of the register's other Unreleased entries. evidence: E5. [proposed: this IR]
+C24. The entry's PR field names this amendment's pull request, in the form of the register's other Unreleased entries. evidence: E5. [decided: owner, 2026-11-02]
 
 C25. The entry names project-orchestrator as the suggesting project, with RU-021 (the planning/execution model is the source of progress truth) and the slice at commit 86a1330. evidence: E1. [decided: owner, 2026-10-30]
 
@@ -185,5 +185,9 @@ E10. The owner's decision of 2026-11-01, relayed by the Orchestrator to the reas
 
 A1. The owner, under Article 8 (amendments, versions, and migration): accept the amendment, accept it with amendments, or reject it. Depends: C1, C22.
 
+A1 resolved: accepted as it stands by the owner on 2026-11-02, under Article 8.
+
 A2. The owner: ratify or strike the five proposed claims, the Motivated-by wording (C6), the Cites entry for Article 7 and the planning/execution model row (C7), the Protects line (C12), the PR field (C24) and the Cites entry for the C-tier row (C45). Depends: C6, C7, C12, C24, C45.
+
+A2 resolved: ratified by the owner on 2026-11-02; C6, C7, C12, C24 and C45 carry decided provenance from that date.
 

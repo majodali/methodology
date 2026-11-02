@@ -211,12 +211,14 @@ Footprint: declared 5, changed 5, surprises 0, misses 0, on branch `k-003-planni
 
 Meta-review: pending. Signals checked: signal 1 (fixes not held or claims missing or stale in two or more rounds) did not fire: one fix not held, in round 1 only. Signal 2 fired: a restatement mismatch recurred on one passage, the declaration in the Cites line, in rounds 1 (C8, C9) and 3 (C10). The signal is read from the record; the signals script, which keys recurrence by claim, does not report it. Signal 3 did not fire: words per claim fell from 6.07 in round 1 to 5.70 in round 4. Signal 4 did not fire: no contradiction in round 3 or later. The text is a meta-review subject.
 
+The owner deferred the count's meta-review on 2026-11-02 to the communication-pipeline's ruleset review, which reads this record among its inputs. The `Meta-review:` line stays `pending` until that review delivers.
+
 ### For the owner
 
-- A1: adjudicate the amendment under Article 8: accept, accept with amendments, or reject.
-- A2: ratify or strike the five proposed claims: C6, the Motivated-by wording; C7, the Cites entry for Article 7 and the planning/execution model row; C12, the Protects line; C24, the PR field; C45, the Cites entry for the C-tier row.
-- Candidates for the next K-003 edit, from round 1: finding 5, "Checked entries MUST be rewritten …" names no actor; finding 6, "entries MUST carry current stage designations" names no actor; finding 8, the Rationale's clause "a mirror, not a duplication". Each is released v1.6.0 text outside this amendment.
-- Terms: none unratified. The amendment's vocabulary rows, *list of what is next* and *rendering*, carry terms the owner ratified on 2026-10-30.
-- Decided claims the rounds reworded, for ratification in their new wording: C3, C4 and C5 name the record of the Project model at commit `86a1330` in place of the slice; C6 names node P3-N007 without its gate's stage; C8 to C11 moved, unworded, from the Cites line to the vocabulary row.
-- Ruleset note, for the communication-pipeline's review: the signals script keys recurrence by claim, not by passage, so it missed signal 2 in this count.
+- A1: adjudicate the amendment under Article 8: accept, accept with amendments, or reject. **Resolved**: accepted as it stands, 2026-11-02.
+- A2: ratify or strike the five proposed claims: C6, the Motivated-by wording; C7, the Cites entry for Article 7 and the planning/execution model row; C12, the Protects line; C24, the PR field; C45, the Cites entry for the C-tier row. **Resolved**: ratified, 2026-11-02.
+- Candidates for the next K-003 edit, from round 1: finding 5, "Checked entries MUST be rewritten …" names no actor; finding 6, "entries MUST carry current stage designations" names no actor; finding 8, the Rationale's clause "a mirror, not a duplication". Each is released v1.6.0 text outside this amendment. **Resolved**: queued for the next K-003 edit, 2026-11-02, as a Backlog entry.
+- Terms: none unratified. The amendment's vocabulary rows, *list of what is next* and *rendering*, carry terms the owner ratified on 2026-10-30. **Resolved**: nothing to ratify.
+- Decided claims the rounds reworded, for ratification in their new wording: C3, C4 and C5 name the record of the Project model at commit `86a1330` in place of the slice; C6 names node P3-N007 without its gate's stage; C8 to C11 moved, their words unchanged, from the Cites line to the vocabulary row. **Resolved**: accepted with the amendment as it stands, 2026-11-02.
+- Ruleset note, for the communication-pipeline's review: the signals script keys recurrence by claim, not by passage, so it missed signal 2 in this count. **Resolved**: listed for the pipeline's ruleset review, which also takes the deferred meta-review.
 
