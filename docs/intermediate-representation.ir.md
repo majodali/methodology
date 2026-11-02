@@ -77,7 +77,7 @@ T36. IR-only. defined-at: vocabulary.md#def-ir-only-document [decided: owner, 20
 
 T37. Structural fix. defined-at: intermediate-representation.md#structural-fix [decided: owner, 2026-10-29]
 
-T38. Paraphrase test: the stranger's restatement of a text for the human reader the text's Reader line names, without any term the text introduces. [proposed: this IR]
+T38. Paraphrase test. defined-at: intermediate-representation.md#paraphrase-test [decided: owner, 2026-11-02, case 015 terms by the default]
 
 ## Claims
 
@@ -746,10 +746,8 @@ E7. methodology docs/roadmap.ir.md ask A2 and docs/records/ir-only-documents.ir.
 
 E8. communication-pipeline eval/cases/012-meta-review-branch-point-v1.9-and-ir-spec-count-5-2026-10-30.md, Outcome, changes 1 to 15, and the owner's decision of 2026-10-30: all fifteen adopted as recommended; the terms omission, fix pass, new defect, claims check, step-6 fix, awaiting restatement and unparsed line ratified as vocabulary rows.
 
-E9. communication-pipeline eval/cases/015-ruleset-simplification-review-2026-11-02.md, Outcome, changes 1 to 30, adopted by the owner on 2026-11-02 (changes 31 to 35 declined), as the Orchestrator relayed the decision; change 5 carries case 013's changes 1 to 3 here.
+E9. communication-pipeline eval/cases/015-ruleset-simplification-review-2026-11-02.md, Outcome, changes 1 to 30, adopted by the owner on 2026-11-02 (changes 31 to 35 declined), the case's decision line; change 5 carries case 013's changes 1 to 3 here.
 
 ## Asks
 
 A10. Accept or reject count 7 of the specification. Under communication-pipeline evaluation case 015 change 19, acceptance ratifies the wording of each decided claim count 7 rewords, unless the owner names one. Depends: C93, C143, C202, C283, C305 to C337.
-
-A11. Ratify or strike the term paraphrase test (T38). Depends: C328.
