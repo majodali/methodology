@@ -41,6 +41,8 @@ Changes to K-003 beyond the proposal's replacement text, each in the IR:
 |---|---|---|---|---|---|
 | 1 | 261 | 43 | 8 | 30.7 | not readable (one own mismatch on C8 and C9, quoted, not counting; contradiction 1; undefined terms 2) |
 | 2 | 268 | 43 | 5 | 18.7 | not readable (one own mismatch on C2 with T7, quoted, not counting; contradictions 2; undefined term 1) |
+| 3 | 278 | 44 | 2 | 7.2 | not readable (one own mismatch on C10, the Cites passage's second in two rounds, counting under the override; contradictions 0; undefined term 1) |
+| 4 | 251 | 44 | 1 | 4.0 | readable (restatement matched; contradictions 0; the undefined-term finding withdrawn at confirmation on a reason quoting the prose) |
 
 ### Round 1, count 1, 2026-10-30
 
@@ -106,7 +108,7 @@ Awaiting restatement from round 1: the re-fix of finding 4 (the Applies line) an
 | 2 | the title, "the single source of progress truth", against the appended sentence | SP-25 | declined: the reason of round 1, finding 7. The owner decided at P3-N007's gate on 2026-10-30 that the title and the referent clauses stand, with "instead" marking the exception; the title is the rule's name (C38). The instance offered to withdraw it if the rule records the precedence |
 | 3 | "implementation map" in the Motivated-by line before the Statement defines it | SP-04 | fixed: the Motivated-by line links "implementation map" to K-003's own anchor, whose Statement defines it |
 | 4 | "which" in the Cites line has no clear antecedent | SP-03 | fixed: "and the entry names the custom document types that make up the model, with no new Classification field", per C10 and C11 |
-| 5 | the referent clauses, "no other document may claim that role", against the appended sentence | SP-25 | declined: the reason of 2 |
+| 5 | the referent clauses, "no other document may claim that role", against the appended sentence | SP-25 | declined: the reason of 2. Fixed after round 2 by the owner's decision of 2026-11-01, which adopted the marker (round 3 entry) |
 
 Two instances in a row, rounds 1 and 2, read the title and the referent clauses as contradicting the appended sentence. The Orchestrator is putting the marker to the owner now: "no other document may claim that role, except as the next sentence provides", and no change to the title (C38). The round 2 confirmation table carries findings 2 and 5 as declines the instance may withdraw by quoting the appended sentence.
 
@@ -123,3 +125,101 @@ Re-fixed after confirmation:
 | N1 | "with no new Classification field" in the Cites line has no verb | SP-03 | "and the declaration needs no new Classification field", per C11. Marked `awaiting restatement` |
 
 The re-fix changes no claim.
+
+### Round 3, count 1, 2026-11-01
+
+Branch: methodology PR #73 merged at `a1959c3`'s state, so the count continues on branch `k-003-count-1-rounds` from `main` at `be5f993`. Branch point version and commit: v1.9 at communication-pipeline `main`, commit `d1c5b55`, the version the count opened under; v1.9 is still the active version on that project's `main`. The specification on this repository's `main` now carries count 6. Under branch point v1.9 a change the owner adopts during a count applies from the next count, so this count's rounds keep the rules it opened under. Brief: `k003-r3-brief.md` in the reasoning role's scratchpad, naming commit `e404dce`. Prose 278 words; IR 44 claims; unratified terms 0.
+
+The owner's decision of 2026-11-01 adopted the marker. The second referent clause now reads "no other document may claim that role, except as the next sentence provides" (C44, decided, evidence E10; R7 ties it to C2). Round 2's finding 5 is closed as fixed by that decision; it is no longer a decline. The title is unchanged (C37). The release-register entry's impact assessment gains one line on the marker.
+
+Claims check before the round (base: round 2 prose at `d29bf2d`): 1 changed claim, C44, new; 0 missing, 0 stale. Round trip: 44 of 44 claims mapped. IR checks: 0 violations, 0 warnings. `mtool audit form`: no findings.
+
+Awaiting restatement: the re-fix of round 2's new defect N1, the Cites line's "and the declaration needs no new Classification field". This round's entry states whether the round names it on its `Mismatches:` line or in a finding. The marked clause sits in the passage of C2, which drew round 2's own mismatch; a second mismatch on that passage counts under the override.
+
+Signals script before the round: no signal fired; no line unparsed.
+
+Carried into the brief: round 1's declines 5, 6 and 8 with their reasons, and the readability note.
+
+Stranger: instance `a9f2d1b45960bf846`, a fresh instance, at commit `e404dce`. Prose 278 words by `wordCount`; IR 44 claims; 2 findings, 7.2 per thousand words. Restatement: one mismatch, on C10, attributed by the stranger to its own restatement, with a quoted prose sentence: the restatement dropped "that make up the model" from the Cites line's declaration. Contradictions 0: the marker holds, and no finding raises the referent clauses. Undefined term 1 (finding 2); verdict: not readable for RD-4.
+
+Mismatches: C10 (own; relied on C10)
+
+The quoted sentence is the Cites line's declaration clause, which carries C8 to C11; the quote's exact words are in the stranger's report, which the Orchestrator holds. The passage, the declaration in the Cites line, drew round 1's own mismatch on C8 and C9. This mismatch is the passage's second in two rounds, so it counts under the override, and step 6 applies. Signals script after the `Mismatches:` line: no signal fired; the script compares claims, and round 1's line named C8 and C9, not C10. The recurrence is on the passage, read from the review record. Under the specification's second meta-review signal, a restatement mismatch that recurred on one passage in two rounds fires the signal, so this text is a meta-review subject; the script misses the recurrence because it compares claims. The count's `Meta-review:` line, written at the count's end, reads `pending`.
+
+Awaiting restatement from round 2: the re-fix of N1, "and the declaration needs no new Classification field" in the Cites line. Round 3 names the passage that holds it, on its `Mismatches:` line and in finding 2.
+
+| # | Finding (shortened) | Kind | Decision |
+|---|---|---|---|
+| 1 | own mismatch on C10, "that make up the model" dropped from the Cites line's declaration; the passage's second mismatch in two rounds | restatement, step 6 | structural fix: the declaration mechanism (C8 to C11) moves out of K-003's Cites line into the vocabulary row for planning/execution model, where a declaration form belongs. The Cites line now cites Constitution Article 7 and that row in one short clause, "(how a Classification declares the model)"; C7 reworded to match. C8 to C11 keep their words and move to the IR's vocabulary section. No decided claim changed. Marked `awaiting restatement` |
+| 2 | "definition-by-citation" in the Cites line undefined | SP-04 | resolved by the move of 1: the term leaves K-003. The vocabulary row reads "a definition by citation under Article 7", linked to the Article |
+
+Claims after fixes: 44. Prose after fixes: 251 words. Claims check after the fixes (base: round 3 prose at `e404dce`, over K-003, the vocabulary rows and the release-register entry): 1 changed claim (C7), 0 missing, 0 stale. Round trip: 44 of 44 claims mapped; the render map sends C8 to C11 to the vocabulary row. IR checks: 0 violations, 0 warnings. `mtool audit form`: no findings. Fix commit: `ba4e286`.
+
+For round 4's brief: the Cites line, listed for a one-sentence restatement before the stranger opens the IR.
+
+Confirmation: 0 of 0 fixes hold. Not held: none. Declines accepted: 0 of 0. New defects: 0.
+
+The round 3 instance read K-003 and the IR at `ba4e286` for new defects only, since the step-6 move is not for confirmation and finding 2 was resolved by the move. It found none, and confirmed that "definition-by-citation" is gone from K-003. The step-6 move stays `awaiting restatement`.
+
+Two reader points from the instance, recorded without a fix:
+
+- The Cites line's parenthesis glosses only the vocabulary row, so the line does not state Article 7's own contribution. C7 and the prose agree. If the round 4 stranger raises it, the fix names Article 7's role in two words.
+- The link to the planning/execution model row resolves on a released version only when the row ships with the amendment. C21 and C22 already hold that.
+
+### Round 4, count 1, 2026-11-01
+
+Branch point version and commit: v1.9 at communication-pipeline `main`, commit `d1c5b55`; the count keeps the rules it opened under. Brief: `k003-r4-brief.md` in the reasoning role's scratchpad, naming commit `351296b`. Prose 251 words; IR 44 claims; unratified terms 0.
+
+Claims check before the round (base: round 3 prose at `e404dce`): 1 changed claim (C7), 0 missing, 0 stale.
+
+Awaiting restatement: the step-6 move of round 3's finding 1, the Cites line. The brief lists the Cites line for a one-sentence restatement before the stranger opens the IR. This round's entry states whether that restatement matched. A mismatch on the Cites passage or on the referent clauses' passage (C2) counts under the override.
+
+Signals script before the round: no signal fired; no line unparsed. The second signal fired in round 3 on the Cites passage, read from the record (round 3 entry).
+
+Carried into the brief: round 1's declines 5, 6 and 8 with their reasons, and the readability note. The carrier note reads: K-003 carries C1 to C7, C12, C44 and the terms; the vocabulary rows and the release-register entry carry C8 to C11 and C13 to C43.
+
+Stranger: instance `aa54c592425d18317`, a fresh instance, at commit `351296b`. Side effect: the instance made one read-only `list_sessions` call, whose result it did not use; the brief allowed reading the two files only. Prose 251 words by `wordCount`; IR 44 claims; 1 finding, 4.0 per thousand words. Restatement: matched the IR; no restatement mismatch. Contradictions 0. Undefined term 1 (finding 2, in the instance's numbering).
+
+Mismatches: none
+
+The listed passage: the instance's one-sentence restatement of the Cites line matched the IR. The step-6 move of round 3's finding 1 holds; its `awaiting restatement` mark clears. Signals script after the `Mismatches:` line: no signal fired.
+
+| # | Finding (shortened) | Kind | Decision |
+|---|---|---|---|
+| 2 | "stage designations" in the released sentence "entries MUST carry current stage designations" is undefined | SP-04 | fixed: "stage designations" is linked at first use to the Workflow vocabulary row, which defines a Backlog entry's current stage as a designation. A first-use link is within the amendment's scope, as the first commit's links were; the sentence's words are unchanged. The finding falls outside round 1's declines 5, 6 and 8, which concern actors and the Rationale |
+
+Two points the instance did not count, fixed in the IR:
+
+- C7 omitted the C-tier citation the Cites line carries. The citation becomes its own claim, C45, proposed: "K-003's Cites line names the C-tier vocabulary row as the criticality scale of the Applies line." C7 keeps its words. A single extended C7 drew a compound-claim warning (CK-03), so the addition takes a new number.
+- T2 said "every project" where the Applies line limits K-003 to C1 and above. T2 now reads "every project at criticality tier C1 and above".
+
+Verdict: not readable, pending confirmation. Under the rule the count opened under, an undefined-term finding the round's instance withdraws at confirmation, on a reason quoting the prose, does not count against the verdict. If the instance withdraws finding 2 on the linked sentence, round 4 reads readable and step 7 applies.
+
+Claims after fixes: 45. Prose after fixes: 251 words. Claims check after the fixes (base: round 4 prose at `351296b`): 1 changed claim (C45, new), 0 missing, 0 stale. Round trip: 45 of 45 claims mapped. IR checks: 0 violations, 0 warnings. `mtool audit form`: no findings. Fix commit: `c71dee7`.
+
+Confirmation: 1 of 1 fixes hold. Not held: none. Declines accepted: 0 of 0. New defects: 1.
+
+The round 4 instance confirmed at `c71dee7`. The fix of finding 2 holds, and the instance withdrew finding 2 on a reason quoting the linked sentence, "entries MUST carry current stage designations". The withdrawn undefined-term finding does not count against the verdict. Round 4 reads readable.
+
+Step 7: the round's one finding, 2, was fixed in the IR's terms and the prose before confirmation and is marked **confirmed** (withdrawn). The new defect, N1, sits in the IR only: ask A2 named four proposed claims and omitted C45. A2 now names five, C6, C7, C12, C24 and C45. The edit is an ask-list edit with no prose change, so it needs no stranger read; it is applied after confirmation, as count 5 of the specification did. N1 is marked **applied after confirmation**.
+
+### Verdict, count 1
+
+Readable at round 4 of four, on 2026-11-01, under the rules the count opened under (the specification at `e049bc6`, branch point v1.9). Rounds 1 to 3 were not readable. The text is not delivered by the reasoning role: an amendment awaits the owner's adjudication under Article 8. The IR's Status reads `reviewed`. The release-register entry's Adjudication field reads pending.
+
+Footprint: declared 5, changed 5, surprises 0, misses 0, on branch `k-003-planning-execution-model` (PR #73, base `e049bc6`) and on branch `k-003-count-1-rounds` (base `be5f993`). Unratified terms: 0.
+
+Meta-review: delivered (signal 2; pending at the close on 2026-11-01): [evaluation case 015](https://github.com/majodali/communication-pipeline/blob/main/eval/cases/015-ruleset-simplification-review-2026-11-02.md), 2026-11-02. Signals checked: signal 1 (fixes not held or claims missing or stale in two or more rounds) did not fire: one fix not held, in round 1 only. Signal 2 fired: a restatement mismatch recurred on one passage, the declaration in the Cites line, in rounds 1 (C8, C9) and 3 (C10). The signal is read from the record; the signals script, which keys recurrence by claim, does not report it. Signal 3 did not fire: words per claim fell from 6.07 in round 1 to 5.70 in round 4. Signal 4 did not fire: no contradiction in round 3 or later. The text is a meta-review subject.
+
+The owner deferred the count's meta-review on 2026-11-02 to the communication-pipeline's ruleset review, which read this record among its inputs. That review is evaluation case 015; the owner adopted its change 30 on 2026-11-02, which records the meta-review as delivered.
+
+### For the owner
+
+- A1: adjudicate the amendment under Article 8: accept, accept with amendments, or reject. **Resolved**: accepted as it stands, 2026-11-02.
+- A2: ratify or strike the five proposed claims: C6, the Motivated-by wording; C7, the Cites entry for Article 7 and the planning/execution model row; C12, the Protects line; C24, the PR field; C45, the Cites entry for the C-tier row. **Resolved**: ratified, 2026-11-02.
+- Candidates for the next K-003 edit, from round 1: finding 5, "Checked entries MUST be rewritten …" names no actor; finding 6, "entries MUST carry current stage designations" names no actor; finding 8, the Rationale's clause "a mirror, not a duplication". Each is released v1.6.0 text outside this amendment. **Resolved**: queued for the next K-003 edit, 2026-11-02, as a Backlog entry.
+- Terms: none unratified. The amendment's vocabulary rows, *list of what is next* and *rendering*, carry terms the owner ratified on 2026-10-30. **Resolved**: nothing to ratify.
+- Decided claims the rounds reworded, for ratification in their new wording: C3, C4 and C5 name the record of the Project model at commit `86a1330` in place of the slice; C6 names node P3-N007 without its gate's stage; C8 to C11 moved, their words unchanged, from the Cites line to the vocabulary row. **Resolved**: accepted with the amendment as it stands, 2026-11-02.
+- Ruleset note, for the communication-pipeline's review: the signals script keys recurrence by claim, not by passage, so it missed signal 2 in this count. **Resolved**: listed for the pipeline's ruleset review, evaluation case 015, which also delivered the meta-review.
+
+Meta-review: delivered (signal 2): [evaluation case 015](https://github.com/majodali/communication-pipeline/blob/main/eval/cases/015-ruleset-simplification-review-2026-11-02.md), 2026-11-02.

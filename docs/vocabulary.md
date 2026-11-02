@@ -283,7 +283,14 @@ in [constitution.md](constitution.md#draft-history-pre-10).
 - <a id="def-planning-execution-model"></a>**Planning/execution model** — the plan model of a project plus
   the verification evidence of each node: what the web view renders
   and the source of progress truth (owner, 2026-10-28,
-  [vision](vision.ir.md)).
+  [vision](vision.ir.md)). A [Classification](#def-classification)
+  declares the model by an [entry](#def-entry) in its Custom
+  definitions section. The entry is a definition by citation under
+  [Article 7](constitution.md#article-7--the-c0-baseline-custom-definitions-and-the-sandbox)
+  and names the [custom document types](#def-custom-document-type) that
+  make up the model. The declaration needs no new Classification field
+  (owner, 2026-10-30,
+  [record](records/k-003-planning-execution-model.ir.md)).
 - <a id="def-list-of-what-is-next"></a>**List of what is next** — the answer a project's records
   give to what is next. Where the project's
   [Classification](#def-classification) declares no planning/execution

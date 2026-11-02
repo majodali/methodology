@@ -2,16 +2,16 @@
 
 Reader: RD-4 (a fresh agent session) reading K-003 (the Backlog is the single source of progress truth) as amended; the owner adjudicates the amendment.
 Purpose: document. The amendment of K-003 in place, by which a project whose Classification declares a planning/execution model takes that model as its referent for what is done and what is next, with the vocabulary rows and the release-register entry the amendment needs.
-Status: rendered (count 1, round 2 not readable, 2 of 2 fixes held, finding 2 withdrawn, finding 5 declined pending the owner, 1 new defect fixed; round 1 not readable, 2 of 3 fixes held and 1 re-fixed, 1 new defect fixed, 4 declines accepted, finding 7 withdrawn; rendered by the reasoning role on 2026-10-30; unratified terms 0)
+Status: delivered (adjudicated and accepted as it stands by the owner on 2026-11-02 under Article 8, awaiting release; the five proposed claims ratified; count 1 readable at round 4 of four on 2026-11-01; rendered by the reasoning role; Meta-review: delivered, communication-pipeline evaluation case 015, 2026-11-02; footprint: declared 6, changed 6, surprises 0, misses 0 on branch k-003-count-1-rounds, and declared 5, changed 5 on PR #73's branch before docs/backlog.md was declared; unratified terms 0)
 Source: the project-orchestrator proposal "A declared planning/execution model is the source of progress truth" and its IR (93 claims, 17 terms) at project-orchestrator commit 25e92e8, approved for carrying by the owner at node P3-N007's verifying gate on 2026-10-30; the owner's decision of 2026-10-30 that the proposal lands in this repository as a methodology change, by pull request.
 Normative: yes
-Footprint: docs/rules/knowledge.md; docs/vocabulary.md; docs/releases.md; docs/records/k-003-planning-execution-model.ir.md; docs/records/k-003-planning-execution-model.review.md
+Footprint: docs/rules/knowledge.md; docs/vocabulary.md; docs/releases.md; docs/backlog.md; docs/records/k-003-planning-execution-model.ir.md; docs/records/k-003-planning-execution-model.review.md
 
 ## Terms
 
 T1. Planning/execution model. defined-at: ../vocabulary.md#def-planning-execution-model [decided: owner, 2026-10-28]
 
-T2. Backlog: the one dependency-ordered register of completed and upcoming work that K-003 requires of every project. defined-at: https://github.com/majodali/methodology/blob/v1.6.0/docs/rules/knowledge.md#k-003--the-backlog-is-the-single-source-of-progress-truth [decided: methodology v1.6.0, K-003]
+T2. Backlog: the one dependency-ordered register of completed and upcoming work that K-003 requires of every project at criticality tier C1 and above. defined-at: https://github.com/majodali/methodology/blob/v1.6.0/docs/rules/knowledge.md#k-003--the-backlog-is-the-single-source-of-progress-truth [decided: methodology v1.6.0, K-003]
 
 T3. Classification. defined-at: ../vocabulary.md#def-classification [decided: methodology vocabulary]
 
@@ -49,9 +49,9 @@ T17. Register. defined-at: ../vocabulary.md#def-register [decided: methodology v
 
 C1. K-003's statement gains one sentence at its end: "Where the project's Classification declares a planning/execution model, that model is the referent instead, and the Backlog's implementation map and list of what is next are renderings of it." evidence: E1, E4. [decided: owner, 2026-10-30]
 
-
 C2. The appended sentence is an exception to the two referent clauses before it, "The Backlog is the referent for what is done and what is next" and "no other document may claim that role". evidence: E1. [decided: owner, 2026-10-30]
 
+C44. The second referent clause reads "no other document may claim that role, except as the next sentence provides". evidence: E10. [decided: owner, 2026-11-01]
 
 ### The header fields
 
@@ -61,9 +61,15 @@ C4. The project-orchestrator Project model at commit 86a1330 rendered the implem
 
 C5. The renderings of the project-orchestrator Project model at commit 86a1330 were compared with the project-orchestrator Backlog. evidence: E3. [decided: project-orchestrator slice record at commit 86a1330]
 
-C6. K-003's Motivated-by line names the project-orchestrator proposal and the owner's approval of the proposal for carrying at project-orchestrator node P3-N007 on 2026-10-30. evidence: E4. [proposed: this IR]
+C6. K-003's Motivated-by line names the project-orchestrator proposal and the owner's approval of the proposal for carrying at project-orchestrator node P3-N007 on 2026-10-30. evidence: E4. [decided: owner, 2026-11-02]
 
-C7. K-003's Cites line names Constitution Article 7 for the Custom definitions section in which a Classification declares a planning/execution model. [proposed: this IR]
+C7. K-003's Cites line names Constitution Article 7 and the vocabulary row for planning/execution model as the places that say how a Classification declares the model. [decided: owner, 2026-11-02]
+
+C45. K-003's Cites line names the C-tier vocabulary row as the criticality scale of the Applies line. [decided: owner, 2026-11-02]
+
+C12. K-003's Protects line names provenance, because each claim of what is done and what is next traces to one record. [decided: owner, 2026-11-02]
+
+### The vocabulary
 
 C8. A Classification declares a planning/execution model by an entry in its Custom definitions section. evidence: E1. [decided: owner, 2026-10-30]
 
@@ -72,10 +78,6 @@ C9. The declaring entry is a definition by citation under Article 7. evidence: E
 C10. The declaring entry names the types that make up the planning/execution model. evidence: E1. [decided: owner, 2026-10-30]
 
 C11. The declaration needs no new Classification field. evidence: E1. [decided: owner, 2026-10-30]
-
-C12. K-003's Protects line names provenance, because each claim of what is done and what is next traces to one record. [proposed: this IR]
-
-### The vocabulary
 
 C13. The vocabulary gains a row for list of what is next, a term the owner ratified at node P3-N007's verifying gate on 2026-10-30. evidence: E4. [decided: owner, 2026-10-30]
 
@@ -101,7 +103,7 @@ C22. The vocabulary row for planning/execution model ships in the release that c
 
 C23. The Release-register entry's title is "A declared planning/execution model is the source of progress truth". evidence: E1. [decided: owner, 2026-10-30]
 
-C24. The entry's PR field names this amendment's pull request, in the form of the register's other Unreleased entries. evidence: E5. [proposed: this IR]
+C24. The entry's PR field names this amendment's pull request, in the form of the register's other Unreleased entries. evidence: E5. [decided: owner, 2026-11-02]
 
 C25. The entry names project-orchestrator as the suggesting project, with RU-021 (the planning/execution model is the source of progress truth) and the slice at commit 86a1330. evidence: E1. [decided: owner, 2026-10-30]
 
@@ -155,6 +157,8 @@ R5. C28 supports C1 because the renderings the appended sentence requires were p
 
 R6. C30 supports C27 because the two records of progress already disagree in the evidencing instance.
 
+R7. C44 refines C2 because the marker names the exception inside the clause the appended sentence overrides.
+
 ## Evidence
 
 E1. The project-orchestrator proposal and its IR at commit 25e92e8ef541e0929e7e447f582edc15d3ec7629, docs/proposals/planning-execution-model-is-progress-truth.md and planning-execution-model-is-progress-truth.ir.md: sections "The change", "Open Backlog entries that name no node", "How a Classification declares a model" and "Release-register entry"; IR claims C8 to C17, C27 to C29, C54 to C69, C76, C77 and C83, terms T1 to T17. The proposal's quote of K-003 (its E1, at methodology v1.6.0, commit 3e34829) was re-checked on 2026-10-30 against this repository's main at commit e049bc6, the K-003 section from its heading to the next rule's heading: byte-identical, no drift.
@@ -175,9 +179,15 @@ E8. docs/classification.md at main, commit e049bc6, section Custom definitions: 
 
 E9. docs/roadmap.ir.md at main, commit e049bc6: claim C28, "At the pilot, methodology-tools declares its planning/execution model in its Classification, and K-003's amended clause then applies to it."
 
+E10. The owner's decision of 2026-11-01, relayed by the Orchestrator to the reasoning role on 2026-11-01: the marker adopted, so that the referent clause reads "The Backlog is the referent for 'what is done and what is next'; no other document may claim that role, except as the next sentence provides." The Orchestrator put the marker to the owner after rounds 1 and 2 of count 1, in which two fresh stranger instances read the referent clauses as contradicting the appended sentence (review record, round 1 finding 7 and round 2 finding 5).
+
 ## Asks
 
 A1. The owner, under Article 8 (amendments, versions, and migration): accept the amendment, accept it with amendments, or reject it. Depends: C1, C22.
 
-A2. The owner: ratify or strike the four proposed claims, the Motivated-by wording (C6), the Cites entry (C7), the Protects line (C12) and the PR field (C24). Depends: C6, C7, C12, C24.
+A1 resolved: accepted as it stands by the owner on 2026-11-02, under Article 8.
+
+A2. The owner: ratify or strike the five proposed claims, the Motivated-by wording (C6), the Cites entry for Article 7 and the planning/execution model row (C7), the Protects line (C12), the PR field (C24) and the Cites entry for the C-tier row (C45). Depends: C6, C7, C12, C24, C45.
+
+A2 resolved: ratified by the owner on 2026-11-02; C6, C7, C12, C24 and C45 carry decided provenance from that date.
 

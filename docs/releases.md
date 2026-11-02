@@ -55,6 +55,8 @@ carry: amendment title and PR link · suggested by (evidencing instance)
     model.
   - The thirteen rows marked implicit C0: unaffected, because K-003
     applies from C1.
+  - The referent clause gains the marker "except as the next sentence
+    provides" (owner, 2026-11-01).
   - K-003 keeps its title, so links to its anchor keep resolving. The
     title is the rule's name and not its text, so for a project that
     declares a model the statement governs. The sentence on
@@ -72,6 +74,16 @@ carry: amendment title and PR link · suggested by (evidencing instance)
   from the model from the declaration on. From then on it rewrites its
   checked entries by that rendering of the implementation map. K-003's
   duty to rewrite checked entries stands, met by that rendering.
+- **Adjudication**: accepted as it stands by the owner on 2026-11-02,
+  under Article 8 (methodology PR #73 merged; count 1's later rounds on
+  PR #74). The owner adopted the referent-clause marker on 2026-11-01.
+  Count 1 of the stranger rounds read readable at round 4 on
+  2026-11-01. The owner ratified the five proposed claims. Three
+  findings on K-003's released text are queued in the
+  [Backlog](backlog.md) for the next K-003 edit. The meta-review was
+  delivered on 2026-11-02 as the communication-pipeline's
+  [evaluation case 015](https://github.com/majodali/communication-pipeline/blob/main/eval/cases/015-ruleset-simplification-review-2026-11-02.md),
+  its ruleset review.
   
 ### The stranger rounds take evaluation case 012's changes
 
