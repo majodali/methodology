@@ -1558,7 +1558,8 @@ Signals script before the round: no round of count 7 recorded yet.
 | 2 | 4,472 | 278 | 9 | 2.0 | not readable (mismatch 1, recurring; contradictions 0; undefined terms 2; paraphrase-test findings 2) |
 | 3 | 4,505 | 280 | 18 | 4.0 | not readable (mismatches 2; contradictions 0; undefined terms 0; paraphrase-test findings 5) |
 | 4 | 4,549 | 282 | 10 | 2.2 | not readable (mismatches 2; contradiction 1; undefined term 1; paraphrase-test findings 1) |
-| 5 | 4,560 | 282 | 12 | 2.6 | not readable (mismatches 2, one recurring; contradictions 2; undefined terms 2; paraphrase-test findings 2) |
+| 5 | 4,560 | 282 | 12 | 2.6 | not readable (mismatches 2, both recurring; contradictions 2; undefined terms 2; paraphrase-test findings 2) |
+| 6 | 4,617 | 283 | | | pending |
 
 ### Round 1, count 7, 2026-11-02
 
@@ -1846,7 +1847,7 @@ Step 5's structural fixes. Owed to C260: count 6 gave the Element kinds table a 
 | 7 | the readable-verdict fix duty against the owner gate's "before the next round" (C97, C317 to C319) | SP-25 | fixed: the owner gate moves to the fix rules in Rendering and review, which govern every fix (C310). C318 reads "The reasoning role puts such a finding to the owner with a proposed wording, and the fix waits for the owner's answer." |
 | 8 | the structural fix defined as a move while C321 allows a claim change (C320, C321) | SP-25 | fixed: "A structural fix is one of two fixes for a misreading that a rewording does not settle." (C320); "The first structural fix moves the sentence ..." (C344); "The second structural fix changes the claim ..." (C321) |
 | 9 | the Article 8 sentence opens on an unintroduced amendment (C102) | SP-11 | fixed: "When the text at the limit is an amendment, the owner's decision is the amendment's adjudication under Article 8 ..." |
-| 10 | "register" unlinked in C342 | SP-04 | declined: round 4's fix landed; at commit 336b2e6 the sentence reads "a statement about the state of a [register](vocabulary.md#def-register) or of a row in one", linked to its definition |
+| 10 | "register" unlinked in C342 | SP-04 | declined: round 3's confirmation fix landed at commit 3fe1cbd; at commit 336b2e6 the sentence reads "a statement about the state of a [register](vocabulary.md#def-register) or of a row in one", linked to its definition |
 | X1, X2 | the restatement uses "round" and "limit" | paraphrase test | declined: the text says what each is in plain words, and the stranger names their use its own lapse; no passage resisted |
 
 `node scripts/check.mjs docs/intermediate-representation.md --base 336b2e6`, on the fixed text:
@@ -1854,4 +1855,27 @@ Checks: 0 sentences over 25 words; 282 of 282 claims mapped; 7 claims changed, 0
 
 `mtool ir check`: 0 violations, 0 warnings. `mtool style`: no sentence over 25 words. `mtool links check`: all relative links resolve. Claims after fixes: 282 (C343 cut; C344 added). Prose after fixes: 4,563 words. Structural fixes awaiting restatement: the Element kinds tables, and the "Who decides on a meta-review" passage. Decided claims the fixes reworded, for the owner at acceptance: C102, C281, C314, C318, C320, C321.
 
-The confirmation is pending.
+Confirmation: 5 of 6 fixes hold. Not held: 7. Declines accepted: 3 of 4. New defects: 2.
+
+The instance read both files in full at fix commit 60033ba and, as briefed, gave no answer on the two structural fixes. The confirmation's fixes, IR first, before round 6 opens:
+
+- Fix 7 did not hold, with N2 (SP-25): moved into the fix rules, the owner gate made a readable round's fix wait, while C97 required the fix at once and no next round opens. Re-fixed with the rules the text already holds: C97 reads "fixes the round's findings under the fix rules, in the IR and then in the prose", and a new sentence states the route, "At a readable verdict, a finding whose fix waits for the owner stays unfixed, and the reasoning role lists it for the owner." (C345). C345 is inferred by R88 from C318, C182 and C277: an unconfirmed fix is unfixed, and the final confirmation's leftovers go to the owner. No rule is added.
+- N1 (SP-11): the gate had landed in the renderer's terms paragraph. It now follows the new-rule sentence (C281) in the fix-rules paragraph that opens "The reasoning role makes a fix to rendered prose in the IR first."
+- Finding 10, decline not accepted: the instance says the register link was absent at 336b2e6. The repository shows it present: `git show 336b2e6:docs/intermediate-representation.md` holds "a statement about the state of a [register](vocabulary.md#def-register) or of a row in one", and so do 3fe1cbd and dbbf4d7. The link landed at 3fe1cbd, as round 3's confirmation fix N3; the round 5 entry above, which said round 4, is corrected to round 3. The decline stands on that evidence.
+- Declines 6, X1 and X2 accepted.
+
+`node scripts/check.mjs docs/intermediate-representation.md --base 60033ba`:
+Checks: 0 sentences over 25 words; 283 of 283 claims mapped; 2 claims changed, 0 missing, 0 stale.
+
+`mtool ir check`: 0 violations, 0 warnings. `mtool style`: no sentence over 25 words. `mtool links check`: all relative links resolve. Prose after the confirmation's fixes: 4,617 words; IR 283 claims. Decided claim reworded after confirmation, for the owner at acceptance: C97.
+
+Signals script after the confirmation line: signal 1 stands, now with fixes not held in rounds 1, 2 and 5. Signal 2 stands on C211, C333 and C260; signal 4 by reading.
+
+### Round 6, count 7, 2026-11-02
+
+Branch point version and commit: v1.11 at communication-pipeline commit 8e3ceb8. The round reads the text at its opening commit, named in the brief. Prose 4,617 words; IR 283 claims; unratified terms 1 (T39). Human reader for the paraphrase test: the human owner. Stranger: pending, a fresh instance.
+
+Passages awaiting restatement, listed in the brief for a one-sentence restatement each: the Element kinds tables, split by provenance status (C260's passage), and "Who decides on a meta-review", opening with the owner's decision (C333's passage).
+
+Declines carried in the round 6 brief: the six of count 5; round 1's 1 and 3; round 2's 6; round 3's 1, 4 and 5; round 4's 1 and 2; round 5's 6 and 10, each with its reason. Not carried: the restatement-check items. The brief names the passages round 5 and its confirmation changed, the departure kept for this count.
+
