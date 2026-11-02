@@ -266,9 +266,10 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   - <a id="def-limit"></a>**Limit** — ten rounds in one count.
   - <a id="def-meta-review"></a>**Meta-review** — a review, by a
     session with no part in the rounds, of a text's review record and
-    the text itself, reporting whether the process needs a change. Due
-    when a text's count reaches the limit or its review record shows a
-    meta-review signal (the specification's Meta-review section).
+    the text itself, reporting whether the process needs a change. The
+    owner decides whether one runs, when a text's count reaches the
+    limit or its review record shows a meta-review signal (the
+    specification's Meta-review section, from count 7).
   - <a id="def-footprint"></a>**Footprint** — the files or directories
     an IR's deliverable is expected to change, declared in the IR's
     Footprint header and compared with the branch's changes before
@@ -278,8 +279,9 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   - <a id="def-normative-text"></a>**Normative text** — a rule, a
     specification, or any text whose words bind.
   - <a id="def-meta-review-signal"></a>**Meta-review signal** — one of
-    three conditions in a review record that make a text a meta-review
-    subject, named in the specification's Meta-review section.
+    three conditions in a review record that the reasoning role reports
+    to the owner at a count's end, named in the specification's
+    Meta-review section.
 - <a id="def-planning-execution-model"></a>**Planning/execution model** — the plan model of a project plus
   the verification evidence of each node: what the web view renders
   and the source of progress truth (owner, 2026-10-28,
@@ -369,8 +371,11 @@ in [constitution.md](constitution.md#draft-history-pre-10).
   stranger instance names at confirmation (owner, 2026-10-30, case
   012, [specification](intermediate-representation.md#the-count)).
 - <a id="def-unparsed-line"></a>**Unparsed line** — a review-record line the communication-pipeline's
-  signals script cannot read (owner, 2026-10-30, case 012,
-  [specification](intermediate-representation.md#meta-review)).
+  signals script cannot read (owner, 2026-10-30, case 012). Struck
+  from the [specification](intermediate-representation.md#meta-review)
+  at count 7, where a check that cannot read a line stops with an error
+  (communication-pipeline evaluation case 015 change 17); kept for the
+  review records of counts 5 and 6.
 - <a id="def-report-audience"></a>**Report audience** — the reader a report is addressed to under
   [W-008](rules/working-agreement.md#w-008--reports-map-their-deliverables)
   (reports map their deliverables): the human owner directly (the
