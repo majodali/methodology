@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: rendered (count 7, round 1; edited for communication-pipeline evaluation case 015, rendered by the reasoning role; count 6 accepted and delivered by the owner 2026-11-01)
+Status: rendered (count 7, round 1 fix pass; edited for communication-pipeline evaluation case 015, rendered by the reasoning role; count 6 accepted and delivered by the owner 2026-11-01)
 Source: the owner's adoption of 2026-11-02 of communication-pipeline evaluation case 015's changes 1 to 30, of which changes 2, 3, 5 (case 013's changes 1 to 3), 14 to 20 and 26 amend this specification (count 7); the owner's adoption of 2026-10-30 of communication-pipeline evaluation case 012's fifteen changes, of which changes 1, 2, 4 to 9, 11, 13 and 14 amend this specification (count 6); the owner's adoption of 2026-10-30 of communication-pipeline evaluation cases 010 and 011's recommended changes, of which case 010's changes 1, 5, 9, 11, 12 and 13 and case 011's change 1 amend this specification (count 5); the owner's adoption of 2026-10-29 of communication-pipeline evaluation case 009's nineteen changes, of which changes 2, 14, 15 and 18 amend this specification (count 4); the owner's decision of 2026-10-27 on signal-based meta-review triggers (count 3); communication-pipeline evaluation case 008 (owner decision of 2026-10-27, change 5) for count 2; for count 1, docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md; docs/records/intermediate-representation-history.md; docs/releases.md; docs/vocabulary.md
@@ -50,8 +50,6 @@ T19. Limit. defined-at: vocabulary.md#def-limit [decided: owner, 2026-10-27]
 T20. Meta-review signal. defined-at: vocabulary.md#def-meta-review-signal [decided: owner, 2026-10-27]
 
 T21. Restatement: the stranger's own account of the text, in at most 200 words, written before the stranger reads the IR. defined-at: https://github.com/majodali/communication-pipeline/blob/main/docs/vocabulary.md#def-restatement [decided: owner, 2026-10-27]
-
-T22. Own mismatch. defined-at: vocabulary.md#def-own-mismatch [decided: owner, 2026-10-30]
 
 T24. Passage. defined-at: vocabulary.md#def-passage [decided: owner, 2026-10-30]
 
@@ -123,7 +121,9 @@ C11. The Reader header holds one reader catalog identifier. [decided: pipeline s
 
 C12. The Purpose header holds `report` or `document`, then one sentence saying what the text is for. [decided: owner, 2026-10-30]
 
-C13. The Status header holds one of `draft`, `reviewed`, `rendered`, `delivered` or `delivered IR-only`, optionally followed by a parenthesis holding the counts this specification asks the reasoning role to record. [decided: owner, 2026-10-30]
+C13. The Status header holds one of `draft`, `reviewed`, `rendered`, `delivered` or `delivered IR-only`. [decided: owner, 2026-10-30; reworded in count 7, round 1]
+
+C338. The status may be followed by a parenthesis holding the counts this specification asks the reasoning role to record. [decided: owner, 2026-10-30; split from C13 in count 7, round 1]
 
 C14. The Source header names the conversation, document or event that occasioned the IR. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -133,9 +133,9 @@ C16. The optional Footprint header lists files or directories separated by semic
 
 C142. A footprint directory ends in `/` and covers every file under it. [decided: pipeline schema v1.3, 2026-10-26]
 
-C17. A `report` is read by someone who shares the conversation: RD-1, RD-2 or RD-3. [decided: pipeline schema v1.2, 2026-10-25]
+C17. A `report` is read by someone who shares the conversation: RD-1 (the owner, in conversation), RD-2 (the owner, returning) or RD-3 (a delegating agent). [decided: pipeline schema v1.2, 2026-10-25; reworded in count 7, round 1]
 
-C18. A `document` is read by someone who does not share the conversation: RD-4 or RD-5. [decided: pipeline schema v1.2, 2026-10-25]
+C18. A `document` is read by someone who does not share the conversation: RD-4 (a fresh agent session) or RD-5 (an external reader). [decided: pipeline schema v1.2, 2026-10-25; reworded in count 7, round 1]
 
 C19. Prose that will live under `docs/` is a `document`. [decided: owner, 2026-10-25]
 
@@ -155,15 +155,13 @@ C25. Every project-specific term used in a claim appears as a term element. [dec
 
 C27. A term without a definition site has status proposed. [decided: methodology PR #48, 2026-10-26]
 
-C152. When a report delivers the text, the reasoning role lists each proposed term for ratification in that report. [inferred: R49]
-
 C257. When the IR is the deliverable, the IR's own Asks section lists each proposed term for ratification. evidence: E7. [decided: owner, 2026-10-30]
 
 C28. A claim element (`C`) makes one statement. [decided: pipeline schema v1.2, 2026-10-25]
 
 C29. A claim may carry `evidence: E<n>`. [decided: pipeline schema v1.2, 2026-10-25]
 
-C30. In a report to RD-1 or RD-2, a claim may carry `part: covered` or `part: changed`. [decided: pipeline schema v1.2, 2026-10-25]
+C30. In a report to RD-1 or RD-2, a claim may carry `part: covered` or `part: changed`, naming the W-008 report part it renders under. [decided: pipeline schema v1.2, 2026-10-25; reworded in count 7, round 1]
 
 C31. A cluster element (`G`) holds `cluster:` and an ordered list of claim identifiers. [decided: owner, 2026-10-30]
 
@@ -328,16 +326,16 @@ C281. Until the owner decides, a finding that needs a new rule counts against th
 C282. When a fix rewords a decided claim, the reasoning role keeps the claim's decided source. evidence: E8. [decided: owner, 2026-11-01]
 C304. The reasoning role notes the rewording as `reworded in count N, round M`. evidence: E8. [decided: owner, 2026-11-01]
 C283. The owner's acceptance of a text ratifies the text's reworded decided claims, unless the owner names one. evidence: E9. [decided: owner, 2026-11-02, case 015 change 19]
-C307. A fix that separates what is done now from what the text aims at moves the sentence under a header that names its state. evidence: E9. [decided: owner, 2026-11-02, case 015 change 15]
+C307. To separate what is done now from what the text aims at, the reasoning role moves the sentence under a header naming its state. [decided: owner, 2026-11-02, case 015 change 15; reworded in count 7, round 1]
 C308. In a fix, the reasoning role does not mark a single sentence with "Today". evidence: E9. [decided: owner, 2026-11-02, case 015 change 15]
 C309. In a fix, the reasoning role keeps the connective prose that joins a rule to a reason the IR holds as its own claim. evidence: E9. [decided: owner, 2026-11-02, case 015 change 15]
-C313. A fix that brings in a term no vocabulary or IR element defines adds the term, as proposed, to the IR's Terms list. evidence: E9. [decided: owner, 2026-11-02, case 015 change 5, from case 013 change 3]
+C313. When a fix brings in a term no vocabulary or IR element defines, the reasoning role adds it, as proposed, to the IR's Terms list. [decided: owner, 2026-11-02, case 015 change 5, from case 013 change 3; reworded in count 7, round 1]
 C310. The fix rules govern every fix, including an edit outside a round to an IR whose Status is reviewed. evidence: E9. [decided: owner, 2026-11-02, case 015 change 15]
 C311. In an edit outside a round to a reviewed IR, the reasoning role cuts each claim the edit makes a duplicate. evidence: E9. [decided: owner, 2026-11-02, case 015 change 15]
 C312. In an edit outside a round to a reviewed IR, the reasoning role amends each claim the edit makes stale. evidence: E9. [decided: owner, 2026-11-02, case 015 change 15]
 C314. When neither the methodology's vocabulary nor the reader's defines a term of the IR, the renderer puts the IR's Terms list before the body. evidence: E9. [decided: owner, 2026-11-02, case 015 change 5, from case 013 change 2]
 C315. Each entry of that Terms section gives the term, its IR definition and its link. evidence: E9. [decided: owner, 2026-11-02, case 015 change 5, from case 013 change 2]
-C316. A term that draws an undefined-term finding in two rounds joins that Terms section. evidence: E9. [decided: owner, 2026-11-02, case 015 change 5, from case 013 change 2]
+C316. When a term draws an undefined-term finding in two rounds, the reasoning role adds the term to that Terms section. [decided: owner, 2026-11-02, case 015 change 5, from case 013 change 2; reworded in count 7, round 1]
 ### Stranger rounds
 
 C88. The reasoning role runs a stranger review in rounds until a round returns the verdict readable or the count reaches the limit. [decided: owner, 2026-10-30]
@@ -355,7 +353,7 @@ C267. Before reading the IR, the stranger restates each listed passage in one se
 C268. The reasoning role checks each listed passage's structural fix against the stranger's one-sentence restatement of the passage. evidence: E8, E9. [decided: owner, 2026-11-02, case 015 change 16]
 C93. In a round, the verdict is readable when four conditions hold. evidence: E9. [decided: owner, 2026-11-02, case 015 change 26]
 
-C211. A restatement mismatch is a disagreement between the stranger's restatement and the IR. [decided: owner, 2026-10-27]
+C211. A restatement mismatch is a disagreement the stranger finds between its restatement and the IR. [decided: owner, 2026-10-27; reworded in count 7, round 1]
 
 C263. A claim or a qualifier the restatement leaves out is an omission, not a restatement mismatch. evidence: E8. [decided: owner, 2026-11-01]
 C264. A restatement that says a rule has no qualifier the IR holds has a mismatch. evidence: E8. [decided: owner, 2026-11-01]
@@ -379,7 +377,7 @@ C194. Each contradiction finding counts against the verdict, unless the round's 
 C234. The third condition: the stranger finds no undefined term. [decided: owner, 2026-10-30]
 
 C235. Each undefined-term finding counts against the verdict, unless the round's stranger instance withdrew the finding at confirmation on a reason that quotes the prose. evidence: E3. [decided: owner, 2026-11-01]
-C328. The paraphrase test asks the stranger to restate the text, without any term the text introduces, for the human reader its Reader line names. evidence: E9. [decided: owner, 2026-11-02, case 015 change 26]
+C328. The paraphrase test asks the stranger to restate the text for the human reader the Reader line names, without any term the text introduces. [decided: owner, 2026-11-02, case 015 change 26; reworded in count 7, round 1]
 C337. The fourth condition: the stranger's restatement passes the paraphrase test. evidence: E9. [decided: owner, 2026-11-02, case 015 change 26]
 C329. Each passage the stranger cannot restate without a term the text introduces counts against the verdict. evidence: E9. [decided: owner, 2026-11-02, case 015 change 26]
 C330. In each round's brief, the reasoning role names the human reader the text's Reader line names. evidence: E9. [decided: owner, 2026-11-02, case 015 change 26]
@@ -423,10 +421,10 @@ C321. A structural fix may instead change the claim to the strangers' reading wh
 C322. A rewording alone is not a structural fix. evidence: E9. [decided: owner, 2026-11-02, case 015 change 15]
 C323. When restatement mismatches name one claim in two rounds of the text's counts, the reasoning role makes a structural fix before the next round. evidence: E9. [decided: owner, 2026-11-02, case 015 change 15 and change 3]
 C324. The reasoning role marks the structural fix made for a recurring mismatch awaiting restatement in the review record. evidence: E9. [decided: owner, 2026-11-02, case 015 change 15]
-C325. A fix that holds in part is not held. evidence: E9. [decided: owner, 2026-11-02, case 015 change 15]
+C325. A fix the round's stranger instance confirms only in part counts as a fix not held. [decided: owner, 2026-11-02, case 015 change 15; reworded in count 7, round 1]
 
 C269. A fix pass is the reasoning role's fixes of one round's findings, in the IR and then in the prose. evidence: E8. [decided: owner, 2026-11-01]
-C327. Each project's round procedure names the checks that run after each fix pass and the lines the review record holds. evidence: E9. [decided: owner, 2026-11-02, case 015 change 16]
+C327. Each project that runs rounds names, in its own documents, the checks that run after each fix pass and the lines the review record holds. [decided: owner, 2026-11-02, case 015 change 16; reworded in count 7, round 1]
 C272. The reasoning role names the fix commit to the round's stranger instance. evidence: E8. [decided: owner, 2026-11-01]
 C273. The round's stranger instance reads the prose and the IR at the fix commit, in full, before answering. evidence: E8. [decided: owner, 2026-11-01]
 C274. A new defect is a defect a fix introduces. evidence: E8. [decided: owner, 2026-11-01]
@@ -459,7 +457,7 @@ C171. Rework starts a new count from round one. [decided: owner, 2026-10-27]
 
 C172. The reasoning role keeps the ended count's review record through rework. [decided: owner, 2026-10-27]
 
-C102. For an amendment, the owner's decision is the amendment's adjudication under Article 8. [decided: owner, 2026-10-30]
+C102. For an amendment, the owner's decision is the amendment's adjudication under Article 8 (amendments, versions, and migration). [decided: owner, 2026-10-30; reworded in count 7, round 1]
 
 C103. The review record holds, per round, the word count of the prose and the claim count of the IR. [decided: owner, 2026-10-27]
 
@@ -498,7 +496,7 @@ C108. The meta-review session delivers the meta-review as a report to the owner.
 
 C159. On delivery of the meta-review, the reasoning role sets the review record's line to `Meta-review: delivered` with a link. [decided: owner, 2026-10-27]
 
-C109. A `Meta-review: pending` line in an accepted deliverable's review record is a finding of the next form audit under Article 9. evidence: E9. [decided: owner, 2026-11-02, case 015 change 17]
+C109. A `Meta-review: pending` line in an accepted deliverable's review record is a finding of the next form audit under Article 9 (audits). [decided: owner, 2026-11-02, case 015 change 17; reworded in count 7, round 1]
 
 ### Rendering conditions
 
@@ -681,8 +679,6 @@ R46. C79 depends-on C220 because the placement is made when the text is rendered
 R47. C82 depends-on C220 because the Asks section is stated when the text is rendered, and the renderer renders; the source, methodology PR #46, names no actor.
 
 R48. C94 depends-on C95 because the reasoning role records its decision on each finding; the source, the owner's ratification of 2026-10-27 of a passive claim, names no actor.
-
-R49. C152 depends-on C153 because the report that delivers the text lists its terms under Terms introduced, and the reasoning role writes the IR that holds the proposed term; the source, methodology PR #48, names no actor and no trigger.
 
 R50. C202 depends-on C95 because the reasoning role records its decision on each finding; the source, communication-pipeline evaluation case 008 change 5 ("the record marks each confirmed or unfixed"), names no actor.
 

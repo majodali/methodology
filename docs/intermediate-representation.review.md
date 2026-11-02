@@ -1524,7 +1524,9 @@ Changes to the IR. Each new or reworded claim names the owner, 2026-11-02, case 
 
 278 claims before the edit and 278 after; prose 4,303 words at count 6's close and 4,434 now. The case estimated about 3,950: the History left, and the five moved rules, case 013's three changes and the paraphrase test added about 480 words.
 
-Departures for the owner. C198 and C326 carry the branch point v1.10 rule that a fix awaiting restatement at the limit counts as unfixed. Change 15 does not list it, and v1.11 links the specification for the final round, so the rule would otherwise be lost. The history record sits under `docs/records/`, as the Orchestrator directed; the case suggested this review record.
+Landing departures from the dispatch brief, ruled by the Orchestrator on 2026-11-02 as the case's adopted text. Claims that render an adopted change are decided, not proposed, under change 13; acceptance ratifies the reworded claims under change 19. The landing choices of the pipeline's count 1 record apply here too: the restatement as a `Restatement:` line and a quoted block, and the restatement check's 70 percent threshold. The strangers read the branch point at its opening commit 8e3ceb8; the count runs under v1.11 at commit 12ff480 plus that commit's lint scope fix.
+
+Landing choice for the owner. C198 and C326 carry the branch point v1.10 rule that a fix awaiting restatement at the limit counts as unfixed. Change 15 does not list it, and v1.11 links the specification for the final round, so the rule would otherwise be lost. The history record sits under `docs/records/`, as the Orchestrator directed; the case suggested this review record.
 
 Step 1 of branch point v1.11, before round 1, by `node scripts/check.mjs docs/intermediate-representation.md --base origin/main` (count 6 as accepted):
 Checks: 0 sentences over 25 words; 278 of 278 claims mapped; 48 claims changed, 0 missing, 0 stale.
@@ -1552,8 +1554,57 @@ Signals script before the round: no round of count 7 recorded yet.
 
 | Round | Prose words | IR claims | Findings | Per 1,000 words | Verdict |
 |---|---|---|---|---|---|
-| 1 | 4,434 | 278 | | | pending |
+| 1 | 4,434 | 278 | 20 | 4.5 | not readable (mismatches 3; contradictions 0; undefined terms 2; paraphrase-test findings 4) |
 
 ### Round 1, count 7, 2026-11-02
 
-Branch point version and commit: v1.11 at communication-pipeline commit 8e3ceb8. The round reads the text at its opening commit, named in the brief. Prose 4,434 words; IR 278 claims; unratified terms 0. Human reader for the paraphrase test: the human owner. Stranger: pending.
+Branch point version and commit: v1.11 at communication-pipeline commit 8e3ceb8. The round reads the text at its opening commit, named in the brief. Prose 4,434 words; IR 278 claims; unratified terms 0. Human reader for the paraphrase test: the human owner.
+
+Stranger model: claude-haiku-5-5, a fresh instance, reading at commit b593a2a.
+
+Restatement:
+
+> This text sets the method for writing certain documents and reports. The author first lists the content as numbered statements, each marked with its support, its status and any open request. The author then writes the prose from that list. Fresh reader sessions, which took no part in writing, check the prose. Each reader restates the text in its own words, and the author compares that restatement with the list. The text says when the method is required, which checks run, and how many review rounds are allowed (ten). It says what counts as a passing review, what the author does when a review fails, and how each finding and decision is recorded. It says when a broader review is triggered, whether prose is rendered or the list is delivered alone, and how the list is kept once a document is delivered. It names who makes each choice. The human owner decides any case the text does not name.
+
+Prose 4,434 words by `wordCount` (the stranger's estimate: about 4,800); IR 278 claims; 16 findings from the stranger and 4 from the restatement check, 20 in all, 4.5 per thousand words. Restatement: three mismatches. Listed passages: none. Contradictions 0, undefined terms 2 (findings 5 and 10), paraphrase-test findings 4 (the restatement check); verdict: not readable for RD-4. Omissions noticed, not counted: 3 (the problem the text addresses, C4; the stranger reviews the IR too, C92; the restatement's timing and length, C267 and T21).
+
+The mismatches, each counting under the first condition whatever the stranger put it down to. First, the restatement put an open request on each claim; the IR gives requests their own ask elements (C38). The stranger relied on the Claim row's "A claim may carry `evidence: E<n>`" (C29) and the Ask row. Second, the restatement gave the comparison of restatement and IR to the author. The stranger relied on "A restatement mismatch is a disagreement between the stranger's restatement and the IR." (C211) and "The stranger reviews the IR and the prose against the reader's readability test." (C92); neither sentence named who compares. Third, the restatement had the signals trigger the broader review; the stranger quoted "The owner decides whether a meta-review runs." (C333), which states the opposite. First occurrence of each claim on a `Mismatches:` line; no structural fix is owed.
+Mismatches: C38 (relied on C29), C211 (relied on C92), C333
+
+Restatement check, `node scripts/lint.mjs --restatement docs/intermediate-representation.review.md` in the communication-pipeline worktree: 4 items, recorded as findings P1 to P4 under the fourth condition.
+
+Signals script after the `Mismatches:` line: no signal; no claim of this round recurs. By reading, the third mismatch sits on the passage where C104 drew mismatches in counts 4, 5 and 6. Count 7 replaced C104 with C332 and C333, and change 3 keys a recurrence on a claim, so no structural fix is owed. The meta-review can weigh the passage again.
+
+| # | Finding (shortened) | Kind | Decision |
+|---|---|---|---|
+| 1 | an open request on each claim (C38) | restatement | declined: the prose did not invite the reading. The Element kinds table gives the ask its own row, letter and body: "a decision or action requested of the reader, and `Depends:` naming the claims or asks the request rests on". The mismatch still counts in this round |
+| 2 | the author compares the restatement with the IR (C211) | restatement | fixed: the prose named no one who compares. C211 reads "A restatement mismatch is a disagreement the stranger finds between its restatement and the IR." (reworded) |
+| 3 | the signals trigger the broader review (C333) | restatement | declined: the prose did not invite the reading. The quoted sentence, "The owner decides whether a meta-review runs.", opens the section beside the report of the signals. The mismatch still counts in this round |
+| 4 | the Terms-introduced duty stated twice (C152, C153) | SP-26 | fixed: C152, inferred, cut with R49; C153 and the Term row's IR-deliverable rule (C257) remain |
+| 5 | "part" undefined (C30, C79) | SP-04 | fixed: C30 reads "naming the W-008 report part it renders under"; the reader is assumed to know W-008 (C151) |
+| 6 | the Terms section duty names no actor (C316) | SP-18 | fixed: "the reasoning role adds the term to that Terms section" |
+| 7 | the header move names no actor (C307) | SP-18 | fixed: "To separate what is done now from what the text aims at, the reasoning role moves the sentence under a header naming its state." |
+| 8 | the term duty names no actor (C313) | SP-18 | fixed: "When a fix brings in a term ..., the reasoning role adds it, as proposed, to the IR's Terms list." |
+| 9 | "its Reader line" (C328) | SP-03 | fixed: "for the human reader the Reader line names" |
+| 10 | "round procedure" undefined (C327) | SP-04 | fixed by rephrasing: "Each project that runs rounds names, in its own documents, the checks ..." |
+| 11 | "A fix that holds in part is not held." plays on words (C325) | SP-08 | fixed: "A fix the round's stranger instance confirms only in part counts as a fix not held." |
+| 12 | the meta-review session under the Meta-review line header | SP-11 | fixed: C107 and C108 move under "Who decides on a meta-review", after the owner's decision. A move by judgement, not owed to a recurring mismatch, so not marked awaiting restatement |
+| 13 | T22, own mismatch, unused | SP-26 | fixed: T22 cut; the vocabulary row stays |
+| 14 | IR C13 at 29 words | SP-02 | fixed: split (C13, C338) |
+| 15 | RD identifiers unnamed in IR C17 and C18 | SP-05 | fixed: each named in the claim |
+| 16 | Articles 8 and 9 unnamed in IR C102 and C109 | SP-05 | fixed: each named in the claim |
+| P1 | the restatement uses "rounds" (T13) | paraphrase test | declined: "how many review rounds are allowed (ten)" uses the word in its plain sense, and the restatement says what a review is in the sentences before |
+| P2 | the restatement uses "counts" (T14) | paraphrase test | declined: "what counts as a passing review" is the plain verb, not the text's term for a run of rounds |
+| P3 | the restatement uses "restatement" (T21) | paraphrase test | declined: the same sentence says what it is, "restates the text in its own words" |
+| P4 | "The human owner decides any case the text does not name." repeats C6 (71 percent) | paraphrase test | declined: the prose sentence holds no term the text introduces, so repeating it leans on none |
+
+Fix pass by `node scripts/check.mjs docs/intermediate-representation.md --base b593a2a` (branch point v1.11 step 5):
+Checks: 0 sentences over 25 words; 278 of 278 claims mapped; 14 claims changed, 0 missing, 5 stale.
+
+The five stale claims are IR-only edits whose sentences already carry them: C13 split from C338 in one table row, C17 and C18 and C102 and C109 named their identifiers in the IR, where the prose already names or links them. No prose fix is owed. `mtool ir check`: 0 violations, 0 warnings. `mtool style`: no sentence over 25 words. `mtool links check`: all relative links resolve.
+
+Claims after fixes: 278 (C152 cut, C338 added). Prose after fixes: 4,446 words. Structural fixes: none awaiting restatement. Decided claims the fixes reworded, for the owner at acceptance (case 015 change 19): C13, C17, C18, C30, C102, C109, C211, C307, C313, C316, C325, C327, C328.
+
+For the ruleset's next review: the restatement check lists a term the restatement uses in its plain sense, such as "rounds" and "counts". Both counts' strangers used such words; the check cannot tell the senses apart.
+
+The confirmation is pending.
