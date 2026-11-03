@@ -85,6 +85,38 @@ carry: amendment title and PR link · suggested by (evidencing instance)
   [evaluation case 015](https://github.com/majodali/communication-pipeline/blob/main/eval/cases/015-ruleset-simplification-review-2026-11-02.md),
   its ruleset review.
   
+### The stranger rounds take evaluation case 015's changes
+
+- **PR**: this amendment's PR.
+- **Suggested by**: the owner's adoption on 2026-11-02 of
+  communication-pipeline evaluation case 015, the review of the
+  pipeline's ruleset for simplification, changes 1 to 30. Its changes
+  2, 3, 5, 14 to 20 and 26 amend this specification as its count 7:
+  the first signal reads fixes not held only; a recurrence is keyed on
+  a claim; case 013's changes 1 to 3 (a fix that would change a decided
+  claim goes to the owner, a Terms section for outside terms, a term a
+  fix brings in joins the IR); a readable round's findings are marked
+  in the review record; a fix may add a state header or a rewording
+  note; five fix rules move in from the branch point, the structural
+  fix among them; the pipeline's scripts and record lines leave the
+  text; the owner decides whether a meta-review runs, and the
+  `Meta-review:` line loses the value unparsed; the owner's acceptance
+  ratifies reworded decided claims; the History leaves the reviewed
+  text for a record; the paraphrase test is the verdict's fourth
+  condition.
+- **Impact assessment**: methodology, the specification and its IR,
+  count 7, the new record
+  [docs/records/intermediate-representation-history.md](records/intermediate-representation-history.md),
+  and the vocabulary rows *meta-review*, *meta-review signal* and
+  *unparsed line*. communication-pipeline, branch point v1.11, its
+  style specification and scripts. methodology-tools, `mtool style`
+  warns over 25 words (case 015 change 1). project-orchestrator, its
+  Reviewer (stranger) contract follows. Other projects unaffected.
+- **Migration note**: review records written before count 7 keep
+  their `Meta-review: unparsed` lines and claims-check lines as
+  history.
+- **Adjudication**: pending; count 7's rounds run first.
+
 ### The stranger rounds take evaluation case 012's changes
 
 - **PR**: this amendment's PR.
