@@ -2213,4 +2213,61 @@ Checks: 0 sentences over 25 words; 286 of 286 claims mapped; 14 claims changed, 
 
 `mtool ir check`: 0 violations, 0 warnings. `mtool style`: no sentence over 25 words, and no new warning. `mtool links check`: all relative links resolve. Claims after fixes: 286 (C351 added). Prose after fixes: 4,713 words. Structural fixes awaiting restatement: none. Decided claims the fixes reworded, for the owner at acceptance: C38, C78, C80, C154, C254, C277, C278, C315, C316, C318, C319, C346 and C348. Decided claim added: C351 (split from C38).
 
-The confirmation is pending.
+Confirmation: 8 of 8 fixes hold. Not held: none. Declines accepted: 3 of 4. New defects: 2.
+
+The instance read both files in full at fix commit 796a310. It withdrew finding 3 as its own misreading: the state header's definition already stood first. The Orchestrator confirmed that no structural fix is made on C130 or C192 at the limit, since C323's fix is owed before a next round and none opens.
+
+The final round's findings, marked as the final-round rules ask:
+
+| # | Mark |
+|---|---|
+| 1, 2, 4, 5, 6, 7, 8, 9 | confirmed |
+
+New defects of this confirmation, not fixed in the count; they go to the owner and are fixed at the next edit of the text:
+
+- N1 (SP-03, C351): "the request" refers to C38's "a decision or action requested of the reader", which C351 does not state.
+- N2 (SP-03 and agreement with C323, C348): the round 10 fix dropped "two", so "Rounds whose restatement mismatches name one claim may fall in one count or across two." reads wider than C323's two rounds. This changes a decided claim's meaning; the owner should know it before deciding. Proposed for the next edit: "Two rounds whose restatement mismatches name one claim may fall in one count or across two."
+
+Decline EE2 not accepted: the instance holds that "passage" is defined (C228, T24), so its own restatement failed the paraphrase test. The decline stands on its reason: the fourth condition counts a passage of the text that the stranger cannot restate without an introduced term, and none resisted. Recorded for the owner with the instance's reason. Declines 3, EE1 and EE3 accepted.
+
+Recorded as an edge: round 10's fix pass left the rewording notes off C38, C78, C80, C154, C254, C277, C278, C315, C316, C318, C319, C346 and C348. The notes are added at the close; the claims are unchanged.
+
+Signals script after the confirmation line: round 10 held every fix, so signal 1 stands from rounds 1, 2, 5 and 6.
+
+The limit was reached at round 10. The reasoning role does not deliver the text before the owner's decision. The IR's Status reads `reviewed`, and the prose status line reads that the limit was reached, awaiting the owner's decision.
+
+### Verdict, count 7
+
+The limit was reached at round 10 of ten, on 2026-11-02, under branch point v1.11. Round 10 read not readable on two restatement mismatches that recur findings this count declined; the text showed no contradiction, no undefined term and no passage that resisted restatement.
+
+| Round | Findings per 1,000 words | Mismatches | Contradictions | Held at first confirmation |
+|---|---|---|---|---|
+| 1 | 4.5 | 3 | 0 | 12 of 14 |
+| 2 | 2.0 | 1 | 0 | 4 of 5 |
+| 3 | 4.0 | 2 | 0 | 12 of 12 |
+| 4 | 2.2 | 2 | 1 | 7 of 7 |
+| 5 | 2.6 | 2 | 2 | 5 of 6 |
+| 6 | 4.5 | 4 | 1 | 10 of 11 |
+| 7 | 1.3 | 0 | 1 | 4 of 4 |
+| 8 | 2.8 | 5 | 1 | 7 of 7 |
+| 9 | 1.5 | 2 | 2 | 3 of 3 |
+| 10 | 2.6 | 2 | 0 | 8 of 8 |
+
+Findings in all: 128 across ten rounds. Restatement mismatches: 23. Contradictions: 8. Held at first confirmation: 72 of 77 fixes. New defects at confirmation: 21; the nineteen of rounds 1 to 9 were fixed before the next round, and round 10's two go to the owner.
+
+Meta-review: pending (signals 1, 2 and 4). Signals checked at the end of count 7: signal 1 by `node scripts/signals.mjs`, fixes not held in rounds 1, 2, 5 and 6; signal 2 by the script on C211, C333, C260, C47, C227, C38, C71, C90, C130 and C192, and by reading on declined findings raised again in rounds 9 and 10; signal 4 by reading, contradictions in fix-touched passages in rounds 4 to 9.
+
+Owner items for count 7 of the specification, one list:
+
+1. The owner's decision at the limit (C100), which is also the decision on the amendment under Article 8 (C102): deliver as is, accepting the amendment with round 10's two mismatches recorded; rework in a new count; or withdraw.
+2. A10: if delivered, acceptance ratifies the decided claims count 7 reworded, split or added, each with its note, unless the owner names one to exclude (case 015 change 19): C13, C17, C18, C30, C38, C51, C75, C78, C80, C93, C95, C97, C98, C102, C109, C111, C123, C143, C153, C154, C155, C174, C183, C208, C211, C234, C254, C257, C277, C278, C281, C284, C301, C307, C313, C314, C315, C316, C318, C319, C320, C321, C323, C325, C327, C328, C338, C339, C340, C342, C344, C346, C348 and C351.
+3. A12: ratify or strike "a term the text introduces" (T39, C341): a term the text defines or links to a vocabulary entry. Default: ratify. The branch point asks the same (its A2).
+4. The new defects of round 10's confirmation, for the next edit: N1 on C351, and N2 on C348, which widens a decided claim's meaning until fixed.
+5. The stranger's question, for the ruleset review: whether a recurrence of a declined mismatch should count against the verdict.
+6. Recurrences without a further structural fix (Orchestrator confirmed): C130 and C192 at the limit, since no next round opens; C71, its structural options spent in round 9; the second Element kinds table at passage level (C260 in count 6 round 1 and count 7 round 5, C295 in round 8).
+7. Judgement call: the verdict section's order (SP-11, raised in rounds 3 and 7) against round 6's structural fix for C227, which held.
+8. Declines the confirming instance did not accept, kept on their recorded reasons: round 6's Y2 and Y3; round 7's 2; round 8's 9 (C153 against C314); round 10's EE2.
+9. The change 26 gap, no rule added in the count (C279): a text whose Reader line names no human reader. Proposed wording: "When the Reader line names no human reader, the brief names the human owner."
+10. Omissions the strangers noted: whether a finding held under C317 to C319 counts against the verdict; no duty orders the whole-text restatement before the IR; how the owner closes a pending Meta-review line after declining; the lifecycle rule and IR-only documents (C133, C217); rendering-condition rows 4 to 8 and the stranger rounds (C246).
+11. Edges: round 5's misread confirmation commit; round 6's brief carrying a stale decline; round 10's missing rewording notes, added at the close.
+12. For the next ruleset review: the restatement check's plain-sense and repeated-sentence flags; the round-trip script checks that each claim is mapped, not where; `mtool ir check` does not resolve ranges in `Depends:`; the changed-passages brief departure, kept for this count.

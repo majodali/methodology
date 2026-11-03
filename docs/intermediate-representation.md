@@ -2,7 +2,7 @@
 
 This specification says how a text is first written as a numbered list of statements, then turned into prose and reviewed by fresh readers. Agents that write or review such texts read this specification, and so does the human owner who decides on its rules.
 
-Status: active; count 7 under review (round 10) for communication-pipeline evaluation case 015's adopted changes. Count 6 is the version the owner last accepted, on 2026-11-01. A methodology [Specification](vocabulary.md#def-specification), the document type, required by
+Status: active; count 7 reviewed, the limit reached at round 10, awaiting the owner's decision, for communication-pipeline evaluation case 015's adopted changes. Count 6 is the version the owner last accepted, on 2026-11-01. A methodology [Specification](vocabulary.md#def-specification), the document type, required by
 [W-009](rules/working-agreement.md#w-009--the-methodology-corpus-writes-its-deliverables-ir-first)
 (the methodology corpus writes its deliverables [IR](vocabulary.md#def-intermediate-representation) first). Any project
 that adopts W-009 by declaration uses this specification.
