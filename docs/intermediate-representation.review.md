@@ -1563,6 +1563,7 @@ Signals script before the round: no round of count 7 recorded yet.
 | 7 | 4,621 | 284 | 6 | 1.3 | not readable (mismatches 0; contradiction 1; undefined term 1; paraphrase-test findings 0) |
 | 8 | 4,630 | 285 | 13 | 2.8 | not readable (mismatches 5, two recurring; contradiction 1; undefined terms 0; paraphrase-test findings 0) |
 | 9 | 4,640 | 284 | 7 | 1.5 | not readable (mismatches 2, both recurring; contradictions 2; undefined terms 0; paraphrase-test findings 1) |
+| 10 | 4,671 | 285 | | | pending |
 
 ### Round 1, count 7, 2026-11-02
 
@@ -2146,4 +2147,23 @@ Checks: 0 sentences over 25 words; 285 of 285 claims mapped; 3 claims changed, 0
 
 The Orchestrator confirmed, after round 8's close, that C88 and C100 settle the C319 residual recorded there; it is not an owner item.
 
-The confirmation is pending.
+Confirmation: 3 of 3 fixes hold. Not held: none. Declines accepted: 3 of 3. New defects: 0.
+
+The instance read both files in full at fix commit 40aad2b and, as briefed, gave no answer on the structural fix. This is the first confirmation of the count with every fix held, every decline accepted and no new defect. The Orchestrator confirmed both of step 5's rulings: no second structural fix on C71, whose recurrence goes to the owner, and the structural fix on C90.
+
+- A residual the instance raises for the owner, not new: after a verdict of not readable, C98 had the reasoning role fix the IR and then the prose, while C346 and C319 hold a waiting finding's fix until the owner answers. C98 was not scoped as C97 and C183 now are. It now reads "After a verdict of not readable, the reasoning role fixes each finding not waiting for the owner in the IR and then the prose." The same wording fix, adding no rule.
+
+`node scripts/check.mjs docs/intermediate-representation.md --base 40aad2b`:
+Checks: 0 sentences over 25 words; 285 of 285 claims mapped; 1 claims changed, 0 missing, 0 stale.
+
+`mtool ir check`: 0 violations, 0 warnings. `mtool style`: no sentence over 25 words, and no new warning. `mtool links check`: all relative links resolve. Prose after the confirmation's fix: 4,671 words; IR 285 claims. Decided claim reworded after confirmation, for the owner at acceptance: C98.
+
+Signals script after the confirmation line: round 9 held every fix, so signal 1 does not widen; it stands from rounds 1, 2, 5 and 6. Signal 2 stands on C211, C333, C260, C47, C227, C38, C71 and C90, and by reading on round 9's raised decline; signal 4 by reading.
+
+### Round 10, count 7, 2026-11-02
+
+Branch point version and commit: v1.11 at communication-pipeline commit 8e3ceb8. The round reads the text at its opening commit, named in the brief. Prose 4,671 words; IR 285 claims; unratified terms 1 (T39). Human reader for the paraphrase test: the human owner. Stranger: pending, a fresh instance. Round 10 is the last before the limit: the final-round rules apply after it, whatever its verdict.
+
+Passage awaiting restatement, listed in the brief for a one-sentence restatement: the opening of "Stranger rounds", "The rounds apply to every stranger review the rendering conditions select." (C90's passage).
+
+Declines carried in the round 10 brief: the six of count 5; round 2's 6; round 3's 1, 4 and 5; round 4's 2; round 5's 6 and 10; round 6's 1, 4, 6, 7 and 10; round 7's 2 and 5; round 8's 1, 5 and 9; round 9's 1, each with its reason. Not carried: the restatement-check items; round 8's 4, whose passage took round 9's structural fix; round 9's 3, which repeats round 3's 4. The brief names the passages round 9 and its confirmation changed, the departure kept for this count.
