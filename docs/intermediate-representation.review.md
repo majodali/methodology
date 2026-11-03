@@ -1560,6 +1560,7 @@ Signals script before the round: no round of count 7 recorded yet.
 | 4 | 4,549 | 282 | 10 | 2.2 | not readable (mismatches 2; contradiction 1; undefined term 1; paraphrase-test findings 1) |
 | 5 | 4,560 | 282 | 12 | 2.6 | not readable (mismatches 2, both recurring; contradictions 2; undefined terms 2; paraphrase-test findings 2) |
 | 6 | 4,617 | 283 | 21 | 4.5 | not readable (mismatches 4, two recurring; contradiction 1; undefined term 1; paraphrase-test findings 3) |
+| 7 | 4,621 | 284 | | | pending |
 
 ### Round 1, count 7, 2026-11-02
 
@@ -1943,4 +1944,28 @@ Checks: 0 sentences over 25 words; 284 of 284 claims mapped; 13 claims changed, 
 
 `mtool ir check`: 0 violations, 0 warnings. `mtool style`: no sentence over 25 words. `mtool links check`: all relative links resolve. Claims after fixes: 284 (C322 cut; C346 and C347 added). Prose after fixes: 4,620 words. Structural fixes awaiting restatement: the Provenance table, and the verdict table with the sentence before it. Decided claims the fixes reworded, for the owner at acceptance: C102, C153, C208, C281, C301, C314, C318, C321, C323. Decided claim the fixes added: C346 (split from C318). Decided claim cut: C322.
 
-The confirmation is pending.
+Confirmation: 10 of 11 fixes hold. Not held: 9. Declines accepted: 6 of 8. New defects: 3.
+
+The instance read both files in full at fix commit ec5fa30 and, as briefed, gave no answer on the two structural fixes. The confirmation's fixes, IR first, before round 7 opens:
+
+- Fix 9 did not hold: C315 still promised a link for every entry, and the text never said that each term C314 lists has a definition site. C315 now scopes the link: "Each entry of that Terms section gives the term, its IR definition and, when the term has a definition site, its link." The Orchestrator named this route. The added words name the link's referent; no rule is added.
+- N1 (SP-26, C102 restated its subject as its predicate): C102 reads "When the text at the limit is an amendment, the owner decides under Article 8 (amendments, versions, and migration)." R14's reason now reads "when the text is an amendment, Article 8 governs the owner's decision at the limit".
+- N2 (SP-25, R89 misstated C277): C277 lists new defects, not findings held for the owner. R89 now derives C347 from C318: "the reasoning role has put the finding to the owner, and no next round opens at a readable verdict to carry the owner's answer."
+- N3 (CK-15, C347 mapped to ¶24): the map tool took the first of two equal matches. It now breaks a tie by how much of the sentence the claim covers. The rebuilt map sends C347 to ¶33. It also moves C294 from ¶12 to ¶13, the table that holds the evidence row: a second misplacement no reader had reported. The round-trip script passes, but it checks that each claim is mapped, not where; the placement was checked by the rebuilt match.
+- Y2 and Y3, declines not accepted: the instance holds that "limit" and "restatement" are linked terms, whatever the restatement said with them. The declines stand on the reason of round 5's X1 and X2, which that round's instance accepted. The fourth condition counts a passage the stranger cannot restate without a term the text introduces; the check lists candidates. The restatement states each one's content in plain words: "a limit of ten reviews", and "restates the text in its own words" before "that restatement". No passage resisted. Recorded for the owner with the instance's reason.
+- Declines 1, 4, 6, 7, 10 and Y1 accepted.
+
+`node scripts/check.mjs docs/intermediate-representation.md --base ec5fa30`:
+Checks: 0 sentences over 25 words; 284 of 284 claims mapped; 2 claims changed, 0 missing, 0 stale.
+
+`mtool ir check`: 0 violations, 0 warnings. `mtool style`: no sentence over 25 words. `mtool links check`: all relative links resolve. Prose after the confirmation's fixes: 4,621 words; IR 284 claims. Decided claims reworded after confirmation, for the owner at acceptance: C102, C315.
+
+Signals script after the confirmation line: signal 1 stands, now with fixes not held in rounds 1, 2, 5 and 6. Signal 2 stands on C211, C333, C260, C47 and C227; signal 4 by reading.
+
+### Round 7, count 7, 2026-11-02
+
+Branch point version and commit: v1.11 at communication-pipeline commit 8e3ceb8. The round reads the text at its opening commit, named in the brief. Prose 4,621 words; IR 284 claims; unratified terms 1 (T39). Human reader for the paraphrase test: the human owner. Stranger: pending, a fresh instance.
+
+Passages awaiting restatement, listed in the brief for a one-sentence restatement each: the Provenance table, with the inferred row between the decided and proposed rows (C47's passage), and the verdict table with the sentence before it, "In a round, the verdict is readable when four conditions hold." (C227's passage).
+
+Declines carried in the round 7 brief: the six of count 5; round 1's 1; round 2's 6; round 3's 1, 4 and 5; round 4's 2; round 5's 6 and 10; round 6's 1, 4, 6, 7 and 10, each with its reason. Not carried: the restatement-check items; round 1's 3 and round 4's 1, whose passages took structural fixes in rounds 5 and 6, so the text under them changed. Round 6's brief still carried round 1's 3, with a reason that quoted the order round 5 had reversed; recorded as an edge. The brief names the passages round 6 and its confirmation changed, the departure kept for this count.

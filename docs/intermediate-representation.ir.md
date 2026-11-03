@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: rendered (count 7, round 6 fix pass; edited for communication-pipeline evaluation case 015, rendered by the reasoning role; count 6 accepted and delivered by the owner 2026-11-01)
+Status: rendered (count 7, round 7; edited for communication-pipeline evaluation case 015, rendered by the reasoning role; count 6 accepted and delivered by the owner 2026-11-01)
 Source: the owner's adoption of 2026-11-02 of communication-pipeline evaluation case 015's changes 1 to 30, of which changes 2, 3, 5 (case 013's changes 1 to 3), 14 to 20 and 26 amend this specification (count 7); the owner's adoption of 2026-10-30 of communication-pipeline evaluation case 012's fifteen changes, of which changes 1, 2, 4 to 9, 11, 13 and 14 amend this specification (count 6); the owner's adoption of 2026-10-30 of communication-pipeline evaluation cases 010 and 011's recommended changes, of which case 010's changes 1, 5, 9, 11, 12 and 13 and case 011's change 1 amend this specification (count 5); the owner's adoption of 2026-10-29 of communication-pipeline evaluation case 009's nineteen changes, of which changes 2, 14, 15 and 18 amend this specification (count 4); the owner's decision of 2026-10-27 on signal-based meta-review triggers (count 3); communication-pipeline evaluation case 008 (owner decision of 2026-10-27, change 5) for count 2; for count 1, docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md; docs/records/intermediate-representation-history.md; docs/releases.md; docs/vocabulary.md
@@ -341,7 +341,7 @@ C310. The fix rules govern every fix, including an edit outside a round to an IR
 C311. In an edit outside a round to a reviewed IR, the reasoning role cuts each claim the edit makes a duplicate. evidence: E9. [decided: owner, 2026-11-02, case 015 change 15]
 C312. In an edit outside a round to a reviewed IR, the reasoning role amends each claim the edit makes stale. evidence: E9. [decided: owner, 2026-11-02, case 015 change 15]
 C314. The renderer lists each IR term defined outside the methodology vocabulary and the project's `docs/vocabulary.md` in a Terms section before the body. evidence: E9. [decided: owner, 2026-11-02, case 015 change 5, from case 013 change 2; reworded in count 7, round 6]
-C315. Each entry of that Terms section gives the term, its IR definition and its link. evidence: E9. [decided: owner, 2026-11-02, case 015 change 5, from case 013 change 2; reworded after count 7 round 2 confirmation]
+C315. Each entry of that Terms section gives the term, its IR definition and, when the term has a definition site, its link. evidence: E9. [decided: owner, 2026-11-02, case 015 change 5, from case 013 change 2; reworded after count 7 round 6 confirmation]
 C316. When a term draws an undefined-term finding in two rounds, the reasoning role adds the term to that Terms section. [decided: owner, 2026-11-02, case 015 change 5, from case 013 change 2; reworded after count 7 round 2 confirmation]
 ### Stranger rounds
 
@@ -469,7 +469,7 @@ C171. Rework starts a new count from round one. [decided: owner, 2026-10-27]
 
 C172. The reasoning role keeps the ended count's review record through rework. [decided: owner, 2026-10-27]
 
-C102. When the text at the limit is an amendment, the owner's decision is the decision on the amendment under Article 8 (amendments, versions, and migration). [decided: owner, 2026-10-30; reworded in count 7, round 6]
+C102. When the text at the limit is an amendment, the owner decides under Article 8 (amendments, versions, and migration). [decided: owner, 2026-10-30; reworded after count 7 round 6 confirmation]
 
 C103. The review record holds, per round, the word count of the prose and the claim count of the IR. [decided: owner, 2026-10-27]
 
@@ -645,7 +645,7 @@ R12. C98 depends-on C86 because a fix after a round is a fix to rendered prose, 
 
 R13. C101 refines C100 because rework is one of the owner's three outcomes.
 
-R14. C102 refines C100 because, when the text is an amendment, the owner's decision at the limit also decides the amendment.
+R14. C102 refines C100 because, when the text is an amendment, Article 8 governs the owner's decision at the limit.
 
 R16. C332 depends-on C88 because the count and its record exist only under the rounds rule.
 
@@ -745,7 +745,7 @@ R86. C306 refines C175 because the readers the Reader line names are agents in t
 
 R88. C345 depends-on C346 because the fix waits for the owner's answer and no next round opens at a readable verdict; C182 marks a finding whose fix is not confirmed unfixed.
 
-R89. C347 depends-on C277 because C277 lists for the owner what the final confirmation leaves, and C345 leaves such a finding unfixed.
+R89. C347 depends-on C318 because the reasoning role has put the finding to the owner, and no next round opens at a readable verdict to carry the owner's answer.
 
 ## Evidence
 
