@@ -1563,7 +1563,7 @@ Signals script before the round: no round of count 7 recorded yet.
 | 7 | 4,621 | 284 | 6 | 1.3 | not readable (mismatches 0; contradiction 1; undefined term 1; paraphrase-test findings 0) |
 | 8 | 4,630 | 285 | 13 | 2.8 | not readable (mismatches 5, two recurring; contradiction 1; undefined terms 0; paraphrase-test findings 0) |
 | 9 | 4,640 | 284 | 7 | 1.5 | not readable (mismatches 2, both recurring; contradictions 2; undefined terms 0; paraphrase-test findings 1) |
-| 10 | 4,671 | 285 | | | pending |
+| 10 | 4,671 | 285 | 12 | 2.6 | not readable (mismatches 2, both recurring declined findings; contradictions 0; undefined terms 0; paraphrase-test findings 3); the limit reached |
 
 ### Round 1, count 7, 2026-11-02
 
@@ -2167,3 +2167,50 @@ Branch point version and commit: v1.11 at communication-pipeline commit 8e3ceb8.
 Passage awaiting restatement, listed in the brief for a one-sentence restatement: the opening of "Stranger rounds", "The rounds apply to every stranger review the rendering conditions select." (C90's passage).
 
 Declines carried in the round 10 brief: the six of count 5; round 2's 6; round 3's 1, 4 and 5; round 4's 2; round 5's 6 and 10; round 6's 1, 4, 6, 7 and 10; round 7's 2 and 5; round 8's 1, 5 and 9; round 9's 1, each with its reason. Not carried: the restatement-check items; round 8's 4, whose passage took round 9's structural fix; round 9's 3, which repeats round 3's 4. The brief names the passages round 9 and its confirmation changed, the departure kept for this count.
+
+Stranger model: claude-haiku-5-5, a fresh instance, reading at commit 92f0d58. It wrote its restatement before it opened the IR and made no call outside its brief.
+
+Restatement:
+
+> This text sets the method for writing a document. First, the writer lists its statements as numbered items, each with a source, and each named thing spelled out. Second, the writer turns that list into prose. Fresh readers then test the prose. Each reader summarizes the text in its own words, before reading the list, and the summary is compared with the list. The text sets who performs each step, which checks a program runs, and when a review passes: no summary disagrees with the list, no contradiction, no undefined word, and no passage that resists summary. A failed review leads to fixes, the list first and then the prose, and another review, up to ten reviews. A fix may add a rule only when the owner adopted it. A finding that needs a new rule goes to the owner. The text also covers which documents need this method, which reader each document serves, when the owner may order a check of the review records, and how the finished list is kept after delivery.
+
+The listed passage, restated in one sentence:
+
+1. "The review rounds described in this text apply to each fresh-reader review that the rendering conditions choose."
+
+Prose 4,671 words by `wordCount` (the stranger's estimate: about 6,000); IR 285 claims; 9 findings from the stranger and 3 from the restatement check, 12 in all, 2.6 per thousand words. Restatement: two mismatches. Listed passage: matched. Contradictions 0, undefined terms 0, paraphrase-test findings 3 (the check's items; the stranger names its own "document" and "review records" as lapses); verdict: not readable for RD-4. Omissions noticed, not counted: 4.
+
+The listed passage. The restatement has the rounds apply to each fresh-reader review the rendering conditions choose. That matches C90. Round 9's structural fix holds; the `awaiting restatement` mark on the opening of "Stranger rounds" clears.
+
+The mismatches, each counting under the first condition. The stranger did not raise them as findings: both recur findings declined in this count, and it counted them because the brief says every mismatch counts. First, the restatement limited the method to documents; "A report to RD-2 always starts as an IR." (C130), and RD-2 shares the conversation (C17), as round 6's mismatch 1. Second, the restatement narrowed the owner's meta-review to a check of the review records; "The owner may dispatch a meta-review of any text." (C192), as round 8's mismatch 5. The prose invited neither.
+Mismatches: C130 (relied on C17), C192
+
+Restatement check, `node scripts/lint.mjs --restatement docs/intermediate-representation.review.md --round 10` in the communication-pipeline worktree: 3 items, EE1 ("review records"), EE2 ("passage") and EE3 (a repeat of C280's sentence).
+
+Signals script after the `Mismatches:` line: signal 2 fires on C130 (rounds 6 and 10) and C192 (rounds 8 and 10), beside C211, C333, C260, C47, C227, C38, C71 and C90. By reading, signal 2's declined-finding part fires again: both mismatches recur findings this count declined. Signal 1 stands from rounds 1, 2, 5 and 6. No contradiction this round; signal 4 stands from earlier rounds.
+
+The count reaches the limit at this round. C323 owes a structural fix for a recurring mismatch "before the next round", and no next round opens at the limit (C88), so no structural fix is made on C130 or C192. Both recurrences go to the owner. The stranger's own question goes to the owner too, as a ruleset-review item: whether a recurrence of a declined mismatch should count against the verdict.
+
+At the limit, the final-round rules apply. The reasoning role fixes the final round's findings in the IR and then in the prose. The final round's stranger instance confirms each fix. The reasoning role marks each finding confirmed or unfixed. A new defect the confirmation names is not fixed in the count; it goes to the owner. The reasoning role does not deliver the text before the owner's decision.
+
+| # | Finding (shortened) | Kind | Decision |
+|---|---|---|---|
+| 1 | C38 states the ask's body and its `Depends:` field in one sentence | SP-01 | fixed: split. "An ask element (`A`) holds a decision or action requested of the reader." (C38) and "An ask's `Depends:` field names the claims or asks the request rests on." (C351) |
+| 2 | C78, C80 and C154 name no renderer | SP-18 | fixed: "the renderer gives" (C78) and "the renderer places" (C80, C154) |
+| 3 | "state header" used before its definition | SP-04 | declined: the definition precedes the use. "A state header names whether the sentences under it state what is done now or what the text aims at." stands before "The reasoning role adds words in a fix only for a missing definition or referent, a state header, or a rewording note." in the fix-rules paragraph |
+| 4 | "such a finding" in C318 and C346 | SP-03 | fixed: "a finding whose fix would change a decided claim" (C318); "A fix that would change a decided claim waits for the owner's answer." (C346) |
+| 5 | "that finding" in C319 | SP-03 | fixed: "after the owner answers each finding waiting for the owner" |
+| 6 | "that Terms section" in C315 and C316 | SP-03 | fixed: "the Terms section before the body" |
+| 7 | "that edit" in C254 | SP-03 | fixed: "At the next edit of an active document, the reasoning role revises the unconfirmed words." |
+| 8 | "the two rounds" in C348 | SP-03 | fixed: "Rounds whose restatement mismatches name one claim may fall in one count or across two." |
+| 9 | "that confirmation" in C277 and "the new defect" in C278 | SP-03 | fixed: "each new defect the final round's confirmation names" (C277); "each new defect of the final round's confirmation" (C278) |
+| EE1 | the restatement uses "review records" (T12) | paraphrase test | declined: the words carry the narrowing that mismatch 2 counts; no passage resisted restatement, as earlier strangers restated the meta-review in plain words |
+| EE2 | "no passage that resists summary" uses "Passage" (T24) | paraphrase test | declined: the plain noun for a part of the text; no passage resisted |
+| EE3 | "A finding that needs a new rule goes to the owner." repeats C280's sentence (83 percent) | paraphrase test | declined: the sentence holds no term the text introduces and restates the rule in fewer words, as round 3's R1 |
+
+`node scripts/check.mjs docs/intermediate-representation.md --base 92f0d58`, on the fixed text:
+Checks: 0 sentences over 25 words; 286 of 286 claims mapped; 14 claims changed, 0 missing, 0 stale.
+
+`mtool ir check`: 0 violations, 0 warnings. `mtool style`: no sentence over 25 words, and no new warning. `mtool links check`: all relative links resolve. Claims after fixes: 286 (C351 added). Prose after fixes: 4,713 words. Structural fixes awaiting restatement: none. Decided claims the fixes reworded, for the owner at acceptance: C38, C78, C80, C154, C254, C277, C278, C315, C316, C318, C319, C346 and C348. Decided claim added: C351 (split from C38).
+
+The confirmation is pending.
