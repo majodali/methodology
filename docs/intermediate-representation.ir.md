@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: rendered (count 7, round 8 fix pass; edited for communication-pipeline evaluation case 015, rendered by the reasoning role; count 6 accepted and delivered by the owner 2026-11-01)
+Status: rendered (count 7, round 9; edited for communication-pipeline evaluation case 015, rendered by the reasoning role; count 6 accepted and delivered by the owner 2026-11-01)
 Source: the owner's adoption of 2026-11-02 of communication-pipeline evaluation case 015's changes 1 to 30, of which changes 2, 3, 5 (case 013's changes 1 to 3), 14 to 20 and 26 amend this specification (count 7); the owner's adoption of 2026-10-30 of communication-pipeline evaluation case 012's fifteen changes, of which changes 1, 2, 4 to 9, 11, 13 and 14 amend this specification (count 6); the owner's adoption of 2026-10-30 of communication-pipeline evaluation cases 010 and 011's recommended changes, of which case 010's changes 1, 5, 9, 11, 12 and 13 and case 011's change 1 amend this specification (count 5); the owner's adoption of 2026-10-29 of communication-pipeline evaluation case 009's nineteen changes, of which changes 2, 14, 15 and 18 amend this specification (count 4); the owner's decision of 2026-10-27 on signal-based meta-review triggers (count 3); communication-pipeline evaluation case 008 (owner decision of 2026-10-27, change 5) for count 2; for count 1, docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md; docs/records/intermediate-representation-history.md; docs/releases.md; docs/vocabulary.md
@@ -117,9 +117,9 @@ C9. The IR opens with header fields. [decided: pipeline schema v1.2, 2026-10-25]
 
 C167. The IR holds five sections in a fixed order: Terms, Claims, Relations, Evidence, Asks. [decided: pipeline schema v1.2, 2026-10-25]
 
-C38. An ask element (`A`) holds a decision or action requested of the reader and `Depends:` naming the claims or asks the request rests on. [decided: pipeline schema v1.2, 2026-10-25]
-
 C10. The Claims section may use any sub-headings. [decided: pipeline schema v1.2, 2026-10-25]
+
+C38. An ask element (`A`) holds a decision or action requested of the reader and `Depends:` naming the claims or asks the request rests on. [decided: pipeline schema v1.2, 2026-10-25]
 
 C11. The Reader header holds one reader catalog identifier. [decided: pipeline schema v1.2, 2026-10-25]
 
@@ -513,7 +513,7 @@ C109. A `Meta-review: pending` line in an accepted deliverable's review record i
 
 C71. Prose is rendered from the IR when a rendering condition selects rendering. [decided: owner, 2026-10-24]
 
-C246. The rendering conditions settle, for one IR, whether prose is rendered, who renders it and whether the stranger rounds run. [inferred: R66]
+C246. The rendering conditions settle, for one IR, who renders the prose and whether the stranger rounds run. [inferred: R66]
 
 C204. A dependent ask is an ask with a `Depends:` field. [decided: pipeline branch point v1.1, 2026-10-25]
 

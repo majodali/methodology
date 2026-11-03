@@ -1562,6 +1562,7 @@ Signals script before the round: no round of count 7 recorded yet.
 | 6 | 4,617 | 283 | 21 | 4.5 | not readable (mismatches 4, two recurring; contradiction 1; undefined term 1; paraphrase-test findings 3) |
 | 7 | 4,621 | 284 | 6 | 1.3 | not readable (mismatches 0; contradiction 1; undefined term 1; paraphrase-test findings 0) |
 | 8 | 4,630 | 285 | 13 | 2.8 | not readable (mismatches 5, two recurring; contradiction 1; undefined terms 0; paraphrase-test findings 0) |
+| 9 | 4,640 | 284 | | | pending |
 
 ### Round 1, count 7, 2026-11-02
 
@@ -2078,4 +2079,28 @@ Checks: 0 sentences over 25 words; 284 of 284 claims mapped; 2 claims changed, 0
 
 `mtool ir check`: 0 violations, 0 warnings. `mtool style`: no sentence over 25 words, and no new warning. `mtool links check`: all relative links resolve. Claims after fixes: 284 (C347 cut). Prose after fixes: 4,637 words. Structural fixes awaiting restatement: the ask's sentence in "Document form", and the opening of "Rendering conditions". Decided claims the fixes reworded, for the owner at acceptance: C257, C319, and term T35's definition.
 
-The confirmation is pending.
+Confirmation: 7 of 7 fixes hold. Not held: none. Declines accepted: 3 of 4. New defects: 3.
+
+The instance read both files in full at fix commit da23f0c and, as briefed, gave no answer on the two structural fixes. It named three new defects, all from the two moves. The confirmation's fixes, IR first, before round 9 opens, each keeping its move:
+
+- N1 (SP-11, the ask's sentence split the section list from the Claims sentence, and the Ask row lost its body rule): C38 now follows "The Claims section may use any sub-headings." The Ask row's body cell points to it: "the body that "Document form" gives". The ask's sentence stays out of the table.
+- N2 (SP-26, C246 repeated the moved C71's "whether prose is rendered"): C246 reads "The rendering conditions settle, for one IR, who renders the prose and whether the stranger rounds run."
+- N3 (SP-04, "rendering conditions" lost its first-use link under "Stranger rounds"): linked there to the section.
+- Finding 9, decline not accepted: the instance holds that a term with no definition site appears in both lists of one report. The decline stands on its reason: C153 lists terms for the owner's ratification, and C314 renders terms whose definitions sit outside the two vocabularies, for the reader. Listed for the owner with the instance's reason.
+- Declines 1, 4 and 5 accepted.
+- A residual the instance flags: "After a verdict of not readable" in C319 also covers the final round at the limit, which reads not readable. The text settles it. The rounds run until a readable verdict or the limit (C88), so no next round opens at the limit, and the owner's decision there covers the text (C100). Not listed.
+
+`node scripts/check.mjs docs/intermediate-representation.md --base da23f0c`:
+Checks: 0 sentences over 25 words; 284 of 284 claims mapped; 1 claims changed, 0 missing, 0 stale.
+
+`mtool ir check`: 0 violations, 0 warnings. `mtool style`: no sentence over 25 words, and no new warning. `mtool links check`: all relative links resolve. Prose after the confirmation's fixes: 4,640 words; IR 284 claims.
+
+Signals script after the confirmation line: round 8 held every fix, so signal 1 does not widen; it stands from rounds 1, 2, 5 and 6. Signal 2 stands on C211, C333, C260, C47, C227, C38 and C71; signal 4 by reading.
+
+### Round 9, count 7, 2026-11-02
+
+Branch point version and commit: v1.11 at communication-pipeline commit 8e3ceb8. The round reads the text at its opening commit, named in the brief. Prose 4,640 words; IR 284 claims; unratified terms 1 (T39). Human reader for the paraphrase test: the human owner. Stranger: pending, a fresh instance. Round 9 is the second to last before the limit.
+
+Passages awaiting restatement, listed in the brief for a one-sentence restatement each: in "Document form", the sentences on the IR's sections and the ask element (C38's passage); and the opening of "Rendering conditions" (C71's passage).
+
+Declines carried in the round 9 brief: the six of count 5; round 2's 6; round 3's 1, 4 and 5; round 4's 2; round 5's 6 and 10; round 6's 1, 4, 6, 7 and 10; round 7's 2 and 5; round 8's 1, 4, 5 and 9, each with its reason. Not carried: the restatement-check items; round 1's 1, whose passage took round 8's structural fix. The brief names the passages round 8 and its confirmation changed, the departure kept for this count.
