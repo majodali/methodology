@@ -1562,7 +1562,7 @@ Signals script before the round: no round of count 7 recorded yet.
 | 6 | 4,617 | 283 | 21 | 4.5 | not readable (mismatches 4, two recurring; contradiction 1; undefined term 1; paraphrase-test findings 3) |
 | 7 | 4,621 | 284 | 6 | 1.3 | not readable (mismatches 0; contradiction 1; undefined term 1; paraphrase-test findings 0) |
 | 8 | 4,630 | 285 | 13 | 2.8 | not readable (mismatches 5, two recurring; contradiction 1; undefined terms 0; paraphrase-test findings 0) |
-| 9 | 4,640 | 284 | | | pending |
+| 9 | 4,640 | 284 | 7 | 1.5 | not readable (mismatches 2, both recurring; contradictions 2; undefined terms 0; paraphrase-test findings 1) |
 
 ### Round 1, count 7, 2026-11-02
 
@@ -2104,3 +2104,46 @@ Branch point version and commit: v1.11 at communication-pipeline commit 8e3ceb8.
 Passages awaiting restatement, listed in the brief for a one-sentence restatement each: in "Document form", the sentences on the IR's sections and the ask element (C38's passage); and the opening of "Rendering conditions" (C71's passage).
 
 Declines carried in the round 9 brief: the six of count 5; round 2's 6; round 3's 1, 4 and 5; round 4's 2; round 5's 6 and 10; round 6's 1, 4, 6, 7 and 10; round 7's 2 and 5; round 8's 1, 4, 5 and 9, each with its reason. Not carried: the restatement-check items; round 1's 1, whose passage took round 8's structural fix. The brief names the passages round 8 and its confirmation changed, the departure kept for this count.
+
+Stranger model: claude-haiku-5-5, a fresh instance, reading at commit caf413e. It wrote its restatement before it opened the IR and made no call outside its brief.
+
+Restatement:
+
+> The problem: prose written directly from a writer's memory packs several statements into one sentence, leaves things unnamed, and uses words from the conversation as if they were defined. The text sets a method against this. Before any prose exists, the writer lists the content as numbered statements, each marked as decided, derived or proposed, with every needed definition and every pronoun's subject named. Prose is then written from that list, with no statement added or dropped. Fresh agent sessions, who did not write the text, each give their own account of it in at most 200 words before reading the list, and the list is checked against that account. Any disagreement is a defect. The text decides which texts need the list, what the list holds, the mechanical checks, how fixes are made, the four conditions for a passing review, a cap of ten review passes, and when an extra review runs. It also decides who turns the list into prose and whether fresh reviews run, based on the intended reader and on counts of statements, words not yet approved and requests.
+
+The listed passages, each restated in one sentence:
+
+1. "The list is one markdown file whose five sections, in fixed order, are terms, claims, relations, evidence and asks, where the claims section may use any subheadings and each ask names a requested decision or action with the claims or asks it rests on."
+2. "Prose is produced from the statement list only when one of the listed conditions says so."
+
+Prose 4,640 words by `wordCount` (the stranger's estimate: about 5,800); IR 284 claims; 6 findings from the stranger and 1 from the restatement check, 7 in all, 1.5 per thousand words. Restatement: two mismatches. Listed passages: both matched. Contradictions 2 (findings 4 and 6), undefined terms 0, paraphrase-test findings 1 (the check's item; the stranger found none); verdict: not readable for RD-4. Omissions noticed, not counted: 6.
+
+The listed passages. The first restatement gives the IR's five sections, the Claims section's sub-headings and the ask with what it rests on. That matches C167, C10 and C38. The second has prose made only when a condition says so. That matches C71. Both structural fixes of round 8 hold; the `awaiting restatement` marks on "Document form" and on the opening of "Rendering conditions" clear.
+
+The mismatches, each counting under the first condition though the stranger put both down to its own restatement. Both drop the qualifier round 8's mismatches 3 and 4 dropped. First, "Prose is then written from that list" has prose always follow the list; C71 requires a rendering condition to select rendering. The stranger quoted C71's sentence. Second, the restatement gives every text fresh reviews; C90 limits the rounds to the reviews the rendering conditions select. The stranger quoted C90's sentence. The prose invited neither: each quoted sentence states the qualifier.
+Mismatches: C71, C90
+
+Restatement check, `node scripts/lint.mjs --restatement docs/intermediate-representation.review.md --round 9` in the communication-pipeline worktree: 1 item, CC1 ("counts").
+
+Signals script after the `Mismatches:` line: signal 2 fires on C71 again (count 5 round 2, count 7 rounds 8 and 9) and on C90 (rounds 8 and 9), beside C211, C333, C260, C47, C227 and C38. Signal 1 stands from rounds 1, 2, 5 and 6. By reading, signal 4 stands: findings 4 and 6 are contradictions in round 9 in the owner-gate passages rounds 5 to 8 touched. By reading, signal 2 also fires on its declined-finding part: finding 3 raises round 3's finding 4, a decline the brief carried, without saying why its reason fails.
+
+Step 5's structural fixes. C90 recurs for the first time, so a structural fix is owed. The sentence sat third in "Rounds, the limit and rework", after the limit and the run of rounds, so a reader took the rounds as universal before reaching their scope. It moves to open "Stranger rounds", before "The verdict": "The rounds apply to every stranger review the rendering conditions select." The claim is unchanged. The passage is marked `awaiting restatement` and goes to round 10's brief. C71 recurs a second time, after round 8's move. Its listed passage matched in this round, so the move holds where the passage is read alone. The second structural fix changes the claim to the mismatched restatements' reading only when that reading is true, and here it is not. No further move remains within the claim's own sentence and section. The structural options are spent, as for the Element kinds table in round 8; no second fix is made on C71, and the recurrence goes to the owner.
+
+| # | Finding (shortened) | Kind | Decision |
+|---|---|---|---|
+| 1 | prose always follows the list (C71) | restatement | declined: the prose did not invite it; the quoted sentence states the condition. The mismatch counts. No second structural fix: the options are spent, as above |
+| 2 | fresh reviews on every text (C90) | restatement | structural fix: C90 recurring from round 8, the sentence moves to open "Stranger rounds"; `awaiting restatement` |
+| 3 | C306 names two readers in one sentence | SP-01 | declined: round 3's finding 4, carried in the brief with its reason. The plain purpose is held to two sentences under the style guide, and the sentence states one fact, who reads the text |
+| 4 | a new-rule finding not said to wait, so C97 forces a fix C279 forbids (C280) | SP-25 | fixed: "The fix of a finding that needs a new rule waits for the owner's answer." (C349, inferred by R90 from C279), after C280. C97's "each finding not waiting for the owner" now excludes it |
+| 5 | C319's next round opens with no actor | SP-18 | fixed: "After a verdict of not readable, the reasoning role opens the next round after the owner answers that finding." |
+| 6 | C183's next-edit fix against a finding still waiting (C345, C346) | SP-25 | fixed: "The reasoning role fixes each unfixed finding of the readable round not waiting for the owner at the next edit of an active document." (C183) |
+| CC1 | the restatement uses "counts" (T14) | paraphrase test | declined: "counts of statements" is the plain noun, as round 4's T1 and round 6's Y1 |
+
+`node scripts/check.mjs docs/intermediate-representation.md --base caf413e`, on the fixed text:
+Checks: 0 sentences over 25 words; 285 of 285 claims mapped; 3 claims changed, 0 missing, 0 stale.
+
+`mtool ir check`: 0 violations, 0 warnings. `mtool style`: no sentence over 25 words, and no new warning. `mtool links check`: all relative links resolve. Claims after fixes: 285 (C349 added). Prose after fixes: 4,663 words. Structural fix awaiting restatement: the opening of "Stranger rounds" (C90's passage). Decided claims the fixes reworded, for the owner at acceptance: C183, C319.
+
+The Orchestrator confirmed, after round 8's close, that C88 and C100 settle the C319 residual recorded there; it is not an owner item.
+
+The confirmation is pending.
