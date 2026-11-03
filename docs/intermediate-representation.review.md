@@ -1560,7 +1560,7 @@ Signals script before the round: no round of count 7 recorded yet.
 | 4 | 4,549 | 282 | 10 | 2.2 | not readable (mismatches 2; contradiction 1; undefined term 1; paraphrase-test findings 1) |
 | 5 | 4,560 | 282 | 12 | 2.6 | not readable (mismatches 2, both recurring; contradictions 2; undefined terms 2; paraphrase-test findings 2) |
 | 6 | 4,617 | 283 | 21 | 4.5 | not readable (mismatches 4, two recurring; contradiction 1; undefined term 1; paraphrase-test findings 3) |
-| 7 | 4,621 | 284 | | | pending |
+| 7 | 4,621 | 284 | 6 | 1.3 | not readable (mismatches 0; contradiction 1; undefined term 1; paraphrase-test findings 0) |
 
 ### Round 1, count 7, 2026-11-02
 
@@ -1969,3 +1969,41 @@ Branch point version and commit: v1.11 at communication-pipeline commit 8e3ceb8.
 Passages awaiting restatement, listed in the brief for a one-sentence restatement each: the Provenance table, with the inferred row between the decided and proposed rows (C47's passage), and the verdict table with the sentence before it, "In a round, the verdict is readable when four conditions hold." (C227's passage).
 
 Declines carried in the round 7 brief: the six of count 5; round 1's 1; round 2's 6; round 3's 1, 4 and 5; round 4's 2; round 5's 6 and 10; round 6's 1, 4, 6, 7 and 10, each with its reason. Not carried: the restatement-check items; round 1's 3 and round 4's 1, whose passages took structural fixes in rounds 5 and 6, so the text under them changed. Round 6's brief still carried round 1's 3, with a reason that quoted the order round 5 had reversed; recorded as an edge. The brief names the passages round 6 and its confirmation changed, the departure kept for this count.
+
+Stranger model: claude-haiku-5-5, a fresh instance, reading at commit f1347ef. It wrote its restatement before it opened the IR and made no call outside its brief.
+
+Restatement:
+
+> This text sets how a project's texts get written so that each statement stays separate, each thing named stays named, and each word it relies on stays defined. Prose written straight from a draft tends to pack several statements into one sentence and to use working words as if readers knew them. So the text requires such a text to be first written as a numbered list of statements, each marked with where it came from. Prose is then written from that list. A fresh reader states the text in its own words before reading the list, and every disagreement between that account and the list is a finding. The text sets which texts need the list, which readers get prose written from it, and when a review pass is clean: four conditions, covering match between account and list, contradictions, undefined words and whether the account avoids the text's own vocabulary. Reviews stop after ten passes. Fixes change the list first, and may add no rule the owner has not adopted. Remaining owner decisions: whether an extra check of how the reviews went runs, and how cases the text does not name are settled.
+
+The listed passages, each restated in one sentence:
+
+1. "The table of marks gives, in order, decided, for an element the owner ratified or quoted from a document the owner ratified; inferred, for an element the writing agent derived, citing what it was derived from; and proposed, for an element awaiting ratification, citing the numbered list it belongs to or "this list"."
+2. "A review pass is clean when the account has no mismatch with the list, the reviewer finds no contradiction or undefined word unless the reviewer withdrew it, on a reason quoting the prose, when confirming each fix, and each passage can be restated without words the text introduces; omissions do not count against the pass."
+
+Prose 4,621 words by `wordCount` (the stranger's estimate: about 5,800); IR 284 claims; 6 findings from the stranger and none from the restatement check, 6 in all, 1.3 per thousand words. Restatement: no mismatch, the first round of this count without one. Listed passages: both matched. Contradiction 1 (finding 3), undefined term 1 (finding 1), paraphrase-test findings 0; verdict: not readable for RD-4. Omissions noticed, not counted: 5.
+
+The listed passages. The first restatement gives the Provenance table's three statuses in their new order, each with its own meaning: decided, inferred, proposed. That matches C46, C48 and C47. The second gives the verdict with its four conditions, the withdrawal rule and the omission rule. That matches C93, C203, C227, C221, C234, C337 and C265. Both structural fixes of round 6 hold; the `awaiting restatement` marks on the Provenance table and on the verdict table clear.
+Mismatches: none
+
+Restatement check, `node scripts/lint.mjs --restatement docs/intermediate-representation.review.md --round 7` in the communication-pipeline worktree: 0 items.
+
+Signals script after the `Mismatches:` line: no claim of this round recurs. Signal 1 stands from rounds 1, 2, 5 and 6; signal 2 stands on C211, C333, C260, C47 and C227. By reading, signal 4 stands: finding 3 is a contradiction in round 7 between C97 and C345, the passage round 5's confirmation changed. Round 5's confirmation raised the same pair; its fix routed the waiting finding but left C97's scope whole.
+
+The verdict section's order, settled for this count. Round 6's structural fix for C227 moved "In a round, the verdict is readable when four conditions hold." (C93) from the section's opening to directly before the table, and round 7's restatement of that passage matched. The definitions stay first because the conditions use them: restatement mismatch, omission, passage, withdrawal and a term the text introduces. Moving C93 back would undo a structural fix that held. Finding 2 is declined on that reason.
+
+| # | Finding (shortened) | Kind | Decision |
+|---|---|---|---|
+| 1 | "lint" neither defined nor linked (C51, C111, C123) | SP-04 | fixed: "a checking program" in all three. The methodology vocabulary has no lint entry, and the pipeline's entry names its own script, so the plain words replace the term |
+| 2 | "The verdict" opens with definitions before its rule | SP-11 | declined: the order is round 6's structural fix for C227, matched in this round; the conditions rest on the definitions above them |
+| 3 | C97 fixes every finding, against C345's finding left unfixed | SP-25 | fixed: "At a readable verdict, the reasoning role fixes each finding not waiting for the owner, IR first, under the fix rules." (C97) |
+| 4 | "of one count or two" in C323 | SP-03 | fixed: "When mismatches name one claim in two rounds, in one count or across two, the reasoning role makes a structural fix before the next round." |
+| 5 | C333 restated by C192 | SP-26 | declined: C333 is the owner's decision after a count's report of the signals; C192 lets the owner dispatch a meta-review of any text, with or without a signal. C333 is also round 5's structural-fix passage, matched in round 6 |
+| 6 | "of one count or two" in C208 | SP-03 | fixed: "in two rounds, whether in one count or across two" |
+
+`node scripts/check.mjs docs/intermediate-representation.md --base f1347ef`, on the fixed text:
+Checks: 0 sentences over 25 words; 284 of 284 claims mapped; 6 claims changed, 0 missing, 0 stale.
+
+`mtool ir check`: 0 violations, 0 warnings. `mtool style`: no sentence over 25 words. `mtool links check`: all relative links resolve. The rebuilt render map is unchanged. Claims after fixes: 284. Prose after fixes: 4,624 words. Structural fixes owed: none; passages awaiting restatement: none. Decided claims the fixes reworded, for the owner at acceptance: C51, C97, C111, C123, C208, C323.
+
+The confirmation is pending.

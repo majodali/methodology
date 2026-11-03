@@ -106,7 +106,7 @@ A term with status proposed is an unratified term. The count of unratified terms
 
 ## Mechanical checks
 
-The IR has sixteen mechanical checks, one per row of the table below. A lint or a [stranger](vocabulary.md#def-stranger) reports each check
+The IR has sixteen mechanical checks, one per row of the table below. A checking program or a [stranger](vocabulary.md#def-stranger) reports each check
 as a finding. [methodology-tools](https://github.com/majodali/methodology-tools) runs the checks as `mtool ir check`.
 
 | Check | Name | Fires when |
@@ -192,13 +192,13 @@ The reasoning role records in the [review record](vocabulary.md#def-review-recor
 holds, per round, the word count of the prose and the claim count of
 the IR. The review record keeps each restatement as written. The reasoning role checks each listed passage's [structural fix](#structural-fix) against the stranger's one-sentence restatement of the passage.
 
-The text delivered after a readable verdict is the text that round read, with the round's fixes applied. At a readable verdict, the reasoning role fixes the round's findings under the fix rules, in the IR and then in the prose. At a readable verdict, a finding whose fix waits for the owner stays unfixed. The reasoning role lists that finding for the owner. At a readable verdict, the round's stranger instance confirms each fix not marked awaiting restatement. When a readable round's [fix pass](vocabulary.md#def-fix-pass) marks a structural fix awaiting restatement, the reasoning role keeps the mark. The reasoning role lists the passage of a fix still awaiting restatement at a readable verdict in the next count's round 1 brief. A finding whose fix the readable round's stranger instance does not
+The text delivered after a readable verdict is the text that round read, with the round's fixes applied. At a readable verdict, the reasoning role fixes each finding not waiting for the owner, IR first, under the fix rules. At a readable verdict, a finding whose fix waits for the owner stays unfixed. The reasoning role lists that finding for the owner. At a readable verdict, the round's stranger instance confirms each fix not marked awaiting restatement. When a readable round's [fix pass](vocabulary.md#def-fix-pass) marks a structural fix awaiting restatement, the reasoning role keeps the mark. The reasoning role lists the passage of a fix still awaiting restatement at a readable verdict in the next count's round 1 brief. A finding whose fix the readable round's stranger instance does not
 confirm is unfixed. The reasoning role marks each finding of the readable round confirmed or unfixed in the review record. An unconfirmed fix's words stay in the delivered prose. The reasoning role fixes an unfixed finding of the readable round at
 the next edit of an active document. At that edit, the reasoning role revises the unconfirmed words. The next count's stranger instances review the revised words. After a verdict of not readable, the
 reasoning role fixes the IR and then the prose. The next round
 reviews the fixed IR and the fixed prose.
 
-<a id="structural-fix"></a>A structural fix is one of two fixes for a misreading that a rewording does not settle. The first structural fix moves the sentence out of the structure that produces the misreading: a list, a section or an adjacency. The second structural fix changes the claim to the reading of the mismatched restatements, when that reading is true. When restatement mismatches name one claim in two rounds, of one count or two, the reasoning role makes a structural fix before the next round. The reasoning role marks the structural fix made for a recurring mismatch awaiting restatement in the review record.
+<a id="structural-fix"></a>A structural fix is one of two fixes for a misreading that a rewording does not settle. The first structural fix moves the sentence out of the structure that produces the misreading: a list, a section or an adjacency. The second structural fix changes the claim to the reading of the mismatched restatements, when that reading is true. When mismatches name one claim in two rounds, in one count or across two, the reasoning role makes a structural fix before the next round. The reasoning role marks the structural fix made for a recurring mismatch awaiting restatement in the review record.
 
 A fix pass is the reasoning role's fixes of one round's findings, in the IR and then in the prose. Each project that runs rounds names, in its own documents, the checks that run after each fix pass and the lines the review record holds. A fix the round's stranger instance confirms only in part counts as a fix not held. The reasoning role names the fix commit to the round's stranger instance. The round's stranger instance reads the prose and the IR at the fix commit, in full, before answering. A [new defect](vocabulary.md#def-new-defect) is a defect a fix introduces. The round's stranger instance names each new defect at confirmation. The next round opens after the reasoning role records the round's confirmation. Before the next round opens, the reasoning role makes the fixes the confirmation calls for. At the end of a count, the reasoning role sets the IR's Status to
 `reviewed`.
@@ -227,7 +227,7 @@ The owner decides whether a [meta-review](vocabulary.md#def-meta-review) runs. A
 
 A meta-review signal is one of three
 conditions in a review record. The first
-signal: in two or more rounds, a fix was not held at confirmation. The second signal: a finding declined in an earlier round was raised again. The second signal also fires when restatement mismatches named one claim in two rounds, of one count or two. The fourth signal: in round 3 or later, a stranger found a contradiction in a passage an
+signal: in two or more rounds, a fix was not held at confirmation. The second signal: a finding declined in an earlier round was raised again. The second signal also fires when restatement mismatches named one claim in two rounds, whether in one count or across two. The fourth signal: in round 3 or later, a stranger found a contradiction in a passage an
 earlier round's fix touched. Communication-pipeline evaluation case [012](https://github.com/majodali/communication-pipeline/blob/main/eval/cases/012-meta-review-branch-point-v1.9-and-ir-spec-count-5-2026-10-30.md) struck the third signal, a measure of the prose's growth per IR claim, on 2026-10-30. The first, second and fourth signals keep their numbers. At the end of a count, the reasoning
 role checks the signals against the review record.
 
@@ -242,7 +242,7 @@ Article 9 (audits).
 
 ## Rendering conditions
 
-The rendering conditions settle, for one IR, whether prose is rendered, who renders it and whether the stranger rounds run. The first row whose condition holds decides. A dependent ask is an ask with a `Depends:` field. The inputs are the IR's reader, purpose, Normative header, claim count, proposed-term count, count of dependent asks, longest claim and two owner inputs. The first owner input is whether the owner asked for a review. The second owner input is whether the owner designated the document IR-only. A lint runs the mechanical checks in every case.
+The rendering conditions settle, for one IR, whether prose is rendered, who renders it and whether the stranger rounds run. The first row whose condition holds decides. A dependent ask is an ask with a `Depends:` field. The inputs are the IR's reader, purpose, Normative header, claim count, proposed-term count, count of dependent asks, longest claim and two owner inputs. The first owner input is whether the owner asked for a review. The second owner input is whether the owner designated the document IR-only. A checking program runs the mechanical checks in every case.
 
 | Condition | What follows |
 |---|---|
@@ -262,7 +262,7 @@ changes no obligation.
 ## The footprint
 
 Before delivery, the
-[reasoning role](vocabulary.md#def-reasoning-role), or a lint,
+[reasoning role](vocabulary.md#def-reasoning-role), or a checking program,
 compares the Footprint header with the files the branch changed since
 its base. An IR whose deliverable is a chat message has no [footprint](vocabulary.md#def-footprint). No branch carries a chat message. When the Footprint header is absent or empty, no comparison is made. A file is changed when the branch's diff adds, modifies,
 deletes or renames it. The IR and its review record are not counted as

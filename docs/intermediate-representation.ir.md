@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: rendered (count 7, round 7; edited for communication-pipeline evaluation case 015, rendered by the reasoning role; count 6 accepted and delivered by the owner 2026-11-01)
+Status: rendered (count 7, round 7 fix pass; edited for communication-pipeline evaluation case 015, rendered by the reasoning role; count 6 accepted and delivered by the owner 2026-11-01)
 Source: the owner's adoption of 2026-11-02 of communication-pipeline evaluation case 015's changes 1 to 30, of which changes 2, 3, 5 (case 013's changes 1 to 3), 14 to 20 and 26 amend this specification (count 7); the owner's adoption of 2026-10-30 of communication-pipeline evaluation case 012's fifteen changes, of which changes 1, 2, 4 to 9, 11, 13 and 14 amend this specification (count 6); the owner's adoption of 2026-10-30 of communication-pipeline evaluation cases 010 and 011's recommended changes, of which case 010's changes 1, 5, 9, 11, 12 and 13 and case 011's change 1 amend this specification (count 5); the owner's adoption of 2026-10-29 of communication-pipeline evaluation case 009's nineteen changes, of which changes 2, 14, 15 and 18 amend this specification (count 4); the owner's decision of 2026-10-27 on signal-based meta-review triggers (count 3); communication-pipeline evaluation case 008 (owner decision of 2026-10-27, change 5) for count 2; for count 1, docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md; docs/records/intermediate-representation-history.md; docs/releases.md; docs/vocabulary.md
@@ -226,7 +226,7 @@ C50. The count of unratified terms is the mechanical measure of unratified vocab
 
 C303. The IR has sixteen mechanical checks, one per row of the table below. [inferred: R84]
 
-C51. A lint or a stranger reports each mechanical check as a finding. [decided: pipeline schema v1.2, 2026-10-25]
+C51. A checking program or a stranger reports each mechanical check as a finding. [decided: pipeline schema v1.2, 2026-10-25; reworded in count 7, round 7]
 
 C52. methodology-tools runs the checks as `mtool ir check`. [decided: methodology PR #48, 2026-10-26]
 
@@ -403,7 +403,7 @@ C262. A confirmed or unfixed mark is not a decision on a finding: the mark recor
 
 C155. The text delivered after a readable verdict is the text that round read, with the round's fixes applied. [decided: owner, 2026-10-27; reworded in count 7, round 4]
 
-C97. At a readable verdict, the reasoning role fixes the round's findings under the fix rules, in the IR and then in the prose. [decided: owner, 2026-10-27; reworded after count 7 round 5 confirmation]
+C97. At a readable verdict, the reasoning role fixes each finding not waiting for the owner, IR first, under the fix rules. [decided: owner, 2026-10-27; reworded after count 7 round 5 confirmation; reworded in count 7, round 7]
 
 C345. At a readable verdict, a finding whose fix waits for the owner stays unfixed. [inferred: R88]
 
@@ -431,7 +431,7 @@ C157. The next round reviews the fixed IR and the fixed prose. [decided: owner, 
 C320. A structural fix is one of two fixes for a misreading that a rewording does not settle. evidence: E9. [decided: owner, 2026-11-02, case 015 change 15; reworded in count 7, round 5]
 C344. The first structural fix moves the sentence out of the structure that produces the misreading: a list, a section or an adjacency. evidence: E9. [decided: owner, 2026-11-02, case 015 change 15; split from C320 in count 7, round 5]
 C321. The second structural fix changes the claim to the reading of the mismatched restatements, when that reading is true. evidence: E9. [decided: owner, 2026-11-02, case 015 change 15; reworded in count 7, round 6]
-C323. When restatement mismatches name one claim in two rounds, of one count or two, the reasoning role makes a structural fix before the next round. evidence: E9. [decided: owner, 2026-11-02, case 015 change 15 and change 3; reworded in count 7, round 6]
+C323. When mismatches name one claim in two rounds, in one count or across two, the reasoning role makes a structural fix before the next round. evidence: E9. [decided: owner, 2026-11-02, case 015 change 15 and change 3; reworded in count 7, round 6; reworded in count 7, round 7]
 C324. The reasoning role marks the structural fix made for a recurring mismatch awaiting restatement in the review record. evidence: E9. [decided: owner, 2026-11-02, case 015 change 15]
 C325. A fix the round's stranger instance confirms only in part counts as a fix not held. [decided: owner, 2026-11-02, case 015 change 15; reworded in count 7, round 1]
 
@@ -486,7 +486,7 @@ C187. The first signal: in two or more rounds, a fix was not held at confirmatio
 
 C188. The second signal: a finding declined in an earlier round was raised again. [decided: owner, 2026-10-27]
 
-C208. The second signal also fires when restatement mismatches named one claim in two rounds, of one count or two. evidence: E9. [decided: owner, 2026-11-02, case 015 change 3; reworded in count 7, round 6]
+C208. The second signal also fires when restatement mismatches named one claim in two rounds, whether in one count or across two. evidence: E9. [decided: owner, 2026-11-02, case 015 change 3; reworded in count 7, round 6; reworded in count 7, round 7]
 
 C190. The fourth signal: in round 3 or later, a stranger found a contradiction in a passage an earlier round's fix touched. evidence: E3. [decided: owner, 2026-10-29]
 
@@ -523,7 +523,7 @@ C205. The first owner input is whether the owner asked for a review. [decided: o
 
 C229. The second owner input is whether the owner designated the document IR-only. [decided: owner, 2026-10-30]
 
-C111. A lint runs the mechanical checks in every case. [decided: pipeline schema v1.2, 2026-10-25]
+C111. A checking program runs the mechanical checks in every case. [decided: pipeline schema v1.2, 2026-10-25; reworded in count 7, round 7]
 
 C112. The first row of the Rendering conditions table whose condition holds decides. [decided: methodology PR #50, 2026-10-26]
 
@@ -555,7 +555,7 @@ C177. No branch carries a chat message. [decided: pipeline schema v1.3, 2026-10-
 
 C122. When the Footprint header is absent or empty, no comparison is made. [decided: pipeline schema v1.3, 2026-10-26]
 
-C123. Before delivery, the reasoning role, or a lint, compares the Footprint header with the files the branch changed since its base. [decided: pipeline schema v1.3, 2026-10-26]
+C123. Before delivery, the reasoning role, or a checking program, compares the Footprint header with the files the branch changed since its base. [decided: pipeline schema v1.3, 2026-10-26; reworded in count 7, round 7]
 
 C124. A file is changed when the branch's diff adds, modifies, deletes or renames it. [decided: pipeline schema v1.3, 2026-10-26]
 
