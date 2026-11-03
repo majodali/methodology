@@ -1559,7 +1559,7 @@ Signals script before the round: no round of count 7 recorded yet.
 | 3 | 4,505 | 280 | 18 | 4.0 | not readable (mismatches 2; contradictions 0; undefined terms 0; paraphrase-test findings 5) |
 | 4 | 4,549 | 282 | 10 | 2.2 | not readable (mismatches 2; contradiction 1; undefined term 1; paraphrase-test findings 1) |
 | 5 | 4,560 | 282 | 12 | 2.6 | not readable (mismatches 2, both recurring; contradictions 2; undefined terms 2; paraphrase-test findings 2) |
-| 6 | 4,617 | 283 | | | pending |
+| 6 | 4,617 | 283 | 21 | 4.5 | not readable (mismatches 4, two recurring; contradiction 1; undefined term 1; paraphrase-test findings 3) |
 
 ### Round 1, count 7, 2026-11-02
 
@@ -1861,7 +1861,7 @@ The instance read both files in full at fix commit 60033ba and, as briefed, gave
 
 - Fix 7 did not hold, with N2 (SP-25): moved into the fix rules, the owner gate made a readable round's fix wait, while C97 required the fix at once and no next round opens. Re-fixed with the rules the text already holds: C97 reads "fixes the round's findings under the fix rules, in the IR and then in the prose", and a new sentence states the route, "At a readable verdict, a finding whose fix waits for the owner stays unfixed, and the reasoning role lists it for the owner." (C345). C345 is inferred by R88 from C318, C182 and C277: an unconfirmed fix is unfixed, and the final confirmation's leftovers go to the owner. No rule is added.
 - N1 (SP-11): the gate had landed in the renderer's terms paragraph. It now follows the new-rule sentence (C281) in the fix-rules paragraph that opens "The reasoning role makes a fix to rendered prose in the IR first."
-- Finding 10, decline not accepted: the instance says the register link was absent at 336b2e6. The repository shows it present: `git show 336b2e6:docs/intermediate-representation.md` holds "a statement about the state of a [register](vocabulary.md#def-register) or of a row in one", and so do 3fe1cbd and dbbf4d7. The link landed at 3fe1cbd, as round 3's confirmation fix N3; the round 5 entry above, which said round 4, is corrected to round 3. The decline stands on that evidence.
+- Finding 10, decline not accepted: the instance says the register link was absent at 336b2e6. The repository shows it present: `git show 336b2e6:docs/intermediate-representation.md` holds "a statement about the state of a [register](vocabulary.md#def-register) or of a row in one", and so do 3fe1cbd and dbbf4d7. The link landed at 3fe1cbd, as round 3's confirmation fix N3; the round 5 entry above, which said round 4, is corrected to round 3. The decline stands on that evidence. Recorded as an edge: a confirming instance misread the commit it was briefed on; the Orchestrator checked 336b2e6 and withdrew its own request to mark the finding fixed.
 - Declines 6, X1 and X2 accepted.
 
 `node scripts/check.mjs docs/intermediate-representation.md --base 60033ba`:
@@ -1879,3 +1879,68 @@ Passages awaiting restatement, listed in the brief for a one-sentence restatemen
 
 Declines carried in the round 6 brief: the six of count 5; round 1's 1 and 3; round 2's 6; round 3's 1, 4 and 5; round 4's 1 and 2; round 5's 6 and 10, each with its reason. Not carried: the restatement-check items. The brief names the passages round 5 and its confirmation changed, the departure kept for this count.
 
+
+Stranger model: claude-haiku-5-5, a fresh instance, reading at commit 2bfcb7d. It wrote its restatement before it opened the IR and made no call outside its brief.
+
+Restatement:
+
+> This document sets how a text for a reader outside the conversation gets written. The writer first lists the text's statements as numbered lines, then renders that list as prose. A fresh reviewer then tests the prose. The reviewer restates the text in its own words before reading the numbered list, and each disagreement between that restatement and the list counts against the text. The document sets the line format, the labels that show whether the owner ratified each statement, and the mechanical checks that flag unnamed pronouns, long or joined sentences, undefined project words and broken links. It sets four conditions for a review to pass and a limit of ten reviews. Fixes change the numbered list first and the prose second. It decides when a broader review of the whole process runs and that the owner decides this. It also decides that a change to a statement the owner already ratified waits for the owner's answer.
+
+The listed passages, each restated in one sentence:
+
+1. "The two tables under "## Element kinds", headed "Kinds that carry a provenance status" and "Kinds that carry no provenance status", list the element kinds for terms, statements and clusters, and for relations, evidence and asks, each with its letter and body rule."
+2. "The opening paragraph of "#### Who decides on a meta-review" says the owner decides whether a broader review runs, the writer reports to the owner at the end of each run of reviews which signals fired or that the limit was reached, and the owner may start a broader review of any text, which a session the owner starts performs and reports back to the owner."
+
+Prose 4,617 words by `wordCount` (the stranger's estimate: about 5,500); IR 283 claims; 18 findings from the stranger and 3 from the restatement check, 21 in all, 4.5 per thousand words. Restatement: four mismatches. Listed passages: both matched. Contradiction 1 (finding 9), undefined term 1 (finding 18), paraphrase-test findings 3 (the check's items; the stranger found none); verdict: not readable for RD-4. Omissions noticed, not counted: 3.
+
+The listed passages. The first restatement puts relations, evidence and asks under the kinds that carry no provenance status. That matches C260, C294 and C295. The second has the owner deciding whether a meta-review runs, before the report of the signals. That matches C333. Both structural fixes of round 5 hold; the `awaiting restatement` marks on the Element kinds tables and on "Who decides on a meta-review" clear.
+
+The mismatches, each counting under the first condition though the stranger put all of them down to its own restatement:
+
+- Mismatch 1. The restatement limited the text to readers outside the conversation. "A report to RD-2 always starts as an IR." (C130), and RD-2 shares the conversation (C17). The stranger quoted C17's sentence. The prose did not invite the reading.
+- Mismatch 2. The restatement gave the provenance labels a yes-or-no reading of ratification. The Provenance table holds three statuses, and "proposed" (C47) differs from "inferred" (C48). The prose did not invite the reading by any one sentence. C47 drew round 4's first mismatch too, so a structural fix is owed.
+- Mismatch 3. The restatement had each disagreement count "against the text". The first row of the verdict table says "Each restatement mismatch counts against the verdict." (C227), the sentence the stranger quoted. The stranger called it the weakest of the four. It counts: C211 makes a mismatch what the stranger finds. C227 drew mismatches in count 5's rounds 3 and 5, so a structural fix is owed.
+- Mismatch 4. The restatement had the mechanical checks flag sentences. The rows of CK-02 and CK-03 fire on a claim (C54, C55). The section opens "The IR has sixteen mechanical checks", so the prose did not invite the reading.
+
+Mismatches: C130 (relied on C17), C47, C227, C54, C55
+
+Restatement check, `node scripts/lint.mjs --restatement docs/intermediate-representation.review.md --round 6` in the communication-pipeline worktree: 3 items, Y1 ("counts"), Y2 ("limit") and Y3 ("restatement").
+
+Signals script after the `Mismatches:` line: signal 2 fires on C47 (count 7 rounds 4 and 6) and on C227 (count 5 rounds 3 and 5, count 7 round 6), beside C211, C333 and C260. Signal 1 stands from rounds 1, 2 and 5. By reading, signal 4 stands: finding 9 is a contradiction in the Terms-section sentences (C314, C315), a passage round 5's finding 3 fix touched.
+
+Step 5's structural fixes. Owed to C47: the decided and proposed rows of the Provenance table sat together, and both mark ratification, so a reader took the statuses as ratified or not. The inferred row now sits between them. The rows and claims are unchanged. Owed to C227: the verdict's definition (C93) opened its section, ten definitions above the table, so a reader lost the verdict and read "counts against" as against the text. C93 now stands directly before the table, after the definitions. The claim is unchanged. The two passages, the Provenance table and the verdict table with the sentence before it, are marked `awaiting restatement` and go to round 7's brief as listed passages.
+
+| # | Finding (shortened) | Kind | Decision |
+|---|---|---|---|
+| 1 | the text limited to readers outside the conversation (C130, relying on C17) | restatement | declined: the prose did not invite it; "A report to RD-2 always starts as an IR." The mismatch counts |
+| 2 | the provenance marks read as ratified or not (C47) | restatement | structural fix: C47 recurred from round 4, so the inferred row moves between the decided and proposed rows; `awaiting restatement` |
+| 3 | a mismatch counts "against the text" (C227) | restatement | structural fix: C227 recurred from count 5, so C93 moves to stand directly before the verdict table; `awaiting restatement` |
+| 4 | the mechanical checks flag sentences (C54, C55) | restatement | declined: the prose did not invite it; "The IR has sixteen mechanical checks", each row firing on a claim. The mismatch counts |
+| 5 | "claims" unlinked in the Purpose (C28) | SP-04 | fixed: linked to Element kinds |
+| 6 | the provenance-status column repeats the table headings (C259, C260, C293 to C295) | SP-26 | declined: each cell renders one claim, as C72 asks; a heading renders no claim. The passage matched its restatement in this round |
+| 7 | the fix rules have no subheading; the four conditions cited before they are stated | SP-11 | declined: the fix rules govern the review's fixes, so the paragraph answers "Rendering and review", and C143 allows no added heading. The four conditions are linked at that use |
+| 8 | "a term the IR introduces" against "a term the text introduces" (C77, C153, T39) | SP-04 | fixed: "a term with no definition site" in C77 and C153. T39 also covers linked terms, so the two names were not one concept; the second name is gone |
+| 9 | a Terms entry gives a link, yet a term no vocabulary defines has none (C314, C315) | SP-25 | fixed: "The renderer lists each IR term defined outside the methodology vocabulary and the project's `docs/vocabulary.md` in a Terms section before the body." (C314), the sense of case 013 change 2's adopted text. Each such term has a definition site, so C315's link exists |
+| 10 | C316 covered by C313 | SP-26 | declined: C313's term enters by a fix; C316's term is already in the text and draws an undefined-term finding twice |
+| 11 | "its kind" in C281 names no condition | SP-03 | fixed: "Until the owner decides, a finding that needs a new rule counts against the verdict only under the verdict's four conditions." (C281) |
+| 12 | a duty and a hold joined (C318) | SP-01 | fixed: split into C318 and C346, "The fix of such a finding waits for the owner's answer." |
+| 13 | two claims joined (C345) | SP-01 | fixed: split into C345 and C347, "The reasoning role lists that finding for the owner." (inferred by R89) |
+| 14 | "keeps the mark" has no actor (C301) | SP-18 | fixed: "When a readable round's fix pass marks a structural fix awaiting restatement, the reasoning role keeps the mark." |
+| 15 | "the strangers' reading" names no single reading (C321) | SP-03 | fixed: "the reading of the mismatched restatements" |
+| 16 | C322 repeats C320 | SP-26 | fixed: C322 cut; C320 holds it |
+| 17 | "the text's counts" leaves open whether the rounds share a count (C208, C323) | SP-03 | fixed: "in two rounds, of one count or two" in both |
+| 18 | "adjudication" undefined (C102) | SP-04 | fixed: "the owner's decision is the decision on the amendment under Article 8 ..." (C102); R14's reason reworded to match |
+| Y1 to Y3 | the restatement uses "counts", "limit" and "restatement" | paraphrase test | declined: "counts against" is the plain verb, as round 4's T1; "a limit of ten reviews" states the limit in plain words, as round 5's X2; "that restatement" points back to "restates the text in its own words". No passage resisted |
+
+Omissions the stranger noted, not counted, for the owner at the close:
+
+- Whether a finding held for the owner under C317 to C319 counts against the verdict. C281 answers this for a finding that needs a new rule only.
+- No duty names the whole-text restatement or orders it before the IR; the Terms entry for "restatement" holds both, and the first condition rests on it.
+- How the owner closes a `Meta-review: pending` line after declining a meta-review (C333, C191, C109).
+
+`node scripts/check.mjs docs/intermediate-representation.md --base 2bfcb7d`, on the fixed text:
+Checks: 0 sentences over 25 words; 284 of 284 claims mapped; 13 claims changed, 0 missing, 0 stale.
+
+`mtool ir check`: 0 violations, 0 warnings. `mtool style`: no sentence over 25 words. `mtool links check`: all relative links resolve. Claims after fixes: 284 (C322 cut; C346 and C347 added). Prose after fixes: 4,620 words. Structural fixes awaiting restatement: the Provenance table, and the verdict table with the sentence before it. Decided claims the fixes reworded, for the owner at acceptance: C102, C153, C208, C281, C301, C314, C318, C321, C323. Decided claim the fixes added: C346 (split from C318). Decided claim cut: C322.
+
+The confirmation is pending.
