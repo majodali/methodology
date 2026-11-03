@@ -1561,7 +1561,7 @@ Signals script before the round: no round of count 7 recorded yet.
 | 5 | 4,560 | 282 | 12 | 2.6 | not readable (mismatches 2, both recurring; contradictions 2; undefined terms 2; paraphrase-test findings 2) |
 | 6 | 4,617 | 283 | 21 | 4.5 | not readable (mismatches 4, two recurring; contradiction 1; undefined term 1; paraphrase-test findings 3) |
 | 7 | 4,621 | 284 | 6 | 1.3 | not readable (mismatches 0; contradiction 1; undefined term 1; paraphrase-test findings 0) |
-| 8 | 4,630 | 285 | | | pending |
+| 8 | 4,630 | 285 | 13 | 2.8 | not readable (mismatches 5, two recurring; contradiction 1; undefined terms 0; paraphrase-test findings 0) |
 
 ### Round 1, count 7, 2026-11-02
 
@@ -2030,3 +2030,52 @@ Branch point version and commit: v1.11 at communication-pipeline commit 8e3ceb8.
 Passages awaiting restatement: none.
 
 Declines carried in the round 8 brief: the six of count 5; round 1's 1; round 2's 6; round 3's 1, 4 and 5; round 4's 2; round 5's 6 and 10; round 6's 1, 4, 6, 7 and 10; round 7's 2 and 5, each with its reason. Not carried: the restatement-check items. The brief names the passages round 7 and its confirmation changed, the departure kept for this count.
+
+Stranger model: claude-haiku-5-5, a fresh instance, reading at commit 5fdfeb3. It wrote its restatement before it opened the IR and made no call outside its brief.
+
+Restatement:
+
+> The problem: a text written straight into prose can pack several statements into one sentence, leave the things it names unnamed, and rely on working words its reader was never told. This specification sets a process that heads off those faults. The process: the writer first lists the text's statements as numbered entries. Each entry carries its source, the words it relies on and any question it puts to the reader. Prose is then made from that list. Fresh reader sessions check the prose. Each writes an account of the text in its own words before seeing the list, and the list is compared with that account. Each disagreement is a finding. The decisions: which texts must use the process; what each list entry must hold; how prose is made from the list; and how fixes are made. The specification also sets when checking ends with a pass, at the latest after ten review passes; what happens if it does not; and when the owner may order a separate review of how the checking went. The owner reads the specification the same way a fresh reader does.
+
+Prose 4,630 words by `wordCount` (the stranger's estimate: about 6,900); IR 285 claims; 13 findings from the stranger and none from the restatement check, 13 in all, 2.8 per thousand words. Restatement: five mismatches. Listed passages: none. Contradiction 1 (finding 11), undefined terms 0, paraphrase-test findings 0; verdict: not readable for RD-4. Omissions noticed, not counted: 5.
+
+The mismatches, each counting under the first condition though the stranger put all five down to its own restatement. Each entry names the claim of the row or sentence the stranger relied on, as round 5 did.
+
+- Mismatch 1. The restatement gave every entry a source; relations, evidence and asks carry none (C260, C294, C295). The stranger relied on the Ask row (C295). The prose did not invite it: the two tables are headed by provenance status. The passage, the second Element kinds table, drew mismatches on C260 in count 6 round 1 and count 7 round 5; round 5's structural fix matched in round 6. The script reads claims, not passages, so it reports no recurrence here; noted for the owner.
+- Mismatch 2. The restatement made terms and asks parts of each entry. Terms are their own elements (C25), and so are asks (C38). The stranger quoted the Term and Ask rows. C38 drew round 1's first mismatch, the same reading, which round 1 declined.
+- Mismatch 3. "Prose is then made from that list" says rendering has no condition; C71 holds one. The first sentence of "Rendering and review" carried it.
+- Mismatch 4. "Fresh reader sessions check the prose" says the rounds run for every text; C90 limits them to the reviews the rendering conditions select.
+- Mismatch 5. The restatement narrowed the owner's meta-review to the checking; C192 lets the owner dispatch one of any text.
+
+Mismatches: C295, C25, C38, C71, C90, C192
+
+Restatement check, `node scripts/lint.mjs --restatement docs/intermediate-representation.review.md --round 8` in the communication-pipeline worktree: 0 items.
+
+Signals script after the `Mismatches:` line: signal 2 fires on C38 (count 7 rounds 1 and 8) and on C71 (count 5 round 2, count 7 round 8), beside C211, C333, C260, C47 and C227. Signal 1 stands from rounds 1, 2, 5 and 6. By reading, signal 4 stands: finding 11 is a contradiction in round 8 in the owner-gate passage (C319 against C345), which rounds 5 to 7 touched.
+
+Step 5's structural fixes. Owed to C38: the ask's body sat in the Element kinds table beside the claim's, and readers twice attached asks to each entry. The sentence moves out of the table to "Document form", right after "The IR holds five sections in a fixed order: Terms, Claims, Relations, Evidence, Asks." The Ask row keeps its status and the Asks-section rule. Owed to C71: "Prose is rendered from the IR when a rendering condition selects rendering." opened "Rendering and review", where the paraphraser's rules follow, and readers twice dropped its condition. It moves to open "Rendering conditions", before the table that states the conditions. The claims are unchanged. Both passages are marked `awaiting restatement` and go to round 9's brief as listed passages.
+
+| # | Finding (shortened) | Kind | Decision |
+|---|---|---|---|
+| 1 | every entry given a source (C295, with C260 and C294) | restatement | declined: the prose did not invite it; the tables are headed by provenance status. The mismatch counts |
+| 2 | terms and asks made parts of each entry (C25, C38) | restatement | structural fix on C38, recurring from round 1: the ask's sentence moves to "Document form"; `awaiting restatement`. C25 takes no fix: the Term row says each term "appears as a term element" |
+| 3 | rendering stated with no condition (C71) | restatement | structural fix, C71 recurring from count 5: the sentence moves to open "Rendering conditions"; `awaiting restatement` |
+| 4 | the rounds stated for every text (C90) | restatement | declined: the prose did not invite it; "The rounds apply to every stranger review the rendering conditions select." The mismatch counts |
+| 5 | the owner's meta-review narrowed (C192) | restatement | declined: the prose did not invite it; "The owner may dispatch a meta-review of any text." The mismatch counts |
+| 6 | "structural fix" and "mismatch" unlinked in the Terms entry (T35) | SP-04 | fixed: both linked, with "restatement mismatch" in full |
+| 7 | "whose" in the Terms entry (T35) | SP-03 | fixed: "the review-record mark on a structural fix owed to a recurring restatement mismatch, kept until a later restatement tests the fix" |
+| 8 | the Asks section as actor (C257) | SP-18 | fixed: "When the IR is the deliverable, the reasoning role lists each proposed term for ratification in the IR's own Asks section." |
+| 9 | C153 against C314, two term lists | SP-26 | declined: C153 lists, in the report, the terms the owner must ratify; C314 renders, in the body, the terms whose definitions sit outside the two vocabularies. Different lists, readers and duties |
+| 10 | "the verdict's four conditions" unlinked (C281) | SP-04 | fixed: the link now covers "the verdict's four conditions". Round 6's decline 7 said that phrase was linked; it now is |
+| 11 | C319's next round against the readable verdict (C345) | SP-25 | fixed: "After a verdict of not readable, the next round opens after the owner answers that finding." (C319) |
+| 12 | C347 repeats C318 | SP-26 | fixed: C347 cut with R89. C318 already puts the finding to the owner, and C345 leaves it unfixed |
+| 13 | A10's range names the cut C322 and C343 | CK-06 | fixed: "C305 to C321, C323 to C342, C344 to C346, C348". Noted for methodology-tools: `mtool ir check` does not resolve ranges in `Depends:` |
+
+Omissions in the text, for the owner at the close: the lifecycle rule covers only the prose's state, so an IR-only document has none (C133, C217); rendering-condition rows 4 to 8 do not say whether the stranger rounds run (C246).
+
+`node scripts/check.mjs docs/intermediate-representation.md --base 5fdfeb3`, on the fixed text:
+Checks: 0 sentences over 25 words; 284 of 284 claims mapped; 2 claims changed, 0 missing, 0 stale.
+
+`mtool ir check`: 0 violations, 0 warnings. `mtool style`: no sentence over 25 words, and no new warning. `mtool links check`: all relative links resolve. Claims after fixes: 284 (C347 cut). Prose after fixes: 4,637 words. Structural fixes awaiting restatement: the ask's sentence in "Document form", and the opening of "Rendering conditions". Decided claims the fixes reworded, for the owner at acceptance: C257, C319, and term T35's definition.
+
+The confirmation is pending.
