@@ -2,7 +2,7 @@
 
 Reader: RD-4
 Purpose: document. The complete model of the specification docs/intermediate-representation.md: what an IR is, how it is formed, checked, rendered, reviewed and kept.
-Status: rendered (count 7, round 7 fix pass; edited for communication-pipeline evaluation case 015, rendered by the reasoning role; count 6 accepted and delivered by the owner 2026-11-01)
+Status: rendered (count 7, round 8; edited for communication-pipeline evaluation case 015, rendered by the reasoning role; count 6 accepted and delivered by the owner 2026-11-01)
 Source: the owner's adoption of 2026-11-02 of communication-pipeline evaluation case 015's changes 1 to 30, of which changes 2, 3, 5 (case 013's changes 1 to 3), 14 to 20 and 26 amend this specification (count 7); the owner's adoption of 2026-10-30 of communication-pipeline evaluation case 012's fifteen changes, of which changes 1, 2, 4 to 9, 11, 13 and 14 amend this specification (count 6); the owner's adoption of 2026-10-30 of communication-pipeline evaluation cases 010 and 011's recommended changes, of which case 010's changes 1, 5, 9, 11, 12 and 13 and case 011's change 1 amend this specification (count 5); the owner's adoption of 2026-10-29 of communication-pipeline evaluation case 009's nineteen changes, of which changes 2, 14, 15 and 18 amend this specification (count 4); the owner's decision of 2026-10-27 on signal-based meta-review triggers (count 3); communication-pipeline evaluation case 008 (owner decision of 2026-10-27, change 5) for count 2; for count 1, docs/intermediate-representation.md at v1.5.0 plus PR #50 (main, 89964a7); the owner's ruling of 2026-10-26 on stranger rounds and meta-review (PR #51, unmerged); the per-finding analysis of PR #51's ten rounds in the communication-pipeline project, eval/analysis/pr51-findings.md.
 Normative: yes
 Footprint: docs/intermediate-representation.md; docs/intermediate-representation.ir.md; docs/intermediate-representation.review.md; docs/records/intermediate-representation-history.md; docs/releases.md; docs/vocabulary.md
@@ -431,7 +431,8 @@ C157. The next round reviews the fixed IR and the fixed prose. [decided: owner, 
 C320. A structural fix is one of two fixes for a misreading that a rewording does not settle. evidence: E9. [decided: owner, 2026-11-02, case 015 change 15; reworded in count 7, round 5]
 C344. The first structural fix moves the sentence out of the structure that produces the misreading: a list, a section or an adjacency. evidence: E9. [decided: owner, 2026-11-02, case 015 change 15; split from C320 in count 7, round 5]
 C321. The second structural fix changes the claim to the reading of the mismatched restatements, when that reading is true. evidence: E9. [decided: owner, 2026-11-02, case 015 change 15; reworded in count 7, round 6]
-C323. When mismatches name one claim in two rounds, in one count or across two, the reasoning role makes a structural fix before the next round. evidence: E9. [decided: owner, 2026-11-02, case 015 change 15 and change 3; reworded in count 7, round 6; reworded in count 7, round 7]
+C323. When restatement mismatches name one claim in two rounds, the reasoning role makes a structural fix before the next round. evidence: E9. [decided: owner, 2026-11-02, case 015 change 15 and change 3; reworded in count 7, round 6; reworded after count 7 round 7 confirmation]
+C348. The two rounds may fall in one count or across two. evidence: E9. [decided: owner, 2026-11-02, case 015 change 3; split from C323 after count 7 round 7 confirmation]
 C324. The reasoning role marks the structural fix made for a recurring mismatch awaiting restatement in the review record. evidence: E9. [decided: owner, 2026-11-02, case 015 change 15]
 C325. A fix the round's stranger instance confirms only in part counts as a fix not held. [decided: owner, 2026-11-02, case 015 change 15; reworded in count 7, round 1]
 
@@ -765,6 +766,6 @@ E9. communication-pipeline eval/cases/015-ruleset-simplification-review-2026-11-
 
 ## Asks
 
-A10. Accept or reject count 7 of the specification. Under communication-pipeline evaluation case 015 change 19, acceptance ratifies the wording of each decided claim count 7 rewords, unless the owner names one. Depends: C93, C143, C202, C283, C305 to C347.
+A10. Accept or reject count 7 of the specification. Under communication-pipeline evaluation case 015 change 19, acceptance ratifies the wording of each decided claim count 7 rewords, unless the owner names one. Depends: C93, C143, C202, C283, C305 to C348.
 
 A12. Ratify or strike the term "a term the text introduces" (T39) and its definition, C341, which the paraphrase test rests on; branch point v1.11 asks the same. Depends: C341.

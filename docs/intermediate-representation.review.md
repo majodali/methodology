@@ -1561,6 +1561,7 @@ Signals script before the round: no round of count 7 recorded yet.
 | 5 | 4,560 | 282 | 12 | 2.6 | not readable (mismatches 2, both recurring; contradictions 2; undefined terms 2; paraphrase-test findings 2) |
 | 6 | 4,617 | 283 | 21 | 4.5 | not readable (mismatches 4, two recurring; contradiction 1; undefined term 1; paraphrase-test findings 3) |
 | 7 | 4,621 | 284 | 6 | 1.3 | not readable (mismatches 0; contradiction 1; undefined term 1; paraphrase-test findings 0) |
+| 8 | 4,630 | 285 | | | pending |
 
 ### Round 1, count 7, 2026-11-02
 
@@ -2006,4 +2007,26 @@ Checks: 0 sentences over 25 words; 284 of 284 claims mapped; 6 claims changed, 0
 
 `mtool ir check`: 0 violations, 0 warnings. `mtool style`: no sentence over 25 words. `mtool links check`: all relative links resolve. The rebuilt render map is unchanged. Claims after fixes: 284. Prose after fixes: 4,624 words. Structural fixes owed: none; passages awaiting restatement: none. Decided claims the fixes reworded, for the owner at acceptance: C51, C97, C111, C123, C208, C323.
 
-The confirmation is pending.
+Confirmation: 4 of 4 fixes hold. Not held: none. Declines accepted: 1 of 2. New defects: 1.
+
+The instance read both files in full at fix commit 534c724. The confirmation's fixes, IR first, before round 8 opens:
+
+- N1 (SP-03, "mismatches" for the defined "restatement mismatch" in C323): restored, and the sentence split to stay within 25 words. C323 reads "When restatement mismatches name one claim in two rounds, the reasoning role makes a structural fix before the next round." C348 follows: "The two rounds may fall in one count or across two."
+- Finding 2, decline not accepted: the instance holds that SP-11 bars "The verdict" from opening with its definitions. The decline stands on the structural-fix reason: the rule sentence's place is round 6's fix for C227, matched in round 7. Two strangers have now raised the order: round 3's, whose finding 11 put the rule first, and round 7's. It goes to the owner as a judgement call, between SP-11's order and a structural fix that held, and is not reopened in this count.
+- Finding 5's decline accepted.
+- The Orchestrator confirmed finding 1's choice: "a checking program" in plain words in C51, C111 and C123, with no link, for the reasons the decision gives.
+
+`node scripts/check.mjs docs/intermediate-representation.md --base 534c724`:
+Checks: 0 sentences over 25 words; 285 of 285 claims mapped; 2 claims changed, 0 missing, 0 stale.
+
+`mtool ir check`: 0 violations, 0 warnings. `mtool style`: no sentence over 25 words. `mtool links check`: all relative links resolve. Prose after the confirmation's fixes: 4,630 words; IR 285 claims. Decided claim reworded after confirmation, for the owner at acceptance: C323. Decided claim added: C348 (split from C323).
+
+Signals script after the confirmation line: round 7 held every fix, so signal 1 is unchanged, from rounds 1, 2, 5 and 6. Signal 2 stands on C211, C333, C260, C47 and C227; signal 4 by reading.
+
+### Round 8, count 7, 2026-11-02
+
+Branch point version and commit: v1.11 at communication-pipeline commit 8e3ceb8. The round reads the text at its opening commit, named in the brief. Prose 4,630 words; IR 285 claims; unratified terms 1 (T39). Human reader for the paraphrase test: the human owner. Stranger: pending, a fresh instance.
+
+Passages awaiting restatement: none.
+
+Declines carried in the round 8 brief: the six of count 5; round 1's 1; round 2's 6; round 3's 1, 4 and 5; round 4's 2; round 5's 6 and 10; round 6's 1, 4, 6, 7 and 10; round 7's 2 and 5, each with its reason. Not carried: the restatement-check items. The brief names the passages round 7 and its confirmation changed, the departure kept for this count.
